@@ -16,6 +16,11 @@
         <gwt.version>2.4.0</gwt.version>
         <gwtp.version>0.8-SNAPSHOT</gwtp.version>
         <arcbees-core.version>1.0-SNAPSHOT</arcbees-core.version>
+        <gwtquery-version>1.1.0</gwtquery-version>
+        <guice.version>3.0</guice.version>
+        <gin.version>1.5.0</gin.version>
+        <jukito.version>1.1</jukito.version>
+        <junit.version>4.10</junit.version>
     </properties>
 
     <repositories>
@@ -79,9 +84,73 @@
         </dependency>
 
         <dependency>
+            <groupId>com.gwtplatform</groupId>
+            <artifactId>gwtp-crawler</artifactId>
+            <version>${gwtp.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.gwtplatform</groupId>
+            <artifactId>gwtp-tester</artifactId>
+            <version>${gwtp.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
             <groupId>com.arcbees.core</groupId>
             <artifactId>arcbees-core</artifactId>
             <version>${arcbees-core.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- DI dependencies -->
+        <dependency>
+            <groupId>com.google.inject</groupId>
+            <artifactId>guice</artifactId>
+            <version>${guice.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.inject.extensions</groupId>
+            <artifactId>guice-servlet</artifactId>
+            <version>${guice.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.inject.extensions</groupId>
+            <artifactId>guice-assistedinject</artifactId>
+            <version>${guice.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.gwt.inject</groupId>
+            <artifactId>gin</artifactId>
+            <version>${gin.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- Test dependencies -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jukito</groupId>
+            <artifactId>jukito</artifactId>
+            <version>${jukito.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Other dependencies -->
+
+        <dependency>
+            <groupId>com.googlecode.gwtquery</groupId>
+            <artifactId>gwtquery</artifactId>
+            <version>${gwtquery-version}</version>
             <scope>provided</scope>
         </dependency>
 

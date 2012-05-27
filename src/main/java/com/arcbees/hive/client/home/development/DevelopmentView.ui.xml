@@ -1,0 +1,56 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+    xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+    <ui:with field="res" type="com.arcbees.hive.client.resources.Resources" />
+    <ui:with field="nameTokens" type="com.arcbees.hive.client.place.NameTokens" />
+
+    <ui:style>
+        .sectionText {
+          text-align: justify;
+          width: 637px;
+          margin-left: 200px;
+        }
+        
+        .imgFloatLeft {
+          float: left;
+        }
+        
+        .section {
+          position: relative;
+          width: 888px;
+          min-height: 500px;
+        }
+        
+        .topH2 {
+          margin-top: 0;
+        }
+    </ui:style>
+
+    <g:HTMLPanel>
+        <div class="{style.section}">
+            <g:Image resource="{res.blogAbeilleDevelop}"
+                styleName="{style.imgFloatLeft}" />
+
+            <div class="{style.sectionText}">
+                <h2 class="{style.topH2}">Our developer bees</h2>
+                <p>
+                    You have the greatest idea for a project? Your business is in dire need of a new
+                    internal tool? You simply want to revamp your page with Web 2.0 technology?
+                    Our developer bees are already buzzing at the though of helping you out! You
+                    can entirely out source your project to ArcBees and we'll handle it, from
+                    requirement gathering to deployment. Our software engineers work hand in hand
+                    with you and adopt an agile methodology with frequent releases, so you can
+                    monitor the progress of your project and steer it in the right direction.
+                    Our expertise and professionalism ensures that your final solution will be of
+                    the highest quality and easily maintainable.
+                </p>
+
+                <p>
+                    Simply <g:InlineHyperlink targetHistoryToken="{nameTokens.getContact}">email us
+                    </g:InlineHyperlink> to get things started!
+                </p>
+            </div>
+        </div>
+    </g:HTMLPanel>
+</ui:UiBinder> 

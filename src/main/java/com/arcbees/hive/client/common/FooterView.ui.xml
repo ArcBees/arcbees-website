@@ -1,0 +1,88 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<ui:with field='res' type='com.arcbees.hive.client.resources.Resources' />
+	<ui:with field="nameTokens" type="com.arcbees.hive.client.place.NameTokens" />
+
+	<ui:style>
+		.footer {
+			background-color: #c5932c;
+			font-size: 13px;
+			font-family: "Verdana";
+			text-align: right;
+			color: #4b3c30
+		}
+		
+		.footer a {
+			color: #ffffff;
+			text-decoration: none;
+		}
+		
+		.footer a:HOVER {
+			color: #4b3c30;
+		}
+		
+		.copryright {
+			text-align: center;
+			font-size: 10px;
+		}
+	</ui:style>
+
+	<g:LayoutPanel height="244px" addStyleNames="{style.footer}">
+		<g:layer left="28px" width="896px">
+			<g:Image resource="{res.fooUp}" />
+		</g:layer>
+		
+		<g:layer left="28px" width="896px" top="171px" height="73px">
+			<g:Image resource="{res.fooDown}" />
+		</g:layer>
+		
+		<g:layer>
+            <g:Image resource="{res.fooGauche}" />
+        </g:layer>
+        
+        <g:layer left="924px" width="26px">
+            <g:Image resource="{res.fooDroite}" />
+        </g:layer>
+		
+		<g:layer top="26px" height="171px" left="120px" width="126px">
+			<g:HTMLPanel>
+				<p>ARCBEES</p>
+				<g:Hyperlink targetHistoryToken="{nameTokens.getService}">Services</g:Hyperlink>
+				<g:Hyperlink targetHistoryToken="{nameTokens.getProduct}">Products</g:Hyperlink>
+				<g:Hyperlink targetHistoryToken="{nameTokens.getJob}">Job Opportunities</g:Hyperlink>
+				<g:Hyperlink targetHistoryToken="{nameTokens.getAbout}">About Us</g:Hyperlink>
+				<g:Hyperlink targetHistoryToken="{nameTokens.getContact}">Contact Us</g:Hyperlink>
+			</g:HTMLPanel>
+		</g:layer>
+		<g:layer top="26px" height="171px" left="256px" width="116px">
+			<g:HTMLPanel>
+				<p>PROJECTS</p>
+				<p><a href="http://code.google.com/p/arcbees-hive/">Hive</a><br />
+				<a href="http://code.google.com/p/gwt-platform/">Gwt-Platform</a><br />
+				<a href="http://code.google.com/p/gwt-platform/">Jukito</a></p>
+			</g:HTMLPanel>
+		</g:layer>
+		<g:layer top="26px" height="171px" left="382px" width="306px">
+			<g:HTMLPanel ui:field="recentNews">
+				<p>RECENT NEWS</p>
+			</g:HTMLPanel>
+		</g:layer>
+		<g:layer top="26px" height="171px" left="698px" width="116px">
+			<g:HTMLPanel>
+			    <p>FOLLOW US</p>
+                <p><a href="http://www.linkedin.com/company/arcbees?trk=fc_badge" target="_blank">LinkedIn</a><br />
+                <a href="http://twitter.com/arcbees" target="_blank">Twitter</a><br />
+                <a href="http://www.facebook.com/pages/ArcBees/201744089861261" target="_blank">Facebook</a><br />
+                <a href="http://arcbees.wordpress.com/" target="_blank">Blog</a></p>
+			</g:HTMLPanel>
+		</g:layer>
+		<g:layer top="224px" height="20px" left="0" width="950px">
+			<g:HTMLPanel addStyleNames="{style.copryright}">
+				Copyright &copy; 2011 ArcBees
+				All rights reserved.
+		  </g:HTMLPanel>
+		</g:layer>
+	</g:LayoutPanel>
+</ui:UiBinder> 

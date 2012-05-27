@@ -1,0 +1,110 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+    xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+    <ui:with field="res" type="com.arcbees.hive.client.resources.Resources" />
+
+    <ui:style>
+        .sectionText {
+          text-align: justify;
+          margin-left: 51px;
+          margin-right: 51px;
+        }
+        
+        .imgFloatRight {
+          float: right;
+          margin-right: 41px;
+        }
+        
+        .section {
+          width: 888px;
+        }
+        
+        .topH2 {
+          margin-top: 0;
+        }
+    </ui:style>
+
+    <g:HTMLPanel>
+        <div class="{style.section}">
+            <g:Image resource="{res.blogBookedin}" styleName="{style.imgFloatRight}" />
+
+            <div class="{style.sectionText}">
+                <h2 class="{style.topH2}">BookedIN</h2>
+
+                <p>
+                    <strong>Web site:</strong> <a href="http://www.coldwin.com/" target="_blank">
+                    www.bookedin.net</a><br />
+                    <strong>Contact:</strong> Mike Iwasiow<br />
+                    <strong>Location:</strong> Winnipeg (Mb), Canada<br />
+                    <strong>Product:</strong> A complete user-friendly web-based solution to let
+                    owners of SMBs easily manage their schedule.<br />
+                    <br />
+                    <strong>ArcBees product used:</strong> Gwt-Platform, Jukito,
+                    Consulting services<br />
+                    <strong>Testimonial:</strong><br />
+                    At BookedIN, we started using GWT-platform when the project was still in its
+                    infancy. We had already started with GWT-dispatch and GWT-presenter but after
+                    reviewing the code, the samples, and the direction the project was taking, we
+                    decided to migrate to GWTP instead and we couldn't be happier with it. The
+                    project is well-designed with just the right mix of features without making
+                    the project bloated. The API is intuitive and easy-to-follow and the people
+                    behind the project are very receptive to feedback. Since we started using GWTP,
+                    we've been happy to see a very strong ecosystem grow around it with regular
+                    activity on both the code and the discussion list. I can't recommend GWTP
+                    enough.
+                </p>
+            </div>
+
+            <g:Image resource="{res.imagem}" styleName="{style.imgFloatRight}" />
+
+            <div class="{style.sectionText}">
+                <h2>IMAGEM Systèmes Médicaux</h2>
+
+                <p>
+                    <strong>Web site:</strong> <a href="http://www.imagemsoft.com/" target="_blank">
+                    www.imagemsoft.com</a><br />
+                    <strong>Contact:</strong> Jacques Gagnon<br />
+                    <strong>Location:</strong> Chicoutimi (Qc), Canada<br />
+                    <strong>Product:</strong>
+                    Software development in the field of health sciences and radiology.<br />
+                    <br />
+                    <strong>ArcBees product used:</strong> Gwt-Platform<br />
+                    <strong>Testimonial:</strong><br />
+                    Gwt-Platform gave us the opportunity to build reliable and powerful web
+                    applications easily and quickly. The abundance of documentation available at the
+                    beginning of GWT-Platform has allowed a very rapid integration into our current
+                    projects.
+                </p>
+            </div>
+
+            <g:Image resource="{res.blogCloudInside}" styleName="{style.imgFloatRight}" />
+
+            <div class="{style.sectionText}">
+                <h2>Cloud Inside</h2>
+
+                <p>
+                    <strong>Web site:</strong>
+                    <a href="http://www.cloud-inside.com/" target="_blank">www.cloud-inside.com</a>
+                    <br />
+                    <strong>Contact:</strong> Piotr Stawinski <br />
+                    <strong>Location:</strong> Poland<br />
+                    <strong>Product:</strong> Consulting and development services on cloud
+                    technology<br />
+                    <strong>ArcBees product used:</strong> Gwt-Platform<br />
+                    <strong>Testimonial:</strong><br />
+                    Once you start to create webapps using GWT, delighted by the convenience of this
+                    technology you won't use anything else. This is precisely what happened in the
+                    case of Cloud Inside, a polish software company. GWT is a great tool and GWTP is
+                    great framework to exploit it. Choosing GWTP as a development framework
+                    significantly accelerated the process of manufacturing sites, reduced the amount
+                    of code and simply boosted joy of programming. Not to mention the invaluable
+                    features of GWTP such as code splitting, generating content for search engine
+                    crawlers, or support for nested presenters pattern.<br />
+                    <br />
+                    GWTP is a very convenient and useful framework, I recommend it to anyone who
+                    does GWT programming.</p>
+            </div>
+        </div>
+    </g:HTMLPanel>
+</ui:UiBinder> 

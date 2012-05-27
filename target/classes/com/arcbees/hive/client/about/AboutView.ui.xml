@@ -1,0 +1,209 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<ui:with field="res" type="com.arcbees.hive.client.resources.Resources" />
+
+	<ui:style>
+		.sectionText {
+			text-align: justify;
+			margin-left: 51px;
+			margin-right: 51px;
+		}
+		
+		.imgFloatLeft {
+			float: left;
+			margin-right: 10px;
+		}
+		
+		.section {
+			width: 888px;
+			margin-left: 34px;
+			margin-right: 34px;
+			margin-bottom: 41px;
+			margin-top: 41px;
+		}
+	</ui:style>
+
+	<g:HTMLPanel styleName="{res.style.blogBackground}">
+		<div class="{res.style.blogLeftFull}" />
+		<div class="{res.style.blogRightFull}" />
+
+		<div class="{style.section}">
+			<div class="{style.sectionText}">
+				<h2>Our Hive</h2>
+				<p>
+					ArcBees became a corporation in July of 2010 in order to answer
+					to a
+					growing demand of professional support for GWT-Platform.
+					Philippe,
+					the project’s instigator, initiated Christian who then
+					became the
+					main contributor to the company. Since then, he devotes
+					his
+					energies to management whereas Philippe concentrates on
+					technical
+					innovations. Only in September did Christian have the idea
+					to
+					create a new project based on the open source products from
+					ArcBees. This time, the idea is particularly aimed at answering to
+					the new needs of SMEs of a Web in constant evolution. In December
+					of 2010, Francis and David join in as partners at equal share.
+					Their role is crucial in so that to the planning and realisation of
+					this new project. Today, Christian’s idea is coming to reality: a
+					revolutionary Web application will see day in November of 2011.
+                </p>
+
+				<h2>Our mission</h2>
+				<p>
+					ArcBees’ mission is to be an active and influent member of the
+					open source
+					community, while offering simple solutions and products
+					which draw
+					on cloud technologies. The company promises to make
+					available new
+					technologies for experts as well as neophytes, while
+					sharing its
+					knowledge with other developers.
+				</p>
+
+				<p>
+					ArcBees’ objectives are to:
+					<ul>
+						<li>Deliver applications which answer the highest industry quality
+							criteria; </li>
+						<li>Assure clients with a pleasing experience thanks to products
+							offering the simplest interface and which only use the latest
+							technologies;</li>
+						<li>Profit from the advantages of cloud technologies in order to
+							allow clients to answer automatically to demand fluctuation at
+							the lowest cost;</li>
+						<li>Allow companies to migrate from their static Web sites, made
+							for PC consultation, to company WebApps optimised for different
+							devices such as mobile phones, tablets or WebTV;</li>
+						<li>Encourage a rich ecosystem of developers to install a
+							diversified application market, allowing companies to personalise
+							their WebApp.</li>
+					</ul>
+				</p>
+
+				<p>In order to anticipate and answer to the emergent needs, offered
+					products are innovative and open the way to setting up applications
+					and services which were inaccessible or unknown to the general
+					public. In that sense, ArcBees’ innovative wallet, combined to the
+					invested efforts will rush the company towards the title of leader
+					in the Web domain.</p>
+
+				<h2>Our Bees</h2>
+				<g:Image resource="{res.aboutChristian}" styleName="{style.imgFloatLeft}" />
+				<h3>Christian Goudreau</h3>
+				<p>In the last five years, Christian has been chef developer, for
+					different companies, of many Web applications based on cloud. He is
+					a passionate development and software engineering autodidact. His
+					implication is directly linked to the success of many open source
+					project, namely GWT-platform and Jukito. Christian has always
+					assumed a leading role academically as well as socially. He is the
+					president of Arcbees.</p>
+				<p>In his computing studies, Christian received two excellence
+					bursaries for his academic results. He has also been at the head of
+					the entrepreneur club, of the grad committee and of Cégep
+					d’Abitibi-Téminiscamingue’s floor hockey league. Today, student at
+					Laval University, he is a program and analysis manager at the
+					Professional Administrative Staff Association of Laval University
+					(PASALU). In his functions, Christian is in charge of an important
+					data base system restructuration project. He is also involved in
+					the student-body association as Treasurer for 2011-2012. He
+					participates in Inter-University computing competitions such as the
+					CSGames. Entrepreneurship passionate, he has built two companies in
+					the field of computers and technology components which he has
+					skilfully made cost-effective.</p>
+
+				<g:Image resource="{res.aboutPhilippe}" styleName="{style.imgFloatLeft}" />
+				<h3>Philippe Beaudoin</h3>
+				<p>Philippe is a computing doctorate from Montreal University and
+					has been a postdoctoral researcher at the computing department of
+					British-Colombia University. His research has given way to more
+					than 15 publications, many of which have had an important impact in
+					robotics and computer animation. He also has 15 years of experience
+					in the industry having worked in the gaming business, in the field
+					of graphic hardware – where his work has given him a patent – and
+					also in the development of Web applications. He has particularly
+					intervened as chef developer on BookedIN.net, a GWT-Platform based
+					application, which is in list to be presented to Google I/O 2011’s
+					Developer Sandbox</p>
+
+				<p>Very active in the world of open source, Philip has contributed
+					to the
+					development of Google Chrome and has initiated the
+					GWT-Platform and
+					Jukito projects. His success and his communicative
+					skills have
+					given him the opportunity to be invited at the
+					PrairieDevCon as
+					guest speaker, as well as at Google I/O 2011 to
+					present
+					GWT-platform. Philippe regularly keeps in touch with GWT
+					developers, allowing ArcBees products not only to be at the
+					avant-garde, but also to influence the direction of future
+					technological development. Philippe is research and development
+					vice-president at Arcbees, where his expertise allows the
+					companies’ products to stand out at a technique level.</p>
+
+				<g:Image resource="{res.aboutDavid}" styleName="{style.imgFloatLeft}" />
+				<h3>David Marcotte</h3>
+				<p>David has shown a strong interest in visual communication, which
+					is an important asset for every company’s success. More than his
+					training in new media creation at Université du Québec en
+					Abitibi-Téminiscamingue (UQAT), he learnt to handle different
+					graphic languages and their complex specific use, be it on the web
+					or for printing. Multidisciplinary in the heart, he is a
+					prizewinner and lends his artistic talent to different project
+					around Quebec. His expertise spreads from working with non-profit
+					organisations, young small companies such as the Cirque du Soleil –
+					for whom he was photograph of the association gala between the
+					circus and the UQUAT; association aiming at producing a
+					stereoscopic augmented reality presented simultaneously to an
+					acrobatic performance.</p>
+
+				<p>For five years now, David has been working as a graphic
+					communication
+					freelancer. The devotion and relentlessness of this
+					autodidact
+					artist brings him to push the domain’s limits. Always
+					looking for
+					new imagery technology, David is actually at perfecting
+					his studies
+					at Montreal’s National Design and Animation Center by
+					taking 3D
+					design classes. Combining bidimensional and tridimensional
+					synthesis imaging to new avant-gardist technologies, David is sure
+					to give an outstanding image and an identity to any of Arcbees’
+					products. David is the Communication Vice-President.</p>
+
+				<g:Image resource="{res.aboutFrancis}" styleName="{style.imgFloatLeft}" />
+				<h3>Francis Ménard</h3>
+				<p>Francis has undertaken his career in online commercial sales
+					development and application development for different clients. It
+					is through his work and by a high demand that he has specialised,
+					through the years, in telecommunication project management and
+					delivery, and this, in his own consultant firm which he has managed
+					for ten years now. Autodidact, his attention to solve actual
+					company problems pushes him to always be on top of new
+					technological advances. With his consultant services, he answers to
+					an ever growing demand which allows him to deliver projects in
+					Canada and in the U.S.</p>
+					
+				<p>Moreover, Francis is proud of his implication in the management of Institut
+					Douceur Corporelle, a cosmetic clinic. Founded 11 years ago, this
+					company shows an annual growth of 10 to 25%, since its beginning.
+					Therefore, Francis’ expertise and dedication guaranties the
+					objectives of ArcBees to be realist. Francis is the finance
+					vice-president at ArcBees.</p>
+			</div>
+		</div>
+
+		<div class="{res.style.blogDown}" />
+		<div class="{res.style.sloganCoinGauche}" />
+		<div class="{res.style.sloganCoinDroit}" />
+	</g:HTMLPanel>
+</ui:UiBinder>

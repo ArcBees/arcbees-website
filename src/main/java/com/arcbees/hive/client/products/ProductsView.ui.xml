@@ -1,0 +1,99 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+    xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+    <ui:with field="res" type="com.arcbees.hive.client.resources.Resources" />
+
+    <ui:style>
+        .sectionText {
+          margin-left: 176px;
+          text-align: justify;
+        }
+        
+        .imgFloatLeft {
+          float: left;
+          margin-left: 15px;
+        }
+        
+        .section {
+          position: relative;
+          width: 804px;
+          margin-left: 61px;
+          margin-top: 41px;
+          margin-bottom: 41px;
+          min-height: 300px;
+        }
+        
+        .textAlignRight {
+          text-align: right;
+        }
+        
+        .marginBottom {
+          margin-bottom: 35px;
+        }
+    </ui:style>
+
+    <g:HTMLPanel styleName="{res.style.blogBackground}">
+        <div class="{res.style.blogLeftFull}" />
+        <div class="{res.style.blogRightFull}" />
+
+        <div class="{style.section}">
+            <g:Image resource="{res.productGWTP}" styleName="{style.imgFloatLeft}" />
+
+            <div class="{style.sectionText} {style.marginBottom}">
+                <p>
+                    <strong>GWT-Platform (GWTP) is the most popular Model-View-Presenter framework
+                    for the Google Web Toolkit, ensuring your GWT application will be built
+                    according to the best practices of the industry.</strong>
+                    GWTP speeds up the development of Web applications and is particularly useful to
+                    ensure the quality and maintainability of large-scale webapps. This open source
+                    framework, introduced by ArcBees in early 2010, has known rapid growth thanks
+                    to its widespread adoption. Its situation as the number one MVP framework for
+                    GWT has led to ArcBees being invited to present it at the prestigions Google I/O
+                    conference in 2011. GWT-Platform is composed of different modules including the
+                    MVP framework itself, a command pattern module, a service to make modern webapps
+                    crawlable by search engines, and tools to help with various facets of GWT 
+                    project developement.
+                </p>
+
+                <p class="{style.textAlignRight}">
+                    <a href="http://www.gwtplatform.com/">GWT-Platform's development web site</a>
+                    <br />
+                    <a
+                        href="http://code.google.com/p/gwt-platform/wiki/GettingStarted?tm=6">GWT-Platform's documentation</a>
+                    <br />
+                    <a
+                        href="https://groups.google.com/forum/#!forum/gwt-platform">GWT-Platform's mailing list</a>
+                </p>
+            </div>
+
+            <g:Image resource="{res.productJUKITO}" styleName="{style.imgFloatLeft}" />
+
+            <div class="{style.sectionText}">
+                <p>
+                    <strong>Jukito complements your testing infrastructure by letting you rely on
+                    the power of dependency injection directly in your tests.</strong> Jukito's
+                    auto-mocking mechanism will dramatically reduce the size of your test classes,
+                    leading to tests that are both more reasable and easier to maintain. Jukito is
+                    a very light-weight addition to your testing infrastructure and its use can
+                    easily be combined with other testing technologies. It is therefore easy to
+                    adopt Jukito midway through a project, letting you gradually simplify your
+                    testing code.
+                </p>
+
+                <p class="{style.textAlignRight}">
+                    <a href="http://www.jukito.org/">Jukito's development web site</a>
+                    <br />
+                    <a
+                        href="http://code.google.com/p/jukito/wiki/GettingStarted?tm=6">Jukito's documentation</a>
+                    <br />
+                    <a href="https://groups.google.com/forum/#!forum/jukito">Jukito's mailing list</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="{res.style.blogDown}" />
+        <div class="{res.style.sloganCoinGauche}" />
+        <div class="{res.style.sloganCoinDroit}" />
+    </g:HTMLPanel>
+</ui:UiBinder>

@@ -16,8 +16,9 @@
 
 package com.arcbees.hive.client.home.successstory;
 
+
+import com.arcbees.core.client.mvp.ViewImpl;
 import com.arcbees.hive.client.home.successstory.SuccessStoryPresenter.MyView;
-import com.arcbees.hive.client.mvp.ViewImpl;
 
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.user.client.ui.Widget;

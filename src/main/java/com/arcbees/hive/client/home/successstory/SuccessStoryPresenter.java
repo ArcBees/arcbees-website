@@ -20,9 +20,9 @@ import com.arcbees.hive.client.home.HomePresenter;
 import com.arcbees.hive.client.home.event.ResizeEvent;
 import com.arcbees.hive.client.place.NameTokens;
 
-import com.google.gwt.event.shared.EventBus;
 import com.google.inject.Inject;
 
+import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.annotations.NameToken;

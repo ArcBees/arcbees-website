@@ -19,9 +19,7 @@ package com.arcbees.hive.client.service;
 import com.arcbees.hive.client.common.AppPresenter;
 import com.arcbees.hive.client.home.event.ResizeEvent;
 import com.arcbees.hive.client.place.NameTokens;
-
-import com.google.gwt.event.shared.EventBus;
-
+import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.annotations.NameToken;

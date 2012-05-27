@@ -28,12 +28,10 @@ import com.arcbees.hive.client.jobs.JobsPresenter;
 import com.arcbees.hive.client.products.ProductsPresenter;
 import com.arcbees.hive.client.resources.Resources;
 import com.arcbees.hive.client.service.ServicePresenter;
-
-import com.google.gwt.event.shared.EventBus;
 import com.google.gwt.inject.client.GinModules;
 import com.google.gwt.inject.client.Ginjector;
 import com.google.inject.Provider;
-
+import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.proxy.PlaceManager;
 
 /**

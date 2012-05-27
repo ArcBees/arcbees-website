@@ -7,13 +7,21 @@
     <groupId>com.arcbees</groupId>
     <artifactId>arcbeeswebsite</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
+    <name>MyProject</name>
 
     <properties>
         <target.jdk>1.6</target.jdk>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
+        <maven-surefire-plugin.version>2.6</maven-surefire-plugin.version>
+        <maven-compiler-plugin.version>2.3.2</maven-compiler-plugin.version>
+        <maven-gae-plugin.version>0.9.2</maven-gae-plugin.version>
+        <gwt-maven-plugin.version>2.4.0</gwt-maven-plugin.version>
+
         <gwt.version>2.4.0</gwt.version>
+        <gae.version>1.6.3.1</gae.version>
         <gwtp.version>0.8-SNAPSHOT</gwtp.version>
         <arcbees-core.version>1.0-SNAPSHOT</arcbees-core.version>
         <gwtquery-version>1.1.0</gwtquery-version>
@@ -155,5 +163,94 @@
         </dependency>
 
     </dependencies>
+
+    <build>
+        <!--suppress MavenModelInspection -->
+        <outputDirectory>${webappDirectory}/WEB-INF/classes</outputDirectory>
+
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>gwt-maven-plugin</artifactId>
+                <version>${gwt-maven-plugin.version}</version>
+
+                <executions>
+                    <execution>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>compile</goal>
+                        </goals>
+                    </execution>
+                </executions>
+
+                <configuration>
+                    <appEngineVersion>${gae.version}</appEngineVersion>
+                    <server>com.google.appengine.tools.development.gwt.AppEngineLauncher</server>
+
+                    <bindAddress>localhost</bindAddress>
+                    <runTarget>plomberielaroche.html</runTarget>
+                    <extraJvmArgs>-Xmx512m -Xss1024k</extraJvmArgs>
+                    <hostedWebapp>${webappDirectory}</hostedWebapp>
+                    <copyWebapp>true</copyWebapp>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler-plugin.version}</version>
+                <configuration>
+                    <source>${target.jdk}</source>
+                    <target>${target.jdk}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                    <!-- Disable annotation processors during normal compilation -->
+                    <proc>none</proc>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${maven-surefire-plugin.version}</version>
+                <configuration>
+                    <includes>
+                        <include>**/*Test.java</include>
+                        <include>**/*TestCase.java</include>
+                    </includes>
+                    <excludes>
+                        <exclude>**/*GwtTest.java</exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>net.kindleit</groupId>
+                <artifactId>maven-gae-plugin</artifactId>
+                <version>${maven-gae-plugin.version}</version>
+                <configuration>
+                    <unpackVersion>${gae.version}</unpackVersion>
+                    <serverId>appengine.google.com</serverId>
+                </configuration>
+
+                <executions>
+                    <execution>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>unpack</goal>
+                        </goals>
+                    </execution>
+                </executions>
+
+                <dependencies>
+                    <dependency>
+                        <groupId>net.kindleit</groupId>
+                        <artifactId>gae-runtime</artifactId>
+                        <version>1.6.3</version>
+                        <type>pom</type>
+                    </dependency>
+                </dependencies>
+            </plugin>
+        </plugins>
+    </build>
     
 </project>

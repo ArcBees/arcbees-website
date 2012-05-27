@@ -16,8 +16,8 @@
 
 package com.arcbees.hive.client.common;
 
-import com.arcbees.hive.client.mvp.strategies.UiHandlersStrategy;
-import com.arcbees.hive.client.mvp.strategies.uihandlers.ProviderUiHandlersStrategy;
+import com.arcbees.core.client.mvp.uihandlers.ProviderUiHandlersStrategy;
+import com.arcbees.core.client.mvp.uihandlers.UiHandlersStrategy;
 import com.google.inject.TypeLiteral;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
@@ -25,21 +25,21 @@ import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
  * @author Christian Goudreau
  */
 public class CommonModule extends AbstractPresenterModule {
-  @Override
-  protected void configure() {
-    bindPresenter(AppPresenter.class, AppPresenter.MyView.class, AppView.class,
-        AppPresenter.MyProxy.class);
+    @Override
+    protected void configure() {
+        bindPresenter(AppPresenter.class, AppPresenter.MyView.class, AppView.class,
+                AppPresenter.MyProxy.class);
 
-    bindSingletonPresenterWidget(HeaderPresenter.class,
-        HeaderPresenter.MyView.class, HeaderView.class);
-    bindSingletonPresenterWidget(FooterPresenter.class,
-        FooterPresenter.MyView.class, FooterView.class);
-    
-    bind(HeaderUiHandlers.class).to(HeaderPresenter.class);
-    
-    bind(new TypeLiteral<UiHandlersStrategy<HeaderUiHandlers>>() {
-    }).to(
-        new TypeLiteral<ProviderUiHandlersStrategy<HeaderUiHandlers>>() {
-        });
-  }
+        bindSingletonPresenterWidget(HeaderPresenter.class,
+                HeaderPresenter.MyView.class, HeaderView.class);
+        bindSingletonPresenterWidget(FooterPresenter.class,
+                FooterPresenter.MyView.class, FooterView.class);
+
+        bind(HeaderUiHandlers.class).to(HeaderPresenter.class);
+
+        bind(new TypeLiteral<UiHandlersStrategy<HeaderUiHandlers>>() {
+        }).to(
+                new TypeLiteral<ProviderUiHandlersStrategy<HeaderUiHandlers>>() {
+                });
+    }
 }

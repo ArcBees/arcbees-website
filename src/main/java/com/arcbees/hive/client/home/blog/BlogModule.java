@@ -16,17 +16,15 @@
 
 package com.arcbees.hive.client.home.blog;
 
+import com.arcbees.core.client.mvp.uihandlers.ProviderUiHandlersStrategy;
+import com.arcbees.core.client.mvp.uihandlers.UiHandlersStrategy;
 import com.arcbees.hive.client.home.blog.ui.BlogItemWidgetFactory;
-import com.arcbees.hive.client.mvp.strategies.UiHandlersStrategy;
-import com.arcbees.hive.client.mvp.strategies.uihandlers.ProviderUiHandlersStrategy;
-
 import com.google.gwt.i18n.client.DateTimeFormat;
 import com.google.gwt.inject.client.assistedinject.GinFactoryModuleBuilder;
 import com.google.inject.Provides;
 import com.google.inject.Singleton;
 import com.google.inject.TypeLiteral;
 import com.google.inject.name.Named;
-
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
 /**

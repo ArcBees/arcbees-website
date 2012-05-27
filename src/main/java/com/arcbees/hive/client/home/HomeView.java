@@ -16,9 +16,9 @@
 
 package com.arcbees.hive.client.home;
 
+import com.arcbees.core.client.mvp.ViewWithUiHandlers;
+import com.arcbees.core.client.mvp.uihandlers.UiHandlersStrategy;
 import com.arcbees.hive.client.home.HomePresenter.MyView;
-import com.arcbees.hive.client.mvp.ViewWithUiHandlers;
-import com.arcbees.hive.client.mvp.strategies.UiHandlersStrategy;
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.query.client.Function;
 import com.google.gwt.query.client.Properties;

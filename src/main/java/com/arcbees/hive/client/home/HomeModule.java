@@ -16,6 +16,8 @@
 
 package com.arcbees.hive.client.home;
 
+import com.arcbees.core.client.mvp.uihandlers.ProviderUiHandlersStrategy;
+import com.arcbees.core.client.mvp.uihandlers.UiHandlersStrategy;
 import com.arcbees.hive.client.home.blog.BlogModule;
 import com.arcbees.hive.client.home.consulting.ConsultingPresenter;
 import com.arcbees.hive.client.home.consulting.ConsultingView;
@@ -24,11 +26,7 @@ import com.arcbees.hive.client.home.development.DevelopmentView;
 import com.arcbees.hive.client.home.slogan.SloganModule;
 import com.arcbees.hive.client.home.successstory.SuccessStoryPresenter;
 import com.arcbees.hive.client.home.successstory.SuccessStoryView;
-import com.arcbees.hive.client.mvp.strategies.UiHandlersStrategy;
-import com.arcbees.hive.client.mvp.strategies.uihandlers.ProviderUiHandlersStrategy;
-
 import com.google.inject.TypeLiteral;
-
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
 /**

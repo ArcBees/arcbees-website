@@ -16,8 +16,8 @@
 
 package com.arcbees.hive.client.common;
 
+import com.arcbees.core.client.mvp.ViewImpl;
 import com.arcbees.hive.client.common.AppPresenter.MyView;
-import com.arcbees.hive.client.mvp.ViewImpl;
 import com.arcbees.hive.client.place.AppIds;
 
 import static com.google.gwt.query.client.GQuery.$;
@@ -112,7 +112,6 @@ public class AppView extends ViewImpl implements MyView {
    * 
    * @param fadeBlock The fade block to show.
    * @param element The {@link Element} of the second block to hide.
-   * @param desc The description of the first block to set.
    */
   private void switchFade(HTMLPanel fadeBlock, Element element, Widget content) {
     fadeBlock.clear();

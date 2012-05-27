@@ -16,20 +16,17 @@
 
 package com.arcbees.hive.client.home.blog;
 
+import com.arcbees.core.client.mvp.ViewWithUiHandlers;
+import com.arcbees.core.client.mvp.uihandlers.UiHandlersStrategy;
 import com.arcbees.hive.client.home.blog.BlogPresenter.MyView;
 import com.arcbees.hive.client.home.blog.ui.BlogItemWidget;
 import com.arcbees.hive.client.home.blog.ui.BlogItemWidgetFactory;
-import com.arcbees.hive.client.mvp.ViewWithUiHandlers;
-import com.arcbees.hive.client.mvp.strategies.UiHandlersStrategy;
 import com.arcbees.hive.shared.home.blog.BlogItem;
-
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.HTMLPanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
-
-import com.gwtplatform.mvp.client.UiHandlers;
 
 import java.util.List;
 

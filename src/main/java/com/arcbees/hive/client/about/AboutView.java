@@ -16,8 +16,8 @@
 
 package com.arcbees.hive.client.about;
 
+import com.arcbees.core.client.mvp.ViewImpl;
 import com.arcbees.hive.client.about.AboutPresenter.MyView;
-import com.arcbees.hive.client.mvp.ViewImpl;
 
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.user.client.ui.Widget;

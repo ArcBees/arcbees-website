@@ -16,10 +16,10 @@
 
 package com.arcbees.hive.client.home.blog;
 
+import com.arcbees.core.client.mvp.uihandlers.UiHandlersStrategy;
 import com.arcbees.hive.client.home.blog.BlogView.Binder;
 import com.arcbees.hive.client.home.blog.ui.BlogItemWidget;
 import com.arcbees.hive.client.home.blog.ui.BlogItemWidgetFactory;
-import com.arcbees.hive.client.mvp.strategies.UiHandlersStrategy;
 import com.arcbees.hive.shared.home.blog.BlogItem;
 import com.arcbees.hive.testutil.MockitoMockFactory;
 import com.arcbees.hive.testutil.ViewTestBase;

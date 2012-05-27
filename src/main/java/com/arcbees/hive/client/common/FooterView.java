@@ -16,8 +16,8 @@
 
 package com.arcbees.hive.client.common;
 
+import com.arcbees.core.client.mvp.ViewImpl;
 import com.arcbees.hive.client.common.FooterPresenter.MyView;
-import com.arcbees.hive.client.mvp.ViewImpl;
 
 import com.google.gwt.safehtml.client.SafeHtmlTemplates;
 import com.google.gwt.safehtml.shared.SafeHtml;

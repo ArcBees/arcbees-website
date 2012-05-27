@@ -16,9 +16,8 @@
 
 package com.arcbees.hive.client.jobs;
 
+import com.arcbees.core.client.mvp.ViewImpl;
 import com.arcbees.hive.client.jobs.JobsPresenter.MyView;
-import com.arcbees.hive.client.mvp.ViewImpl;
-
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;

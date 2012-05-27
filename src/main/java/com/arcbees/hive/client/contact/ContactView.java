@@ -16,9 +16,8 @@
 
 package com.arcbees.hive.client.contact;
 
+import com.arcbees.core.client.mvp.ViewImpl;
 import com.arcbees.hive.client.contact.ContactPresenter.MyView;
-import com.arcbees.hive.client.mvp.ViewImpl;
-
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;

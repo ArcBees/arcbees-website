@@ -16,9 +16,8 @@
 
 package com.arcbees.hive.client.home.development;
 
+import com.arcbees.core.client.mvp.ViewImpl;
 import com.arcbees.hive.client.home.development.DevelopmentPresenter.MyView;
-import com.arcbees.hive.client.mvp.ViewImpl;
-
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
@@ -27,7 +26,7 @@ import com.google.inject.Inject;
  * @author Christian Goudreau
  */
 public class DevelopmentView extends
-    ViewImpl implements MyView {
+        ViewImpl implements MyView {
   /**
    * {@link DevelopmentView}'s {@link UiBinder}.
    */

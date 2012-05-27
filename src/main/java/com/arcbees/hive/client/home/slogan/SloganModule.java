@@ -16,11 +16,9 @@
 
 package com.arcbees.hive.client.home.slogan;
 
-import com.arcbees.hive.client.mvp.strategies.UiHandlersStrategy;
-import com.arcbees.hive.client.mvp.strategies.uihandlers.ProviderUiHandlersStrategy;
-
+import com.arcbees.core.client.mvp.uihandlers.ProviderUiHandlersStrategy;
+import com.arcbees.core.client.mvp.uihandlers.UiHandlersStrategy;
 import com.google.inject.TypeLiteral;
-
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
 /**

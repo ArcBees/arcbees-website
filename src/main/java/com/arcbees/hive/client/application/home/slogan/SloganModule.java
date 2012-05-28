@@ -21,9 +21,6 @@ import com.arcbees.core.client.mvp.uihandlers.UiHandlersStrategy;
 import com.google.inject.TypeLiteral;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
-/**
- * @author Zachary Keatts
- */
 public class SloganModule extends AbstractPresenterModule {
     @Override
     protected void configure() {

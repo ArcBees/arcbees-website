@@ -22,16 +22,7 @@ import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 
-/**
- * @author Zachary Keatts
- */
 public class JobsView extends ViewImpl implements MyView {
-
-    /**
-     * This will provide a way to automatically create and inject the
-     * {@link com.gwtplatform.mvp.client.View} instead of using directly
-     * <code>gwt.create()</code>. You only have to inject it in the ctor.
-     */
     public interface Binder extends UiBinder<Widget, JobsView> {
     }
 

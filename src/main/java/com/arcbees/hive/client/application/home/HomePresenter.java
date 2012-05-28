@@ -31,22 +31,13 @@ import com.gwtplatform.mvp.client.annotations.ProxyEvent;
 import com.gwtplatform.mvp.client.annotations.ProxyStandard;
 import com.gwtplatform.mvp.client.proxy.*;
 
-/**
- * @author Christian Goudreau
- */
 public class HomePresenter extends
         Presenter<HomePresenter.MyView, HomePresenter.MyProxy> implements
         HomeUiHandlers, ResizeHandler, NavigationHandler {
-    /**
-     * {@link HomePresenter}'s proxy.
-     */
     @ProxyStandard
     public interface MyProxy extends Proxy<HomePresenter> {
     }
 
-    /**
-     * {@link HomePresenter}'s view.
-     */
     public interface MyView extends View {
         void resizeSlot(Object slot, Integer size);
     }

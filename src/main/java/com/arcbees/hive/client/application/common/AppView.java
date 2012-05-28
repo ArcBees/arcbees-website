@@ -37,9 +37,6 @@ import com.google.inject.Inject;
  * @author Christian Goudreau
  */
 public class AppView extends ViewImpl implements MyView {
-    /**
-     * {@link AppView}'s {@link UiBinder}.
-     */
     public interface Binder extends UiBinder<Widget, AppView> {
     }
 

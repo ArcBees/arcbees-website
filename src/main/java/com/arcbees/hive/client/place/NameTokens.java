@@ -16,10 +16,6 @@
 
 package com.arcbees.hive.client.place;
 
-/**
- * @author Christian Goudreau
- * @author Zachary Keatts
- */
 public class NameTokens {
     public static final String blog = "!blog";
     public static final String service = "!service";

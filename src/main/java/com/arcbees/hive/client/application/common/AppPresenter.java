@@ -29,22 +29,12 @@ import com.gwtplatform.mvp.client.proxy.Proxy;
 import com.gwtplatform.mvp.client.proxy.RevealContentHandler;
 import com.gwtplatform.mvp.client.proxy.RevealRootContentEvent;
 
-/**
- * @author Christian Goudreau
- */
 public class AppPresenter extends
         Presenter<AppPresenter.MyView, AppPresenter.MyProxy> implements ResizeHandler {
-
-    /**
-     * {@link AppPresenter}'s proxy.
-     */
     @ProxyStandard
     public interface MyProxy extends Proxy<AppPresenter> {
     }
 
-    /**
-     * {@link AppPresenter}'s view.
-     */
     public interface MyView extends View {
         void resizeSlot(Object slot, Integer size);
     }

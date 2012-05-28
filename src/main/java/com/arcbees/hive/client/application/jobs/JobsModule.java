@@ -18,11 +18,7 @@ package com.arcbees.hive.client.application.jobs;
 
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
-/**
- * @author Zachary Keatts
- */
 public class JobsModule extends AbstractPresenterModule {
-
     @Override
     protected void configure() {
         bindPresenter(JobsPresenter.class, JobsPresenter.MyView.class,

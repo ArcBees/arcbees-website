@@ -22,10 +22,6 @@ import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
 
-/**
- * @param <T> Type du callback
- * @author Christian Goudreau
- */
 public abstract class AsyncCallbackImpl<T> implements AsyncCallback<T>, HasHandlers {
     @Inject
     protected static EventBus eventBus;

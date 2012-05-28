@@ -28,13 +28,7 @@ import com.gwtplatform.dispatch.shared.DispatchAsync;
 import com.gwtplatform.mvp.client.PresenterWidget;
 import com.gwtplatform.mvp.client.View;
 
-/**
- * @author Christian Goudreau
- */
 public class FooterPresenter extends PresenterWidget<FooterPresenter.MyView> {
-    /**
-     * {@link FooterPresenter}'s view.
-     */
     public interface MyView extends View {
         void buildRecentNewsHyperlink(String display, String link);
     }

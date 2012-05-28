@@ -28,18 +28,7 @@ import com.google.inject.Inject;
 import com.google.inject.assistedinject.Assisted;
 import com.google.inject.name.Named;
 
-/**
- * BlogItem view that represent the visual result of a
- * {@link com.arcbees.hive.shared.home.blog.BlogItem}.
- *
- * @author Christian Goudreau
- */
 public class BlogItemWidget extends Composite {
-    /**
-     * This will provide a way to automatically create and inject the
-     * {@link com.gwtplatform.mvp.client.View} instead of using directly
-     * <code>gwt.create()</code>. You only have to inject it in the ctor.
-     */
     public interface Binder extends UiBinder<Widget, BlogItemWidget> {
     }
 
@@ -65,12 +54,6 @@ public class BlogItemWidget extends Composite {
         refresh(blogItem);
     }
 
-    /**
-     * This function will refresh the content of the widget with the
-     * {@link BlogItem} associated.
-     *
-     * @param blogItem The {@link BlogItem} that this widget will hold.
-     */
     private void refresh(BlogItem blogItem) {
         blogPostTitle.setHTML(blogItem.getTitle());
         blogPostDateAuthor.setHTML(dateTimeFormat.format(blogItem.getPubDate())

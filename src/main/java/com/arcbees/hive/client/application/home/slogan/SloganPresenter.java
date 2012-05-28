@@ -27,18 +27,9 @@ import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.proxy.PlaceManager;
 import com.gwtplatform.mvp.client.proxy.PlaceRequest;
 
-/**
- * @author Christian Goudreau
- * @author Zachary Keatts
- */
 public class SloganPresenter extends PresenterWidget<SloganPresenter.MyView>
         implements SloganUiHandlers {
-
-    /**
-     * {@link SloganPresenter}'s view.
-     */
     public interface MyView extends View {
-
         /**
          * A description is activated at all times for the slogan. This method is in
          * charge of changing that description as well as managing the special

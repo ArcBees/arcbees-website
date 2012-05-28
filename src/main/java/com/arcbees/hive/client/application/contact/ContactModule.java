@@ -18,11 +18,7 @@ package com.arcbees.hive.client.application.contact;
 
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
-/**
- * @author Zachary Keatts
- */
 public class ContactModule extends AbstractPresenterModule {
-
     @Override
     protected void configure() {
         bindPresenter(ContactPresenter.class, ContactPresenter.MyView.class,

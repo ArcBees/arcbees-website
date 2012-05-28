@@ -28,20 +28,11 @@ import com.gwtplatform.mvp.client.annotations.ProxyStandard;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 import com.gwtplatform.mvp.client.proxy.RevealContentEvent;
 
-/**
- * @author Christian Goudreau
- */
 public class DevelopmentPresenter extends
         Presenter<DevelopmentPresenter.MyView, DevelopmentPresenter.MyProxy> {
-    /**
-     * {@link DevelopmentPresenter}'s {@link View}.
-     */
     public interface MyView extends View {
     }
 
-    /**
-     * {@link DevelopmentPresenter}'s {@link ProxyPlace}.
-     */
     @ProxyStandard
     @NameToken(NameTokens.development)
     public interface MyProxy extends ProxyPlace<DevelopmentPresenter> {

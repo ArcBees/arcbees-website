@@ -35,29 +35,15 @@ import com.gwtplatform.mvp.client.proxy.RevealContentEvent;
 
 import java.util.List;
 
-/**
- * @author Christian Goudreau
- */
 public class BlogPresenter extends
         Presenter<BlogPresenter.MyView, BlogPresenter.MyProxy> implements
         BlogUiHandlers {
-    /**
-     * {@link BlogPresenter}'s proxy.
-     */
     @ProxyStandard
     @NameToken(NameTokens.blog)
     public interface MyProxy extends ProxyPlace<BlogPresenter> {
     }
 
-    /**
-     * {@link HomePresenter}'s view.
-     */
     public interface MyView extends View {
-        /**
-         * Set the list of {@link BlogItem}s to add inside the {@link BlogView}.
-         *
-         * @param blogItems The {@link BlogItem}'s list.
-         */
         void setBlogItems(List<BlogItem> blogItems);
     }
 

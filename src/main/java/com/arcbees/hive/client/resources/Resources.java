@@ -22,10 +22,6 @@ import com.google.gwt.resources.client.ImageResource;
 import com.google.gwt.resources.client.ImageResource.ImageOptions;
 import com.google.gwt.resources.client.ImageResource.RepeatStyle;
 
-/**
- * @author Christian Goudreau
- * @author zkeatts
- */
 public interface Resources extends ClientBundle {
     Style style();
 

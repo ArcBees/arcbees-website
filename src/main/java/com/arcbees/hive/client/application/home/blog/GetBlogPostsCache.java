@@ -24,14 +24,6 @@ import com.google.inject.Inject;
 import com.gwtplatform.dispatch.client.actionhandler.caching.AbstractCachingClientActionHandler;
 import com.gwtplatform.dispatch.client.actionhandler.caching.Cache;
 
-/**
- * {@link com.gwtplatform.dispatch.client.actionhandler.ClientActionHandler}
- * that handle how {@link GetBlogPosts}
- * {@link com.gwtplatform.dispatch.shared.Action} are being stored in client
- * side {@link Cache}.
- *
- * @author Christian Goudreau
- */
 public class GetBlogPostsCache extends
         AbstractCachingClientActionHandler<GetBlogPosts, GetBlogPostsResult> {
     @Inject

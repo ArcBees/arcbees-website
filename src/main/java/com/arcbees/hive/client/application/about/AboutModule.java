@@ -18,9 +18,6 @@ package com.arcbees.hive.client.application.about;
 
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
-/**
- * @author Zachary Keatts
- */
 public class AboutModule extends AbstractPresenterModule {
 
     @Override

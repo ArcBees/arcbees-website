@@ -33,18 +33,8 @@ import java.util.Date;
 
 import static org.mockito.Mockito.verify;
 
-/**
- * Test class for {@link BlogItemWidgetFactory}.
- * 
- * @author Christian Goudreau
- */
 @RunWith(JukitoRunner.class)
 public class BlogItemWidgetTest {
-
-
-    /**
-   * Guice test module.
-   */
   public static class Module extends ViewTestModule {
     /**
      * Test {@link Binder} delegating createAndBindUi to {@link MockingBinder}.

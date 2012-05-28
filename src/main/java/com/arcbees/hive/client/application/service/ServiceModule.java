@@ -18,9 +18,6 @@ package com.arcbees.hive.client.application.service;
 
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
-/**
- * @author Zachary Keatts
- */
 public class ServiceModule extends AbstractPresenterModule {
     @Override
     protected void configure() {

@@ -26,9 +26,6 @@ import com.gwtplatform.mvp.client.proxy.PlaceManagerImpl;
 import com.gwtplatform.mvp.client.proxy.PlaceRequest;
 import com.gwtplatform.mvp.client.proxy.TokenFormatter;
 
-/**
- * @author Christian Goudreau
- */
 public class HivePlaceManager extends PlaceManagerImpl {
     private final PlaceRequest defaultPlaceRequest;
 

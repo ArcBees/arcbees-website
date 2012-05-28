@@ -34,9 +34,6 @@ import com.google.inject.Provider;
 import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.proxy.PlaceManager;
 
-/**
- * @author Christian Goudreau
- */
 @GinModules({ClientDispatchModule.class, ClientModule.class})
 public interface ClientGinjector extends Ginjector {
     EventBus getEventBus();

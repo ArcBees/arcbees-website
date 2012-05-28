@@ -30,14 +30,8 @@ import com.google.inject.Inject;
 
 import java.util.List;
 
-/**
- * @author Christian Goudreau
- */
 public class BlogView extends ViewWithUiHandlers<BlogUiHandlers>
         implements MyView {
-    /**
-     * {@link BlogView}'s {@link UiBinder}.
-     */
     public interface Binder extends UiBinder<Widget, BlogView> {
     }
 

@@ -33,16 +33,8 @@ import org.junit.runner.RunWith;
 
 import java.util.ArrayList;
 
-/**
- * Test class for {@link BlogPresenter}.
- * 
- * @author Christian Goudreau
- */
 @RunWith(JukitoRunner.class)
 public class BlogPresenterTest extends PresenterWidgetTestBase {
-  /**
-   * Guice test module.
-   */
   public static class Module extends PresenterTestModule {
     @Override
     protected void configurePresenterTest() {

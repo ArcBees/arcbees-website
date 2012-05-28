@@ -29,9 +29,6 @@ import com.arcbees.hive.client.application.home.successstory.SuccessStoryView;
 import com.google.inject.TypeLiteral;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
-/**
- * @author Christian Goudreau
- */
 public class HomeModule extends AbstractPresenterModule {
     @Override
     protected void configure() {

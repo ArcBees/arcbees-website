@@ -25,16 +25,7 @@ import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 
-/**
- * @author Christian Goudreau
- * @author Zachary Keatts
- */
 public class HeaderView extends ViewWithUiHandlers<HeaderUiHandlers> implements MyView {
-
-
-    /**
-     * {@link HeaderView}'s binder.
-     */
     public interface Binder extends UiBinder<Widget, HeaderView> {
     }
 

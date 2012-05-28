@@ -20,13 +20,7 @@ import com.google.gwt.event.shared.EventHandler;
 import com.google.gwt.event.shared.GwtEvent;
 import com.google.gwt.event.shared.HasHandlers;
 
-/**
- * @author Christian Goudreau
- */
 public class ResizeEvent extends GwtEvent<ResizeEvent.ResizeHandler> {
-    /**
-     * {@link ResizeEvent}'s {@link EventHandler}.
-     */
     public interface ResizeHandler extends EventHandler {
         void onResize(ResizeEvent event);
     }

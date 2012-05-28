@@ -27,9 +27,6 @@ import com.google.inject.TypeLiteral;
 import com.google.inject.name.Named;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
-/**
- * @author Christian Goudreau
- */
 public class BlogModule extends AbstractPresenterModule {
     @Override
     protected void configure() {

@@ -34,14 +34,8 @@ import com.google.inject.Inject;
 import static com.google.gwt.query.client.GQuery.$;
 import static com.google.gwt.query.client.plugins.Effects.Effects;
 
-/**
- * @author Christian Goudreau
- */
 public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
         MyView {
-    /**
-     * {@link HomeView}'s {@link UiBinder}.
-     */
     public interface Binder extends UiBinder<Widget, HomeView> {
     }
 

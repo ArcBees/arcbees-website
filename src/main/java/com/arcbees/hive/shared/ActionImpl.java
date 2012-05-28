@@ -19,10 +19,6 @@ package com.arcbees.hive.shared;
 import com.gwtplatform.dispatch.shared.Action;
 import com.gwtplatform.dispatch.shared.Result;
 
-/**
- * @param <R> Type de résultat.
- * @author Christian Goudreau
- */
 public abstract class ActionImpl<R extends Result> implements Action<R> {
     @Override
     public boolean equals(Object obj) {

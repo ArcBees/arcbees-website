@@ -23,20 +23,11 @@ import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.UiHandlers;
 
-/**
- * @author Christian Goudreau
- */
 public class ConsultingView extends
         ViewImpl implements MyView {
-    /**
-     * {@link ConsultingView}'s {@link UiBinder}.
-     */
     public interface Binder extends UiBinder<Widget, ConsultingView> {
     }
 
-    /**
-     * {@link ConsultingView}'s {@link UiHandlers}.
-     */
     public interface MyUiHandlers extends UiHandlers {
         void resize(Integer size);
     }

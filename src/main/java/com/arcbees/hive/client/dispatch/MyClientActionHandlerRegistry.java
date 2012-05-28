@@ -22,15 +22,6 @@ import com.google.inject.Inject;
 
 import com.gwtplatform.dispatch.client.actionhandler.DefaultClientActionHandlerRegistry;
 
-/**
- * Registry that register every
- * {@link com.gwtplatform.dispatch.client.actionhandler.ClientActionHandler} for
- * this application. Every action that need to be cached should use an
- * {@link com.gwtplatform.dispatch.client.actionhandler.caching.AbstractCachingClientActionHandler}
- * and register it here.
- *
- * @author Christian Goudreau
- */
 public class MyClientActionHandlerRegistry extends
         DefaultClientActionHandlerRegistry {
     @Inject

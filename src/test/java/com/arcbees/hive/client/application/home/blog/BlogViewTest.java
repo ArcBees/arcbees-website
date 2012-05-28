@@ -41,16 +41,8 @@ import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
-/**
- * Test class for {@link BlogView}.
- * 
- * @author Christian Goudreau
- */
 @RunWith(JukitoRunner.class)
 public class BlogViewTest extends ViewTestBase {
-  /**
-   * Guice test module.
-   */
   public static class Module extends ViewTestModule {
     /**
      * Test {@link Binder} delegating createAndBindUi to {@link MockingBinder}.

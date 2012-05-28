@@ -30,21 +30,11 @@ import com.gwtplatform.mvp.client.annotations.ProxyStandard;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 import com.gwtplatform.mvp.client.proxy.RevealContentEvent;
 
-/**
- * @author Christian Goudreau
- */
 public class SuccessStoryPresenter extends
         Presenter<SuccessStoryPresenter.MyView, SuccessStoryPresenter.MyProxy> {
-
-    /**
-     * {@link SuccessStoryPresenter}'s {@link View}.
-     */
     public interface MyView extends View {
     }
 
-    /**
-     * {@link SuccessStoryPresenter}'s {@link ProxyPlace}.
-     */
     @ProxyStandard
     @NameToken(NameTokens.successStory)
     public interface MyProxy extends ProxyPlace<SuccessStoryPresenter> {

@@ -19,12 +19,6 @@ package com.arcbees.hive.shared.home.blog;
 import java.io.Serializable;
 import java.util.Date;
 
-/**
- * DTO meant to encapsulate blog posts retrieved for ArcBees's blog by reading
- * the RSS.
- *
- * @author Christian Goudreau
- */
 public class BlogItem implements Serializable {
     private static final long serialVersionUID = -352198600153858944L;
 

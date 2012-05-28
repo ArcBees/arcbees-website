@@ -18,11 +18,7 @@ package com.arcbees.hive.client.application.products;
 
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
-/**
- * @author Zachary Keatts
- */
 public class ProductsModule extends AbstractPresenterModule {
-
     @Override
     protected void configure() {
         bindPresenter(ProductsPresenter.class, ProductsPresenter.MyView.class,

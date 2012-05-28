@@ -32,17 +32,8 @@ import com.google.inject.Inject;
 
 import static com.google.gwt.query.client.GQuery.$;
 
-/**
- * @author Christian Goudreau
- * @author Zachary Keatts
- */
 public class SloganView extends ViewWithUiHandlers<SloganUiHandlers> implements
         MyView {
-    /**
-     * This will provide a way to automatically create and inject the
-     * {@link com.gwtplatform.mvp.client.View} instead of using directly
-     * <code>gwt.create()</code>. You only have to inject it in the ctor.
-     */
     public interface Binder extends UiBinder<Widget, SloganView> {
     }
 

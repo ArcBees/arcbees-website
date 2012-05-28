@@ -22,13 +22,7 @@ import com.gwtplatform.mvp.client.PresenterWidget;
 import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.proxy.PlaceManager;
 
-/**
- * @author Christian Goudreau
- */
 public class HeaderPresenter extends PresenterWidget<HeaderPresenter.MyView> implements HeaderUiHandlers {
-    /**
-     * {@link HeaderPresenter}'s view.
-     */
     public interface MyView extends View {
     }
 

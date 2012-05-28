@@ -36,10 +36,6 @@ import com.gwtplatform.mvp.client.annotations.GaAccount;
 import com.gwtplatform.mvp.client.gin.DefaultModule;
 import com.gwtplatform.mvp.client.googleanalytics.GoogleAnalyticsNavigationTracker;
 
-/**
- * @author Christian Goudreau
- * @author Zachary Keatts
- */
 public class ClientModule extends AbstractGinModule {
     @Override
     protected void configure() {
@@ -48,7 +44,7 @@ public class ClientModule extends AbstractGinModule {
         bind(Resources.class).in(Singleton.class);
         bind(GoogleAnalyticsNavigationTracker.class).asEagerSingleton();
 
-        // Constant
+        // Constants
         bindConstant().annotatedWith(DefaultPlace.class).to(
                 NameTokens.blog);
         bindConstant().annotatedWith(GaAccount.class).to("UA-19115423-2");

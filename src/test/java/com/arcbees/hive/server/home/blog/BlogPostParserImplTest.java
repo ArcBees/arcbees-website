@@ -23,16 +23,8 @@ import org.jukito.JukitoRunner;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-/**
- * Test class for {@link BlogPostParserImpl}.
- * 
- * @author Christian Goudreau
- */
 @RunWith(JukitoRunner.class)
 public class BlogPostParserImplTest {
-  /**
-   * Guice test module.
-   */
   public static class Module extends JukitoModule {
     @Override
     protected void configureTest() {

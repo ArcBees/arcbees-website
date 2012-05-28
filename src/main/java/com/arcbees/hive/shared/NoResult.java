@@ -18,8 +18,5 @@ package com.arcbees.hive.shared;
 
 import com.gwtplatform.dispatch.shared.Result;
 
-/**
- * @author Christian Goudreau
- */
 public class NoResult implements Result {
 }

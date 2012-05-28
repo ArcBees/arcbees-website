@@ -20,13 +20,6 @@ import com.gwtplatform.dispatch.shared.Result;
 
 import java.util.List;
 
-/**
- * {@link Result} class for {@link GetBlogPosts}
- * {@link com.gwtplatform.dispatch.shared.Action} that retrieve blog posts from
- * ArcBees's blog.
- *
- * @author Christian Goudreau
- */
 public class GetBlogPostsResult implements Result {
     private List<BlogItem> blogItem;
 

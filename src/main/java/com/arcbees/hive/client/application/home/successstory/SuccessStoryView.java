@@ -24,13 +24,7 @@ import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 
-/**
- * @author Christian Goudreau
- */
 public class SuccessStoryView extends ViewImpl implements MyView {
-    /**
-     * {@link SuccessStoryView}'s {@link UiBinder}.
-     */
     public interface Binder extends UiBinder<Widget, SuccessStoryView> {
     }
 

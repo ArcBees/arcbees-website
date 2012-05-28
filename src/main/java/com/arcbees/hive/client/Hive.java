@@ -23,9 +23,6 @@ import com.google.gwt.core.client.GWT;
 
 import com.gwtplatform.mvp.client.DelayedBindRegistry;
 
-/**
- * @author Christian Goudreau
- */
 public class Hive implements EntryPoint {
     public final ClientGinjector ginjector = GWT.create(ClientGinjector.class);
 

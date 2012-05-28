@@ -29,23 +29,13 @@ import com.gwtplatform.mvp.client.proxy.RevealContentEvent;
 
 import javax.inject.Inject;
 
-/**
- * @author Zachary Keatts
- */
 public class ServicePresenter extends Presenter<ServicePresenter.MyView,
         ServicePresenter.MyProxy> {
-
-    /**
-     * {@link ServicePresenter}'s proxy.
-     */
     @ProxyStandard
     @NameToken(NameTokens.service)
     public interface MyProxy extends ProxyPlace<ServicePresenter> {
     }
 
-    /**
-     * {@link ServicePresenter}'s view.
-     */
     public interface MyView extends View {
     }
 

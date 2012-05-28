@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright 2010 ArcBees Inc.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
@@ -14,10 +14,10 @@
  * the License.
  */
 
-package com.arcbees.hive.client.jobs;
+package com.arcbees.hive.client.application.contact;
 
 import com.arcbees.core.client.mvp.ViewImpl;
-import com.arcbees.hive.client.jobs.JobsPresenter.MyView;
+import com.arcbees.hive.client.application.contact.ContactPresenter.MyView;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
@@ -25,18 +25,18 @@ import com.google.inject.Inject;
 /**
  * @author Zachary Keatts
  */
-public class JobsView extends ViewImpl implements MyView {
+public class ContactView extends ViewImpl implements MyView {
 
   /**
    * This will provide a way to automatically create and inject the
    * {@link com.gwtplatform.mvp.client.View} instead of using directly
    * <code>gwt.create()</code>. You only have to inject it in the ctor.
    */
-  public interface Binder extends UiBinder<Widget, JobsView> {
+  public interface Binder extends UiBinder<Widget, ContactView> {
   }
 
   @Inject
-  public JobsView(final Binder uiBinder) {
+  public ContactView(final Binder uiBinder) {
     initWidget(uiBinder.createAndBindUi(this));
   }
 }

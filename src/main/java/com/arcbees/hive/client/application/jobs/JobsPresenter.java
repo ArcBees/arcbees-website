@@ -14,7 +14,7 @@
  * the License.
  */
 
-package com.arcbees.hive.client.contact;
+package com.arcbees.hive.client.application.jobs;
 
 import com.arcbees.hive.client.common.AppPresenter;
 import com.arcbees.hive.client.home.event.ResizeEvent;
@@ -31,25 +31,25 @@ import com.gwtplatform.mvp.client.proxy.RevealContentEvent;
 /**
  * @author Zachary Keatts
  */
-public class ContactPresenter extends
-    Presenter<ContactPresenter.MyView, ContactPresenter.MyProxy> {
+public class JobsPresenter extends
+    Presenter<JobsPresenter.MyView, JobsPresenter.MyProxy> {
 
   /**
-   * {@link ContactPresenter}'s proxy.
+   * {@link JobPresenter}'s proxy.
    */
   @ProxyStandard
-  @NameToken(NameTokens.contact)
-  public interface MyProxy extends ProxyPlace<ContactPresenter> {
+  @NameToken(NameTokens.job)
+  public interface MyProxy extends ProxyPlace<JobsPresenter> {
   }
 
   /**
-   * {@link ContactPresenter}'s view.
+   * {@link JobPresenter}'s view.
    */
   public interface MyView extends View {
   }
 
   @Inject
-  public ContactPresenter(EventBus eventBus, MyView view, MyProxy proxy) {
+  public JobsPresenter(EventBus eventBus, MyView view, MyProxy proxy) {
     super(eventBus, view, proxy);
   }
 

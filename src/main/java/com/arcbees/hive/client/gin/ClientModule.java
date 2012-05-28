@@ -16,11 +16,11 @@
 
 package com.arcbees.hive.client.gin;
 
-import com.arcbees.hive.client.about.AboutModule;
+import com.arcbees.hive.client.application.about.AboutModule;
 import com.arcbees.hive.client.common.CommonModule;
-import com.arcbees.hive.client.contact.ContactModule;
+import com.arcbees.hive.client.application.contact.ContactModule;
 import com.arcbees.hive.client.home.HomeModule;
-import com.arcbees.hive.client.jobs.JobsModule;
+import com.arcbees.hive.client.application.jobs.JobsModule;
 import com.arcbees.hive.client.place.HivePlaceManager;
 import com.arcbees.hive.client.place.NameTokens;
 import com.arcbees.hive.client.products.ProductsModule;

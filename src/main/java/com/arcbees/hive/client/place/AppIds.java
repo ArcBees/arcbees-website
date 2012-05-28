@@ -20,7 +20,7 @@ package com.arcbees.hive.client.place;
  * @author Christian Goudreau
  */
 public class AppIds {
-  public static String getIframeId() {
-    return "youtubeVideo";
-  }
+    public static String getIframeId() {
+        return "youtubeVideo";
+    }
 }

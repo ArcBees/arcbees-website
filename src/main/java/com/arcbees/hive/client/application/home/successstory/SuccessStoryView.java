@@ -28,14 +28,14 @@ import com.google.inject.Inject;
  * @author Christian Goudreau
  */
 public class SuccessStoryView extends ViewImpl implements MyView {
-  /**
-   * {@link SuccessStoryView}'s {@link UiBinder}.
-   */
-  public interface Binder extends UiBinder<Widget, SuccessStoryView> {
-  }
-  
-  @Inject
-  public SuccessStoryView(final Binder uiBinder) {
-    initWidget(uiBinder.createAndBindUi(this));
-  }
+    /**
+     * {@link SuccessStoryView}'s {@link UiBinder}.
+     */
+    public interface Binder extends UiBinder<Widget, SuccessStoryView> {
+    }
+
+    @Inject
+    public SuccessStoryView(final Binder uiBinder) {
+        initWidget(uiBinder.createAndBindUi(this));
+    }
 }

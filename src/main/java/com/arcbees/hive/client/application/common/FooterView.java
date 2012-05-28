@@ -33,42 +33,43 @@ import com.google.inject.Provider;
  * @author Christian Goudreau
  */
 public class FooterView extends ViewImpl implements MyView {
-  /**
-   * This will provide a way to automatically create and inject the
-   * {@link com.gwtplatform.mvp.client.View} instead of using directly
-   * <code>gwt.create()</code>. You only have to inject it in the ctor.
-   */
-  public interface Binder extends UiBinder<Widget, FooterView> {
-  }
-  
-  /**
-   *  Template to build recent news link.
-   */
-  public interface RecentNewsTemplate extends SafeHtmlTemplates {
-    @Template("<a href=\"{0}\">{1}</a>")
-    SafeHtml link(String url, String linkText);
-  }
-  
-  @UiField
-  HTMLPanel recentNews;
+    /**
+     * This will provide a way to automatically create and inject the
+     * {@link com.gwtplatform.mvp.client.View} instead of using directly
+     * <code>gwt.create()</code>. You only have to inject it in the ctor.
+     */
+    public interface Binder extends UiBinder<Widget, FooterView> {
+    }
 
-  private final Provider<HTML> htmlProvider;
-  private final RecentNewsTemplate recentNewsTemplate;
-  
-  @Inject
-  public FooterView(final Binder uiBinder, final RecentNewsTemplate recentNewsTemplate, final Provider<HTML> htmlProvider) {
-    initWidget(uiBinder.createAndBindUi(this));
-    
-    this.htmlProvider = htmlProvider;
-    this.recentNewsTemplate = recentNewsTemplate;
-  }
+    /**
+     * Template to build recent news link.
+     */
+    public interface RecentNewsTemplate extends SafeHtmlTemplates {
+        @Template("<a href=\"{0}\">{1}</a>")
+        SafeHtml link(String url, String linkText);
+    }
 
-  @Override
-  public void buildRecentNewsHyperlink(String display, String link) {
-    HTML htmlLink = htmlProvider.get();
-    
-    htmlLink.setHTML(recentNewsTemplate.link(link, display));
-    
-    recentNews.add(htmlLink, recentNews.getElement());
-  }
+    @UiField
+    HTMLPanel recentNews;
+
+    private final Provider<HTML> htmlProvider;
+    private final RecentNewsTemplate recentNewsTemplate;
+
+    @Inject
+    public FooterView(final Binder uiBinder, final RecentNewsTemplate recentNewsTemplate,
+                      final Provider<HTML> htmlProvider) {
+        initWidget(uiBinder.createAndBindUi(this));
+
+        this.htmlProvider = htmlProvider;
+        this.recentNewsTemplate = recentNewsTemplate;
+    }
+
+    @Override
+    public void buildRecentNewsHyperlink(String display, String link) {
+        HTML htmlLink = htmlProvider.get();
+
+        htmlLink.setHTML(recentNewsTemplate.link(link, display));
+
+        recentNews.add(htmlLink, recentNews.getElement());
+    }
 }

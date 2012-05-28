@@ -34,81 +34,81 @@ import java.util.List;
  * @author Christian Goudreau
  */
 public class BlogView extends ViewWithUiHandlers<BlogUiHandlers>
-    implements MyView {
-  /**
-   * {@link BlogView}'s {@link UiBinder}.
-   */
-  public interface Binder extends UiBinder<Widget, BlogView> {
-  }
-
-  @UiField
-  HTMLPanel blogItemsLeftPanel;
-  @UiField
-  HTMLPanel blogItemsRightPanel;
-  @UiField
-  HTMLPanel blogPanel;
-  @UiField
-  HTMLPanel session;
-
-  final Integer maxItems = 4;
-  final Integer animationDelay = 500;
-  private final BlogItemWidgetFactory blogItemWidgetFactory;
-  private final Integer marginCorrection = 80;
-
-  @Inject
-  public BlogView(final Binder uiBinder,
-      final BlogItemWidgetFactory blogItemWidgetFactory,
-      final UiHandlersStrategy<BlogUiHandlers> uiHandlersStrategy) {
-    super(uiHandlersStrategy);
-
-    initWidget(uiBinder.createAndBindUi(this));
-
-    this.blogItemWidgetFactory = blogItemWidgetFactory;
-  }
-
-  @Override
-  public void setBlogItems(final List<BlogItem> blogItems) {
-    if (blogItems != null && blogItems.size() > 0 && blogItemsLeftPanel.getWidgetCount() <= 0) {
-      Boolean alternate = true;
-      blogItemsRightPanel.clear();
-      blogItemsLeftPanel.clear();
-
-      Integer blogItemsLeftPanelOffset = 0;
-      Integer blogItemsRightPanelOffset = 0;
-
-      for (Integer i = 0; i < blogItems.size() && i < maxItems; i++) {
-        BlogItem blogItem = blogItems.get(i);
-
-        BlogItemWidget blogItemWidget = blogItemWidgetFactory.create(blogItem);
-
-        if (alternate) {
-          blogItemsLeftPanel.add(blogItemWidget,
-              blogItemsLeftPanel.getElement());
-
-          blogItemsLeftPanelOffset += blogItemWidget.getOffsetHeight();
-        } else {
-          blogItemsRightPanel.add(blogItemWidget,
-              blogItemsRightPanel.getElement());
-
-          blogItemsRightPanelOffset += blogItemWidget.getOffsetHeight();
-        }
-
-        alternate = !alternate;
-      }
-
-      blogItemsLeftPanel.setHeight(blogItemsLeftPanelOffset + "px");
-      blogItemsRightPanel.setHeight(blogItemsRightPanelOffset + "px");
-
-      Integer height = blogItemsLeftPanelOffset > blogItemsRightPanelOffset
-          ? blogItemsLeftPanelOffset : blogItemsRightPanelOffset;
-
-      height += marginCorrection + session.getOffsetHeight();
-      
-      blogPanel.setHeight(height + "px");
-
-      getUiHandlers().resize(height);
-    } else if (blogItemsLeftPanel.getWidgetCount() > 0){
-      getUiHandlers().resize(asWidget().getOffsetHeight());
+        implements MyView {
+    /**
+     * {@link BlogView}'s {@link UiBinder}.
+     */
+    public interface Binder extends UiBinder<Widget, BlogView> {
     }
-  }
+
+    @UiField
+    HTMLPanel blogItemsLeftPanel;
+    @UiField
+    HTMLPanel blogItemsRightPanel;
+    @UiField
+    HTMLPanel blogPanel;
+    @UiField
+    HTMLPanel session;
+
+    final Integer maxItems = 4;
+    final Integer animationDelay = 500;
+    private final BlogItemWidgetFactory blogItemWidgetFactory;
+    private final Integer marginCorrection = 80;
+
+    @Inject
+    public BlogView(final Binder uiBinder,
+                    final BlogItemWidgetFactory blogItemWidgetFactory,
+                    final UiHandlersStrategy<BlogUiHandlers> uiHandlersStrategy) {
+        super(uiHandlersStrategy);
+
+        initWidget(uiBinder.createAndBindUi(this));
+
+        this.blogItemWidgetFactory = blogItemWidgetFactory;
+    }
+
+    @Override
+    public void setBlogItems(final List<BlogItem> blogItems) {
+        if (blogItems != null && blogItems.size() > 0 && blogItemsLeftPanel.getWidgetCount() <= 0) {
+            Boolean alternate = true;
+            blogItemsRightPanel.clear();
+            blogItemsLeftPanel.clear();
+
+            Integer blogItemsLeftPanelOffset = 0;
+            Integer blogItemsRightPanelOffset = 0;
+
+            for (Integer i = 0; i < blogItems.size() && i < maxItems; i++) {
+                BlogItem blogItem = blogItems.get(i);
+
+                BlogItemWidget blogItemWidget = blogItemWidgetFactory.create(blogItem);
+
+                if (alternate) {
+                    blogItemsLeftPanel.add(blogItemWidget,
+                            blogItemsLeftPanel.getElement());
+
+                    blogItemsLeftPanelOffset += blogItemWidget.getOffsetHeight();
+                } else {
+                    blogItemsRightPanel.add(blogItemWidget,
+                            blogItemsRightPanel.getElement());
+
+                    blogItemsRightPanelOffset += blogItemWidget.getOffsetHeight();
+                }
+
+                alternate = !alternate;
+            }
+
+            blogItemsLeftPanel.setHeight(blogItemsLeftPanelOffset + "px");
+            blogItemsRightPanel.setHeight(blogItemsRightPanelOffset + "px");
+
+            Integer height = blogItemsLeftPanelOffset > blogItemsRightPanelOffset
+                    ? blogItemsLeftPanelOffset : blogItemsRightPanelOffset;
+
+            height += marginCorrection + session.getOffsetHeight();
+
+            blogPanel.setHeight(height + "px");
+
+            getUiHandlers().resize(height);
+        } else if (blogItemsLeftPanel.getWidgetCount() > 0) {
+            getUiHandlers().resize(asWidget().getOffsetHeight());
+        }
+    }
 }

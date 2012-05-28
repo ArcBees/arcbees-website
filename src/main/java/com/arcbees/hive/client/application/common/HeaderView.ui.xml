@@ -1,64 +1,64 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+             xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
-	<ui:with field='nameTokens' type='com.arcbees.hive.client.place.NameTokens' />
-	<ui:with field='res' type='com.arcbees.hive.client.resources.Resources' />
+    <ui:with field='nameTokens' type='com.arcbees.hive.client.place.NameTokens'/>
+    <ui:with field='res' type='com.arcbees.hive.client.resources.Resources'/>
 
-	<ui:style>
-		.menuStyle {
-			height: 31px;
-			font-family: "Verdana";
-			font-size: 16px;
-		}
-		
-		.menuStyle ul {
-			padding: 0;
-			margin: 0 0 0 15px;
-			list-style-type: none;
-		}
-		
-		.menuStyle ul li img {
-			float: left;
-		}
-		
-		.menuStyle ul li a {
-			margin-top: 5px;
-			margin-left: 15px;
-			margin-right: 15px;
-			color: #ffffff;
-			text-decoration: none;
-		}
-		
-		.menuStyle ul li a:hover {
-			color: #4b3c30;
-		}
-	</ui:style>
+    <ui:style>
+        .menuStyle {
+            height: 31px;
+            font-family: "Verdana";
+            font-size: 16px;
+        }
 
-	<g:LayoutPanel height="125px">
-		<g:layer>
-			<g:Image ui:field="header" resource="{res.head}"
-				addStyleNames="{res.style.cursor}" />
-		</g:layer>
-		<g:layer top="22px" left="745px" width="200px" height="85px">
-			<g:HTMLPanel>
-				<div class='{style.menuStyle}'>
-					<ul>
-						<li>
-							<g:Hyperlink targetHistoryToken="{nameTokens.getService}">Services</g:Hyperlink>
-						</li>
-						<li>
-							<g:Hyperlink targetHistoryToken="{nameTokens.getProduct}">Products</g:Hyperlink>
-						</li>
-						<li>
-							<g:Hyperlink targetHistoryToken="{nameTokens.getJob}">Job Opportunities</g:Hyperlink>
-						</li>
-						<li>
-							<g:Hyperlink targetHistoryToken="{nameTokens.getContact}">Contact Us</g:Hyperlink>
-						</li>
-					</ul>
-				</div>
-			</g:HTMLPanel>
-		</g:layer>
-	</g:LayoutPanel>
+        .menuStyle ul {
+            padding: 0;
+            margin: 0 0 0 15px;
+            list-style-type: none;
+        }
+
+        .menuStyle ul li img {
+            float: left;
+        }
+
+        .menuStyle ul li a {
+            margin-top: 5px;
+            margin-left: 15px;
+            margin-right: 15px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .menuStyle ul li a:hover {
+            color: #4b3c30;
+        }
+    </ui:style>
+
+    <g:LayoutPanel height="125px">
+        <g:layer>
+            <g:Image ui:field="header" resource="{res.head}"
+                     addStyleNames="{res.style.cursor}"/>
+        </g:layer>
+        <g:layer top="22px" left="745px" width="200px" height="85px">
+            <g:HTMLPanel>
+                <div class='{style.menuStyle}'>
+                    <ul>
+                        <li>
+                            <g:Hyperlink targetHistoryToken="{nameTokens.getService}">Services</g:Hyperlink>
+                        </li>
+                        <li>
+                            <g:Hyperlink targetHistoryToken="{nameTokens.getProduct}">Products</g:Hyperlink>
+                        </li>
+                        <li>
+                            <g:Hyperlink targetHistoryToken="{nameTokens.getJob}">Job Opportunities</g:Hyperlink>
+                        </li>
+                        <li>
+                            <g:Hyperlink targetHistoryToken="{nameTokens.getContact}">Contact Us</g:Hyperlink>
+                        </li>
+                    </ul>
+                </div>
+            </g:HTMLPanel>
+        </g:layer>
+    </g:LayoutPanel>
 </ui:UiBinder> 

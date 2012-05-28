@@ -1,12 +1,12 @@
 /**
  * Copyright 2010 ArcBees Inc.
- * 
+ *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
  * the License at
- * 
+ *
  * http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
@@ -27,16 +27,16 @@ import com.google.inject.Inject;
  */
 public class ContactView extends ViewImpl implements MyView {
 
-  /**
-   * This will provide a way to automatically create and inject the
-   * {@link com.gwtplatform.mvp.client.View} instead of using directly
-   * <code>gwt.create()</code>. You only have to inject it in the ctor.
-   */
-  public interface Binder extends UiBinder<Widget, ContactView> {
-  }
+    /**
+     * This will provide a way to automatically create and inject the
+     * {@link com.gwtplatform.mvp.client.View} instead of using directly
+     * <code>gwt.create()</code>. You only have to inject it in the ctor.
+     */
+    public interface Binder extends UiBinder<Widget, ContactView> {
+    }
 
-  @Inject
-  public ContactView(final Binder uiBinder) {
-    initWidget(uiBinder.createAndBindUi(this));
-  }
+    @Inject
+    public ContactView(final Binder uiBinder) {
+        initWidget(uiBinder.createAndBindUi(this));
+    }
 }

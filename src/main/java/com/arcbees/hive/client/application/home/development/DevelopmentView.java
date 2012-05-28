@@ -27,14 +27,14 @@ import com.google.inject.Inject;
  */
 public class DevelopmentView extends
         ViewImpl implements MyView {
-  /**
-   * {@link DevelopmentView}'s {@link UiBinder}.
-   */
-  public interface Binder extends UiBinder<Widget, DevelopmentView> {
-  }
+    /**
+     * {@link DevelopmentView}'s {@link UiBinder}.
+     */
+    public interface Binder extends UiBinder<Widget, DevelopmentView> {
+    }
 
-  @Inject
-  public DevelopmentView(final Binder uiBinder) {
-    initWidget(uiBinder.createAndBindUi(this));
-  }
+    @Inject
+    public DevelopmentView(final Binder uiBinder) {
+        initWidget(uiBinder.createAndBindUi(this));
+    }
 }

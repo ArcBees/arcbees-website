@@ -29,25 +29,25 @@ import com.gwtplatform.dispatch.client.actionhandler.caching.Cache;
  * that handle how {@link GetBlogPosts}
  * {@link com.gwtplatform.dispatch.shared.Action} are being stored in client
  * side {@link Cache}.
- * 
+ *
  * @author Christian Goudreau
  */
 public class GetBlogPostsCache extends
-    AbstractCachingClientActionHandler<GetBlogPosts, GetBlogPostsResult> {
-  @Inject
-  GetBlogPostsCache(Cache cache) {
-    super(GetBlogPosts.class, cache);
-  }
-
-  @Override
-  protected GetBlogPostsResult prefetch(GetBlogPosts action) {
-    return (GetBlogPostsResult) getCache().get(action);
-  }
-
-  @Override
-  protected void postfetch(GetBlogPosts action, GetBlogPostsResult result) {
-    if (action != null && result != null) {
-      getCache().put(action, result);
+        AbstractCachingClientActionHandler<GetBlogPosts, GetBlogPostsResult> {
+    @Inject
+    GetBlogPostsCache(Cache cache) {
+        super(GetBlogPosts.class, cache);
     }
-  }
+
+    @Override
+    protected GetBlogPostsResult prefetch(GetBlogPosts action) {
+        return (GetBlogPostsResult) getCache().get(action);
+    }
+
+    @Override
+    protected void postfetch(GetBlogPosts action, GetBlogPostsResult result) {
+        if (action != null && result != null) {
+            getCache().put(action, result);
+        }
+    }
 }

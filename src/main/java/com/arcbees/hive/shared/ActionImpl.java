@@ -21,32 +21,31 @@ import com.gwtplatform.dispatch.shared.Result;
 
 /**
  * @param <R> Type de résultat.
- * 
  * @author Christian Goudreau
  */
 public abstract class ActionImpl<R extends Result> implements Action<R> {
-  @Override
-  public boolean equals(Object obj) {
-    return this.getClass().equals(obj.getClass());
-  }
+    @Override
+    public boolean equals(Object obj) {
+        return this.getClass().equals(obj.getClass());
+    }
 
-  @Override
-  public String getServiceName() {
-    String className = this.getClass().getName();
-    int namePos = className.lastIndexOf(".") + 1;
-    className = com.gwtplatform.dispatch.shared.ActionImpl.DEFAULT_SERVICE_NAME
-        + className.substring(namePos);
+    @Override
+    public String getServiceName() {
+        String className = this.getClass().getName();
+        int namePos = className.lastIndexOf(".") + 1;
+        className = com.gwtplatform.dispatch.shared.ActionImpl.DEFAULT_SERVICE_NAME
+                + className.substring(namePos);
 
-    return className;
-  }
+        return className;
+    }
 
-  @Override
-  public int hashCode() {
-    return this.getClass().hashCode();
-  }
+    @Override
+    public int hashCode() {
+        return this.getClass().hashCode();
+    }
 
-  @Override
-  public boolean isSecured() {
-    return false;
-  }
+    @Override
+    public boolean isSecured() {
+        return false;
+    }
 }

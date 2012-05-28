@@ -27,16 +27,16 @@ import com.google.inject.Inject;
  */
 public class JobsView extends ViewImpl implements MyView {
 
-  /**
-   * This will provide a way to automatically create and inject the
-   * {@link com.gwtplatform.mvp.client.View} instead of using directly
-   * <code>gwt.create()</code>. You only have to inject it in the ctor.
-   */
-  public interface Binder extends UiBinder<Widget, JobsView> {
-  }
+    /**
+     * This will provide a way to automatically create and inject the
+     * {@link com.gwtplatform.mvp.client.View} instead of using directly
+     * <code>gwt.create()</code>. You only have to inject it in the ctor.
+     */
+    public interface Binder extends UiBinder<Widget, JobsView> {
+    }
 
-  @Inject
-  public JobsView(final Binder uiBinder) {
-    initWidget(uiBinder.createAndBindUi(this));
-  }
+    @Inject
+    public JobsView(final Binder uiBinder) {
+        initWidget(uiBinder.createAndBindUi(this));
+    }
 }

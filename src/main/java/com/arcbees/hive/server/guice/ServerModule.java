@@ -36,27 +36,30 @@ import javax.xml.parsers.ParserConfigurationException;
 
 /**
  * Module which binds the handlers and configurations.
- * 
+ *
  * @author Christian Goudreau
  */
 public class ServerModule extends HandlerModule {
-  private final String arcbeesFetch = "http://arcbees.wordpress.com/feed/";
-  
-  @Override
-  protected void configureHandlers() {
-    install(new HomeModule());
-  }
-  
-  @Provides @Named("arcbeesUrlFetch")
-  URL getUrl() throws MalformedURLException {
-    return new URL(arcbeesFetch);
-  }
-  
-  @Provides @Named("arcbeesFetch")
-  Document getDocument(@Named("arcbeesUrlFetch") final URL url) throws IOException, ParserConfigurationException, SAXException {
-    DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
-    DocumentBuilder db = dbf.newDocumentBuilder();
-    
-    return db.parse(url.openStream());
-  }
+    private final String arcbeesFetch = "http://arcbees.wordpress.com/feed/";
+
+    @Override
+    protected void configureHandlers() {
+        install(new HomeModule());
+    }
+
+    @Provides
+    @Named("arcbeesUrlFetch")
+    URL getUrl() throws MalformedURLException {
+        return new URL(arcbeesFetch);
+    }
+
+    @Provides
+    @Named("arcbeesFetch")
+    Document getDocument(@Named("arcbeesUrlFetch") final URL url) throws IOException, ParserConfigurationException,
+            SAXException {
+        DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+        DocumentBuilder db = dbf.newDocumentBuilder();
+
+        return db.parse(url.openStream());
+    }
 }

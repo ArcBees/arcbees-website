@@ -1,219 +1,219 @@
 body {
-	text-align: center;
-	background-color: #bfbfbf;
+    text-align: center;
+    background-color: #bfbfbf;
 }
 
-table,tr,td {
-	margin: 0;
-	padding: 0;
-	border: 0;
+table, tr, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 .cursor {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 @sprite .sloganCoinGauche {
-	gwt-image: "bodCoinGaucheUp";
-	position: absolute;
-	top: 0;
-	left: 0;
+    gwt-image: "bodCoinGaucheUp";
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 @sprite .sloganCoinDroit {
-	gwt-image: "bodCoinDroitUp";
-	position: absolute;
-	top: 0;
-	left: 919px;
+    gwt-image: "bodCoinDroitUp";
+    position: absolute;
+    top: 0;
+    left: 919px;
 }
 
 @sprite .blogBackground {
-	gwt-image: "bodTransition";
-	position: relative;
+    gwt-image: "bodTransition";
+    position: relative;
 }
 
 @sprite .blogDown {
-	gwt-image: "bodDown";
-	position: absolute;
-	bottom: 0;
-	left: 0;
+    gwt-image: "bodDown";
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 @sprite .blogDownContact {
-	gwt-image: "bodDownContact";
-	position: absolute;
-	bottom: 0;
-	left: 0;
+    gwt-image: "bodDownContact";
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 @sprite .blogDownJob {
-	gwt-image: "bodDownJob";
-	position: absolute;
-	bottom: 0;
-	left: 0;
+    gwt-image: "bodDownJob";
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 @sprite .blogLeft {
-	gwt-image: "blogBarGauche";
-	position: absolute;
-	top: 0;
-	left: 0;
+    gwt-image: "blogBarGauche";
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 @sprite .blogLeftFull {
-	gwt-image: "blogBarGaucheFull";
-	position: absolute;
-	top: 0;
-	left: 0;
+    gwt-image: "blogBarGaucheFull";
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 @sprite .blogRight {
-	gwt-image: "blogBarDroite";
-	position: absolute;
-	top: 0;
-	left: 916px;
+    gwt-image: "blogBarDroite";
+    position: absolute;
+    top: 0;
+    left: 916px;
 }
 
 @sprite .blogRightFull {
-	gwt-image: "blogBarDroiteFull";
-	position: absolute;
-	top: 0;
-	left: 916px;
+    gwt-image: "blogBarDroiteFull";
+    position: absolute;
+    top: 0;
+    left: 916px;
 }
 
 @sprite .bodBarDroiteB {
-	gwt-image: "bodBarDroiteB";
-	position: absolute;
-	top: 0;
-	left: 916px;
-	height: 58px;
-	width: 34px;
+    gwt-image: "bodBarDroiteB";
+    position: absolute;
+    top: 0;
+    left: 916px;
+    height: 58px;
+    width: 34px;
 }
 
 @sprite .bodBarGaucheB {
-	gwt-image: "bodBarGaucheB";
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 58px;
-	width: 94px;
+    gwt-image: "bodBarGaucheB";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 58px;
+    width: 94px;
 }
 
 @sprite .bodBarMidB {
-	gwt-image: "bodBarMidB";
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 58px;
-	width: 950px;
+    gwt-image: "bodBarMidB";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 58px;
+    width: 950px;
 }
 
 @sprite .bodBarDroiteG {
-	gwt-image: "bodBarDroiteG";
-	position: absolute;
-	top: 0;
-	left: 916px;
-	height: 58px;
-	width: 34px;
+    gwt-image: "bodBarDroiteG";
+    position: absolute;
+    top: 0;
+    left: 916px;
+    height: 58px;
+    width: 34px;
 }
 
 @sprite .bodBarGaucheG {
-	gwt-image: "bodBarGaucheG";
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 58px;
-	width: 94px;
+    gwt-image: "bodBarGaucheG";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 58px;
+    width: 94px;
 }
 
 @sprite .bodBarMidG {
-	gwt-image: "bodBarMidG";
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 58px;
-	width: 950px;
+    gwt-image: "bodBarMidG";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 58px;
+    width: 950px;
 }
 
 @sprite .bodBarDroiteO {
-	gwt-image: "bodBarDroiteO";
-	position: absolute;
-	top: 0;
-	left: 916px;
-	height: 58px;
-	width: 34px;
+    gwt-image: "bodBarDroiteO";
+    position: absolute;
+    top: 0;
+    left: 916px;
+    height: 58px;
+    width: 34px;
 }
 
 @sprite .bodBarGaucheO {
-	gwt-image: "bodBarGaucheO";
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 58px;
-	width: 94px;
+    gwt-image: "bodBarGaucheO";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 58px;
+    width: 94px;
 }
 
 @sprite .bodBarMidO {
-	gwt-image: "bodBarMidO";
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 58px;
-	width: 950px;
+    gwt-image: "bodBarMidO";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 58px;
+    width: 950px;
 }
 
 @sprite .bodBarDroiteV {
-	gwt-image: "bodBarDroiteV";
-	position: absolute;
-	top: 0;
-	left: 916px;
-	height: 58px;
-	width: 34px;
+    gwt-image: "bodBarDroiteV";
+    position: absolute;
+    top: 0;
+    left: 916px;
+    height: 58px;
+    width: 34px;
 }
 
 @sprite .bodBarGaucheV {
-	gwt-image: "bodBarGaucheV";
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 58px;
-	width: 94px;
+    gwt-image: "bodBarGaucheV";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 58px;
+    width: 94px;
 }
 
 @sprite .bodBarMidV {
-	gwt-image: "bodBarMidV";
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 58px;
-	width: 950px;
+    gwt-image: "bodBarMidV";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 58px;
+    width: 950px;
 }
 
 .sloganDescription {
-	position: absolute;
-	width: 950px;
-	height: 21px;
-	top: 5px;
-	left: 0;
-	text-align: center;
+    position: absolute;
+    width: 950px;
+    height: 21px;
+    top: 5px;
+    left: 0;
+    text-align: center;
 }
 
 .stepInactive {
-	background-color: #ffffff;
-	color: #858585;
+    background-color: #ffffff;
+    color: #858585;
 }
 
 .stepInactive:HOVER {
-	color: #ffffff;
-	background-color: #858585;
+    color: #ffffff;
+    background-color: #858585;
 }
 
 .stepActive {
-	color: #ffffff;
-	background-color: #858585;
+    color: #ffffff;
+    background-color: #858585;
 }
 
 .stepActive:HOVER {
-	color: #858585;
-	background-color: #ffffff;
+    color: #858585;
+    background-color: #ffffff;
 }

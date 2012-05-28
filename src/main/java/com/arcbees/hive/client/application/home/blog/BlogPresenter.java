@@ -39,67 +39,67 @@ import java.util.List;
  * @author Christian Goudreau
  */
 public class BlogPresenter extends
-    Presenter<BlogPresenter.MyView, BlogPresenter.MyProxy> implements
+        Presenter<BlogPresenter.MyView, BlogPresenter.MyProxy> implements
         BlogUiHandlers {
-  /**
-   * {@link BlogPresenter}'s proxy.
-   */
-  @ProxyStandard
-  @NameToken(NameTokens.blog)
-  public interface MyProxy extends ProxyPlace<BlogPresenter> {
-  }
-
-  /**
-   * {@link HomePresenter}'s view.
-   */
-  public interface MyView extends View {
     /**
-     * Set the list of {@link BlogItem}s to add inside the {@link BlogView}.
-     * 
-     * @param blogItems The {@link BlogItem}'s list.
+     * {@link BlogPresenter}'s proxy.
      */
-    void setBlogItems(List<BlogItem> blogItems);
-  }
+    @ProxyStandard
+    @NameToken(NameTokens.blog)
+    public interface MyProxy extends ProxyPlace<BlogPresenter> {
+    }
 
-  private final DispatchAsync dispatcher;
-  private final Integer minSize = 527;
+    /**
+     * {@link HomePresenter}'s view.
+     */
+    public interface MyView extends View {
+        /**
+         * Set the list of {@link BlogItem}s to add inside the {@link BlogView}.
+         *
+         * @param blogItems The {@link BlogItem}'s list.
+         */
+        void setBlogItems(List<BlogItem> blogItems);
+    }
 
-  @Inject
-  public BlogPresenter(final EventBus eventBus, final MyView view,
-      final MyProxy proxy, final DispatchAsync dispatcher) {
-    super(eventBus, view, proxy);
+    private final DispatchAsync dispatcher;
+    private final Integer minSize = 527;
 
-    this.dispatcher = dispatcher;
-  }
+    @Inject
+    public BlogPresenter(final EventBus eventBus, final MyView view,
+                         final MyProxy proxy, final DispatchAsync dispatcher) {
+        super(eventBus, view, proxy);
 
-  @Override
-  public void resize(final Integer size) {
-    ResizeEvent.fire(BlogPresenter.this, HomePresenter.TYPE_SetBottomContent1,
-        size);
-  }
+        this.dispatcher = dispatcher;
+    }
 
-  @Override
-  protected void revealInParent() {
-    RevealContentEvent.fire(this, HomePresenter.TYPE_SetBottomContent1, this);
-  }
+    @Override
+    public void resize(final Integer size) {
+        ResizeEvent.fire(BlogPresenter.this, HomePresenter.TYPE_SetBottomContent1,
+                size);
+    }
 
-  @Override
-  protected void onReveal() {
-    super.onReveal();
-    
-    dispatcher.execute(new GetBlogPosts(),
-        new AsyncCallbackImpl<GetBlogPostsResult>() {
-          @Override
-          public void onSuccess(GetBlogPostsResult result) {
-            getView().setBlogItems(result.getBlogPosts());
-          }
+    @Override
+    protected void revealInParent() {
+        RevealContentEvent.fire(this, HomePresenter.TYPE_SetBottomContent1, this);
+    }
 
-          @Override
-          public void onFailure(Throwable e) {
-            super.onFailure(e);
-            
-            ResizeEvent.fire(BlogPresenter.this, HomePresenter.TYPE_SetBottomContent1, minSize);
-          }
-        });
-  }
+    @Override
+    protected void onReveal() {
+        super.onReveal();
+
+        dispatcher.execute(new GetBlogPosts(),
+                new AsyncCallbackImpl<GetBlogPostsResult>() {
+                    @Override
+                    public void onSuccess(GetBlogPostsResult result) {
+                        getView().setBlogItems(result.getBlogPosts());
+                    }
+
+                    @Override
+                    public void onFailure(Throwable e) {
+                        super.onFailure(e);
+
+                        ResizeEvent.fire(BlogPresenter.this, HomePresenter.TYPE_SetBottomContent1, minSize);
+                    }
+                });
+    }
 }

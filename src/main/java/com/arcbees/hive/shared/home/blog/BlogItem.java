@@ -22,58 +22,58 @@ import java.util.Date;
 /**
  * DTO meant to encapsulate blog posts retrieved for ArcBees's blog by reading
  * the RSS.
- * 
+ *
  * @author Christian Goudreau
  */
 public class BlogItem implements Serializable {
-  private static final long serialVersionUID = -352198600153858944L;
+    private static final long serialVersionUID = -352198600153858944L;
 
-  private String title;
-  private Date pubDate;
-  private String creator;
-  private String link;
-  private String description;
-  
-  public BlogItem() {
-  }
-  
-  public String getTitle() {
-    return title;
-  }
-  
-  public Date getPubDate() {
-    return pubDate;
-  }
+    private String title;
+    private Date pubDate;
+    private String creator;
+    private String link;
+    private String description;
 
-  public String getCreator() {
-    return creator;
-  }
+    public BlogItem() {
+    }
 
-  public String getLink() {
-    return link;
-  }
+    public String getTitle() {
+        return title;
+    }
 
-  public String getDescription() {
-    return description;
-  }
-  
-  public void setTitle(String title) {
-    this.title = title;
-  }
+    public Date getPubDate() {
+        return pubDate;
+    }
 
-  public void setPubDate(Date pubDate) {
-    this.pubDate = pubDate;
-  }
+    public String getCreator() {
+        return creator;
+    }
 
-  public void setCreator(String creator) {
-    this.creator = creator;
-  }
+    public String getLink() {
+        return link;
+    }
 
-  public void setLink(String link) {
-    this.link = link;
-  }
+    public String getDescription() {
+        return description;
+    }
 
-  public void setDescription(String description) {
-    this.description = description;
-  }
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setPubDate(Date pubDate) {
+        this.pubDate = pubDate;
+    }
+
+    public void setCreator(String creator) {
+        this.creator = creator;
+    }
+
+    public void setLink(String link) {
+        this.link = link;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
 }

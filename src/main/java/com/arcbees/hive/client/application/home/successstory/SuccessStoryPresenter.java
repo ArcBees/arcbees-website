@@ -34,38 +34,38 @@ import com.gwtplatform.mvp.client.proxy.RevealContentEvent;
  * @author Christian Goudreau
  */
 public class SuccessStoryPresenter extends
-    Presenter<SuccessStoryPresenter.MyView, SuccessStoryPresenter.MyProxy> {
+        Presenter<SuccessStoryPresenter.MyView, SuccessStoryPresenter.MyProxy> {
 
-  /**
-   * {@link SuccessStoryPresenter}'s {@link View}.
-   */
-  public interface MyView extends View {
-  }
+    /**
+     * {@link SuccessStoryPresenter}'s {@link View}.
+     */
+    public interface MyView extends View {
+    }
 
-  /**
-   * {@link SuccessStoryPresenter}'s {@link ProxyPlace}.
-   */
-  @ProxyStandard
-  @NameToken(NameTokens.successStory)
-  public interface MyProxy extends ProxyPlace<SuccessStoryPresenter> {
-  }
+    /**
+     * {@link SuccessStoryPresenter}'s {@link ProxyPlace}.
+     */
+    @ProxyStandard
+    @NameToken(NameTokens.successStory)
+    public interface MyProxy extends ProxyPlace<SuccessStoryPresenter> {
+    }
 
-  @Inject
-  public SuccessStoryPresenter(final EventBus eventBus, final MyView view,
-      final MyProxy proxy) {
-    super(eventBus, view, proxy);
-  }
+    @Inject
+    public SuccessStoryPresenter(final EventBus eventBus, final MyView view,
+                                 final MyProxy proxy) {
+        super(eventBus, view, proxy);
+    }
 
-  @Override
-  protected void revealInParent() {
-    RevealContentEvent.fire(this, HomePresenter.TYPE_SetBottomContent4, this);
-  }
-  
-  @Override
-  protected void onReveal() {
-    super.onReveal();
+    @Override
+    protected void revealInParent() {
+        RevealContentEvent.fire(this, HomePresenter.TYPE_SetBottomContent4, this);
+    }
 
-    ResizeEvent.fire(this, HomePresenter.TYPE_SetBottomContent4,
-        getView().asWidget().getOffsetHeight());
-  }
+    @Override
+    protected void onReveal() {
+        super.onReveal();
+
+        ResizeEvent.fire(this, HomePresenter.TYPE_SetBottomContent4,
+                getView().asWidget().getOffsetHeight());
+    }
 }

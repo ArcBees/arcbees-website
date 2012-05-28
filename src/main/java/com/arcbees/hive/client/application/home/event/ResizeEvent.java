@@ -24,46 +24,46 @@ import com.google.gwt.event.shared.HasHandlers;
  * @author Christian Goudreau
  */
 public class ResizeEvent extends GwtEvent<ResizeEvent.ResizeHandler> {
-  /**
-   * {@link ResizeEvent}'s {@link EventHandler}.
-   */
-  public interface ResizeHandler extends EventHandler {
-    void onResize(ResizeEvent event);
-  }
-  
-  private static Type<ResizeHandler> TYPE = new Type<ResizeEvent.ResizeHandler>();
-  
-  private final Object slot;
-  private final int size;
+    /**
+     * {@link ResizeEvent}'s {@link EventHandler}.
+     */
+    public interface ResizeHandler extends EventHandler {
+        void onResize(ResizeEvent event);
+    }
 
-  public static Type<ResizeHandler> getType() {
-    return TYPE;
-  }
-  
-  public static void fire(HasHandlers source, Object slot, int size) {
-    source.fireEvent(new ResizeEvent(slot, size));
-  }
-  
-  public ResizeEvent(Object slot, int size) {
-    this.slot = slot;
-    this.size = size;
-  }
-  
-  @Override
-  public Type<ResizeHandler> getAssociatedType() {
-    return TYPE;
-  }
-  
-  public Object getSlot() {
-    return slot;
-  }
+    private static Type<ResizeHandler> TYPE = new Type<ResizeEvent.ResizeHandler>();
 
-  public int getSize() {
-    return size;
-  }
+    private final Object slot;
+    private final int size;
 
-  @Override
-  protected void dispatch(ResizeHandler handler) {
-    handler.onResize(this);
-  }
+    public static Type<ResizeHandler> getType() {
+        return TYPE;
+    }
+
+    public static void fire(HasHandlers source, Object slot, int size) {
+        source.fireEvent(new ResizeEvent(slot, size));
+    }
+
+    public ResizeEvent(Object slot, int size) {
+        this.slot = slot;
+        this.size = size;
+    }
+
+    @Override
+    public Type<ResizeHandler> getAssociatedType() {
+        return TYPE;
+    }
+
+    public Object getSlot() {
+        return slot;
+    }
+
+    public int getSize() {
+        return size;
+    }
+
+    @Override
+    protected void dispatch(ResizeHandler handler) {
+        handler.onResize(this);
+    }
 }

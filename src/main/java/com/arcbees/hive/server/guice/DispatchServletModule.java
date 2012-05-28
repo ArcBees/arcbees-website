@@ -25,9 +25,9 @@ import com.gwtplatform.dispatch.shared.ActionImpl;
  * @author Christian Goudreau
  */
 public class DispatchServletModule extends ServletModule {
-  @Override
-  public void configureServlets() {
-    serve("/" + ActionImpl.DEFAULT_SERVICE_NAME + "*").with(
-        DispatchServiceImpl.class);
-  }
+    @Override
+    public void configureServlets() {
+        serve("/" + ActionImpl.DEFAULT_SERVICE_NAME + "*").with(
+                DispatchServiceImpl.class);
+    }
 }

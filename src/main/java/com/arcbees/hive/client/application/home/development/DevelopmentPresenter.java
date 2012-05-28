@@ -32,37 +32,37 @@ import com.gwtplatform.mvp.client.proxy.RevealContentEvent;
  * @author Christian Goudreau
  */
 public class DevelopmentPresenter extends
-    Presenter<DevelopmentPresenter.MyView, DevelopmentPresenter.MyProxy> {
-  /**
-   * {@link DevelopmentPresenter}'s {@link View}.
-   */
-  public interface MyView extends View {
-  }
+        Presenter<DevelopmentPresenter.MyView, DevelopmentPresenter.MyProxy> {
+    /**
+     * {@link DevelopmentPresenter}'s {@link View}.
+     */
+    public interface MyView extends View {
+    }
 
-  /**
-   * {@link DevelopmentPresenter}'s {@link ProxyPlace}.
-   */
-  @ProxyStandard
-  @NameToken(NameTokens.development)
-  public interface MyProxy extends ProxyPlace<DevelopmentPresenter> {
-  }
+    /**
+     * {@link DevelopmentPresenter}'s {@link ProxyPlace}.
+     */
+    @ProxyStandard
+    @NameToken(NameTokens.development)
+    public interface MyProxy extends ProxyPlace<DevelopmentPresenter> {
+    }
 
-  @Inject
-  public DevelopmentPresenter(final EventBus eventBus, final MyView view,
-      final MyProxy proxy) {
-    super(eventBus, view, proxy);
-  }
+    @Inject
+    public DevelopmentPresenter(final EventBus eventBus, final MyView view,
+                                final MyProxy proxy) {
+        super(eventBus, view, proxy);
+    }
 
-  @Override
-  protected void revealInParent() {
-    RevealContentEvent.fire(this, HomePresenter.TYPE_SetBottomContent3, this);
-  }
+    @Override
+    protected void revealInParent() {
+        RevealContentEvent.fire(this, HomePresenter.TYPE_SetBottomContent3, this);
+    }
 
-  @Override
-  protected void onReveal() {
-    super.onReveal();
+    @Override
+    protected void onReveal() {
+        super.onReveal();
 
-    ResizeEvent.fire(this, HomePresenter.TYPE_SetBottomContent3,
-        getView().asWidget().getOffsetHeight());
-  }
+        ResizeEvent.fire(this, HomePresenter.TYPE_SetBottomContent3,
+                getView().asWidget().getOffsetHeight());
+    }
 }

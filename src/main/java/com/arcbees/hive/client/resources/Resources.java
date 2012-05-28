@@ -27,109 +27,176 @@ import com.google.gwt.resources.client.ImageResource.RepeatStyle;
  * @author zkeatts
  */
 public interface Resources extends ClientBundle {
-  Style style();
+    Style style();
 
-  @Source("honConsulting.jpg")
-  ImageResource consulting();
-  @Source("honPlus.png")
-  ImageResource hplus();
-  @Source("honDevelopment.jpg")
-  ImageResource development();
-  @Source("honEqual.png")
-  ImageResource hequals();
-  @Source("honSuccess.jpg")
-  ImageResource success();
-  ImageResource head();
-  
-  ImageResource blogAbeille();
-  ImageResource blogBarDroite();
-  ImageResource blogBarDroiteFull();
-  ImageResource blogBarGauche();
-  ImageResource blogBarGaucheFull();
-  ImageResource bodDown();
-  ImageResource rssFeed();
-  ImageResource serConsultation();
-  ImageResource serDeveloppement();
-  ImageResource serFormation();
-  ImageResource serSupport();
-  
-  ImageResource bodCoinDroitUp();
-  ImageResource bodCoinGaucheUp();
-  
-  @ImageOptions(repeatStyle = RepeatStyle.Vertical)
-  ImageResource bodTransition();
-  ImageResource bodBarDroiteB();
-  ImageResource bodBarDroiteG();
-  ImageResource bodBarDroiteO();
-  ImageResource bodBarDroiteV();
-  ImageResource bodBarGaucheB();
-  ImageResource bodBarGaucheG();
-  ImageResource bodBarGaucheO();
-  ImageResource bodBarGaucheV();
-  
-  @ImageOptions(repeatStyle = RepeatStyle.Horizontal)
-  ImageResource bodBarMidB();
-  @ImageOptions(repeatStyle = RepeatStyle.Horizontal)
-  ImageResource bodBarMidG();
-  @ImageOptions(repeatStyle = RepeatStyle.Horizontal)
-  ImageResource bodBarMidO();
-  @ImageOptions(repeatStyle = RepeatStyle.Horizontal)
-  ImageResource bodBarMidV();
-  
-  ImageResource fooDown();
-  ImageResource fooUp();
-  ImageResource fooDroite();
-  ImageResource fooGauche();
+    @Source("honConsulting.jpg")
+    ImageResource consulting();
 
-  /**
-   * Style strong typed interface.
-   */
-  public interface Style extends CssResource {
-    String cursor();
-    
-    String blogBackground();
-    String blogDown();
-    String blogDownContact();
-    String blogDownJob();
-    String blogLeft();
-    String blogLeftFull();
-    String blogRight();
-    String blogRightFull();
-    
-    String sloganDescription();
-    String sloganCoinGauche();
-    String sloganCoinDroit();
-    String bodBarDroiteB();
-    String bodBarDroiteG();
-    String bodBarDroiteO();
-    String bodBarDroiteV();
-    String bodBarGaucheB();
-    String bodBarGaucheG();
-    String bodBarGaucheO();
-    String bodBarGaucheV();
-    String bodBarMidB();
-    String bodBarMidG();
-    String bodBarMidO();
-    String bodBarMidV();
-    
-    String stepInactive();
-    String stepActive();
-  }
+    @Source("honPlus.png")
+    ImageResource hplus();
 
-  ImageResource aboutPhilippe();
-  ImageResource serMiel();
-  ImageResource productGWTP();
-  ImageResource productJUKITO();
-  ImageResource contactUS();
-  ImageResource bodDownContact();
-  ImageResource job();
-  ImageResource bodDownJob();
-  ImageResource blogAbeilleConsulting();
-  ImageResource blogAbeilleDevelop();
-  ImageResource blogBookedin();
-  ImageResource blogCloudInside();
-  ImageResource imagem();
-  ImageResource aboutChristian();
-  ImageResource aboutDavid();
-  ImageResource aboutFrancis();
+    @Source("honDevelopment.jpg")
+    ImageResource development();
+
+    @Source("honEqual.png")
+    ImageResource hequals();
+
+    @Source("honSuccess.jpg")
+    ImageResource success();
+
+    ImageResource head();
+
+    ImageResource blogAbeille();
+
+    ImageResource blogBarDroite();
+
+    ImageResource blogBarDroiteFull();
+
+    ImageResource blogBarGauche();
+
+    ImageResource blogBarGaucheFull();
+
+    ImageResource bodDown();
+
+    ImageResource rssFeed();
+
+    ImageResource serConsultation();
+
+    ImageResource serDeveloppement();
+
+    ImageResource serFormation();
+
+    ImageResource serSupport();
+
+    ImageResource bodCoinDroitUp();
+
+    ImageResource bodCoinGaucheUp();
+
+    @ImageOptions(repeatStyle = RepeatStyle.Vertical)
+    ImageResource bodTransition();
+
+    ImageResource bodBarDroiteB();
+
+    ImageResource bodBarDroiteG();
+
+    ImageResource bodBarDroiteO();
+
+    ImageResource bodBarDroiteV();
+
+    ImageResource bodBarGaucheB();
+
+    ImageResource bodBarGaucheG();
+
+    ImageResource bodBarGaucheO();
+
+    ImageResource bodBarGaucheV();
+
+    @ImageOptions(repeatStyle = RepeatStyle.Horizontal)
+    ImageResource bodBarMidB();
+
+    @ImageOptions(repeatStyle = RepeatStyle.Horizontal)
+    ImageResource bodBarMidG();
+
+    @ImageOptions(repeatStyle = RepeatStyle.Horizontal)
+    ImageResource bodBarMidO();
+
+    @ImageOptions(repeatStyle = RepeatStyle.Horizontal)
+    ImageResource bodBarMidV();
+
+    ImageResource fooDown();
+
+    ImageResource fooUp();
+
+    ImageResource fooDroite();
+
+    ImageResource fooGauche();
+
+    /**
+     * Style strong typed interface.
+     */
+    public interface Style extends CssResource {
+        String cursor();
+
+        String blogBackground();
+
+        String blogDown();
+
+        String blogDownContact();
+
+        String blogDownJob();
+
+        String blogLeft();
+
+        String blogLeftFull();
+
+        String blogRight();
+
+        String blogRightFull();
+
+        String sloganDescription();
+
+        String sloganCoinGauche();
+
+        String sloganCoinDroit();
+
+        String bodBarDroiteB();
+
+        String bodBarDroiteG();
+
+        String bodBarDroiteO();
+
+        String bodBarDroiteV();
+
+        String bodBarGaucheB();
+
+        String bodBarGaucheG();
+
+        String bodBarGaucheO();
+
+        String bodBarGaucheV();
+
+        String bodBarMidB();
+
+        String bodBarMidG();
+
+        String bodBarMidO();
+
+        String bodBarMidV();
+
+        String stepInactive();
+
+        String stepActive();
+    }
+
+    ImageResource aboutPhilippe();
+
+    ImageResource serMiel();
+
+    ImageResource productGWTP();
+
+    ImageResource productJUKITO();
+
+    ImageResource contactUS();
+
+    ImageResource bodDownContact();
+
+    ImageResource job();
+
+    ImageResource bodDownJob();
+
+    ImageResource blogAbeilleConsulting();
+
+    ImageResource blogAbeilleDevelop();
+
+    ImageResource blogBookedin();
+
+    ImageResource blogCloudInside();
+
+    ImageResource imagem();
+
+    ImageResource aboutChristian();
+
+    ImageResource aboutDavid();
+
+    ImageResource aboutFrancis();
 }

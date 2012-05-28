@@ -28,21 +28,21 @@ import com.gwtplatform.mvp.client.UiHandlers;
  */
 public class ConsultingView extends
         ViewImpl implements MyView {
-  /**
-   * {@link ConsultingView}'s {@link UiBinder}.
-   */
-  public interface Binder extends UiBinder<Widget, ConsultingView> {
-  }
+    /**
+     * {@link ConsultingView}'s {@link UiBinder}.
+     */
+    public interface Binder extends UiBinder<Widget, ConsultingView> {
+    }
 
-  /**
-   * {@link ConsultingView}'s {@link UiHandlers}.
-   */
-  public interface MyUiHandlers extends UiHandlers {
-    void resize(Integer size);
-  }
+    /**
+     * {@link ConsultingView}'s {@link UiHandlers}.
+     */
+    public interface MyUiHandlers extends UiHandlers {
+        void resize(Integer size);
+    }
 
-  @Inject
-  public ConsultingView(final Binder uiBinder) {
-    initWidget(uiBinder.createAndBindUi(this));
-  }
+    @Inject
+    public ConsultingView(final Binder uiBinder) {
+        initWidget(uiBinder.createAndBindUi(this));
+    }
 }

@@ -24,5 +24,5 @@ import java.util.List;
  * @author Christian Goudreau
  */
 public interface BlogPostParser {
-  List<BlogItem> parse();
+    List<BlogItem> parse();
 }

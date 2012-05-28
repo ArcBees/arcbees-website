@@ -25,16 +25,16 @@ import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
  * @author Zachary Keatts
  */
 public class SloganModule extends AbstractPresenterModule {
-  @Override
-  protected void configure() {
-    bind(new TypeLiteral<UiHandlersStrategy<SloganUiHandlers>>() {
-    }).to(
-        new TypeLiteral<ProviderUiHandlersStrategy<SloganUiHandlers>>() {
-        });
+    @Override
+    protected void configure() {
+        bind(new TypeLiteral<UiHandlersStrategy<SloganUiHandlers>>() {
+        }).to(
+                new TypeLiteral<ProviderUiHandlersStrategy<SloganUiHandlers>>() {
+                });
 
-    bindSingletonPresenterWidget(SloganPresenter.class,
-        SloganPresenter.MyView.class, SloganView.class);
-    bind(SloganUiHandlers.class).to(SloganPresenter.class);
-  }
+        bindSingletonPresenterWidget(SloganPresenter.class,
+                SloganPresenter.MyView.class, SloganView.class);
+        bind(SloganUiHandlers.class).to(SloganPresenter.class);
+    }
 
 }

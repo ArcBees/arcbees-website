@@ -32,38 +32,38 @@ import javax.inject.Inject;
 /**
  * @author Zachary Keatts
  */
-public class ServicePresenter extends Presenter<ServicePresenter.MyView, 
-  ServicePresenter.MyProxy> {
+public class ServicePresenter extends Presenter<ServicePresenter.MyView,
+        ServicePresenter.MyProxy> {
 
-  /**
-   * {@link ServicePresenter}'s proxy.
-   */
-  @ProxyStandard
-  @NameToken(NameTokens.service)
-  public interface MyProxy extends ProxyPlace<ServicePresenter> {
-  }
+    /**
+     * {@link ServicePresenter}'s proxy.
+     */
+    @ProxyStandard
+    @NameToken(NameTokens.service)
+    public interface MyProxy extends ProxyPlace<ServicePresenter> {
+    }
 
-  /**
-   * {@link ServicePresenter}'s view.
-   */
-  public interface MyView extends View {
-  }
+    /**
+     * {@link ServicePresenter}'s view.
+     */
+    public interface MyView extends View {
+    }
 
-  @Inject
-  public ServicePresenter(EventBus eventBus, MyView view, MyProxy proxy) {
-    super(eventBus, view, proxy);
-  }
+    @Inject
+    public ServicePresenter(EventBus eventBus, MyView view, MyProxy proxy) {
+        super(eventBus, view, proxy);
+    }
 
-  @Override
-  protected void revealInParent() {
-    RevealContentEvent.fire(this, AppPresenter.TYPE_SetMainContent, this);
-  }
-  
-  @Override
-  protected void onReveal() {
-    super.onReveal();
+    @Override
+    protected void revealInParent() {
+        RevealContentEvent.fire(this, AppPresenter.TYPE_SetMainContent, this);
+    }
 
-    ResizeEvent.fire(this, AppPresenter.TYPE_SetMainContent,
-        getView().asWidget().getOffsetHeight());
-  }
+    @Override
+    protected void onReveal() {
+        super.onReveal();
+
+        ResizeEvent.fire(this, AppPresenter.TYPE_SetMainContent,
+                getView().asWidget().getOffsetHeight());
+    }
 }

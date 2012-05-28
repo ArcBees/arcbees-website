@@ -26,13 +26,13 @@ import com.gwtplatform.dispatch.client.gin.DispatchAsyncModule;
  * {@link com.google.gwt.inject.client.GinModules} configuration that install
  * {@link DispatchAsyncModule} with {@link MyClientActionHandlerRegistry}. This
  * class must be part of {@link ClientGinjector}.
- * 
+ *
  * @author Christian Goudreau
  */
 public class ClientDispatchModule extends AbstractGinModule {
-  @Override
-  protected void configure() {
-    install(new DispatchAsyncModule.Builder().clientActionHandlerRegistry(
-        MyClientActionHandlerRegistry.class).build());
-  }
+    @Override
+    protected void configure() {
+        install(new DispatchAsyncModule.Builder().clientActionHandlerRegistry(
+                MyClientActionHandlerRegistry.class).build());
+    }
 }

@@ -37,112 +37,112 @@ import com.google.inject.Inject;
  * @author Christian Goudreau
  */
 public class AppView extends ViewImpl implements MyView {
-  /**
-   * {@link AppView}'s {@link UiBinder}.
-   */
-  public interface Binder extends UiBinder<Widget, AppView> {
-  }
+    /**
+     * {@link AppView}'s {@link UiBinder}.
+     */
+    public interface Binder extends UiBinder<Widget, AppView> {
+    }
 
-  @UiField
-  HTMLPanel mainContent;
-  @UiField
-  HTMLPanel mainContent1;
-  @UiField
-  HTMLPanel mainContent2;
-  @UiField
-  HTMLPanel header;
-  @UiField
-  HTMLPanel footer;
-  
-  private Integer delay = 300;
-  private Boolean blockFade = false;
-  private Widget lastWidget;
+    @UiField
+    HTMLPanel mainContent;
+    @UiField
+    HTMLPanel mainContent1;
+    @UiField
+    HTMLPanel mainContent2;
+    @UiField
+    HTMLPanel header;
+    @UiField
+    HTMLPanel footer;
 
-  /**
-   * {@link Function} that insure that we wait until every fade animation is
-   * finished before unblocking upcoming fade animation.
-   */
-  private Function fadeFunction = new Function() {
+    private Integer delay = 300;
+    private Boolean blockFade = false;
+    private Widget lastWidget;
+
+    /**
+     * {@link Function} that insure that we wait until every fade animation is
+     * finished before unblocking upcoming fade animation.
+     */
+    private Function fadeFunction = new Function() {
+        @Override
+        public void f(Element e) {
+            blockFade = false;
+        }
+    };
+
+    @Inject
+    public AppView(final Binder uiBinder) {
+        initWidget(uiBinder.createAndBindUi(this));
+    }
+
     @Override
-    public void f(Element e) {
-        blockFade = false;
+    public void setInSlot(Object slot, Widget content) {
+        if (slot == AppPresenter.TYPE_SetMainContent) {
+            fadeWidget(content);
+        } else if (slot == AppPresenter.TYPE_setHeader) {
+            header.clear();
+            header.add(content, header.getElement());
+        } else if (slot == AppPresenter.TYPE_setFooter) {
+            footer.clear();
+            footer.add(content, footer.getElement());
+        }
     }
-  };
-  
-  @Inject
-  public AppView(final Binder uiBinder) {
-    initWidget(uiBinder.createAndBindUi(this));
-  }
 
-  @Override
-  public void setInSlot(Object slot, Widget content) {
-    if (slot == AppPresenter.TYPE_SetMainContent) {
-      fadeWidget(content);
-    } else if (slot == AppPresenter.TYPE_setHeader) {
-      header.clear();
-      header.add(content, header.getElement());
-    } else if (slot == AppPresenter.TYPE_setFooter) {
-      footer.clear();
-      footer.add(content, footer.getElement());
+    @Override
+    public void resizeSlot(Object slot, Integer size) {
+        if (slot == AppPresenter.TYPE_SetMainContent) {
+            resize(mainContent, size);
+        }
     }
-  }
 
-  @Override
-  public void resizeSlot(Object slot, Integer size) {
-    if (slot == AppPresenter.TYPE_SetMainContent) {
-      resize(mainContent, size);
+    private void fadeWidget(Widget content) {
+        // Make sure that fading effect isn't blocked.
+        if (!blockFade && !content.equals(lastWidget)) {
+            lastWidget = content;
+
+            if (mainContent2.isVisible() && !mainContent1.isVisible()) {
+                switchFade(mainContent1, mainContent2.getElement(), content);
+            } else if (!mainContent2.isVisible()) {
+                switchFade(mainContent2, mainContent1.getElement(), content);
+            }
+        }
     }
-  }  
-  
-  private void fadeWidget(Widget content) {
-    // Make sure that fading effect isn't blocked.
-    if (!blockFade && !content.equals(lastWidget)) {
-      lastWidget = content;
-      
-      if (mainContent2.isVisible() && !mainContent1.isVisible()) {
-        switchFade(mainContent1, mainContent2.getElement(), content);
-      } else if (!mainContent2.isVisible()) {
-        switchFade(mainContent2, mainContent1.getElement(), content);
-      }
+
+    /**
+     * Used to start the animation that switch the opacity of the two fade block.
+     *
+     * @param fadeBlock The fade block to show.
+     * @param element   The {@link Element} of the second block to hide.
+     */
+    private void switchFade(HTMLPanel fadeBlock, Element element, Widget content) {
+        fadeBlock.clear();
+        fadeBlock.add(content);
+
+        if (fadeBlock.isAttached()) {
+            blockFade = true;
+
+            if ($("#" + AppIds.getIframeId()).visible()) {
+                $("#" + AppIds.getIframeId()).hide();
+            } else {
+                $("#" + AppIds.getIframeId()).show();
+            }
+
+            $(fadeBlock).fadeIn(delay, fadeFunction);
+            $(element).fadeOut(delay, fadeFunction);
+        } else {
+            mainContent1.setVisible(false);
+            mainContent2.setVisible(false);
+
+            fadeBlock.setVisible(true);
+        }
     }
-  }
-  
-  /**
-   * Used to start the animation that switch the opacity of the two fade block.
-   * 
-   * @param fadeBlock The fade block to show.
-   * @param element The {@link Element} of the second block to hide.
-   */
-  private void switchFade(HTMLPanel fadeBlock, Element element, Widget content) {
-    fadeBlock.clear();
-    fadeBlock.add(content);
-    
-    if (fadeBlock.isAttached()) {
-      blockFade = true;
-      
-      if ($("#" + AppIds.getIframeId()).visible()) {
-        $("#" + AppIds.getIframeId()).hide();
-      } else {
-        $("#" + AppIds.getIframeId()).show();
-      }
-      
-      $(fadeBlock).fadeIn(delay, fadeFunction);
-      $(element).fadeOut(delay, fadeFunction);
-    } else {
-      mainContent1.setVisible(false);
-      mainContent2.setVisible(false);
-      
-      fadeBlock.setVisible(true);
-    }
-  }
-  
-  private void resize(HTMLPanel resizablePanel, Integer height) {
-    $(resizablePanel).as(Effects).animate(
-        Properties.create("{ " + "height: '" + String.valueOf(height) + "px'}"),
-        delay, Easing.LINEAR, new Function() {
-          @Override
-          public void f(Element e) {
-          }
+
+    private void resize(HTMLPanel resizablePanel, Integer height) {
+        $(resizablePanel).as(Effects).animate(
+                Properties.create("{ " + "height: '" + String.valueOf(height) + "px'}"),
+                delay, Easing.LINEAR, new Function() {
+            @Override
+            public void f(Element e) {
+            }
         });
-  }
+    }
 }

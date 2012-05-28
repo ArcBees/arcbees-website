@@ -35,90 +35,91 @@ import com.gwtplatform.mvp.client.proxy.*;
  * @author Christian Goudreau
  */
 public class HomePresenter extends
-    Presenter<HomePresenter.MyView, HomePresenter.MyProxy> implements
+        Presenter<HomePresenter.MyView, HomePresenter.MyProxy> implements
         HomeUiHandlers, ResizeHandler, NavigationHandler {
-  /**
-   * {@link HomePresenter}'s proxy.
-   */
-  @ProxyStandard
-  public interface MyProxy extends Proxy<HomePresenter> {
-  }
-
-  /**
-   * {@link HomePresenter}'s view.
-   */
-  public interface MyView extends View {
-    void resizeSlot(Object slot, Integer size);
-  }
-
-  @ContentSlot
-  public static final Type<RevealContentHandler<?>> TYPE_SetBottomContent1 = new Type<RevealContentHandler<?>>();
-  @ContentSlot
-  public static final Type<RevealContentHandler<?>> TYPE_SetBottomContent2 = new Type<RevealContentHandler<?>>();
-  @ContentSlot
-  public static final Type<RevealContentHandler<?>> TYPE_SetBottomContent3 = new Type<RevealContentHandler<?>>();
-  @ContentSlot
-  public static final Type<RevealContentHandler<?>> TYPE_SetBottomContent4 = new Type<RevealContentHandler<?>>();
-
-  public static final Object TYPE_SetTopContent = new Object();
-
-  private final SloganPresenter sloganPresenter;
-  private final Integer bottomMargin = 41;
-  private final Integer minSize = 827;
-
-  @Inject
-  public HomePresenter(final EventBus eventBus, final MyView view,
-      final MyProxy proxy, final SloganPresenter sloganPresenter) {
-    super(eventBus, view, proxy);
-
-    this.sloganPresenter = sloganPresenter;
-  }
-
-  @Override
-  protected void revealInParent() {
-    RevealContentEvent.fire(this, AppPresenter.TYPE_SetMainContent, this);
-  }
-
-  @Override
-  protected void onBind() {
-    super.onBind();
-
-    setInSlot(TYPE_SetTopContent, sloganPresenter);
-
-    addRegisteredHandler(ResizeEvent.getType(), this);
-  }
-
-  @Override
-  public void onResize(ResizeEvent event) {
-    if (event.getSlot().equals(TYPE_SetBottomContent1) || event.getSlot().equals(TYPE_SetBottomContent2) || event.getSlot().equals(TYPE_SetBottomContent3) || event.getSlot().equals(TYPE_SetBottomContent4)) {
-      Integer size = event.getSize() + bottomMargin;
-      getView().resizeSlot(event.getSlot(), size);
+    /**
+     * {@link HomePresenter}'s proxy.
+     */
+    @ProxyStandard
+    public interface MyProxy extends Proxy<HomePresenter> {
     }
-  }
 
-  @Override
-  @ProxyEvent
-  public void onNavigation(NavigationEvent navigationEvent) {
-    if (navigationEvent.getRequest().matchesNameToken(NameTokens.blog)) {
-      sloganPresenter.defaultDescription();
-    } else if (navigationEvent.getRequest().matchesNameToken(NameTokens.consulting)) {
-      sloganPresenter.showConsulting();
-    } else if (navigationEvent.getRequest().matchesNameToken(NameTokens.development)) {
-      sloganPresenter.showDevelopment();
-    } else if (navigationEvent.getRequest().matchesNameToken(NameTokens.successStory)) {
-      sloganPresenter.showSuccess();
+    /**
+     * {@link HomePresenter}'s view.
+     */
+    public interface MyView extends View {
+        void resizeSlot(Object slot, Integer size);
     }
-  }
 
-  @Override
-  public void resize(int height) {
-    ResizeEvent.fire(this, AppPresenter.TYPE_SetMainContent, height);
-  }
-  
-  @Override
-  protected void onReveal() {
-    super.onReveal();
+    @ContentSlot
+    public static final Type<RevealContentHandler<?>> TYPE_SetBottomContent1 = new Type<RevealContentHandler<?>>();
+    @ContentSlot
+    public static final Type<RevealContentHandler<?>> TYPE_SetBottomContent2 = new Type<RevealContentHandler<?>>();
+    @ContentSlot
+    public static final Type<RevealContentHandler<?>> TYPE_SetBottomContent3 = new Type<RevealContentHandler<?>>();
+    @ContentSlot
+    public static final Type<RevealContentHandler<?>> TYPE_SetBottomContent4 = new Type<RevealContentHandler<?>>();
 
-    ResizeEvent.fire(this, AppPresenter.TYPE_SetMainContent, minSize);
-  }
+    public static final Object TYPE_SetTopContent = new Object();
+
+    private final SloganPresenter sloganPresenter;
+    private final Integer bottomMargin = 41;
+    private final Integer minSize = 827;
+
+    @Inject
+    public HomePresenter(final EventBus eventBus, final MyView view,
+                         final MyProxy proxy, final SloganPresenter sloganPresenter) {
+        super(eventBus, view, proxy);
+
+        this.sloganPresenter = sloganPresenter;
+    }
+
+    @Override
+    protected void revealInParent() {
+        RevealContentEvent.fire(this, AppPresenter.TYPE_SetMainContent, this);
+    }
+
+    @Override
+    protected void onBind() {
+        super.onBind();
+
+        setInSlot(TYPE_SetTopContent, sloganPresenter);
+
+        addRegisteredHandler(ResizeEvent.getType(), this);
+    }
+
+    @Override
+    public void onResize(ResizeEvent event) {
+        if (event.getSlot().equals(TYPE_SetBottomContent1) || event.getSlot().equals(TYPE_SetBottomContent2) || event
+                .getSlot().equals(TYPE_SetBottomContent3) || event.getSlot().equals(TYPE_SetBottomContent4)) {
+            Integer size = event.getSize() + bottomMargin;
+            getView().resizeSlot(event.getSlot(), size);
+        }
+    }
+
+    @Override
+    @ProxyEvent
+    public void onNavigation(NavigationEvent navigationEvent) {
+        if (navigationEvent.getRequest().matchesNameToken(NameTokens.blog)) {
+            sloganPresenter.defaultDescription();
+        } else if (navigationEvent.getRequest().matchesNameToken(NameTokens.consulting)) {
+            sloganPresenter.showConsulting();
+        } else if (navigationEvent.getRequest().matchesNameToken(NameTokens.development)) {
+            sloganPresenter.showDevelopment();
+        } else if (navigationEvent.getRequest().matchesNameToken(NameTokens.successStory)) {
+            sloganPresenter.showSuccess();
+        }
+    }
+
+    @Override
+    public void resize(int height) {
+        ResizeEvent.fire(this, AppPresenter.TYPE_SetMainContent, height);
+    }
+
+    @Override
+    protected void onReveal() {
+        super.onReveal();
+
+        ResizeEvent.fire(this, AppPresenter.TYPE_SetMainContent, minSize);
+    }
 }

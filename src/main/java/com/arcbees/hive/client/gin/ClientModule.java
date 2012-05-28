@@ -41,26 +41,26 @@ import com.gwtplatform.mvp.client.googleanalytics.GoogleAnalyticsNavigationTrack
  * @author Zachary Keatts
  */
 public class ClientModule extends AbstractGinModule {
-  @Override
-  protected void configure() {
-    // Singleton resources
-    bind(Cache.class).to(DefaultCacheImpl.class).in(Singleton.class);
-    bind(Resources.class).in(Singleton.class);
-    bind(GoogleAnalyticsNavigationTracker.class).asEagerSingleton();
-    
-    // Constant
-    bindConstant().annotatedWith(DefaultPlace.class).to(
-        NameTokens.blog);
-    bindConstant().annotatedWith(GaAccount.class).to("UA-19115423-2");
-    
-    // Modules
-    install(new DefaultModule(HivePlaceManager.class));
-    install(new CommonModule());
-    install(new HomeModule());
-    install(new ServiceModule());
-    install(new ProductsModule());
-    install(new JobsModule());
-    install(new AboutModule());
-    install(new ContactModule());
-  }
+    @Override
+    protected void configure() {
+        // Singleton resources
+        bind(Cache.class).to(DefaultCacheImpl.class).in(Singleton.class);
+        bind(Resources.class).in(Singleton.class);
+        bind(GoogleAnalyticsNavigationTracker.class).asEagerSingleton();
+
+        // Constant
+        bindConstant().annotatedWith(DefaultPlace.class).to(
+                NameTokens.blog);
+        bindConstant().annotatedWith(GaAccount.class).to("UA-19115423-2");
+
+        // Modules
+        install(new DefaultModule(HivePlaceManager.class));
+        install(new CommonModule());
+        install(new HomeModule());
+        install(new ServiceModule());
+        install(new ProductsModule());
+        install(new JobsModule());
+        install(new AboutModule());
+        install(new ContactModule());
+    }
 }

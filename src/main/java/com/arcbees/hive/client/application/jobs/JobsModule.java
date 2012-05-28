@@ -23,9 +23,9 @@ import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
  */
 public class JobsModule extends AbstractPresenterModule {
 
-  @Override
-  protected void configure() {
-    bindPresenter(JobsPresenter.class, JobsPresenter.MyView.class,
-        JobsView.class, JobsPresenter.MyProxy.class);
-  }
+    @Override
+    protected void configure() {
+        bindPresenter(JobsPresenter.class, JobsPresenter.MyView.class,
+                JobsView.class, JobsPresenter.MyProxy.class);
+    }
 }

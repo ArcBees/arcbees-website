@@ -26,23 +26,23 @@ import com.gwtplatform.mvp.client.proxy.PlaceManager;
  * @author Christian Goudreau
  */
 public class HeaderPresenter extends PresenterWidget<HeaderPresenter.MyView> implements HeaderUiHandlers {
-  /**
-   * {@link HeaderPresenter}'s view.
-   */
-  public interface MyView extends View {
-  }
-  
-  private final PlaceManager placeManager;
+    /**
+     * {@link HeaderPresenter}'s view.
+     */
+    public interface MyView extends View {
+    }
 
-  @Inject
-  public HeaderPresenter(final EventBus eventBus, final MyView view, final PlaceManager placeManager) {
-    super(eventBus, view);
+    private final PlaceManager placeManager;
 
-    this.placeManager = placeManager;
-  }
-  
-  @Override
-  public void showHome() {
-    placeManager.revealDefaultPlace();
-  }
+    @Inject
+    public HeaderPresenter(final EventBus eventBus, final MyView view, final PlaceManager placeManager) {
+        super(eventBus, view);
+
+        this.placeManager = placeManager;
+    }
+
+    @Override
+    public void showHome() {
+        placeManager.revealDefaultPlace();
+    }
 }

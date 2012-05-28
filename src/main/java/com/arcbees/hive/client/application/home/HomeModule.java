@@ -33,27 +33,27 @@ import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
  * @author Christian Goudreau
  */
 public class HomeModule extends AbstractPresenterModule {
-  @Override
-  protected void configure() {
-    bind(new TypeLiteral<UiHandlersStrategy<HomeUiHandlers>>() {
-    }).to(
-        new TypeLiteral<ProviderUiHandlersStrategy<HomeUiHandlers>>() {
-        });
-    
-    bindPresenter(HomePresenter.class, HomePresenter.MyView.class,
-        HomeView.class, HomePresenter.MyProxy.class);
-    bindPresenter(ConsultingPresenter.class, ConsultingPresenter.MyView.class,
-        ConsultingView.class, ConsultingPresenter.MyProxy.class);
-    bindPresenter(DevelopmentPresenter.class,
-        DevelopmentPresenter.MyView.class, DevelopmentView.class,
-        DevelopmentPresenter.MyProxy.class);
-    bindPresenter(SuccessStoryPresenter.class,
-        SuccessStoryPresenter.MyView.class, SuccessStoryView.class,
-        SuccessStoryPresenter.MyProxy.class);
+    @Override
+    protected void configure() {
+        bind(new TypeLiteral<UiHandlersStrategy<HomeUiHandlers>>() {
+        }).to(
+                new TypeLiteral<ProviderUiHandlersStrategy<HomeUiHandlers>>() {
+                });
 
-    bind(HomeUiHandlers.class).to(HomePresenter.class);
-    
-    install(new SloganModule());
-    install(new BlogModule());
-  }
+        bindPresenter(HomePresenter.class, HomePresenter.MyView.class,
+                HomeView.class, HomePresenter.MyProxy.class);
+        bindPresenter(ConsultingPresenter.class, ConsultingPresenter.MyView.class,
+                ConsultingView.class, ConsultingPresenter.MyProxy.class);
+        bindPresenter(DevelopmentPresenter.class,
+                DevelopmentPresenter.MyView.class, DevelopmentView.class,
+                DevelopmentPresenter.MyProxy.class);
+        bindPresenter(SuccessStoryPresenter.class,
+                SuccessStoryPresenter.MyView.class, SuccessStoryView.class,
+                SuccessStoryPresenter.MyProxy.class);
+
+        bind(HomeUiHandlers.class).to(HomePresenter.class);
+
+        install(new SloganModule());
+        install(new BlogModule());
+    }
 }

@@ -33,61 +33,62 @@ import com.gwtplatform.mvp.client.proxy.RevealRootContentEvent;
  * @author Christian Goudreau
  */
 public class AppPresenter extends
-    Presenter<AppPresenter.MyView, AppPresenter.MyProxy> implements ResizeHandler  {
+        Presenter<AppPresenter.MyView, AppPresenter.MyProxy> implements ResizeHandler {
 
-  /**
-   * {@link AppPresenter}'s proxy.
-   */
-  @ProxyStandard
-  public interface MyProxy extends Proxy<AppPresenter> {
-  }
+    /**
+     * {@link AppPresenter}'s proxy.
+     */
+    @ProxyStandard
+    public interface MyProxy extends Proxy<AppPresenter> {
+    }
 
-  /**
-   * {@link AppPresenter}'s view.
-   */
-  public interface MyView extends View {
-    void resizeSlot(Object slot, Integer size);
-  }
+    /**
+     * {@link AppPresenter}'s view.
+     */
+    public interface MyView extends View {
+        void resizeSlot(Object slot, Integer size);
+    }
 
-  @ContentSlot
-  public static final Type<RevealContentHandler<?>> TYPE_SetMainContent = new Type<RevealContentHandler<?>>();
-  
-  public static Object TYPE_setHeader = new Object();
-  public static Object TYPE_setFooter = new Object();
+    @ContentSlot
+    public static final Type<RevealContentHandler<?>> TYPE_SetMainContent = new Type<RevealContentHandler<?>>();
 
-  private final HeaderPresenter headerPresenter;
-  private final FooterPresenter footerPresenter;
-  
-  private final Integer bottomMargin = 0;
-  
-  @Inject
-  public AppPresenter(final EventBus eventBus, final MyView view,
-      final MyProxy proxy, final HeaderPresenter headerPresenter, final FooterPresenter footerPresenter) {
-    super(eventBus, view, proxy);
-    
-    this.headerPresenter = headerPresenter;
-    this.footerPresenter = footerPresenter;
-  }
+    public static Object TYPE_setHeader = new Object();
+    public static Object TYPE_setFooter = new Object();
 
-  @Override
-  public void onResize(ResizeEvent event) {
-    Integer size = event.getSize() + bottomMargin;
-    getView().resizeSlot(event.getSlot(), size);
-  }
-  
+    private final HeaderPresenter headerPresenter;
+    private final FooterPresenter footerPresenter;
 
-  @Override
-  protected void revealInParent() {
-    RevealRootContentEvent.fire(this, this);
-  }
+    private final Integer bottomMargin = 0;
 
-  @Override
-  protected void onBind() {
-    super.onBind();
-    
-    setInSlot(TYPE_setHeader, headerPresenter);
-    setInSlot(TYPE_setFooter, footerPresenter);
-    
-    addRegisteredHandler(ResizeEvent.getType(), this);
-  }
+    @Inject
+    public AppPresenter(final EventBus eventBus, final MyView view,
+                        final MyProxy proxy, final HeaderPresenter headerPresenter,
+                        final FooterPresenter footerPresenter) {
+        super(eventBus, view, proxy);
+
+        this.headerPresenter = headerPresenter;
+        this.footerPresenter = footerPresenter;
+    }
+
+    @Override
+    public void onResize(ResizeEvent event) {
+        Integer size = event.getSize() + bottomMargin;
+        getView().resizeSlot(event.getSlot(), size);
+    }
+
+
+    @Override
+    protected void revealInParent() {
+        RevealRootContentEvent.fire(this, this);
+    }
+
+    @Override
+    protected void onBind() {
+        super.onBind();
+
+        setInSlot(TYPE_setHeader, headerPresenter);
+        setInSlot(TYPE_setFooter, footerPresenter);
+
+        addRegisteredHandler(ResizeEvent.getType(), this);
+    }
 }

@@ -24,21 +24,20 @@ import com.google.web.bindery.event.shared.EventBus;
 
 /**
  * @param <T> Type du callback
- * 
  * @author Christian Goudreau
  */
 public abstract class AsyncCallbackImpl<T> implements AsyncCallback<T>, HasHandlers {
-  @Inject
-  protected static EventBus eventBus;
+    @Inject
+    protected static EventBus eventBus;
 
-  public void onFailure(Throwable e) {
-  }
+    public void onFailure(Throwable e) {
+    }
 
-  @Override
-  public abstract void onSuccess(T result);
+    @Override
+    public abstract void onSuccess(T result);
 
     @Override
     public void fireEvent(GwtEvent<?> event) {
-      eventBus.fireEvent(event);
+        eventBus.fireEvent(event);
     }
 }

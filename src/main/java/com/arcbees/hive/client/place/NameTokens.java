@@ -21,49 +21,49 @@ package com.arcbees.hive.client.place;
  * @author Zachary Keatts
  */
 public class NameTokens {
-  public static final String blog = "!blog";
-  public static final String service = "!service";
-  public static final String product = "!product";
-  public static final String job = "!job";
-  public static final String about = "!about";
-  public static final String contact = "!contact";
-  public static final String consulting = "!consulting";
-  public static final String development = "!development";
-  public static final String successStory = "!successStory";
+    public static final String blog = "!blog";
+    public static final String service = "!service";
+    public static final String product = "!product";
+    public static final String job = "!job";
+    public static final String about = "!about";
+    public static final String contact = "!contact";
+    public static final String consulting = "!consulting";
+    public static final String development = "!development";
+    public static final String successStory = "!successStory";
 
-  public static String getBlog() {
-    return blog;
-  }
+    public static String getBlog() {
+        return blog;
+    }
 
-  public static String getService() {
-    return service;
-  }
+    public static String getService() {
+        return service;
+    }
 
-  public static String getProduct() {
-    return product;
-  }
+    public static String getProduct() {
+        return product;
+    }
 
-  public static String getJob() {
-    return job;
-  }
+    public static String getJob() {
+        return job;
+    }
 
-  public static String getAbout() {
-    return about;
-  }
+    public static String getAbout() {
+        return about;
+    }
 
-  public static String getContact() {
-    return contact;
-  }
-  
-  public static String getConsulting() {
-    return consulting;
-  }
-  
-  public static String getDevelopment() {
-    return development;
-  }
-  
-  public static String getSuccessStory() {
-    return successStory;
-  }
+    public static String getContact() {
+        return contact;
+    }
+
+    public static String getConsulting() {
+        return consulting;
+    }
+
+    public static String getDevelopment() {
+        return development;
+    }
+
+    public static String getSuccessStory() {
+        return successStory;
+    }
 }

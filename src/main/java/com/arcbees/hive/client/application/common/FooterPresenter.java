@@ -32,40 +32,40 @@ import com.gwtplatform.mvp.client.View;
  * @author Christian Goudreau
  */
 public class FooterPresenter extends PresenterWidget<FooterPresenter.MyView> {
-  /**
-   * {@link FooterPresenter}'s view.
-   */
-  public interface MyView extends View {
-    void buildRecentNewsHyperlink(String display, String link);
-  }
-
-  private final DispatchAsync dispatcher;
-
-  @Inject
-  public FooterPresenter(final EventBus eventBus, final MyView view,
-      final DispatchAsync dispatcher) {
-    super(eventBus, view);
-
-    this.dispatcher = dispatcher;
-  }
-
-  @Override
-  protected void onBind() {
-    super.onBind();
-
-    dispatcher.execute(new GetBlogPosts(),
-        new AsyncCallbackImpl<GetBlogPostsResult>() {
-          @Override
-          public void onSuccess(GetBlogPostsResult result) {
-            onGetBlogPostsSucceeded(result.getBlogPosts());
-          }
-        });
-  }
-
-  private void onGetBlogPostsSucceeded(List<BlogItem> blogPosts) {
-    for (BlogItem blogItem : blogPosts) {
-      getView().buildRecentNewsHyperlink(blogItem.getTitle(),
-          blogItem.getLink());
+    /**
+     * {@link FooterPresenter}'s view.
+     */
+    public interface MyView extends View {
+        void buildRecentNewsHyperlink(String display, String link);
     }
-  }
+
+    private final DispatchAsync dispatcher;
+
+    @Inject
+    public FooterPresenter(final EventBus eventBus, final MyView view,
+                           final DispatchAsync dispatcher) {
+        super(eventBus, view);
+
+        this.dispatcher = dispatcher;
+    }
+
+    @Override
+    protected void onBind() {
+        super.onBind();
+
+        dispatcher.execute(new GetBlogPosts(),
+                new AsyncCallbackImpl<GetBlogPostsResult>() {
+                    @Override
+                    public void onSuccess(GetBlogPostsResult result) {
+                        onGetBlogPostsSucceeded(result.getBlogPosts());
+                    }
+                });
+    }
+
+    private void onGetBlogPostsSucceeded(List<BlogItem> blogPosts) {
+        for (BlogItem blogItem : blogPosts) {
+            getView().buildRecentNewsHyperlink(blogItem.getTitle(),
+                    blogItem.getLink());
+        }
+    }
 }

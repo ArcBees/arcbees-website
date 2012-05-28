@@ -30,30 +30,30 @@ import com.gwtplatform.mvp.client.proxy.TokenFormatter;
  * @author Christian Goudreau
  */
 public class HivePlaceManager extends PlaceManagerImpl {
-  private final PlaceRequest defaultPlaceRequest;
+    private final PlaceRequest defaultPlaceRequest;
 
-  @Inject
-  public HivePlaceManager(EventBus eventBus, TokenFormatter tokenFormatter,
-      @DefaultPlace String defaultPlaceNameToken) {
-    super(eventBus, tokenFormatter);
+    @Inject
+    public HivePlaceManager(EventBus eventBus, TokenFormatter tokenFormatter,
+                            @DefaultPlace String defaultPlaceNameToken) {
+        super(eventBus, tokenFormatter);
 
-    this.defaultPlaceRequest = new PlaceRequest(defaultPlaceNameToken);
-  }
-
-  @Override
-  public void revealDefaultPlace() {
-    if (History.getToken().isEmpty()) {
-      revealPlace(defaultPlaceRequest, false);
-    } else {
-      revealPlace(defaultPlaceRequest);
+        this.defaultPlaceRequest = new PlaceRequest(defaultPlaceNameToken);
     }
-  }
 
-  @Override
-  public void revealErrorPlace(String invalidHistoryToken) {
-  }
+    @Override
+    public void revealDefaultPlace() {
+        if (History.getToken().isEmpty()) {
+            revealPlace(defaultPlaceRequest, false);
+        } else {
+            revealPlace(defaultPlaceRequest);
+        }
+    }
 
-  @Override
-  public void revealUnauthorizedPlace(String unauthorizedHistoryToken) {
-  }
+    @Override
+    public void revealErrorPlace(String invalidHistoryToken) {
+    }
+
+    @Override
+    public void revealUnauthorizedPlace(String unauthorizedHistoryToken) {
+    }
 }

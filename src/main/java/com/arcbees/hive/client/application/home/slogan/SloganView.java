@@ -37,92 +37,92 @@ import static com.google.gwt.query.client.GQuery.$;
  * @author Zachary Keatts
  */
 public class SloganView extends ViewWithUiHandlers<SloganUiHandlers> implements
-    MyView {
-  /**
-   * This will provide a way to automatically create and inject the
-   * {@link com.gwtplatform.mvp.client.View} instead of using directly
-   * <code>gwt.create()</code>. You only have to inject it in the ctor.
-   */
-  public interface Binder extends UiBinder<Widget, SloganView> {
-  }
+        MyView {
+    /**
+     * This will provide a way to automatically create and inject the
+     * {@link com.gwtplatform.mvp.client.View} instead of using directly
+     * <code>gwt.create()</code>. You only have to inject it in the ctor.
+     */
+    public interface Binder extends UiBinder<Widget, SloganView> {
+    }
 
-  @UiField
-  HTML fadeBlockOne;
-  @UiField
-  HTML fadeBlockTwo;
+    @UiField
+    HTML fadeBlockOne;
+    @UiField
+    HTML fadeBlockTwo;
 
-  private Integer fadeDelay = 250;
-  private Boolean blockFade = false;
-  private String lastDesc = "";
+    private Integer fadeDelay = 250;
+    private Boolean blockFade = false;
+    private String lastDesc = "";
 
-  /**
-   * {@link Function} that insure that we wait until every fade animation is
-   * finished before unblocking upcoming fade animation.
-   */
-  private Function fadeFunction = new Function() {
+    /**
+     * {@link Function} that insure that we wait until every fade animation is
+     * finished before unblocking upcoming fade animation.
+     */
+    private Function fadeFunction = new Function() {
+        @Override
+        public void f(Element e) {
+            blockFade = false;
+        }
+    };
+
+    @Inject
+    public SloganView(final Binder uiBinder,
+                      final UiHandlersStrategy<SloganUiHandlers> uiHandlersStrategy) {
+        super(uiHandlersStrategy);
+
+        initWidget(uiBinder.createAndBindUi(this));
+    }
+
     @Override
-    public void f(Element e) {
-      blockFade = false;
+    public void fadeDescription(SafeHtml desc) {
+        // Make sure that fading effect isn't blocked.
+        if (!blockFade && !lastDesc.equals(desc.toString())) {
+            lastDesc = desc.toString();
+
+            if (fadeBlockTwo.isVisible() && !fadeBlockOne.isVisible()) {
+                switchFade(fadeBlockOne, fadeBlockTwo.getElement(), desc);
+            } else if (!fadeBlockTwo.isVisible()) {
+                switchFade(fadeBlockTwo, fadeBlockOne.getElement(), desc);
+            }
+        }
     }
-  };
 
-  @Inject
-  public SloganView(final Binder uiBinder,
-      final UiHandlersStrategy<SloganUiHandlers> uiHandlersStrategy) {
-    super(uiHandlersStrategy);
-
-    initWidget(uiBinder.createAndBindUi(this));
-  }
-
-  @Override
-  public void fadeDescription(SafeHtml desc) {
-    // Make sure that fading effect isn't blocked.
-    if (!blockFade && !lastDesc.equals(desc.toString())) {
-      lastDesc = desc.toString();
-
-      if (fadeBlockTwo.isVisible() && !fadeBlockOne.isVisible()) {
-        switchFade(fadeBlockOne, fadeBlockTwo.getElement(), desc);
-      } else if (!fadeBlockTwo.isVisible()) {
-        switchFade(fadeBlockTwo, fadeBlockOne.getElement(), desc);
-      }
+    @UiHandler("consulting")
+    void onConsultingClicked(ClickEvent e) {
+        getUiHandlers().showConsultingSection();
     }
-  }
 
-  @UiHandler("consulting")
-  void onConsultingClicked(ClickEvent e) {
-    getUiHandlers().showConsultingSection();
-  }
-
-  @UiHandler("development")
-  void onDevelopmentClicked(ClickEvent e) {
-    getUiHandlers().showDevelopmentSection();
-  }
-
-  @UiHandler("success")
-  void onSuccessClicked(ClickEvent event) {
-    getUiHandlers().showSuccessStorySection();
-  }
-
-  /**
-   * Used to start the animation that switch the opacity of the two fade block.
-   * 
-   * @param fadeBlock The fade block to show.
-   * @param element The {@link Element} of the second block to hide.
-   * @param desc The description of the first block to set.
-   */
-  private void switchFade(HTML fadeBlock, Element element, SafeHtml desc) {
-    fadeBlock.setHTML(desc);
-
-    if (fadeBlock.isAttached()) {
-      blockFade = true;
-
-      $(fadeBlock).fadeIn(fadeDelay, fadeFunction);
-      $(element).fadeOut(fadeDelay, fadeFunction);
-    } else {
-      fadeBlockOne.setVisible(false);
-      fadeBlockTwo.setVisible(false);
-
-      fadeBlock.setVisible(true);
+    @UiHandler("development")
+    void onDevelopmentClicked(ClickEvent e) {
+        getUiHandlers().showDevelopmentSection();
     }
-  }
+
+    @UiHandler("success")
+    void onSuccessClicked(ClickEvent event) {
+        getUiHandlers().showSuccessStorySection();
+    }
+
+    /**
+     * Used to start the animation that switch the opacity of the two fade block.
+     *
+     * @param fadeBlock The fade block to show.
+     * @param element   The {@link Element} of the second block to hide.
+     * @param desc      The description of the first block to set.
+     */
+    private void switchFade(HTML fadeBlock, Element element, SafeHtml desc) {
+        fadeBlock.setHTML(desc);
+
+        if (fadeBlock.isAttached()) {
+            blockFade = true;
+
+            $(fadeBlock).fadeIn(fadeDelay, fadeFunction);
+            $(element).fadeOut(fadeDelay, fadeFunction);
+        } else {
+            fadeBlockOne.setVisible(false);
+            fadeBlockTwo.setVisible(false);
+
+            fadeBlock.setVisible(true);
+        }
+    }
 }

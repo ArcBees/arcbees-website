@@ -21,7 +21,7 @@ import com.arcbees.hive.shared.ActionImpl;
 /**
  * {@link com.gwtplatform.dispatch.shared.Action} that retrieve all blog posts
  * from ArcBees's blog.
- * 
+ *
  * @author Christian Goudreau
  */
 public class GetBlogPosts extends ActionImpl<GetBlogPostsResult> {

@@ -27,14 +27,14 @@ import com.gwtplatform.dispatch.server.guice.HandlerModule;
 
 /**
  * Module which binds the handlers and configurations for home module.
- * 
+ *
  * @author Christian Goudreau
  */
 public class HomeModule extends HandlerModule {
-  @Override
-  protected void configureHandlers() {
-    bindHandler(GetBlogPosts.class, GetBlogPostsHandler.class);
-    
-    bind(BlogPostParser.class).to(BlogPostParserImpl.class).in(Singleton.class);
-  }
+    @Override
+    protected void configureHandlers() {
+        bindHandler(GetBlogPosts.class, GetBlogPostsHandler.class);
+
+        bind(BlogPostParser.class).to(BlogPostParserImpl.class).in(Singleton.class);
+    }
 }

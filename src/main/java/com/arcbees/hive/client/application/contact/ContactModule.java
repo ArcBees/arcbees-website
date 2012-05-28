@@ -23,9 +23,9 @@ import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
  */
 public class ContactModule extends AbstractPresenterModule {
 
-  @Override
-  protected void configure() {
-    bindPresenter(ContactPresenter.class, ContactPresenter.MyView.class,
-        ContactView.class, ContactPresenter.MyProxy.class);
-  }
+    @Override
+    protected void configure() {
+        bindPresenter(ContactPresenter.class, ContactPresenter.MyView.class,
+                ContactView.class, ContactPresenter.MyProxy.class);
+    }
 }

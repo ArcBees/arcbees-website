@@ -1,64 +1,64 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+             xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
-	<ui:with field="res" type="com.arcbees.hive.client.resources.Resources" />
-	<ui:with field="nameTokens" type="com.arcbees.hive.client.place.NameTokens" />
+    <ui:with field="res" type="com.arcbees.hive.client.resources.Resources"/>
+    <ui:with field="nameTokens" type="com.arcbees.hive.client.place.NameTokens"/>
 
-	<ui:style>
-		.sloganArea {
-			position: relative;
-			width: 100%;
-			text-align: center;
-			font-family: "Verdana";
-			font-size: 17px;
-			color: #ffffff;
-			background-color: #ffffff;
-		}
-		
-		.sloganArea:focus {
-			outline: none;
-		}
-		
-		.sloganImagesMargin {
-			margin-left: 36px;
-			margin-right: 36px;
-		}
-		
-		.step a {
-			display: inline-block;
-			height: 24px;
-			width: 24px;
-			border-radius: 6px;
-			text-decoration: none;
-		}
-	</ui:style>
+    <ui:style>
+        .sloganArea {
+            position: relative;
+            width: 100%;
+            text-align: center;
+            font-family: "Verdana";
+            font-size: 17px;
+            color: #ffffff;
+            background-color: #ffffff;
+        }
 
-	<g:HTMLPanel>
-		<g:FocusPanel addStyleNames="{style.sloganArea}"
-			ui:field="sloganArea">
-			<g:HTMLPanel>
-				<div class="{res.style.sloganCoinGauche}" />
-				<div class="{res.style.sloganCoinDroit}" />
-				<g:Image resource="{res.consulting}" ui:field="consulting"
-					addStyleNames="{res.style.cursor}" />
-				<g:Image resource="{res.hplus}" addStyleNames="{style.sloganImagesMargin}" />
-				<g:Image resource="{res.development}" ui:field="development"
-					addStyleNames="{res.style.cursor}" />
-				<g:Image resource="{res.hequals}" addStyleNames="{style.sloganImagesMargin}" />
-				<g:Image resource="{res.success}" ui:field="success"
-					addStyleNames="{res.style.cursor}" />
-				<g:LayoutPanel width="950px" height="58px">
-					<g:layer left="0px" width="950px" top="0px" height="100%">
-						<g:HTML width="950px" height="58px" ui:field="fadeBlockOne"
-							visible="false" />
-					</g:layer>
-					<g:layer left="0px" width="950px" top="0px" height="100%">
-						<g:HTML width="950px" height="58px" ui:field="fadeBlockTwo"
-							visible="false" />
-					</g:layer>
-				</g:LayoutPanel>
-			</g:HTMLPanel>
-		</g:FocusPanel>
-	</g:HTMLPanel>
+        .sloganArea:focus {
+            outline: none;
+        }
+
+        .sloganImagesMargin {
+            margin-left: 36px;
+            margin-right: 36px;
+        }
+
+        .step a {
+            display: inline-block;
+            height: 24px;
+            width: 24px;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+    </ui:style>
+
+    <g:HTMLPanel>
+        <g:FocusPanel addStyleNames="{style.sloganArea}"
+                      ui:field="sloganArea">
+            <g:HTMLPanel>
+                <div class="{res.style.sloganCoinGauche}"/>
+                <div class="{res.style.sloganCoinDroit}"/>
+                <g:Image resource="{res.consulting}" ui:field="consulting"
+                         addStyleNames="{res.style.cursor}"/>
+                <g:Image resource="{res.hplus}" addStyleNames="{style.sloganImagesMargin}"/>
+                <g:Image resource="{res.development}" ui:field="development"
+                         addStyleNames="{res.style.cursor}"/>
+                <g:Image resource="{res.hequals}" addStyleNames="{style.sloganImagesMargin}"/>
+                <g:Image resource="{res.success}" ui:field="success"
+                         addStyleNames="{res.style.cursor}"/>
+                <g:LayoutPanel width="950px" height="58px">
+                    <g:layer left="0px" width="950px" top="0px" height="100%">
+                        <g:HTML width="950px" height="58px" ui:field="fadeBlockOne"
+                                visible="false"/>
+                    </g:layer>
+                    <g:layer left="0px" width="950px" top="0px" height="100%">
+                        <g:HTML width="950px" height="58px" ui:field="fadeBlockTwo"
+                                visible="false"/>
+                    </g:layer>
+                </g:LayoutPanel>
+            </g:HTMLPanel>
+        </g:FocusPanel>
+    </g:HTMLPanel>
 </ui:UiBinder> 

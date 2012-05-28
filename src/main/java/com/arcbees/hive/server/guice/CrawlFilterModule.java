@@ -25,10 +25,10 @@ import com.gwtplatform.crawler.server.ServiceUrl;
  * @author Philippe Beaudoin
  */
 public class CrawlFilterModule extends ServletModule {
-  @Override
-  public void configureServlets() {
-    bindConstant().annotatedWith(ServiceKey.class).to("ab12cd34");
-    bindConstant().annotatedWith(ServiceUrl.class).to("http://hivecrawl.appspot.com/");
-    filter("/*").through(CrawlFilter.class);
-  }
+    @Override
+    public void configureServlets() {
+        bindConstant().annotatedWith(ServiceKey.class).to("ab12cd34");
+        bindConstant().annotatedWith(ServiceUrl.class).to("http://hivecrawl.appspot.com/");
+        filter("/*").through(CrawlFilter.class);
+    }
 }

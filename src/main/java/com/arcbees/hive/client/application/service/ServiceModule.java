@@ -22,9 +22,9 @@ import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
  * @author Zachary Keatts
  */
 public class ServiceModule extends AbstractPresenterModule {
-  @Override
-  protected void configure() {
-    bindPresenter(ServicePresenter.class, ServicePresenter.MyView.class,
-        ServiceView.class, ServicePresenter.MyProxy.class);
-  }
+    @Override
+    protected void configure() {
+        bindPresenter(ServicePresenter.class, ServicePresenter.MyView.class,
+                ServiceView.class, ServicePresenter.MyProxy.class);
+    }
 }

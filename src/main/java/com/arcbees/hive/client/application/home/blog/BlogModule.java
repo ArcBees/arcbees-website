@@ -31,25 +31,26 @@ import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
  * @author Christian Goudreau
  */
 public class BlogModule extends AbstractPresenterModule {
-  @Override
-  protected void configure() {
-    bind(new TypeLiteral<UiHandlersStrategy<BlogUiHandlers>>() {
-    }).to(
-        new TypeLiteral<ProviderUiHandlersStrategy<BlogUiHandlers>>() {
-        });
-    
-    bindPresenter(BlogPresenter.class, BlogPresenter.MyView.class,
-        BlogView.class, BlogPresenter.MyProxy.class);
-    
-    bind(BlogView.Binder.class).in(Singleton.class);
-    
-    bind(BlogUiHandlers.class).to(BlogPresenter.class);
-    
-    install(new GinFactoryModuleBuilder().build(BlogItemWidgetFactory.class));
-  }
-  
-  @Provides @Named("BlogPostFormat")
-  DateTimeFormat getDateTimeFormat() {
-    return DateTimeFormat.getFormat("MMMM dd, yyyy");
-  }
+    @Override
+    protected void configure() {
+        bind(new TypeLiteral<UiHandlersStrategy<BlogUiHandlers>>() {
+        }).to(
+                new TypeLiteral<ProviderUiHandlersStrategy<BlogUiHandlers>>() {
+                });
+
+        bindPresenter(BlogPresenter.class, BlogPresenter.MyView.class,
+                BlogView.class, BlogPresenter.MyProxy.class);
+
+        bind(BlogView.Binder.class).in(Singleton.class);
+
+        bind(BlogUiHandlers.class).to(BlogPresenter.class);
+
+        install(new GinFactoryModuleBuilder().build(BlogItemWidgetFactory.class));
+    }
+
+    @Provides
+    @Named("BlogPostFormat")
+    DateTimeFormat getDateTimeFormat() {
+        return DateTimeFormat.getFormat("MMMM dd, yyyy");
+    }
 }

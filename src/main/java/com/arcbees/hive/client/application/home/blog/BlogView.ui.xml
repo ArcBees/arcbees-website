@@ -1,73 +1,77 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-    xmlns:g="urn:import:com.google.gwt.user.client.ui">
+             xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
-    <ui:with field="res" type="com.arcbees.hive.client.resources.Resources" />
-    <ui:with field="you" type="com.arcbees.hive.client.place.AppIds" />
-    <ui:with field='nameTokens' type='com.arcbees.hive.client.place.NameTokens' />
+    <ui:with field="res" type="com.arcbees.hive.client.resources.Resources"/>
+    <ui:with field="you" type="com.arcbees.hive.client.place.AppIds"/>
+    <ui:with field='nameTokens' type='com.arcbees.hive.client.place.NameTokens'/>
 
     <ui:style>
         .imageBlog {
-          position: absolute;
-          width: 175px;
-          height: 438px;
+            position: absolute;
+            width: 175px;
+            height: 438px;
         }
-        
+
         .imageRss {
-          position: absolute;
-          display: block;
-          top: 500px;
-          left: 856px;
-          width: 20px;
-          height: 20px;
+            position: absolute;
+            display: block;
+            top: 500px;
+            left: 856px;
+            width: 20px;
+            height: 20px;
         }
-        
+
         .highlyProductive {
-          position: absolute;
-          width: 669px;
-          left: 189px;
-          top: 0px;
-          height: 500px;
+            position: absolute;
+            width: 669px;
+            left: 189px;
+            top: 0px;
+            height: 500px;
         }
-        
+
         .blogItemsLeftPanel {
-          position: absolute;
-          top: 500px;
-          left: 189px;
-          width: 319px;
+            position: absolute;
+            top: 500px;
+            left: 189px;
+            width: 319px;
         }
-        
+
         .blogItemsRightPanel {
-          position: absolute;
-          top: 500px;
-          left: 534px;
-          width: 319px;
+            position: absolute;
+            top: 500px;
+            left: 534px;
+            width: 319px;
         }
     </ui:style>
 
     <g:HTMLPanel ui:field="blogPanel">
-        <g:Image resource="{res.blogAbeille}" styleName="{style.imageBlog}" />
+        <g:Image resource="{res.blogAbeille}" styleName="{style.imageBlog}"/>
         <g:HTMLPanel ui:field="session" styleName="{style.highlyProductive}">
             <iframe style="display: none;" id="{you.getIframeId}"
-                width="669" height="414"
-                src="http://www.youtube.com/embed/imiquTOLl64"
-                frameborder="0" allowfullscreen="true"></iframe>
+                    width="669" height="414"
+                    src="http://www.youtube.com/embed/imiquTOLl64"
+                    frameborder="0" allowfullscreen="true"></iframe>
             <p>
                 ArcBees was at Google I/O 2011, where Philippe Beaudoin was invited to talk about
-                our product, <a href="#{nameTokens.getProduct}">Gwt-Platorm</a> (at 39:00). The talk
-                also covers <a href="http://code.google.com/p/objectify-appengine/">Objectify</a>
-                and <a href="http://code.google.com/intl/fr-FR/webtoolkit/doc/latest/DevGuideRequestFactory.html">Request Factory</a>.
+                our product,
+                <a href="#{nameTokens.getProduct}">Gwt-Platorm</a>
+                (at 39:00). The talk
+                also covers
+                <a href="http://code.google.com/p/objectify-appengine/">Objectify</a>
+                and<a href="http://code.google.com/intl/fr-FR/webtoolkit/doc/latest/DevGuideRequestFactory.html">Request
+                Factory</a>.
             </p>
         </g:HTMLPanel>
 
         <g:HTMLPanel ui:field="blogItemsLeftPanel"
-            styleName="{style.blogItemsLeftPanel}" />
+                     styleName="{style.blogItemsLeftPanel}"/>
         <g:HTMLPanel ui:field="blogItemsRightPanel"
-            styleName="{style.blogItemsRightPanel}" />
+                     styleName="{style.blogItemsRightPanel}"/>
 
         <a class="{style.imageRss}" href="http://arcbees.wordpress.com/feed/"
-            target="_blank" title="Complete rss feed">
-            <g:Image resource="{res.rssFeed}" />
+           target="_blank" title="Complete rss feed">
+            <g:Image resource="{res.rssFeed}"/>
         </a>
     </g:HTMLPanel>
 </ui:UiBinder> 

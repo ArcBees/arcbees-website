@@ -22,9 +22,9 @@ import com.arcbees.hive.shared.home.blog.BlogItem;
  * Interface used with Guice as a factory for {@link BlogItemWidget}. For more
  * informations, please take a look at
  * {@link com.google.gwt.inject.client.assistedinject.GinFactoryModuleBuilder}
- * 
+ *
  * @author Christian Goudreau
  */
 public interface BlogItemWidgetFactory {
-  BlogItemWidget create(BlogItem blogItem);
+    BlogItemWidget create(BlogItem blogItem);
 }

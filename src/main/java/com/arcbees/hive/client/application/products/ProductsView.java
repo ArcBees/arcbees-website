@@ -27,16 +27,16 @@ import com.google.inject.Inject;
  */
 public class ProductsView extends ViewImpl implements MyView {
 
-  /**
-   * This will provide a way to automatically create and inject the
-   * {@link com.gwtplatform.mvp.client.View} instead of using directly
-   * <code>gwt.create()</code>. You only have to inject it in the ctor.
-   */
-  public interface Binder extends UiBinder<Widget, ProductsView> {
-  }
+    /**
+     * This will provide a way to automatically create and inject the
+     * {@link com.gwtplatform.mvp.client.View} instead of using directly
+     * <code>gwt.create()</code>. You only have to inject it in the ctor.
+     */
+    public interface Binder extends UiBinder<Widget, ProductsView> {
+    }
 
-  @Inject
-  public ProductsView(final Binder uiBinder) {
-    initWidget(uiBinder.createAndBindUi(this));
-  }
+    @Inject
+    public ProductsView(final Binder uiBinder) {
+        initWidget(uiBinder.createAndBindUi(this));
+    }
 }

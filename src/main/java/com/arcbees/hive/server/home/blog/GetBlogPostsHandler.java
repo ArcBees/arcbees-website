@@ -29,29 +29,29 @@ import com.gwtplatform.dispatch.shared.ActionException;
  * {@link com.gwtplatform.dispatch.server.actionhandler.ActionHandler} that
  * handle server request for {@link GetBlogPosts}
  * {@link com.gwtplatform.dispatch.shared.Action}.
- * 
+ *
  * @author Christian Goudreau
  */
 public class GetBlogPostsHandler extends
-    AbstractActionHandler<GetBlogPosts, GetBlogPostsResult> {
-  private final BlogPostParser blogPostParser;
+        AbstractActionHandler<GetBlogPosts, GetBlogPostsResult> {
+    private final BlogPostParser blogPostParser;
 
-  @Inject
-  public GetBlogPostsHandler(final BlogPostParser blogPostParser) {
-    super(GetBlogPosts.class);
+    @Inject
+    public GetBlogPostsHandler(final BlogPostParser blogPostParser) {
+        super(GetBlogPosts.class);
 
-    this.blogPostParser = blogPostParser;
-  }
+        this.blogPostParser = blogPostParser;
+    }
 
-  @Override
-  public GetBlogPostsResult execute(GetBlogPosts action,
-      ExecutionContext context) throws ActionException {
+    @Override
+    public GetBlogPostsResult execute(GetBlogPosts action,
+                                      ExecutionContext context) throws ActionException {
 
-    return new GetBlogPostsResult(blogPostParser.parse());
-  }
+        return new GetBlogPostsResult(blogPostParser.parse());
+    }
 
-  @Override
-  public void undo(GetBlogPosts action, GetBlogPostsResult result,
-      ExecutionContext context) throws ActionException {
-  }
+    @Override
+    public void undo(GetBlogPosts action, GetBlogPostsResult result,
+                     ExecutionContext context) throws ActionException {
+    }
 }

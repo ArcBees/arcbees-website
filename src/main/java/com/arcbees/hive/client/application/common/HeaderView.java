@@ -31,22 +31,22 @@ import com.google.inject.Inject;
  */
 public class HeaderView extends ViewWithUiHandlers<HeaderUiHandlers> implements MyView {
 
-  
-  /**
-   * {@link HeaderView}'s binder.
-   */
-  public interface Binder extends UiBinder<Widget, HeaderView> {
-  }
 
-  @Inject
-  public HeaderView(final Binder uiBinder, final UiHandlersStrategy<HeaderUiHandlers> uiHandlersStrategy) {
-    super(uiHandlersStrategy);
-    
-    initWidget(uiBinder.createAndBindUi(this));
-  }
+    /**
+     * {@link HeaderView}'s binder.
+     */
+    public interface Binder extends UiBinder<Widget, HeaderView> {
+    }
 
-  @UiHandler("header")
-  void onHeaderClicked(ClickEvent event) {
-    getUiHandlers().showHome();
-  }
+    @Inject
+    public HeaderView(final Binder uiBinder, final UiHandlersStrategy<HeaderUiHandlers> uiHandlersStrategy) {
+        super(uiHandlersStrategy);
+
+        initWidget(uiBinder.createAndBindUi(this));
+    }
+
+    @UiHandler("header")
+    void onHeaderClicked(ClickEvent event) {
+        getUiHandlers().showHome();
+    }
 }

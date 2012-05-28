@@ -24,21 +24,21 @@ import java.util.List;
  * {@link Result} class for {@link GetBlogPosts}
  * {@link com.gwtplatform.dispatch.shared.Action} that retrieve blog posts from
  * ArcBees's blog.
- * 
+ *
  * @author Christian Goudreau
  */
 public class GetBlogPostsResult implements Result {
-  private List<BlogItem> blogItem;
+    private List<BlogItem> blogItem;
 
-  @SuppressWarnings("unused")
-  private GetBlogPostsResult() {
-  }
+    @SuppressWarnings("unused")
+    private GetBlogPostsResult() {
+    }
 
-  public GetBlogPostsResult(final List<BlogItem> blogItem) {
-    this.blogItem = blogItem;
-  }
+    public GetBlogPostsResult(final List<BlogItem> blogItem) {
+        this.blogItem = blogItem;
+    }
 
-  public List<BlogItem> getBlogPosts() {
-    return blogItem;
-  }
+    public List<BlogItem> getBlogPosts() {
+        return blogItem;
+    }
 }

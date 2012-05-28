@@ -34,37 +34,37 @@ import com.gwtplatform.mvp.client.proxy.RevealContentEvent;
  * @author Zachary Keatts
  */
 public class ProductsPresenter extends
-    Presenter<ProductsPresenter.MyView, ProductsPresenter.MyProxy> {
+        Presenter<ProductsPresenter.MyView, ProductsPresenter.MyProxy> {
 
-  /**
-   * {@link ProductsPresenter}'s proxy.
-   */
-  @ProxyStandard
-  @NameToken(NameTokens.product)
-  public interface MyProxy extends ProxyPlace<ProductsPresenter> {
-  }
+    /**
+     * {@link ProductsPresenter}'s proxy.
+     */
+    @ProxyStandard
+    @NameToken(NameTokens.product)
+    public interface MyProxy extends ProxyPlace<ProductsPresenter> {
+    }
 
-  /**
-   * {@link ProductsPresenter}'s view.
-   */
-  public interface MyView extends View {
-  }
+    /**
+     * {@link ProductsPresenter}'s view.
+     */
+    public interface MyView extends View {
+    }
 
-  @Inject
-  public ProductsPresenter(EventBus eventBus, MyView view, MyProxy proxy) {
-    super(eventBus, view, proxy);
-  }
+    @Inject
+    public ProductsPresenter(EventBus eventBus, MyView view, MyProxy proxy) {
+        super(eventBus, view, proxy);
+    }
 
-  @Override
-  protected void revealInParent() {
-    RevealContentEvent.fire(this, AppPresenter.TYPE_SetMainContent, this);
-  }
-  
-  @Override
-  protected void onReveal() {
-    super.onReveal();
+    @Override
+    protected void revealInParent() {
+        RevealContentEvent.fire(this, AppPresenter.TYPE_SetMainContent, this);
+    }
 
-    ResizeEvent.fire(this, AppPresenter.TYPE_SetMainContent,
-        getView().asWidget().getOffsetHeight());
-  }
+    @Override
+    protected void onReveal() {
+        super.onReveal();
+
+        ResizeEvent.fire(this, AppPresenter.TYPE_SetMainContent,
+                getView().asWidget().getOffsetHeight());
+    }
 }

@@ -39,19 +39,31 @@ import com.gwtplatform.mvp.client.proxy.PlaceManager;
  */
 @GinModules({ClientDispatchModule.class, ClientModule.class})
 public interface ClientGinjector extends Ginjector {
-  EventBus getEventBus();
-  PlaceManager getPlaceManager();
-  Resources getResources();
-  
-  Provider<AppPresenter> getAppPresenter();
-  Provider<HomePresenter> getHomePresenter();
-  Provider<BlogPresenter> getBlogPresenter();
-  Provider<ConsultingPresenter> getConsultingPresenter();
-  Provider<DevelopmentPresenter> getDevelopmentPresenter();
-  Provider<SuccessStoryPresenter> getSuccessStoryPresenter();
-  Provider<ServicePresenter> getServicePresenter();
-  Provider<ProductsPresenter> getProductsPresenter();
-  Provider<JobsPresenter> getJobsPresenter();
-  Provider<AboutPresenter> getAboutPresenter();
-  Provider<ContactPresenter> getContactPresenter();
+    EventBus getEventBus();
+
+    PlaceManager getPlaceManager();
+
+    Resources getResources();
+
+    Provider<AppPresenter> getAppPresenter();
+
+    Provider<HomePresenter> getHomePresenter();
+
+    Provider<BlogPresenter> getBlogPresenter();
+
+    Provider<ConsultingPresenter> getConsultingPresenter();
+
+    Provider<DevelopmentPresenter> getDevelopmentPresenter();
+
+    Provider<SuccessStoryPresenter> getSuccessStoryPresenter();
+
+    Provider<ServicePresenter> getServicePresenter();
+
+    Provider<ProductsPresenter> getProductsPresenter();
+
+    Provider<JobsPresenter> getJobsPresenter();
+
+    Provider<AboutPresenter> getAboutPresenter();
+
+    Provider<ContactPresenter> getContactPresenter();
 }

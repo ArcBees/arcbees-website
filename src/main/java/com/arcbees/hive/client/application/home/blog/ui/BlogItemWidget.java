@@ -31,52 +31,52 @@ import com.google.inject.name.Named;
 /**
  * BlogItem view that represent the visual result of a
  * {@link com.arcbees.hive.shared.home.blog.BlogItem}.
- * 
+ *
  * @author Christian Goudreau
  */
 public class BlogItemWidget extends Composite {
-  /**
-   * This will provide a way to automatically create and inject the
-   * {@link com.gwtplatform.mvp.client.View} instead of using directly
-   * <code>gwt.create()</code>. You only have to inject it in the ctor.
-   */
-  public interface Binder extends UiBinder<Widget, BlogItemWidget> {
-  }
+    /**
+     * This will provide a way to automatically create and inject the
+     * {@link com.gwtplatform.mvp.client.View} instead of using directly
+     * <code>gwt.create()</code>. You only have to inject it in the ctor.
+     */
+    public interface Binder extends UiBinder<Widget, BlogItemWidget> {
+    }
 
-  @UiField
-  HTML blogPostTitle;
-  @UiField
-  HTML blogPostDateAuthor;
-  @UiField
-  HTML blogPostContent;
-  @UiField
-  HTML blogPostLink;
+    @UiField
+    HTML blogPostTitle;
+    @UiField
+    HTML blogPostDateAuthor;
+    @UiField
+    HTML blogPostContent;
+    @UiField
+    HTML blogPostLink;
 
-  private final DateTimeFormat dateTimeFormat;
+    private final DateTimeFormat dateTimeFormat;
 
-  @Inject
-  public BlogItemWidget(final Binder uiBinder,
-      @Assisted final BlogItem blogItem,
-      @Named("BlogPostFormat") final DateTimeFormat dateTimeFormat) {
-    initWidget(uiBinder.createAndBindUi(this));
+    @Inject
+    public BlogItemWidget(final Binder uiBinder,
+                          @Assisted final BlogItem blogItem,
+                          @Named("BlogPostFormat") final DateTimeFormat dateTimeFormat) {
+        initWidget(uiBinder.createAndBindUi(this));
 
-    this.dateTimeFormat = dateTimeFormat;
+        this.dateTimeFormat = dateTimeFormat;
 
-    refresh(blogItem);
-  }
+        refresh(blogItem);
+    }
 
-  /**
-   * This function will refresh the content of the widget with the
-   * {@link BlogItem} associated.
-   * 
-   * @param blogItem The {@link BlogItem} that this widget will hold.
-   */
-  private void refresh(BlogItem blogItem) {
-    blogPostTitle.setHTML(blogItem.getTitle());
-    blogPostDateAuthor.setHTML(dateTimeFormat.format(blogItem.getPubDate())
-        + " : by " + blogItem.getCreator());
-    blogPostContent.setHTML(blogItem.getDescription());
-    blogPostLink.setHTML("<a href=" + blogItem.getLink()
-        + " target=\"_blank\">Read the full article</a>");
-  }
+    /**
+     * This function will refresh the content of the widget with the
+     * {@link BlogItem} associated.
+     *
+     * @param blogItem The {@link BlogItem} that this widget will hold.
+     */
+    private void refresh(BlogItem blogItem) {
+        blogPostTitle.setHTML(blogItem.getTitle());
+        blogPostDateAuthor.setHTML(dateTimeFormat.format(blogItem.getPubDate())
+                + " : by " + blogItem.getCreator());
+        blogPostContent.setHTML(blogItem.getDescription());
+        blogPostLink.setHTML("<a href=" + blogItem.getLink()
+                + " target=\"_blank\">Read the full article</a>");
+    }
 }

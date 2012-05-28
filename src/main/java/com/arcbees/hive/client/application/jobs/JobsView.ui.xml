@@ -1,10 +1,10 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+             xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
-	<ui:with field="res" type="com.arcbees.hive.client.resources.Resources" />
+    <ui:with field="res" type="com.arcbees.hive.client.resources.Resources"/>
 
-	<ui:style>
+    <ui:style>
         .sectionText {
             position: absolute;
             font-size: 12px;
@@ -13,37 +13,39 @@
             top: 30px;
             left: 71px;
         }
-        
+
         .img {
             position: absolute;
             left: 34px;
         }
-        
+
         .section {
             position: relative;
             height: 351px;
             width: 888px;
         }
-	</ui:style>
+    </ui:style>
 
-	<g:HTMLPanel styleName="{res.style.blogBackground}">
-		<div class="{res.style.blogLeftFull}" />
-		<div class="{res.style.blogRightFull}" />
+    <g:HTMLPanel styleName="{res.style.blogBackground}">
+        <div class="{res.style.blogLeftFull}"/>
+        <div class="{res.style.blogRightFull}"/>
 
-		<div class="{style.section}">
-			<g:Image resource="{res.job}" styleName="{style.img}" />
+        <div class="{style.section}">
+            <g:Image resource="{res.job}" styleName="{style.img}"/>
 
-			<div class="{style.sectionText}">
-				<h2>Be part of the hive !</h2>
-				<p>Sorry, we're not hiring for any specific positions at this time.
-					However, we're always looking for smart, talented people with good
-					GWT knowledge. If you think you can make the difference, feel free
-					to email your resume to <a href="mailto:queenbee@arcbees.com?subject=Jobs">queenbee@arcbees.com</a></p>
-			</div>
-		</div>
+            <div class="{style.sectionText}">
+                <h2>Be part of the hive !</h2>
+                <p>Sorry, we're not hiring for any specific positions at this time.
+                    However, we're always looking for smart, talented people with good
+                    GWT knowledge. If you think you can make the difference, feel free
+                    to email your resume to
+                    <a href="mailto:queenbee@arcbees.com?subject=Jobs">queenbee@arcbees.com</a>
+                </p>
+            </div>
+        </div>
 
-		<div class="{res.style.blogDownJob}" />
-		<div class="{res.style.sloganCoinGauche}" />
-		<div class="{res.style.sloganCoinDroit}" />
-	</g:HTMLPanel>
+        <div class="{res.style.blogDownJob}"/>
+        <div class="{res.style.sloganCoinGauche}"/>
+        <div class="{res.style.sloganCoinDroit}"/>
+    </g:HTMLPanel>
 </ui:UiBinder>

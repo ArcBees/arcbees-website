@@ -27,13 +27,13 @@ import com.gwtplatform.mvp.client.DelayedBindRegistry;
  * @author Christian Goudreau
  */
 public class Hive implements EntryPoint {
-  public final ClientGinjector ginjector = GWT.create(ClientGinjector.class);
+    public final ClientGinjector ginjector = GWT.create(ClientGinjector.class);
 
-  @Override
-  public void onModuleLoad() {
-    DelayedBindRegistry.bind(ginjector);
+    @Override
+    public void onModuleLoad() {
+        DelayedBindRegistry.bind(ginjector);
 
-    ginjector.getResources().style().ensureInjected();
-    ginjector.getPlaceManager().revealCurrentPlace();
-  }
+        ginjector.getResources().style().ensureInjected();
+        ginjector.getPlaceManager().revealCurrentPlace();
+    }
 }

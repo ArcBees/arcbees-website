@@ -28,13 +28,13 @@ import com.gwtplatform.dispatch.client.actionhandler.DefaultClientActionHandlerR
  * this application. Every action that need to be cached should use an
  * {@link com.gwtplatform.dispatch.client.actionhandler.caching.AbstractCachingClientActionHandler}
  * and register it here.
- * 
+ *
  * @author Christian Goudreau
  */
 public class MyClientActionHandlerRegistry extends
-    DefaultClientActionHandlerRegistry {
-  @Inject
-  public MyClientActionHandlerRegistry(GetBlogPostsCache getBlogPostsClientActionHandler) {
-    register(getBlogPostsClientActionHandler);
-  }
+        DefaultClientActionHandlerRegistry {
+    @Inject
+    public MyClientActionHandlerRegistry(GetBlogPostsCache getBlogPostsClientActionHandler) {
+        register(getBlogPostsClientActionHandler);
+    }
 }

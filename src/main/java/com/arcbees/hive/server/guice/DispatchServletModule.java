@@ -21,9 +21,6 @@ import com.google.inject.servlet.ServletModule;
 import com.gwtplatform.dispatch.server.guice.DispatchServiceImpl;
 import com.gwtplatform.dispatch.shared.ActionImpl;
 
-/**
- * @author Christian Goudreau
- */
 public class DispatchServletModule extends ServletModule {
     @Override
     public void configureServlets() {

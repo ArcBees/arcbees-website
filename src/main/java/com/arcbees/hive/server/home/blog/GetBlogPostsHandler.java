@@ -25,13 +25,6 @@ import com.gwtplatform.dispatch.server.ExecutionContext;
 import com.gwtplatform.dispatch.server.actionhandler.AbstractActionHandler;
 import com.gwtplatform.dispatch.shared.ActionException;
 
-/**
- * {@link com.gwtplatform.dispatch.server.actionhandler.ActionHandler} that
- * handle server request for {@link GetBlogPosts}
- * {@link com.gwtplatform.dispatch.shared.Action}.
- *
- * @author Christian Goudreau
- */
 public class GetBlogPostsHandler extends
         AbstractActionHandler<GetBlogPosts, GetBlogPostsResult> {
     private final BlogPostParser blogPostParser;

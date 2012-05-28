@@ -34,9 +34,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-/**
- * @author Christian Goudreau
- */
 public class BlogPostParserImpl implements BlogPostParser {
     private final Provider<Document> documentProvider;
 

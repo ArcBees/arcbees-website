@@ -21,9 +21,6 @@ import com.gwtplatform.crawler.server.CrawlFilter;
 import com.gwtplatform.crawler.server.ServiceKey;
 import com.gwtplatform.crawler.server.ServiceUrl;
 
-/**
- * @author Philippe Beaudoin
- */
 public class CrawlFilterModule extends ServletModule {
     @Override
     public void configureServlets() {

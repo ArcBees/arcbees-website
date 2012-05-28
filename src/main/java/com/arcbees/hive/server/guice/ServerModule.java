@@ -34,11 +34,6 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
-/**
- * Module which binds the handlers and configurations.
- *
- * @author Christian Goudreau
- */
 public class ServerModule extends HandlerModule {
     private final String arcbeesFetch = "http://arcbees.wordpress.com/feed/";
 

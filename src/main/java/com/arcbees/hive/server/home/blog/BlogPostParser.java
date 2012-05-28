@@ -20,9 +20,6 @@ import com.arcbees.hive.shared.home.blog.BlogItem;
 
 import java.util.List;
 
-/**
- * @author Christian Goudreau
- */
 public interface BlogPostParser {
     List<BlogItem> parse();
 }

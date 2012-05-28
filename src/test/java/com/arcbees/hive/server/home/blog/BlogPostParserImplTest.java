@@ -25,17 +25,17 @@ import org.junit.runner.RunWith;
 
 @RunWith(JukitoRunner.class)
 public class BlogPostParserImplTest {
-  public static class Module extends JukitoModule {
-    @Override
-    protected void configureTest() {
+    public static class Module extends JukitoModule {
+        @Override
+        protected void configureTest() {
+        }
     }
-  }
-  
-  // SUT
-  @Inject
-  BlogPostParserImpl blogPostParser;
-  
-  @Test
-  public void parseTest() {
-  }
+
+    // SUT
+    @Inject
+    BlogPostParserImpl blogPostParser;
+
+    @Test
+    public void parseTest() {
+    }
 }

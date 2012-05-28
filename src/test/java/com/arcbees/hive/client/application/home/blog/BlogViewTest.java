@@ -43,71 +43,71 @@ import static org.mockito.Mockito.verify;
 
 @RunWith(JukitoRunner.class)
 public class BlogViewTest extends ViewTestBase {
-  public static class Module extends ViewTestModule {
-    /**
-     * Test {@link Binder} delegating createAndBindUi to {@link MockingBinder}.
-     */
-    static class MyTestBinder extends MockingBinder<Widget, BlogView> implements Binder {
-      @Inject
-      public MyTestBinder(final MockitoMockFactory mockitoMockFactory) {
-        super(Widget.class, mockitoMockFactory);
-      }
+    public static class Module extends ViewTestModule {
+        /**
+         * Test {@link Binder} delegating createAndBindUi to {@link MockingBinder}.
+         */
+        static class MyTestBinder extends MockingBinder<Widget, BlogView> implements Binder {
+            @Inject
+            public MyTestBinder(final MockitoMockFactory mockitoMockFactory) {
+                super(Widget.class, mockitoMockFactory);
+            }
+        }
+
+        @Override
+        protected void configureViewTest() {
+            bind(Binder.class).to(MyTestBinder.class);
+
+            bindMock(BlogItemWidget.class).in(TestSingleton.class);
+        }
     }
 
-    @Override
-    protected void configureViewTest() {
-      bind(Binder.class).to(MyTestBinder.class);
+    // SUT
+    @Inject
+    BlogView view;
 
-      bindMock(BlogItemWidget.class).in(TestSingleton.class);
-    }
-  }
+    @Inject
+    BlogItemWidgetFactory blogItemWidgetFactory;
+    @Inject
+    BlogItemWidget blogItemWidget;
 
-  // SUT
-  @Inject
-  BlogView view;
+    @Test
+    public void setBlogItemsTest(UiHandlersStrategy<BlogUiHandlers> uiHandlersStrategy, BlogUiHandlers myUiHandlers) {
+        // given
+        List<BlogItem> blogItems = createSomeBlogItems();
 
-  @Inject
-  BlogItemWidgetFactory blogItemWidgetFactory;
-  @Inject
-  BlogItemWidget blogItemWidget;
+        given(blogItemWidgetFactory.create(any(BlogItem.class))).willReturn(
+                blogItemWidget);
+        given(blogItemWidget.getOffsetHeight()).willReturn(50);
+        given(uiHandlersStrategy.getUiHandlers()).willReturn(myUiHandlers);
 
-  @Test
-  public void setBlogItemsTest(UiHandlersStrategy<BlogUiHandlers> uiHandlersStrategy, BlogUiHandlers myUiHandlers) {
-    // given
-    List<BlogItem> blogItems = createSomeBlogItems();
+        Integer nbColElement = view.maxItems / 2;
 
-    given(blogItemWidgetFactory.create(any(BlogItem.class))).willReturn(
-        blogItemWidget);
-    given(blogItemWidget.getOffsetHeight()).willReturn(50);
-    given(uiHandlersStrategy.getUiHandlers()).willReturn(myUiHandlers);
+        // when
+        view.setBlogItems(blogItems);
 
-    Integer nbColElement = view.maxItems / 2;
+        // then
+        // Let's see if every items are created.
+        verify(blogItemWidgetFactory, times(view.maxItems)).create(
+                any(BlogItem.class));
 
-    // when
-    view.setBlogItems(blogItems);
-
-    // then
-    // Let's see if every items are created.
-    verify(blogItemWidgetFactory, times(view.maxItems)).create(
-        any(BlogItem.class));
-
-    // Let's see if we add half items in the left panel and the other half in
-    // right panel.
-    verify(view.blogItemsLeftPanel, times(nbColElement)).add(
-        any(BlogItemWidget.class), any(Element.class));
-    verify(view.blogItemsRightPanel, times(nbColElement)).add(
-        any(BlogItemWidget.class), any(Element.class));
-  }
-
-  private List<BlogItem> createSomeBlogItems() {
-    List<BlogItem> blogItems = new ArrayList<BlogItem>();
-
-    for (Integer i = 0; i < 10; i++) {
-      BlogItem blogItem = new BlogItem();
-
-      blogItems.add(blogItem);
+        // Let's see if we add half items in the left panel and the other half in
+        // right panel.
+        verify(view.blogItemsLeftPanel, times(nbColElement)).add(
+                any(BlogItemWidget.class), any(Element.class));
+        verify(view.blogItemsRightPanel, times(nbColElement)).add(
+                any(BlogItemWidget.class), any(Element.class));
     }
 
-    return blogItems;
-  }
+    private List<BlogItem> createSomeBlogItems() {
+        List<BlogItem> blogItems = new ArrayList<BlogItem>();
+
+        for (Integer i = 0; i < 10; i++) {
+            BlogItem blogItem = new BlogItem();
+
+            blogItems.add(blogItem);
+        }
+
+        return blogItems;
+    }
 }

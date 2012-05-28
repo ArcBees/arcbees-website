@@ -23,12 +23,12 @@ import org.junit.AfterClass;
 /**
  * Basic configuration for ViewTest, your test must extends this
  * class.
- * 
+ *
  * @author Christian Goudreau
  */
 public class ViewTestBase {
-  @AfterClass
-  public static void tearDown() {
-    GWTMockUtilities.restore();
-  }
+    @AfterClass
+    public static void tearDown() {
+        GWTMockUtilities.restore();
+    }
 }

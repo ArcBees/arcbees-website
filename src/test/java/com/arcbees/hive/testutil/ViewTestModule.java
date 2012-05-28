@@ -25,18 +25,18 @@ import org.jukito.JukitoModule;
 /**
  * Base module to use while testing views. Your configuration module must
  * extends this class.
- * 
+ *
  * @author Christian Goudreau
  */
 public abstract class ViewTestModule extends JukitoModule {
-  @Override
-  protected void configureTest() {
-    GWTMockUtilities.disarm();
+    @Override
+    protected void configureTest() {
+        GWTMockUtilities.disarm();
 
-    bind(MockFactory.class).to(MockitoMockFactory.class);
-    
-    configureViewTest();
-  }
+        bind(MockFactory.class).to(MockitoMockFactory.class);
 
-  protected abstract void configureViewTest();
+        configureViewTest();
+    }
+
+    protected abstract void configureViewTest();
 }

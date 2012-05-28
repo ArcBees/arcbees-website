@@ -35,27 +35,27 @@ import java.util.ArrayList;
 
 @RunWith(JukitoRunner.class)
 public class BlogPresenterTest extends PresenterWidgetTestBase {
-  public static class Module extends PresenterTestModule {
-    @Override
-    protected void configurePresenterTest() {
+    public static class Module extends PresenterTestModule {
+        @Override
+        protected void configurePresenterTest() {
+        }
     }
-  }
-  
-  // SUT
-  @Inject
-  BlogPresenter presenter;
-  @Inject 
-  BlogPresenter.MyView view;
-  
-  @Test
-  public void onBindTest() {
-    // given
-    dispatcher.when(GetBlogPosts.class).thenSucceed(new GetBlogPostsResult(new ArrayList<BlogItem>()));
-    
-    // when
-    presenter.onReveal();
-    
-    // then
-    verify(view).setBlogItems(anyListOf(BlogItem.class));
-  }
+
+    // SUT
+    @Inject
+    BlogPresenter presenter;
+    @Inject
+    BlogPresenter.MyView view;
+
+    @Test
+    public void onBindTest() {
+        // given
+        dispatcher.when(GetBlogPosts.class).thenSucceed(new GetBlogPostsResult(new ArrayList<BlogItem>()));
+
+        // when
+        presenter.onReveal();
+
+        // then
+        verify(view).setBlogItems(anyListOf(BlogItem.class));
+    }
 }

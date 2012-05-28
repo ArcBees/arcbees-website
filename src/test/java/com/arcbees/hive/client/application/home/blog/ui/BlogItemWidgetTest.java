@@ -35,34 +35,35 @@ import static org.mockito.Mockito.verify;
 
 @RunWith(JukitoRunner.class)
 public class BlogItemWidgetTest {
-  public static class Module extends ViewTestModule {
-    /**
-     * Test {@link Binder} delegating createAndBindUi to {@link MockingBinder}.
-     */
-    static class MyTestBinder extends MockingBinder<Widget, BlogItemWidget>
-        implements Binder {
-      @Inject
-      public MyTestBinder(final MockitoMockFactory mockitoMockFactory) {
-        super(Widget.class, mockitoMockFactory);
-      }
+    public static class Module extends ViewTestModule {
+        /**
+         * Test {@link Binder} delegating createAndBindUi to {@link MockingBinder}.
+         */
+        static class MyTestBinder extends MockingBinder<Widget, BlogItemWidget>
+                implements Binder {
+            @Inject
+            public MyTestBinder(final MockitoMockFactory mockitoMockFactory) {
+                super(Widget.class, mockitoMockFactory);
+            }
+        }
+
+        @Override
+        protected void configureViewTest() {
+            bind(Binder.class).to(MyTestBinder.class);
+            bindNamedMock(DateTimeFormat.class, "BlogPostFormat");
+        }
     }
 
-    @Override
-    protected void configureViewTest() {
-      bind(Binder.class).to(MyTestBinder.class);
-      bindNamedMock(DateTimeFormat.class, "BlogPostFormat");
-    }
-  }
+    @Inject
+    Binder binder;
+    @Inject
+    @Named("BlogPostFormat")
+    DateTimeFormat dateTimeFormat;
 
-  @Inject
-  Binder binder;
-  @Inject @Named("BlogPostFormat")
-  DateTimeFormat dateTimeFormat;
+    private Date testDate = new Date();
 
-  private Date testDate = new Date();
-
-  @Test
-  public void createTest() {
+    @Test
+    public void createTest() {
 //    // when
 //    BlogItemWidget blogItemWidget = new BlogItemWidget(binder, createBlogItem(), dateTimeFormat);
 //
@@ -71,17 +72,17 @@ public class BlogItemWidgetTest {
 //    verify(blogItemWidget.blogPostDateAuthor).setHTML(anyString());
 //    verify(blogItemWidget.blogPostLink).setHTML(anyString());
 //    verify(blogItemWidget.blogPostTitle).setHTML(anyString());
-  }
+    }
 
-  private BlogItem createBlogItem() {
-    BlogItem blogItem = new BlogItem();
+    private BlogItem createBlogItem() {
+        BlogItem blogItem = new BlogItem();
 
-    blogItem.setCreator("Sydney Crosby");
-    blogItem.setDescription("Alexander Ovechkin");
-    blogItem.setLink("Yaroslav Halak");
-    blogItem.setPubDate(testDate);
-    blogItem.setTitle("Bob Gainey");
+        blogItem.setCreator("Sydney Crosby");
+        blogItem.setDescription("Alexander Ovechkin");
+        blogItem.setLink("Yaroslav Halak");
+        blogItem.setPubDate(testDate);
+        blogItem.setTitle("Bob Gainey");
 
-    return blogItem;
-  }
+        return blogItem;
+    }
 }

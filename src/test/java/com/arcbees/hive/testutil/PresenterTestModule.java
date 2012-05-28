@@ -25,20 +25,20 @@ import com.gwtplatform.mvp.client.AutobindDisable;
 /**
  * Base module to use while testing presenters. Your configuration module must
  * extends this class.
- * 
+ *
  * @author Christian Goudreau
  */
 public abstract class PresenterTestModule extends JukitoModule {
-  @Override
-  protected void configureTest() {
-    bindNamedMock(DispatchAsync.class, "mock").in(TestSingleton.class);
-    bind(DispatchAsync.class).to(RelayingDispatcher.class);
-    bind(RelayingDispatcher.class).in(TestSingleton.class);
+    @Override
+    protected void configureTest() {
+        bindNamedMock(DispatchAsync.class, "mock").in(TestSingleton.class);
+        bind(DispatchAsync.class).to(RelayingDispatcher.class);
+        bind(RelayingDispatcher.class).in(TestSingleton.class);
 
-    configurePresenterTest();
-    
-    bind(AutobindDisable.class).toInstance(new AutobindDisable(true));
-  }
+        configurePresenterTest();
 
-  protected abstract void configurePresenterTest();
+        bind(AutobindDisable.class).toInstance(new AutobindDisable(true));
+    }
+
+    protected abstract void configurePresenterTest();
 }

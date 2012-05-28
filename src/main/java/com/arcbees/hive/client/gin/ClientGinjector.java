@@ -17,17 +17,17 @@
 package com.arcbees.hive.client.gin;
 
 import com.arcbees.hive.client.application.about.AboutPresenter;
-import com.arcbees.hive.client.common.AppPresenter;
+import com.arcbees.hive.client.application.common.AppPresenter;
 import com.arcbees.hive.client.application.contact.ContactPresenter;
-import com.arcbees.hive.client.home.HomePresenter;
-import com.arcbees.hive.client.home.blog.BlogPresenter;
-import com.arcbees.hive.client.home.consulting.ConsultingPresenter;
-import com.arcbees.hive.client.home.development.DevelopmentPresenter;
-import com.arcbees.hive.client.home.successstory.SuccessStoryPresenter;
+import com.arcbees.hive.client.application.home.HomePresenter;
+import com.arcbees.hive.client.application.home.blog.BlogPresenter;
+import com.arcbees.hive.client.application.home.consulting.ConsultingPresenter;
+import com.arcbees.hive.client.application.home.development.DevelopmentPresenter;
+import com.arcbees.hive.client.application.home.successstory.SuccessStoryPresenter;
 import com.arcbees.hive.client.application.jobs.JobsPresenter;
-import com.arcbees.hive.client.products.ProductsPresenter;
+import com.arcbees.hive.client.application.products.ProductsPresenter;
 import com.arcbees.hive.client.resources.Resources;
-import com.arcbees.hive.client.service.ServicePresenter;
+import com.arcbees.hive.client.application.service.ServicePresenter;
 import com.google.gwt.inject.client.GinModules;
 import com.google.gwt.inject.client.Ginjector;
 import com.google.inject.Provider;

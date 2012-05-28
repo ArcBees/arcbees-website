@@ -14,9 +14,9 @@
  * the License.
  */
 
-package com.arcbees.hive.client.application.about;
+package com.arcbees.hive.client.application.home.consulting;
 
-import com.arcbees.hive.client.application.common.AppPresenter;
+import com.arcbees.hive.client.application.home.HomePresenter;
 import com.arcbees.hive.client.application.home.event.ResizeEvent;
 import com.arcbees.hive.client.place.NameTokens;
 import com.google.inject.Inject;
@@ -29,40 +29,40 @@ import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 import com.gwtplatform.mvp.client.proxy.RevealContentEvent;
 
 /**
- * @author Zachary Keatts
+ * @author Christian Goudreau
  */
-public class AboutPresenter extends
-    Presenter<AboutPresenter.MyView, AboutPresenter.MyProxy> {
-
+public class ConsultingPresenter extends
+    Presenter<ConsultingPresenter.MyView, ConsultingPresenter.MyProxy> {
   /**
-   * {@link AboutPresenter}'s proxy.
-   */
-  @ProxyStandard
-  @NameToken(NameTokens.about)
-  public interface MyProxy extends ProxyPlace<AboutPresenter> {
-  }
-
-  /**
-   * {@link AboutPresenter}'s view.
+   * {@link ConsultingPresenter}'s {@link View}.
    */
   public interface MyView extends View {
   }
 
+  /**
+   * {@link ConsultingPresenter}'s {@link ProxyPlace}.
+   */
+  @ProxyStandard
+  @NameToken(NameTokens.consulting)
+  public interface MyProxy extends ProxyPlace<ConsultingPresenter> {
+  }
+
   @Inject
-  public AboutPresenter(EventBus eventBus, MyView view, MyProxy proxy) {
+  public ConsultingPresenter(final EventBus eventBus, final MyView view,
+      final MyProxy proxy) {
     super(eventBus, view, proxy);
   }
 
   @Override
   protected void revealInParent() {
-    RevealContentEvent.fire(this, AppPresenter.TYPE_SetMainContent, this);
+    RevealContentEvent.fire(this, HomePresenter.TYPE_SetBottomContent2, this);
   }
   
   @Override
   protected void onReveal() {
     super.onReveal();
 
-    ResizeEvent.fire(this, AppPresenter.TYPE_SetMainContent,
+    ResizeEvent.fire(this, HomePresenter.TYPE_SetBottomContent2,
         getView().asWidget().getOffsetHeight());
   }
 }

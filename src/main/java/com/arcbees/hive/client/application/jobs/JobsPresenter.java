@@ -16,8 +16,8 @@
 
 package com.arcbees.hive.client.application.jobs;
 
-import com.arcbees.hive.client.common.AppPresenter;
-import com.arcbees.hive.client.home.event.ResizeEvent;
+import com.arcbees.hive.client.application.common.AppPresenter;
+import com.arcbees.hive.client.application.home.event.ResizeEvent;
 import com.arcbees.hive.client.place.NameTokens;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;

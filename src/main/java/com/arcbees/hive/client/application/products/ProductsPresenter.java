@@ -14,12 +14,14 @@
  * the License.
  */
 
-package com.arcbees.hive.client.application.about;
+package com.arcbees.hive.client.application.products;
 
 import com.arcbees.hive.client.application.common.AppPresenter;
 import com.arcbees.hive.client.application.home.event.ResizeEvent;
 import com.arcbees.hive.client.place.NameTokens;
+
 import com.google.inject.Inject;
+
 import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
@@ -31,25 +33,25 @@ import com.gwtplatform.mvp.client.proxy.RevealContentEvent;
 /**
  * @author Zachary Keatts
  */
-public class AboutPresenter extends
-    Presenter<AboutPresenter.MyView, AboutPresenter.MyProxy> {
+public class ProductsPresenter extends
+    Presenter<ProductsPresenter.MyView, ProductsPresenter.MyProxy> {
 
   /**
-   * {@link AboutPresenter}'s proxy.
+   * {@link ProductsPresenter}'s proxy.
    */
   @ProxyStandard
-  @NameToken(NameTokens.about)
-  public interface MyProxy extends ProxyPlace<AboutPresenter> {
+  @NameToken(NameTokens.product)
+  public interface MyProxy extends ProxyPlace<ProductsPresenter> {
   }
 
   /**
-   * {@link AboutPresenter}'s view.
+   * {@link ProductsPresenter}'s view.
    */
   public interface MyView extends View {
   }
 
   @Inject
-  public AboutPresenter(EventBus eventBus, MyView view, MyProxy proxy) {
+  public ProductsPresenter(EventBus eventBus, MyView view, MyProxy proxy) {
     super(eventBus, view, proxy);
   }
 

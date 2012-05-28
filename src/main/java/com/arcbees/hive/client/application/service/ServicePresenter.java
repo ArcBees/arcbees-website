@@ -14,12 +14,11 @@
  * the License.
  */
 
-package com.arcbees.hive.client.application.about;
+package com.arcbees.hive.client.application.service;
 
 import com.arcbees.hive.client.application.common.AppPresenter;
 import com.arcbees.hive.client.application.home.event.ResizeEvent;
 import com.arcbees.hive.client.place.NameTokens;
-import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
@@ -28,28 +27,30 @@ import com.gwtplatform.mvp.client.annotations.ProxyStandard;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 import com.gwtplatform.mvp.client.proxy.RevealContentEvent;
 
+import javax.inject.Inject;
+
 /**
  * @author Zachary Keatts
  */
-public class AboutPresenter extends
-    Presenter<AboutPresenter.MyView, AboutPresenter.MyProxy> {
+public class ServicePresenter extends Presenter<ServicePresenter.MyView, 
+  ServicePresenter.MyProxy> {
 
   /**
-   * {@link AboutPresenter}'s proxy.
+   * {@link ServicePresenter}'s proxy.
    */
   @ProxyStandard
-  @NameToken(NameTokens.about)
-  public interface MyProxy extends ProxyPlace<AboutPresenter> {
+  @NameToken(NameTokens.service)
+  public interface MyProxy extends ProxyPlace<ServicePresenter> {
   }
 
   /**
-   * {@link AboutPresenter}'s view.
+   * {@link ServicePresenter}'s view.
    */
   public interface MyView extends View {
   }
 
   @Inject
-  public AboutPresenter(EventBus eventBus, MyView view, MyProxy proxy) {
+  public ServicePresenter(EventBus eventBus, MyView view, MyProxy proxy) {
     super(eventBus, view, proxy);
   }
 

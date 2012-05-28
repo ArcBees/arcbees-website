@@ -14,12 +14,14 @@
  * the License.
  */
 
-package com.arcbees.hive.client.application.about;
+package com.arcbees.hive.client.application.home.successstory;
 
-import com.arcbees.hive.client.application.common.AppPresenter;
+import com.arcbees.hive.client.application.home.HomePresenter;
 import com.arcbees.hive.client.application.home.event.ResizeEvent;
 import com.arcbees.hive.client.place.NameTokens;
+
 import com.google.inject.Inject;
+
 import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
@@ -29,40 +31,41 @@ import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 import com.gwtplatform.mvp.client.proxy.RevealContentEvent;
 
 /**
- * @author Zachary Keatts
+ * @author Christian Goudreau
  */
-public class AboutPresenter extends
-    Presenter<AboutPresenter.MyView, AboutPresenter.MyProxy> {
+public class SuccessStoryPresenter extends
+    Presenter<SuccessStoryPresenter.MyView, SuccessStoryPresenter.MyProxy> {
 
   /**
-   * {@link AboutPresenter}'s proxy.
-   */
-  @ProxyStandard
-  @NameToken(NameTokens.about)
-  public interface MyProxy extends ProxyPlace<AboutPresenter> {
-  }
-
-  /**
-   * {@link AboutPresenter}'s view.
+   * {@link SuccessStoryPresenter}'s {@link View}.
    */
   public interface MyView extends View {
   }
 
+  /**
+   * {@link SuccessStoryPresenter}'s {@link ProxyPlace}.
+   */
+  @ProxyStandard
+  @NameToken(NameTokens.successStory)
+  public interface MyProxy extends ProxyPlace<SuccessStoryPresenter> {
+  }
+
   @Inject
-  public AboutPresenter(EventBus eventBus, MyView view, MyProxy proxy) {
+  public SuccessStoryPresenter(final EventBus eventBus, final MyView view,
+      final MyProxy proxy) {
     super(eventBus, view, proxy);
   }
 
   @Override
   protected void revealInParent() {
-    RevealContentEvent.fire(this, AppPresenter.TYPE_SetMainContent, this);
+    RevealContentEvent.fire(this, HomePresenter.TYPE_SetBottomContent4, this);
   }
   
   @Override
   protected void onReveal() {
     super.onReveal();
 
-    ResizeEvent.fire(this, AppPresenter.TYPE_SetMainContent,
+    ResizeEvent.fire(this, HomePresenter.TYPE_SetBottomContent4,
         getView().asWidget().getOffsetHeight());
   }
 }

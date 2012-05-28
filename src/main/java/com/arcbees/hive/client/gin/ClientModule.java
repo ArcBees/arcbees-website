@@ -17,15 +17,15 @@
 package com.arcbees.hive.client.gin;
 
 import com.arcbees.hive.client.application.about.AboutModule;
-import com.arcbees.hive.client.common.CommonModule;
+import com.arcbees.hive.client.application.common.CommonModule;
 import com.arcbees.hive.client.application.contact.ContactModule;
-import com.arcbees.hive.client.home.HomeModule;
+import com.arcbees.hive.client.application.home.HomeModule;
 import com.arcbees.hive.client.application.jobs.JobsModule;
 import com.arcbees.hive.client.place.HivePlaceManager;
 import com.arcbees.hive.client.place.NameTokens;
-import com.arcbees.hive.client.products.ProductsModule;
+import com.arcbees.hive.client.application.products.ProductsModule;
 import com.arcbees.hive.client.resources.Resources;
-import com.arcbees.hive.client.service.ServiceModule;
+import com.arcbees.hive.client.application.service.ServiceModule;
 
 import com.google.gwt.inject.client.AbstractGinModule;
 import com.google.inject.Singleton;

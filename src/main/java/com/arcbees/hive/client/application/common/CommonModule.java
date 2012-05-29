@@ -31,6 +31,8 @@ public class CommonModule extends AbstractPresenterModule {
                 HeaderPresenter.MyView.class, HeaderView.class);
         bindSingletonPresenterWidget(FooterPresenter.class,
                 FooterPresenter.MyView.class, FooterView.class);
+        bindSingletonPresenterWidget(CustomersPresenter.class,
+                CustomersPresenter.MyView.class, CustomersView.class);
 
         bind(HeaderUiHandlers.class).to(HeaderPresenter.class);
 

@@ -29,8 +29,8 @@ public class CustomersView extends ViewImpl implements CustomersPresenter.MyView
                 {
                     width:50,
                     height:50,
-                    visible:1,
-                    step:1,
+                    visible:4,
+                    step:4,
                     speed:300});
     }-*/;
 }

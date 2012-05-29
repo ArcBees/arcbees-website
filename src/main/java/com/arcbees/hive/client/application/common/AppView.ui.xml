@@ -37,7 +37,7 @@
             <g:HTMLPanel styleName="{style.mainContentSlot}" ui:field="mainContent1" visible="false"/>
             <g:HTMLPanel styleName="{style.mainContentSlot}" ui:field="mainContent2" visible="false"/>
         </g:HTMLPanel>
-
+        <g:SimplePanel ui:field="customers"/>
         <g:HTMLPanel ui:field="footer"/>
     </g:HTMLPanel>
-</ui:UiBinder> 
+</ui:UiBinder>

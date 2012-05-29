@@ -43,21 +43,27 @@ public class AppPresenter extends
     public static final Type<RevealContentHandler<?>> TYPE_SetMainContent = new Type<RevealContentHandler<?>>();
 
     public static Object TYPE_setHeader = new Object();
+    public static Object TYPE_setCustomers = new Object();
     public static Object TYPE_setFooter = new Object();
 
     private final HeaderPresenter headerPresenter;
     private final FooterPresenter footerPresenter;
+    private final CustomersPresenter customersPresenter;
 
     private final Integer bottomMargin = 0;
 
     @Inject
-    public AppPresenter(final EventBus eventBus, final MyView view,
-                        final MyProxy proxy, final HeaderPresenter headerPresenter,
-                        final FooterPresenter footerPresenter) {
+    public AppPresenter(final EventBus eventBus,
+                        final MyView view,
+                        final MyProxy proxy,
+                        final HeaderPresenter headerPresenter,
+                        final FooterPresenter footerPresenter,
+                        final CustomersPresenter customersPresenter) {
         super(eventBus, view, proxy);
 
         this.headerPresenter = headerPresenter;
         this.footerPresenter = footerPresenter;
+        this.customersPresenter = customersPresenter;
     }
 
     @Override
@@ -77,6 +83,7 @@ public class AppPresenter extends
         super.onBind();
 
         setInSlot(TYPE_setHeader, headerPresenter);
+        setInSlot(TYPE_setCustomers, customersPresenter);
         setInSlot(TYPE_setFooter, footerPresenter);
 
         addRegisteredHandler(ResizeEvent.getType(), this);

@@ -19,10 +19,6 @@ package com.arcbees.hive.client.application.common;
 import com.arcbees.core.client.mvp.ViewImpl;
 import com.arcbees.hive.client.application.common.AppPresenter.MyView;
 import com.arcbees.hive.client.place.AppIds;
-
-import static com.google.gwt.query.client.GQuery.$;
-import static com.google.gwt.query.client.plugins.Effects.Effects;
-
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.query.client.Function;
 import com.google.gwt.query.client.Properties;
@@ -30,8 +26,12 @@ import com.google.gwt.query.client.plugins.effects.PropertiesAnimation.Easing;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.HTMLPanel;
+import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
+
+import static com.google.gwt.query.client.GQuery.$;
+import static com.google.gwt.query.client.plugins.Effects.Effects;
 
 /**
  * @author Christian Goudreau
@@ -48,6 +48,8 @@ public class AppView extends ViewImpl implements MyView {
     HTMLPanel mainContent2;
     @UiField
     HTMLPanel header;
+    @UiField
+    SimplePanel customers;
     @UiField
     HTMLPanel footer;
 
@@ -78,6 +80,9 @@ public class AppView extends ViewImpl implements MyView {
         } else if (slot == AppPresenter.TYPE_setHeader) {
             header.clear();
             header.add(content, header.getElement());
+        } else if (slot == AppPresenter.TYPE_setCustomers) {
+            customers.clear();
+            customers.setWidget(content);
         } else if (slot == AppPresenter.TYPE_setFooter) {
             footer.clear();
             footer.add(content, footer.getElement());

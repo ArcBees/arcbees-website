@@ -6,23 +6,25 @@
     <ui:with field='res' type='com.arcbees.hive.client.resources.Resources'/>
 
     <ui:style>
+        .menuContainer {
+            height: 25px;
+        }
+
+        .hyperlinkContainer {
+            float: right;
+        }
+
         .menuStyle {
-            height: 31px;
             font-family: "Verdana";
+            font-variant: small-caps;
             font-size: 16px;
         }
 
-        .menuStyle ul {
-            padding: 0;
-            margin: 0 0 0 15px;
-            list-style-type: none;
+        .menuStyle div {
+            display: inline;
         }
 
-        .menuStyle ul li img {
-            float: left;
-        }
-
-        .menuStyle ul li a {
+        .menuStyle div a {
             margin-top: 5px;
             margin-left: 15px;
             margin-right: 15px;
@@ -30,35 +32,25 @@
             text-decoration: none;
         }
 
-        .menuStyle ul li a:hover {
+        .menuStyle div a:hover {
             color: #4b3c30;
         }
     </ui:style>
-
-    <g:LayoutPanel height="125px">
-        <g:layer>
-            <g:Image ui:field="header" resource="{res.head}"
-                     addStyleNames="{res.style.cursor}"/>
-        </g:layer>
-        <g:layer top="22px" left="745px" width="200px" height="85px">
-            <g:HTMLPanel>
-                <div class='{style.menuStyle}'>
-                    <ul>
-                        <li>
-                            <g:Hyperlink targetHistoryToken="{nameTokens.getService}">Services</g:Hyperlink>
-                        </li>
-                        <li>
-                            <g:Hyperlink targetHistoryToken="{nameTokens.getProduct}">Products</g:Hyperlink>
-                        </li>
-                        <li>
-                            <g:Hyperlink targetHistoryToken="{nameTokens.getJob}">Job Opportunities</g:Hyperlink>
-                        </li>
-                        <li>
-                            <g:Hyperlink targetHistoryToken="{nameTokens.getContact}">Contact Us</g:Hyperlink>
-                        </li>
-                    </ul>
-                </div>
-            </g:HTMLPanel>
-        </g:layer>
-    </g:LayoutPanel>
-</ui:UiBinder> 
+    <g:HTMLPanel>
+        <g:Image ui:field="header" resource="{res.head}"
+                 addStyleNames="{res.style.cursor}"/>
+        <g:HTMLPanel addStyleNames="{style.menuContainer}">
+            <div class="{style.hyperlinkContainer} {style.menuStyle}">
+                <g:Hyperlink targetHistoryToken="{nameTokens.getService}">Services
+                </g:Hyperlink>
+                <g:Hyperlink targetHistoryToken="{nameTokens.getProduct}">Products
+                </g:Hyperlink>
+                <g:Hyperlink targetHistoryToken="{nameTokens.getJob}">Job
+                    Opportunities
+                </g:Hyperlink>
+                <g:Hyperlink targetHistoryToken="{nameTokens.getContact}">Contact Us
+                </g:Hyperlink>
+            </div>
+        </g:HTMLPanel>
+    </g:HTMLPanel>
+</ui:UiBinder>

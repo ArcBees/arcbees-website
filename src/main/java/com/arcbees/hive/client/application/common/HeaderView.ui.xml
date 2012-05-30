@@ -2,8 +2,8 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:g="urn:import:com.google.gwt.user.client.ui"
              ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
-             ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator"
-             ui:generateLocales="en">
+             ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
+             ui:generateLocales="default">
 
     <ui:with field='nameTokens' type='com.arcbees.hive.client.place.NameTokens'/>
     <ui:with field='res' type='com.arcbees.hive.client.Resources'/>
@@ -44,15 +44,18 @@
                  addStyleNames="{res.style.cursor}"/>
         <g:HTMLPanel addStyleNames="{style.menuContainer}">
             <div class="{style.hyperlinkContainer} {style.menuStyle}">
-                <ui:msg description="this is simple test">Hello</ui:msg>
                 <g:Hyperlink targetHistoryToken="{nameTokens.getService}">Services
                 </g:Hyperlink>
-                <g:Hyperlink targetHistoryToken="{nameTokens.getProduct}">Products
+                <g:Hyperlink targetHistoryToken="{nameTokens.getProduct}">
+                    <ui:msg description="Main navbar - Products">Products</ui:msg>
                 </g:Hyperlink>
-                <g:Hyperlink targetHistoryToken="{nameTokens.getJob}">Job
-                    Opportunities
+                <g:Hyperlink targetHistoryToken="{nameTokens.getJob}">
+                    <ui:msg description="Main navbar - Job Opportunities">Job
+                        Opportunities
+                    </ui:msg>
                 </g:Hyperlink>
-                <g:Hyperlink targetHistoryToken="{nameTokens.getContact}">Contact Us
+                <g:Hyperlink targetHistoryToken="{nameTokens.getContact}">
+                    <ui:msg description="Main navbar - Contact Us">Contact Us</ui:msg>
                 </g:Hyperlink>
             </div>
         </g:HTMLPanel>

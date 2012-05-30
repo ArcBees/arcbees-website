@@ -11,6 +11,12 @@
 
     <entry-point class="com.arcbees.hive.client.Hive" />
 
+    <!-- French language, independent of country -->
+    <extend-property name="locale" values="fr" />
+    <!-- English language, independent of country -->
+    <extend-property name="locale" values="en" />
+    <set-property-fallback name="locale" value="en" />
+
 	<!-- Specify the paths for translatable code -->
 	<source path="client" />
 	<source path="shared" />

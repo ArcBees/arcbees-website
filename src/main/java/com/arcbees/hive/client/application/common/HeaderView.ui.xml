@@ -1,6 +1,9 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-             xmlns:g="urn:import:com.google.gwt.user.client.ui">
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+             ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator"
+             ui:generateLocales="en">
 
     <ui:with field='nameTokens' type='com.arcbees.hive.client.place.NameTokens'/>
     <ui:with field='res' type='com.arcbees.hive.client.Resources'/>
@@ -41,6 +44,7 @@
                  addStyleNames="{res.style.cursor}"/>
         <g:HTMLPanel addStyleNames="{style.menuContainer}">
             <div class="{style.hyperlinkContainer} {style.menuStyle}">
+                <ui:msg description="this is simple test">Hello</ui:msg>
                 <g:Hyperlink targetHistoryToken="{nameTokens.getService}">Services
                 </g:Hyperlink>
                 <g:Hyperlink targetHistoryToken="{nameTokens.getProduct}">Products

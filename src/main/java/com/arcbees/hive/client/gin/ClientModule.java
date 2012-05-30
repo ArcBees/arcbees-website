@@ -39,6 +39,7 @@ import com.gwtplatform.mvp.client.googleanalytics.GoogleAnalyticsNavigationTrack
 public class ClientModule extends AbstractGinModule {
     @Override
     protected void configure() {
+        //test2
         // Singleton resources
         bind(Cache.class).to(DefaultCacheImpl.class).in(Singleton.class);
         bind(Resources.class).in(Singleton.class);

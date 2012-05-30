@@ -13,6 +13,10 @@ table, tr, td {
     cursor: pointer;
 }
 
+@sprite .navPrincipaleMilieuSprite {
+    gwt-image: "navPrincipaleMilieu";
+}
+
 @sprite .sloganCoinGauche {
     gwt-image: "bodCoinGaucheUp";
     position: absolute;

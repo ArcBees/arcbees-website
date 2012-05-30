@@ -50,7 +50,5 @@
         </div>
 
         <div class="{res.style.blogDownContact}"/>
-        <div class="{res.style.sloganCoinGauche}"/>
-        <div class="{res.style.sloganCoinDroit}"/>
     </g:HTMLPanel>
 </ui:UiBinder>

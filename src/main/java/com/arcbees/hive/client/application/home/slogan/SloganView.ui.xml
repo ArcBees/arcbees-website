@@ -38,8 +38,6 @@
         <g:FocusPanel addStyleNames="{style.sloganArea}"
                       ui:field="sloganArea">
             <g:HTMLPanel>
-                <div class="{res.style.sloganCoinGauche}"/>
-                <div class="{res.style.sloganCoinDroit}"/>
                 <g:Image resource="{res.consulting}" ui:field="consulting"
                          addStyleNames="{res.style.cursor}"/>
                 <g:Image resource="{res.hplus}" addStyleNames="{style.sloganImagesMargin}"/>

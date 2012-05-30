@@ -22,8 +22,7 @@
 
         .mainContent {
             position: relative;
-            margin-top: 10px;
-        }
+            }
 
         .mainContentSlot {
             position: absolute;

@@ -19,7 +19,8 @@
             font-family: "Verdana";
             font-variant: small-caps;
             font-size: 17px;
-            text-indent: 30px;
+            line-height: 30px;
+            margin-top: 10px;
         }
 
         .menuContainer div a {

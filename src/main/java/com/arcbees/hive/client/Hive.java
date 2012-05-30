@@ -32,5 +32,8 @@ public class Hive implements EntryPoint {
 
         ginjector.getResources().style().ensureInjected();
         ginjector.getPlaceManager().revealCurrentPlace();
+
+
+        //commentaire pour Alex
     }
 }

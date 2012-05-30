@@ -3,7 +3,7 @@
              xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
     <ui:with field='nameTokens' type='com.arcbees.hive.client.place.NameTokens'/>
-    <ui:with field='res' type='com.arcbees.hive.client.resources.Resources'/>
+    <ui:with field='res' type='com.arcbees.hive.client.Resources'/>
 
     <ui:style>
         .menuContainer {

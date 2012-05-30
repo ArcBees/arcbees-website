@@ -14,7 +14,7 @@
  * the License.
  */
 
-package com.arcbees.hive.client.resources;
+package com.arcbees.hive.client;
 
 import com.google.gwt.resources.client.ClientBundle;
 import com.google.gwt.resources.client.CssResource;

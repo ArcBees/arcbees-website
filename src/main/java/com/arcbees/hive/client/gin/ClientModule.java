@@ -16,6 +16,7 @@
 
 package com.arcbees.hive.client.gin;
 
+import com.arcbees.hive.client.Resources;
 import com.arcbees.hive.client.application.about.AboutModule;
 import com.arcbees.hive.client.application.common.CommonModule;
 import com.arcbees.hive.client.application.contact.ContactModule;
@@ -24,7 +25,6 @@ import com.arcbees.hive.client.application.jobs.JobsModule;
 import com.arcbees.hive.client.place.HivePlaceManager;
 import com.arcbees.hive.client.place.NameTokens;
 import com.arcbees.hive.client.application.products.ProductsModule;
-import com.arcbees.hive.client.resources.Resources;
 import com.arcbees.hive.client.application.service.ServiceModule;
 
 import com.google.gwt.inject.client.AbstractGinModule;

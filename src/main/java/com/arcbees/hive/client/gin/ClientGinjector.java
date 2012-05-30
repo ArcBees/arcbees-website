@@ -36,6 +36,7 @@ import com.gwtplatform.mvp.client.proxy.PlaceManager;
 
 @GinModules({ClientDispatchModule.class, ClientModule.class})
 public interface ClientGinjector extends Ginjector {
+    //test3
     EventBus getEventBus();
 
     PlaceManager getPlaceManager();

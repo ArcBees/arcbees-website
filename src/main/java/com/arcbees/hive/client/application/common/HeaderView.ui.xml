@@ -62,11 +62,13 @@
             <g:Image resource="{res.navPrincipaleGauche}" addStyleNames="{style.menuImageGauche}"/>
             <div class="{res.style.navPrincipaleMilieuSprite} {style.divMilieu} ">
                 <div class="{style.navPrincipale}">
-                    <ui:msg description="this is simple test">Hello</ui:msg>
                     <a href="#{nameTokens.getService}">Services</a>
-                    <a href="#{nameTokens.getProduct}">Products</a>
-                    <a href="#{nameTokens.getJob}">Job Opportunities</a>
-                    <a href="#{nameTokens.getContact}">Contact Us</a>
+                    <a href="#{nameTokens.getProduct}"><ui:msg description="Main navbar - Products">Products</ui:msg></a>
+                    <a href="#{nameTokens.getJob}"><ui:msg description="Main navbar - Job Opportunities">Job
+                        Opportunities
+                    </ui:msg></a>
+                    <a href="#{nameTokens.getContact}"><ui:msg description="Main navbar - Contact Us">Contact Us</ui:msg>
+                    </a>
                 </div>
             </div>
             <g:Image resource="{res.navPrincipaleDroite}" addStyleNames="{style.menuImageDroite}"/>

@@ -11,15 +11,18 @@
 
     <entry-point class="com.arcbees.hive.client.Hive" />
 
-    <!--&lt;!&ndash; French language, independent of country &ndash;&gt;-->
-    <!--<extend-property name="locale" values="fr" />-->
-    <!--&lt;!&ndash; English language, independent of country &ndash;&gt;-->
-    <!--<extend-property name="locale" values="en" />-->
-    <!--<set-property-fallback name="locale" value="en" />-->
+    <!-- French language, independent of country -->
+    <extend-property name="locale" values="fr" />
+    <!-- English language, independent of country -->
+    <extend-property name="locale" values="en" />
+    <set-property-fallback name="locale" value="en" />
 
 	<!-- Specify the paths for translatable code -->
 	<source path="client" />
 	<source path="shared" />
+
+    <!--TODO: remove this before uploading to appengine (only used to speed up permutations during debugging)-->
+    <set-property name="user.agent" value="safari"/>
 
 	<define-configuration-property name="gin.ginjector" is-multi-valued="false" />
 	<set-configuration-property name="gin.ginjector" value="com.arcbees.hive.client.gin.ClientGinjector" />

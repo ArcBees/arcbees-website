@@ -23,7 +23,6 @@ import com.google.gwt.resources.client.ImageResource.ImageOptions;
 import com.google.gwt.resources.client.ImageResource.RepeatStyle;
 
 public interface Resources extends ClientBundle {
-    //test
     Style style();
 
     @Source("honConsulting.jpg")

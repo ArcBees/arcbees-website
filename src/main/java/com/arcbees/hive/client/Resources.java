@@ -42,6 +42,13 @@ public interface Resources extends ClientBundle {
 
     ImageResource head();
 
+    ImageResource navPrincipaleDroite();
+
+    ImageResource navPrincipaleGauche();
+
+    @ImageOptions(repeatStyle = RepeatStyle.Horizontal)
+    ImageResource navPrincipaleMilieu();
+
     ImageResource blogAbeille();
 
     ImageResource blogBarDroite();
@@ -162,6 +169,8 @@ public interface Resources extends ClientBundle {
         String stepInactive();
 
         String stepActive();
+
+        String navPrincipaleMilieuSprite();
     }
 
     ImageResource aboutPhilippe();

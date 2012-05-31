@@ -88,9 +88,13 @@ public interface Resources extends ClientBundle {
         String cornerBottom();
 
         String cornerTopBottom();
+
     }
 
     Style style();
+
+    ImageResource logoArcbees();
+
 
     @Source("honConsulting.jpg")
     ImageResource consulting();

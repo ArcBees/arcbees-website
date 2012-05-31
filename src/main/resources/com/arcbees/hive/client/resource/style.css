@@ -4,7 +4,9 @@ body {
     margin: 0;
     padding: 0;
 }
-
+a{
+    text-decoration: none;
+}
 table, tr, td {
     margin: 0;
     padding: 0;
@@ -250,5 +252,6 @@ div {
     border-radius: 10px;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
-    overflow: hidden;s
+    overflow: hidden;
+    s
 }

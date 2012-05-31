@@ -6,6 +6,4 @@ public interface SloganUiHandlers extends UiHandlers {
     void showConsultingSection();
 
     void showDevelopmentSection();
-
-    void showSuccessStorySection();
 }

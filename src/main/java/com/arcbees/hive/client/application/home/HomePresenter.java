@@ -27,19 +27,20 @@ import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.annotations.ContentSlot;
+import com.gwtplatform.mvp.client.annotations.NameToken;
 import com.gwtplatform.mvp.client.annotations.ProxyEvent;
 import com.gwtplatform.mvp.client.annotations.ProxyStandard;
 import com.gwtplatform.mvp.client.proxy.*;
 
 public class HomePresenter extends
         Presenter<HomePresenter.MyView, HomePresenter.MyProxy> implements
-        HomeUiHandlers, ResizeHandler, NavigationHandler {
+        HomeUiHandlers, ResizeHandler{
     @ProxyStandard
+    @NameToken(NameTokens.blog)
     public interface MyProxy extends Proxy<HomePresenter> {
     }
 
     public interface MyView extends View {
-        void resizeSlot(Object slot, Integer size);
     }
 
     @ContentSlot
@@ -54,8 +55,7 @@ public class HomePresenter extends
     public static final Object TYPE_SetTopContent = new Object();
 
     private final SloganPresenter sloganPresenter;
-    private final Integer bottomMargin = 41;
-    private final Integer minSize = 827;
+    private final Integer minSize = 400;
 
     @Inject
     public HomePresenter(final EventBus eventBus, final MyView view,
@@ -81,30 +81,6 @@ public class HomePresenter extends
 
     @Override
     public void onResize(ResizeEvent event) {
-        if (event.getSlot().equals(TYPE_SetBottomContent1) || event.getSlot().equals(TYPE_SetBottomContent2) || event
-                .getSlot().equals(TYPE_SetBottomContent3) || event.getSlot().equals(TYPE_SetBottomContent4)) {
-            Integer size = event.getSize() + bottomMargin;
-            getView().resizeSlot(event.getSlot(), size);
-        }
-    }
-
-    @Override
-    @ProxyEvent
-    public void onNavigation(NavigationEvent navigationEvent) {
-        if (navigationEvent.getRequest().matchesNameToken(NameTokens.blog)) {
-            sloganPresenter.defaultDescription();
-        } else if (navigationEvent.getRequest().matchesNameToken(NameTokens.consulting)) {
-            sloganPresenter.showConsulting();
-        } else if (navigationEvent.getRequest().matchesNameToken(NameTokens.development)) {
-            sloganPresenter.showDevelopment();
-        } else if (navigationEvent.getRequest().matchesNameToken(NameTokens.successStory)) {
-            sloganPresenter.showSuccess();
-        }
-    }
-
-    @Override
-    public void resize(int height) {
-        ResizeEvent.fire(this, AppPresenter.TYPE_SetMainContent, height);
     }
 
     @Override

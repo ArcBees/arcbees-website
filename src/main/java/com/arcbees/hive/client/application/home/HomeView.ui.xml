@@ -5,15 +5,13 @@
     <ui:with field="res" type="com.arcbees.hive.client.resource.Resources"/>
 
     <ui:style>
-        .section {
-            position: relative;
-            width: 888px;
-            height: 351px;
-        }
-
         .gwtHtml5Cloud {
             margin-left: auto;
             margin-right: auto;
+        }
+
+        .minHeight {
+            height: 400px;
         }
     </ui:style>
 
@@ -21,7 +19,7 @@
         <div class="{res.style.blogLeftFull}"/>
         <div class="{res.style.blogRightFull}"/>
 
-        <div class="{style.section}">
+        <div class="{res.style.mainSection} {style.minHeight}">
             <g:Image resource="{res.gwtHtml5Cloud}" addStyleNames="{style.gwtHtml5Cloud}"/>
         </div>
         <div class="{res.style.blogDown}"/>

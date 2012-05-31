@@ -18,6 +18,7 @@ package com.arcbees.hive.client.application.common;
 
 import com.arcbees.core.client.mvp.ViewImpl;
 import com.arcbees.hive.client.application.common.AppPresenter.MyView;
+import com.arcbees.hive.client.application.common.navbar.NavbarView;
 import com.arcbees.hive.client.place.AppIds;
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.query.client.Function;
@@ -52,6 +53,8 @@ public class AppView extends ViewImpl implements MyView {
     SimplePanel customers;
     @UiField
     HTMLPanel footer;
+    @UiField(provided = true)
+    NavbarView navbarView;
 
     private Integer delay = 300;
     private Boolean blockFade = false;
@@ -69,7 +72,10 @@ public class AppView extends ViewImpl implements MyView {
     };
 
     @Inject
-    public AppView(final Binder uiBinder) {
+    public AppView(final Binder uiBinder,
+                   final NavbarView navbarView) {
+        this.navbarView = navbarView;
+
         initWidget(uiBinder.createAndBindUi(this));
     }
 

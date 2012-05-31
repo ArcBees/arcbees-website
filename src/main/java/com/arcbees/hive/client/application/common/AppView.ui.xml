@@ -1,6 +1,7 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-             xmlns:g="urn:import:com.google.gwt.user.client.ui">
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:ahive_navbar='urn:import:com.arcbees.hive.client.application.common.navbar'>
 
     <ui:style>
         html {
@@ -32,6 +33,7 @@
 
     <g:HTMLPanel styleName="{style.hiveMain}">
         <g:HTMLPanel ui:field="header"/>
+        <ahive_navbar:NavbarView ui:field="navbarView"/>
         <g:HTMLPanel ui:field="mainContent" styleName="{style.mainContent}">
             <g:HTMLPanel styleName="{style.mainContentSlot}" ui:field="mainContent1" visible="false"/>
             <g:HTMLPanel styleName="{style.mainContentSlot}" ui:field="mainContent2" visible="false"/>

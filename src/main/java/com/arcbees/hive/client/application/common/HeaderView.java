@@ -47,11 +47,6 @@ public class HeaderView extends ViewWithUiHandlers<HeaderUiHandlers> implements 
         initWidget(uiBinder.createAndBindUi(this));
     }
 
-    @UiHandler("header")
-    void onHeaderClicked(ClickEvent event) {
-        getUiHandlers().showHome();
-    }
-
     @Override
     public void showFrenchHyperlink() {
         swithcLocaleHyperlink.setHref("?locale=fr");

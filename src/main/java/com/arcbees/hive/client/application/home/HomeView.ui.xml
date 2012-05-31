@@ -5,15 +5,18 @@
     <ui:with field="res" type="com.arcbees.hive.client.resource.Resources"/>
 
     <ui:style>
-        .section {
-            position: relative;
-            width: 888px;
-            height: 351px;
-        }
-
         .gwtHtml5Cloud {
             margin-left: auto;
             margin-right: auto;
+        }
+
+        .minHeight {
+            height: 400px;
+        }
+
+        .introParagraph {
+            margin: 0px auto 30px auto;
+            width: 600px;
         }
     </ui:style>
 
@@ -21,7 +24,11 @@
         <div class="{res.style.blogLeftFull}"/>
         <div class="{res.style.blogRightFull}"/>
 
-        <div class="{style.section}">
+        <div class="{res.style.mainSection} {style.minHeight}">
+            <h2>Have a new web project? Need to redesign your architecture?</h2>
+            <h3 class="{style.introParagraph}">With ArcBees, your company may spend more time doing what it does best while we provide you simple web
+                solutions that meet your needs. We are specialists in GWTP, UX design and Cloud Computing
+            </h3>
             <g:Image resource="{res.gwtHtml5Cloud}" addStyleNames="{style.gwtHtml5Cloud}"/>
         </div>
         <div class="{res.style.blogDown}"/>

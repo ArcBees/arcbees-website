@@ -21,6 +21,14 @@ div {
     cursor: pointer;
 }
 
+.mainSection {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 888px;
+}
+
 @sprite .navPrincipaleMilieuSprite {
     gwt-image: "navPrincipaleMilieu";
 }

@@ -29,6 +29,8 @@ public interface Resources extends ClientBundle {
     public interface Style extends CssResource {
         String cursor();
 
+        String mainSection();
+
         String blogBackground();
 
         String blogDown();

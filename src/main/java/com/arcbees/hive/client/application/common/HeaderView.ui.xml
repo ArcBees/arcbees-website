@@ -34,7 +34,7 @@
             margin: 25px;
         }
     </ui:style>
-    <g:HTMLPanel addStyleNames="{style.headerContainer} {res.style.yheaderBg} {res.style.cornerBottom}">
+    <g:HTMLPanel addStyleNames="{style.headerContainer} {res.style.headerBg} {res.style.cornerBottom}">
         <a href="#">
             <g:Image resource="{res.logoArcbees}" addStyleNames="{style.imgLogo}"/>
         </a>

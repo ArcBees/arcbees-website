@@ -18,8 +18,6 @@ package com.arcbees.hive.client.application.home;
 
 import com.arcbees.core.client.mvp.uihandlers.ProviderUiHandlersStrategy;
 import com.arcbees.core.client.mvp.uihandlers.UiHandlersStrategy;
-import com.arcbees.hive.client.application.home.blog.BlogModule;
-import com.arcbees.hive.client.application.home.slogan.SloganModule;
 import com.google.inject.TypeLiteral;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
@@ -35,8 +33,5 @@ public class HomeModule extends AbstractPresenterModule {
                 HomeView.class, HomePresenter.MyProxy.class);
 
         bind(HomeUiHandlers.class).to(HomePresenter.class);
-
-        install(new SloganModule());
-        install(new BlogModule());
     }
 }

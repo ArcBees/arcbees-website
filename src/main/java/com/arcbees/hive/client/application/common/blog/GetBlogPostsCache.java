@@ -14,7 +14,7 @@
  * the License.
  */
 
-package com.arcbees.hive.client.application.home.blog;
+package com.arcbees.hive.client.application.common.blog;
 
 import com.arcbees.hive.shared.home.blog.GetBlogPosts;
 import com.arcbees.hive.shared.home.blog.GetBlogPostsResult;

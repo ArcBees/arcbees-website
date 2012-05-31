@@ -17,9 +17,8 @@
 package com.arcbees.hive.client.application.home;
 
 import com.arcbees.hive.client.application.common.AppPresenter;
-import com.arcbees.hive.client.application.home.event.ResizeEvent;
-import com.arcbees.hive.client.application.home.event.ResizeEvent.ResizeHandler;
-import com.arcbees.hive.client.application.home.slogan.SloganPresenter;
+import com.arcbees.hive.client.application.common.event.ResizeEvent;
+import com.arcbees.hive.client.application.common.event.ResizeEvent.ResizeHandler;
 import com.arcbees.hive.client.place.NameTokens;
 import com.google.gwt.event.shared.GwtEvent.Type;
 import com.google.inject.Inject;
@@ -28,16 +27,17 @@ import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.annotations.ContentSlot;
 import com.gwtplatform.mvp.client.annotations.NameToken;
-import com.gwtplatform.mvp.client.annotations.ProxyEvent;
 import com.gwtplatform.mvp.client.annotations.ProxyStandard;
-import com.gwtplatform.mvp.client.proxy.*;
+import com.gwtplatform.mvp.client.proxy.ProxyPlace;
+import com.gwtplatform.mvp.client.proxy.RevealContentEvent;
+import com.gwtplatform.mvp.client.proxy.RevealContentHandler;
 
 public class HomePresenter extends
         Presenter<HomePresenter.MyView, HomePresenter.MyProxy> implements
-        HomeUiHandlers, ResizeHandler{
+        HomeUiHandlers, ResizeHandler {
     @ProxyStandard
-    @NameToken(NameTokens.blog)
-    public interface MyProxy extends Proxy<HomePresenter> {
+    @NameToken(NameTokens.home)
+    public interface MyProxy extends ProxyPlace<HomePresenter> {
     }
 
     public interface MyView extends View {
@@ -45,24 +45,13 @@ public class HomePresenter extends
 
     @ContentSlot
     public static final Type<RevealContentHandler<?>> TYPE_SetBottomContent1 = new Type<RevealContentHandler<?>>();
-    @ContentSlot
-    public static final Type<RevealContentHandler<?>> TYPE_SetBottomContent2 = new Type<RevealContentHandler<?>>();
-    @ContentSlot
-    public static final Type<RevealContentHandler<?>> TYPE_SetBottomContent3 = new Type<RevealContentHandler<?>>();
-    @ContentSlot
-    public static final Type<RevealContentHandler<?>> TYPE_SetBottomContent4 = new Type<RevealContentHandler<?>>();
 
-    public static final Object TYPE_SetTopContent = new Object();
-
-    private final SloganPresenter sloganPresenter;
     private final Integer minSize = 400;
 
     @Inject
     public HomePresenter(final EventBus eventBus, final MyView view,
-                         final MyProxy proxy, final SloganPresenter sloganPresenter) {
+                         final MyProxy proxy) {
         super(eventBus, view, proxy);
-
-        this.sloganPresenter = sloganPresenter;
     }
 
     @Override
@@ -73,8 +62,6 @@ public class HomePresenter extends
     @Override
     protected void onBind() {
         super.onBind();
-
-        setInSlot(TYPE_SetTopContent, sloganPresenter);
 
         addRegisteredHandler(ResizeEvent.getType(), this);
     }

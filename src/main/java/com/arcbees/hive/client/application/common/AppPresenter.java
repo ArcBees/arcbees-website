@@ -16,8 +16,8 @@
 
 package com.arcbees.hive.client.application.common;
 
-import com.arcbees.hive.client.application.home.event.ResizeEvent;
-import com.arcbees.hive.client.application.home.event.ResizeEvent.ResizeHandler;
+import com.arcbees.hive.client.application.common.event.ResizeEvent;
+import com.arcbees.hive.client.application.common.event.ResizeEvent.ResizeHandler;
 import com.google.gwt.event.shared.GwtEvent.Type;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;

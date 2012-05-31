@@ -16,7 +16,7 @@
 
 package com.arcbees.hive.client.application.home.slogan;
 
-import com.arcbees.hive.client.Resources;
+import com.arcbees.hive.client.resource.Resources;
 import com.arcbees.hive.client.place.NameTokens;
 import com.google.gwt.safehtml.client.SafeHtmlTemplates;
 import com.google.gwt.safehtml.shared.SafeHtml;

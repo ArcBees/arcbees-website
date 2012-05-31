@@ -1,15 +1,16 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:ahive='urn:import:com.arcbees.hive.client.application.common.socialmedia'
              ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
              ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator"
              ui:generateLocales="en">
 
     <ui:with field='nameTokens' type='com.arcbees.hive.client.place.NameTokens'/>
-    <ui:with field='res' type='com.arcbees.hive.client.Resources'/>
-
+    <ui:with field='res' type='com.arcbees.hive.client.resource.Resources'/>
     <ui:style>
         .headerContainer {
+            position: relative;
             width: 950px;
         }
 
@@ -54,8 +55,30 @@
             display: inline-block;
             float: left;
         }
+
+        .rightLinkBox {
+            position: absolute;
+            right: 30px;
+            top: 30px;
+        }
+
+        .localeSwitcher {
+            text-decoration: none;
+            color: #9f9f9f;
+        }
+
+        .localeSwitcher:HOVER {
+            color: #5f5f5f;
+        }
     </ui:style>
     <g:HTMLPanel addStyleNames="{style.headerContainer}">
+        <div class="{style.rightLinkBox}">
+            <a ui:field="swithcLocaleHyperlink" href="?locale=fr" class="{style.localeSwitcher}">
+                <ui:msg description="Locale hyperlink in header">Français</ui:msg>
+            </a>
+            <ahive:SocialMediaWidget ui:field="socialMediaWidget"/>
+        </div>
+
         <g:Image ui:field="header" resource="{res.head}"
                  addStyleNames="{res.style.cursor}"/>
         <div class="{style.menuContainer}">
@@ -63,11 +86,16 @@
             <div class="{res.style.navPrincipaleMilieuSprite} {style.divMilieu} ">
                 <div class="{style.navPrincipale}">
                     <a href="#{nameTokens.getService}">Services</a>
-                    <a href="#{nameTokens.getProduct}"><ui:msg description="Main navbar - Products">Products</ui:msg></a>
-                    <a href="#{nameTokens.getJob}"><ui:msg description="Main navbar - Job Opportunities">Job
-                        Opportunities
-                    </ui:msg></a>
-                    <a href="#{nameTokens.getContact}"><ui:msg description="Main navbar - Contact Us">Contact Us</ui:msg>
+                    <a href="#{nameTokens.getProduct}">
+                        <ui:msg description="Main navbar - Products">Products</ui:msg>
+                    </a>
+                    <a href="#{nameTokens.getJob}">
+                        <ui:msg description="Main navbar - Job Opportunities">Job
+                            Opportunities
+                        </ui:msg>
+                    </a>
+                    <a href="#{nameTokens.getContact}">
+                        <ui:msg description="Main navbar - Contact Us">Contact Us</ui:msg>
                     </a>
                 </div>
             </div>

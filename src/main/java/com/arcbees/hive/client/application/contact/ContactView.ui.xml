@@ -2,7 +2,7 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
-    <ui:with field="res" type="com.arcbees.hive.client.Resources"/>
+    <ui:with field="res" type="com.arcbees.hive.client.resource.Resources"/>
 
     <ui:style>
         .sectionText {

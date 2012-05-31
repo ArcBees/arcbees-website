@@ -16,7 +16,7 @@
 
 package com.arcbees.hive.client.gin;
 
-import com.arcbees.hive.client.Resources;
+import com.arcbees.hive.client.resource.Resources;
 import com.arcbees.hive.client.application.about.AboutModule;
 import com.arcbees.hive.client.application.common.CommonModule;
 import com.arcbees.hive.client.application.contact.ContactModule;
@@ -27,6 +27,7 @@ import com.arcbees.hive.client.place.NameTokens;
 import com.arcbees.hive.client.application.products.ProductsModule;
 import com.arcbees.hive.client.application.service.ServiceModule;
 
+import com.arcbees.hive.client.resource.socialmedia.SocialMediaResources;
 import com.google.gwt.inject.client.AbstractGinModule;
 import com.google.inject.Singleton;
 
@@ -42,6 +43,7 @@ public class ClientModule extends AbstractGinModule {
         // Singleton resources
         bind(Cache.class).to(DefaultCacheImpl.class).in(Singleton.class);
         bind(Resources.class).in(Singleton.class);
+        bind(SocialMediaResources.class).in(Singleton.class);
         bind(GoogleAnalyticsNavigationTracker.class).asEagerSingleton();
 
         // Constants

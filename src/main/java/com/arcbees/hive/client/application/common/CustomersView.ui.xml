@@ -4,10 +4,10 @@
     <ui:with field="customers" type="com.arcbees.hive.client.resource.customers.CustomersResources"/>
     <ui:style>
         .root {
-            height: 120px;
+            height: 100px;
             width: 896px;
             background-color: #ffffff;
-            margin: auto;
+            margin: 15px auto 0 auto;
         }
 
         .next {
@@ -21,9 +21,13 @@
         .carousel {
             margin: auto;
         }
+
+        .carrouselContainer {
+          margin-top: 40px;
+        }
     </ui:style>
     <g:HTMLPanel addStyleNames="{style.root} {res.style.cornerTopBottom}">
-        <div id="container">
+        <div id="container" class="{style.carrouselContainer}">
 
             <div id="carousel" class="{style.carousel}">
                 <a href="http://getbookedin.com/" target="_blank">

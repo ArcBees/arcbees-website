@@ -46,8 +46,6 @@ public class HomePresenter extends
     @ContentSlot
     public static final Type<RevealContentHandler<?>> TYPE_SetBottomContent1 = new Type<RevealContentHandler<?>>();
 
-    private final Integer minSize = 400;
-
     @Inject
     public HomePresenter(final EventBus eventBus, final MyView view,
                          final MyProxy proxy) {
@@ -74,6 +72,6 @@ public class HomePresenter extends
     protected void onReveal() {
         super.onReveal();
 
-        ResizeEvent.fire(this, AppPresenter.TYPE_SetMainContent, minSize);
+        ResizeEvent.fire(this, AppPresenter.TYPE_SetMainContent, getView().asWidget().getOffsetHeight());
     }
 }

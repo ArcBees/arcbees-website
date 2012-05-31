@@ -1,12 +1,13 @@
 body {
-    text-align: center;
     background-color: #bfbfbf;
     margin: 0;
     padding: 0;
 }
-a{
+
+a {
     text-decoration: none;
 }
+
 table, tr, td {
     margin: 0;
     padding: 0;
@@ -25,7 +26,7 @@ div {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
+    min-height: 450px;
     width: 888px;
 }
 
@@ -261,5 +262,4 @@ div {
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     overflow: hidden;
-    s
 }

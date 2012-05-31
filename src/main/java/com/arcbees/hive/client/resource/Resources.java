@@ -97,6 +97,7 @@ public interface Resources extends ClientBundle {
 
     ImageResource logoArcbees();
 
+    ImageResource beeFlying();
 
     @Source("honConsulting.jpg")
     ImageResource consulting();

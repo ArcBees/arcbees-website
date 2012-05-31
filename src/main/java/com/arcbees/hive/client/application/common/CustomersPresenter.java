@@ -11,6 +11,7 @@ public class CustomersPresenter extends PresenterWidget<CustomersPresenter.MyVie
 
         void startCarousel();
     }
+
     @Inject
     public CustomersPresenter(final EventBus eventBus,
                               final MyView view) {

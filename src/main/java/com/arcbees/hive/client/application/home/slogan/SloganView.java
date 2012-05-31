@@ -91,7 +91,6 @@ public class SloganView extends ViewWithUiHandlers<SloganUiHandlers> implements
 
     @UiHandler("success")
     void onSuccessClicked(ClickEvent event) {
-        getUiHandlers().showSuccessStorySection();
     }
 
     /**

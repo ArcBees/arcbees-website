@@ -39,28 +39,6 @@ public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
     public interface Binder extends UiBinder<Widget, HomeView> {
     }
 
-    @UiField
-    HTMLPanel topPanel;
-    @UiField
-    HTMLPanel bottomPanel;
-    @UiField
-    SimplePanel panel1;
-    @UiField
-    SimplePanel panel2;
-    @UiField
-    SimplePanel panel3;
-    @UiField
-    SimplePanel panel4;
-    @UiField
-    AbsolutePanel resizablePanel;
-
-    private final int panel1RightOffset = 0;
-    private final int panel2RightOffset = 888;
-    private final int panel3RightOffset = panel2RightOffset * 2;
-    private final int panel4RightOffset = panel2RightOffset * 3;
-
-    private int lastOffset = 0;
-
     @Inject
     public HomeView(final Binder uiBinder,
                     UiHandlersStrategy<HomeUiHandlers> uiHandlersStrategy) {
@@ -71,80 +49,5 @@ public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
 
     @Override
     public void setInSlot(Object slot, Widget content) {
-        if (content != null) {
-            if (slot == HomePresenter.TYPE_SetTopContent) {
-                topPanel.clear();
-                topPanel.add(content, topPanel.getElement());
-            } else if (slot == HomePresenter.TYPE_SetBottomContent1) {
-                getUiHandlers().clearSlot(HomePresenter.TYPE_SetBottomContent2);
-                getUiHandlers().clearSlot(HomePresenter.TYPE_SetBottomContent3);
-                getUiHandlers().clearSlot(HomePresenter.TYPE_SetBottomContent4);
-
-                if (panel1.getWidget() == null) {
-                    panel1.add(content);
-                }
-            } else if (slot == HomePresenter.TYPE_SetBottomContent2) {
-                getUiHandlers().clearSlot(HomePresenter.TYPE_SetBottomContent1);
-                getUiHandlers().clearSlot(HomePresenter.TYPE_SetBottomContent3);
-                getUiHandlers().clearSlot(HomePresenter.TYPE_SetBottomContent4);
-
-                if (panel2.getWidget() == null) {
-                    panel2.add(content);
-                }
-            } else if (slot == HomePresenter.TYPE_SetBottomContent3) {
-                getUiHandlers().clearSlot(HomePresenter.TYPE_SetBottomContent1);
-                getUiHandlers().clearSlot(HomePresenter.TYPE_SetBottomContent2);
-                getUiHandlers().clearSlot(HomePresenter.TYPE_SetBottomContent4);
-
-                if (panel3.getWidget() == null) {
-                    panel3.add(content);
-                }
-            } else if (slot == HomePresenter.TYPE_SetBottomContent4) {
-                getUiHandlers().clearSlot(HomePresenter.TYPE_SetBottomContent1);
-                getUiHandlers().clearSlot(HomePresenter.TYPE_SetBottomContent2);
-                getUiHandlers().clearSlot(HomePresenter.TYPE_SetBottomContent3);
-
-                if (panel4.getWidget() == null) {
-                    panel4.add(content);
-                }
-            }
-        }
-    }
-
-    private void move(final int offset, final int height) {
-        int adjustedOffset = lastOffset - offset;
-
-        getUiHandlers().resize(height + topPanel.getOffsetHeight());
-
-        $(resizablePanel).as(Effects).animate(
-                Properties.create("{ " + "height: '" + String.valueOf(height) + "px'}"),
-                400, Easing.LINEAR, new Function() {
-            @Override
-            public void f(Element e) {
-            }
-        });
-
-        $(bottomPanel).as(Effects).animate(
-                Properties.create("{ " + "left: '+=" + String.valueOf(adjustedOffset)
-                        + "px'}"), 400, Easing.LINEAR, new Function() {
-            @Override
-            public void f(Element e) {
-            }
-        });
-
-        lastOffset = offset;
-    }
-
-    @Override
-    public void resizeSlot(Object slot, Integer size) {
-        if (slot == HomePresenter.TYPE_SetBottomContent1) {
-            move(panel1RightOffset, size);
-        } else if (slot == HomePresenter.TYPE_SetBottomContent2) {
-            move(panel2RightOffset, size);
-        } else if (slot == HomePresenter.TYPE_SetBottomContent3) {
-            move(panel3RightOffset, size);
-        } else if (slot == HomePresenter.TYPE_SetBottomContent4) {
-            move(panel4RightOffset, size);
-        }
     }
 }

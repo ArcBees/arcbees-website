@@ -4,5 +4,4 @@ import com.gwtplatform.mvp.client.HasSlots;
 import com.gwtplatform.mvp.client.UiHandlers;
 
 public interface HomeUiHandlers extends HasSlots, UiHandlers {
-    void resize(int adjustedOffset);
 }

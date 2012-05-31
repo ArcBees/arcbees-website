@@ -21,11 +21,7 @@ import com.arcbees.core.client.mvp.uihandlers.UiHandlersStrategy;
 import com.arcbees.hive.client.application.home.blog.BlogModule;
 import com.arcbees.hive.client.application.home.consulting.ConsultingPresenter;
 import com.arcbees.hive.client.application.home.consulting.ConsultingView;
-import com.arcbees.hive.client.application.home.development.DevelopmentPresenter;
-import com.arcbees.hive.client.application.home.development.DevelopmentView;
 import com.arcbees.hive.client.application.home.slogan.SloganModule;
-import com.arcbees.hive.client.application.home.successstory.SuccessStoryPresenter;
-import com.arcbees.hive.client.application.home.successstory.SuccessStoryView;
 import com.google.inject.TypeLiteral;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
@@ -41,12 +37,6 @@ public class HomeModule extends AbstractPresenterModule {
                 HomeView.class, HomePresenter.MyProxy.class);
         bindPresenter(ConsultingPresenter.class, ConsultingPresenter.MyView.class,
                 ConsultingView.class, ConsultingPresenter.MyProxy.class);
-        bindPresenter(DevelopmentPresenter.class,
-                DevelopmentPresenter.MyView.class, DevelopmentView.class,
-                DevelopmentPresenter.MyProxy.class);
-        bindPresenter(SuccessStoryPresenter.class,
-                SuccessStoryPresenter.MyView.class, SuccessStoryView.class,
-                SuccessStoryPresenter.MyProxy.class);
 
         bind(HomeUiHandlers.class).to(HomePresenter.class);
 

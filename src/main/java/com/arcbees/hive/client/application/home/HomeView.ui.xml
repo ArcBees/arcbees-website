@@ -5,61 +5,25 @@
     <ui:with field="res" type="com.arcbees.hive.client.resource.Resources"/>
 
     <ui:style>
-        .movableSection {
-            margin-left: 34px;
-            margin-right: 34px;
-        }
-
-        .panel {
-            position: absolute;
-            width: 3552px;
-        }
-
-        .panel1 {
-            position: absolute;
+        .section {
+            position: relative;
             width: 888px;
+            height: 351px;
         }
 
-        .panel2 {
-            position: absolute;
-            left: 888px;
-            width: 888px;
-        }
-
-        .panel3 {
-            position: absolute;
-            left: 1776px;
-            width: 888px;
-        }
-
-        .panel4 {
-            position: absolute;
-            left: 2664px;
-            width: 888px;
-        }
-
-        .marginBottom {
-            margin-bottom: 20px;
+        .gwtHtml5Cloud {
+            margin-left: auto;
+            margin-right: auto;
         }
     </ui:style>
 
-    <g:HTMLPanel>
-        <g:HTMLPanel ui:field="topPanel"/>
+    <g:HTMLPanel styleName="{res.style.blogBackground}">
+        <div class="{res.style.blogLeftFull}"/>
+        <div class="{res.style.blogRightFull}"/>
 
-        <div class="{res.style.blogBackground} {style.marginBottom}">
-            <div class="{res.style.blogLeft}"/>
-            <div class="{res.style.blogRight}"/>
-            <div class="{res.style.blogDown}"/>
-
-            <g:AbsolutePanel styleName="{style.movableSection}"
-                             ui:field="resizablePanel" width="888px" height="500px">
-                <g:HTMLPanel styleName="{style.panel}" ui:field="bottomPanel">
-                    <g:SimplePanel styleName="{style.panel1}" ui:field="panel1"/>
-                    <g:SimplePanel styleName="{style.panel2}" ui:field="panel2"/>
-                    <g:SimplePanel styleName="{style.panel3}" ui:field="panel3"/>
-                    <g:SimplePanel styleName="{style.panel4}" ui:field="panel4"/>
-                </g:HTMLPanel>
-            </g:AbsolutePanel>
+        <div class="{style.section}">
+            <g:Image resource="{res.gwtHtml5Cloud}" addStyleNames="{style.gwtHtml5Cloud}"/>
         </div>
+        <div class="{res.style.blogDown}"/>
     </g:HTMLPanel>
 </ui:UiBinder> 

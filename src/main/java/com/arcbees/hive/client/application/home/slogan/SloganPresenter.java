@@ -115,11 +115,4 @@ public class SloganPresenter extends PresenterWidget<SloganPresenter.MyView>
 
         placeManager.revealPlace(request);
     }
-
-    @Override
-    public void showSuccessStorySection() {
-        PlaceRequest request = new PlaceRequest(NameTokens.successStory);
-
-        placeManager.revealPlace(request);
-    }
 }

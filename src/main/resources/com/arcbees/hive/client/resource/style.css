@@ -4,6 +4,10 @@ body {
     padding: 0;
 }
 
+p {
+    text-align: justify;
+}
+
 a {
     text-decoration: none;
 }

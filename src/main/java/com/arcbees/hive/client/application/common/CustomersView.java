@@ -27,10 +27,10 @@ public class CustomersView extends ViewImpl implements CustomersPresenter.MyView
     public native void startCarousel() /*-{
         $wnd.$('#carousel').rcarousel(
                 {
-                    width:50,
-                    height:50,
+                    width:190,
+                    height:45,
                     visible:4,
                     step:4,
-                    speed:300});
+                    speed:600});
     }-*/;
 }

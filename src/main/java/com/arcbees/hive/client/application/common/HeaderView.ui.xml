@@ -17,7 +17,6 @@
             width: inherit;
             height: 30px;
             font-family: "Verdana";
-            font-variant: small-caps;
             font-size: 17px;
             line-height: 30px;
             margin-top: 10px;

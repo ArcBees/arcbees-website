@@ -1,9 +1,13 @@
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
              xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+    <ui:with field='res' type='com.arcbees.hive.client.resource.Resources'/>
+    <ui:with field="customers" type="com.arcbees.hive.client.resource.customers.CustomersResources"/>
     <ui:style>
         .root {
             height: 120px;
+            width: 896px;
             background-color: #ffffff;
+            margin: auto;
         }
 
         .next {
@@ -18,11 +22,34 @@
             margin: auto;
         }
     </ui:style>
-    <g:HTMLPanel addStyleNames="{style.root}">
+    <g:HTMLPanel addStyleNames="{style.root} {res.style.cornerTopBottom}">
         <div id="container">
 
             <div id="carousel" class="{style.carousel}">
-
+                <a href="http://getbookedin.com/" target="_blank">
+                    <g:Image resource="{customers.slider_client_bookedin}"/>
+                </a>
+                <a href="http://cobratag.com/" target="_blank">
+                    <g:Image resource="{customers.slider_client_cobratag}"/>
+                </a>
+                <a href="http://www.protorisk.com/" target="_blank">
+                    <g:Image resource="{customers.slider_client_protorisk}"/>
+                </a>
+                <a href="http://www.sceneverse.com/" target="_blank">
+                    <g:Image resource="{customers.slider_client_sceneverse}"/>
+                </a>
+                <a href="http://www.storeplacer.com/" target="_blank">
+                    <g:Image resource="{customers.slider_client_storeplacer}"/>
+                </a>
+                <a href="http://www.storeplacer.com/" target="_blank">
+                    <g:Image resource="{customers.slider_client_storeplacer}"/>
+                </a>
+                <a href="http://www.storeplacer.com/" target="_blank">
+                    <g:Image resource="{customers.slider_client_storeplacer}"/>
+                </a>
+                <a href="http://www.storeplacer.com/" target="_blank">
+                    <g:Image resource="{customers.slider_client_storeplacer}"/>
+                </a>
             </div>
             <a href="#" id="ui-carousel-prev" class="{style.previous}">prev</a>
             <a href="#" id="ui-carousel-next" class="{style.next}">next</a>

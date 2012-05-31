@@ -204,4 +204,6 @@ public interface Resources extends ClientBundle {
     ImageResource aboutDavid();
 
     ImageResource aboutFrancis();
+
+    ImageResource gwtHtml5Cloud();
 }

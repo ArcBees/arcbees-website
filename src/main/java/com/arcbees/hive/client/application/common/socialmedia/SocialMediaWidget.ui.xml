@@ -1,0 +1,54 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+    <ui:with field='socres' type='com.arcbees.hive.client.resource.socialmedia.SocialMediaResources'/>
+    <ui:style>
+        .root {
+        }
+
+        .root a {
+            text-decoration: none;
+        }
+
+        .root a div {
+            display: inline;
+        }
+
+    </ui:style>
+    <g:HTMLPanel addStyleNames="{style.root}">
+        <a href="https://www.facebook.com/QueenOfTheBees" target="_blank">
+            <g:PushButton>
+                <g:upFace image="{socres.header_sociaux_up_fb}"/>
+                <g:upHoveringFace image="{socres.header_sociaux_rl_fb}"/>
+                <g:downHoveringFace image="{socres.header_sociaux_rl_fb}"/>
+            </g:PushButton>
+        </a>
+        <a href="http://www.linkedin.com/company/arcbees" target="_blank">
+            <g:PushButton>
+                <g:upFace image="{socres.header_sociaux_up_in}"/>
+                <g:upHoveringFace image="{socres.header_sociaux_rl_in}"/>
+                <g:downHoveringFace image="{socres.header_sociaux_rl_in}"/>
+            </g:PushButton>
+        </a>
+        <a href="http://twitter.com/#!/arcbees" target="_blank">
+            <g:PushButton>
+                <g:upFace image="{socres.header_sociaux_up_tw}"/>
+                <g:upHoveringFace image="{socres.header_sociaux_rl_tw}"/>
+                <g:downHoveringFace image="{socres.header_sociaux_rl_tw}"/>
+            </g:PushButton>
+        </a>
+        <a href="https://picasaweb.google.com/104570359870395949420" target="_blank">
+            <g:PushButton>
+                <g:upFace image="{socres.header_sociaux_up_pc}"/>
+                <g:upHoveringFace image="{socres.header_sociaux_rl_pc}"/>
+                <g:downHoveringFace image="{socres.header_sociaux_rl_pc}"/>
+            </g:PushButton>
+        </a>
+        <a href="http://arcbees.wordpress.com/" target="_blank">
+            <g:PushButton>
+                <g:upFace image="{socres.header_sociaux_up_wp}"/>
+                <g:upHoveringFace image="{socres.header_sociaux_rl_wp}"/>
+                <g:downHoveringFace image="{socres.header_sociaux_rl_wp}"/>
+            </g:PushButton>
+        </a>
+    </g:HTMLPanel>
+</ui:UiBinder>

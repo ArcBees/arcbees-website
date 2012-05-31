@@ -16,7 +16,7 @@
 
 package com.arcbees.hive.client.gin;
 
-import com.arcbees.hive.client.Resources;
+import com.arcbees.hive.client.resource.Resources;
 import com.arcbees.hive.client.application.about.AboutPresenter;
 import com.arcbees.hive.client.application.common.AppPresenter;
 import com.arcbees.hive.client.application.contact.ContactPresenter;
@@ -28,6 +28,7 @@ import com.arcbees.hive.client.application.home.successstory.SuccessStoryPresent
 import com.arcbees.hive.client.application.jobs.JobsPresenter;
 import com.arcbees.hive.client.application.products.ProductsPresenter;
 import com.arcbees.hive.client.application.service.ServicePresenter;
+import com.arcbees.hive.client.resource.socialmedia.SocialMediaResources;
 import com.google.gwt.inject.client.GinModules;
 import com.google.gwt.inject.client.Ginjector;
 import com.google.inject.Provider;
@@ -41,6 +42,8 @@ public interface ClientGinjector extends Ginjector {
     PlaceManager getPlaceManager();
 
     Resources getResources();
+
+    SocialMediaResources getSocialMediaResources();
 
     Provider<AppPresenter> getAppPresenter();
 

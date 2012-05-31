@@ -9,6 +9,10 @@ table, tr, td {
     border: 0;
 }
 
+div {
+    outline: 0px;
+}
+
 .cursor {
     cursor: pointer;
 }

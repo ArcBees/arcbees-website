@@ -11,7 +11,8 @@
     <ui:style>
         .headerContainer {
             position: relative;
-            width: 950px;
+            width: inherit;
+            height: 152px;
         }
 
         .rightLinkBox {
@@ -28,8 +29,16 @@
         .localeSwitcher:HOVER {
             color: #5f5f5f;
         }
+
+        .imgLogo {
+            margin: 25px;
+        }
     </ui:style>
-    <g:HTMLPanel addStyleNames="{style.headerContainer} {res.style.headerBg} {res.style.cornerBottom}">
+    <g:HTMLPanel addStyleNames="{style.headerContainer} {res.style.yheaderBg} {res.style.cornerBottom}">
+        <a href="#">
+            <g:Image resource="{res.logoArcbees}" addStyleNames="{style.imgLogo}"/>
+        </a>
+
         <div class="{style.rightLinkBox}">
             <a ui:field="swithcLocaleHyperlink" href="?locale=fr" class="{style.localeSwitcher}">
                 <ui:msg description="Locale hyperlink in header">Français</ui:msg>

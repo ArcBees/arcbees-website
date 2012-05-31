@@ -1,6 +1,8 @@
 body {
     text-align: center;
     background-color: #bfbfbf;
+    margin: 0;
+    padding: 0;
 }
 
 table, tr, td {
@@ -224,4 +226,29 @@ div {
 .stepActive:HOVER {
     color: #858585;
     background-color: #ffffff;
+}
+
+@sprite .headerBg {
+    gwt-image: "head";
+}
+
+.cornerTop {
+    border-radius: 10px 10px 0px 0px;
+    -moz-border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+}
+
+.cornerBottom {
+    border-radius: 0px 0px 10px 10px;
+    -moz-border-radius: 0px 0px 10px 10px;
+    -webkit-border-radius: 0px 0px 10px 10px;
+    overflow: hidden;
+}
+
+.cornerTopBottom {
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    overflow: hidden;s
 }

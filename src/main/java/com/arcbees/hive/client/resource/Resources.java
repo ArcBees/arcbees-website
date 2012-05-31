@@ -23,6 +23,73 @@ import com.google.gwt.resources.client.ImageResource.ImageOptions;
 import com.google.gwt.resources.client.ImageResource.RepeatStyle;
 
 public interface Resources extends ClientBundle {
+    /**
+     * Style strong typed interface.
+     */
+    public interface Style extends CssResource {
+        String cursor();
+
+        String blogBackground();
+
+        String blogDown();
+
+        String blogDownContact();
+
+        String blogDownJob();
+
+        String blogLeft();
+
+        String blogLeftFull();
+
+        String blogRight();
+
+        String blogRightFull();
+
+        String sloganDescription();
+
+        String sloganCoinGauche();
+
+        String sloganCoinDroit();
+
+        String bodBarDroiteB();
+
+        String bodBarDroiteG();
+
+        String bodBarDroiteO();
+
+        String bodBarDroiteV();
+
+        String bodBarGaucheB();
+
+        String bodBarGaucheG();
+
+        String bodBarGaucheO();
+
+        String bodBarGaucheV();
+
+        String bodBarMidB();
+
+        String bodBarMidG();
+
+        String bodBarMidO();
+
+        String bodBarMidV();
+
+        String stepInactive();
+
+        String stepActive();
+
+        String navPrincipaleMilieuSprite();
+
+        String headerBg();
+
+        String cornerTop();
+
+        String cornerBottom();
+
+        String cornerTopBottom();
+    }
+
     Style style();
 
     @Source("honConsulting.jpg")
@@ -41,10 +108,6 @@ public interface Resources extends ClientBundle {
     ImageResource success();
 
     ImageResource head();
-
-    ImageResource navPrincipaleDroite();
-
-    ImageResource navPrincipaleGauche();
 
     @ImageOptions(repeatStyle = RepeatStyle.Horizontal)
     ImageResource navPrincipaleMilieu();
@@ -113,65 +176,6 @@ public interface Resources extends ClientBundle {
     ImageResource fooDroite();
 
     ImageResource fooGauche();
-
-    /**
-     * Style strong typed interface.
-     */
-    public interface Style extends CssResource {
-        String cursor();
-
-        String blogBackground();
-
-        String blogDown();
-
-        String blogDownContact();
-
-        String blogDownJob();
-
-        String blogLeft();
-
-        String blogLeftFull();
-
-        String blogRight();
-
-        String blogRightFull();
-
-        String sloganDescription();
-
-        String sloganCoinGauche();
-
-        String sloganCoinDroit();
-
-        String bodBarDroiteB();
-
-        String bodBarDroiteG();
-
-        String bodBarDroiteO();
-
-        String bodBarDroiteV();
-
-        String bodBarGaucheB();
-
-        String bodBarGaucheG();
-
-        String bodBarGaucheO();
-
-        String bodBarGaucheV();
-
-        String bodBarMidB();
-
-        String bodBarMidG();
-
-        String bodBarMidO();
-
-        String bodBarMidV();
-
-        String stepInactive();
-
-        String stepActive();
-
-        String navPrincipaleMilieuSprite();
-    }
 
     ImageResource aboutPhilippe();
 

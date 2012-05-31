@@ -21,7 +21,6 @@ import com.arcbees.hive.client.application.about.AboutPresenter;
 import com.arcbees.hive.client.application.common.AppPresenter;
 import com.arcbees.hive.client.application.contact.ContactPresenter;
 import com.arcbees.hive.client.application.home.HomePresenter;
-import com.arcbees.hive.client.application.home.blog.BlogPresenter;
 import com.arcbees.hive.client.application.jobs.JobsPresenter;
 import com.arcbees.hive.client.application.products.ProductsPresenter;
 import com.arcbees.hive.client.application.service.ServicePresenter;
@@ -45,8 +44,6 @@ public interface ClientGinjector extends Ginjector {
     Provider<AppPresenter> getAppPresenter();
 
     Provider<HomePresenter> getHomePresenter();
-
-    Provider<BlogPresenter> getBlogPresenter();
 
     Provider<ServicePresenter> getServicePresenter();
 

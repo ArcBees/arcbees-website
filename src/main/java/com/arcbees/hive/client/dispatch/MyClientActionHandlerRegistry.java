@@ -16,7 +16,7 @@
 
 package com.arcbees.hive.client.dispatch;
 
-import com.arcbees.hive.client.application.home.blog.GetBlogPostsCache;
+import com.arcbees.hive.client.application.common.blog.GetBlogPostsCache;
 
 import com.google.inject.Inject;
 

@@ -48,7 +48,7 @@ public class ClientModule extends AbstractGinModule {
 
         // Constants
         bindConstant().annotatedWith(DefaultPlace.class).to(
-                NameTokens.blog);
+                NameTokens.home);
         bindConstant().annotatedWith(GaAccount.class).to("UA-19115423-2");
 
         // Modules

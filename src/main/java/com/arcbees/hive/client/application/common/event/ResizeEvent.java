@@ -14,7 +14,7 @@
  * the License.
  */
 
-package com.arcbees.hive.client.application.home.event;
+package com.arcbees.hive.client.application.common.event;
 
 import com.google.gwt.event.shared.EventHandler;
 import com.google.gwt.event.shared.GwtEvent;

@@ -217,4 +217,6 @@ public interface Resources extends ClientBundle {
     ImageResource aboutFrancis();
 
     ImageResource gwtHtml5Cloud();
+
+    ImageResource honeyConsultingDevelopmentSuccess();
 }

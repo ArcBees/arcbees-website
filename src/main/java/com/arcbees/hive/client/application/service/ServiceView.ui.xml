@@ -8,12 +8,22 @@
     <ui:with field="res" type="com.arcbees.hive.client.resource.Resources"/>
 
     <ui:style>
+        .imageWrapper {
+            display: block;
+            margin: 20px auto 10px auto;
+        }
+
+        .servicesWrapper {
+            width: 800px;
+            min-height: 550px;
+        }
     </ui:style>
 
     <g:HTMLPanel styleName="{res.style.blogBackground}">
         <div class="{res.style.blogLeftFull}"/>
         <div class="{res.style.blogRightFull}"/>
-        <div class="{res.style.mainSection}">
+        <div class="{res.style.mainSection} {style.servicesWrapper}">
+            <g:Image resource="{res.honeyConsultingDevelopmentSuccess}" addStyleNames="{style.imageWrapper}"/>
             <h3>CONSULTING + DEVELOPMENT = YOUR BUSINESS SUCCESS!</h3>
             <p>
                 <ui:msg description="Services - Consulting + Development = your success - parag 1">Our consulting

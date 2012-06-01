@@ -5,6 +5,10 @@ body {
     font-family:Verdana
 }
 
+p {
+    text-align: justify;
+}
+
 a {
     text-decoration: none;
 }

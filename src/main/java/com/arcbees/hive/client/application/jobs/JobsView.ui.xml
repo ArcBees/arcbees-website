@@ -3,47 +3,14 @@
              xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
     <ui:with field="res" type="com.arcbees.hive.client.resource.Resources"/>
-
-    <ui:style>
-        .sectionText {
-            position: absolute;
-            font-size: 12px;
-            text-align: center;
-            width: 445px;
-            top: 30px;
-            left: 71px;
-        }
-
-        .img {
-            position: absolute;
-            left: 34px;
-        }
-
-        .section {
-            position: relative;
-            height: 351px;
-            width: 888px;
-        }
-    </ui:style>
-
-    <g:HTMLPanel styleName="{res.style.blogBackground}">
-        <div class="{res.style.blogLeftFull}"/>
-        <div class="{res.style.blogRightFull}"/>
-
-        <div class="{style.section}">
-            <g:Image resource="{res.job}" styleName="{style.img}"/>
-
-            <div class="{style.sectionText}">
-                <h2>Be part of the hive !</h2>
-                <p>Sorry, we're not hiring for any specific positions at this time.
-                    However, we're always looking for smart, talented people with good
-                    GWT knowledge. If you think you can make the difference, feel free
-                    to email your resume to
-                    <a href="mailto:queenbee@arcbees.com?subject=Jobs">queenbee@arcbees.com</a>
-                </p>
-            </div>
-        </div>
-
-        <div class="{res.style.blogDownJob}"/>
+    <g:HTMLPanel addStyleNames="{res.style.mainSection} {res.style.cornerBottom}">
+        <g:Image resource="{res.job}" />
+        <h2>Be part of the hive !</h2>
+        <p>Sorry, we're not hiring for any specific positions at this time.
+            However, we're always looking for smart, talented people with good
+            GWT knowledge. If you think you can make the difference, feel free
+            to email your resume to
+            <a href="mailto:queenbee@arcbees.com?subject=Jobs">queenbee@arcbees.com</a>
+        </p>
     </g:HTMLPanel>
 </ui:UiBinder>

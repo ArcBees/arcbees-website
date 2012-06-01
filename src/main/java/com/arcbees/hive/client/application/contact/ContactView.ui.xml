@@ -3,52 +3,20 @@
              xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
     <ui:with field="res" type="com.arcbees.hive.client.resource.Resources"/>
+    <g:HTMLPanel addStyleNames="{res.style.mainSection} {res.style.cornerBottom}">
+        <g:Image resource="{res.contactUS}"/>
+        Follow us on our
+        <a href="http://arcbees.wordpress.com/" target="_blank">Blog</a>,
+        <a href="http://twitter.com/arcbees" target="_blank">Twitter</a>,
+        <a href="http://www.linkedin.com/company/arcbees?trk=fc_badge" target="_blank">LinkedIn</a>
+        and
+        <a href="http://www.facebook.com/group.php?gid=138324539537313" target="_blank">Facebook</a>.
 
-    <ui:style>
-        .sectionText {
-            position: absolute;
-            text-align: center;
-            width: 215px;
-            height: 85px;
-            top: 203px;
-            left: 124px;
-        }
-
-        .img {
-            position: absolute;
-            left: 34px;
-        }
-
-        .section {
-            position: relative;
-            height: 351px;
-            width: 888px;
-        }
-    </ui:style>
-
-    <g:HTMLPanel styleName="{res.style.blogBackground}">
-        <div class="{res.style.blogLeftFull}"/>
-        <div class="{res.style.blogRightFull}"/>
-
-        <div class="{style.section}">
-            <g:Image resource="{res.contactUS}" styleName="{style.img}"/>
-            <div class="{style.sectionText}">
-                Follow us on our
-                <a href="http://arcbees.wordpress.com/" target="_blank">Blog</a>,
-                <a href="http://twitter.com/arcbees" target="_blank">Twitter</a>,
-                <a href="http://www.linkedin.com/company/arcbees?trk=fc_badge" target="_blank">LinkedIn</a>
-                and
-                <a href="http://www.facebook.com/group.php?gid=138324539537313" target="_blank">Facebook</a>.
-
-                <p>
-                    Email:
-                    <a href="mailto:queenbee@arcbees.com">queenbee@arcbees.com</a>
-                    <br/>
-                    Phone: 418-473-1216
-                </p>
-            </div>
-        </div>
-
-        <div class="{res.style.blogDownContact}"/>
+        <p>
+            Email:
+            <a href="mailto:queenbee@arcbees.com">queenbee@arcbees.com</a>
+            <br/>
+            Phone: 418-473-1216
+        </p>
     </g:HTMLPanel>
 </ui:UiBinder>

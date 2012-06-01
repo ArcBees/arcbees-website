@@ -31,6 +31,12 @@ public interface Resources extends ClientBundle {
 
         String mainSection();
 
+        String imgLeft();
+
+        String imgRight();
+
+        String imgCenter();
+
         String blogBackground();
 
         String blogDown();

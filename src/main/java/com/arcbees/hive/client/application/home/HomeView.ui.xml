@@ -21,9 +21,7 @@
         }
     </ui:style>
 
-    <g:HTMLPanel styleName="{res.style.blogBackground}">
-        <div class="{res.style.blogLeftFull}"/>
-        <div class="{res.style.blogRightFull}"/>
+    <g:HTMLPanel addStyleNames="{res.style.mainSection} {res.style.cornerBottom}">
 
         <div class="{res.style.mainSection} {style.wrapper}">
             <h2>Have a new web project? Need to redesign your architecture?</h2>
@@ -32,6 +30,5 @@
             </h3>
             <g:Image resource="{res.gwtHtml5Cloud}" addStyleNames="{style.gwtHtml5Cloud}"/>
         </div>
-        <div class="{res.style.blogDown}"/>
     </g:HTMLPanel>
 </ui:UiBinder> 

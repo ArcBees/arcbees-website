@@ -4,26 +4,36 @@
     <ui:with field="customers" type="com.arcbees.hive.client.resource.customers.CustomersResources"/>
     <ui:style>
         .root {
-            height: 100px;
             width: 896px;
             background-color: #ffffff;
-            margin: 15px auto 0 auto;
-        }
-
-        .next {
-            float: right;
+            margin: 10px auto 0 auto;
+            position: relative;
         }
 
         .previous {
-            float: left;
+            left:30px;
         }
+        .next {
+            right:30px;
+        }
+        .previous, .next {
 
+            position: absolute;
+            top:40px;
+
+        }
         .carousel {
             margin: auto;
         }
 
         .carrouselContainer {
-          margin-top: 40px;
+            margin-top: 25px;
+        }
+
+        .carrouselContainer p {
+            text-align: center;
+            color: #777;
+
         }
     </ui:style>
     <g:HTMLPanel addStyleNames="{style.root} {res.style.cornerTopBottom}">
@@ -31,32 +41,37 @@
 
             <div id="carousel" class="{style.carousel}">
                 <a href="http://getbookedin.com/" target="_blank">
-                    <g:Image resource="{customers.slider_client_bookedin}"/>
+                    <g:Image resource="{customers.sliderClientBookedin}"/>
                 </a>
                 <a href="http://cobratag.com/" target="_blank">
-                    <g:Image resource="{customers.slider_client_cobratag}"/>
+                    <g:Image resource="{customers.sliderClientCobratag}"/>
                 </a>
                 <a href="http://www.protorisk.com/" target="_blank">
-                    <g:Image resource="{customers.slider_client_protorisk}"/>
+                    <g:Image resource="{customers.sliderClientProtorisk}"/>
                 </a>
                 <a href="http://www.sceneverse.com/" target="_blank">
-                    <g:Image resource="{customers.slider_client_sceneverse}"/>
+                    <g:Image resource="{customers.sliderClientSceneverse}"/>
                 </a>
                 <a href="http://www.storeplacer.com/" target="_blank">
-                    <g:Image resource="{customers.slider_client_storeplacer}"/>
+                    <g:Image resource="{customers.sliderClientStoreplacer}"/>
                 </a>
                 <a href="http://www.storeplacer.com/" target="_blank">
-                    <g:Image resource="{customers.slider_client_storeplacer}"/>
+                    <g:Image resource="{customers.sliderClientStoreplacer}"/>
                 </a>
                 <a href="http://www.storeplacer.com/" target="_blank">
-                    <g:Image resource="{customers.slider_client_storeplacer}"/>
+                    <g:Image resource="{customers.sliderClientStoreplacer}"/>
                 </a>
                 <a href="http://www.storeplacer.com/" target="_blank">
-                    <g:Image resource="{customers.slider_client_storeplacer}"/>
+                    <g:Image resource="{customers.sliderClientStoreplacer}"/>
                 </a>
             </div>
-            <a href="#" id="ui-carousel-prev" class="{style.previous}">prev</a>
-            <a href="#" id="ui-carousel-next" class="{style.next}">next</a>
+            <a href="#" id="ui-carousel-prev" class="{style.previous}">
+                <g:Image resource="{customers.sliderFlecheGauche}"/>
+            </a>
+            <a href="#" id="ui-carousel-next" class="{style.next}">
+                <g:Image resource="{customers.sliderFlecheDroite}"/>
+            </a>
+            <p>Customers who recommend our experience, be it ArcBees services or products!</p>
         </div>
     </g:HTMLPanel>
 </ui:UiBinder>

@@ -11,7 +11,7 @@
     <ui:style>
         @fontface{
         font-family:"Segoe Script";
-        src:url('fonts/segoesc.ttf');
+        src: local("@"),url('../fonts/segoesc.ttf')format("opentype");
        }
 
         .headerContainer {

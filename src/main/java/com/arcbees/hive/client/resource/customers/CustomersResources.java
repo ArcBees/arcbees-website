@@ -4,16 +4,20 @@ import com.google.gwt.resources.client.ClientBundle;
 import com.google.gwt.resources.client.ImageResource;
 
 public interface CustomersResources extends ClientBundle {
-    ImageResource slider_client_bookedin();
+    ImageResource sliderClientBookedin();
 
-    ImageResource slider_client_cobratag();
+    ImageResource sliderClientCobratag();
 
-    ImageResource slider_client_engonix();
+    ImageResource sliderClientEngonix();
 
-    ImageResource slider_client_protorisk();
+    ImageResource sliderClientProtorisk();
 
-    ImageResource slider_client_sceneverse();
+    ImageResource sliderClientSceneverse();
 
-    ImageResource slider_client_storeplacer();
+    ImageResource sliderFlecheDroite();
+
+    ImageResource sliderFlecheGauche();
+
+    ImageResource sliderClientStoreplacer();
 
 }

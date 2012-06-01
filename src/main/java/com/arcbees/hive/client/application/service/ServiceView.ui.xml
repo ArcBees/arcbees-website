@@ -7,8 +7,8 @@
 
     <ui:with field="res" type="com.arcbees.hive.client.resource.Resources"/>
 
-    <g:HTMLPanel addStyleNames="{res.style.mainSection} {res.style.cornerBottom}">
-        <g:Image resource="{res.honeyConsultingDevelopmentSuccess}"/>
+    <g:HTMLPanel addStyleNames="{res.style.mainSection} {res.style.bulleBgMain} {res.style.cornerBottom}">
+        <g:Image resource="{res.honeyConsultingDevelopmentSuccess}" addStyleNames="{res.style.imgCenter}"/>
         <h3>CONSULTING + DEVELOPMENT = YOUR BUSINESS SUCCESS!</h3>
         <p>
             <ui:msg description="Services - Consulting + Development = your success - parag 1">Our consulting

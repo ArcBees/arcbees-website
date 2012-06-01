@@ -11,7 +11,7 @@
 
     </ui:style>
 
-    <g:HTMLPanel addStyleNames="{res.style.mainSection} {res.style.cornerBottom}">
+    <g:HTMLPanel addStyleNames="{res.style.mainSection} {res.style.bulleBgMain} {res.style.cornerBottom}">
         <g:Image resource="{res.productGWTP}" styleName="{res.style.imgLeft}"/>
         <p>
             <strong>GWT-Platform (GWTP) is the most popular Model-View-Presenter framework

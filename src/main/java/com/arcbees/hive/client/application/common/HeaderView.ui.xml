@@ -13,6 +13,7 @@
             position: relative;
             width: inherit;
             height: 152px;
+            background-color: #fff;
         }
 
         .rightLinkBox {
@@ -29,11 +30,12 @@
             float: right;
             clear: both;
             margin-top: 2px;
+            color: #9F9F9F;
         }
 
         .localeSwitcher {
             text-decoration: none;
-            color: #9f9f9f;
+            color: #9F9F9F
         }
 
         .localeSwitcher:HOVER {
@@ -70,7 +72,7 @@
             left: 690px;
         }
     </ui:style>
-    <g:HTMLPanel addStyleNames="{style.headerContainer} {res.style.headerBg} {res.style.cornerBottom}">
+    <g:HTMLPanel addStyleNames="{style.headerContainer} {res.style.bulleBgHeader} {res.style.cornerBottom}">
         <a href="#">
             <g:Image resource="{res.logoArcbees}" addStyleNames="{style.imgLogo}"/>
         </a>

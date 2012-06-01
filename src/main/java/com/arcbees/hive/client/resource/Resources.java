@@ -91,7 +91,13 @@ public interface Resources extends ClientBundle {
 
         String mainDegradeBgSprite();
 
-        String headerBg();
+        String bulleBgHeader();
+
+        String bulleBgMain();
+
+        String bulleBgSlider();
+
+        String bulleBgFooter();
 
         String cornerTop();
 
@@ -122,7 +128,14 @@ public interface Resources extends ClientBundle {
     @Source("honSuccess.jpg")
     ImageResource success();
 
-    ImageResource head();
+    ImageResource bulleBgHeader();
+
+    @ImageOptions(repeatStyle = RepeatStyle.Vertical)
+    ImageResource bulleBgMain();
+
+    ImageResource bulleBgSlider();
+
+    ImageResource bulleBgFooter();
 
     @ImageOptions(repeatStyle = RepeatStyle.Horizontal)
     ImageResource navBarBg();

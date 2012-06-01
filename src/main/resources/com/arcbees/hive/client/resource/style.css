@@ -2,6 +2,7 @@ body {
     background-color: #b4c0c8;
     margin: 0;
     padding: 0;
+    color: #545f67;
 }
 
 p, li {
@@ -26,13 +27,14 @@ div {
     cursor: pointer;
 }
 
-.mainSection {
+body .mainSection {
     width: 796px;
     margin-left: auto;
     margin-right: auto;
     min-height: 450px;
     background-color: #ffffff;
     padding: 20px 50px;
+    color: #545f67;
 }
 
 .imgLeft {
@@ -48,6 +50,7 @@ div {
 .imgCenter {
     margin-left: auto;
     margin-right: auto;
+    display: block;
 }
 
 @sprite .navBarBgSprite {
@@ -263,8 +266,21 @@ div {
     background-color: #ffffff;
 }
 
-@sprite .headerBg {
-    gwt-image: "head";
+@sprite .bulleBgHeader {
+    gwt-image: "bulleBgHeader";
+}
+
+@sprite .bulleBgMain {
+    gwt-image: "bulleBgMain";
+    background-color: #fff;
+}
+
+@sprite .bulleBgSlider {
+    gwt-image: "bulleBgSlider";
+}
+
+@sprite .bulleBgFooter {
+    gwt-image: "bulleBgFooter";
 }
 
 .cornerTop {

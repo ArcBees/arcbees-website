@@ -3,7 +3,7 @@
              xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
     <ui:with field="res" type="com.arcbees.hive.client.resource.Resources"/>
-    <g:HTMLPanel addStyleNames="{res.style.mainSection} {res.style.cornerBottom}">
+    <g:HTMLPanel addStyleNames="{res.style.mainSection} {res.style.bulleBgMain} {res.style.cornerBottom} ">
         <g:Image resource="{res.contactUS}"/>
         Follow us on our
         <a href="http://arcbees.wordpress.com/" target="_blank">Blog</a>,

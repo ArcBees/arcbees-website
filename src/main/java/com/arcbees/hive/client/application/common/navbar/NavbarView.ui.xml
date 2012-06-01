@@ -30,7 +30,7 @@
             float: right;
         }
     </ui:style>
-    <g:HTMLPanel addStyleNames="{style.menuContainer} {res.style.cornerTop} {res.style.navPrincipaleMilieuSprite}">
+    <g:HTMLPanel addStyleNames="{style.menuContainer} {res.style.cornerTop} {res.style.navBarBgSprite}">
         <div class="{style.navPrincipale}">
             <a href="#{nameTokens.getService}">Services</a>
             <a href="#{nameTokens.getProduct}">

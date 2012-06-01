@@ -7,60 +7,43 @@
 
     <ui:with field="res" type="com.arcbees.hive.client.resource.Resources"/>
 
-    <ui:style>
-        .imageWrapper {
-            display: block;
-            margin: 20px auto 10px auto;
-        }
+    <g:HTMLPanel addStyleNames="{res.style.mainSection} {res.style.cornerBottom}">
+        <g:Image resource="{res.honeyConsultingDevelopmentSuccess}"/>
+        <h3>CONSULTING + DEVELOPMENT = YOUR BUSINESS SUCCESS!</h3>
+        <p>
+            <ui:msg description="Services - Consulting + Development = your success - parag 1">Our consulting
+                services help
+                you improve the quality of your applications and the performance of
+                your
+                development team. A qualified member of ArcBees will join your team to help you with your specific
+                need,
+                be it web development, application design, tooling, or process and methodology. Our consultant will
+                be
+                easily accessible to work with you to answer all your questions. ArcBees also has the resources to
+                bring
+                your project whether it be short term or long term. We collect your requirements and we work with
+                you.
+            </ui:msg>
+        </p>
+        <p>
+            <ui:msg description="Services - Consulting + Development = your success - parag 2">On the other hand, if
+                you do not have resources to develop your idea, ArcBees can provide a complete
+                development team can build your project or cover only certain aspects of the development cycle. Our
+                expertise with advanced technology and our position as community leaders on good development
+                practices
+                ensure that your future application will exceed your expectations in terms of
+                quality,maintainability
+                and ease-of-use.
+            </ui:msg>
+        </p>
 
-        .servicesWrapper {
-            width: 800px;
-            min-height: 550px;
-        }
-    </ui:style>
-
-    <g:HTMLPanel styleName="{res.style.blogBackground}">
-        <div class="{res.style.blogLeftFull}"/>
-        <div class="{res.style.blogRightFull}"/>
-        <div class="{res.style.mainSection} {style.servicesWrapper}">
-            <g:Image resource="{res.honeyConsultingDevelopmentSuccess}" addStyleNames="{style.imageWrapper}"/>
-            <h3>CONSULTING + DEVELOPMENT = YOUR BUSINESS SUCCESS!</h3>
-            <p>
-                <ui:msg description="Services - Consulting + Development = your success - parag 1">Our consulting
-                    services help
-                    you improve the quality of your applications and the performance of
-                    your
-                    development team. A qualified member of ArcBees will join your team to help you with your specific
-                    need,
-                    be it web development, application design, tooling, or process and methodology. Our consultant will
-                    be
-                    easily accessible to work with you to answer all your questions. ArcBees also has the resources to
-                    bring
-                    your project whether it be short term or long term. We collect your requirements and we work with
-                    you.
-                </ui:msg>
-            </p>
-            <p>
-                <ui:msg description="Services - Consulting + Development = your success - parag 2">On the other hand, if
-                    you do not have resources to develop your idea, ArcBees can provide a complete
-                    development team can build your project or cover only certain aspects of the development cycle. Our
-                    expertise with advanced technology and our position as community leaders on good development
-                    practices
-                    ensure that your future application will exceed your expectations in terms of
-                    quality,maintainability
-                    and ease-of-use.
-                </ui:msg>
-            </p>
-
-            <h3>PERSONALIZED TRAINING AND SUPPORT</h3>
-            <p>Our team of expert communicators has been invited to conferences renowned throughout the world,including
-                Google I/O in San Francisco and GTUGs in France. Their customized training sessions helped to deepen the
-                understanding of GWT-Platform, AppEngine and related technologies. ArcBees also offers hands-on seminars
-                on these technologies, and training with tools and processes to ensure that your development team reach
-                their full potential. Introductory classes are also available for your specific needs. Contact us to
-                learn benefits!
-            </p>
-        </div>
-        <div class="{res.style.blogDown}"/>
+        <h3>PERSONALIZED TRAINING AND SUPPORT</h3>
+        <p>Our team of expert communicators has been invited to conferences renowned throughout the world,including
+            Google I/O in San Francisco and GTUGs in France. Their customized training sessions helped to deepen the
+            understanding of GWT-Platform, AppEngine and related technologies. ArcBees also offers hands-on seminars
+            on these technologies, and training with tools and processes to ensure that your development team reach
+            their full potential. Introductory classes are also available for your specific needs. Contact us to
+            learn benefits!
+        </p>
     </g:HTMLPanel>
 </ui:UiBinder>

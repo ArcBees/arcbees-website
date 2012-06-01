@@ -81,7 +81,9 @@ public interface Resources extends ClientBundle {
 
         String stepActive();
 
-        String navPrincipaleMilieuSprite();
+        String navBarBgSprite();
+
+        String mainDegradeBgSprite();
 
         String headerBg();
 
@@ -117,7 +119,10 @@ public interface Resources extends ClientBundle {
     ImageResource head();
 
     @ImageOptions(repeatStyle = RepeatStyle.Horizontal)
-    ImageResource navPrincipaleMilieu();
+    ImageResource navBarBg();
+
+    @ImageOptions(repeatStyle = RepeatStyle.Horizontal)
+    ImageResource mainDegradeBg();
 
     ImageResource blogAbeille();
 

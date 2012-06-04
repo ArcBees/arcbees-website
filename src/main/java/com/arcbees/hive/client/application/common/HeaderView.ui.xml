@@ -49,20 +49,21 @@
         .quote {
             width: 400px;
             position: absolute;
-            top: 30px;
+            top: 50px;
             left: 270px;
             font-family: 'Shadows Into Light', cursive;
             font-size: 20px;
             word-spacing: 1px;
             letter-spacing: 1px;
             color: #545f67;
+            line-height: 30px;
         }
 
         .quote span {
             font-size: 15px;
             float: right;
-            margin-top: 4px;
-            margin-right: 30px;
+            margin-top: -3px;
+            margin-right: 25px;
 
         }
 

@@ -9,7 +9,7 @@
     <ui:with field="nameTokens" type="com.arcbees.hive.client.place.NameTokens"/>
 
     <ui:style>
-        .root {
+        body .root {
             width: 796px;
             background-color: #c5932c;
             margin: 10px auto 10px auto;
@@ -18,6 +18,7 @@
             font-family: "Verdana";
             text-align: left;
             color: #4b3c30;
+            height: auto;
         }
 
         .root a {
@@ -33,7 +34,7 @@
 
         .root > div {
             float: left;
-            margin-left: 45px;
+            margin-left: 50px;
         }
 
         .root p {
@@ -46,11 +47,17 @@
         }
 
         .root .copyright {
-            padding-top: 15px;
+            padding-top: 50px;
             text-align: center;
             font-size: 10px;
             clear: both;
             float: none;
+        }
+
+        .root .news {
+            width: 350px;
+            height: 103px;
+            overflow: hidden;
         }
 
 
@@ -82,7 +89,7 @@
             <a href="http://code.google.com/p/jukito/">Jukito</a>
             <a href="#">GAE Studio</a>
         </g:HTMLPanel>
-        <g:HTMLPanel ui:field="recentNews">
+        <g:HTMLPanel ui:field="recentNews" addStyleNames="{style.news}">
             <p>
                 <ui:msg description="Footer news">Recent News</ui:msg>
             </p>

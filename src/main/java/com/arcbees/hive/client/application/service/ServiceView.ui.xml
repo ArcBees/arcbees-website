@@ -10,8 +10,8 @@
     <g:HTMLPanel addStyleNames="{res.style.mainSection} {res.style.bulleBgMain} {res.style.cornerBottom}">
         <g:Image resource="{res.honeyConsultingDevelopmentSuccess}" addStyleNames="{res.style.imgCenter}"/>
         <h3>
-            <ui:msg description="Services > Consulting + Development > Title">CONSULTING + DEVELOPMENT = YOUR BUSINESS
-                SUCCESS!
+            <ui:msg description="Services > Consulting + Development > Title">Consulting + Development = Your Business
+                Success!
             </ui:msg>
         </h3>
         <p>
@@ -42,8 +42,8 @@
         </p>
 
         <h3>
-            <ui:msg description="Services > PERSONALIZED TRAINING AND SUPPORT > Title">PERSONALIZED TRAINING AND
-                SUPPORT
+            <ui:msg description="Services > PERSONALIZED TRAINING AND SUPPORT > Title">Personalized Training and
+                Support
             </ui:msg>
         </h3>
         <p>

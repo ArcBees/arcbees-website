@@ -3,7 +3,8 @@
              ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
              ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator"
              ui:generateLocales="en">
-    <g:HTMLPanel>
+    <ui:with field="res" type="com.arcbees.hive.client.resource.Resources"/>
+    <g:HTMLPanel addStyleNames="{res.style.mainSection} {res.style.bulleBgMain} {res.style.cornerBottom}">
         <p>
             <ui:msg description="Ux Design > introduction paragraph">ArcBees is a business partner of Google, the search
                 engine most used worldwide to find information on the

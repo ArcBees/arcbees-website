@@ -44,54 +44,53 @@
     </ui:style>
     <g:HTMLPanel addStyleNames="{style.root} {res.style.cornerTopBottom}">
         <g:HTMLPanel>
-            <p>ArcBees </p>
+            <p>ArcBees</p>
             <a href="#{nameTokens.getService}">Services</a>
             <a href="#{nameTokens.getProduct}">
-                <ui:msg description="Main navbar - Products">Products</ui:msg>
+                <ui:msg description="Footer navbar - Products">Products</ui:msg>
             </a>
             <a href="#{nameTokens.getJob}">
-                <ui:msg description="Main navbar - Job Opportunities">Job
+                <ui:msg description="Footer navbar - Job Opportunities">Job
                     Opportunities
                 </ui:msg>
             </a>
             <a href="#{nameTokens.getAbout}">
-                <ui:msg description="Main navbar - About Us">About Us</ui:msg>
+                <ui:msg description="Footer navbar - About Us">About Us</ui:msg>
             </a>
             <a href="#{nameTokens.getContact}">
-                <ui:msg description="Main navbar - Contact Us">Contact Us</ui:msg>
+                <ui:msg description="Footer navbar - Contact Us">Contact Us</ui:msg>
             </a>
         </g:HTMLPanel>
         <g:HTMLPanel>
-            <p>Projects</p>
             <p>
-                <a href="http://code.google.com/p/arcbees-hive/">Hive</a>
-                <br/>
-                <a href="http://code.google.com/p/gwt-platform/">Gwt-Platform</a>
-                <br/>
-                <a href="http://code.google.com/p/gwt-platform/">Jukito</a>
+                <ui:msg description="Footer projects">Projects</ui:msg>
             </p>
+            <a href="http://code.google.com/p/gwt-platform/">GWT-Platform</a>
+            <a href="http://code.google.com/p/jukito/">Jukito</a>
+            <a href="#">GAE Studio</a>
         </g:HTMLPanel>
         <g:HTMLPanel ui:field="recentNews">
-            <p>Recent News</p>
-        </g:HTMLPanel>
-        <g:HTMLPanel>
-            <p>Contact Us</p>
-        </g:HTMLPanel>
-        <g:HTMLPanel>
-            <p>Follow Us</p>
             <p>
-                <a href="http://www.linkedin.com/company/arcbees?trk=fc_badge" target="_blank">LinkedIn</a>
-                <br/>
-                <a href="http://twitter.com/arcbees" target="_blank">Twitter</a>
-                <br/>
-                <a href="http://www.facebook.com/pages/ArcBees/201744089861261" target="_blank">Facebook</a>
-                <br/>
-                <a href="http://arcbees.wordpress.com/" target="_blank">Blog</a>
+                <ui:msg description="Footer news">Recent News</ui:msg>
             </p>
         </g:HTMLPanel>
+        <g:HTMLPanel>
+            <p>
+                <ui:msg description="Footer social">Follow Us</ui:msg>
+            </p>
+            <a href="http://www.facebook.com/pages/ArcBees/201744089861261" target="_blank">Facebook</a>
+            <a href="http://twitter.com/arcbees" target="_blank">Twitter</a>
+            <a href="http://www.linkedin.com/company/arcbees?trk=fc_badge" target="_blank">LinkedIn</a>
+            <a href="http://arcbees.wordpress.com/" target="_blank">
+                <ui:msg description="Footer social - Our Blog">Our Blog</ui:msg>
+            </a>
+            <a href="https://picasaweb.google.com/104570359870395949420" target="_blank">
+                <ui:msg description="Footer social - Event Pics">Event Pics</ui:msg>
+            </a>
+        </g:HTMLPanel>
         <g:HTMLPanel addStyleNames="{style.copryright}">
-            Copyright &copy; 2011 ArcBees
-            All rights reserved.
+            &copy; 2012 ArcBees.
+            <ui:msg description="Footer copyright">All rights reserved.</ui:msg>
         </g:HTMLPanel>
     </g:HTMLPanel>
 </ui:UiBinder>

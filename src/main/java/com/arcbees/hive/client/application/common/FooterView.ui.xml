@@ -11,7 +11,7 @@
     <ui:style>
         body .root {
             width: 796px;
-            background-color: #c5932c;
+            background-color: #d09b2c;
             margin: 10px auto 10px auto;
             padding: 30px 50px 15px 50px;
             font-size: 13px;
@@ -22,7 +22,7 @@
         }
 
         .root a {
-            color: #ffffff;
+            color: #fcf6ed;
             display: block;
             line-height: 15px;
         }
@@ -43,7 +43,7 @@
         }
 
         .root a:HOVER {
-            color: #4b3c30;
+            color: #5b4f45;
         }
 
         .root .copyright {

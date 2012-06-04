@@ -1,6 +1,112 @@
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
-             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'
+             ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+             ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator"
+             ui:generateLocales="en">
     <g:HTMLPanel>
-        <h1>Ux Design</h1>
+        <p>
+            <ui:msg description="Ux Design > introduction paragraph">ArcBees is a business partner of Google, the search
+                engine most used worldwide to find information on the
+                Internet. ArcBees is then one of the companies best placed to offer you the visibility you need.
+                However,
+                certain standards must be met. And these standards are based on the user experience (UX). Click the
+                orange
+                circles to find benefits.
+            </ui:msg>
+        </p>
+
+        <h2>
+            <ui:msg description="Ux Design > Mobile website and mobile application > Title">Mobile website and mobile
+                application
+            </ui:msg>
+        </h2>
+
+        <p>
+            <ui:msg description="Ux Design > Mobile website and mobile application > Paragraph">ArcBees has expertise in
+                design mobile of website such as iPhone, Androïde, BlackBerry and Windows.
+                We can
+                program, develop and design this mobile website in compatibility of social marketing like facebook and
+                others.
+                This approach is created to optimize the use and promote the development of your social networks.
+            </ui:msg>
+        </p>
+
+        <h2>
+            <ui:msg description="Ux Design > Information design > Title">Information design</ui:msg>
+        </h2>
+
+        <p>
+            <ui:msg description="Ux Design > Information design > Paragraph">ArcBees is able to do the thorough,
+                user-centered facilitating access to information. This study
+                facilitates
+                understanding of not just informations, but also the interface design which makes it more intuitive for
+                good
+                numbers of users, as they must be guided through the pages and content without the need to a research
+                effort.
+            </ui:msg>
+        </p>
+
+        <h2>
+            <ui:msg description="Ux Design > Information architecture > Title">Information architecture</ui:msg>
+        </h2>
+
+        <p>
+            <ui:msg description="Ux Design > Information architecture > Paragraph">The information architecture is an
+                organizing structure, navigation, terminology and search
+                functions to
+                build
+                and establish a system of content. The objective is to find a system for organizing information that is
+                relevant
+                to optimal research tasks for the user. The problems are not the same depending on the objectives and
+                scope
+                of
+                the application or website.
+            </ui:msg>
+
+        </p>
+
+        <h2>
+            <ui:msg description="Ux Design > Interaction design / interface > Title">Interaction design / interface
+            </ui:msg>
+        </h2>
+
+        <p>
+            <ui:msg description="Ux Design > Interaction design / interface > Paragraph">ArcBees offers an interaction
+                design phase of observation and analysis to identify pathways relevant
+                for your
+                website or application software. So, your application reflects the needs of the user and your target
+                audience.
+                In this way, the user is guided through by interface so intuitive.
+            </ui:msg>
+        </p>
+
+        <h2>
+            <ui:msg description="Ux Design > Ergonomic design > Title">Ergonomic design</ui:msg>
+        </h2>
+
+        <p>
+            <ui:msg description="Ux Design > Ergonomic design > Paragraph">ArcBees wonders about the intentions and
+                navigation patterns of users. By having this creative
+                process, we
+                improve your conversion rate of your website and your income. We define a user profil, use personas,
+                orient
+                the
+                purchase, improve the user experience, ergonomics adapt the application to the mobile format.
+            </ui:msg>
+        </p>
+
+        <h2>
+            <ui:msg description="Ux Design > Performance measures > Title">Performance measures</ui:msg>
+        </h2>
+
+        <p>
+            <ui:msg description="Ux Design > Performance measures > Paragraph">Arcbees offers opportunities to assess
+                your performance. Our methodology is based on iterative
+                processes of
+                creation: continuous improvement (which allow you to track transactions that have affected, validated,
+                issued
+                and stopped), your performance and calculate their impact on your investments in the web.
+            </ui:msg>
+        </p>
     </g:HTMLPanel>
 </ui:UiBinder>

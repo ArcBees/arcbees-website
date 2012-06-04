@@ -1,14 +1,20 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-             xmlns:g="urn:import:com.google.gwt.user.client.ui">
-
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+             ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator"
+             ui:generateLocales="en">
     <ui:with field="res" type="com.arcbees.hive.client.resource.Resources"/>
-
     <g:HTMLPanel addStyleNames="{res.style.mainSection} {res.style.bulleBgMain} {res.style.cornerBottom}">
-            <h2>Have a new web project? Need to redesign your architecture?</h2>
-            <p>With ArcBees, your company may spend more time doing what it does best while we provide you simple web
+        <h2>
+            <ui:msg description="Home > Title">Have a new web project? Need to redesign your architecture?</ui:msg>
+        </h2>
+        <p>
+            <ui:msg description="Home > Subtitle">With ArcBees, your company may spend more time doing what it does best
+                while we provide you simple web
                 solutions that meet your needs. We are specialists in GWTP, UX design and Cloud Computing
-            </p>
-            <g:Image resource="{res.gwtHtml5Cloud}" addStyleNames="{res.style.imgCenter}"/>
+            </ui:msg>
+        </p>
+        <g:Image resource="{res.gwtHtml5Cloud}" addStyleNames="{res.style.imgCenter}"/>
     </g:HTMLPanel>
 </ui:UiBinder> 

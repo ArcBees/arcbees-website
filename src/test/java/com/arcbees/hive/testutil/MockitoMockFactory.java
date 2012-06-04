@@ -30,4 +30,4 @@ public class MockitoMockFactory implements MockFactory {
     public <T> T mock(Class<T> classToMock) {
         return Mockito.mock(classToMock);
     }
-}
+} //test

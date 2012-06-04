@@ -57,9 +57,11 @@ public class FooterPresenter extends PresenterWidget<FooterPresenter.MyView> {
     }
 
     private void onGetBlogPostsSucceeded(List<BlogItem> blogPosts) {
-        for (BlogItem blogItem : blogPosts) {
-            getView().buildRecentNewsHyperlink(blogItem.getTitle(),
-                    blogItem.getLink());
+        for (int i = 0; i < 5; i++) {
+            BlogItem current = blogPosts.get(i);
+
+            getView().buildRecentNewsHyperlink(current.getTitle(),
+                    current.getLink());
         }
     }
 }

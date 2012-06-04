@@ -26,6 +26,8 @@ public class NameTokens {
     public static final String contact = "!contact";
     public static final String consulting = "!consulting";
     public static final String development = "!development";
+    public static final String uxdesign = "!uxdesign";
+    public static final String companyhistory = "!companyhistory";
 
     public static String getBlog() {
         return blog;
@@ -57,5 +59,13 @@ public class NameTokens {
 
     public static String getDevelopment() {
         return development;
+    }
+
+    public static String getUxdesign() {
+        return uxdesign;
+    }
+
+    public static String getCompanyhistory() {
+        return companyhistory;
     }
 }

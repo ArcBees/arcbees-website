@@ -16,6 +16,8 @@
 
 package com.arcbees.hive.client.gin;
 
+import com.arcbees.hive.client.application.companyhistory.CompanyHistoryModule;
+import com.arcbees.hive.client.application.uxdesign.UxdesignModule;
 import com.arcbees.hive.client.resource.Resources;
 import com.arcbees.hive.client.application.about.AboutModule;
 import com.arcbees.hive.client.application.common.CommonModule;
@@ -60,5 +62,7 @@ public class ClientModule extends AbstractGinModule {
         install(new JobsModule());
         install(new AboutModule());
         install(new ContactModule());
+        install(new UxdesignModule());
+        install(new CompanyHistoryModule());
     }
 }

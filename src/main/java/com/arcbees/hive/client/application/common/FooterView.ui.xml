@@ -14,51 +14,64 @@
             background-color: #c5932c;
             margin: 10px auto 10px auto;
             padding: 30px 50px 15px 50px;
-            position: relative;
-        }
-
-        .footer {
-            background-color: #c5932c;
             font-size: 13px;
             font-family: "Verdana";
-            text-align: right;
+            text-align: left;
             color: #4b3c30;
-            margin-top: 15px;
         }
 
-        .footer a {
+        .root a {
             color: #ffffff;
-            text-decoration: none;
+            display: block;
+            line-height: 15px;
         }
 
-        .footer a:HOVER {
+        .root > div:first-child {
+            float: left;
+            margin-left: 0;
+        }
+
+        .root > div {
+            float: left;
+            margin-left: 45px;
+        }
+
+        .root p {
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .root a:HOVER {
             color: #4b3c30;
         }
 
-        .copryright {
+        .root .copyright {
+            padding-top: 15px;
             text-align: center;
             font-size: 10px;
+            clear: both;
+            float: none;
         }
 
 
     </ui:style>
-    <g:HTMLPanel addStyleNames="{style.root} {res.style.cornerTopBottom}">
+    <g:HTMLPanel addStyleNames="{style.root} {res.style.bulleBgFooter} {res.style.cornerTopBottom}">
         <g:HTMLPanel>
             <p>ArcBees</p>
             <a href="#{nameTokens.getService}">Services</a>
             <a href="#{nameTokens.getProduct}">
-                <ui:msg description="Footer navbar - Products">Products</ui:msg>
+                <ui:msg description="Footer navbar > Products">Products</ui:msg>
             </a>
             <a href="#{nameTokens.getJob}">
-                <ui:msg description="Footer navbar - Job Opportunities">Job
+                <ui:msg description="Footer navbar > Job Opportunities">Job
                     Opportunities
                 </ui:msg>
             </a>
             <a href="#{nameTokens.getAbout}">
-                <ui:msg description="Footer navbar - About Us">About Us</ui:msg>
+                <ui:msg description="Footer navbar > About Us">About Us</ui:msg>
             </a>
             <a href="#{nameTokens.getContact}">
-                <ui:msg description="Footer navbar - Contact Us">Contact Us</ui:msg>
+                <ui:msg description="Footer navbar > Contact Us">Contact Us</ui:msg>
             </a>
         </g:HTMLPanel>
         <g:HTMLPanel>
@@ -82,13 +95,14 @@
             <a href="http://twitter.com/arcbees" target="_blank">Twitter</a>
             <a href="http://www.linkedin.com/company/arcbees?trk=fc_badge" target="_blank">LinkedIn</a>
             <a href="http://arcbees.wordpress.com/" target="_blank">
-                <ui:msg description="Footer social - Our Blog">Our Blog</ui:msg>
+                <ui:msg description="Footer social > Our Blog">Our Blog</ui:msg>
             </a>
             <a href="https://picasaweb.google.com/104570359870395949420" target="_blank">
-                <ui:msg description="Footer social - Event Pics">Event Pics</ui:msg>
+                <ui:msg description="Footer social > Event Pics">Event Pics</ui:msg>
             </a>
         </g:HTMLPanel>
-        <g:HTMLPanel addStyleNames="{style.copryright}">
+
+        <g:HTMLPanel addStyleNames="{style.copyright}">
             &copy; 2012 ArcBees.
             <ui:msg description="Footer copyright">All rights reserved.</ui:msg>
         </g:HTMLPanel>

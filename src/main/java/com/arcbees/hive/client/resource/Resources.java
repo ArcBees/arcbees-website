@@ -37,52 +37,6 @@ public interface Resources extends ClientBundle {
 
         String imgCenter();
 
-        String blogBackground();
-
-        String blogDown();
-
-        String blogDownContact();
-
-        String blogDownJob();
-
-        String blogLeft();
-
-        String blogLeftFull();
-
-        String blogRight();
-
-        String blogRightFull();
-
-        String sloganDescription();
-
-        String sloganCoinGauche();
-
-        String sloganCoinDroit();
-
-        String bodBarDroiteB();
-
-        String bodBarDroiteG();
-
-        String bodBarDroiteO();
-
-        String bodBarDroiteV();
-
-        String bodBarGaucheB();
-
-        String bodBarGaucheG();
-
-        String bodBarGaucheO();
-
-        String bodBarGaucheV();
-
-        String bodBarMidB();
-
-        String bodBarMidG();
-
-        String bodBarMidO();
-
-        String bodBarMidV();
-
         String stepInactive();
 
         String stepActive();
@@ -99,11 +53,15 @@ public interface Resources extends ClientBundle {
 
         String bulleBgFooter();
 
+        String sloganDescription();
+
         String cornerTop();
 
         String cornerBottom();
 
         String cornerTopBottom();
+
+
 
     }
 
@@ -112,21 +70,6 @@ public interface Resources extends ClientBundle {
     ImageResource logoArcbees();
 
     ImageResource beeFlying();
-
-    @Source("honConsulting.jpg")
-    ImageResource consulting();
-
-    @Source("honPlus.png")
-    ImageResource hplus();
-
-    @Source("honDevelopment.jpg")
-    ImageResource development();
-
-    @Source("honEqual.png")
-    ImageResource hequals();
-
-    @Source("honSuccess.jpg")
-    ImageResource success();
 
     ImageResource bulleBgHeader();
 
@@ -143,74 +86,7 @@ public interface Resources extends ClientBundle {
     @ImageOptions(repeatStyle = RepeatStyle.Horizontal)
     ImageResource mainDegradeBg();
 
-    ImageResource blogAbeille();
-
-    ImageResource blogBarDroite();
-
-    ImageResource blogBarDroiteFull();
-
-    ImageResource blogBarGauche();
-
-    ImageResource blogBarGaucheFull();
-
-    ImageResource bodDown();
-
-    ImageResource rssFeed();
-
-    ImageResource serConsultation();
-
-    ImageResource serDeveloppement();
-
-    ImageResource serFormation();
-
-    ImageResource serSupport();
-
-    ImageResource bodCoinDroitUp();
-
-    ImageResource bodCoinGaucheUp();
-
-    @ImageOptions(repeatStyle = RepeatStyle.Vertical)
-    ImageResource bodTransition();
-
-    ImageResource bodBarDroiteB();
-
-    ImageResource bodBarDroiteG();
-
-    ImageResource bodBarDroiteO();
-
-    ImageResource bodBarDroiteV();
-
-    ImageResource bodBarGaucheB();
-
-    ImageResource bodBarGaucheG();
-
-    ImageResource bodBarGaucheO();
-
-    ImageResource bodBarGaucheV();
-
-    @ImageOptions(repeatStyle = RepeatStyle.Horizontal)
-    ImageResource bodBarMidB();
-
-    @ImageOptions(repeatStyle = RepeatStyle.Horizontal)
-    ImageResource bodBarMidG();
-
-    @ImageOptions(repeatStyle = RepeatStyle.Horizontal)
-    ImageResource bodBarMidO();
-
-    @ImageOptions(repeatStyle = RepeatStyle.Horizontal)
-    ImageResource bodBarMidV();
-
-    ImageResource fooDown();
-
-    ImageResource fooUp();
-
-    ImageResource fooDroite();
-
-    ImageResource fooGauche();
-
     ImageResource aboutPhilippe();
-
-    ImageResource serMiel();
 
     ImageResource productGWTP();
 
@@ -218,21 +94,9 @@ public interface Resources extends ClientBundle {
 
     ImageResource contactUS();
 
-    ImageResource bodDownContact();
-
     ImageResource job();
 
-    ImageResource bodDownJob();
-
     ImageResource blogAbeilleConsulting();
-
-    ImageResource blogAbeilleDevelop();
-
-    ImageResource blogBookedin();
-
-    ImageResource blogCloudInside();
-
-    ImageResource imagem();
 
     ImageResource aboutChristian();
 

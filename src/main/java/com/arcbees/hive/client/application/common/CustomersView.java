@@ -26,7 +26,7 @@ public class CustomersView extends ViewImpl implements CustomersPresenter.MyView
     @Override
     public native void startCarousel() /*-{
         $wnd.$('#carousel').rcarousel(
-                {
+                {auto:{enabled:true, interval:15000},
                     width:190,
                     height:45,
                     visible:4,

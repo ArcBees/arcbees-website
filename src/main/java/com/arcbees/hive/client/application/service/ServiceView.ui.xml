@@ -9,9 +9,13 @@
 
     <g:HTMLPanel addStyleNames="{res.style.mainSection} {res.style.bulleBgMain} {res.style.cornerBottom}">
         <g:Image resource="{res.honeyConsultingDevelopmentSuccess}" addStyleNames="{res.style.imgCenter}"/>
-        <h3>CONSULTING + DEVELOPMENT = YOUR BUSINESS SUCCESS!</h3>
+        <h3>
+            <ui:msg description="Services > Consulting + Development > Title">CONSULTING + DEVELOPMENT = YOUR BUSINESS
+                SUCCESS!
+            </ui:msg>
+        </h3>
         <p>
-            <ui:msg description="Services - Consulting + Development = your success - parag 1">Our consulting
+            <ui:msg description="Services > Consulting + Development = your success > parag 1">Our consulting
                 services help
                 you improve the quality of your applications and the performance of
                 your
@@ -26,7 +30,7 @@
             </ui:msg>
         </p>
         <p>
-            <ui:msg description="Services - Consulting + Development = your success - parag 2">On the other hand, if
+            <ui:msg description="Services > Consulting + Development = your success > parag 2">On the other hand, if
                 you do not have resources to develop your idea, ArcBees can provide a complete
                 development team can build your project or cover only certain aspects of the development cycle. Our
                 expertise with advanced technology and our position as community leaders on good development
@@ -37,13 +41,21 @@
             </ui:msg>
         </p>
 
-        <h3>PERSONALIZED TRAINING AND SUPPORT</h3>
-        <p>Our team of expert communicators has been invited to conferences renowned throughout the world,including
-            Google I/O in San Francisco and GTUGs in France. Their customized training sessions helped to deepen the
-            understanding of GWT-Platform, AppEngine and related technologies. ArcBees also offers hands-on seminars
-            on these technologies, and training with tools and processes to ensure that your development team reach
-            their full potential. Introductory classes are also available for your specific needs. Contact us to
-            learn benefits!
+        <h3>
+            <ui:msg description="Services > PERSONALIZED TRAINING AND SUPPORT > Title">PERSONALIZED TRAINING AND
+                SUPPORT
+            </ui:msg>
+        </h3>
+        <p>
+            <ui:msg description="Services > PERSONALIZED TRAINING AND SUPPORT > Paragraph">Our team of expert
+                communicators has been invited to conferences renowned throughout the
+                world,including
+                Google I/O in San Francisco and GTUGs in France. Their customized training sessions helped to deepen the
+                understanding of GWT-Platform, AppEngine and related technologies. ArcBees also offers hands-on seminars
+                on these technologies, and training with tools and processes to ensure that your development team reach
+                their full potential. Introductory classes are also available for your specific needs. Contact us to
+                learn benefits!
+            </ui:msg>
         </p>
     </g:HTMLPanel>
 </ui:UiBinder>

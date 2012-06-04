@@ -14,7 +14,7 @@
  * the License.
  */
 
-package com.arcbees.hive.client.application.about;
+package com.arcbees.hive.client.application.team;
 
 import com.arcbees.hive.client.application.common.AppPresenter;
 import com.arcbees.hive.client.application.common.event.ResizeEvent;
@@ -28,18 +28,18 @@ import com.gwtplatform.mvp.client.annotations.ProxyStandard;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 import com.gwtplatform.mvp.client.proxy.RevealContentEvent;
 
-public class AboutPresenter extends
-        Presenter<AboutPresenter.MyView, AboutPresenter.MyProxy> {
+public class TeamPresenter extends
+        Presenter<TeamPresenter.MyView, TeamPresenter.MyProxy> {
     @ProxyStandard
-    @NameToken(NameTokens.about)
-    public interface MyProxy extends ProxyPlace<AboutPresenter> {
+    @NameToken(NameTokens.team)
+    public interface MyProxy extends ProxyPlace<TeamPresenter> {
     }
 
     public interface MyView extends View {
     }
 
     @Inject
-    public AboutPresenter(EventBus eventBus, MyView view, MyProxy proxy) {
+    public TeamPresenter(EventBus eventBus, MyView view, MyProxy proxy) {
         super(eventBus, view, proxy);
     }
 

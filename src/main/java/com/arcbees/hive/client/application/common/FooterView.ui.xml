@@ -77,7 +77,7 @@
                 <ui:msg description="Footer navbar > Products">Products</ui:msg>
             </a>
 
-            <a href="#{nameTokens.getAbout}">
+            <a href="#{nameTokens.getTeam}">
                 <ui:msg description="Footer navbar > Our Team">Our Team</ui:msg>
             </a>
             <a href="#{nameTokens.getCompanyhistory}">

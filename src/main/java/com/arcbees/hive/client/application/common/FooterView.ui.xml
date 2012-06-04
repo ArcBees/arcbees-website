@@ -34,7 +34,7 @@
 
         .root > div {
             float: left;
-            margin-left: 50px;
+            margin-left: 40px;
         }
 
         .root p {
@@ -60,10 +60,14 @@
             overflow: hidden;
         }
 
+        .root .nav {
+            width: 142px;
+        }
+
 
     </ui:style>
     <g:HTMLPanel addStyleNames="{style.root} {res.style.bulleBgFooter} {res.style.cornerTopBottom}">
-        <g:HTMLPanel>
+        <g:HTMLPanel addStyleNames="{style.nav}">
             <p>ArcBees</p>
             <a href="#{nameTokens.getService}">Services</a>
             <a href="#{nameTokens.getUxdesign}">

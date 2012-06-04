@@ -34,14 +34,7 @@
         <div class="{style.navPrincipale}">
             <a href="#{nameTokens.getService}">Services</a>
             <a href="#{nameTokens.getUxdesign}">UX Design</a>
-            <a href="#{nameTokens.getProduct}">
-                <ui:msg description="Main navbar - Products">Products</ui:msg>
-            </a>
-            <a href="#{nameTokens.getJob}">
-                <ui:msg description="Main navbar - Job Opportunities">Job
-                    Opportunities
-                </ui:msg>
-            </a>
+            <a href="#{nameTokens.getCompanyhistory}">Company History</a>
             <a href="#{nameTokens.getContact}">
                 <ui:msg description="Main navbar - Contact Us">Contact Us</ui:msg>
             </a>

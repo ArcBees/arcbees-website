@@ -28,18 +28,18 @@
 
         .home .products {
             margin: 55px auto 0 auto;
-            background-color: red;
             width: 725px;
         }
 
         .home .boutonsProducts {
-            margin-top: 15px;
             float: right;
         }
 
         .home .productsNav {
             width: inherit;
-            height: 60px;
+            height: 80px;
+            overflow: hidden;
+            position: relative;
         }
 
         .home .boutonsProducts a:first-child {
@@ -50,6 +50,29 @@
             margin-left: 9px;
             float: left;
         }
+
+        .home .productsNav p {
+            margin-top: 20px;
+            font-size: 19px;
+            float: left;
+            color: #939698;
+        }
+
+        .home .productsNav a {
+            width: 325px;
+            font-size: 13px;
+            color: #939698;
+            font-variant: small-caps;
+            display: inline-block;
+            position: relative;
+            bottom: 20px;
+            left: 180px;
+        }
+
+        .home .productsNav a:hover {
+            color: #6e6e6e;
+        }
+
     </ui:style>
     <g:HTMLPanel addStyleNames="{res.style.mainSection} {res.style.bulleBgHome} {res.style.cornerBottom} {style.home}">
         <h2>
@@ -62,16 +85,36 @@
             </ui:msg>
         </p>
         <g:Image resource="{home.gwtHtml5Cloud}" addStyleNames="{res.style.imgCenter}"/>
-        <g:Image resource="{home.sliderProductBeeHive}" addStyleNames="{res.style.imgCenter}"/>
+
         <g:HTMLPanel addStyleNames="{style.products}">
             <g:HTMLPanel addStyleNames="{style.productsNav}">
                 <g:HTMLPanel>
-                    <g:Image resource="{home.sliderQuotesGauche}" addStyleNames="{res.style.imgLeft}"></g:Image>
-
-
-
-                    <g:Image resource="{home.sliderQuotesDroite}" addStyleNames="{res.style.imgRight}"></g:Image>
-
+                    <g:Image resource="{home.sliderQuotesGauche}" addStyleNames="{res.style.imgLeft}"/>
+                    <g:Image resource="{home.sliderProductGWTPlatform}" addStyleNames="{res.style.imgLeft}"/>
+                    <p class="product">The most popular MVP framework for GWT</p>
+                    <g:Image resource="{home.sliderQuotesDroite}" addStyleNames="{res.style.imgRight}"/>
+                    <a href="#" class="product">Click here to learn more about our products...</a>
+                </g:HTMLPanel>
+                <g:HTMLPanel>
+                    <g:Image resource="{home.sliderQuotesGauche}" addStyleNames="{res.style.imgLeft}"/>
+                    <g:Image resource="{home.sliderProductJukito}" addStyleNames="{res.style.imgLeft}"/>
+                    <p class="product">Jukito complements your testing infrastructure</p>
+                    <g:Image resource="{home.sliderQuotesDroite}" addStyleNames="{res.style.imgRight}"/>
+                    <a href="#" class="product">Click here to learn more about our products...</a>
+                </g:HTMLPanel>
+                <g:HTMLPanel>
+                    <g:Image resource="{home.sliderQuotesGauche}" addStyleNames="{res.style.imgLeft}"/>
+                    <g:Image resource="{home.sliderProductBeeHive}" addStyleNames="{res.style.imgLeft}"/>
+                    <p class="product">BeeHive, an open source CMS, facilitate GWT usage</p>
+                    <g:Image resource="{home.sliderQuotesDroite}" addStyleNames="{res.style.imgRight}"/>
+                    <a href="#" class="product">Click here to learn more about our products...</a>
+                </g:HTMLPanel>
+                <g:HTMLPanel>
+                    <g:Image resource="{home.sliderQuotesGauche}" addStyleNames="{res.style.imgLeft}"/>
+                    <g:Image resource="{home.sliderProductGAEStudio}" addStyleNames="{res.style.imgLeft}"/>
+                    <p class="product">Still a society's secret, GAE is coming soon!</p>
+                    <g:Image resource="{home.sliderQuotesDroite}" addStyleNames="{res.style.imgRight}"/>
+                    <a href="#" class="product">Click here to learn more about our products...</a>
                 </g:HTMLPanel>
             </g:HTMLPanel>
             <g:HTMLPanel addStyleNames="{style.boutonsProducts}">

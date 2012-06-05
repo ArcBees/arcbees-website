@@ -1,0 +1,39 @@
+@sprite .facebookIcon {
+    gwt-image: "facebookIcon";
+}
+
+@sprite .facebookIcon:hover {
+    gwt-image: "facebookIconRl";
+}
+
+@sprite .linkedinIcon {
+    gwt-image: "linkedinIcon";
+}
+
+@sprite .linkedinIcon:hover {
+    gwt-image: "linkedinIconRl";
+}
+
+@sprite .twitterIcon {
+    gwt-image: "twitterIcon";
+}
+
+@sprite .twitterIcon:hover {
+    gwt-image: "twitterIconRl";
+}
+
+@sprite .wordpressIcon {
+    gwt-image: "wordpressIcon";
+}
+
+@sprite .wordpressIcon:hover {
+    gwt-image: "wordpressIconRl";
+}
+
+@sprite .picasaIcon {
+    gwt-image: "picasaIcon";
+}
+
+@sprite .picasaIcon:hover {
+    gwt-image: "picasaIconRl"
+}

@@ -9,46 +9,17 @@
             text-decoration: none;
         }
 
-        .root a div {
-            display: inline;
+        .root a {
+            display: inline-block;
         }
 
     </ui:style>
     <g:HTMLPanel addStyleNames="{style.root}">
-        <a href="https://www.facebook.com/QueenOfTheBees" target="_blank">
-            <g:PushButton>
-                <g:upFace image="{socres.header_sociaux_up_fb}"/>
-                <g:upHoveringFace image="{socres.header_sociaux_rl_fb}"/>
-                <g:downHoveringFace image="{socres.header_sociaux_rl_fb}"/>
-            </g:PushButton>
-        </a>
-        <a href="http://www.linkedin.com/company/arcbees" target="_blank">
-            <g:PushButton>
-                <g:upFace image="{socres.header_sociaux_up_in}"/>
-                <g:upHoveringFace image="{socres.header_sociaux_rl_in}"/>
-                <g:downHoveringFace image="{socres.header_sociaux_rl_in}"/>
-            </g:PushButton>
-        </a>
-        <a href="http://twitter.com/#!/arcbees" target="_blank">
-            <g:PushButton>
-                <g:upFace image="{socres.header_sociaux_up_tw}"/>
-                <g:upHoveringFace image="{socres.header_sociaux_rl_tw}"/>
-                <g:downHoveringFace image="{socres.header_sociaux_rl_tw}"/>
-            </g:PushButton>
-        </a>
-        <a href="https://picasaweb.google.com/104570359870395949420" target="_blank">
-            <g:PushButton>
-                <g:upFace image="{socres.header_sociaux_up_pc}"/>
-                <g:upHoveringFace image="{socres.header_sociaux_rl_pc}"/>
-                <g:downHoveringFace image="{socres.header_sociaux_rl_pc}"/>
-            </g:PushButton>
-        </a>
-        <a href="http://arcbees.wordpress.com/" target="_blank">
-            <g:PushButton>
-                <g:upFace image="{socres.header_sociaux_up_wp}"/>
-                <g:upHoveringFace image="{socres.header_sociaux_rl_wp}"/>
-                <g:downHoveringFace image="{socres.header_sociaux_rl_wp}"/>
-            </g:PushButton>
-        </a>
+        <a href="https://www.facebook.com/QueenOfTheBees" target="_blank" class="{socres.style.facebookIcon}"></a>
+        <a href="http://www.linkedin.com/company/arcbees" target="_blank" class="{socres.style.linkedinIcon}"></a>
+        <a href="http://twitter.com/#!/arcbees" target="_blank" class="{socres.style.twitterIcon}"></a>
+        <a href="http://arcbees.wordpress.com/" target="_blank" class="{socres.style.wordpressIcon}"></a>
+        <a href="https://picasaweb.google.com/104570359870395949420" target="_blank"
+           class="{socres.style.picasaIcon}"></a>
     </g:HTMLPanel>
 </ui:UiBinder>

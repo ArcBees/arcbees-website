@@ -41,6 +41,7 @@ public class HomePresenter extends
     }
 
     public interface MyView extends View {
+        void startCarousel();
     }
 
     @ContentSlot
@@ -73,5 +74,7 @@ public class HomePresenter extends
         super.onReveal();
 
         ResizeEvent.fire(this, AppPresenter.TYPE_SetMainContent, getView().asWidget().getOffsetHeight());
+
+        getView().startCarousel();
     }
 }

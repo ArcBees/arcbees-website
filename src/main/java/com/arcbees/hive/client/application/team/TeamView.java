@@ -14,7 +14,7 @@
  * the License.
  */
 
-package com.arcbees.hive.client.application.about;
+package com.arcbees.hive.client.application.team;
 
 import com.arcbees.core.client.mvp.ViewImpl;
 
@@ -22,12 +22,12 @@ import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 
-public class AboutView extends ViewImpl implements AboutPresenter.MyView {
-    public interface Binder extends UiBinder<Widget, AboutView> {
+public class TeamView extends ViewImpl implements TeamPresenter.MyView {
+    public interface Binder extends UiBinder<Widget, TeamView> {
     }
 
     @Inject
-    public AboutView(final Binder uiBinder) {
+    public TeamView(final Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
     }
 }

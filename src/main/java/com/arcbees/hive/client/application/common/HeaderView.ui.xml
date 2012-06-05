@@ -77,7 +77,10 @@
             <g:Image resource="{res.logoArcbees}" addStyleNames="{style.imgLogo}"/>
         </a>
         <p class="{style.quote}">
-            « The regular structure of the bees is the most economical polygon »
+            «
+            <ui:msg description="Header > Quote">The regular structure of the bees is the most economical polygon
+            </ui:msg>
+            »
             <span>- Fejes Toth</span>
         </p>
         <g:Image resource="{res.beeFlying}" addStyleNames="{style.imgBeeFlying}"/>

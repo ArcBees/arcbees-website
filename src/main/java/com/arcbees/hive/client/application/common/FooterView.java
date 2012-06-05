@@ -37,7 +37,7 @@ public class FooterView extends ViewImpl implements MyView {
      * Template to build recent news link.
      */
     public interface RecentNewsTemplate extends SafeHtmlTemplates {
-        @Template("<a href=\"{0}\">{1}</a>")
+        @Template("<a href=\"{0}\" target=\"_blank\">{1}</a>")
         SafeHtml link(String url, String linkText);
     }
 

@@ -14,15 +14,15 @@
  * the License.
  */
 
-package com.arcbees.hive.client.application.about;
+package com.arcbees.hive.client.application.team;
 
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
-public class AboutModule extends AbstractPresenterModule {
+public class TeamModule extends AbstractPresenterModule {
 
     @Override
     protected void configure() {
-        bindPresenter(AboutPresenter.class, AboutPresenter.MyView.class,
-                AboutView.class, AboutPresenter.MyProxy.class);
+        bindPresenter(TeamPresenter.class, TeamPresenter.MyView.class,
+                TeamView.class, TeamPresenter.MyProxy.class);
     }
 }

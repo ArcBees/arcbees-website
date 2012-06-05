@@ -22,7 +22,7 @@ public class NameTokens {
     public static final String service = "!service";
     public static final String product = "!product";
     public static final String job = "!job";
-    public static final String about = "!about";
+    public static final String team = "!team";
     public static final String contact = "!contact";
     public static final String consulting = "!consulting";
     public static final String development = "!development";
@@ -45,8 +45,8 @@ public class NameTokens {
         return job;
     }
 
-    public static String getAbout() {
-        return about;
+    public static String getTeam() {
+        return team;
     }
 
     public static String getContact() {

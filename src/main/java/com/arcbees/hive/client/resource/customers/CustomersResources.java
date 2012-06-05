@@ -16,7 +16,11 @@ public interface CustomersResources extends ClientBundle {
 
     ImageResource sliderFlecheDroite();
 
+    ImageResource sliderFlecheDroiteRl();
+
     ImageResource sliderFlecheGauche();
+
+    ImageResource sliderFlecheGaucheRl();
 
     ImageResource sliderClientStoreplacer();
 

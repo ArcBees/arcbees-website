@@ -49,6 +49,8 @@ public interface Resources extends ClientBundle {
 
         String bulleBgMain();
 
+        String bulleBgHome();
+
         String bulleBgSlider();
 
         String bulleBgFooter();
@@ -60,8 +62,6 @@ public interface Resources extends ClientBundle {
         String cornerBottom();
 
         String cornerTopBottom();
-
-
 
     }
 
@@ -75,6 +75,8 @@ public interface Resources extends ClientBundle {
 
     @ImageOptions(repeatStyle = RepeatStyle.Vertical)
     ImageResource bulleBgMain();
+
+    ImageResource bulleBgHome();
 
     ImageResource bulleBgSlider();
 
@@ -103,8 +105,6 @@ public interface Resources extends ClientBundle {
     ImageResource aboutDavid();
 
     ImageResource aboutFrancis();
-
-    ImageResource gwtHtml5Cloud();
 
     ImageResource honeyConsultingDevelopmentSuccess();
 }

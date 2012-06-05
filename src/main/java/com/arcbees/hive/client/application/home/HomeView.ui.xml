@@ -5,7 +5,53 @@
              ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator"
              ui:generateLocales="en">
     <ui:with field="res" type="com.arcbees.hive.client.resource.Resources"/>
-    <g:HTMLPanel addStyleNames="{res.style.mainSection} {res.style.bulleBgMain} {res.style.cornerBottom}">
+    <ui:with field="home" type="com.arcbees.hive.client.resource.home.HomeResources"/>
+    <ui:style>
+        body .home {
+            height: auto;
+        }
+
+        .home h2 {
+            color: #7e8890;
+            font-size: 22px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .home p {
+            color: #8b9296;
+            font-size: 17px;
+            line-height: 20px;
+            margin-bottom: 35px;
+        }
+
+        .home .products {
+            margin: 55px auto 0 auto;
+            background-color: red;
+            width: 725px;
+        }
+
+        .home .boutonsProducts {
+            margin-top: 15px;
+            float: right;
+        }
+
+        .home .productsNav {
+            width: inherit;
+            height: 60px;
+        }
+
+        .home .boutonsProducts a:first-child {
+            margin-left: 0;
+        }
+
+        .home .boutonsProducts a {
+            margin-left: 9px;
+            float: left;
+        }
+    </ui:style>
+    <g:HTMLPanel addStyleNames="{res.style.mainSection} {res.style.bulleBgHome} {res.style.cornerBottom} {style.home}">
         <h2>
             <ui:msg description="Home > Title">Have a new web project? Need to redesign your architecture?</ui:msg>
         </h2>
@@ -15,6 +61,49 @@
                 solutions that meet your needs. We are specialists in GWTP, UX design and Cloud Computing
             </ui:msg>
         </p>
-        <g:Image resource="{res.gwtHtml5Cloud}" addStyleNames="{res.style.imgCenter}"/>
+        <g:Image resource="{home.gwtHtml5Cloud}" addStyleNames="{res.style.imgCenter}"/>
+        <g:Image resource="{home.sliderProductBeeHive}" addStyleNames="{res.style.imgCenter}"/>
+        <g:HTMLPanel addStyleNames="{style.products}">
+            <g:HTMLPanel addStyleNames="{style.productsNav}">
+                <g:HTMLPanel>
+                    <g:Image resource="{home.sliderQuotesGauche}" addStyleNames="{res.style.imgLeft}"></g:Image>
+
+
+
+                    <g:Image resource="{home.sliderQuotesDroite}" addStyleNames="{res.style.imgRight}"></g:Image>
+
+                </g:HTMLPanel>
+            </g:HTMLPanel>
+            <g:HTMLPanel addStyleNames="{style.boutonsProducts}">
+                <a href="#" id="btProduct1">
+                    <g:PushButton>
+                        <g:upFace image="{home.sliderProductsBt}"/>
+                        <g:upHoveringFace image="{home.sliderProductsBtRl}"/>
+                        <g:downHoveringFace image="{home.sliderProductsBtRl}"/>
+                    </g:PushButton>
+                </a>
+                <a href="#" id="btProduct2">
+                    <g:PushButton>
+                        <g:upFace image="{home.sliderProductsBt}"/>
+                        <g:upHoveringFace image="{home.sliderProductsBtRl}"/>
+                        <g:downHoveringFace image="{home.sliderProductsBtRl}"/>
+                    </g:PushButton>
+                </a>
+                <a href="#" id="btProduct3">
+                    <g:PushButton>
+                        <g:upFace image="{home.sliderProductsBt}"/>
+                        <g:upHoveringFace image="{home.sliderProductsBtRl}"/>
+                        <g:downHoveringFace image="{home.sliderProductsBtRl}"/>
+                    </g:PushButton>
+                </a>
+                <a href="#" id="btProduct4">
+                    <g:PushButton>
+                        <g:upFace image="{home.sliderProductsBt}"/>
+                        <g:upHoveringFace image="{home.sliderProductsBtRl}"/>
+                        <g:downHoveringFace image="{home.sliderProductsBtRl}"/>
+                    </g:PushButton>
+                </a>
+            </g:HTMLPanel>
+        </g:HTMLPanel>
     </g:HTMLPanel>
 </ui:UiBinder> 

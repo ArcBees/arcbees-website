@@ -37,8 +37,9 @@
         }
 
         .carrouselContainer p {
+            margin-top: 10px;
             text-align: center;
-            color: #545f67;
+            color: #919597;
         }
     </ui:style>
     <g:HTMLPanel addStyleNames="{style.root} {res.style.bulleBgSlider} {res.style.cornerTopBottom}">
@@ -71,11 +72,17 @@
                 </a>
             </div>
             <a href="#" id="ui-carousel-prev" class="{style.previous}">
-                <g:Image resource="{customers.sliderFlecheGauche}"/>
-            </a>
+                <g:PushButton>
+                    <g:upFace image="{customers.sliderFlecheGauche}"/>
+                    <g:upHoveringFace image="{customers.sliderFlecheGaucheRl}"/>
+                    <g:downHoveringFace image="{customers.sliderFlecheGaucheRl}"/>
+                </g:PushButton>            </a>
             <a href="#" id="ui-carousel-next" class="{style.next}">
-                <g:Image resource="{customers.sliderFlecheDroite}"/>
-            </a>
+                <g:PushButton>
+                    <g:upFace image="{customers.sliderFlecheDroite}"/>
+                    <g:upHoveringFace image="{customers.sliderFlecheDroiteRl}"/>
+                    <g:downHoveringFace image="{customers.sliderFlecheDroiteRl}"/>
+                </g:PushButton>            </a>
             <p>
                 <ui:msg description="Customers > recommendation">
                     Customers who recommend our experience, be it ArcBees services or products!

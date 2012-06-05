@@ -147,6 +147,10 @@ body .mainSection {
     background-color: #fff;
 }
 
+@sprite .bulleBgHome {
+    gwt-image: "bulleBgHome";
+}
+
 @sprite .bulleBgSlider {
     gwt-image: "bulleBgSlider";
 }

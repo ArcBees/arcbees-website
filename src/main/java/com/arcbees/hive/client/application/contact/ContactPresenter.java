@@ -18,9 +18,14 @@ package com.arcbees.hive.client.application.contact;
 
 import com.arcbees.hive.client.application.common.AppPresenter;
 import com.arcbees.hive.client.application.common.event.ResizeEvent;
+import com.arcbees.hive.client.dispatch.AsyncCallbackImpl;
 import com.arcbees.hive.client.place.NameTokens;
+import com.arcbees.hive.shared.NoResult;
+import com.arcbees.hive.shared.dispatch.SendMail;
+import com.google.gwt.user.client.Window;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
+import com.gwtplatform.dispatch.shared.DispatchAsync;
 import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.annotations.NameToken;
@@ -29,7 +34,7 @@ import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 import com.gwtplatform.mvp.client.proxy.RevealContentEvent;
 
 public class ContactPresenter extends
-        Presenter<ContactPresenter.MyView, ContactPresenter.MyProxy> {
+        Presenter<ContactPresenter.MyView, ContactPresenter.MyProxy> implements ContactUiHandlers {
     @ProxyStandard
     @NameToken(NameTokens.contact)
     public interface MyProxy extends ProxyPlace<ContactPresenter> {
@@ -38,9 +43,13 @@ public class ContactPresenter extends
     public interface MyView extends View {
     }
 
+    private final DispatchAsync dispatcher;
+
     @Inject
-    public ContactPresenter(EventBus eventBus, MyView view, MyProxy proxy) {
+    public ContactPresenter(EventBus eventBus, MyView view, MyProxy proxy, DispatchAsync dispatcher) {
         super(eventBus, view, proxy);
+
+        this.dispatcher = dispatcher;
     }
 
     @Override
@@ -54,5 +63,15 @@ public class ContactPresenter extends
 
         ResizeEvent.fire(this, AppPresenter.TYPE_SetMainContent,
                 getView().asWidget().getOffsetHeight());
+    }
+
+    @Override
+    public void sendMail(String sender, String contents) {
+        dispatcher.execute(new SendMail(sender, contents), new AsyncCallbackImpl<NoResult>() {
+            @Override
+            public void onSuccess(NoResult result) {
+                Window.alert("Message sent successfully!");
+            }
+        });
     }
 }

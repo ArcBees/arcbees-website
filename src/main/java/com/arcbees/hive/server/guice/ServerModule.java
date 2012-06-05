@@ -16,6 +16,7 @@
 
 package com.arcbees.hive.server.guice;
 
+import com.arcbees.hive.server.handlers.HandlersModule;
 import com.arcbees.hive.server.home.HomeModule;
 
 import com.google.inject.Provides;
@@ -40,6 +41,7 @@ public class ServerModule extends HandlerModule {
     @Override
     protected void configureHandlers() {
         install(new HomeModule());
+        install(new HandlersModule());
     }
 
     @Provides

@@ -18,5 +18,11 @@
             <br/>
             Phone: 418-473-1216
         </p>
+
+        Your email:
+        <g:TextBox ui:field="senderTextBox"/>
+        Tell us about your project:
+        <g:TextArea ui:field="contentsTextArea"/>
+        <g:Button ui:field="sendButton">Send</g:Button>
     </g:HTMLPanel>
 </ui:UiBinder>

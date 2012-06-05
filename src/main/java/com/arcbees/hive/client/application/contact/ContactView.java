@@ -17,17 +17,43 @@
 package com.arcbees.hive.client.application.contact;
 
 import com.arcbees.core.client.mvp.ViewImpl;
+import com.arcbees.core.client.mvp.ViewWithUiHandlers;
+import com.arcbees.core.client.mvp.uihandlers.UiHandlersStrategy;
 import com.arcbees.hive.client.application.contact.ContactPresenter.MyView;
+import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.uibinder.client.UiHandler;
+import com.google.gwt.user.client.ui.Button;
+import com.google.gwt.user.client.ui.TextArea;
+import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 
-public class ContactView extends ViewImpl implements MyView {
+public class ContactView extends ViewWithUiHandlers<ContactUiHandlers> implements MyView {
     public interface Binder extends UiBinder<Widget, ContactView> {
     }
 
+    @UiField
+    TextArea contentsTextArea;
+    @UiField
+    TextBox senderTextBox;
+    @UiField
+    Button sendButton;
+
     @Inject
-    public ContactView(final Binder uiBinder) {
+    public ContactView(final Binder uiBinder,
+                       final UiHandlersStrategy<ContactUiHandlers> uiHandlersStrategy) {
+        super(uiHandlersStrategy);
+
         initWidget(uiBinder.createAndBindUi(this));
+    }
+
+    @UiHandler("sendButton")
+    public void onSendButton(ClickEvent event) {
+        String sender = senderTextBox.getText();
+        String contents = contentsTextArea.getText();
+
+        getUiHandlers().sendMail(sender, contents);
     }
 }

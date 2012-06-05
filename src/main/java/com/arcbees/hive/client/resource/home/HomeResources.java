@@ -1,9 +1,19 @@
 package com.arcbees.hive.client.resource.home;
 
 import com.google.gwt.resources.client.ClientBundle;
+import com.google.gwt.resources.client.CssResource;
 import com.google.gwt.resources.client.ImageResource;
 
 public interface HomeResources extends ClientBundle {
+    public interface Style extends CssResource {
+        String sliderProductsButton();
+    }
+
+    Style style();
+
+    ImageResource sliderProductsBt();
+
+    ImageResource sliderProductsBtRl();
 
     ImageResource gwtHtml5Cloud();
 
@@ -19,7 +29,4 @@ public interface HomeResources extends ClientBundle {
 
     ImageResource sliderProductGAEStudio();
 
-    ImageResource sliderProductsBt();
-
-    ImageResource sliderProductsBtRl();
 }

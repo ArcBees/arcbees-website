@@ -1,0 +1,15 @@
+@sprite .sliderCustomersButtonGauche {
+    gwt-image: "sliderCustomersButtonGauche";
+}
+
+@sprite .sliderCustomersButtonGauche:hover {
+    gwt-image: "sliderCustomersButtonGaucheRl";
+}
+
+@sprite .sliderCustomersButtonDroite {
+    gwt-image: "sliderCustomersButtonDroite";
+}
+
+@sprite .sliderCustomersButtonDroite:hover {
+    gwt-image: "sliderCustomersButtonDroiteRl";
+}

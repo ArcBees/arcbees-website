@@ -1,0 +1,7 @@
+@sprite .sliderProductsButton {
+    gwt-image: "sliderProductsBt";
+}
+
+@sprite .sliderProductsButton:hover {
+    gwt-image: "sliderProductsBtRl";
+}

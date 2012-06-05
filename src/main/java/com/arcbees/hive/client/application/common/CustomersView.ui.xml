@@ -71,18 +71,8 @@
                     <g:Image resource="{customers.sliderClientStoreplacer}"/>
                 </a>
             </div>
-            <a href="#" id="ui-carousel-prev" class="{style.previous}">
-                <g:PushButton>
-                    <g:upFace image="{customers.sliderFlecheGauche}"/>
-                    <g:upHoveringFace image="{customers.sliderFlecheGaucheRl}"/>
-                    <g:downHoveringFace image="{customers.sliderFlecheGaucheRl}"/>
-                </g:PushButton>            </a>
-            <a href="#" id="ui-carousel-next" class="{style.next}">
-                <g:PushButton>
-                    <g:upFace image="{customers.sliderFlecheDroite}"/>
-                    <g:upHoveringFace image="{customers.sliderFlecheDroiteRl}"/>
-                    <g:downHoveringFace image="{customers.sliderFlecheDroiteRl}"/>
-                </g:PushButton>            </a>
+            <a id="sliderCustomersPrev" class="{style.previous} {customers.style.sliderCustomersButtonGauche}"></a>
+            <a id="sliderCustomersNext" class="{style.next} {customers.style.sliderCustomersButtonDroite}"></a>
             <p>
                 <ui:msg description="Customers > recommendation">
                     Customers who recommend our experience, be it ArcBees services or products!

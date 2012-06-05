@@ -63,9 +63,17 @@ public interface Resources extends ClientBundle {
 
         String cornerTopBottom();
 
+
+
+
+
     }
 
     Style style();
+
+
+
+
 
     ImageResource logoArcbees();
 

@@ -31,6 +31,9 @@ public class Hive implements EntryPoint {
         DelayedBindRegistry.bind(ginjector);
 
         ginjector.getResources().style().ensureInjected();
+        ginjector.getHomeResources().style().ensureInjected();
+        ginjector.getSocialMediaResources().style().ensureInjected();
+        ginjector.getCustomersResources().style().ensureInjected();
         ginjector.getPlaceManager().revealCurrentPlace();
     }
 }

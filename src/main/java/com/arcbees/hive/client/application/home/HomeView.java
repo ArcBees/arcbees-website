@@ -50,4 +50,16 @@ public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
     @Override
     public void setInSlot(Object slot, Widget content) {
     }
+
+    public native void startCarousel() /*-{
+        $wnd.$('#sliderProductsCarousel').rcarousel(
+                {auto:{enabled:true, interval:9000},
+                    orientation:"vertical",
+
+                    width:725,
+                    height:88,
+                    visible:1,
+                    step:1,
+                    speed:2000});
+    }-*/;
 }

@@ -26,6 +26,8 @@ import com.arcbees.hive.client.application.home.HomePresenter;
 import com.arcbees.hive.client.application.jobs.JobsPresenter;
 import com.arcbees.hive.client.application.products.ProductsPresenter;
 import com.arcbees.hive.client.application.service.ServicePresenter;
+import com.arcbees.hive.client.resource.customers.CustomersResources;
+import com.arcbees.hive.client.resource.home.HomeResources;
 import com.arcbees.hive.client.resource.socialmedia.SocialMediaResources;
 import com.google.gwt.inject.client.GinModules;
 import com.google.gwt.inject.client.Ginjector;
@@ -41,7 +43,11 @@ public interface ClientGinjector extends Ginjector {
 
     Resources getResources();
 
+    HomeResources getHomeResources();
+
     SocialMediaResources getSocialMediaResources();
+
+    CustomersResources getCustomersResources();
 
     Provider<AppPresenter> getAppPresenter();
 

@@ -1,26 +1,43 @@
 package com.arcbees.hive.client.resource.socialmedia;
 
 import com.google.gwt.resources.client.ClientBundle;
+import com.google.gwt.resources.client.CssResource;
 import com.google.gwt.resources.client.ImageResource;
 
 public interface SocialMediaResources extends ClientBundle {
-    ImageResource header_sociaux_rl_fb();
+    public interface Style extends CssResource {
 
-    ImageResource header_sociaux_up_fb();
+        String facebookIcon();
 
-    ImageResource header_sociaux_rl_in();
+        String linkedinIcon();
 
-    ImageResource header_sociaux_up_in();
+        String twitterIcon();
 
-    ImageResource header_sociaux_up_pc();
+        String wordpressIcon();
 
-    ImageResource header_sociaux_rl_pc();
+        String picasaIcon();
 
-    ImageResource header_sociaux_up_tw();
+    }
 
-    ImageResource header_sociaux_rl_tw();
+    Style style();
 
-    ImageResource header_sociaux_up_wp();
+    ImageResource facebookIcon();
 
-    ImageResource header_sociaux_rl_wp();
+    ImageResource facebookIconRl();
+
+    ImageResource linkedinIcon();
+
+    ImageResource linkedinIconRl();
+
+    ImageResource twitterIcon();
+
+    ImageResource twitterIconRl();
+
+    ImageResource wordpressIcon();
+
+    ImageResource wordpressIconRl();
+
+    ImageResource picasaIcon();
+
+    ImageResource picasaIconRl();
 }

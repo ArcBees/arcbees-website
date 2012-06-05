@@ -87,66 +87,60 @@
         <g:Image resource="{home.gwtHtml5Cloud}" addStyleNames="{res.style.imgCenter}"/>
 
         <g:HTMLPanel addStyleNames="{style.products}">
-            <g:HTMLPanel addStyleNames="{style.productsNav}">
+            <div id="sliderProductsCarousel" class="{style.productsNav}">
                 <g:HTMLPanel>
                     <g:Image resource="{home.sliderQuotesGauche}" addStyleNames="{res.style.imgLeft}"/>
                     <g:Image resource="{home.sliderProductGWTPlatform}" addStyleNames="{res.style.imgLeft}"/>
                     <p class="product">The most popular MVP framework for GWT</p>
                     <g:Image resource="{home.sliderQuotesDroite}" addStyleNames="{res.style.imgRight}"/>
-                    <a href="#" class="product">Click here to learn more about our products...</a>
+                    <a href="#">Click here to learn more about our products...</a>
                 </g:HTMLPanel>
                 <g:HTMLPanel>
                     <g:Image resource="{home.sliderQuotesGauche}" addStyleNames="{res.style.imgLeft}"/>
                     <g:Image resource="{home.sliderProductJukito}" addStyleNames="{res.style.imgLeft}"/>
                     <p class="product">Jukito complements your testing infrastructure</p>
                     <g:Image resource="{home.sliderQuotesDroite}" addStyleNames="{res.style.imgRight}"/>
-                    <a href="#" class="product">Click here to learn more about our products...</a>
+                    <a href="#">Click here to learn more about our products...</a>
                 </g:HTMLPanel>
                 <g:HTMLPanel>
                     <g:Image resource="{home.sliderQuotesGauche}" addStyleNames="{res.style.imgLeft}"/>
                     <g:Image resource="{home.sliderProductBeeHive}" addStyleNames="{res.style.imgLeft}"/>
                     <p class="product">BeeHive, an open source CMS, facilitate GWT usage</p>
                     <g:Image resource="{home.sliderQuotesDroite}" addStyleNames="{res.style.imgRight}"/>
-                    <a href="#" class="product">Click here to learn more about our products...</a>
+                    <a href="#">Click here to learn more about our products...</a>
                 </g:HTMLPanel>
                 <g:HTMLPanel>
                     <g:Image resource="{home.sliderQuotesGauche}" addStyleNames="{res.style.imgLeft}"/>
                     <g:Image resource="{home.sliderProductGAEStudio}" addStyleNames="{res.style.imgLeft}"/>
                     <p class="product">Still a society's secret, GAE is coming soon!</p>
                     <g:Image resource="{home.sliderQuotesDroite}" addStyleNames="{res.style.imgRight}"/>
-                    <a href="#" class="product">Click here to learn more about our products...</a>
+                    <a href="#">Click here to learn more about our products...</a>
                 </g:HTMLPanel>
-            </g:HTMLPanel>
+            </div>
             <g:HTMLPanel addStyleNames="{style.boutonsProducts}">
-                <a href="#" id="btProduct1">
-                    <g:PushButton>
-                        <g:upFace image="{home.sliderProductsBt}"/>
-                        <g:upHoveringFace image="{home.sliderProductsBtRl}"/>
-                        <g:downHoveringFace image="{home.sliderProductsBtRl}"/>
-                    </g:PushButton>
-                </a>
-                <a href="#" id="btProduct2">
-                    <g:PushButton>
-                        <g:upFace image="{home.sliderProductsBt}"/>
-                        <g:upHoveringFace image="{home.sliderProductsBtRl}"/>
-                        <g:downHoveringFace image="{home.sliderProductsBtRl}"/>
-                    </g:PushButton>
-                </a>
-                <a href="#" id="btProduct3">
-                    <g:PushButton>
-                        <g:upFace image="{home.sliderProductsBt}"/>
-                        <g:upHoveringFace image="{home.sliderProductsBtRl}"/>
-                        <g:downHoveringFace image="{home.sliderProductsBtRl}"/>
-                    </g:PushButton>
-                </a>
-                <a href="#" id="btProduct4">
-                    <g:PushButton>
-                        <g:upFace image="{home.sliderProductsBt}"/>
-                        <g:upHoveringFace image="{home.sliderProductsBtRl}"/>
-                        <g:downHoveringFace image="{home.sliderProductsBtRl}"/>
-                    </g:PushButton>
-                </a>
+                <a onclick="$" class="{home.style.sliderProductsButton}"></a>
+                <!--<a href="#" id="btProduct2">-->
+                <!--<g:PushButton>-->
+                <!--<g:upFace image="{home.sliderProductsBt}"/>-->
+                <!--<g:upHoveringFace image="{home.sliderProductsBtRl}"/>-->
+                <!--<g:downHoveringFace image="{home.sliderProductsBtRl}"/>-->
+                <!--</g:PushButton>-->
+                <!--</a>-->
+                <!--<a href="#" id="btProduct3">-->
+                <!--<g:PushButton>-->
+                <!--<g:upFace image="{home.sliderProductsBt}"/>-->
+                <!--<g:upHoveringFace image="{home.sliderProductsBtRl}"/>-->
+                <!--<g:downHoveringFace image="{home.sliderProductsBtRl}"/>-->
+                <!--</g:PushButton>-->
+                <!--</a>-->
+                <!--<a href="#" id="btProduct4">-->
+                <!--<g:PushButton>-->
+                <!--<g:upFace image="{home.sliderProductsBt}"/>-->
+                <!--<g:upHoveringFace image="{home.sliderProductsBtRl}"/>-->
+                <!--<g:downHoveringFace image="{home.sliderProductsBtRl}"/>-->
+                <!--</g:PushButton>-->
+                <!--</a>-->
             </g:HTMLPanel>
         </g:HTMLPanel>
     </g:HTMLPanel>
-</ui:UiBinder> 
+</ui:UiBinder>

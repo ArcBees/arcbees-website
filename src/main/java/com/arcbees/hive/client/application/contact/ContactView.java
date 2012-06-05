@@ -16,11 +16,12 @@
 
 package com.arcbees.hive.client.application.contact;
 
-import com.arcbees.core.client.mvp.ViewImpl;
 import com.arcbees.core.client.mvp.ViewWithUiHandlers;
 import com.arcbees.core.client.mvp.uihandlers.UiHandlersStrategy;
 import com.arcbees.hive.client.application.contact.ContactPresenter.MyView;
+import com.google.gwt.event.dom.client.BlurEvent;
 import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.event.dom.client.FocusEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
@@ -31,6 +32,9 @@ import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 
 public class ContactView extends ViewWithUiHandlers<ContactUiHandlers> implements MyView {
+    private final String defaultContents = "Tell us about your project:";
+    private final String defaultEmail = "Your email:";
+
     public interface Binder extends UiBinder<Widget, ContactView> {
     }
 
@@ -55,5 +59,33 @@ public class ContactView extends ViewWithUiHandlers<ContactUiHandlers> implement
         String contents = contentsTextArea.getText();
 
         getUiHandlers().sendMail(sender, contents);
+    }
+
+    @UiHandler("contentsTextArea")
+    public void onContentsTextArea(FocusEvent event) {
+        if (contentsTextArea.getText().equals(defaultContents)) {
+            contentsTextArea.setText("");
+        }
+    }
+
+    @UiHandler("contentsTextArea")
+    public void onContentsTextArea(BlurEvent event) {
+        if (contentsTextArea.getText().length() == 0) {
+            contentsTextArea.setText(defaultContents);
+        }
+    }
+
+    @UiHandler("senderTextBox")
+    public void onSenderTextBox(FocusEvent event) {
+        if (senderTextBox.getText().equals(defaultEmail)) {
+            senderTextBox.setText("");
+        }
+    }
+
+    @UiHandler("senderTextBox")
+    public void onSenderTextBox(BlurEvent event) {
+        if (senderTextBox.getText().length() == 0) {
+            senderTextBox.setText(defaultEmail);
+        }
     }
 }

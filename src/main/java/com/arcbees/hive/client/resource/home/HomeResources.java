@@ -7,6 +7,10 @@ import com.google.gwt.resources.client.ImageResource;
 public interface HomeResources extends ClientBundle {
     public interface Style extends CssResource {
         String sliderProductsButton();
+
+        String sliderPruductsOn();
+
+        String sliderPruductsOff();
     }
 
     Style style();

@@ -1,5 +1,6 @@
 @sprite .sliderCustomersButtonGauche {
     gwt-image: "sliderCustomersButtonGauche";
+    cursor: pointer;
 }
 
 @sprite .sliderCustomersButtonGauche:hover {
@@ -8,6 +9,7 @@
 
 @sprite .sliderCustomersButtonDroite {
     gwt-image: "sliderCustomersButtonDroite";
+    cursor: pointer;
 }
 
 @sprite .sliderCustomersButtonDroite:hover {

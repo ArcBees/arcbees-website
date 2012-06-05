@@ -19,47 +19,133 @@ package com.arcbees.hive.client.application.home;
 import com.arcbees.core.client.mvp.ViewWithUiHandlers;
 import com.arcbees.core.client.mvp.uihandlers.UiHandlersStrategy;
 import com.arcbees.hive.client.application.home.HomePresenter.MyView;
-import com.google.gwt.dom.client.Element;
-import com.google.gwt.query.client.Function;
-import com.google.gwt.query.client.Properties;
-import com.google.gwt.query.client.plugins.effects.PropertiesAnimation.Easing;
+import com.arcbees.hive.client.resource.home.HomeResources;
+import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
-import com.google.gwt.user.client.ui.AbsolutePanel;
-import com.google.gwt.user.client.ui.HTMLPanel;
-import com.google.gwt.user.client.ui.SimplePanel;
+import com.google.gwt.uibinder.client.UiHandler;
+import com.google.gwt.user.client.Window;
+import com.google.gwt.user.client.ui.Anchor;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 
-import static com.google.gwt.query.client.GQuery.$;
-import static com.google.gwt.query.client.plugins.Effects.Effects;
-
 public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
         MyView {
+    @UiField
+    Anchor btProduct0;
+    @UiField
+    Anchor btProduct1;
+    @UiField
+    Anchor btProduct2;
+
+    @UiField
+    Anchor btProduct3;
+
+    private final HomeResources homeResources;
+
     public interface Binder extends UiBinder<Widget, HomeView> {
+
     }
 
     @Inject
     public HomeView(final Binder uiBinder,
-                    UiHandlersStrategy<HomeUiHandlers> uiHandlersStrategy) {
+                    UiHandlersStrategy<HomeUiHandlers> uiHandlersStrategy, HomeResources homeResources) {
         super(uiHandlersStrategy);
+        this.homeResources = homeResources;
 
         initWidget(uiBinder.createAndBindUi(this));
     }
 
     @Override
-    public void setInSlot(Object slot, Widget content) {
+    public void startCarousel() {
+        startCarouselNative(this);
     }
 
-    public native void startCarousel() /*-{
-        $wnd.$('#sliderProductsCarousel').rcarousel(
-                {auto:{enabled:true, interval:9000},
-                    orientation:"vertical",
+    public native void startCarouselNative(HomeView view) /*-{
+        function pageLoaded(event, data) {
+            console.log("hello");
+            view.@com.arcbees.hive.client.application.home.HomeView::setEnabled(I)(data.page);
+        }
 
+        $wnd.$('#sliderProductsCarousel').rcarousel(
+                {auto:{enabled:true, direction:"prev", interval:2000},
+                    orientation:"vertical",
                     width:725,
                     height:88,
                     visible:1,
                     step:1,
-                    speed:2000});
+                    speed:1000,
+                    pageLoaded:pageLoaded
+                });
+    }-*/;
+
+    @UiHandler("btProduct0")
+    public void onBtProduct0(ClickEvent event) {
+        slideToProduct(0);
+    }
+
+    @UiHandler("btProduct1")
+    public void onBtProduct1(ClickEvent event) {
+        slideToProduct(1);
+    }
+
+    @UiHandler("btProduct2")
+    public void onBtProduct2(ClickEvent event) {
+        slideToProduct(2);
+    }
+
+    @UiHandler("btProduct3")
+    public void onBtProduct3(ClickEvent event) {
+        slideToProduct(3);
+    }
+
+    private void slideToProduct(int index) {
+        setEnabled(index);
+        slideToProductNative(index);
+    }
+
+    private void setEnabled(int index) {
+        disableAll();
+
+        Anchor selected = btProduct0;
+
+        switch (index) {
+            case 0:
+                selected = btProduct0;
+                break;
+            case 1:
+                selected = btProduct1;
+                break;
+            case 2:
+                selected = btProduct2;
+                break;
+            case 3:
+                selected = btProduct3;
+                break;
+            default:
+                Window.alert("wront index: " + index);
+                break;
+        }
+
+        enable(selected);
+    }
+
+    private void disableAll() {
+        disableAnchor(btProduct0);
+        disableAnchor(btProduct1);
+        disableAnchor(btProduct2);
+        disableAnchor(btProduct3);
+    }
+
+    private void disableAnchor(Anchor toDisable) {
+        toDisable.setStyleName(homeResources.style().sliderPruductsOff());
+    }
+
+    private void enable(Anchor selected) {
+        selected.setStyleName(homeResources.style().sliderPruductsOn());
+    }
+
+    private native void slideToProductNative(int index) /*-{
+        $wnd.$('#sliderProductsCarousel').rcarousel("goToPage", index);
     }-*/;
 }

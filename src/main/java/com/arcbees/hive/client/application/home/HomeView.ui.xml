@@ -96,32 +96,60 @@
                 <div>
                     <g:Image resource="{home.sliderQuotesGauche}" addStyleNames="{res.style.imgLeft}"/>
                     <g:Image resource="{home.sliderProductGWTPlatform}" addStyleNames="{res.style.imgLeft}"/>
-                    <p class="product">The most popular MVP framework for GWT</p>
+                    <p class="product">
+                        <ui:msg description="Home > Products > GWTP">The most popular MVP framework for GWT</ui:msg>
+                    </p>
                     <g:Image resource="{home.sliderQuotesDroite}" addStyleNames="{res.style.imgRight}"/>
-                    <a href="#{nameTokens.getProduct}">Click here to learn more about our products...</a>
+                    <a href="#{nameTokens.getProduct}">
+                        <ui:msg description="Home > Products > Learn More">Click here to learn more about our
+                            products...
+                        </ui:msg>
+                    </a>
                 </div>
                 <div>
                     <g:Image resource="{home.sliderQuotesGauche}" addStyleNames="{res.style.imgLeft}"/>
                     <g:Image resource="{home.sliderProductBeeHive}" addStyleNames="{res.style.imgLeft}"/>
-                    <p class="product">BeeHive, an open source CMS, facilitate GWT usage</p>
+                    <p class="product">
+                        <ui:msg description="Home > Products > BeeHive">BeeHive, an open source CMS, facilitate GWT
+                            usage
+                        </ui:msg>
+                    </p>
                     <g:Image resource="{home.sliderQuotesDroite}" addStyleNames="{res.style.imgRight}"/>
-                    <a href="#{nameTokens.getProduct}">Click here to learn more about our products...</a>
+                    <a href="#{nameTokens.getProduct}">
+                        <ui:msg description="Home > Products > Learn More">Click here to learn more about our
+                            products...
+                        </ui:msg>
+                    </a>
                 </div>
                 <div>
                     <g:Image resource="{home.sliderQuotesGauche}" addStyleNames="{res.style.imgLeft}"/>
                     <g:Image resource="{home.sliderProductGAEStudio}" addStyleNames="{res.style.imgLeft}"/>
-                    <p class="product">Still a society's secret, GAE is coming soon!</p>
+                    <p class="product">
+                        <ui:msg description="Home > Products > GAE Studio">Still a society's secret, GAE is coming
+                            soon!
+                        </ui:msg>
+                    </p>
                     <g:Image resource="{home.sliderQuotesDroite}" addStyleNames="{res.style.imgRight}"/>
-                    <a href="#{nameTokens.getProduct}">Click here to learn more about our products...</a>
+                    <a href="#{nameTokens.getProduct}">
+                        <ui:msg description="Home > Products > Learn More">Click here to learn more about our
+                            products...
+                        </ui:msg>
+                    </a>
                 </div>
                 <div>
                     <g:Image resource="{home.sliderQuotesGauche}" addStyleNames="{res.style.imgLeft}"/>
                     <g:Image resource="{home.sliderProductJukito}" addStyleNames="{res.style.imgLeft}"/>
-                    <p class="product">Jukito complements your testing infrastructure</p>
+                    <p class="product">
+                        <ui:msg description="Home > Products > Jukito">Jukito complements your testing infrastructure
+                        </ui:msg>
+                    </p>
                     <g:Image resource="{home.sliderQuotesDroite}" addStyleNames="{res.style.imgRight}"/>
-                    <a href="#{nameTokens.getProduct}">Click here to learn more about our products...</a>
+                    <a href="#{nameTokens.getProduct}">
+                        <ui:msg description="Home > Products > Learn More">Click here to learn more about our
+                            products...
+                        </ui:msg>
+                    </a>
                 </div>
-
             </div>
             <div id="boutonsProducts">
                 <g:Anchor ui:field="btGWTP" addStyleNames="{home.style.sliderProductsOn}"/>

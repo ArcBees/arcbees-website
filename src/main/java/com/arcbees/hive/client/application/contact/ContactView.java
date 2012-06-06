@@ -19,6 +19,7 @@ package com.arcbees.hive.client.application.contact;
 import com.arcbees.core.client.mvp.ViewWithUiHandlers;
 import com.arcbees.core.client.mvp.uihandlers.UiHandlersStrategy;
 import com.arcbees.hive.client.application.contact.ContactPresenter.MyView;
+import com.arcbees.hive.client.resource.constants.MyConstants;
 import com.google.gwt.event.dom.client.BlurEvent;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.dom.client.FocusEvent;
@@ -32,9 +33,6 @@ import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 
 public class ContactView extends ViewWithUiHandlers<ContactUiHandlers> implements MyView {
-    private final String defaultContents = "Tell us about your project:";
-    private final String defaultEmail = "Your email:";
-
     public interface Binder extends UiBinder<Widget, ContactView> {
     }
 
@@ -45,12 +43,26 @@ public class ContactView extends ViewWithUiHandlers<ContactUiHandlers> implement
     @UiField
     Button sendButton;
 
+    private String defaultContents;
+    private String defaultEmail;
+
     @Inject
     public ContactView(final Binder uiBinder,
-                       final UiHandlersStrategy<ContactUiHandlers> uiHandlersStrategy) {
+                       final UiHandlersStrategy<ContactUiHandlers> uiHandlersStrategy,
+                       final MyConstants myConstants) {
         super(uiHandlersStrategy);
 
+        defaultContents = myConstants.tellUsAboutYourProject();
+        defaultEmail = myConstants.yourEmail();
+
         initWidget(uiBinder.createAndBindUi(this));
+
+        initUi();
+    }
+
+    private void initUi() {
+        senderTextBox.setText(defaultEmail);
+        contentsTextArea.setText(defaultContents);
     }
 
     @UiHandler("sendButton")

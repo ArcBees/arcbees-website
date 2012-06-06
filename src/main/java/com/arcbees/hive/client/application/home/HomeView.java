@@ -32,14 +32,13 @@ import com.google.inject.Inject;
 public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
         MyView {
     @UiField
-    Anchor btProduct0;
+    Anchor btGWTP;
     @UiField
-    Anchor btProduct1;
+    Anchor btJukito;
     @UiField
-    Anchor btProduct2;
-
+    Anchor btGAE;
     @UiField
-    Anchor btProduct3;
+    Anchor btBeeHive;
 
     private final HomeResources homeResources;
 
@@ -63,40 +62,39 @@ public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
 
     public native void startCarouselNative(HomeView view) /*-{
         function pageLoaded(event, data) {
-            console.log("hello");
             view.@com.arcbees.hive.client.application.home.HomeView::setEnabled(I)(data.page);
         }
 
         $wnd.$('#sliderProductsCarousel').rcarousel(
-                {auto:{enabled:true, direction:"next", interval:9000},
+                {auto:{enabled:true, direction:"prev", interval:6000},
                     orientation:"vertical",
                     width:725,
                     height:88,
                     visible:1,
                     step:1,
-                    speed:2000,
+                    speed:1000,
                     pageLoaded:pageLoaded
                 });
     }-*/;
 
-    @UiHandler("btProduct0")
-    public void onBtProduct0(ClickEvent event) {
+    @UiHandler("btGWTP")
+    public void onBtGWTP(ClickEvent event) {
         slideToProduct(0);
     }
 
-    @UiHandler("btProduct1")
-    public void onBtProduct1(ClickEvent event) {
-        slideToProduct(1);
+    @UiHandler("btJukito")
+    public void onBtJukito(ClickEvent event) {
+        slideToProduct(3);
     }
 
-    @UiHandler("btProduct2")
-    public void onBtProduct2(ClickEvent event) {
+    @UiHandler("btGAE")
+    public void onBtGAE(ClickEvent event) {
         slideToProduct(2);
     }
 
-    @UiHandler("btProduct3")
-    public void onBtProduct3(ClickEvent event) {
-        slideToProduct(3);
+    @UiHandler("btBeeHive")
+    public void onBtBeeHive(ClickEvent event) {
+        slideToProduct(1);
     }
 
     private void slideToProduct(int index) {
@@ -107,23 +105,23 @@ public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
     private void setEnabled(int index) {
         disableAll();
 
-        Anchor selected = btProduct0;
+        Anchor selected = btGWTP;
 
         switch (index) {
             case 0:
-                selected = btProduct0;
-                break;
-            case 1:
-                selected = btProduct1;
-                break;
-            case 2:
-                selected = btProduct2;
+                selected = btGWTP;
                 break;
             case 3:
-                selected = btProduct3;
+                selected = btJukito;
+                break;
+            case 2:
+                selected = btGAE;
+                break;
+            case 1:
+                selected = btBeeHive;
                 break;
             default:
-                Window.alert("wront index: " + index);
+                Window.alert("wrong index: " + index);
                 break;
         }
 
@@ -131,10 +129,10 @@ public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
     }
 
     private void disableAll() {
-        disableAnchor(btProduct0);
-        disableAnchor(btProduct1);
-        disableAnchor(btProduct2);
-        disableAnchor(btProduct3);
+        disableAnchor(btGWTP);
+        disableAnchor(btJukito);
+        disableAnchor(btGAE);
+        disableAnchor(btBeeHive);
     }
 
     private void disableAnchor(Anchor toDisable) {

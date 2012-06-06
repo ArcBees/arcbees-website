@@ -1,7 +1,143 @@
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
-             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'
+             ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+             ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator"
+             ui:generateLocales="en">
     <ui:with field="res" type="com.arcbees.hive.client.resource.Resources"/>
     <g:HTMLPanel addStyleNames="{res.style.mainSection} {res.style.bulleBgMain} {res.style.cornerBottom}">
-        <h1>Company History</h1>
+        <h2>
+            <ui:msg description="Company History > Main title">The Hive</ui:msg>
+        </h2>
+        <p>
+            <ui:msg description="Company History > Company History main paragraph 1">ArcBees became a corporation in
+                July of 2010
+                to meet growing demand for professional support for
+                GWT-Platform
+                The idea was particularly aimed at answering to the new needs of SMEs of a Web in constant evolution.
+                Since,
+                the hive is growing and the company has won some prizes for his leadership and startup program. Today,
+                the
+                vision of our bees tends towards reality: revolutionary web applications come to market.
+            </ui:msg>
+        </p>
+        <p>
+            <ui:msg description="Company History > Company History main paragraph 2">So, the mission is to be an active
+                and influential member of the open source community, while
+                offering simple
+                solutions and products which draw on cloud technologies. The company promises to make available new
+                technologies for experts as well as neophytes, while sharing his knowledge with other developers.
+            </ui:msg>
+
+        </p>
+        <h3>
+            <ui:msg description="Company History > Objectives Subtitle">ArcBees objectives are to:</ui:msg>
+        </h3>
+        <ul>
+            <li>
+                <ui:msg description="Company History > Objectives > High Quality Applications">Deliver applications
+                    which answer the highest industry quality criteria;
+                </ui:msg>
+            </li>
+            <li>
+                <ui:msg description="Company History > Objectives > Simplest interface and latest technologies">Assure
+                    clients with a pleasing experience thanks to products offering the simplest interface and
+                    which
+                    only use the latest technologies;
+                </ui:msg>
+            </li>
+            <li>
+                <ui:msg description="Company History > Objectives > Cloud Technologies">Profit from the advantages of
+                    cloud technologies in order to allow clients to answer
+                    automatically to
+                    demand fluctuation at the lowest cost;
+                </ui:msg>
+            </li>
+            <li>
+                <ui:msg description="Company History > Objectives > Mobiles Devices Migration">Allow companies to
+                    migrate from their static Web sites, made for PC consultation, to company web
+                    application optimised for different devices such as mobile phones, tablets or WebTVs;
+                </ui:msg>
+            </li>
+            <li>
+                <ui:msg description="Company History > Objectives > Application Market">Encourage a rich ecosystem of
+                    developers to install a diversified application market, allowing
+                    companies
+                    to customize their web application.
+                </ui:msg>
+            </li>
+        </ul>
+        <p>
+            <ui:msg description="Company History > Company History main paragraph 3">In order to anticipate and answer
+                to the emergent needs, the products offered are innovative and
+                open the way
+                to setting up applications and services which were inaccessible or unknown to the general public. In
+                that
+                sense, ArcBees’ innovative wallet, combined to the invested efforts will rush the company towards the
+                title
+                of leader in the Web domain.
+            </ui:msg>
+        </p>
+        <h2>
+            <ui:msg description="Company History > Key dates title">Keys dates</ui:msg>
+        </h2>
+        <ul>
+            <li>
+                <ui:msg description="Company History > Key Dates > Offices expansion">June 2012: ArcBees offices
+                    expand
+                </ui:msg>
+            </li>
+            <li>
+                <ui:msg description="Company History > Key Dates > GWT steering committee">June 2012: ArcBees joins
+                    GWT's steering committee
+                </ui:msg>
+            </li>
+            <li>
+                <ui:msg description="Company History > Key Dates > Chris Goudreau business personality">May 2012:
+                    Christian Goudreau is awarded business personality of the year in Québec City
+                </ui:msg>
+            </li>
+            <li>
+                <ui:msg description="Company History > Key Dates > CLD prize">April 2012: CLD Prize, business of the
+                    year
+                </ui:msg>
+            </li>
+            <li>
+                <ui:msg description="Company History > Key Dates > Devtech50 finalist">November 2011: Devtech50
+                    finalist
+                </ui:msg>
+            </li>
+            <li>
+                <ui:msg description="Company History > Key Dates > GWTP in Nantes">November 2011: ArcBees is invited to
+                    present GWTP in Nantes (France)
+                </ui:msg>
+            </li>
+            <li>
+                <ui:msg description="Company History > Key Dates > Office opening">October 2011: ArcBees moved into its
+                    first office in Quebec (Canada)
+                </ui:msg>
+            </li>
+            <li>
+                <ui:msg description="Company History > Key Dates > GWTP in San Francisco">May 2011: ArcBees is invited
+                    to present GWTP at Google I/O in San Francisco (USA)
+                </ui:msg>
+            </li>
+            <li>
+                <ui:msg description="Company History > Key Dates > CQE Prize in Quebec">April 2011: ArcBees wins first
+                    prize in the local technology CQE in Quebec (Canada)
+                </ui:msg>
+            </li>
+            <li>
+                <ui:msg description="Company History > Key Dates > GWTP 0.5 and Jukito">March 2011: Launch of GWTP 0.5
+                    and 1.0 Jukito
+                </ui:msg>
+            </li>
+            <li>
+                <ui:msg description="Company History > Key Dates > ArcBees Inc.">July 2010: Incorporation of ArcBees
+                </ui:msg>
+            </li>
+            <li>
+                <ui:msg description="Company History > Key Dates > GWTP 0.1">March 2010: Launch of gwtp 0.1</ui:msg>
+            </li>
+        </ul>
     </g:HTMLPanel>
 </ui:UiBinder>

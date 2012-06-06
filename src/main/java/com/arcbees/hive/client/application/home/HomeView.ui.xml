@@ -124,7 +124,7 @@
 
             </div>
             <div id="boutonsProducts">
-                <g:Anchor ui:field="btGWTP" addStyleNames="{home.style.sliderPruductsOn}"/>
+                <g:Anchor ui:field="btGWTP" addStyleNames="{home.style.sliderProductsOn}"/>
                 <g:Anchor ui:field="btJukito" addStyleNames="{home.style.sliderProductsButton}"/>
                 <g:Anchor ui:field="btGAE" addStyleNames="{home.style.sliderProductsButton}"/>
                 <g:Anchor ui:field="btBeeHive" addStyleNames="{home.style.sliderProductsButton}"/>

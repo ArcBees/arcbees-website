@@ -1,8 +1,8 @@
-@sprite .sliderProductsButton, .sliderPruductsOff {
+@sprite .sliderProductsButton, .sliderProductsOff {
     gwt-image: "sliderProductsBt";
     cursor: pointer;
 }
 
-@sprite .sliderProductsButton:hover, .sliderPruductsOn {
+@sprite .sliderProductsButton:hover, .sliderProductsOn {
     gwt-image: "sliderProductsBtRl";
 }

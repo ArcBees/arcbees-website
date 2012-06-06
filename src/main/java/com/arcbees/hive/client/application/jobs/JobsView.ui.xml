@@ -1,15 +1,22 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-             xmlns:g="urn:import:com.google.gwt.user.client.ui">
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+             ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator"
+             ui:generateLocales="en">
 
     <ui:with field="res" type="com.arcbees.hive.client.resource.Resources"/>
     <g:HTMLPanel addStyleNames="{res.style.mainSection} {res.style.bulleBgMain} {res.style.cornerBottom}">
-        <g:Image resource="{res.job}" />
-        <h2>Be part of the hive !</h2>
-        <p>Sorry, we're not hiring for any specific positions at this time.
-            However, we're always looking for smart, talented people with good
-            GWT knowledge. If you think you can make the difference, feel free
-            to email your resume to
+        <g:Image resource="{res.job}"/>
+        <h2>
+            <ui:msg description="Jobs > main title">Be part of the hive !</ui:msg>
+        </h2>
+        <p>
+            <ui:msg description="Jobs > main paragraph">Sorry, we're not hiring for any specific positions at this time.
+                However, we're always looking for talented people with good GWT knowledge. If you think you can make the
+                difference, feel free to email your resume to
+            </ui:msg>
+
             <a href="mailto:queenbee@arcbees.com?subject=Jobs">queenbee@arcbees.com</a>
         </p>
     </g:HTMLPanel>

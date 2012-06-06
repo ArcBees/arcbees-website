@@ -8,9 +8,9 @@ public interface HomeResources extends ClientBundle {
     public interface Style extends CssResource {
         String sliderProductsButton();
 
-        String sliderPruductsOn();
+        String sliderProductsOn();
 
-        String sliderPruductsOff();
+        String sliderProductsOff();
     }
 
     Style style();

@@ -68,13 +68,13 @@ public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
         }
 
         $wnd.$('#sliderProductsCarousel').rcarousel(
-                {auto:{enabled:true, direction:"prev", interval:9000},
+                {auto:{enabled:true, direction:"next", interval:9000},
                     orientation:"vertical",
                     width:725,
                     height:88,
                     visible:1,
                     step:1,
-                    speed:1000,
+                    speed:2000,
                     pageLoaded:pageLoaded
                 });
     }-*/;

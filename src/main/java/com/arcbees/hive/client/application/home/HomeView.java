@@ -136,11 +136,11 @@ public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
     }
 
     private void disableAnchor(Anchor toDisable) {
-        toDisable.setStyleName(homeResources.style().sliderPruductsOff());
+        toDisable.setStyleName(homeResources.style().sliderProductsOff());
     }
 
     private void enable(Anchor selected) {
-        selected.setStyleName(homeResources.style().sliderPruductsOn());
+        selected.setStyleName(homeResources.style().sliderProductsOn());
     }
 
     private native void slideToProductNative(int index) /*-{

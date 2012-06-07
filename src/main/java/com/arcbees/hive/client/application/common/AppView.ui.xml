@@ -3,27 +3,15 @@
              xmlns:g="urn:import:com.google.gwt.user.client.ui"
              xmlns:ahive_navbar='urn:import:com.arcbees.hive.client.application.common.navbar'>
     <ui:with field='res' type='com.arcbees.hive.client.resource.Resources'/>
-
     <ui:style>
-        html {
-            overflow-y: scroll;
-        }
-
-        body {
-            font-family: Verdana;
-            font-size: small;
-            color: #4b3c30;
-        }
-
-        .hiveMain {
+        .conteneurPrincipal {
             margin-left: auto;
             margin-right: auto;
             width: 950px;
             text-align: left;
         }
     </ui:style>
-
-    <g:HTMLPanel styleName="{style.hiveMain}">
+    <g:HTMLPanel styleName="{style.conteneurPrincipal}">
         <g:HTMLPanel ui:field="header"/>
         <ahive_navbar:NavbarView ui:field="navbarView"/>
         <g:HTMLPanel ui:field="mainContent" addStyleNames="{res.style.mainDegradeBgSprite}">

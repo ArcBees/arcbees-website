@@ -27,19 +27,13 @@ public interface Resources extends ClientBundle {
      * Style strong typed interface.
      */
     public interface Style extends CssResource {
-        String cursor();
-
-        String mainSection();
+        String mainSectionContainer();
 
         String imgLeft();
 
         String imgRight();
 
         String imgCenter();
-
-        String stepInactive();
-
-        String stepActive();
 
         String navBarBgSprite();
 
@@ -55,27 +49,31 @@ public interface Resources extends ClientBundle {
 
         String bulleBgFooter();
 
-        String sloganDescription();
-
         String cornerTop();
 
         String cornerBottom();
 
         String cornerTopBottom();
 
+        String pHead();
 
+        String headerContainer();
 
+        String customersContainer();
 
+        String rightLinkBox();
 
+        String localeSwitcher();
+
+        String footerContainer();
     }
 
     Style style();
 
 
-
-
-
     ImageResource logoArcbees();
+
+    ImageResource listIcon();
 
     ImageResource beeFlying();
 

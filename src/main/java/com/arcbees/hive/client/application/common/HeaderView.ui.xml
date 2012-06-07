@@ -13,7 +13,6 @@
             position: relative;
             width: inherit;
             height: 152px;
-            background-color: #fff;
         }
 
         .rightLinkBox {
@@ -30,16 +29,6 @@
             float: right;
             clear: both;
             margin-top: 2px;
-            color: #9F9F9F;
-        }
-
-        .localeSwitcher {
-            text-decoration: none;
-            color: #9F9F9F
-        }
-
-        .localeSwitcher:HOVER {
-            color: #5f5f5f;
         }
 
         .imgLogo {
@@ -55,7 +44,6 @@
             font-size: 20px;
             word-spacing: 1px;
             letter-spacing: 1px;
-            color: #545f67;
             line-height: 30px;
         }
 
@@ -72,7 +60,8 @@
             left: 690px;
         }
     </ui:style>
-    <g:HTMLPanel addStyleNames="{style.headerContainer} {res.style.bulleBgHeader} {res.style.cornerBottom}">
+    <g:HTMLPanel
+            addStyleNames="{res.style.headerContainer} {style.headerContainer} {res.style.bulleBgHeader} {res.style.cornerBottom}">
         <a href="#">
             <g:Image resource="{res.logoArcbees}" addStyleNames="{style.imgLogo}"/>
         </a>
@@ -84,12 +73,12 @@
             <span>- Fejes Toth</span>
         </p>
         <g:Image resource="{res.beeFlying}" addStyleNames="{style.imgBeeFlying}"/>
-        <div class="{style.rightLinkBox}">
+        <div class="{res.style.rightLinkBox} {style.rightLinkBox}">
             <p>
                 1.418.473.1216
             </p>
             <ahive_socmedia:SocialMediaWidget ui:field="socialMediaWidget"/>
-            <a ui:field="swithcLocaleHyperlink" href="?locale=fr" class="{style.localeSwitcher}">
+            <a ui:field="swithcLocaleHyperlink" href="?locale=fr" class="{res.style.localeSwitcher}">
                 <ui:msg description="Locale hyperlink in header">Français</ui:msg>
             </a>
         </div>

@@ -6,11 +6,11 @@
              ui:generateLocales="en">
 
     <ui:with field="res" type="com.arcbees.hive.client.resource.Resources"/>
-    <g:HTMLPanel addStyleNames="{res.style.mainSection} {res.style.cornerBottom}">
-        <p>
+    <g:HTMLPanel addStyleNames="{res.style.mainSectionContainer} {res.style.cornerBottom}">
+        <p class="pHead">
             <ui:msg description="Our Team > Intro paragraph">All our bees contributes to the success of our projects and
                 each of them is a
-                valuable asset to the company.
+                val uable asset to the company.
                 But who is the queen bee? Together, we are all the Queen!
             </ui:msg>
         </p>
@@ -26,7 +26,7 @@
                 for different companies to design many Web
                 applications based on the Cloud. Other than his passion for development and software engineering,
                 Christian
-                is self-taught and his involvement is directly linked to the success of several open-source projects
+                is self-ta ught and his involvement is directly linked to the success of several open-source projects
                 like
                 GWT-platform and Jukito.
             </ui:msg>

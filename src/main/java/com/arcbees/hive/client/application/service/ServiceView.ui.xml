@@ -6,8 +6,7 @@
              ui:generateLocales="en">
 
     <ui:with field="res" type="com.arcbees.hive.client.resource.Resources"/>
-
-    <g:HTMLPanel addStyleNames="{res.style.mainSection} {res.style.bulleBgMain} {res.style.cornerBottom}">
+    <g:HTMLPanel addStyleNames="{res.style.mainSectionContainer} {res.style.bulleBgMain} {res.style.cornerBottom}">
         <g:Image resource="{res.honeyConsultingDevelopmentSuccess}" addStyleNames="{res.style.imgCenter}"/>
         <h3>
             <ui:msg description="Services > Consulting + Development > Title">Consulting + Development = Your Business

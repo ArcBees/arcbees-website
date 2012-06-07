@@ -4,10 +4,10 @@
              ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator"
              ui:generateLocales="en">
     <ui:with field="res" type="com.arcbees.hive.client.resource.Resources"/>
-    <g:HTMLPanel addStyleNames="{res.style.mainSection} {res.style.bulleBgMain} {res.style.cornerBottom}">
-        <h2>
+    <g:HTMLPanel addStyleNames="{res.style.mainSectionContainer} {res.style.bulleBgMain} {res.style.cornerBottom}">
+        <h3>
             <ui:msg description="Company History > Main title">The Hive</ui:msg>
-        </h2>
+        </h3>
         <p>
             <ui:msg description="Company History > Company History main paragraph 1">ArcBees became a corporation in
                 July of 2010
@@ -29,9 +29,9 @@
             </ui:msg>
 
         </p>
-        <h3>
+        <h4>
             <ui:msg description="Company History > Objectives Subtitle">ArcBees objectives are to:</ui:msg>
-        </h3>
+        </h4>
         <ul>
             <li>
                 <ui:msg description="Company History > Objectives > High Quality Applications">Deliver applications
@@ -77,66 +77,90 @@
                 of leader in the Web domain.
             </ui:msg>
         </p>
-        <h2>
+        <h3>
             <ui:msg description="Company History > Key dates title">Keys dates</ui:msg>
-        </h2>
+        </h3>
         <ul>
             <li>
-                <ui:msg description="Company History > Key Dates > Offices expansion">June 2012: ArcBees offices
+                <ui:msg description="Company History > Key Dates > Offices expansion">
+                    <span>June 2012 :</span>
+                    ArcBees offices
                     expand
                 </ui:msg>
             </li>
             <li>
-                <ui:msg description="Company History > Key Dates > GWT steering committee">June 2012: ArcBees joins
+                <ui:msg description="Company History > Key Dates > GWT steering committee">
+                    <span>June 2012 :</span>
+                    ArcBees joins
                     GWT's steering committee
                 </ui:msg>
             </li>
             <li>
-                <ui:msg description="Company History > Key Dates > Chris Goudreau business personality">May 2012:
-                    Christian Goudreau is awarded business personality of the year in Québec City
+                <ui:msg description="Company History > Key Dates > Chris Goudreau business personality">
+                    <span>May 2012 :</span>
+
+                    Christian Goudreau is awarded business personality of the year in Quebec City
                 </ui:msg>
             </li>
             <li>
-                <ui:msg description="Company History > Key Dates > CLD prize">April 2012: CLD Prize, business of the
+                <ui:msg description="Company History > Key Dates > CLD prize">
+                    <span>April 2012 :</span>
+                    CLD Prize, business of the
                     year
                 </ui:msg>
             </li>
             <li>
-                <ui:msg description="Company History > Key Dates > Devtech50 finalist">November 2011: Devtech50
+                <ui:msg description="Company History > Key Dates > Devtech50 finalist">
+                    <span>November 2011 :</span>
+                    Devtech50
                     finalist
                 </ui:msg>
             </li>
             <li>
-                <ui:msg description="Company History > Key Dates > GWTP in Nantes">November 2011: ArcBees is invited to
+                <ui:msg description="Company History > Key Dates > GWTP in Nantes">
+                    <span>November 2011 :</span>
+                    ArcBees is invited to
                     present GWTP in Nantes (France)
                 </ui:msg>
             </li>
             <li>
-                <ui:msg description="Company History > Key Dates > Office opening">October 2011: ArcBees moved into its
+                <ui:msg description="Company History > Key Dates > Office opening">
+                    <span>October 2011 :</span>
+                    ArcBees moved into its
                     first office in Quebec (Canada)
                 </ui:msg>
             </li>
             <li>
-                <ui:msg description="Company History > Key Dates > GWTP in San Francisco">May 2011: ArcBees is invited
+                <ui:msg description="Company History > Key Dates > GWTP in San Francisco">
+                    <span>May 2011 :</span>
+                    ArcBees is invited
                     to present GWTP at Google I/O in San Francisco (USA)
                 </ui:msg>
             </li>
             <li>
-                <ui:msg description="Company History > Key Dates > CQE Prize in Quebec">April 2011: ArcBees wins first
+                <ui:msg description="Company History > Key Dates > CQE Prize in Quebec">
+                    <span>April 2011 :</span>
+                    ArcBees wins first
                     prize in the local technology CQE in Quebec (Canada)
                 </ui:msg>
             </li>
             <li>
-                <ui:msg description="Company History > Key Dates > GWTP 0.5 and Jukito">March 2011: Launch of GWTP 0.5
+                <ui:msg description="Company History > Key Dates > GWTP 0.5 and Jukito">
+                    <span>March 2011 :</span>
+                    Launch of GWTP 0.5
                     and 1.0 Jukito
                 </ui:msg>
             </li>
             <li>
-                <ui:msg description="Company History > Key Dates > ArcBees Inc.">July 2010: Incorporation of ArcBees
+                <ui:msg description="Company History > Key Dates > ArcBees Inc.">
+                    <span>July 2010 :</span>
+                    Incorporation of ArcBees
                 </ui:msg>
             </li>
             <li>
-                <ui:msg description="Company History > Key Dates > GWTP 0.1">March 2010: Launch of gwtp 0.1</ui:msg>
+                <ui:msg description="Company History > Key Dates > GWTP 0.1">
+                    <span>March 2010 :</span>
+                    Launch of GWTP 0.1</ui:msg>
             </li>
         </ul>
     </g:HTMLPanel>

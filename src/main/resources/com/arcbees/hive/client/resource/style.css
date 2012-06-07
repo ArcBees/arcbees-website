@@ -1,185 +1,196 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
+    /*------- Color&Font -------*/
+    body {
+        background-color: #b4c0c8;
+    }
 
-    /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
+    body div {
+        font-family: Verdana;
+    }
 
-body {
-    line-height: 1;
-}
+    body .headerContainer,
+    body .mainSectionContainer,
+    body .customersContainer {
+        background-color: #ffffff;
+    }
 
-ol, ul {
-    list-style: none;
-}
+    body .footerContainer {
+        background-color: #DDA124;
+        color: #5A3A25;
+    }
 
-blockquote, q {
-    quotes: none;
-}
+    .localeSwitcher, .rightLinkBox p {
+        color: #9F9F9F;
+        font-size: 12px;
+    }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
+    .localeSwitcher:HOVER {
+        color: #5f5f5f;
+    }
 
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
+    h2, h3, h4 {
+        color: #5B676F;
+        font-family: Ubuntu;
+    }
 
-a {
-    text-decoration: none;
-}
+    li, .mainSectionContainer p {
+        color: #50575b;
+    }
 
-body {
-    background-color: #b4c0c8;
-    color: #545f67;
-}
+    li span {
+        color: #2d3337;
+    }
 
-p, li {
-    text-align: justify;
-}
+    body .pHead {
+        color: #8b9296;
+    }
 
-table, tr, td {
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
+    .footerContainer a {
+        color: #fcf6ed;
+    }
 
-div {
-    outline: 0px;
-}
+    .footerContainer a:HOVER {
 
-.cursor {
-    cursor: pointer;
-}
+        background-color: #ce8a16;
+    }
 
-body .mainSection {
-    width: 796px;
-    margin-left: auto;
-    margin-right: auto;
-    min-height: 450px;
-    background-color: #ffffff;
-    padding: 20px 50px;
-    color: #545f67;
-}
+        /*------- Color&FontEnd -------*/
 
-.imgLeft {
-    float: left;
-    margin-right: 10px;
-}
+        /*------- MainSection -------*/
+    body .mainSectionContainer {
+        width: 796px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px 50px;
+    }
 
-.imgRight {
-    float: right;
-    margin-left: 10px;
-}
+    .mainSectionContainer a {
+        color: #939698
+    }
 
-.imgCenter {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
+    .mainSectionContainer a:hover {
+        color: #6e6e6e
+    }
 
-@sprite .navBarBgSprite {
-    gwt-image: "navBarBg";
-}
+    h2 {
+        font-size: 22px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 18px;
+        line-height: 26px;
+    }
 
-@sprite .mainDegradeBgSprite {
-    gwt-image: "mainDegradeBg";
-}
+    h3 {
+        font-size: 19px;
+        margin-top: 16px;
+        margin-bottom: 14px;
+        line-height: 20px;
+    }
 
-.sloganDescription {
-    position: absolute;
-    width: 950px;
-    height: 21px;
-    top: 5px;
-    left: 0;
-    text-align: center;
-}
+    h4 {
+        font-size: 14px;
+        margin-top: 16px;
+        margin-bottom: 12px;
+        line-height: 14px;
+        font-weight: 700;
+    }
 
-.stepInactive {
-    background-color: #ffffff;
-    color: #858585;
-}
+    .mainSectionContainer p {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 10px;
+    }
 
-.stepInactive:HOVER {
-    color: #ffffff;
-    background-color: #858585;
-}
+    @sprite li {
+        font-size: 13px;
+        line-height: 16px;
+        margin-left: 25px;
+        padding-left: 15px;
+        margin-bottom: 7px;
+        width: auto;
+        height: auto;
+        gwt-image: "listIcon";
+        background-position: 0px 5px;
+    }
 
-.stepActive {
-    color: #ffffff;
-    background-color: #858585;
-}
+    ul {
+        margin-bottom: 20px;
+    }
 
-.stepActive:HOVER {
-    color: #858585;
-    background-color: #ffffff;
-}
+    body .pHead {
+        font-size: 17px;
+        line-height: 20px;
+        margin-bottom: 35px;
+    }
 
-@sprite .bulleBgHeader {
-    gwt-image: "bulleBgHeader";
-}
+        /*------- MainSectionEnd -------*/
 
-@sprite .bulleBgMain {
-    gwt-image: "bulleBgMain";
-    background-color: #fff;
-}
+        /*------- Utility -------*/
+    .imgLeft {
+        float: left;
+        margin-right: 10px;
+    }
 
-@sprite .bulleBgHome {
-    gwt-image: "bulleBgHome";
-}
+    .imgRight {
+        float: right;
+        margin-left: 10px;
+    }
 
-@sprite .bulleBgSlider {
-    gwt-image: "bulleBgSlider";
-}
+    .imgCenter {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
 
-@sprite .bulleBgFooter {
-    gwt-image: "bulleBgFooter";
-}
+    .cornerTop {
+        border-radius: 10px 10px 0px 0px;
+        -moz-border-radius: 10px 10px 0px 0px;
+        -webkit-border-radius: 10px 10px 0px 0px;
+        overflow: hidden;
+    }
 
+    .cornerBottom {
+        border-radius: 0px 0px 10px 10px;
+        -moz-border-radius: 0px 0px 10px 10px;
+        -webkit-border-radius: 0px 0px 10px 10px;
+        overflow: hidden;
+    }
 
+    .cornerTopBottom {
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        overflow: hidden;
+    }
 
+        /*------- UtilityEnd -------*/
 
+        /*------- Sprite -------*/
+    @sprite .navBarBgSprite {
+        gwt-image: "navBarBg";
+    }
 
-.cornerTop {
-    border-radius: 10px 10px 0px 0px;
-    -moz-border-radius: 10px 10px 0px 0px;
-    -webkit-border-radius: 10px 10px 0px 0px;
-    overflow: hidden;
-}
+    @sprite .mainDegradeBgSprite {
+        gwt-image: "mainDegradeBg";
+    }
 
-.cornerBottom {
-    border-radius: 0px 0px 10px 10px;
-    -moz-border-radius: 0px 0px 10px 10px;
-    -webkit-border-radius: 0px 0px 10px 10px;
-    overflow: hidden;
-}
+    @sprite .bulleBgHeader {
+        gwt-image: "bulleBgHeader";
+    }
 
-.cornerTopBottom {
-    border-radius: 10px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    overflow: hidden;
-}
+    @sprite .bulleBgMain {
+        gwt-image: "bulleBgMain";
+    }
+
+    @sprite .bulleBgHome {
+        gwt-image: "bulleBgHome";
+    }
+
+    @sprite .bulleBgSlider {
+        gwt-image: "bulleBgSlider";
+    }
+
+    @sprite .bulleBgFooter {
+        gwt-image: "bulleBgFooter";
+    }
+
+        /*------- SpriteEnd -------*/

@@ -33,6 +33,10 @@ public class NameTokens {
         return blog;
     }
 
+    public static String getHome() {
+        return home;
+    }
+
     public static String getService() {
         return service;
     }

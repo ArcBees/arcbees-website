@@ -6,26 +6,23 @@
     <ui:with field='res' type='com.arcbees.hive.client.resource.Resources'/>
     <ui:with field="customers" type="com.arcbees.hive.client.resource.customers.CustomersResources"/>
     <ui:style>
-        .root {
+        .customersContainer {
             width: 896px;
-            background-color: #ffffff;
             margin: 10px auto 0 auto;
             position: relative;
         }
 
-        .previous {
+        .customersPrevious {
             left: 30px;
         }
 
-        .next {
+        .customersNext {
             right: 30px;
         }
 
-        .previous, .next {
-
+        .customersPrevious, .customersNext {
             position: absolute;
             top: 40px;
-
         }
 
         .carousel {
@@ -39,10 +36,14 @@
         .carrouselContainer p {
             margin-top: 10px;
             text-align: center;
-            color: #919597;
+            color: #8A8E91;
+            font-size: 14px;
+            letter-spacing: 1px;
+            word-spacing: 2px;
         }
     </ui:style>
-    <g:HTMLPanel addStyleNames="{style.root} {res.style.bulleBgSlider} {res.style.cornerTopBottom}">
+    <g:HTMLPanel
+            addStyleNames="{res.style.customersContainer} {style.customersContainer} {res.style.bulleBgSlider} {res.style.cornerTopBottom}">
         <div id="container" class="{style.carrouselContainer}">
 
             <div id="carousel" class="{style.carousel}">
@@ -71,8 +72,9 @@
                     <g:Image resource="{customers.sliderClientStoreplacer}"/>
                 </a>
             </div>
-            <a id="sliderCustomersPrev" class="{style.previous} {customers.style.sliderCustomersButtonGauche}"></a>
-            <a id="sliderCustomersNext" class="{style.next} {customers.style.sliderCustomersButtonDroite}"></a>
+            <a id="sliderCustomersPrev"
+               class="{style.customersPrevious} {customers.style.sliderCustomersButtonGauche}"></a>
+            <a id="sliderCustomersNext" class="{style.customersNext} {customers.style.sliderCustomersButtonDroite}"></a>
             <p>
                 <ui:msg description="Customers > recommendation">
                     Customers who recommend our experience, be it ArcBees services or products!

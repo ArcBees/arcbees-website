@@ -30,6 +30,7 @@ public class Hive implements EntryPoint {
     public void onModuleLoad() {
         DelayedBindRegistry.bind(ginjector);
 
+        ginjector.getReinitResources().style().ensureInjected();
         ginjector.getResources().style().ensureInjected();
         ginjector.getHomeResources().style().ensureInjected();
         ginjector.getSocialMediaResources().style().ensureInjected();

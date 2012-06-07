@@ -6,7 +6,7 @@
              ui:generateLocales="en">
 
     <ui:with field="res" type="com.arcbees.hive.client.resource.Resources"/>
-    <g:HTMLPanel addStyleNames="{res.style.mainSection} {res.style.bulleBgMain} {res.style.cornerBottom} ">
+    <g:HTMLPanel addStyleNames="{res.style.mainSectionContainer} {res.style.bulleBgMain} {res.style.cornerBottom} ">
         <g:Image resource="{res.contactUS}"/>
         <a href="http://arcbees.wordpress.com/" target="_blank">Blog</a>,
         <a href="http://twitter.com/arcbees" target="_blank">Twitter</a>,

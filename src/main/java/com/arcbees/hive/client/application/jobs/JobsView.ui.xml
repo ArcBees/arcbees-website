@@ -6,7 +6,7 @@
              ui:generateLocales="en">
 
     <ui:with field="res" type="com.arcbees.hive.client.resource.Resources"/>
-    <g:HTMLPanel addStyleNames="{res.style.mainSection} {res.style.bulleBgMain} {res.style.cornerBottom}">
+    <g:HTMLPanel addStyleNames="{res.style.mainSectionContainer} {res.style.bulleBgMain} {res.style.cornerBottom}">
         <g:Image resource="{res.job}"/>
         <h2>
             <ui:msg description="Jobs > main title">Be part of the hive !</ui:msg>

@@ -7,7 +7,7 @@
 
     <ui:with field="res" type="com.arcbees.hive.client.resource.Resources"/>
 
-    <g:HTMLPanel addStyleNames="{res.style.mainSection} {res.style.bulleBgMain} {res.style.cornerBottom}">
+    <g:HTMLPanel addStyleNames="{res.style.mainSectionContainer} {res.style.bulleBgMain} {res.style.cornerBottom}">
         <p>
             <ui:msg description="Products > Intro paragraph">Designed by top shelf geeks, ArcBees' open source software
                 speed up and sharpen your projects!

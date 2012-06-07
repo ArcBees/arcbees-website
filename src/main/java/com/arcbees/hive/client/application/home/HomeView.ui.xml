@@ -12,65 +12,47 @@
             height: auto;
         }
 
-        .home h2 {
-            color: #7e8890;
-            font-size: 22px;
-            font-weight: bold;
-            text-align: center;
-            margin-bottom: 15px;
-        }
-
-        .home p {
-            color: #8b9296;
-            font-size: 17px;
-            line-height: 20px;
-            margin-bottom: 35px;
-        }
-
-        .home .productsNav {
+        .productsNav {
             height: 80px;
             overflow: hidden;
             position: relative;
         }
 
-        .home #boutonsProducts {
+        #boutonsProducts {
             position: relative;
             bottom: 80px;
             left: 735px;
         }
 
-        .home #boutonsProducts a:first-child {
+        #boutonsProducts a:first-child {
             margin-top: 0;
         }
 
-        .home #boutonsProducts a {
+        #boutonsProducts a {
             margin-top: 4px;
             display: block;
         }
 
-        .home .productsNav p {
+        .productsNav p {
             margin-top: 20px;
             font-size: 19px;
             float: left;
             color: #939698;
+            margin-bottom: 35px;
         }
 
-        .home .productsNav a {
+        .productsNav a {
             width: 325px;
             font-size: 13px;
-            color: #939698;
             font-variant: small-caps;
             display: inline-block;
-            position: relative;
+            position: absolute;
             bottom: 20px;
-            left: 180px;
+            right: 30px;
+
         }
 
-        .home .productsNav a:hover {
-            color: #6e6e6e;
-        }
-
-        .home  .sliderProductsContainer {
+        .sliderProductsContainer {
             position: relative;
             margin: 55px auto 0 auto;
             width: 750px;
@@ -79,11 +61,11 @@
         }
 
     </ui:style>
-    <g:HTMLPanel addStyleNames="{res.style.mainSection} {res.style.bulleBgHome} {res.style.cornerBottom} {style.home}">
+    <g:HTMLPanel addStyleNames="{res.style.mainSectionContainer} {res.style.bulleBgHome} {res.style.cornerBottom} {style.home}">
         <h2>
             <ui:msg description="Home > Title">Have a new web project? Need to redesign your architecture?</ui:msg>
         </h2>
-        <p>
+        <p class="{res.style.pHead}">
             <ui:msg description="Home > Subtitle">With ArcBees, your company may spend more time doing what it does best
                 while we provide you simple web
                 solutions that meet your needs. We are specialists in GWTP, UX design and Cloud Computing
@@ -96,28 +78,28 @@
                 <div>
                     <g:Image resource="{home.sliderQuotesGauche}" addStyleNames="{res.style.imgLeft}"/>
                     <g:Image resource="{home.sliderProductGWTPlatform}" addStyleNames="{res.style.imgLeft}"/>
-                    <p class="product">The most popular MVP framework for GWT</p>
+                    <p>The most popular MVP framework for GWT</p>
                     <g:Image resource="{home.sliderQuotesDroite}" addStyleNames="{res.style.imgRight}"/>
                     <a href="#{nameTokens.getProduct}">Click here to learn more about our products...</a>
                 </div>
                 <div>
                     <g:Image resource="{home.sliderQuotesGauche}" addStyleNames="{res.style.imgLeft}"/>
                     <g:Image resource="{home.sliderProductBeeHive}" addStyleNames="{res.style.imgLeft}"/>
-                    <p class="product">BeeHive, an open source CMS, facilitate GWT usage</p>
+                    <p>BeeHive, an open source CMS, facilitate GWT usage</p>
                     <g:Image resource="{home.sliderQuotesDroite}" addStyleNames="{res.style.imgRight}"/>
                     <a href="#{nameTokens.getProduct}">Click here to learn more about our products...</a>
                 </div>
                 <div>
                     <g:Image resource="{home.sliderQuotesGauche}" addStyleNames="{res.style.imgLeft}"/>
                     <g:Image resource="{home.sliderProductGAEStudio}" addStyleNames="{res.style.imgLeft}"/>
-                    <p class="product">Still a society's secret, GAE is coming soon!</p>
+                    <p>Still a society's secret, GAE is coming soon!</p>
                     <g:Image resource="{home.sliderQuotesDroite}" addStyleNames="{res.style.imgRight}"/>
                     <a href="#{nameTokens.getProduct}">Click here to learn more about our products...</a>
                 </div>
                 <div>
                     <g:Image resource="{home.sliderQuotesGauche}" addStyleNames="{res.style.imgLeft}"/>
                     <g:Image resource="{home.sliderProductJukito}" addStyleNames="{res.style.imgLeft}"/>
-                    <p class="product">Jukito complements your testing infrastructure</p>
+                    <p>Jukito complements your testing infrastructure</p>
                     <g:Image resource="{home.sliderQuotesDroite}" addStyleNames="{res.style.imgRight}"/>
                     <a href="#{nameTokens.getProduct}">Click here to learn more about our products...</a>
                 </div>

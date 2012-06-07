@@ -19,6 +19,7 @@ package com.arcbees.hive.client.gin;
 import com.arcbees.hive.client.application.companyhistory.CompanyHistoryPresenter;
 import com.arcbees.hive.client.application.team.TeamPresenter;
 import com.arcbees.hive.client.application.uxdesign.UxdesignPresenter;
+import com.arcbees.hive.client.resource.reinit.ReinitResources;
 import com.arcbees.hive.client.resource.Resources;
 import com.arcbees.hive.client.application.common.AppPresenter;
 import com.arcbees.hive.client.application.contact.ContactPresenter;
@@ -42,6 +43,8 @@ public interface ClientGinjector extends Ginjector {
     PlaceManager getPlaceManager();
 
     Resources getResources();
+
+    ReinitResources getReinitResources();
 
     HomeResources getHomeResources();
 

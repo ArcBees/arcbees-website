@@ -96,7 +96,7 @@
                 <div>
                     <g:Image resource="{home.sliderQuotesGauche}" addStyleNames="{res.style.imgLeft}"/>
                     <g:Image resource="{home.sliderProductGWTPlatform}" addStyleNames="{res.style.imgLeft}"/>
-                    <p class="product">
+                    <p>
                         <ui:msg description="Home > Products > GWTP">The most popular MVP framework for GWT</ui:msg>
                     </p>
                     <g:Image resource="{home.sliderQuotesDroite}" addStyleNames="{res.style.imgRight}"/>
@@ -109,7 +109,7 @@
                 <div>
                     <g:Image resource="{home.sliderQuotesGauche}" addStyleNames="{res.style.imgLeft}"/>
                     <g:Image resource="{home.sliderProductBeeHive}" addStyleNames="{res.style.imgLeft}"/>
-                    <p class="product">
+                    <p>
                         <ui:msg description="Home > Products > BeeHive">BeeHive, an open source CMS, facilitate GWT
                             usage
                         </ui:msg>
@@ -124,7 +124,7 @@
                 <div>
                     <g:Image resource="{home.sliderQuotesGauche}" addStyleNames="{res.style.imgLeft}"/>
                     <g:Image resource="{home.sliderProductGAEStudio}" addStyleNames="{res.style.imgLeft}"/>
-                    <p class="product">
+                    <p>
                         <ui:msg description="Home > Products > GAE Studio">Still a society's secret, GAE is coming
                             soon!
                         </ui:msg>
@@ -139,7 +139,7 @@
                 <div>
                     <g:Image resource="{home.sliderQuotesGauche}" addStyleNames="{res.style.imgLeft}"/>
                     <g:Image resource="{home.sliderProductJukito}" addStyleNames="{res.style.imgLeft}"/>
-                    <p class="product">
+                    <p>
                         <ui:msg description="Home > Products > Jukito">Jukito complements your testing infrastructure
                         </ui:msg>
                     </p>

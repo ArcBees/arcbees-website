@@ -79,7 +79,7 @@
         }
 
     </ui:style>
-    <g:HTMLPanel addStyleNames="{res.style.mainSection} {res.style.bulleBgHome} {res.style.cornerBottom} {style.home}">
+    <g:HTMLPanel addStyleNames="{res.style.mainSectionContainer} {res.style.bulleBgHome} {res.style.cornerBottom} {style.home}">
         <h2>
             <ui:msg description="Home > Title">Have a new web project? Need to redesign your architecture?</ui:msg>
         </h2>

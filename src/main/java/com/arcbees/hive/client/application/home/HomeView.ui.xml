@@ -12,47 +12,65 @@
             height: auto;
         }
 
-        .productsNav {
+        .home h2 {
+            color: #7e8890;
+            font-size: 22px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .home p {
+            color: #8b9296;
+            font-size: 17px;
+            line-height: 20px;
+            margin-bottom: 35px;
+        }
+
+        .home .productsNav {
             height: 80px;
             overflow: hidden;
             position: relative;
         }
 
-        #boutonsProducts {
+        .home #boutonsProducts {
             position: relative;
             bottom: 80px;
             left: 735px;
         }
 
-        #boutonsProducts a:first-child {
+        .home #boutonsProducts a:first-child {
             margin-top: 0;
         }
 
-        #boutonsProducts a {
+        .home #boutonsProducts a {
             margin-top: 4px;
             display: block;
         }
 
-        .productsNav p {
+        .home .productsNav p {
             margin-top: 20px;
             font-size: 19px;
             float: left;
             color: #939698;
-            margin-bottom: 35px;
         }
 
-        .productsNav a {
+        .home .productsNav a {
             width: 325px;
             font-size: 13px;
+            color: #939698;
             font-variant: small-caps;
             display: inline-block;
-            position: absolute;
+            position: relative;
             bottom: 20px;
-            right: 30px;
-
+            left: 180px;
         }
 
-        .sliderProductsContainer {
+        .home .productsNav a:hover {
+            color: #6e6e6e;
+        }
+
+        .home  .sliderProductsContainer {
             position: relative;
             margin: 55px auto 0 auto;
             width: 750px;
@@ -61,11 +79,11 @@
         }
 
     </ui:style>
-    <g:HTMLPanel addStyleNames="{res.style.mainSectionContainer} {res.style.bulleBgHome} {res.style.cornerBottom} {style.home}">
+    <g:HTMLPanel addStyleNames="{res.style.mainSection} {res.style.bulleBgHome} {res.style.cornerBottom} {style.home}">
         <h2>
             <ui:msg description="Home > Title">Have a new web project? Need to redesign your architecture?</ui:msg>
         </h2>
-        <p class="{res.style.pHead}">
+        <p>
             <ui:msg description="Home > Subtitle">With ArcBees, your company may spend more time doing what it does best
                 while we provide you simple web
                 solutions that meet your needs. We are specialists in GWTP, UX design and Cloud Computing
@@ -78,32 +96,60 @@
                 <div>
                     <g:Image resource="{home.sliderQuotesGauche}" addStyleNames="{res.style.imgLeft}"/>
                     <g:Image resource="{home.sliderProductGWTPlatform}" addStyleNames="{res.style.imgLeft}"/>
-                    <p>The most popular MVP framework for GWT</p>
+                    <p class="product">
+                        <ui:msg description="Home > Products > GWTP">The most popular MVP framework for GWT</ui:msg>
+                    </p>
                     <g:Image resource="{home.sliderQuotesDroite}" addStyleNames="{res.style.imgRight}"/>
-                    <a href="#{nameTokens.getProduct}">Click here to learn more about our products...</a>
+                    <a href="#{nameTokens.getProduct}">
+                        <ui:msg description="Home > Products > Learn More">Click here to learn more about our
+                            products...
+                        </ui:msg>
+                    </a>
                 </div>
                 <div>
                     <g:Image resource="{home.sliderQuotesGauche}" addStyleNames="{res.style.imgLeft}"/>
                     <g:Image resource="{home.sliderProductBeeHive}" addStyleNames="{res.style.imgLeft}"/>
-                    <p>BeeHive, an open source CMS, facilitate GWT usage</p>
+                    <p class="product">
+                        <ui:msg description="Home > Products > BeeHive">BeeHive, an open source CMS, facilitate GWT
+                            usage
+                        </ui:msg>
+                    </p>
                     <g:Image resource="{home.sliderQuotesDroite}" addStyleNames="{res.style.imgRight}"/>
-                    <a href="#{nameTokens.getProduct}">Click here to learn more about our products...</a>
+                    <a href="#{nameTokens.getProduct}">
+                        <ui:msg description="Home > Products > Learn More">Click here to learn more about our
+                            products...
+                        </ui:msg>
+                    </a>
                 </div>
                 <div>
                     <g:Image resource="{home.sliderQuotesGauche}" addStyleNames="{res.style.imgLeft}"/>
                     <g:Image resource="{home.sliderProductGAEStudio}" addStyleNames="{res.style.imgLeft}"/>
-                    <p>Still a society's secret, GAE is coming soon!</p>
+                    <p class="product">
+                        <ui:msg description="Home > Products > GAE Studio">Still a society's secret, GAE is coming
+                            soon!
+                        </ui:msg>
+                    </p>
                     <g:Image resource="{home.sliderQuotesDroite}" addStyleNames="{res.style.imgRight}"/>
-                    <a href="#{nameTokens.getProduct}">Click here to learn more about our products...</a>
+                    <a href="#{nameTokens.getProduct}">
+                        <ui:msg description="Home > Products > Learn More">Click here to learn more about our
+                            products...
+                        </ui:msg>
+                    </a>
                 </div>
                 <div>
                     <g:Image resource="{home.sliderQuotesGauche}" addStyleNames="{res.style.imgLeft}"/>
                     <g:Image resource="{home.sliderProductJukito}" addStyleNames="{res.style.imgLeft}"/>
-                    <p>Jukito complements your testing infrastructure</p>
+                    <p class="product">
+                        <ui:msg description="Home > Products > Jukito">Jukito complements your testing infrastructure
+                        </ui:msg>
+                    </p>
                     <g:Image resource="{home.sliderQuotesDroite}" addStyleNames="{res.style.imgRight}"/>
-                    <a href="#{nameTokens.getProduct}">Click here to learn more about our products...</a>
+                    <a href="#{nameTokens.getProduct}">
+                        <ui:msg description="Home > Products > Learn More">Click here to learn more about our
+                            products...
+                        </ui:msg>
+                    </a>
                 </div>
-
             </div>
             <div id="boutonsProducts">
                 <g:Anchor ui:field="btGWTP" addStyleNames="{home.style.sliderProductsOn}"/>

@@ -6,12 +6,23 @@
     <ui:with field="res" type="com.arcbees.hive.client.resource.Resources"/>
     <ui:style>
         .uxCarousel {
-
+            position: relative;
+            height: 110px;
         }
+
+        .uxCarousel div {
+            height: 110px;
+            position: absolute;
+            top:0;
+            left: 0;
+        }
+
+
 
         .btCarousel {
             position: relative;
             margin: -30px auto 0 auto;
+            height: 120px;
         }
 
         .btsCarousel {
@@ -35,8 +46,9 @@
             float: left;
             cursor: pointer;
         }
+
         .btsCarousel a span, .btsCarousel a:hover span {
-            width:100px;
+            width: 100px;
             font-family: arial, sans-serif;
             color: #fff;
             font-size: 15px;
@@ -75,30 +87,30 @@
         <g:Image resource="{res.beeUx}" addStyleNames="{res.style.imgCenter}"/>
         <div id="btCarousel" class="{style.btCarousel}">
             <div class="{style.btsCarousel}">
-                <a class="{res.style.uxButton}">
+                <g:Anchor ui:field="btWebAppMobile" addStyleNames="{res.style.uxButtonOn}">
                     <span>Mobile website and mobile application</span>
-                </a>
-                <a class="{res.style.uxButton}">
+                </g:Anchor>
+                <g:Anchor ui:field="btInfoDesign" addStyleNames="{res.style.uxButton}">
                     <span>Information design</span>
-                </a>
-                <a class="{res.style.uxButton}">
+                </g:Anchor>
+                <g:Anchor ui:field="btInfoArc" addStyleNames="{res.style.uxButton}">
                     <span>Information architecture</span>
-                </a>
-                <a class="{res.style.uxButton}">
+                </g:Anchor>
+                <g:Anchor ui:field="btInterDesign" addStyleNames="{res.style.uxButton}">
                     <span>Interaction design / interface</span>
-                </a>
-                <a class="{res.style.uxButton}">
+                </g:Anchor>
+                <g:Anchor ui:field="btErgoDesign" addStyleNames="{res.style.uxButton}">
                     <span>Ergonomic design</span>
-                </a>
-                <a class="{res.style.uxButton}">
+                </g:Anchor>
+                <g:Anchor ui:field="btPerfMeasure" addStyleNames="{res.style.uxButton}">
                     <span>Performance measures</span>
-                </a>
+                </g:Anchor>
             </div>
 
             <div class="{style.btCarouselBg}"></div>
         </div>
-        <div id="uxCarousel" class="{style.uxCarousel}">
-            <div>
+        <g:HTMLPanel ui:field="uxCarousel" addStyleNames="{style.uxCarousel}">
+            <g:HTMLPanel addStyleNames="{res.style.uxTextOn}">
                 <h3>
                     <ui:msg description="Ux Design > Mobile website and mobile application > Title">Mobile website and
                         mobile
@@ -119,10 +131,10 @@
                         networks.
                     </ui:msg>
                 </p>
-            </div>
+            </g:HTMLPanel>
 
 
-            <div>
+            <g:HTMLPanel addStyleNames="{res.style.uxTextOff}">
                 <h3>
                     <ui:msg description="Ux Design > Information design > Title">Information design</ui:msg>
                 </h3>
@@ -140,10 +152,10 @@
                         effort.
                     </ui:msg>
                 </p>
-            </div>
+            </g:HTMLPanel>
 
 
-            <div>
+            <g:HTMLPanel addStyleNames="{res.style.uxTextOff}">
                 <h3>
                     <ui:msg description="Ux Design > Information architecture > Title">Information architecture</ui:msg>
                 </h3>
@@ -168,10 +180,10 @@
                     </ui:msg>
 
                 </p>
-            </div>
+            </g:HTMLPanel>
 
 
-            <div>
+            <g:HTMLPanel addStyleNames="{res.style.uxTextOff}">
                 <h3>
                     <ui:msg description="Ux Design > Interaction design / interface > Title">Interaction design /
                         interface
@@ -189,10 +201,10 @@
                         In this way, the user is guided through by interface so intuitive.
                     </ui:msg>
                 </p>
-            </div>
+            </g:HTMLPanel>
 
 
-            <div>
+            <g:HTMLPanel addStyleNames="{res.style.uxTextOff}">
                 <h3>
                     <ui:msg description="Ux Design > Ergonomic design > Title">Ergonomic design</ui:msg>
                 </h3>
@@ -209,10 +221,10 @@
                         purchase, improve the user experience, ergonomics adapt the application to the mobile format.
                     </ui:msg>
                 </p>
-            </div>
+            </g:HTMLPanel>
 
 
-            <div>
+            <g:HTMLPanel addStyleNames="{res.style.uxTextOff}">
                 <h3>
                     <ui:msg description="Ux Design > Performance measures > Title">Performance measures</ui:msg>
                 </h3>
@@ -228,8 +240,8 @@
                         and stopped), your performance and calculate their impact on your investments in the web.
                     </ui:msg>
                 </p>
-            </div>
-        </div>
+            </g:HTMLPanel>
+        </g:HTMLPanel>
 
     </g:HTMLPanel>
 </ui:UiBinder>

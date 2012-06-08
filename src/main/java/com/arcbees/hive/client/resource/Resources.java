@@ -69,6 +69,17 @@ public interface Resources extends ClientBundle {
 
         String uxButton();
 
+        String uxButtonOn();
+
+        String uxButtonOff();
+
+        String uxTextOff();
+
+        String uxTextOn();
+
+        String uxTextOnBack();
+
+
     }
 
     Style style();

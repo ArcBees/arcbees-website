@@ -172,6 +172,19 @@
         overflow: hidden;
     }
 
+    .uxTextOn {
+        display: block;
+    }
+
+    .uxTextOff {
+        display: none;
+    }
+
+    .uxTextOnBack {
+        display: block;
+        bottom: 126px;
+    }
+
         /*------- UtilityEnd -------*/
 
         /*------- Sprite -------*/
@@ -203,11 +216,11 @@
         gwt-image: "bulleBgFooter";
     }
 
-    @sprite .uxButton {
+    @sprite .uxButton, .uxButtonOff {
         gwt-image: "uxButton";
     }
 
-    @sprite .uxButton:hover {
+    @sprite .uxButton:hover, .uxButtonOn, .uxButtonOff:hover {
         gwt-image: "uxButtonRl";
     }
 

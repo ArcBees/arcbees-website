@@ -71,6 +71,7 @@
         }
 
         .home  .sliderProductsContainer {
+            font-family: Verdana,Arial,sans-serif;
             position: relative;
             margin: 55px auto 0 auto;
             width: 750px;
@@ -83,7 +84,7 @@
         <h2>
             <ui:msg description="Home > Title">Have a new web project? Need to redesign your architecture?</ui:msg>
         </h2>
-        <p>
+        <p class="{res.style.pHead}">
             <ui:msg description="Home > Subtitle">With ArcBees, your company may spend more time doing what it does best
                 while we provide you simple web
                 solutions that meet your needs. We are specialists in GWTP, UX design and Cloud Computing
@@ -148,6 +149,7 @@
                         <ui:msg description="Home > Products > Learn More">Click here to learn more about our
                             products...
                         </ui:msg>
+
                     </a>
                 </div>
             </div>

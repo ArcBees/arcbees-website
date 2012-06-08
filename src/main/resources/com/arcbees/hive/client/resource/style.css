@@ -3,8 +3,8 @@
         background-color: #b4c0c8;
     }
 
-    body div {
-        font-family: Verdana;
+    body .mainSectionContainer {
+        font-family: Georgia, Times, serif;
     }
 
     body .headerContainer,
@@ -13,9 +13,14 @@
         background-color: #ffffff;
     }
 
+    body .customersContainer {
+        font-family: Verdana, Arial, sans-serif;
+    }
+
     body .footerContainer {
         background-color: #DDA124;
         color: #5A3A25;
+        font-family: Verdana, Arial, sans-serif;
     }
 
     .localeSwitcher, .rightLinkBox p {
@@ -42,6 +47,11 @@
 
     body .pHead {
         color: #8b9296;
+        font-family: Verdana, Arial, sans-serif;
+    }
+
+    body .pHead span {
+        color: #6a7074;
     }
 
     .footerContainer a {
@@ -191,6 +201,14 @@
 
     @sprite .bulleBgFooter {
         gwt-image: "bulleBgFooter";
+    }
+
+    @sprite .uxButton {
+        gwt-image: "uxButton";
+    }
+
+    @sprite .uxButton:hover {
+        gwt-image: "uxButtonRl";
     }
 
         /*------- SpriteEnd -------*/

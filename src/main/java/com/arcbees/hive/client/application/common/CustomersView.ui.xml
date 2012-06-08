@@ -41,6 +41,9 @@
             letter-spacing: 1px;
             word-spacing: 2px;
         }
+        .none{
+            display: none;
+        }
     </ui:style>
     <g:HTMLPanel
             addStyleNames="{res.style.customersContainer} {style.customersContainer} {res.style.bulleBgSlider} {res.style.cornerTopBottom}">
@@ -50,8 +53,8 @@
                 <a href="http://getbookedin.com/" target="_blank">
                     <g:Image resource="{customers.sliderClientBookedin}"/>
                 </a>
-                <a href="http://cobratag.com/" target="_blank">
-                    <g:Image resource="{customers.sliderClientCobratag}"/>
+                <a href="http://www.storeplacer.com/" target="_blank">
+                    <g:Image resource="{customers.sliderClientStoreplacer}"/>
                 </a>
                 <a href="http://www.protorisk.com/" target="_blank">
                     <g:Image resource="{customers.sliderClientProtorisk}"/>
@@ -59,22 +62,22 @@
                 <a href="http://www.sceneverse.com/" target="_blank">
                     <g:Image resource="{customers.sliderClientSceneverse}"/>
                 </a>
-                <a href="http://www.storeplacer.com/" target="_blank">
+                <a href="http://cobratag.com/" target="_blank" class="{style.none}">
+                    <g:Image resource="{customers.sliderClientCobratag}"/>
+                </a>
+                <a href="http://www.storeplacer.com/" target="_blank" class="{style.none}">
                     <g:Image resource="{customers.sliderClientStoreplacer}"/>
                 </a>
-                <a href="http://www.storeplacer.com/" target="_blank">
+                <a href="http://www.storeplacer.com/" target="_blank" class="{style.none}">
                     <g:Image resource="{customers.sliderClientStoreplacer}"/>
                 </a>
-                <a href="http://www.storeplacer.com/" target="_blank">
-                    <g:Image resource="{customers.sliderClientStoreplacer}"/>
-                </a>
-                <a href="http://www.storeplacer.com/" target="_blank">
+                <a href="http://www.storeplacer.com/" target="_blank" class="{style.none}">
                     <g:Image resource="{customers.sliderClientStoreplacer}"/>
                 </a>
             </div>
             <a id="sliderCustomersPrev"
-               class="{style.customersPrevious} {customers.style.sliderCustomersButtonGauche}"></a>
-            <a id="sliderCustomersNext" class="{style.customersNext} {customers.style.sliderCustomersButtonDroite}"></a>
+               class="{style.customersPrevious} {customers.style.sliderCustomersButtonGauche} {style.none}"></a>
+            <a id="sliderCustomersNext" class="{style.customersNext} {customers.style.sliderCustomersButtonDroite} {style.none}"></a>
             <p>
                 <ui:msg description="Customers > recommendation">
                     Customers who recommend our experience, be it ArcBees services or products!

@@ -66,10 +66,19 @@ public interface Resources extends ClientBundle {
         String localeSwitcher();
 
         String footerContainer();
+
+        String uxButton();
+
     }
 
     Style style();
 
+
+    ImageResource uxButton();
+
+    ImageResource uxButtonRl();
+
+    ImageResource beeUx();
 
     ImageResource logoArcbees();
 

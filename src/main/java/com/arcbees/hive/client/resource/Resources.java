@@ -79,7 +79,6 @@ public interface Resources extends ClientBundle {
 
         String uxTextOnBack();
 
-
     }
 
     Style style();

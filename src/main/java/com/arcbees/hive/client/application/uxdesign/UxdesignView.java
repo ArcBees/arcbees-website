@@ -43,7 +43,6 @@ public class UxdesignView extends ViewImpl implements UxdesignPresenter.MyView {
     public UxdesignView(final Binder binder, Resources resources) {
         this.resources = resources;
         initWidget(binder.createAndBindUi(this));
-
     }
 
     @UiHandler("btWebAppMobile")
@@ -82,28 +81,32 @@ public class UxdesignView extends ViewImpl implements UxdesignPresenter.MyView {
     }
 
     private void swappingText(int index) {
-        if (!uxCarousel.getWidget(index).getStyleName().equals(resources.style().uxTextOn())) {
-            uxCarousel.getWidget(index).setStyleName(resources.style().uxTextOnBack());
-            uxCarousel.getWidget(index).getElement().setAttribute("style", "display:none");
-            $("." + resources.style().uxTextOn()).fadeOut(500, new Function() {
+        Widget widgetSelected = uxCarousel.getWidget(index);
+        final Resources.Style style = resources.style();
+        if (!widgetSelected.getStyleName().equals(style.uxTextOn())) {
+            widgetSelected.setStyleName(style.uxTextOnBack());
+            widgetSelected.getElement().setAttribute("style", "display:none");
+            $("." + style.uxTextOn()).fadeOut(500, new Function() {
                 @Override
                 public void f() {
-                    int lenght = uxCarousel.getWidgetCount();
-                    GQuery index = $("." + resources.style().uxTextOnBack());
+                    int widgetCount = uxCarousel.getWidgetCount();
+                    GQuery widgetOnBack = $("." + style.uxTextOnBack());
 
-                    for (int i = 0; i < lenght; i++) {
-                        uxCarousel.getWidget(i).getElement().setAttribute("style", "display:none");
+                    for (int i = 0; i < widgetCount; i++) {
+                        Widget currentWidget = uxCarousel.getWidget(i);
+                        currentWidget.getElement().setAttribute("style", "display:none");
 
-                        if (!uxCarousel.getWidget(i).getStyleName().equals(resources.style().uxTextOnBack())) {
-                            uxCarousel.getWidget(i).getElement().setClassName("");
+                        if (!currentWidget.getStyleName().equals(style.uxTextOnBack())) {
+                            currentWidget.getElement().setClassName("");
                         }
                     }
-                    index.fadeIn(500, new Function() {
+                    widgetOnBack.fadeIn(500, new Function() {
                         @Override
                         public void f() {
-                            GQuery index = $("." + resources.style().uxTextOnBack());
-                            index.removeClass(resources.style().uxTextOnBack());
-                            index.addClass(resources.style().uxTextOn());
+
+                            GQuery widgetOnBack = $("." + style.uxTextOnBack());
+                            widgetOnBack.removeClass(style.uxTextOnBack());
+                            widgetOnBack.addClass(style.uxTextOn());
                         }
                     });
                 }

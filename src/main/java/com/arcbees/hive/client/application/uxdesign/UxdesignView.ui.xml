@@ -13,11 +13,9 @@
         .uxCarousel div {
             height: 110px;
             position: absolute;
-            top:0;
+            top: 0;
             left: 0;
         }
-
-
 
         .btCarousel {
             position: relative;
@@ -30,7 +28,6 @@
             margin: 0 auto;
             position: relative;
             z-index: 20;
-
         }
 
         .btsCarousel a:first-child, .btsCarousel a:first-child:hover {
@@ -81,7 +78,6 @@
                     orange
                     circles to find benefits.
                 </span>
-
             </ui:msg>
         </p>
         <g:Image resource="{res.beeUx}" addStyleNames="{res.style.imgCenter}"/>
@@ -106,7 +102,6 @@
                     <span>Performance measures</span>
                 </g:Anchor>
             </div>
-
             <div class="{style.btCarouselBg}"></div>
         </div>
         <g:HTMLPanel ui:field="uxCarousel" addStyleNames="{style.uxCarousel}">
@@ -117,7 +112,6 @@
                         application
                     </ui:msg>
                 </h3>
-
                 <p>
                     <ui:msg description="Ux Design > Mobile website and mobile application > Paragraph">ArcBees has
                         expertise in
@@ -132,13 +126,10 @@
                     </ui:msg>
                 </p>
             </g:HTMLPanel>
-
-
             <g:HTMLPanel addStyleNames="{res.style.uxTextOff}">
                 <h3>
                     <ui:msg description="Ux Design > Information design > Title">Information design</ui:msg>
                 </h3>
-
                 <p>
                     <ui:msg description="Ux Design > Information design > Paragraph">ArcBees is able to do the thorough,
                         user-centered facilitating access to information. This study
@@ -181,15 +172,12 @@
 
                 </p>
             </g:HTMLPanel>
-
-
             <g:HTMLPanel addStyleNames="{res.style.uxTextOff}">
                 <h3>
                     <ui:msg description="Ux Design > Interaction design / interface > Title">Interaction design /
                         interface
                     </ui:msg>
                 </h3>
-
                 <p>
                     <ui:msg description="Ux Design > Interaction design / interface > Paragraph">ArcBees offers an
                         interaction
@@ -202,13 +190,10 @@
                     </ui:msg>
                 </p>
             </g:HTMLPanel>
-
-
             <g:HTMLPanel addStyleNames="{res.style.uxTextOff}">
                 <h3>
                     <ui:msg description="Ux Design > Ergonomic design > Title">Ergonomic design</ui:msg>
                 </h3>
-
                 <p>
                     <ui:msg description="Ux Design > Ergonomic design > Paragraph">ArcBees wonders about the intentions
                         and
@@ -222,13 +207,10 @@
                     </ui:msg>
                 </p>
             </g:HTMLPanel>
-
-
             <g:HTMLPanel addStyleNames="{res.style.uxTextOff}">
                 <h3>
                     <ui:msg description="Ux Design > Performance measures > Title">Performance measures</ui:msg>
                 </h3>
-
                 <p>
                     <ui:msg description="Ux Design > Performance measures > Paragraph">Arcbees offers opportunities to
                         assess
@@ -242,6 +224,5 @@
                 </p>
             </g:HTMLPanel>
         </g:HTMLPanel>
-
     </g:HTMLPanel>
 </ui:UiBinder>

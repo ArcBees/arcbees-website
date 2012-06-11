@@ -20,11 +20,11 @@ import com.arcbees.core.client.mvp.ViewWithUiHandlers;
 import com.arcbees.core.client.mvp.uihandlers.UiHandlersStrategy;
 import com.arcbees.hive.client.application.common.HeaderPresenter.MyView;
 import com.arcbees.hive.client.application.common.socialmedia.SocialMediaWidget;
+import com.arcbees.hive.client.application.common.socialmedia.SocialMediaWidgetFactory;
+import com.arcbees.hive.client.application.common.socialmedia.SocialMediaWidgetSize;
 import com.google.gwt.dom.client.AnchorElement;
-import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
-import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 
@@ -38,11 +38,12 @@ public class HeaderView extends ViewWithUiHandlers<HeaderUiHandlers> implements 
     }
 
     @Inject
-    public HeaderView(final Binder uiBinder, final UiHandlersStrategy<HeaderUiHandlers> uiHandlersStrategy,
-                      final SocialMediaWidget socialMediaWidget) {
+    public HeaderView(final Binder uiBinder,
+                      final UiHandlersStrategy<HeaderUiHandlers> uiHandlersStrategy,
+                      final SocialMediaWidgetFactory socialMediaWidgetFactory) {
         super(uiHandlersStrategy);
 
-        this.socialMediaWidget = socialMediaWidget;
+        this.socialMediaWidget = socialMediaWidgetFactory.create(SocialMediaWidgetSize.Small);
 
         initWidget(uiBinder.createAndBindUi(this));
     }

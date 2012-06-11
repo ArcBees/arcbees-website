@@ -15,11 +15,11 @@
 
     </ui:style>
     <g:HTMLPanel addStyleNames="{style.root}">
-        <a href="https://www.facebook.com/QueenOfTheBees" target="_blank" class="{socres.style.facebookIcon}"></a>
-        <a href="http://www.linkedin.com/company/arcbees" target="_blank" class="{socres.style.linkedinIcon}"></a>
-        <a href="http://twitter.com/#!/arcbees" target="_blank" class="{socres.style.twitterIcon}"></a>
-        <a href="http://arcbees.wordpress.com/" target="_blank" class="{socres.style.wordpressIcon}"></a>
+        <a href="https://www.facebook.com/QueenOfTheBees" target="_blank" class="{socres.style.facebookIcon_small}"></a>
+        <a href="http://www.linkedin.com/company/arcbees" target="_blank" class="{socres.style.linkedinIcon_small}"></a>
+        <a href="http://twitter.com/#!/arcbees" target="_blank" class="{socres.style.twitterIcon_small}"></a>
+        <a href="http://arcbees.wordpress.com/" target="_blank" class="{socres.style.wordpressIcon_small}"></a>
         <a href="https://picasaweb.google.com/104570359870395949420" target="_blank"
-           class="{socres.style.picasaIcon}"></a>
+           class="{socres.style.picasaIcon_small}"></a>
     </g:HTMLPanel>
 </ui:UiBinder>

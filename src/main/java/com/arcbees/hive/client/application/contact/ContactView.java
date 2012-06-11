@@ -18,6 +18,9 @@ package com.arcbees.hive.client.application.contact;
 
 import com.arcbees.core.client.mvp.ViewWithUiHandlers;
 import com.arcbees.core.client.mvp.uihandlers.UiHandlersStrategy;
+import com.arcbees.hive.client.application.common.socialmedia.SocialMediaWidget;
+import com.arcbees.hive.client.application.common.socialmedia.SocialMediaWidgetFactory;
+import com.arcbees.hive.client.application.common.socialmedia.SocialMediaWidgetSize;
 import com.arcbees.hive.client.application.contact.ContactPresenter.MyView;
 import com.arcbees.hive.client.resource.constants.MyConstants;
 import com.google.gwt.event.dom.client.BlurEvent;
@@ -42,6 +45,8 @@ public class ContactView extends ViewWithUiHandlers<ContactUiHandlers> implement
     TextBox senderTextBox;
     @UiField
     Button sendButton;
+    @UiField(provided = true)
+    SocialMediaWidget socialMediaWidget;
 
     private String defaultContents;
     private String defaultEmail;
@@ -49,11 +54,13 @@ public class ContactView extends ViewWithUiHandlers<ContactUiHandlers> implement
     @Inject
     public ContactView(final Binder uiBinder,
                        final UiHandlersStrategy<ContactUiHandlers> uiHandlersStrategy,
-                       final MyConstants myConstants) {
+                       final MyConstants myConstants,
+                       final SocialMediaWidgetFactory socialMediaWidgetFactory) {
         super(uiHandlersStrategy);
 
         defaultContents = myConstants.tellUsAboutYourProject();
         defaultEmail = myConstants.yourEmail();
+        socialMediaWidget = socialMediaWidgetFactory.create(SocialMediaWidgetSize.Large);
 
         initWidget(uiBinder.createAndBindUi(this));
 

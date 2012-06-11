@@ -7,37 +7,66 @@ import com.google.gwt.resources.client.ImageResource;
 public interface SocialMediaResources extends ClientBundle {
     public interface Style extends CssResource {
 
-        String facebookIcon();
+        String facebookIcon_small();
 
-        String linkedinIcon();
+        String linkedinIcon_small();
 
-        String twitterIcon();
+        String twitterIcon_small();
 
-        String wordpressIcon();
+        String wordpressIcon_small();
 
-        String picasaIcon();
+        String picasaIcon_small();
 
+        String facebookIcon_large();
+
+        String linkedinIcon_large();
+
+        String twitterIcon_large();
+
+        String wordpressIcon_large();
+
+        String picasaIcon_large();
     }
 
     Style style();
 
-    ImageResource facebookIcon();
+    ImageResource facebookIcon_small();
 
-    ImageResource facebookIconRl();
+    ImageResource facebookIconRl_small();
 
-    ImageResource linkedinIcon();
+    ImageResource linkedinIcon_small();
 
-    ImageResource linkedinIconRl();
+    ImageResource linkedinIconRl_small();
 
-    ImageResource twitterIcon();
+    ImageResource twitterIcon_small();
 
-    ImageResource twitterIconRl();
+    ImageResource twitterIconRl_small();
 
-    ImageResource wordpressIcon();
+    ImageResource wordpressIcon_small();
 
-    ImageResource wordpressIconRl();
+    ImageResource wordpressIconRl_small();
 
-    ImageResource picasaIcon();
+    ImageResource picasaIcon_small();
 
-    ImageResource picasaIconRl();
+    ImageResource picasaIconRl_small();
+
+    ImageResource facebookIcon_large();
+
+    ImageResource facebookIconRl_large();
+
+    ImageResource linkedinIcon_large();
+
+    ImageResource linkedinIconRl_large();
+
+    ImageResource twitterIcon_large();
+
+    ImageResource twitterIconRl_large();
+
+    ImageResource wordpressIcon_large();
+
+    ImageResource wordpressIconRl_large();
+
+    ImageResource picasaIcon_large();
+
+    ImageResource picasaIconRl_large();
 }

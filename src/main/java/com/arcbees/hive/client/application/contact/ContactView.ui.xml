@@ -1,31 +1,102 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:ahive_socmedia='urn:import:com.arcbees.hive.client.application.common.socialmedia'
              ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
              ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator"
              ui:generateLocales="en">
 
     <ui:with field="res" type="com.arcbees.hive.client.resource.Resources"/>
-    <g:HTMLPanel addStyleNames="{res.style.mainSectionContainer} {res.style.bulleBgMain} {res.style.cornerBottom} ">
+    <ui:style>
+        .root {
+            position: relative;
+        }
+
+        .contactInfo {
+            position: absolute;
+            left: 150px;
+            top: 230px;
+        }
+
+        .message {
+            position: absolute;
+            left: 450px;
+            top: 60px;
+            width: 400px;
+        }
+
+        .message input {
+            display: block;
+            width: inherit;
+            height: 40px;
+
+            border: none;
+
+            margin-bottom: 10px;
+
+            padding-left: 10px;
+
+            color: #838383;
+            font-family: Arial;
+        }
+
+        .message textarea {
+            display: block;
+            width: inherit;
+            height: 200px;
+
+            border: none;
+
+            padding: 0px;
+            padding-left: 10px;
+            padding-top: 10px;
+
+            margin-bottom: 10px;
+
+            overflow-y: auto;
+
+            resize: none;
+
+            color: #838383;
+
+            font-family: Arial;
+        }
+
+        .message button {
+            float: right;
+            width: 90px;
+            height: 40px;
+
+            border: none;
+
+            background-color: #e3e3e3;
+        }
+
+        .message button:hover {
+            cursor: pointer;
+            background-color: #bababa;
+        }
+    </ui:style>
+    <g:HTMLPanel
+            addStyleNames="{res.style.mainSectionContainer} {res.style.bulleBgMain} {res.style.cornerBottom} {style.root}">
+        <div class="{style.contactInfo}">
+            <ahive_socmedia:SocialMediaWidget ui:field="socialMediaWidget"/>
+            <p>
+                <ui:msg description="Contact Us > Email">Email:</ui:msg>
+
+                <a href="mailto:queenbee@arcbees.com">queenbee@arcbees.com</a>
+                <br/>
+                <ui:msg description="Contact Us > Phone">Phone:</ui:msg>
+                418-473-1216
+            </p>
+        </div>
+        <div class="{style.message}">
+            <g:TextBox ui:field="senderTextBox" addStyleNames="{res.style.cornerTopBottom}"/>
+            <g:TextArea ui:field="contentsTextArea" addStyleNames="{res.style.cornerTopBottom}"/>
+            <g:Button ui:field="sendButton" addStyleNames="{res.style.cornerTopBottom}">
+                <ui:msg description="Contact Us > Send">Send</ui:msg>
+            </g:Button>
+        </div>
         <g:Image resource="{res.contactUS}"/>
-        <a href="http://arcbees.wordpress.com/" target="_blank">Blog</a>,
-        <a href="http://twitter.com/arcbees" target="_blank">Twitter</a>,
-        <a href="http://www.linkedin.com/company/arcbees?trk=fc_badge" target="_blank">LinkedIn</a>
-        <a href="http://www.facebook.com/group.php?gid=138324539537313" target="_blank">Facebook</a>.
-
-        <p>
-            <ui:msg description="Contact Us > Email">Email:</ui:msg>
-
-            <a href="mailto:queenbee@arcbees.com">queenbee@arcbees.com</a>
-            <br/>
-            <ui:msg description="Contact Us > Phone">Phone:</ui:msg>
-            418-473-1216
-        </p>
-
-        <g:TextBox ui:field="senderTextBox"/>
-        <g:TextArea ui:field="contentsTextArea"/>
-        <g:Button ui:field="sendButton">
-            <ui:msg description="Contact Us > Send">Send</ui:msg>
-        </g:Button>
     </g:HTMLPanel>
 </ui:UiBinder>

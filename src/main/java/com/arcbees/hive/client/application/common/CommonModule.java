@@ -18,12 +18,15 @@ package com.arcbees.hive.client.application.common;
 
 import com.arcbees.core.client.mvp.uihandlers.ProviderUiHandlersStrategy;
 import com.arcbees.core.client.mvp.uihandlers.UiHandlersStrategy;
+import com.arcbees.hive.client.application.common.socialmedia.SocialMediaModule;
 import com.google.inject.TypeLiteral;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
 public class CommonModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
+        install(new SocialMediaModule());
+
         bindPresenter(AppPresenter.class, AppPresenter.MyView.class, AppView.class,
                 AppPresenter.MyProxy.class);
 

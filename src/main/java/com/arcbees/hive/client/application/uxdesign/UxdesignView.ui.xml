@@ -105,7 +105,7 @@
             <div class="{style.btCarouselBg}"></div>
         </div>
         <g:HTMLPanel ui:field="uxCarousel" addStyleNames="{style.uxCarousel}">
-            <g:HTMLPanel addStyleNames="{res.style.uxTextOn}">
+            <g:HTMLPanel addStyleNames="{res.style.textOn}">
                 <h3>
                     <ui:msg description="Ux Design > Mobile website and mobile application > Title">Mobile website and
                         mobile
@@ -126,7 +126,7 @@
                     </ui:msg>
                 </p>
             </g:HTMLPanel>
-            <g:HTMLPanel addStyleNames="{res.style.uxTextOff}">
+            <g:HTMLPanel addStyleNames="{res.style.textOff}">
                 <h3>
                     <ui:msg description="Ux Design > Information design > Title">Information design</ui:msg>
                 </h3>
@@ -146,7 +146,7 @@
             </g:HTMLPanel>
 
 
-            <g:HTMLPanel addStyleNames="{res.style.uxTextOff}">
+            <g:HTMLPanel addStyleNames="{res.style.textOff}">
                 <h3>
                     <ui:msg description="Ux Design > Information architecture > Title">Information architecture</ui:msg>
                 </h3>
@@ -172,7 +172,7 @@
 
                 </p>
             </g:HTMLPanel>
-            <g:HTMLPanel addStyleNames="{res.style.uxTextOff}">
+            <g:HTMLPanel addStyleNames="{res.style.textOff}">
                 <h3>
                     <ui:msg description="Ux Design > Interaction design / interface > Title">Interaction design /
                         interface
@@ -190,7 +190,7 @@
                     </ui:msg>
                 </p>
             </g:HTMLPanel>
-            <g:HTMLPanel addStyleNames="{res.style.uxTextOff}">
+            <g:HTMLPanel addStyleNames="{res.style.textOff}">
                 <h3>
                     <ui:msg description="Ux Design > Ergonomic design > Title">Ergonomic design</ui:msg>
                 </h3>
@@ -207,7 +207,7 @@
                     </ui:msg>
                 </p>
             </g:HTMLPanel>
-            <g:HTMLPanel addStyleNames="{res.style.uxTextOff}">
+            <g:HTMLPanel addStyleNames="{res.style.textOff}">
                 <h3>
                     <ui:msg description="Ux Design > Performance measures > Title">Performance measures</ui:msg>
                 </h3>

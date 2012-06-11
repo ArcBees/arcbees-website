@@ -73,11 +73,11 @@ public interface Resources extends ClientBundle {
 
         String uxButtonOff();
 
-        String uxTextOff();
+        String textOff();
 
-        String uxTextOn();
+        String textOn();
 
-        String uxTextOnBack();
+        String textOnBack();
 
     }
 

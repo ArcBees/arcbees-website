@@ -6,58 +6,107 @@
              ui:generateLocales="en">
 
     <ui:with field="res" type="com.arcbees.hive.client.resource.Resources"/>
+    <ui:with field="product" type="com.arcbees.hive.client.resource.products.ProductsResources"/>
+    <ui:style>
+        .productsTextContainer {
+            height: 130px;
+            position: relative;
+        }
 
+        .productsTextContainer p {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+        .productsImgContainer {
+            margin-bottom: 25px;
+        }
+    </ui:style>
     <g:HTMLPanel addStyleNames="{res.style.mainSectionContainer} {res.style.bulleBgMain} {res.style.cornerBottom}">
-        <p>
+        <p class="{res.style.pHead}">
             <ui:msg description="Products > Intro paragraph">Designed by top shelf geeks, ArcBees' open source software
                 speed up and sharpen your projects!
             </ui:msg>
         </p>
-        <p>
-            <ui:msg description="Products > GWTP > description">GWT-Platform (gwtp) is the most popular
-                Model-View-Presenter for the Google Web
-                Toolkit (GWT). This platform
-                ensures that your application with GWT will be built to best industry practices while accelerating the
-                development of web applications, which is particularly useful for ensuring quality and maintainability
-                oflarge-scale web application. GWT-Platform is composed of different modules including the MVP framework
-                itself, a command pattern module, a service to make modern webapps crawlable by search engines, and
-                tools to
-                help with various facets of GWT project developement.This open source framework, introduced by ArcBees
-                in
-                early 2010, has grown rapidly thanks to itswidespread
-                adoption. His explosive popularity led ArcBees to present it to the prestigious Google I / O in 2011.
-            </ui:msg>
-        </p>
-        <p>
-            <ui:msg description="Products > Jukito > description">Jukito complements your testing infrastructure by
-                letting you rely on the power of
-                dependency injection
-                directly in your tests. Jukito's auto-mocking mechanism will dramatically reduce the size of your test
-                classes, leading to tests that are both more reasable and easier to maintain. Jukito is a very
-                light-weight
-                addition to your testing infrastructure and its use can easily be combined with other testing
-                technologies.
-                It is therefore easy to adopt Jukito midway through a project, letting you gradually simplify your
-                testing
-                code.
-            </ui:msg>
-        </p>
-        <p>
-            <ui:msg description="Products > GAE studio > description">GAE Studio is a tool destined to assist developers
-                in optimizing their applications hosted on Google
-                App
-                Engine. Using real-time analysis of database requests, GAE Studio will rapidly identify inefficient
-                queries
-                and gather precious data that will help developers trim query delays. GAE Studio also allows database
-                exploration, entry modification and deletion. As a whole, GAE Studio is an essential tool for developers
-                who
-                wish to speed up their GAE applications.
-            </ui:msg>
-        </p>
-        <p>
-            <ui:msg description="Products > BeeHIVE > description">The last ArcBees product is still in development and
-                the code name for this product is BeeHIVE.
-            </ui:msg>
-        </p>
+        <div class="{style.productsImgContainer}">
+            <g:Anchor ui:field="btGWTP" addStyleNames="{product.style.productsGWTPOn}"/>
+            <g:Anchor ui:field="btJukito" addStyleNames="{product.style.productsJukito}"/>
+            <g:Anchor ui:field="btGAE" addStyleNames="{product.style.productsGAE}"/>
+            <g:Anchor ui:field="btBH" addStyleNames="{product.style.productsBH}"/>
+        </div>
+        <g:HTMLPanel ui:field="productsTextContainer" addStyleNames="{style.productsTextContainer}">
+            <g:HTMLPanel addStyleNames="{res.style.textOn}">
+                <p>
+                    <ui:msg description="Products > GWTP > description">GWT-Platform (gwtp) is the most popular
+                        Model-View-Presenter for the Google Web
+                        Toolkit (GWT). This platform
+                        ensures that your application with GWT will be built to best industry practices while
+                        accelerating
+                        the
+                        development of web applications, which is particularly useful for ensuring quality and
+                        maintainability
+                        oflarge-scale web application. GWT-Platform is composed of different modules including the MVP
+                        framework
+                        itself, a command pattern module, a service to make modern webapps crawlable by search engines,
+                        and
+                        tools to
+                        help with various facets of GWT project developement.This open source framework, introduced by
+                        ArcBees
+                        in
+                        early 2010, has grown rapidly thanks to itswidespread
+                        adoption. His explosive popularity led ArcBees to present it to the prestigious Google I / O in
+                        2011.
+                    </ui:msg>
+                </p>
+            </g:HTMLPanel>
+            <g:HTMLPanel addStyleNames="{res.style.textOff}">
+                <p>
+                    <ui:msg description="Products > Jukito > description">Jukito complements your testing infrastructure
+                        by
+                        letting you rely on the power of
+                        dependency injection
+                        directly in your tests. Jukito's auto-mocking mechanism will dramatically reduce the size of
+                        your
+                        test
+                        classes, leading to tests that are both more reasable and easier to maintain. Jukito is a very
+                        light-weight
+                        addition to your testing infrastructure and its use can easily be combined with other testing
+                        technologies.
+                        It is therefore easy to adopt Jukito midway through a project, letting you gradually simplify
+                        your
+                        testing
+                        code.
+                    </ui:msg>
+                </p>
+            </g:HTMLPanel>
+            <g:HTMLPanel addStyleNames="{res.style.textOff}">
+                <p>
+                    <ui:msg description="Products > GAE studio > description">GAE Studio is a tool destined to assist
+                        developers
+                        in optimizing their applications hosted on Google
+                        App
+                        Engine. Using real-time analysis of database requests, GAE Studio will rapidly identify
+                        inefficient
+                        queries
+                        and gather precious data that will help developers trim query delays. GAE Studio also allows
+                        database
+                        exploration, entry modification and deletion. As a whole, GAE Studio is an essential tool for
+                        developers
+                        who
+                        wish to speed up their GAE applications.
+                    </ui:msg>
+                </p>
+            </g:HTMLPanel>
+            <g:HTMLPanel addStyleNames="{res.style.textOff}">
+                <p>
+                    <ui:msg description="Products > BeeHIVE > description">The last ArcBees product is still in
+                        development
+                        and
+                        the code name for this product is BeeHIVE.
+                    </ui:msg>
+                </p>
+            </g:HTMLPanel>
+        </g:HTMLPanel>
     </g:HTMLPanel>
 </ui:UiBinder>

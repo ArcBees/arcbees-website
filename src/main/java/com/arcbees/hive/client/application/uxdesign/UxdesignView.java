@@ -83,20 +83,20 @@ public class UxdesignView extends ViewImpl implements UxdesignPresenter.MyView {
     private void swappingText(int index) {
         Widget widgetSelected = uxCarousel.getWidget(index);
         final Resources.Style style = resources.style();
-        if (!widgetSelected.getStyleName().equals(style.uxTextOn())) {
-            widgetSelected.setStyleName(style.uxTextOnBack());
+        if (!widgetSelected.getStyleName().equals(style.textOn())) {
+            widgetSelected.setStyleName(style.textOnBack());
             widgetSelected.getElement().setAttribute("style", "display:none");
-            $("." + style.uxTextOn()).fadeOut(500, new Function() {
+            $("." + style.textOn()).fadeOut(500, new Function() {
                 @Override
                 public void f() {
                     int widgetCount = uxCarousel.getWidgetCount();
-                    GQuery widgetOnBack = $("." + style.uxTextOnBack());
+                    GQuery widgetOnBack = $("." + style.textOnBack());
 
                     for (int i = 0; i < widgetCount; i++) {
                         Widget currentWidget = uxCarousel.getWidget(i);
                         currentWidget.getElement().setAttribute("style", "display:none");
 
-                        if (!currentWidget.getStyleName().equals(style.uxTextOnBack())) {
+                        if (!currentWidget.getStyleName().equals(style.textOnBack())) {
                             currentWidget.getElement().setClassName("");
                         }
                     }
@@ -104,9 +104,9 @@ public class UxdesignView extends ViewImpl implements UxdesignPresenter.MyView {
                         @Override
                         public void f() {
 
-                            GQuery widgetOnBack = $("." + style.uxTextOnBack());
-                            widgetOnBack.removeClass(style.uxTextOnBack());
-                            widgetOnBack.addClass(style.uxTextOn());
+                            GQuery widgetOnBack = $("." + style.textOnBack());
+                            widgetOnBack.removeClass(style.textOnBack());
+                            widgetOnBack.addClass(style.textOn());
                         }
                     });
                 }

@@ -172,15 +172,15 @@
         overflow: hidden;
     }
 
-    .uxTextOn {
+    .textOn {
         display: block;
     }
 
-    .uxTextOff {
+    .textOff {
         display: none;
     }
 
-    .uxTextOnBack {
+    .textOnBack {
         display: block;
         bottom: 126px;
     }

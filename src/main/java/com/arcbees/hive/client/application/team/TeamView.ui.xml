@@ -19,16 +19,41 @@
             -webkit-border-radius: 5px;
             overflow: hidden;
 
-            margin-right: 5px;
+            margin-right: 12px;
         }
 
         .aRow > div > img + div {
-            margin-top: 7px;
+            margin-top: 9px;
+            font-size: 0.9em;
         }
 
         .aRow > div > div + div {
             font-size: 0.8em;
             font-style: italic;
+        }
+
+        .associatedBeeRow {
+            margin-bottom: 20px;
+            height: 113px
+        }
+
+        .associatedBeeRow > img {
+            float: left;
+
+            border-radius: 8px;
+            -moz-border-radius: 8px;
+            -webkit-border-radius: 8px;
+            overflow: hidden;
+
+            margin-right: 15px;
+        }
+
+        .associatedBeeRow > div {
+            padding-top: 5px;
+        }
+
+        .clearBoth {
+            clear: both;
         }
     </ui:style>
     <g:HTMLPanel addStyleNames="{res.style.mainSectionContainer} {res.style.cornerBottom}">
@@ -42,62 +67,101 @@
         <h2>
             <ui:msg description="Our Team > Associated bees title">Associates Bees</ui:msg>
         </h2>
-        Christian Goudreau
-        <br/>
-        <ui:msg description="Our Team > Chris Goudreau > Position">Co-Founder / CEO</ui:msg>
-        <br/>
-        <p>
-            <ui:msg description="Our Team > Chris Goudreau > Bio">Over the last five years, Christian was lead developer
-                for different companies to design many Web
-                applications based on the Cloud. Other than his passion for development and software engineering,
-                Christian
-                is self-ta ught and his involvement is directly linked to the success of several open-source projects
-                like
-                GWT-platform and Jukito.
-            </ui:msg>
-        </p>
-        Philippe Beaudoin
-        <br/>
-        <ui:msg description="Our Team > Philippe Beaudoin > Position">Co-Founder / CTO</ui:msg>
-        <br/>
-        <p>
-            <ui:msg description="Our Team > Philippe Beaudoin > Bio">Philippe holds a Ph.D. in computer science from the
-                University of Montreal and was a postdoctoral
-                researcher
-                in the Department of Computer Science, University of British Columbia. Having worked in graphics
-                hardware,
-                where his work has given him a patent, Philippe has 15 years experience in the gaming industry and the
-                development of Web applications.
-            </ui:msg>
-        </p>
-        Francis Ménard
-        <br/>
-        <ui:msg description="Our Team > Francis Menard > Position">Co-Founder / CFO</ui:msg>
-        <br/>
-        <p>
-            <ui:msg description="Our Team > Francis Menard > Bio">Francis began his career in online commercial sales
-                application development and application Web. It is
-                through his hard work and strong demand that Francis has specialized, over the years, in
-                telecommunication
-                project management and delivery. Self-taught, his attention to solve real business problems led him
-                always
-                be on top of new technological advances.
-            </ui:msg>
-        </p>
-        David Marcotte
-        <br/>
-        <ui:msg description="Our Team > David Marcotte > Position">Co-Founder / CMO</ui:msg>
-        <br/>
-        <p>
-            <ui:msg description="Our Team > David Marcotte > Bio">David has a strong interest in visual communication,
-                which is a major asset for any company’s
-                success.
-                Multidisciplinary in the heart, he is a prizewinner and lends his artistic talent to different project
-                around Quebec. His expertise as art designer is being web site conception to VFX cinema's industry (Red
-                Tails, Immortals, Three Musketeers, Underworld 4..)
-            </ui:msg>
 
-        </p>
+        <div class="{style.associatedBeeRow}">
+            <img src="http://www.placehold.it/113x113" alt="Christian Goudreau"/>
+            <div>Christian Goudreau
+                <br/>
+                <ui:msg description="Our Team > Chris Goudreau > Position">Co-Founder / CEO</ui:msg>
+                <br/>
+                <p>
+                    <ui:msg description="Our Team > Chris Goudreau > Bio">Over the last five years, Christian was lead
+                        developer
+                        for different companies to design many Web
+                        applications based on the Cloud. Other than his passion for development and software
+                        engineering,
+                        Christian
+                        is self-ta ught and his involvement is directly linked to the success of several open-source
+                        projects
+                        like
+                        GWT-platform and Jukito.
+                    </ui:msg>
+                </p>
+            </div>
+        </div>
+        <div class="{style.clearBoth}"/>
+
+        <div class="{style.associatedBeeRow}">
+            <img src="http://www.placehold.it/113x113" alt="Philippe Beaudoin"/>
+            <div>Philippe Beaudoin
+                <br/>
+                <ui:msg description="Our Team > Philippe Beaudoin > Position">Co-Founder / CTO</ui:msg>
+                <br/>
+                <p>
+                    <ui:msg description="Our Team > Philippe Beaudoin > Bio">Philippe holds a Ph.D. in computer science
+                        from
+                        the
+                        University of Montreal and was a postdoctoral
+                        researcher
+                        in the Department of Computer Science, University of British Columbia. Having worked in graphics
+                        hardware,
+                        where his work has given him a patent, Philippe has 15 years experience in the gaming industry
+                        and
+                        the
+                        development of Web applications.
+                    </ui:msg>
+                </p>
+            </div>
+        </div>
+        <div class="{style.clearBoth}"/>
+
+        <div class="{style.associatedBeeRow}">
+            <img src="http://www.placehold.it/113x113" alt="Francis Ménard"/>
+            <div>Francis Ménard
+                <br/>
+                <ui:msg description="Our Team > Francis Menard > Position">Co-Founder / CFO</ui:msg>
+                <br/>
+                <p>
+                    <ui:msg description="Our Team > Francis Menard > Bio">Francis began his career in online commercial
+                        sales
+                        application development and application Web. It is
+                        through his hard work and strong demand that Francis has specialized, over the years, in
+                        telecommunication
+                        project management and delivery. Self-taught, his attention to solve real business problems led
+                        him
+                        always
+                        be on top of new technological advances.
+                    </ui:msg>
+                </p>
+            </div>
+        </div>
+        <div class="{style.clearBoth}"/>
+
+        <div class="{style.associatedBeeRow}">
+            <img src="http://www.placehold.it/113x113" alt="David Marcotte"/>
+            <div>David Marcotte
+                <br/>
+                <ui:msg description="Our Team > David Marcotte > Position">Co-Founder / CMO</ui:msg>
+                <br/>
+                <p>
+                    <ui:msg description="Our Team > David Marcotte > Bio">David has a strong interest in visual
+                        communication,
+                        which is a major asset for any company’s
+                        success.
+                        Multidisciplinary in the heart, he is a prizewinner and lends his artistic talent to different
+                        project
+                        around Quebec. His expertise as art designer is being web site conception to VFX cinema's
+                        industry
+                        (Red
+                        Tails, Immortals, Three Musketeers, Underworld 4..)
+                    </ui:msg>
+
+                </p>
+            </div>
+
+        </div>
+        <div class="{style.clearBoth}"/>
+
         <h2>
             <ui:msg description="Our Team > Developer bees title">Developer Bees</ui:msg>
         </h2>

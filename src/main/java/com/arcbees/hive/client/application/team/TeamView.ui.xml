@@ -6,6 +6,31 @@
              ui:generateLocales="en">
 
     <ui:with field="res" type="com.arcbees.hive.client.resource.Resources"/>
+    <ui:style>
+        .aRow {
+            margin-bottom: 10px;
+        }
+
+        .aRow img {
+            float: left;
+
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            overflow: hidden;
+
+            margin-right: 5px;
+        }
+
+        .aRow > div > img + div {
+            margin-top: 7px;
+        }
+
+        .aRow > div > div + div {
+            font-size: 0.8em;
+            font-style: italic;
+        }
+    </ui:style>
     <g:HTMLPanel addStyleNames="{res.style.mainSectionContainer} {res.style.cornerBottom}">
         <p class="pHead">
             <ui:msg description="Our Team > Intro paragraph">All our bees contributes to the success of our projects and
@@ -64,7 +89,8 @@
         <ui:msg description="Our Team > David Marcotte > Position">Co-Founder / CMO</ui:msg>
         <br/>
         <p>
-            <ui:msg description="Our Team > David Marcotte > Bio">David has a strong interest in visual communication, which is a major asset for any company’s
+            <ui:msg description="Our Team > David Marcotte > Bio">David has a strong interest in visual communication,
+                which is a major asset for any company’s
                 success.
                 Multidisciplinary in the heart, he is a prizewinner and lends his artistic talent to different project
                 around Quebec. His expertise as art designer is being web site conception to VFX cinema's industry (Red
@@ -75,36 +101,83 @@
         <h2>
             <ui:msg description="Our Team > Developer bees title">Developer Bees</ui:msg>
         </h2>
-        Laure Gabrielle Chatenet
-        <br/>
-        <ui:msg description="Our Team > UX specialist">UX Specialist</ui:msg>
-        <br/>
-        Javier Fernandez-Ivern
-        <br/>
-        <ui:msg description="Our Team > Senior Developer">Senior Developer</ui:msg>
-        <br/>
-        Maxime Mériouma-Caron
-        <br/>
-        <ui:msg description="Our Team > Developer">Developer</ui:msg>
-        <br/>
-        Vincent Roseberry
-        <br/>
-        <ui:msg description="Our Team > Developer">Developer</ui:msg>
-        <br/>
-        Jacques-Olivier Desjardins Bernier
-        <br/>
-        <ui:msg description="Our Team > Developer">Developer</ui:msg>
-        <br/>
-        Sylvain Perron
-        <br/>
-        <ui:msg description="Our Team > Developer">Developer</ui:msg>
-        <br/>
-        Simon-Pierre Gingras
-        <br/>
-        <ui:msg description="Our Team > Developer">Developer</ui:msg>
-        <br/>
-        Christopher Viel
-        <br/>
-        <ui:msg description="Our Team > Developer">Developer</ui:msg>
+        <div class="row-fluid {style.aRow}">
+            <div class="span3">
+                <img src="http://www.placehold.it/60x60" alt="lol"/>
+                <div>Laure
+                    <br/>
+                    Gabrielle Chatenet
+                </div>
+                <div>
+                    <ui:msg description="Our Team > UX specialist">UX Specialist</ui:msg>
+                </div>
+            </div>
+            <div class="span3">
+                <img src="http://www.placehold.it/60x60" alt="lol"/>
+                <div>Javier
+                    <br/>
+                    Fernandez-Ivern
+                </div>
+                <div>
+                    <ui:msg description="Our Team > Senior Developer">Senior Developer</ui:msg>
+                </div>
+            </div>
+            <div class="span3">
+                <img src="http://www.placehold.it/60x60" alt="lol"/>
+                <div>Maxime
+                    <br/>
+                    Mériouma-Caron
+                </div>
+                <div>
+                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
+                </div>
+            </div>
+            <div class="span3">
+                <img src="http://www.placehold.it/60x60" alt="lol"/>
+                <div>Vincent<br/>Roseberry
+                </div>
+                <div>
+                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
+                </div>
+            </div>
+        </div>
+        <div class="row-fluid {style.aRow}">
+            <div class="span3">
+                <img src="http://www.placehold.it/60x60" alt="lol"/>
+                <div>Jacques-Olivier
+                    <br/>
+                    Desjardins Bernier
+                </div>
+                <div>
+                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
+                </div>
+            </div>
+            <div class="span3">
+                <img src="http://www.placehold.it/60x60" alt="lol"/>
+                <div>Sylvain<br/>Perron
+                </div>
+                <div>
+                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
+                </div>
+            </div>
+            <div class="span3">
+                <img src="http://www.placehold.it/60x60" alt="lol"/>
+                <div>Simon-Pierre<br/>Gingras
+                </div>
+                <div>
+                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
+                </div>
+            </div>
+            <div class="span3">
+                <img src="http://www.placehold.it/60x60" alt="lol"/>
+                <div>Christopher
+                    <br/>
+                    Viel
+                </div>
+                <div>
+                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
+                </div>
+            </div>
+        </div>
     </g:HTMLPanel>
 </ui:UiBinder>

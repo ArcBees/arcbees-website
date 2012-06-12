@@ -8,14 +8,15 @@
 
     <ui:with field="res" type="com.arcbees.hive.client.resource.Resources"/>
     <ui:style>
-        .root {
+        body .root {
             position: relative;
+            height: 420px;
         }
 
         .contactInfo {
             position: absolute;
-            left: 150px;
-            top: 230px;
+            left: 130px;
+            top: 240px;
         }
 
         .message {
@@ -29,13 +30,9 @@
             display: block;
             width: inherit;
             height: 40px;
-
             border: none;
-
             margin-bottom: 10px;
-
             padding-left: 10px;
-
             color: #838383;
             font-family: Arial;
         }
@@ -44,21 +41,14 @@
             display: block;
             width: inherit;
             height: 200px;
-
             border: none;
-
             padding: 0px;
             padding-left: 10px;
             padding-top: 10px;
-
             margin-bottom: 10px;
-
             overflow-y: auto;
-
             resize: none;
-
             color: #838383;
-
             font-family: Arial;
         }
 
@@ -66,9 +56,7 @@
             float: right;
             width: 90px;
             height: 40px;
-
             border: none;
-
             background-color: #e3e3e3;
         }
 
@@ -78,7 +66,7 @@
         }
     </ui:style>
     <g:HTMLPanel
-            addStyleNames="{res.style.mainSectionContainer} {res.style.bulleBgMain} {res.style.cornerBottom} {style.root}">
+            addStyleNames="{res.style.mainSectionContainer} {res.style.contactUS} {res.style.cornerBottom} {style.root}">
         <div class="{style.contactInfo}">
             <ahive_socmedia:SocialMediaWidget ui:field="socialMediaWidget"/>
             <p>
@@ -97,6 +85,5 @@
                 <ui:msg description="Contact Us > Send">Send</ui:msg>
             </g:Button>
         </div>
-        <g:Image resource="{res.contactUS}"/>
     </g:HTMLPanel>
 </ui:UiBinder>

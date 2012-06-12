@@ -69,7 +69,7 @@
         }
     </ui:style>
     <g:HTMLPanel addStyleNames="{res.style.mainSectionContainer} {res.style.cornerBottom}">
-        <p class="pHead">
+        <p class="{res.style.pHead}">
             <ui:msg description="Our Team > Intro paragraph">All our bees contributes to the success of our projects and
                 each of them is a
                 val uable asset to the company.
@@ -193,7 +193,7 @@
         </h2>
         <div class="row-fluid {style.aRow}">
             <div class="span3">
-                <img src="http://www.placehold.it/60x72" alt="lol"/>
+                <g:Image resource="{teamres.team_laure_chatenet}" altText="Laure Gabrielle Chatenet"/>
                 <div>Laure Gabrielle
                     <br/>
                     Chatenet
@@ -281,7 +281,14 @@
                     <ui:msg description="Our Team > Developer">Developer</ui:msg>
                 </div>
             </div>
-
+            <div class="span3">
+                <g:Image resource="{teamres.team_alex_breton}" altText="Alexandre Breton"/>
+                <div>Alexandre<br/>Breton
+                </div>
+                <div>
+                    <ui:msg description="Our Team > Integrator">Integrator</ui:msg>
+                </div>
+            </div>
         </div>
     </g:HTMLPanel>
 </ui:UiBinder>

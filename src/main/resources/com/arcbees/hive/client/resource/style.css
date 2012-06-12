@@ -204,6 +204,7 @@
 
     @sprite .mainDegradeBgSprite {
         gwt-image: "mainDegradeBg";
+        background-position: 0 -50px;
     }
 
     @sprite .bulleBgHeader {

@@ -6,6 +6,7 @@
              ui:generateLocales="en">
 
     <ui:with field="res" type="com.arcbees.hive.client.resource.Resources"/>
+    <ui:with field='teamres' type='com.arcbees.hive.client.resource.team.TeamResources'/>
     <ui:style>
         .aRow {
             margin-bottom: 10px;
@@ -14,26 +15,27 @@
         .aRow img {
             float: left;
 
-            border-radius: 5px;
-            -moz-border-radius: 5px;
-            -webkit-border-radius: 5px;
+            border-radius: 7px;
+            -moz-border-radius: 7px;
+            -webkit-border-radius: 7px;
             overflow: hidden;
 
             margin-right: 12px;
         }
 
         .aRow > div > img + div {
-            margin-top: 9px;
+            margin-top: 13px;
             font-size: 0.9em;
         }
 
         .aRow > div > div + div {
             font-size: 0.8em;
             font-style: italic;
+            color: #5B676F;
         }
 
         .associatedBeeRow {
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             height: 113px
         }
 
@@ -49,11 +51,21 @@
         }
 
         .associatedBeeRow > div {
-            padding-top: 5px;
+            padding-top: 10px;
         }
 
         .clearBoth {
             clear: both;
+        }
+
+        .associatedBeeTitle {
+            margin-bottom: 5px;
+        }
+
+        .associatedBeeTitle > div + div {
+            font-size: 0.9em;
+            font-style: italic;
+            color: #5B676F;
         }
     </ui:style>
     <g:HTMLPanel addStyleNames="{res.style.mainSectionContainer} {res.style.cornerBottom}">
@@ -69,11 +81,15 @@
         </h2>
 
         <div class="{style.associatedBeeRow}">
-            <img src="http://www.placehold.it/113x113" alt="Christian Goudreau"/>
-            <div>Christian Goudreau
-                <br/>
-                <ui:msg description="Our Team > Chris Goudreau > Position">Co-Founder / CEO</ui:msg>
-                <br/>
+            <g:Image resource="{teamres.team_chris_goudreau}" altText="Christian Goudreau"/>
+            <div>
+                <div class="{style.associatedBeeTitle}">
+                    <div>Christian Goudreau</div>
+                    <div>
+                        <ui:msg description="Our Team > Chris Goudreau > Position">Co-Founder / CEO</ui:msg>
+                    </div>
+                </div>
+
                 <p>
                     <ui:msg description="Our Team > Chris Goudreau > Bio">Over the last five years, Christian was lead
                         developer
@@ -92,11 +108,15 @@
         <div class="{style.clearBoth}"/>
 
         <div class="{style.associatedBeeRow}">
-            <img src="http://www.placehold.it/113x113" alt="Philippe Beaudoin"/>
-            <div>Philippe Beaudoin
-                <br/>
-                <ui:msg description="Our Team > Philippe Beaudoin > Position">Co-Founder / CTO</ui:msg>
-                <br/>
+            <g:Image resource="{teamres.team_philippe_beaudoin}" altText="Philippe Beaudoin"/>
+            <div>
+                <div class="{style.associatedBeeTitle}">
+                    <div>Philippe Beaudoin</div>
+                    <div>
+                        <ui:msg description="Our Team > Philippe Beaudoin > Position">Co-Founder / CTO</ui:msg>
+                    </div>
+                </div>
+
                 <p>
                     <ui:msg description="Our Team > Philippe Beaudoin > Bio">Philippe holds a Ph.D. in computer science
                         from
@@ -116,11 +136,14 @@
         <div class="{style.clearBoth}"/>
 
         <div class="{style.associatedBeeRow}">
-            <img src="http://www.placehold.it/113x113" alt="Francis Ménard"/>
-            <div>Francis Ménard
-                <br/>
-                <ui:msg description="Our Team > Francis Menard > Position">Co-Founder / CFO</ui:msg>
-                <br/>
+            <g:Image resource="{teamres.team_francis_menard}" altText="Francis Ménard"/>
+            <div>
+                <div class="{style.associatedBeeTitle}">
+                    <div>Francis Ménard</div>
+                    <div>
+                        <ui:msg description="Our Team > Francis Menard > Position">Co-Founder / CFO</ui:msg>
+                    </div>
+                </div>
                 <p>
                     <ui:msg description="Our Team > Francis Menard > Bio">Francis began his career in online commercial
                         sales
@@ -138,11 +161,14 @@
         <div class="{style.clearBoth}"/>
 
         <div class="{style.associatedBeeRow}">
-            <img src="http://www.placehold.it/113x113" alt="David Marcotte"/>
-            <div>David Marcotte
-                <br/>
-                <ui:msg description="Our Team > David Marcotte > Position">Co-Founder / CMO</ui:msg>
-                <br/>
+            <g:Image resource="{teamres.team_david_marcotte}" altText="David Marcotte"/>
+            <div>
+                <div class="{style.associatedBeeTitle}">
+                    <div>David Marcotte</div>
+                    <div>
+                        <ui:msg description="Our Team > David Marcotte > Position">Co-Founder / CMO</ui:msg>
+                    </div>
+                </div>
                 <p>
                     <ui:msg description="Our Team > David Marcotte > Bio">David has a strong interest in visual
                         communication,
@@ -167,17 +193,17 @@
         </h2>
         <div class="row-fluid {style.aRow}">
             <div class="span3">
-                <img src="http://www.placehold.it/60x60" alt="lol"/>
-                <div>Laure
+                <img src="http://www.placehold.it/60x72" alt="lol"/>
+                <div>Laure Gabrielle
                     <br/>
-                    Gabrielle Chatenet
+                    Chatenet
                 </div>
                 <div>
                     <ui:msg description="Our Team > UX specialist">UX Specialist</ui:msg>
                 </div>
             </div>
             <div class="span3">
-                <img src="http://www.placehold.it/60x60" alt="lol"/>
+                <g:Image resource="{teamres.team_javier_fernandez}" altText="Javier Fernandez-Ivern"/>
                 <div>Javier
                     <br/>
                     Fernandez-Ivern
@@ -187,7 +213,7 @@
                 </div>
             </div>
             <div class="span3">
-                <img src="http://www.placehold.it/60x60" alt="lol"/>
+                <g:Image resource="{teamres.team_maxime_meriouma}" altText="Maxime Mériouma-Caron"/>
                 <div>Maxime
                     <br/>
                     Mériouma-Caron
@@ -197,7 +223,7 @@
                 </div>
             </div>
             <div class="span3">
-                <img src="http://www.placehold.it/60x60" alt="lol"/>
+                <g:Image resource="{teamres.team_vincent_roseberry}" altText="Vincent Roseberry"/>
                 <div>Vincent<br/>Roseberry
                 </div>
                 <div>
@@ -207,17 +233,17 @@
         </div>
         <div class="row-fluid {style.aRow}">
             <div class="span3">
-                <img src="http://www.placehold.it/60x60" alt="lol"/>
-                <div>Jacques-Olivier
+                <g:Image resource="{teamres.team_brandon_donnelson}" altText="Brandon Donnelson"/>
+                <div>Brandon
                     <br/>
-                    Desjardins Bernier
+                    Donnelson
                 </div>
                 <div>
-                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
+                    <ui:msg description="Our Team > Senior Developer">Senior Developer</ui:msg>
                 </div>
             </div>
             <div class="span3">
-                <img src="http://www.placehold.it/60x60" alt="lol"/>
+                <g:Image resource="{teamres.team_sylvain_perron}" altText="Sylvain Perron"/>
                 <div>Sylvain<br/>Perron
                 </div>
                 <div>
@@ -225,7 +251,7 @@
                 </div>
             </div>
             <div class="span3">
-                <img src="http://www.placehold.it/60x60" alt="lol"/>
+                <g:Image resource="{teamres.team_simon_pierre_gingras}" altText="Simon-Pierre Gingras"/>
                 <div>Simon-Pierre<br/>Gingras
                 </div>
                 <div>
@@ -233,7 +259,7 @@
                 </div>
             </div>
             <div class="span3">
-                <img src="http://www.placehold.it/60x60" alt="lol"/>
+                <g:Image resource="{teamres.team_chris_viel}" altText="Christopher Viel"/>
                 <div>Christopher
                     <br/>
                     Viel
@@ -242,6 +268,20 @@
                     <ui:msg description="Our Team > Developer">Developer</ui:msg>
                 </div>
             </div>
+        </div>
+
+        <div class="row-fluid {style.aRow}">
+            <div class="span3">
+                <g:Image resource="{teamres.team_frank_poulin}" altText="François-Xavier Poulin-Darveau"/>
+                <div>François-Xavier
+                    <br/>
+                    Poulin-Darveau
+                </div>
+                <div>
+                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
+                </div>
+            </div>
+
         </div>
     </g:HTMLPanel>
 </ui:UiBinder>

@@ -20,14 +20,8 @@
         }
 
         .mainSection h2 {
-            margin: auto;
-            border-radius: 15px;
-            -moz-border-radius: 15px;
-            -webkit-border-radius: 15px;
-            background-color: #ffffff;
             color: #BABABA;
             font-size: 40px;
-            height: 70px;
             line-height: 70px;
         }
 
@@ -41,33 +35,32 @@
             color: #7a7a7a;
         }
 
-        .mainSection img {
-            margin-top: 100px;
-        }
-
         .mainSection {
             margin: auto;
             display: block;
         }
 
+        .root {
+            height: 420px;
+        }
+
     </ui:style>
 
-    <g:HTMLPanel addStyleNames="{res.style.bulleBgMain} {style.mainSection}">
-        <g:Image styleName="{res.style.cornerBottom}" resource="{res.job}"></g:Image>
-            <div>
-                <h2>
-                    <ui:msg description="Jobs > main title">BE PART OF THE HIVE !</ui:msg>
-                </h2>
-                <p>
-                    <ui:msg description="Jobs > main paragraph">Sorry, we're not hiring for any specific positions at
-                        this
-                        time.
-                        However, we're always looking for talented people with good GWT knowledge. If you think you can
-                        make
-                        the difference, feel free to email your resume to
-                    </ui:msg>
-                    <a href="mailto:queenbee@arcbees.com?subject=Jobs">queenbee@arcbees.com</a>
-                </p>
-            </div>
+    <g:HTMLPanel addStyleNames="{style.mainSection} {res.style.job} {res.style.cornerBottom} {style.root}">
+        <h2>
+            <ui:msg description="Jobs > main title">BE PART OF THE HIVE !</ui:msg>
+        </h2>
+        <div>
+            <p>
+                <ui:msg description="Jobs > main paragraph">Sorry, we're not hiring for any specific positions at
+                    this
+                    time.
+                    However, we're always looking for talented people with good GWT knowledge. If you think you can
+                    make
+                    the difference, feel free to email your resume to
+                </ui:msg>
+                <a href="mailto:queenbee@arcbees.com?subject=Jobs">queenbee@arcbees.com</a>
+            </p>
+        </div>
     </g:HTMLPanel>
 </ui:UiBinder>

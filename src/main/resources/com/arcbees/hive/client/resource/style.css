@@ -193,6 +193,11 @@
         background-position: -10px -70px;
     }
 
+    @sprite .job {
+        gwt-image: "job";
+        background-position: bottom;
+    }
+
     @sprite .navBarBgSprite {
         gwt-image: "navBarBg";
     }

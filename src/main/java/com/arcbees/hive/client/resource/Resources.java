@@ -78,7 +78,10 @@ public interface Resources extends ClientBundle {
         String textOn();
 
         String textOnBack();
+
         String contactUS();
+
+        String job();
 
     }
 

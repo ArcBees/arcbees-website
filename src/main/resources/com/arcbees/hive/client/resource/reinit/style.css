@@ -49,7 +49,7 @@
         border-spacing: 0;
     }
 
-    a {
+   body a, body a:hover {
         text-decoration: none;
     }
 

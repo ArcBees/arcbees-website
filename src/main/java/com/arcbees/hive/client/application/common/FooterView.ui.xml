@@ -82,7 +82,7 @@
                 <ui:msg description="Footer navbar > Our Team">Our Team</ui:msg>
             </a>
             <a href="#{nameTokens.getCompanyhistory}">
-                <ui:msg description="Footer navbar > Compagny History">Compagny History</ui:msg>
+                <ui:msg description="Footer navbar > Compagny History">Company History</ui:msg>
             </a>
             <a href="#{nameTokens.getJob}">
                 <ui:msg description="Footer navbar > Job Opportunities">Job

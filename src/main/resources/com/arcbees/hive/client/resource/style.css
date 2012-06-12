@@ -188,6 +188,11 @@
         /*------- UtilityEnd -------*/
 
         /*------- Sprite -------*/
+    @sprite .contactUS {
+        gwt-image: "contactUS";
+        background-position: -10px -70px;
+    }
+
     @sprite .navBarBgSprite {
         gwt-image: "navBarBg";
     }

@@ -4,20 +4,70 @@
              ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
              ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator"
              ui:generateLocales="en">
-
     <ui:with field="res" type="com.arcbees.hive.client.resource.Resources"/>
-    <g:HTMLPanel addStyleNames="{res.style.mainSectionContainer} {res.style.bulleBgMain} {res.style.cornerBottom}">
-        <g:Image resource="{res.job}"/>
-        <h2>
-            <ui:msg description="Jobs > main title">Be part of the hive !</ui:msg>
-        </h2>
-        <p>
-            <ui:msg description="Jobs > main paragraph">Sorry, we're not hiring for any specific positions at this time.
-                However, we're always looking for talented people with good GWT knowledge. If you think you can make the
-                difference, feel free to email your resume to
-            </ui:msg>
+    <ui:style>
 
-            <a href="mailto:queenbee@arcbees.com?subject=Jobs">queenbee@arcbees.com</a>
-        </p>
+        .mainSection >div {
+            position: absolute;
+            top: 300px;
+            left: 600px;;
+            padding: 15px;
+            background-color: #dcdcdc;
+            border-radius: 15px;
+            -moz-border-radius: 15px;
+            -webkit-border-radius: 15px;
+            width: 600px;
+        }
+
+        .mainSection h2 {
+            margin: auto;
+            border-radius: 15px;
+            -moz-border-radius: 15px;
+            -webkit-border-radius: 15px;
+            background-color: #ffffff;
+            color: #BABABA;
+            font-size: 40px;
+            height: 70px;
+            line-height: 70px;
+        }
+
+        .mainSection p {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+            line-height: 22px;
+            width: 500px;
+            margin: 10px auto;
+            color: #7a7a7a;
+        }
+
+        .mainSection img {
+            margin-top: 100px;
+        }
+
+        .mainSection {
+            margin: auto;
+            display: block;
+        }
+
+    </ui:style>
+
+    <g:HTMLPanel addStyleNames="{res.style.bulleBgMain} {style.mainSection}">
+        <g:Image styleName="{res.style.cornerBottom}" resource="{res.job}"></g:Image>
+            <div>
+                <h2>
+                    <ui:msg description="Jobs > main title">BE PART OF THE HIVE !</ui:msg>
+                </h2>
+                <p>
+                    <ui:msg description="Jobs > main paragraph">Sorry, we're not hiring for any specific positions at
+                        this
+                        time.
+                        However, we're always looking for talented people with good GWT knowledge. If you think you can
+                        make
+                        the difference, feel free to email your resume to
+                    </ui:msg>
+                    <a href="mailto:queenbee@arcbees.com?subject=Jobs">queenbee@arcbees.com</a>
+                </p>
+            </div>
     </g:HTMLPanel>
 </ui:UiBinder>

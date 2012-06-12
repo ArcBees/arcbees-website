@@ -74,32 +74,45 @@
                 Internet. ArcBees is then one of the companies best placed to offer you the visibility you need.
                 However,
                 certain standards must be met. And these standards are based on the user experience (UX).
-                <span>Click the
-                    orange
-                    circles to find benefits.
-                </span>
             </ui:msg>
         </p>
         <g:Image resource="{res.beeUx}" addStyleNames="{res.style.imgCenter}"/>
         <div id="btCarousel" class="{style.btCarousel}">
             <div class="{style.btsCarousel}">
                 <g:Anchor ui:field="btWebAppMobile" addStyleNames="{res.style.uxButtonOn}">
-                    <span>Mobile website and mobile application</span>
+                    <span>
+                        <ui:msg description="Ux Design > Mobile website and mobile application > Title">Mobile website
+                            and mobile application
+                        </ui:msg>
+                    </span>
                 </g:Anchor>
                 <g:Anchor ui:field="btInfoDesign" addStyleNames="{res.style.uxButton}">
-                    <span>Information design</span>
+                    <span>
+                        <ui:msg description="Ux Design > Information design > Title">Information design</ui:msg>
+                    </span>
                 </g:Anchor>
                 <g:Anchor ui:field="btInfoArc" addStyleNames="{res.style.uxButton}">
-                    <span>Information architecture</span>
+                    <span>
+                        <ui:msg description="Ux Design > Information architecture > Title">Information architecture
+                        </ui:msg>
+                    </span>
                 </g:Anchor>
                 <g:Anchor ui:field="btInterDesign" addStyleNames="{res.style.uxButton}">
-                    <span>Interaction design / interface</span>
+                    <span>
+                        <ui:msg description="Ux Design > Interaction design / interface > Title">Interaction design /
+                            interface
+                        </ui:msg>
+                    </span>
                 </g:Anchor>
                 <g:Anchor ui:field="btErgoDesign" addStyleNames="{res.style.uxButton}">
-                    <span>Ergonomic design</span>
+                    <span>
+                        <ui:msg description="Ux Design > Ergonomic design > Title">Ergonomic design</ui:msg>
+                    </span>
                 </g:Anchor>
                 <g:Anchor ui:field="btPerfMeasure" addStyleNames="{res.style.uxButton}">
-                    <span>Performance measures</span>
+                    <span>
+                        <ui:msg description="Ux Design > Performance measures > Title">Performance measures</ui:msg>
+                    </span>
                 </g:Anchor>
             </div>
             <div class="{style.btCarouselBg}"></div>

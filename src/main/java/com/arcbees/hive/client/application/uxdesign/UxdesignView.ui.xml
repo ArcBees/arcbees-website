@@ -229,10 +229,10 @@
                         assess
                         your performance. Our methodology is based on iterative
                         processes of
-                        creation: continuous improvement (which allow you to track transactions that have affected,
+                        creation: continuous improvement of your performance(which allow you to track transactions that have affected,
                         validated,
                         issued
-                        and stopped), your performance and calculate their impact on your investments in the web.
+                        and stopped) and calculate their impact on your investments in the web.
                     </ui:msg>
                 </p>
             </g:HTMLPanel>

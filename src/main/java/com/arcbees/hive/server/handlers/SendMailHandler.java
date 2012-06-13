@@ -36,7 +36,7 @@ public class SendMailHandler extends AbstractActionHandler<SendMail, NoResult> {
         Message message = new MimeMessage(session);
         try {
             message.setFrom(new InternetAddress("simon.pierre.gingras@arcbees.com", "Simon-Pierre Gingras"));
-            message.addRecipient(Message.RecipientType.TO, new InternetAddress("simon.pierre.gingras@gmail.com"));
+            message.addRecipient(Message.RecipientType.TO, new InternetAddress("queenbee@arcbees.com"));
             message.setSubject("Sender: " + sender);
             message.setText(contents);
 

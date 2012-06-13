@@ -28,6 +28,11 @@
             font-size: 0.9em;
         }
 
+        .aRow > div > img + div.laure {
+            margin-top: 13px;
+            font-size: 0.9em;
+        }
+
         .aRow > div > div + div {
             font-size: 0.8em;
             font-style: italic;
@@ -41,12 +46,10 @@
 
         .associatedBeeRow > img {
             float: left;
-
             border-radius: 8px;
             -moz-border-radius: 8px;
             -webkit-border-radius: 8px;
             overflow: hidden;
-
             margin-right: 15px;
         }
 
@@ -66,6 +69,10 @@
             font-size: 0.9em;
             font-style: italic;
             color: #5B676F;
+        }
+
+        h2:last-child {
+           margin-top:15px;
         }
     </ui:style>
     <g:HTMLPanel addStyleNames="{res.style.mainSectionContainer} {res.style.cornerBottom}">
@@ -159,7 +166,6 @@
             </div>
         </div>
         <div class="{style.clearBoth}"/>
-
         <div class="{style.associatedBeeRow}">
             <g:Image resource="{teamres.team_david_marcotte}" altText="David Marcotte"/>
             <div>
@@ -184,24 +190,12 @@
 
                 </p>
             </div>
-
         </div>
         <div class="{style.clearBoth}"/>
-
         <h2>
             <ui:msg description="Our Team > Developer bees title">Developer Bees</ui:msg>
         </h2>
         <div class="row-fluid {style.aRow}">
-            <div class="span3">
-                <g:Image resource="{teamres.team_laure_chatenet}" altText="Laure Gabrielle Chatenet"/>
-                <div>Laure Gabrielle
-                    <br/>
-                    Chatenet
-                </div>
-                <div>
-                    <ui:msg description="Our Team > UX specialist">UX Specialist</ui:msg>
-                </div>
-            </div>
             <div class="span3">
                 <g:Image resource="{teamres.team_javier_fernandez}" altText="Javier Fernandez-Ivern"/>
                 <div>Javier
@@ -213,18 +207,28 @@
                 </div>
             </div>
             <div class="span3">
-                <g:Image resource="{teamres.team_maxime_meriouma}" altText="Maxime Mériouma-Caron"/>
-                <div>Maxime
+                <g:Image resource="{teamres.team_brandon_donnelson}" altText="Brandon Donnelson"/>
+                <div>Brandon
                     <br/>
-                    Mériouma-Caron
+                    Donnelson
                 </div>
                 <div>
-                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
+                    <ui:msg description="Our Team > Senior Developer">Senior Developer</ui:msg>
                 </div>
             </div>
             <div class="span3">
-                <g:Image resource="{teamres.team_vincent_roseberry}" altText="Vincent Roseberry"/>
-                <div>Vincent<br/>Roseberry
+                <g:Image resource="{teamres.team_laure_chatenet}" altText="Laure Gabrielle Chatenet"/>
+                <div class="{style.laure}">Laure Gabrielle
+                    <br/>
+                    Chatenet
+                </div>
+                <div>
+                    <ui:msg description="Our Team > UX specialist">UX Specialist</ui:msg>
+                </div>
+            </div>
+            <div class="span3">
+                <g:Image resource="{teamres.team_simon_pierre_gingras}" altText="Simon-Pierre Gingras"/>
+                <div>Simon-Pierre<br/>Gingras
                 </div>
                 <div>
                     <ui:msg description="Our Team > Developer">Developer</ui:msg>
@@ -233,13 +237,13 @@
         </div>
         <div class="row-fluid {style.aRow}">
             <div class="span3">
-                <g:Image resource="{teamres.team_brandon_donnelson}" altText="Brandon Donnelson"/>
-                <div>Brandon
+                <g:Image resource="{teamres.team_maxime_meriouma}" altText="Maxime Mériouma-Caron"/>
+                <div>Maxime
                     <br/>
-                    Donnelson
+                    Mériouma-Caron
                 </div>
                 <div>
-                    <ui:msg description="Our Team > Senior Developer">Senior Developer</ui:msg>
+                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
                 </div>
             </div>
             <div class="span3">
@@ -251,8 +255,8 @@
                 </div>
             </div>
             <div class="span3">
-                <g:Image resource="{teamres.team_simon_pierre_gingras}" altText="Simon-Pierre Gingras"/>
-                <div>Simon-Pierre<br/>Gingras
+                <g:Image resource="{teamres.team_vincent_roseberry}" altText="Vincent Roseberry"/>
+                <div>Vincent<br/>Roseberry
                 </div>
                 <div>
                     <ui:msg description="Our Team > Developer">Developer</ui:msg>
@@ -269,7 +273,6 @@
                 </div>
             </div>
         </div>
-
         <div class="row-fluid {style.aRow}">
             <div class="span3">
                 <g:Image resource="{teamres.team_frank_poulin}" altText="François-Xavier Poulin-Darveau"/>

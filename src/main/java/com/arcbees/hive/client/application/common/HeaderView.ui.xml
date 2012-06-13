@@ -74,10 +74,11 @@
         </p>
         <g:Image resource="{res.beeFlying}" addStyleNames="{style.imgBeeFlying}"/>
         <div class="{res.style.rightLinkBox} {style.rightLinkBox}">
+
+            <ahive_socmedia:SocialMediaWidget ui:field="socialMediaWidget"/>
             <p>
                 1.418.473.1216
             </p>
-            <ahive_socmedia:SocialMediaWidget ui:field="socialMediaWidget"/>
             <a ui:field="swithcLocaleHyperlink" href="?locale=fr" class="{res.style.localeSwitcher}">
                 <ui:msg description="Locale hyperlink in header">Français</ui:msg>
             </a>

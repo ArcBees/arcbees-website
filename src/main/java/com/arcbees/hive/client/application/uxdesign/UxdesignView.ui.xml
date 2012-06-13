@@ -7,11 +7,11 @@
     <ui:style>
         .uxCarousel {
             position: relative;
-            height: 110px;
+            height: 120px;
         }
 
         .uxCarousel div {
-            height: 110px;
+            height: 120px;
             position: absolute;
             top: 0;
             left: 0;
@@ -214,9 +214,9 @@
                         process, we
                         improve your conversion rate of your website and your income. We define a user profil, use
                         personas,
-                        orient
+                        guide
                         the
-                        purchase, improve the user experience, ergonomics adapt the application to the mobile format.
+                        client, improve the user experience, we ergonomically adapt the application to the mobile format.
                     </ui:msg>
                 </p>
             </g:HTMLPanel>

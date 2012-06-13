@@ -50,19 +50,21 @@
 
         .home .productsNav p {
             margin-top: 20px;
-            font-size: 19px;
+            font-size: 17px;
             float: left;
             color: #939698;
+            width: 500px;
+            height: 20px;
         }
 
         .home .productsNav a {
-            width: 325px;
+            width: 375px;
             font-size: 13px;
             color: #939698;
             font-variant: small-caps;
             display: inline-block;
             position: relative;
-            bottom: 20px;
+            top: -20px;
             left: 180px;
         }
 

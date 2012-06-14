@@ -117,8 +117,6 @@ public interface Resources extends ClientBundle {
     @ImageOptions(repeatStyle = RepeatStyle.Horizontal)
     ImageResource mainDegradeBg();
 
-    ImageResource aboutPhilippe();
-
     ImageResource productGWTP();
 
     ImageResource productJUKITO();
@@ -128,12 +126,6 @@ public interface Resources extends ClientBundle {
     ImageResource job();
 
     ImageResource blogAbeilleConsulting();
-
-    ImageResource aboutChristian();
-
-    ImageResource aboutDavid();
-
-    ImageResource aboutFrancis();
 
     ImageResource honeyConsultingDevelopmentSuccess();
 }

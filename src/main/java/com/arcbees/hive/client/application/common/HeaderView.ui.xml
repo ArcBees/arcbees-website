@@ -77,7 +77,7 @@
 
             <ahive_socmedia:SocialMediaWidget ui:field="socialMediaWidget"/>
             <p>
-                1.418.473.1216
+                1.877.635.1585
             </p>
             <a ui:field="swithcLocaleHyperlink" href="?locale=fr" class="{res.style.localeSwitcher}">
                 <ui:msg description="Locale hyperlink in header">Français</ui:msg>

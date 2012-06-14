@@ -8,6 +8,10 @@
     <ui:with field="res" type="com.arcbees.hive.client.resource.Resources"/>
     <ui:with field='teamres' type='com.arcbees.hive.client.resource.team.TeamResources'/>
     <ui:style>
+        .associatedBeesContainer {
+            margin-bottom: 60px;
+        }
+
         .aRow {
             margin-bottom: 10px;
         }
@@ -72,7 +76,7 @@
         }
 
         h2:last-child {
-           margin-top:15px;
+            margin-top: 15px;
         }
     </ui:style>
     <g:HTMLPanel addStyleNames="{res.style.mainSectionContainer} {res.style.cornerBottom}">
@@ -83,118 +87,121 @@
                 But who is the queen bee? Together, we are all the Queen!
             </ui:msg>
         </p>
-        <h2>
-            <ui:msg description="Our Team > Associated bees title">Associates Bees</ui:msg>
-        </h2>
 
-        <div class="{style.associatedBeeRow}">
-            <g:Image resource="{teamres.team_chris_goudreau}" altText="Christian Goudreau"/>
-            <div>
-                <div class="{style.associatedBeeTitle}">
-                    <div>Christian Goudreau</div>
-                    <div>
-                        <ui:msg description="Our Team > Chris Goudreau > Position">Co-Founder / CEO</ui:msg>
+        <div class="{style.associatedBeesContainer}">
+            <div class="{style.associatedBeeRow}">
+                <g:Image resource="{teamres.team_chris_goudreau}" altText="Christian Goudreau"/>
+                <div>
+                    <div class="{style.associatedBeeTitle}">
+                        <div>Christian Goudreau</div>
+                        <div>
+                            <ui:msg description="Our Team > Chris Goudreau > Position">Co-Founder / CEO</ui:msg>
+                        </div>
                     </div>
-                </div>
 
-                <p>
-                    <ui:msg description="Our Team > Chris Goudreau > Bio">Over the last five years, Christian was lead
-                        developer
-                        for different companies to design many Web
-                        applications based on the Cloud. Other than his passion for development and software
-                        engineering,
-                        Christian
-                        is self-ta ught and his involvement is directly linked to the success of several open-source
-                        projects
-                        like
-                        GWT-platform and Jukito.
-                    </ui:msg>
-                </p>
+                    <p>
+                        <ui:msg description="Our Team > Chris Goudreau > Bio">Over the last five years, Christian was
+                            lead
+                            developer
+                            for different companies to design many Web
+                            applications based on the Cloud. Other than his passion for development and software
+                            engineering,
+                            Christian
+                            is self-taught and his involvement is directly linked to the success of several open-source
+                            projects
+                            like
+                            GWT-platform and Jukito.
+                        </ui:msg>
+                    </p>
+                </div>
+            </div>
+            <div class="{style.clearBoth}"/>
+
+            <div class="{style.associatedBeeRow}">
+                <g:Image resource="{teamres.team_philippe_beaudoin}" altText="Philippe Beaudoin"/>
+                <div>
+                    <div class="{style.associatedBeeTitle}">
+                        <div>Philippe Beaudoin</div>
+                        <div>
+                            <ui:msg description="Our Team > Philippe Beaudoin > Position">Co-Founder / CTO</ui:msg>
+                        </div>
+                    </div>
+                    <p>
+                        <ui:msg description="Our Team > Philippe Beaudoin > Bio">Philippe holds a Ph.D. in computer
+                            science
+                            from
+                            the
+                            University of Montreal and was a postdoctoral
+                            researcher
+                            in the Department of Computer Science, University of British Columbia. Having worked in
+                            graphics
+                            hardware,
+                            where his work has given him a patent, Philippe has 15 years experience in the gaming
+                            industry
+                            and
+                            the
+                            development of Web applications.
+                        </ui:msg>
+                    </p>
+                </div>
+            </div>
+            <div class="{style.clearBoth}"/>
+
+            <div class="{style.associatedBeeRow}">
+                <g:Image resource="{teamres.team_francis_menard}" altText="Francis Ménard"/>
+                <div>
+                    <div class="{style.associatedBeeTitle}">
+                        <div>Francis Ménard</div>
+                        <div>
+                            <ui:msg description="Our Team > Francis Menard > Position">Co-Founder / CFO</ui:msg>
+                        </div>
+                    </div>
+                    <p>
+                        <ui:msg description="Our Team > Francis Menard > Bio">Francis began his career in online
+                            commercial
+                            sales
+                            application development and application Web. It is
+                            through his hard work and strong demand that Francis has specialized, over the years, in
+                            telecommunication
+                            project management and delivery. Self-taught, his attention to solve real business problems
+                            led
+                            him
+                            always
+                            be on top of new technological advances.
+                        </ui:msg>
+                    </p>
+                </div>
+            </div>
+            <div class="{style.clearBoth}"/>
+            <div class="{style.associatedBeeRow}">
+                <g:Image resource="{teamres.team_david_marcotte}" altText="David Marcotte"/>
+                <div>
+                    <div class="{style.associatedBeeTitle}">
+                        <div>David Marcotte</div>
+                        <div>
+                            <ui:msg description="Our Team > David Marcotte > Position">Co-Founder / CMO</ui:msg>
+                        </div>
+                    </div>
+                    <p>
+                        <ui:msg description="Our Team > David Marcotte > Bio">David has a strong interest in visual
+                            communication,
+                            which is a major asset for any company’s
+                            success.
+                            Multidisciplinary in the heart, he is a prizewinner and lends his artistic talent to
+                            different
+                            project
+                            around Quebec. His expertise as art designer is being web site conception to VFX cinema's
+                            industry
+                            (Red
+                            Tails, Immortals, Three Musketeers, Underworld 4..)
+                        </ui:msg>
+
+                    </p>
+                </div>
             </div>
         </div>
-        <div class="{style.clearBoth}"/>
 
-        <div class="{style.associatedBeeRow}">
-            <g:Image resource="{teamres.team_philippe_beaudoin}" altText="Philippe Beaudoin"/>
-            <div>
-                <div class="{style.associatedBeeTitle}">
-                    <div>Philippe Beaudoin</div>
-                    <div>
-                        <ui:msg description="Our Team > Philippe Beaudoin > Position">Co-Founder / CTO</ui:msg>
-                    </div>
-                </div>
-
-                <p>
-                    <ui:msg description="Our Team > Philippe Beaudoin > Bio">Philippe holds a Ph.D. in computer science
-                        from
-                        the
-                        University of Montreal and was a postdoctoral
-                        researcher
-                        in the Department of Computer Science, University of British Columbia. Having worked in graphics
-                        hardware,
-                        where his work has given him a patent, Philippe has 15 years experience in the gaming industry
-                        and
-                        the
-                        development of Web applications.
-                    </ui:msg>
-                </p>
-            </div>
-        </div>
         <div class="{style.clearBoth}"/>
-
-        <div class="{style.associatedBeeRow}">
-            <g:Image resource="{teamres.team_francis_menard}" altText="Francis Ménard"/>
-            <div>
-                <div class="{style.associatedBeeTitle}">
-                    <div>Francis Ménard</div>
-                    <div>
-                        <ui:msg description="Our Team > Francis Menard > Position">Co-Founder / CFO</ui:msg>
-                    </div>
-                </div>
-                <p>
-                    <ui:msg description="Our Team > Francis Menard > Bio">Francis began his career in online commercial
-                        sales
-                        application development and application Web. It is
-                        through his hard work and strong demand that Francis has specialized, over the years, in
-                        telecommunication
-                        project management and delivery. Self-taught, his attention to solve real business problems led
-                        him
-                        always
-                        be on top of new technological advances.
-                    </ui:msg>
-                </p>
-            </div>
-        </div>
-        <div class="{style.clearBoth}"/>
-        <div class="{style.associatedBeeRow}">
-            <g:Image resource="{teamres.team_david_marcotte}" altText="David Marcotte"/>
-            <div>
-                <div class="{style.associatedBeeTitle}">
-                    <div>David Marcotte</div>
-                    <div>
-                        <ui:msg description="Our Team > David Marcotte > Position">Co-Founder / CMO</ui:msg>
-                    </div>
-                </div>
-                <p>
-                    <ui:msg description="Our Team > David Marcotte > Bio">David has a strong interest in visual
-                        communication,
-                        which is a major asset for any company’s
-                        success.
-                        Multidisciplinary in the heart, he is a prizewinner and lends his artistic talent to different
-                        project
-                        around Quebec. His expertise as art designer is being web site conception to VFX cinema's
-                        industry
-                        (Red
-                        Tails, Immortals, Three Musketeers, Underworld 4..)
-                    </ui:msg>
-
-                </p>
-            </div>
-        </div>
-        <div class="{style.clearBoth}"/>
-        <h2>
-            <ui:msg description="Our Team > Developer bees title">Developer Bees</ui:msg>
-        </h2>
         <div class="row-fluid {style.aRow}">
             <div class="span3">
                 <g:Image resource="{teamres.team_javier_fernandez}" altText="Javier Fernandez-Ivern"/>
@@ -279,6 +286,22 @@
                 <div>François-Xavier
                     <br/>
                     Poulin-Darveau
+                </div>
+                <div>
+                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
+                </div>
+            </div>
+            <div class="span3">
+                <g:Image resource="{teamres.team_mrabti_idriss}" altText="Mrabti Idriss"/>
+                <div>Mrabti<br/>Idriss
+                </div>
+                <div>
+                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
+                </div>
+            </div>
+            <div class="span3">
+                <g:Image resource="{teamres.team_gael_nkouyee}" altText="Gael-Jurin Nkouyee"/>
+                <div>Gael-Jurin<br/>Nkouyee
                 </div>
                 <div>
                     <ui:msg description="Our Team > Developer">Developer</ui:msg>

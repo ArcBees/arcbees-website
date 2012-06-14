@@ -16,10 +16,10 @@
         }
 
         .menuContainer div a {
-            margin-top: 5px;
             margin-left: 15px;
             margin-right: 15px;
             color: #9f9f9f;
+            height: 30px;
         }
 
         .menuContainer div a:hover {
@@ -27,22 +27,45 @@
         }
 
         .navPrincipale {
-            float: right;
+        }
+
+        .navPrincipale div {
+            overflow: hidden;
+            display: inline;
+            width: auto;
         }
 
     </ui:style>
     <g:HTMLPanel addStyleNames="{style.menuContainer} {res.style.cornerTop} {res.style.navBarBgSprite}">
         <div class="{style.navPrincipale}">
-            <a href="#{nameTokens.getService}">Services</a>
-            <a href="#{nameTokens.getUxdesign}">
-                <ui:msg description="Main navbar > Ux design">UX Design</ui:msg>
-            </a>
-            <a href="#{nameTokens.getCompanyhistory}">
-                <ui:msg description="Main navbar > Company History">Company History</ui:msg>
-            </a>
-            <a href="#{nameTokens.getContact}">
-                <ui:msg description="Main navbar > Contact Us">Contact Us</ui:msg>
-            </a>
+            <div>
+                <a href="#{nameTokens.getService}">Services</a>
+                <a href="#{nameTokens.getService}">Services</a>
+            </div>
+            <div>
+                <a href="#{nameTokens.getUxdesign}">
+                    <ui:msg description="Main navbar > Ux design">UX Design</ui:msg>
+                </a>
+                <a href="#{nameTokens.getUxdesign}">
+                    <ui:msg description="Main navbar > Ux design">UX Design</ui:msg>
+                </a>
+            </div>
+            <div>
+                <a href="#{nameTokens.getCompanyhistory}">
+                    <ui:msg description="Main navbar > Company History">Company History</ui:msg>
+                </a>
+                <a href="#{nameTokens.getCompanyhistory}">
+                    <ui:msg description="Main navbar > Company History">Company History</ui:msg>
+                </a>
+            </div>
+            <div>
+                <a href="#{nameTokens.getContact}">
+                    <ui:msg description="Main navbar > Contact Us">Contact Us</ui:msg>
+                </a>
+                <a href="#{nameTokens.getContact}">
+                    <ui:msg description="Main navbar > Contact Us">Contact Us</ui:msg>
+                </a>
+            </div>
         </div>
     </g:HTMLPanel>
 </ui:UiBinder>

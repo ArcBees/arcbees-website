@@ -56,13 +56,7 @@
             float: right;
             width: 90px;
             height: 40px;
-            border: none;
-            background-color: #e3e3e3;
-        }
-
-        .message button:hover {
-            cursor: pointer;
-            background-color: #bababa;
+            font-size: 1.2em;
         }
     </ui:style>
     <g:HTMLPanel
@@ -81,7 +75,7 @@
         <div class="{style.message}">
             <g:TextBox ui:field="senderTextBox" addStyleNames="{res.style.cornerTopBottom}"/>
             <g:TextArea ui:field="contentsTextArea" addStyleNames="{res.style.cornerTopBottom}"/>
-            <g:Button ui:field="sendButton" addStyleNames="{res.style.cornerTopBottom}">
+            <g:Button ui:field="sendButton" addStyleNames="{res.style.cornerTopBottom} btn btn-warning">
                 <ui:msg description="Contact Us > Send">Send</ui:msg>
             </g:Button>
         </div>

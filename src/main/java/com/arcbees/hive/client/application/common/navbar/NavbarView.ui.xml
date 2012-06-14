@@ -20,6 +20,7 @@
             margin-left: 15px;
             margin-right: 15px;
             color: #9f9f9f;
+            height: 30px;
         }
 
         .menuContainer div a:hover {
@@ -28,6 +29,12 @@
 
         .navPrincipale {
             float: right;
+        }
+
+        .navPrincipale div {
+            overflow: hidden;
+            display: inline;
+            width: auto;
         }
 
     </ui:style>

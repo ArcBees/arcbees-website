@@ -16,7 +16,7 @@
         .contactInfo {
             position: absolute;
             left: 130px;
-            top: 240px;
+            top: 318px;
         }
 
         .message {

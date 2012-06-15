@@ -3,41 +3,36 @@ package com.arcbees.hive.client.application.uxdesign;
 import com.arcbees.core.client.mvp.ViewImpl;
 import com.arcbees.hive.client.resource.Resources;
 import com.google.gwt.event.dom.client.ClickEvent;
-import com.google.gwt.query.client.GQuery;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
-import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Anchor;
-import com.google.gwt.user.client.ui.HTMLPanel;
 import com.google.gwt.user.client.ui.Widget;
 
-import static com.google.gwt.query.client.GQuery.*;
-
-import com.google.gwt.query.client.Function;
+import static com.google.gwt.query.client.GQuery.$;
 
 import javax.inject.Inject;
 
 public class UxdesignView extends ViewImpl implements UxdesignPresenter.MyView {
+    public interface Binder extends UiBinder<Widget, UxdesignView> {
+    }
+
     @UiField
-    Anchor btWebAppMobile;
+    Anchor mobileWebsiteMobileApplicationAnchor;
     @UiField
-    Anchor btInfoDesign;
+    Anchor informationDesignAnchor;
     @UiField
-    Anchor btInfoArc;
+    Anchor informationArchitectureAnchor;
     @UiField
-    Anchor btInterDesign;
+    Anchor interactionDesignInterfaceAnchor;
     @UiField
-    Anchor btErgoDesign;
+    Anchor ergonimicDesignAnchor;
     @UiField
-    Anchor btPerfMeasure;
-    @UiField
-    HTMLPanel uxCarousel;
+    Anchor performanceMeasuresAnchor;
 
     private final Resources resources;
 
-    public interface Binder extends UiBinder<Widget, UxdesignView> {
-    }
+    private String previousCategoryId = UxCategoryIds.mobileWebsiteAndApplication();
 
     @Inject
     public UxdesignView(final Binder binder, Resources resources) {
@@ -45,114 +40,49 @@ public class UxdesignView extends ViewImpl implements UxdesignPresenter.MyView {
         initWidget(binder.createAndBindUi(this));
     }
 
-    @UiHandler("btWebAppMobile")
+    @UiHandler("mobileWebsiteMobileApplicationAnchor")
     public void onBtWebAppMobile(ClickEvent event) {
-        changeUxText(0);
+        switchTo(mobileWebsiteMobileApplicationAnchor, UxCategoryIds.mobileWebsiteAndApplication());
     }
 
-    @UiHandler("btInfoDesign")
+    @UiHandler("informationDesignAnchor")
     public void onBtInfoDesign(ClickEvent event) {
-        changeUxText(1);
+        switchTo(informationDesignAnchor, UxCategoryIds.informationDesign());
     }
 
-    @UiHandler("btInfoArc")
+    @UiHandler("informationArchitectureAnchor")
     public void onBtInfoArc(ClickEvent event) {
-        changeUxText(2);
+        switchTo(informationArchitectureAnchor, UxCategoryIds.informationArchitecture());
     }
 
-    @UiHandler("btInterDesign")
+    @UiHandler("interactionDesignInterfaceAnchor")
     public void onBtInterDesign(ClickEvent event) {
-        changeUxText(3);
+        switchTo(interactionDesignInterfaceAnchor, UxCategoryIds.interactionDesignInterface());
     }
 
-    @UiHandler("btErgoDesign")
+    @UiHandler("ergonimicDesignAnchor")
     public void onBtErgoDesign(ClickEvent event) {
-        changeUxText(4);
+        switchTo(ergonimicDesignAnchor, UxCategoryIds.ergonomicDesign());
     }
 
-    @UiHandler("btPerfMeasure")
+    @UiHandler("performanceMeasuresAnchor")
     public void onBtPerfMeasure(ClickEvent event) {
-        changeUxText(5);
+        switchTo(performanceMeasuresAnchor, UxCategoryIds.performanceMeasures());
     }
 
-    private void changeUxText(int index) {
-        setEnabled(index);
-        swappingText(index);
-    }
-
-    private void swappingText(int index) {
-        Widget widgetSelected = uxCarousel.getWidget(index);
-        final Resources.Style style = resources.style();
-        if (!widgetSelected.getStyleName().equals(style.textOn())) {
-            widgetSelected.setStyleName(style.textOnBack());
-            widgetSelected.getElement().setAttribute("style", "display:none");
-            $("." + style.textOn()).fadeOut(500, new Function() {
-                @Override
-                public void f() {
-                    int widgetCount = uxCarousel.getWidgetCount();
-                    GQuery widgetOnBack = $("." + style.textOnBack());
-
-                    for (int i = 0; i < widgetCount; i++) {
-                        Widget currentWidget = uxCarousel.getWidget(i);
-                        currentWidget.getElement().setAttribute("style", "display:none");
-
-                        if (!currentWidget.getStyleName().equals(style.textOnBack())) {
-                            currentWidget.getElement().setClassName("");
-                        }
-                    }
-                    widgetOnBack.fadeIn(500, new Function() {
-                        @Override
-                        public void f() {
-
-                            GQuery widgetOnBack = $("." + style.textOnBack());
-                            widgetOnBack.removeClass(style.textOnBack());
-                            widgetOnBack.addClass(style.textOn());
-                        }
-                    });
-                }
-            });
-        }
-    }
-
-    private void setEnabled(int index) {
+    private void switchTo(Anchor anchor, String productId) {
         disableAll();
-
-        Anchor selected = btWebAppMobile;
-
-        switch (index) {
-            case 0:
-                selected = btWebAppMobile;
-                break;
-            case 1:
-                selected = btInfoDesign;
-                break;
-            case 2:
-                selected = btInfoArc;
-                break;
-            case 3:
-                selected = btInterDesign;
-                break;
-            case 4:
-                selected = btErgoDesign;
-                break;
-            case 5:
-                selected = btPerfMeasure;
-                break;
-            default:
-                Window.alert("wrong index: " + index);
-                break;
-        }
-
-        enable(selected);
+        enable(anchor);
+        switchText(productId);
     }
 
     private void disableAll() {
-        disableAnchor(btWebAppMobile);
-        disableAnchor(btInfoDesign);
-        disableAnchor(btInfoArc);
-        disableAnchor(btInterDesign);
-        disableAnchor(btErgoDesign);
-        disableAnchor(btPerfMeasure);
+        disableAnchor(mobileWebsiteMobileApplicationAnchor);
+        disableAnchor(informationDesignAnchor);
+        disableAnchor(informationArchitectureAnchor);
+        disableAnchor(interactionDesignInterfaceAnchor);
+        disableAnchor(ergonimicDesignAnchor);
+        disableAnchor(performanceMeasuresAnchor);
     }
 
     private void disableAnchor(Anchor toDisable) {
@@ -161,5 +91,18 @@ public class UxdesignView extends ViewImpl implements UxdesignPresenter.MyView {
 
     private void enable(Anchor selected) {
         selected.setStyleName(resources.style().uxButtonOn());
+    }
+
+    private void switchText(String categoryId) {
+        stopAllAnimations();
+
+        $("#" + categoryId).fadeIn(500);
+        $("#" + previousCategoryId).fadeOut(100);
+
+        previousCategoryId = categoryId;
+    }
+
+    private void stopAllAnimations() {
+        $("#uxCarousel > div").stop(true, true);
     }
 }

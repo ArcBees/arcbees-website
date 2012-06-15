@@ -4,6 +4,7 @@
              ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator"
              ui:generateLocales="en">
     <ui:with field="res" type="com.arcbees.hive.client.resource.Resources"/>
+    <ui:with field="uxCategories" type="com.arcbees.hive.client.application.uxdesign.UxCategoryIds"/>
     <ui:style>
         .uxCarousel {
             position: relative;
@@ -65,7 +66,13 @@
             bottom: 75px;
         }
 
+        .visible {
+            display: block;
+        }
 
+        .hidden {
+            display: none;
+        }
     </ui:style>
     <g:HTMLPanel addStyleNames="{res.style.mainSectionContainer} {res.style.bulleBgMain} {res.style.cornerBottom}">
         <p class="{res.style.pHead}">
@@ -78,37 +85,37 @@
         <g:Image resource="{res.beeUx}" addStyleNames="{res.style.imgCenter}"/>
         <div id="btCarousel" class="{style.btCarousel}">
             <div class="{style.btsCarousel}">
-                <g:Anchor ui:field="btWebAppMobile" addStyleNames="{res.style.uxButtonOn}">
+                <g:Anchor ui:field="mobileWebsiteMobileApplicationAnchor" addStyleNames="{res.style.uxButtonOn}">
                     <span>
                         <ui:msg description="Ux Design > Mobile website and mobile application > Title">Mobile website
                             and mobile application
                         </ui:msg>
                     </span>
                 </g:Anchor>
-                <g:Anchor ui:field="btInfoDesign" addStyleNames="{res.style.uxButton}">
+                <g:Anchor ui:field="informationDesignAnchor" addStyleNames="{res.style.uxButton}">
                     <span>
                         <ui:msg description="Ux Design > Information design > Title">Information design</ui:msg>
                     </span>
                 </g:Anchor>
-                <g:Anchor ui:field="btInfoArc" addStyleNames="{res.style.uxButton}">
+                <g:Anchor ui:field="informationArchitectureAnchor" addStyleNames="{res.style.uxButton}">
                     <span>
                         <ui:msg description="Ux Design > Information architecture > Title">Information architecture
                         </ui:msg>
                     </span>
                 </g:Anchor>
-                <g:Anchor ui:field="btInterDesign" addStyleNames="{res.style.uxButton}">
+                <g:Anchor ui:field="interactionDesignInterfaceAnchor" addStyleNames="{res.style.uxButton}">
                     <span>
                         <ui:msg description="Ux Design > Interaction design / interface > Title">Interaction design /
                             interface
                         </ui:msg>
                     </span>
                 </g:Anchor>
-                <g:Anchor ui:field="btErgoDesign" addStyleNames="{res.style.uxButton}">
+                <g:Anchor ui:field="ergonimicDesignAnchor" addStyleNames="{res.style.uxButton}">
                     <span>
                         <ui:msg description="Ux Design > Ergonomic design > Title">Ergonomic design</ui:msg>
                     </span>
                 </g:Anchor>
-                <g:Anchor ui:field="btPerfMeasure" addStyleNames="{res.style.uxButton}">
+                <g:Anchor ui:field="performanceMeasuresAnchor" addStyleNames="{res.style.uxButton}">
                     <span>
                         <ui:msg description="Ux Design > Performance measures > Title">Performance measures</ui:msg>
                     </span>
@@ -116,8 +123,8 @@
             </div>
             <div class="{style.btCarouselBg}"/>
         </div>
-        <g:HTMLPanel ui:field="uxCarousel" addStyleNames="{style.uxCarousel}">
-            <g:HTMLPanel addStyleNames="{res.style.textOn}">
+        <div id="uxCarousel" class="{style.uxCarousel}">
+            <div id="{uxCategories.mobileWebsiteAndApplication}" class="{style.visible}">
                 <h3>
                     <ui:msg description="Ux Design > Mobile website and mobile application > Title">Mobile website and
                         mobile
@@ -137,8 +144,8 @@
                         networks.
                     </ui:msg>
                 </p>
-            </g:HTMLPanel>
-            <g:HTMLPanel addStyleNames="{res.style.textOff}">
+            </div>
+            <div id="{uxCategories.informationDesign}" class="{style.hidden}">
                 <h3>
                     <ui:msg description="Ux Design > Information design > Title">Information design</ui:msg>
                 </h3>
@@ -155,10 +162,9 @@
                         effort.
                     </ui:msg>
                 </p>
-            </g:HTMLPanel>
+            </div>
 
-
-            <g:HTMLPanel addStyleNames="{res.style.textOff}">
+            <div id="{uxCategories.informationArchitecture}" class="{style.hidden}">
                 <h3>
                     <ui:msg description="Ux Design > Information architecture > Title">Information architecture</ui:msg>
                 </h3>
@@ -183,8 +189,8 @@
                     </ui:msg>
 
                 </p>
-            </g:HTMLPanel>
-            <g:HTMLPanel addStyleNames="{res.style.textOff}">
+            </div>
+            <div id="{uxCategories.interactionDesignInterface}" class="{style.hidden}">
                 <h3>
                     <ui:msg description="Ux Design > Interaction design / interface > Title">Interaction design /
                         interface
@@ -201,8 +207,8 @@
                         In this way, the user is guided through by interface so intuitive.
                     </ui:msg>
                 </p>
-            </g:HTMLPanel>
-            <g:HTMLPanel addStyleNames="{res.style.textOff}">
+            </div>
+            <div id="{uxCategories.ergonomicDesign}" class="{style.hidden}">
                 <h3>
                     <ui:msg description="Ux Design > Ergonomic design > Title">Ergonomic design</ui:msg>
                 </h3>
@@ -219,8 +225,8 @@
                         format.
                     </ui:msg>
                 </p>
-            </g:HTMLPanel>
-            <g:HTMLPanel addStyleNames="{res.style.textOff}">
+            </div>
+            <div id="{uxCategories.performanceMeasures}" class="{style.hidden}">
                 <h3>
                     <ui:msg description="Ux Design > Performance measures > Title">Performance measures</ui:msg>
                 </h3>
@@ -236,7 +242,7 @@
                         and stopped) and calculate their impact on your investments in the web.
                     </ui:msg>
                 </p>
-            </g:HTMLPanel>
-        </g:HTMLPanel>
+            </div>
+        </div>
     </g:HTMLPanel>
 </ui:UiBinder>

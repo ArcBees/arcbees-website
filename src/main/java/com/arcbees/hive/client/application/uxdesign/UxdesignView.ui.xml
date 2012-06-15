@@ -69,11 +69,10 @@
     </ui:style>
     <g:HTMLPanel addStyleNames="{res.style.mainSectionContainer} {res.style.bulleBgMain} {res.style.cornerBottom}">
         <p class="{res.style.pHead}">
-            <ui:msg description="Ux Design > introduction paragraph">ArcBees is a business partner of Google, the search
-                engine most used worldwide to find information on the
-                Internet. ArcBees is then one of the companies best placed to offer you the visibility you need.
-                However,
-                certain standards must be met. And these standards are based on the user experience (UX).
+            <ui:msg description="Ux Design > introduction paragraph">ArcBees builds robust and scalable applications
+                with the best programmers around. A great user experience is a key factor in the success of your web
+                application. Luckily, ArcBees will keep listening and iterating over your needs, in order to create a
+                delighful experience for your users.﻿
             </ui:msg>
         </p>
         <g:Image resource="{res.beeUx}" addStyleNames="{res.style.imgCenter}"/>
@@ -115,7 +114,7 @@
                     </span>
                 </g:Anchor>
             </div>
-            <div class="{style.btCarouselBg}"></div>
+            <div class="{style.btCarouselBg}"/>
         </div>
         <g:HTMLPanel ui:field="uxCarousel" addStyleNames="{style.uxCarousel}">
             <g:HTMLPanel addStyleNames="{res.style.textOn}">
@@ -216,7 +215,8 @@
                         personas,
                         guide
                         the
-                        client, improve the user experience, we ergonomically adapt the application to the mobile format.
+                        client, improve the user experience, we ergonomically adapt the application to the mobile
+                        format.
                     </ui:msg>
                 </p>
             </g:HTMLPanel>
@@ -229,7 +229,8 @@
                         assess
                         your performance. Our methodology is based on iterative
                         processes of
-                        creation: continuous improvement of your performance(which allow you to track transactions that have affected,
+                        creation: continuous improvement of your performance(which allow you to track transactions that
+                        have affected,
                         validated,
                         issued
                         and stopped) and calculate their impact on your investments in the web.

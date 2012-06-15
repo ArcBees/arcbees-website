@@ -100,10 +100,8 @@
             </g:HTMLPanel>
             <g:HTMLPanel addStyleNames="{res.style.textOff}">
                 <p>
-                    <ui:msg description="Products > BeeHIVE > description">The last ArcBees product is still in
-                        development
-                        and
-                        the code name for this product is BeeHIVE.
+                    <ui:msg description="Products > BeeHIVE > description">This is our latest product, straight from the
+                        hive! It is still under development, so stay tuned for more details!
                     </ui:msg>
                 </p>
             </g:HTMLPanel>

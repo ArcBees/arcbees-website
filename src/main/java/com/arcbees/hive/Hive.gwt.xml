@@ -22,7 +22,7 @@
 	<source path="shared" />
 
     <!--TODO: remove this before uploading to appengine (only used to speed up permutations during debugging)-->
-    <set-property name="user.agent" value="safari"/>
+    <!--<set-property name="user.agent" value="safari"/>-->
 
 	<define-configuration-property name="gin.ginjector" is-multi-valued="false" />
 	<set-configuration-property name="gin.ginjector" value="com.arcbees.hive.client.gin.ClientGinjector" />

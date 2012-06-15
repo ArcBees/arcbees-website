@@ -16,42 +16,84 @@
         }
 
         .menuContainer div a {
-            margin-top: 5px;
-            margin-left: 15px;
-            margin-right: 15px;
             color: #9f9f9f;
             height: 30px;
+            overflow: hidden;
+            float: left;
+            position: relative;
         }
 
-        .menuContainer div a:hover {
-            color: #5f5f5f;
+        .menuContainer div a:hover span:first-child {
+            color: #9f9f9f;
+        }
+
+        .menuContainer div a:hover span {
+            color: #f1f1f1;
+        }
+
+        .menuContainer a span {
+            padding-left: 15px;
+            padding-right: 15px;
+            position: relative;
+            height: 30px;
+            float: left;
+            clear: both;
+            transition: bottom 0.25s linear;
+            -webkit-transition: bottom 0.25s linear;
+            -moz-transition: bottom 0.25s linear;
+            -o-transition: bottom 0.25s linear;
+        }
+
+        .menuContainer div span:first-child {
+            background: none;
+        }
+
+        .menuContainer div a:hover span {
+            bottom: 30px;
         }
 
         .navPrincipale {
             float: right;
+            margin-right: 15px;
         }
-
-        .navPrincipale div {
-            overflow: hidden;
-            display: inline;
-            width: auto;
-        }
-
     </ui:style>
     <g:HTMLPanel addStyleNames="{style.menuContainer} {res.style.cornerTop} {res.style.navBarBgSprite}">
         <div class="{style.navPrincipale}">
-            <a href="#{nameTokens.getService}">Services</a>
+            <a href="#{nameTokens.getService}">
+                <span>Services</span>
+                <span class="{res.style.navBarBgHoverSprite}">Services</span>
+            </a>
             <a href="#{nameTokens.getProduct}">
-                <ui:msg description="Main navbar > Products">Products</ui:msg>
+                <span>
+                    <ui:msg description="Main navbar > Products">Products</ui:msg>
+                </span>
+                <span class="{res.style.navBarBgHoverSprite}">
+                    <ui:msg description="Main navbar > Products">Products</ui:msg>
+                </span>
             </a>
             <a href="#{nameTokens.getUxdesign}">
-                <ui:msg description="Main navbar > Ux design">UX Design</ui:msg>
+                <span>
+                    <ui:msg description="Main navbar > Ux design">UX Design</ui:msg>
+                </span>
+                <span class="{res.style.navBarBgHoverSprite}">
+                    <ui:msg description="Main navbar > Ux design">UX Design</ui:msg>
+                </span>
             </a>
             <a href="#{nameTokens.getTeam}">
-                <ui:msg description="Main navbar > Our Team">Our Team</ui:msg>
+                <span>
+                    <ui:msg description="Main navbar > Our Team">Our Team</ui:msg>
+                </span>
+                <span class="{res.style.navBarBgHoverSprite}">
+                    <ui:msg description="Main navbar > Our Team">Our Team</ui:msg>
+                </span>
             </a>
             <a href="#{nameTokens.getContact}">
-                <ui:msg description="Main navbar > Contact Us">Contact Us</ui:msg>
+                <span>
+                    <ui:msg description="Main navbar > Contact Us">Contact Us</ui:msg>
+                </span>
+                <span class="{res.style.navBarBgHoverSprite}">
+                    <ui:msg description="Main navbar > Contact Us">Contact Us</ui:msg>
+                </span>
             </a>
         </div>
     </g:HTMLPanel>

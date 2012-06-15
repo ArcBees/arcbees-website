@@ -7,6 +7,7 @@
 
     <ui:with field="res" type="com.arcbees.hive.client.resource.Resources"/>
     <ui:with field="product" type="com.arcbees.hive.client.resource.products.ProductsResources"/>
+    <ui:with field='productNames' type='com.arcbees.hive.client.application.products.ProductIds'/>
     <ui:style>
         .productsTextContainer {
             height: 130px;
@@ -22,6 +23,14 @@
         .productsImgContainer {
             margin-bottom: 25px;
         }
+
+        .visible {
+            display: block;
+        }
+
+        .hidden {
+            display: none;
+        }
     </ui:style>
     <g:HTMLPanel addStyleNames="{res.style.mainSectionContainer} {res.style.bulleBgMain} {res.style.cornerBottom}">
         <p class="{res.style.pHead}">
@@ -35,8 +44,8 @@
             <g:Anchor ui:field="btGAE" addStyleNames="{product.style.productsGAE}"/>
             <g:Anchor ui:field="btBH" addStyleNames="{product.style.productsBH}"/>
         </div>
-        <g:HTMLPanel ui:field="productsTextContainer" addStyleNames="{style.productsTextContainer}">
-            <g:HTMLPanel addStyleNames="{res.style.textOn}">
+        <div id="productsTextContainer" class="{style.productsTextContainer}">
+            <div id="{productNames.gwtp}" class="{style.visible}">
                 <p>
                     <ui:msg description="Products > GWTP > description">GWT-Platform (gwtp) is the most popular
                         Model-View-Presenter for the Google Web
@@ -59,8 +68,8 @@
                         2011.
                     </ui:msg>
                 </p>
-            </g:HTMLPanel>
-            <g:HTMLPanel addStyleNames="{res.style.textOff}">
+            </div>
+            <div id="{productNames.jukito}" class="{style.hidden}">
                 <p>
                     <ui:msg description="Products > Jukito > description">Jukito complements your testing infrastructure
                         by
@@ -79,8 +88,8 @@
                         code.
                     </ui:msg>
                 </p>
-            </g:HTMLPanel>
-            <g:HTMLPanel addStyleNames="{res.style.textOff}">
+            </div>
+            <div id="{productNames.gaeStudio}" class="{style.hidden}">
                 <p>
                     <ui:msg description="Products > GAE studio > description">GAE Studio is a tool destined to assist
                         developers
@@ -97,14 +106,14 @@
                         wish to speed up their GAE applications.
                     </ui:msg>
                 </p>
-            </g:HTMLPanel>
-            <g:HTMLPanel addStyleNames="{res.style.textOff}">
+            </div>
+            <div id="{productNames.beeHive}" class="{style.hidden}">
                 <p>
                     <ui:msg description="Products > BeeHIVE > description">This is our latest product, straight from the
                         hive! It is still under development, so stay tuned for more details!
                     </ui:msg>
                 </p>
-            </g:HTMLPanel>
-        </g:HTMLPanel>
+            </div>
+        </div>
     </g:HTMLPanel>
 </ui:UiBinder>

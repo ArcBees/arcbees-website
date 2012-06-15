@@ -18,17 +18,12 @@ package com.arcbees.hive.client.application.products;
 
 import com.arcbees.core.client.mvp.ViewImpl;
 import com.arcbees.hive.client.application.products.ProductsPresenter.MyView;
-import com.arcbees.hive.client.resource.Resources;
 import com.arcbees.hive.client.resource.products.ProductsResources;
 import com.google.gwt.event.dom.client.ClickEvent;
-import com.google.gwt.query.client.Function;
-import com.google.gwt.query.client.GQuery;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
-import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Anchor;
-import com.google.gwt.user.client.ui.HTMLPanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 
@@ -43,105 +38,58 @@ public class ProductsView extends ViewImpl implements MyView {
     Anchor btGAE;
     @UiField
     Anchor btBH;
-    @UiField
-    HTMLPanel productsTextContainer;
 
-    private final Resources resources;
-    private final ProductsResources productsResources;
-    private final Resources.Style resourcesStyle;
     private final ProductsResources.Style productsStyle;
 
     public interface Binder extends UiBinder<Widget, ProductsView> {
     }
 
+    private String previousProductId = ProductIds.gwtp();
+
     @Inject
     public ProductsView(final Binder uiBinder,
-                        final ProductsResources productsResources,
-                        final Resources resources) {
-        this.resources = resources;
-        this.productsResources = productsResources;
+                        final ProductsResources productsResources) {
         this.productsStyle = productsResources.style();
-        this.resourcesStyle = resources.style();
         initWidget(uiBinder.createAndBindUi(this));
     }
 
     @UiHandler("btGWTP")
     public void onBtGWTP(ClickEvent event) {
-        changeProduct(0);
+        switchTo(btGWTP, productsStyle.productsGWTPOn(), ProductIds.gwtp());
     }
 
     @UiHandler("btJukito")
     public void onBtJukito(ClickEvent event) {
-        changeProduct(1);
+        switchTo(btJukito, productsStyle.productsJukitoOn(), ProductIds.jukito());
     }
 
     @UiHandler("btGAE")
     public void onBtGAE(ClickEvent event) {
-        changeProduct(2);
+        switchTo(btGAE, productsStyle.productsGAEOn(), ProductIds.gaeStudio());
     }
 
     @UiHandler("btBH")
     public void onBtBH(ClickEvent event) {
-        changeProduct(3);
+        switchTo(btBH, productsStyle.productsBHOn(), ProductIds.beeHive());
     }
 
-    private void changeProduct(int index) {
-        switchImg(index);
-        switchTxt(index);
-    }
-
-    private void switchTxt(int index) {
-        Widget widgetSelected = productsTextContainer.getWidget(index);
-        final Resources.Style style = resources.style();
-        if (!widgetSelected.getStyleName().equals(style.textOn())) {
-            widgetSelected.setStyleName(style.textOnBack());
-            widgetSelected.getElement().setAttribute("style", "display:none");
-            $("." + style.textOn()).fadeOut(500, new Function() {
-                @Override
-                public void f() {
-                    int widgetCount = productsTextContainer.getWidgetCount();
-                    GQuery widgetOnBack = $("." + style.textOnBack());
-
-                    for (int i = 0; i < widgetCount; i++) {
-                        Widget currentWidget = productsTextContainer.getWidget(i);
-                        currentWidget.getElement().setAttribute("style", "display:none");
-
-                        if (!currentWidget.getStyleName().equals(style.textOnBack())) {
-                            currentWidget.getElement().setClassName("");
-                        }
-                    }
-                    widgetOnBack.fadeIn(500, new Function() {
-                        @Override
-                        public void f() {
-
-                            GQuery widgetOnBack = $("." + style.textOnBack());
-                            widgetOnBack.removeClass(style.textOnBack());
-                            widgetOnBack.addClass(style.textOn());
-                        }
-                    });
-                }
-            });
-        }
-    }
-    private void switchImg(int index) {
+    private void switchTo(Anchor anchor, String style, String productId) {
         disableAll();
-        switch (index) {
-            case 0:
-                btGWTP.setStyleName(productsStyle.productsGWTPOn());
-                break;
-            case 1:
-                btJukito.setStyleName(productsStyle.productsJukitoOn());
-                break;
-            case 2:
-                btGAE.setStyleName(productsStyle.productsGAEOn());
-                break;
-            case 3:
-                btBH.setStyleName(productsStyle.productsBHOn());
-                break;
-            default:
-                Window.alert("wrong index: " + index);
-                break;
-        }
+        anchor.setStyleName(style);
+        switchText(productId);
+    }
+
+    private void switchText(String productId) {
+        stopAllAnimations();
+
+        $("#" + productId).fadeIn(500);
+        $("#" + previousProductId).fadeOut(100);
+
+        previousProductId = productId;
+    }
+
+    private void stopAllAnimations() {
+        $("#productsTextContainer > div").stop(true, true);
     }
 
     private void disableAll() {
@@ -151,5 +99,3 @@ public class ProductsView extends ViewImpl implements MyView {
         btBH.setStyleName(productsStyle.productsBH());
     }
 }
-
-

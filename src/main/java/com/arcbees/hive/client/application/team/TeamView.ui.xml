@@ -32,11 +32,6 @@
             font-size: 0.9em;
         }
 
-        .aRow > div > img + div.laure {
-            margin-top: 13px;
-            font-size: 0.9em;
-        }
-
         .aRow > div > div + div {
             font-size: 0.8em;
             font-style: italic;
@@ -225,7 +220,7 @@
             </div>
             <div class="span3">
                 <g:Image resource="{teamres.team_laure_chatenet}" altText="Laure Gabrielle Chatenet"/>
-                <div class="{style.laure}">Laure Gabrielle
+                <div>Laure Gabrielle
                     <br/>
                     Chatenet
                 </div>

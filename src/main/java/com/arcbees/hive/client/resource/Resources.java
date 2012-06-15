@@ -83,6 +83,7 @@ public interface Resources extends ClientBundle {
 
         String job();
 
+        String navBarBgHoverSprite();
     }
 
     Style style();
@@ -117,6 +118,9 @@ public interface Resources extends ClientBundle {
     @ImageOptions(repeatStyle = RepeatStyle.Horizontal)
     ImageResource mainDegradeBg();
 
+    @ImageOptions(repeatStyle = RepeatStyle.Horizontal)
+    ImageResource navBarBgHover();
+
     ImageResource productGWTP();
 
     ImageResource productJUKITO();
@@ -124,8 +128,6 @@ public interface Resources extends ClientBundle {
     ImageResource contactUS();
 
     ImageResource job();
-
-    ImageResource blogAbeilleConsulting();
 
     ImageResource honeyConsultingDevelopmentSuccess();
 }

@@ -23,11 +23,11 @@
             position: relative;
         }
 
-        .menuContainer div a:hover span:first-child {
+        .menuContainer div a span:first-child {
             color: #9f9f9f;
         }
 
-        .menuContainer div a:hover span {
+        .menuContainer div a span {
             color: #f1f1f1;
         }
 

@@ -118,36 +118,6 @@
             <div class="{style.clearBoth}"/>
 
             <div class="{style.associatedBeeRow}">
-                <g:Image resource="{teamres.team_philippe_beaudoin}" altText="Philippe Beaudoin"/>
-                <div>
-                    <div class="{style.associatedBeeTitle}">
-                        <div>Philippe Beaudoin</div>
-                        <div>
-                            <ui:msg description="Our Team > Philippe Beaudoin > Position">Co-Founder / Alumni</ui:msg>
-                        </div>
-                    </div>
-                    <p>
-                        <ui:msg description="Our Team > Philippe Beaudoin > Bio">Philippe holds a Ph.D. in computer
-                            science
-                            from
-                            the
-                            University of Montreal and was a postdoctoral
-                            researcher
-                            in the Department of Computer Science, University of British Columbia. Having worked in
-                            graphics
-                            hardware,
-                            where his work has given him a patent, Philippe has 15 years experience in the gaming
-                            industry
-                            and
-                            the
-                            development of Web applications.
-                        </ui:msg>
-                    </p>
-                </div>
-            </div>
-            <div class="{style.clearBoth}"/>
-
-            <div class="{style.associatedBeeRow}">
                 <g:Image resource="{teamres.team_francis_menard}" altText="Francis Ménard"/>
                 <div>
                     <div class="{style.associatedBeeTitle}">
@@ -199,6 +169,36 @@
                     </p>
                 </div>
             </div>
+
+            <div class="{style.associatedBeeRow}">
+                <g:Image resource="{teamres.team_philippe_beaudoin}" altText="Philippe Beaudoin"/>
+                <div>
+                    <div class="{style.associatedBeeTitle}">
+                        <div>Philippe Beaudoin</div>
+                        <div>
+                            <ui:msg description="Our Team > Philippe Beaudoin > Position">Co-Founder / Alumni</ui:msg>
+                        </div>
+                    </div>
+                    <p>
+                        <ui:msg description="Our Team > Philippe Beaudoin > Bio">Philippe holds a Ph.D. in computer
+                            science
+                            from
+                            the
+                            University of Montreal and was a postdoctoral
+                            researcher
+                            in the Department of Computer Science, University of British Columbia. Having worked in
+                            graphics
+                            hardware,
+                            where his work has given him a patent, Philippe has 15 years experience in the gaming
+                            industry
+                            and
+                            the
+                            development of Web applications.
+                        </ui:msg>
+                    </p>
+                </div>
+            </div>
+            <div class="{style.clearBoth}"/>
         </div>
 
         <div class="{style.clearBoth}"/>

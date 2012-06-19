@@ -38,7 +38,7 @@
         .quote {
             width: 400px;
             position: absolute;
-            top: 50px;
+            top: 55px;
             left: 270px;
             font-family: 'Shadows Into Light', cursive;
             font-size: 20px;

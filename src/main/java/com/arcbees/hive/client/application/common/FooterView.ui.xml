@@ -18,7 +18,7 @@
 
         .footerContainer a {
             display: block;
-            padding: 2px 0 2px 4px;
+            padding: 2px 0 2px 0px;
             font-size: 13px;
         }
 

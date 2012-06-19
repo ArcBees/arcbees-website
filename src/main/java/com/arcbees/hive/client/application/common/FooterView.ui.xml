@@ -37,6 +37,9 @@
             font-weight: bold;
             margin-bottom: 6px;
             letter-spacing: 1px;
+
+            color: #000000;
+            opacity: 0.5;
         }
 
         .footerContainer .copyright {

@@ -49,7 +49,7 @@
     }
 
     body .pHead {
-        color: #8b9296;
+        color: #50575B;
         font-family: Ubuntu;
         font-weight: 400;
     }
@@ -74,7 +74,7 @@
         width: 796px;
         margin-left: auto;
         margin-right: auto;
-        padding: 20px 50px;
+        padding: 40px 50px;
     }
 
     .mainSectionContainer a {

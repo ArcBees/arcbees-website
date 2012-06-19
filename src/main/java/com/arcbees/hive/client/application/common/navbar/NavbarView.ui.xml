@@ -9,7 +9,6 @@
         .menuContainer {
             width: inherit;
             height: 30px;
-            font-family: "Verdana";
             font-size: 17px;
             line-height: 30px;
             margin-top: 15px;

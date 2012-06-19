@@ -37,7 +37,7 @@
 
         .btsCarousel a, .btsCarousel a:hover {
             text-align: center;
-            line-height: 117px;
+            line-height: 109px;
             display: block;
             margin-left: 6px;
             z-index: 20;
@@ -47,7 +47,6 @@
 
         .btsCarousel a span, .btsCarousel a:hover span {
             width: 100px;
-            font-family: arial, sans-serif;
             color: #fff;
             font-size: 15px;
             line-height: 16px;

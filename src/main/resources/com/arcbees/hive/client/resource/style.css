@@ -1,10 +1,12 @@
     /*------- Color&Font -------*/
     body {
         background-color: #b4c0c8;
+        font-family: Ubuntu;
+        font-weight: 300;
     }
 
     body .mainSectionContainer {
-        font-family: Georgia, Times, serif;
+        /*font-family: Georgia, Times, serif;*/
     }
 
     body .headerContainer,
@@ -14,13 +16,13 @@
     }
 
     body .customersContainer {
-        font-family: Verdana, Arial, sans-serif;
+        /*font-family: Verdana, Arial, sans-serif;*/
     }
 
     body .footerContainer {
         background-color: #DDA124;
         color: #5A3A25;
-        font-family: Verdana, Arial, sans-serif;
+        /*font-family: Verdana, Arial, sans-serif;*/
     }
 
     .localeSwitcher, .rightLinkBox p {
@@ -35,6 +37,7 @@
     h2, h3, h4 {
         color: #5B676F;
         font-family: Ubuntu;
+        font-weight: 400;
     }
 
     li, .mainSectionContainer p {
@@ -47,7 +50,8 @@
 
     body .pHead {
         color: #8b9296;
-        font-family: Verdana, Arial, sans-serif;
+        font-family: Ubuntu;
+        font-weight: 400;
     }
 
     body .pHead span {

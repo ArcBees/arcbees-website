@@ -13,7 +13,7 @@
         }
 
         .home h2 {
-            color: #7e8890;
+            color: #50575B;
             font-size: 22px;
             font-weight: bold;
             text-align: center;
@@ -21,7 +21,6 @@
         }
 
         .home p {
-            color: #8b9296;
             font-size: 17px;
             line-height: 20px;
             margin-bottom: 35px;

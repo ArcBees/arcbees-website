@@ -78,7 +78,7 @@
         <p class="{res.style.pHead}">
             <ui:msg description="Our Team > Intro paragraph">All our bees contributes to the success of our projects and
                 each of them is a
-                val uable asset to the company.
+                valuable asset to the company.
                 But who is the queen bee? Together, we are all the Queen!
             </ui:msg>
         </p>

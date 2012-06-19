@@ -15,7 +15,7 @@
 
         .contactInfo {
             position: absolute;
-            left: 130px;
+            left: 115px;
             top: 318px;
         }
 
@@ -33,6 +33,7 @@
             border: none;
             margin-bottom: 10px;
             padding-left: 10px;
+            padding-right: 0px;
             color: #838383;
             font-family: Arial;
         }
@@ -73,8 +74,8 @@
             </p>
         </div>
         <div class="{style.message}">
-            <g:TextBox ui:field="senderTextBox" addStyleNames="{res.style.cornerTopBottom}"/>
-            <g:TextArea ui:field="contentsTextArea" addStyleNames="{res.style.cornerTopBottom}"/>
+            <g:TextBox ui:field="senderTextBox" />
+            <g:TextArea ui:field="contentsTextArea" />
             <g:Button ui:field="sendButton" addStyleNames="{res.style.cornerTopBottom} btn btn-warning">
                 <ui:msg description="Contact Us > Send">Send</ui:msg>
             </g:Button>

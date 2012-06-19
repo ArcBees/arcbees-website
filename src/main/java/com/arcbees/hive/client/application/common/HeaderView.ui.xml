@@ -38,20 +38,18 @@
         .quote {
             width: 400px;
             position: absolute;
-            top: 50px;
+            top: 55px;
             left: 270px;
             font-family: 'Shadows Into Light', cursive;
             font-size: 20px;
             word-spacing: 1px;
             letter-spacing: 1px;
-            line-height: 30px;
+            line-height: 25px;
+            text-align: center;
         }
 
         .quote span {
             font-size: 15px;
-            float: right;
-            margin-top: -3px;
-            margin-right: 25px;
         }
 
         .imgBeeFlying {
@@ -70,7 +68,7 @@
             <ui:msg description="Header > Quote">The regular structure of the bees is the most economical polygon
             </ui:msg>
             »
-            <span>- Fejes Toth</span>
+            <span>(Fejes Toth)</span>
         </p>
         <g:Image resource="{res.beeFlying}" addStyleNames="{style.imgBeeFlying}"/>
         <div class="{res.style.rightLinkBox} {style.rightLinkBox}">

@@ -18,7 +18,7 @@
 
         .footerContainer a {
             display: block;
-            padding: 2px 0 2px 4px;
+            padding: 2px 0 2px 0px;
             font-size: 13px;
         }
 
@@ -35,8 +35,11 @@
         .footerContainer p {
             text-transform: uppercase;
             font-weight: bold;
-            margin-bottom: 12px;
+            margin-bottom: 6px;
             letter-spacing: 1px;
+
+            color: #000000;
+            opacity: 0.5;
         }
 
         .footerContainer .copyright {

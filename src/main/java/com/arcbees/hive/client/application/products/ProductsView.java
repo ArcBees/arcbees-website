@@ -36,8 +36,6 @@ public class ProductsView extends ViewImpl implements MyView {
     Anchor btJukito;
     @UiField
     Anchor btGAE;
-    @UiField
-    Anchor btBH;
 
     private final ProductsResources.Style productsStyle;
 
@@ -68,11 +66,6 @@ public class ProductsView extends ViewImpl implements MyView {
         switchTo(btGAE, productsStyle.productsGAEOn(), ProductIds.gaeStudio());
     }
 
-    @UiHandler("btBH")
-    public void onBtBH(ClickEvent event) {
-        switchTo(btBH, productsStyle.productsBHOn(), ProductIds.beeHive());
-    }
-
     private void switchTo(Anchor anchor, String style, String productId) {
         disableAll();
         anchor.setStyleName(style);
@@ -96,6 +89,5 @@ public class ProductsView extends ViewImpl implements MyView {
         btGWTP.setStyleName(productsStyle.productsGWTP());
         btJukito.setStyleName(productsStyle.productsJukito());
         btGAE.setStyleName(productsStyle.productsGAE());
-        btBH.setStyleName(productsStyle.productsBH());
     }
 }

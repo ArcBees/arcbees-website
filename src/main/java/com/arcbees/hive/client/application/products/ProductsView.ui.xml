@@ -21,7 +21,10 @@
         }
 
         .productsImgContainer {
+            width: 600px;
             margin-bottom: 25px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .visible {
@@ -42,7 +45,6 @@
             <g:Anchor ui:field="btGWTP" addStyleNames="{product.style.productsGWTPOn}"/>
             <g:Anchor ui:field="btJukito" addStyleNames="{product.style.productsJukito}"/>
             <g:Anchor ui:field="btGAE" addStyleNames="{product.style.productsGAE}"/>
-            <g:Anchor ui:field="btBH" addStyleNames="{product.style.productsBH}"/>
         </div>
         <div id="productsTextContainer" class="{style.productsTextContainer}">
             <div id="{productNames.gwtp}" class="{style.visible}">
@@ -104,13 +106,6 @@
                         developers
                         who
                         wish to speed up their GAE applications.
-                    </ui:msg>
-                </p>
-            </div>
-            <div id="{productNames.beeHive}" class="{style.hidden}">
-                <p>
-                    <ui:msg description="Products > BeeHIVE > description">This is our latest product, straight from the
-                        hive! It is still under development, so stay tuned for more details!
                     </ui:msg>
                 </p>
             </div>

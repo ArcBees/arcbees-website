@@ -21,7 +21,6 @@
         }
 
         .home p {
-            color: #8b9296;
             font-size: 17px;
             line-height: 20px;
             margin-bottom: 35px;

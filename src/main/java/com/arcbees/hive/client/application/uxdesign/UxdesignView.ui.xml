@@ -54,17 +54,6 @@
             vertical-align: middle;
         }
 
-        .btCarouselBg {
-            clear: both;
-            margin: 0 auto;
-            position: relative;
-            z-index: 10;
-            width: 725px;
-            height: 30px;
-            background-color: #b4c0c8;
-            bottom: 75px;
-        }
-
         .visible {
             display: block;
         }
@@ -120,7 +109,6 @@
                     </span>
                 </g:Anchor>
             </div>
-            <div class="{style.btCarouselBg}"/>
         </div>
         <div id="uxCarousel" class="{style.uxCarousel}">
             <div id="{uxCategories.mobileWebsiteAndApplication}" class="{style.visible}">

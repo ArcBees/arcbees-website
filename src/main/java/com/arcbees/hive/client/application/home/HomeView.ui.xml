@@ -48,18 +48,18 @@
         }
 
         .home .productsNav p {
+            color: #50575B;
             margin-top: 20px;
             font-size: 17px;
             float: left;
-            color: #939698;
             width: 500px;
             height: 20px;
         }
 
         .home .productsNav a {
+            color: #50575B;
             width: 375px;
             font-size: 13px;
-            color: #939698;
             font-variant: small-caps;
             display: inline-block;
             position: relative;
@@ -68,11 +68,11 @@
         }
 
         .home .productsNav a:hover {
-            color: #6e6e6e;
+            color: #3a3a3a;
         }
 
         .home  .sliderProductsContainer {
-            font-family: Verdana,Arial,sans-serif;
+            font-family: Verdana, Arial, sans-serif;
             position: relative;
             margin: 55px auto 0 auto;
             width: 750px;

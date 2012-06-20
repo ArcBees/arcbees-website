@@ -13,7 +13,6 @@
         }
 
         .home h2 {
-            color: #50575B;
             font-size: 22px;
             font-weight: bold;
             text-align: center;

@@ -77,9 +77,9 @@
             <p>
                 1.877.635.1585
             </p>
-            <a ui:field="swithcLocaleHyperlink" href="?locale=fr" class="{res.style.localeSwitcher}">
+            <div ui:field="switchLocaleDiv" class="{res.style.localeSwitcher}">
                 <ui:msg description="Locale hyperlink in header">Français</ui:msg>
-            </a>
+            </div>
         </div>
     </g:HTMLPanel>
 </ui:UiBinder>

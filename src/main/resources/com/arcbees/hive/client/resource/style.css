@@ -56,13 +56,11 @@
     }
 
     body .customersContainer {
-        /*font-family: Verdana, Arial, sans-serif;*/
     }
 
     body .footerContainer {
         background-color: #DDA124;
         color: #5A3A25;
-        /*font-family: Verdana, Arial, sans-serif;*/
     }
 
     .localeSwitcher, .rightLinkBox p {
@@ -72,6 +70,7 @@
 
     .localeSwitcher:HOVER {
         color: #5f5f5f;
+        cursor: pointer;
     }
 
     h2, h3, h4 {

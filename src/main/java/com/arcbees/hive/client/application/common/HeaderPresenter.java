@@ -17,6 +17,7 @@
 package com.arcbees.hive.client.application.common;
 
 import com.google.gwt.i18n.client.LocaleInfo;
+import com.google.gwt.user.client.Window;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.PresenterWidget;
@@ -25,9 +26,6 @@ import com.gwtplatform.mvp.client.proxy.PlaceManager;
 
 public class HeaderPresenter extends PresenterWidget<HeaderPresenter.MyView> implements HeaderUiHandlers {
     public interface MyView extends View {
-        void showEnglishHyperlink();
-
-        void showFrenchHyperlink();
     }
 
     private final PlaceManager placeManager;
@@ -40,21 +38,19 @@ public class HeaderPresenter extends PresenterWidget<HeaderPresenter.MyView> imp
     }
 
     @Override
-    protected void onBind() {
-        super.onBind();
+    public void switchLocale() {
+        LocaleInfo currentLocale = LocaleInfo.getCurrentLocale();
 
-        LocaleInfo localeInfo = LocaleInfo.getCurrentLocale();
-        String localeName = localeInfo.getLocaleName();
+        String newLocale;
 
-        if (localeName.equals("fr")) {
-            getView().showEnglishHyperlink();
+        if (currentLocale.getLocaleName().equals("fr")) {
+            newLocale = "en";
         } else {
-            getView().showFrenchHyperlink();
+            newLocale = "fr";
         }
-    }
 
-    @Override
-    public void showHome() {
-        placeManager.revealDefaultPlace();
+        Window.Location.assign(Window.Location.createUrlBuilder()
+                .setParameter(LocaleInfo.getLocaleQueryParam(), newLocale)
+                .buildString());
     }
 }

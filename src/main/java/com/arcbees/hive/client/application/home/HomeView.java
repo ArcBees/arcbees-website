@@ -77,31 +77,6 @@ public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
                 });
     }-*/;
 
-    @UiHandler("btGWTP")
-    public void onBtGWTP(ClickEvent event) {
-        slideToProduct(0);
-    }
-
-    @UiHandler("btJukito")
-    public void onBtJukito(ClickEvent event) {
-        slideToProduct(3);
-    }
-
-    @UiHandler("btGAE")
-    public void onBtGAE(ClickEvent event) {
-        slideToProduct(2);
-    }
-
-    @UiHandler("btBeeHive")
-    public void onBtBeeHive(ClickEvent event) {
-        slideToProduct(1);
-    }
-
-    private void slideToProduct(int index) {
-        setEnabled(index);
-        slideToProductNative(index);
-    }
-
     private void setEnabled(int index) {
         disableAll();
 
@@ -142,8 +117,4 @@ public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
     private void enable(Anchor selected) {
         selected.setStyleName(homeResources.style().sliderProductsOn());
     }
-
-    private native void slideToProductNative(int index) /*-{
-        $wnd.$('#sliderProductsCarousel').rcarousel("goToPage", index);
-    }-*/;
 }

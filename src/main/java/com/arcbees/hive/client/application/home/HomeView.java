@@ -37,13 +37,10 @@ public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
     Anchor btJukito;
     @UiField
     Anchor btGAE;
-    @UiField
-    Anchor btBeeHive;
 
     private final HomeResources homeResources;
 
     public interface Binder extends UiBinder<Widget, HomeView> {
-
     }
 
     @Inject
@@ -86,14 +83,11 @@ public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
             case 0:
                 selected = btGWTP;
                 break;
-            case 3:
+            case 2:
                 selected = btJukito;
                 break;
-            case 2:
-                selected = btGAE;
-                break;
             case 1:
-                selected = btBeeHive;
+                selected = btGAE;
                 break;
             default:
                 Window.alert("wrong index: " + index);
@@ -107,7 +101,6 @@ public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
         disableAnchor(btGWTP);
         disableAnchor(btJukito);
         disableAnchor(btGAE);
-        disableAnchor(btBeeHive);
     }
 
     private void disableAnchor(Anchor toDisable) {

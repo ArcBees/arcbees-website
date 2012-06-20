@@ -20,10 +20,11 @@
             overflow: hidden;
             float: left;
             position: relative;
+            font-weight: 400;
         }
 
         .menuContainer div a span:first-child {
-            color: #9f9f9f;
+            color: #7a7a7a;
         }
 
         .menuContainer div a span {

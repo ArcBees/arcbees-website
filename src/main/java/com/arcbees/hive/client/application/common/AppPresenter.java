@@ -18,6 +18,7 @@ package com.arcbees.hive.client.application.common;
 
 import com.arcbees.hive.client.application.common.event.ResizeEvent;
 import com.arcbees.hive.client.application.common.event.ResizeEvent.ResizeHandler;
+import com.arcbees.hive.client.application.common.navbar.NavbarPresenter;
 import com.google.gwt.event.shared.GwtEvent.Type;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
@@ -43,10 +44,12 @@ public class AppPresenter extends
     public static final Type<RevealContentHandler<?>> TYPE_SetMainContent = new Type<RevealContentHandler<?>>();
 
     public static Object TYPE_setHeader = new Object();
+    public static Object TYPE_setNavbar = new Object();
     public static Object TYPE_setCustomers = new Object();
     public static Object TYPE_setFooter = new Object();
 
     private final HeaderPresenter headerPresenter;
+    private final NavbarPresenter navbarPresenter;
     private final FooterPresenter footerPresenter;
     private final CustomersPresenter customersPresenter;
 
@@ -57,11 +60,13 @@ public class AppPresenter extends
                         final MyView view,
                         final MyProxy proxy,
                         final HeaderPresenter headerPresenter,
+                        final NavbarPresenter navbarPresenter,
                         final FooterPresenter footerPresenter,
                         final CustomersPresenter customersPresenter) {
         super(eventBus, view, proxy);
 
         this.headerPresenter = headerPresenter;
+        this.navbarPresenter = navbarPresenter;
         this.footerPresenter = footerPresenter;
         this.customersPresenter = customersPresenter;
     }
@@ -83,6 +88,7 @@ public class AppPresenter extends
         super.onBind();
 
         setInSlot(TYPE_setHeader, headerPresenter);
+        setInSlot(TYPE_setNavbar, navbarPresenter);
         setInSlot(TYPE_setCustomers, customersPresenter);
         setInSlot(TYPE_setFooter, footerPresenter);
 

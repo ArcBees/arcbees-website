@@ -58,11 +58,11 @@
     </ui:style>
     <g:HTMLPanel addStyleNames="{style.menuContainer} {res.style.cornerTop} {res.style.navBarBgSprite}">
         <div class="{style.navPrincipale}">
-            <a href="#{nameTokens.getService}">
+            <a href="#{nameTokens.getService}" ui:field="servicesAnchor">
                 <span>Services</span>
                 <span class="{res.style.navBarBgHoverSprite}">Services</span>
             </a>
-            <a href="#{nameTokens.getProduct}">
+            <a href="#{nameTokens.getProduct}" ui:field="productsAnchor">
                 <span>
                     <ui:msg description="Main navbar > Products">Products</ui:msg>
                 </span>
@@ -70,7 +70,7 @@
                     <ui:msg description="Main navbar > Products">Products</ui:msg>
                 </span>
             </a>
-            <a href="#{nameTokens.getUxdesign}">
+            <a href="#{nameTokens.getUxdesign}" ui:field="uxDesignAnchor">
                 <span>
                     <ui:msg description="Main navbar > Ux design">UX Design</ui:msg>
                 </span>
@@ -78,7 +78,7 @@
                     <ui:msg description="Main navbar > Ux design">UX Design</ui:msg>
                 </span>
             </a>
-            <a href="#{nameTokens.getTeam}">
+            <a href="#{nameTokens.getTeam}" ui:field="teamAnchor">
                 <span>
                     <ui:msg description="Main navbar > Our Team">Our Team</ui:msg>
                 </span>
@@ -86,7 +86,7 @@
                     <ui:msg description="Main navbar > Our Team">Our Team</ui:msg>
                 </span>
             </a>
-            <a href="#{nameTokens.getContact}">
+            <a href="#{nameTokens.getContact}" ui:field="contactAnchor">
                 <span>
                     <ui:msg description="Main navbar > Contact Us">Contact Us</ui:msg>
                 </span>

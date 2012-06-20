@@ -53,8 +53,8 @@ public class AppView extends ViewImpl implements MyView {
     SimplePanel customers;
     @UiField
     HTMLPanel footer;
-    @UiField(provided = true)
-    NavbarView navbarView;
+    @UiField
+    SimplePanel navbarPanel;
 
     private Integer delay = 300;
     private Boolean blockFade = false;
@@ -72,10 +72,7 @@ public class AppView extends ViewImpl implements MyView {
     };
 
     @Inject
-    public AppView(final Binder uiBinder,
-                   final NavbarView navbarView) {
-        this.navbarView = navbarView;
-
+    public AppView(final Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
     }
 
@@ -92,6 +89,9 @@ public class AppView extends ViewImpl implements MyView {
         } else if (slot == AppPresenter.TYPE_setFooter) {
             footer.clear();
             footer.add(content, footer.getElement());
+        } else if(slot == AppPresenter.TYPE_setNavbar){
+            navbarPanel.clear();
+            navbarPanel.setWidget(content);
         }
     }
 

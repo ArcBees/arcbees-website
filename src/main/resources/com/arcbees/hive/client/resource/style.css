@@ -1,6 +1,5 @@
     /*------- Color&Font -------*/
 
-
     body {
         position: absolute;
         top: 0;
@@ -15,22 +14,23 @@
         overflow-y: auto;
         background-color: transparent;
     }
+
     ::-webkit-scrollbar {
         width: 11px;
         height: 11px;
     }
+
     ::-webkit-scrollbar-button:start:decrement,
-    ::-webkit-scrollbar-button:end:increment  {
+    ::-webkit-scrollbar-button:end:increment {
         height: 30px;
         display: block;
         background-color: transparent;
     }
-    ::-webkit-scrollbar-track-piece  {
+
+    ::-webkit-scrollbar-track-piece {
         background: #a8b5bd none;
         -webkit-border-radius: 6px;
-        -webkit-box-shadow: inset .0625em .0625em 0 0
-        #8D98A0,inset -.0625em -.0625em 0 0
-        #C6D3DB;
+        -webkit-box-shadow: inset .0625em .0625em 0 0 #8D98A0, inset -.0625em -.0625em 0 0 #C6D3DB;
     }
 
     ::-webkit-scrollbar-thumb:vertical {
@@ -39,6 +39,7 @@
         border: 1px solid #777;
         -webkit-border-radius: 6px;
     }
+
     body {
         background-color: #b4c0c8;
         font-family: Ubuntu;
@@ -226,6 +227,10 @@
     .textOnBack {
         display: block;
         bottom: 126px;
+    }
+
+    .navbarAnchorOn {
+        bottom: 30px;
     }
 
         /*------- UtilityEnd -------*/

@@ -84,6 +84,8 @@ public interface Resources extends ClientBundle {
         String job();
 
         String navBarBgHoverSprite();
+
+        String navbarAnchorOn();
     }
 
     Style style();

@@ -80,12 +80,16 @@
             overflow: hidden;
         }
 
+        .firstParagraph {
+            text-align: center;
+        }
+
     </ui:style>
     <g:HTMLPanel addStyleNames="{res.style.mainSectionContainer} {res.style.bulleBgHome} {res.style.cornerBottom} {style.home}">
         <h2>
             <ui:msg description="Home > Title">Have a new web project? Need to redesign your architecture?</ui:msg>
         </h2>
-        <p class="{res.style.pHead}">
+        <p class="{res.style.pHead} {style.firstParagraph}">
             <ui:msg description="Home > Subtitle">With ArcBees, your company may spend more time doing what it does best
                 while we provide you simple web
                 solutions that meet your needs. We are specialists in GWTP, UX design and Cloud Computing

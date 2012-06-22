@@ -50,10 +50,6 @@
         word-spacing: 1px;
     }
 
-    body .mainSectionContainer {
-        /*font-family: Georgia, Times, serif;*/
-    }
-
     body .headerContainer,
     body .mainSectionContainer,
     body .customersContainer {
@@ -122,10 +118,10 @@
 
         /*------- MainSection -------*/
     body .mainSectionContainer {
-        width: 796px;
+        width: 756px;
         margin-left: auto;
         margin-right: auto;
-        padding: 40px 50px;
+        padding: 40px 70px;
     }
 
     .mainSectionContainer a {

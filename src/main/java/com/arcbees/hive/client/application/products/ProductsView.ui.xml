@@ -20,19 +20,21 @@
             left: 0px;
         }
 
+        .productsImgContainer a:first-child, .productsImgContainer a:first-child + a {
+            margin-right: 20px;
+        }
+
         .productsTextContainer a {
             position: relative;
             top: 10px;
             font-weight: 400;
             color: #6e6e6e;
-        }
-
-        .productsImgContainer a:first-child, .productsImgContainer a:first-child + a {
-            margin-right: 20px;
+            text-decoration: underline;
         }
 
         .productsTextContainer a:hover {
-            color: #4e4e4e;
+            color: #CE9622;
+            text-decoration: underline;
         }
 
         .productsImgContainer {

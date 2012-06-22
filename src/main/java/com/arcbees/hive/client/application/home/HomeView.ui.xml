@@ -34,7 +34,7 @@
         .home #boutonsProducts {
             position: relative;
             bottom: 80px;
-            left: 735px;
+            left: 750px;
             padding-top: 15px;
         }
 
@@ -75,7 +75,7 @@
             font-family: Verdana, Arial, sans-serif;
             position: relative;
             margin: 55px auto 0 auto;
-            width: 750px;
+            width: 765px;
             height: 80px;
             overflow: hidden;
         }

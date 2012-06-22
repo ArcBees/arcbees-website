@@ -6,12 +6,14 @@
              ui:generateLocales="en">
     <ui:with field="res" type="com.arcbees.hive.client.resource.Resources"/>
     <ui:style>
-
-
-       .root h2 {
+        .root h2 {
             color: #BABABA;
             font-size: 40px;
             line-height: 70px;
+
+            text-align: left;
+            margin-bottom: 0px;
+            margin-top: 35px;
         }
 
         .root p {
@@ -22,7 +24,6 @@
         .root {
             height: 360px;
         }
-
     </ui:style>
 
     <g:HTMLPanel addStyleNames="{res.style.mainSectionContainer} {res.style.job} {res.style.cornerBottom} {style.root}">

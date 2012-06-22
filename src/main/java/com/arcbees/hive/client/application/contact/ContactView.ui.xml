@@ -10,7 +10,7 @@
     <ui:style>
         body .root {
             position: relative;
-            height: 420px;
+            height: 395px;
         }
 
         .contactInfo {

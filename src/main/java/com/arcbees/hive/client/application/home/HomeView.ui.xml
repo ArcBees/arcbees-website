@@ -9,7 +9,7 @@
     <ui:with field='nameTokens' type='com.arcbees.hive.client.place.NameTokens'/>
     <ui:style>
         body .home {
-            height: auto;
+            height: 450px;
         }
 
         .home h2 {

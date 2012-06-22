@@ -27,12 +27,16 @@
             color: #6e6e6e;
         }
 
+        .productsImgContainer a:first-child, .productsImgContainer a:first-child + a {
+            margin-right: 20px;
+        }
+
         .productsTextContainer a:hover {
             color: #4e4e4e;
         }
 
         .productsImgContainer {
-            width: 600px;
+            width: 640px;
             margin-bottom: 25px;
             margin-left: auto;
             margin-right: auto;
@@ -126,7 +130,8 @@
                     </ui:msg>
                 </p>
                 <a href="http://www.gae-studio.com/" target="_blank">
-                    <ui:msg description="Products > GAE studio > external link">Visit GAE Studio's official website</ui:msg>
+                    <ui:msg description="Products > GAE studio > external link">Visit GAE Studio's official website
+                    </ui:msg>
                 </a>
             </div>
         </div>

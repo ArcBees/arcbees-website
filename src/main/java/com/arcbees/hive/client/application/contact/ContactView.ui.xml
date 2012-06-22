@@ -65,11 +65,9 @@
         <div class="{style.contactInfo}">
             <ahive_socmedia:SocialMediaWidget ui:field="socialMediaWidget"/>
             <p>
-                <ui:msg description="Contact Us > Email">Email:</ui:msg>
-
                 <a href="mailto:queenbee@arcbees.com">queenbee@arcbees.com</a>
                 <br/>
-                <ui:msg description="Contact Us > Phone">Phone:</ui:msg>
+                <ui:msg description="Contact Us > Toll-free">Toll-free:</ui:msg>
                 1.877.635.1585
             </p>
         </div>

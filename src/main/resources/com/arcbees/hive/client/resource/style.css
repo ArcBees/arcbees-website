@@ -46,6 +46,10 @@
         font-weight: 300;
     }
 
+    p {
+        word-spacing: 1px;
+    }
+
     body .mainSectionContainer {
         /*font-family: Georgia, Times, serif;*/
     }

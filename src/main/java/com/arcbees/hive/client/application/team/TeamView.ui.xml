@@ -67,7 +67,7 @@
         .associatedBeeTitle > div + div {
             font-size: 0.9em;
             font-style: italic;
-            color: #5B676F;
+            color: #868F96;
         }
 
         h2:last-child {

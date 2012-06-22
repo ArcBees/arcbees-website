@@ -240,6 +240,14 @@
         bottom: 30px;
     }
 
+    .contactTextItalic {
+        font-style: italic;
+    }
+
+    .contactTextNormal {
+        font-style: normal;
+    }
+
         /*------- UtilityEnd -------*/
 
         /*------- Sprite -------*/

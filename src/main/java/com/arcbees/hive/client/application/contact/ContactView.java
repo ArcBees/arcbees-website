@@ -22,6 +22,7 @@ import com.arcbees.hive.client.application.common.socialmedia.SocialMediaWidget;
 import com.arcbees.hive.client.application.common.socialmedia.SocialMediaWidgetFactory;
 import com.arcbees.hive.client.application.common.socialmedia.SocialMediaWidgetSize;
 import com.arcbees.hive.client.application.contact.ContactPresenter.MyView;
+import com.arcbees.hive.client.resource.Resources;
 import com.arcbees.hive.client.resource.constants.MyConstants;
 import com.google.gwt.event.dom.client.BlurEvent;
 import com.google.gwt.event.dom.client.ClickEvent;
@@ -50,13 +51,16 @@ public class ContactView extends ViewWithUiHandlers<ContactUiHandlers> implement
 
     private String defaultContents;
     private String defaultEmail;
+    private final Resources resources;
 
     @Inject
     public ContactView(final Binder uiBinder,
                        final UiHandlersStrategy<ContactUiHandlers> uiHandlersStrategy,
                        final MyConstants myConstants,
-                       final SocialMediaWidgetFactory socialMediaWidgetFactory) {
+                       final SocialMediaWidgetFactory socialMediaWidgetFactory,
+                       final Resources resources) {
         super(uiHandlersStrategy);
+        this.resources = resources;
 
         defaultContents = myConstants.tellUsAboutYourProject();
         defaultEmail = myConstants.yourEmail();
@@ -70,7 +74,12 @@ public class ContactView extends ViewWithUiHandlers<ContactUiHandlers> implement
     private void initUi() {
         senderTextBox.setText(defaultEmail);
         contentsTextArea.setText(defaultContents);
+
+        switchToItalic(contentsTextArea);
+        switchToItalic(senderTextBox);
     }
+
+
 
     @UiHandler("sendButton")
     public void onSendButton(ClickEvent event) {
@@ -82,6 +91,8 @@ public class ContactView extends ViewWithUiHandlers<ContactUiHandlers> implement
 
     @UiHandler("contentsTextArea")
     public void onContentsTextArea(FocusEvent event) {
+        switchToNormal(contentsTextArea);
+
         if (contentsTextArea.getText().equals(defaultContents)) {
             contentsTextArea.setText("");
         }
@@ -91,11 +102,15 @@ public class ContactView extends ViewWithUiHandlers<ContactUiHandlers> implement
     public void onContentsTextArea(BlurEvent event) {
         if (contentsTextArea.getText().length() == 0) {
             contentsTextArea.setText(defaultContents);
+
+            switchToItalic(contentsTextArea);
         }
     }
 
     @UiHandler("senderTextBox")
     public void onSenderTextBox(FocusEvent event) {
+        switchToNormal(senderTextBox);
+
         if (senderTextBox.getText().equals(defaultEmail)) {
             senderTextBox.setText("");
         }
@@ -105,6 +120,18 @@ public class ContactView extends ViewWithUiHandlers<ContactUiHandlers> implement
     public void onSenderTextBox(BlurEvent event) {
         if (senderTextBox.getText().length() == 0) {
             senderTextBox.setText(defaultEmail);
+
+            switchToItalic(senderTextBox);
         }
+    }
+
+    private void switchToItalic(Widget widget) {
+        widget.removeStyleName(resources.style().contactTextNormal());
+        widget.addStyleName(resources.style().contactTextItalic());
+    }
+
+    private void switchToNormal(Widget widget) {
+        widget.removeStyleName(resources.style().contactTextItalic());
+        widget.addStyleName(resources.style().contactTextNormal());
     }
 }

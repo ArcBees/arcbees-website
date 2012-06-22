@@ -86,6 +86,10 @@ public interface Resources extends ClientBundle {
         String navBarBgHoverSprite();
 
         String navbarAnchorOn();
+
+        String contactTextNormal();
+
+        String contactTextItalic();
     }
 
     Style style();

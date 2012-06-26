@@ -85,14 +85,15 @@
         }
 
     </ui:style>
-    <g:HTMLPanel addStyleNames="{res.style.mainSectionContainer} {res.style.bulleBgHome} {res.style.cornerBottom} {style.home}">
+    <g:HTMLPanel
+            addStyleNames="{res.style.mainSectionContainer} {res.style.bulleBgHome} {res.style.cornerBottom} {style.home}">
         <h2>
-            <ui:msg description="Home > Title">Have a new web project? Need to redesign your architecture?</ui:msg>
+            <ui:msg description="Home > Title">New web project? Optimize it with a multi-platform architecture!</ui:msg>
         </h2>
         <p class="{res.style.pHead} {style.firstParagraph}">
             <ui:msg description="Home > Subtitle">With ArcBees, your company may spend more time doing what it does best
-                while we provide you simple web
-                solutions that meet your needs. We are specialists in GWTP, UX design and Cloud Computing
+                while we provide you simple and effective web solutions that meet your needs. We are your specialists in
+                GWTP, UX design and Cloud Computing.
             </ui:msg>
         </p>
         <g:Image resource="{home.gwtHtml5Cloud}" addStyleNames="{res.style.imgCenter}"/>
@@ -131,7 +132,7 @@
                     <g:Image resource="{home.sliderQuotesGauche}" addStyleNames="{res.style.imgLeft}"/>
                     <g:Image resource="{home.sliderProductJukito}" addStyleNames="{res.style.imgLeft}"/>
                     <p>
-                        <ui:msg description="Home > Products > Jukito">Jukito complements your testing infrastructure
+                        <ui:msg description="Home > Products > Jukito">The perfect complement for your unit tests!
                         </ui:msg>
                     </p>
                     <g:Image resource="{home.sliderQuotesDroite}" addStyleNames="{res.style.imgRight}"/>

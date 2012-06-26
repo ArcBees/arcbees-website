@@ -13,10 +13,7 @@
         }
 
         .home h2 {
-            font-size: 22px;
             font-weight: bold;
-            text-align: center;
-            margin-bottom: 15px;
         }
 
         .home p {

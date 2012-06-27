@@ -84,71 +84,61 @@
             <li>
                 <ui:msg description="Company History > Key Dates > Offices expansion">
                     <span ui:ph="junePlaceHolder">June 2012 :</span>
-                    ArcBees offices
-                    expand
+                    ArcBees offices expand in Québec city
                 </ui:msg>
             </li>
             <li>
                 <ui:msg description="Company History > Key Dates > GWT steering committee">
                     <span ui:ph="monthPlaceHolder">June 2012 :</span>
-                    ArcBees joins
-                    GWT's steering committee
+                    ArcBees joins GWT's steering committee at Google
                 </ui:msg>
             </li>
             <li>
                 <ui:msg description="Company History > Key Dates > Chris Goudreau business personality">
                     <span ui:ph="monthPlaceHolder">May 2012 :</span>
-
-                    Christian Goudreau is awarded business personality of the year in Quebec City
+                    The JDA of Québec appoints Christian Goudreau the business personality of the year
                 </ui:msg>
             </li>
             <li>
                 <ui:msg description="Company History > Key Dates > CLD prize">
                     <span ui:ph="monthPlaceHolder">April 2012 :</span>
-                    CLD Prize, business of the
-                    year
+                    The CLD of Québec appoints ArcBees winner of the best technology business of the year
+                </ui:msg>
+            </li>
+            <li>
+                <ui:msg description="Company History > Key Dates > GWTP in Montreal">
+                    <span ui:ph="monthPlaceHolder">November 2011 :</span>
+                    GTUTS invites ArcBees to present GWTP in Montréal
                 </ui:msg>
             </li>
             <li>
                 <ui:msg description="Company History > Key Dates > Devtech50 finalist">
                     <span ui:ph="monthPlaceHolder">November 2011 :</span>
-                    Devtech50
-                    finalist
+                    ArcBees is finalist at Devtech50 contest
                 </ui:msg>
             </li>
             <li>
                 <ui:msg description="Company History > Key Dates > GWTP in Nantes">
                     <span ui:ph="monthPlaceHolder">November 2011 :</span>
-                    ArcBees is invited to
-                    present GWTP in Nantes (France)
+                    GTUTS invites ArcBees to present GWTP in Nantes
                 </ui:msg>
             </li>
             <li>
                 <ui:msg description="Company History > Key Dates > Office opening">
                     <span ui:ph="monthPlaceHolder">October 2011 :</span>
-                    ArcBees moved into its
-                    first office in Quebec (Canada)
+                    ArcBees moved into its first office in Québec City
                 </ui:msg>
             </li>
             <li>
                 <ui:msg description="Company History > Key Dates > GWTP in San Francisco">
                     <span ui:ph="monthPlaceHolder">May 2011 :</span>
-                    ArcBees is invited
-                    to present GWTP at Google I/O in San Francisco (USA)
+                    Google invites ArcBees to present GWTP at Google I/O in San Francisco
                 </ui:msg>
             </li>
             <li>
                 <ui:msg description="Company History > Key Dates > CQE Prize in Quebec">
                     <span ui:ph="monthPlaceHolder">April 2011 :</span>
-                    ArcBees wins first
-                    prize in the local technology CQE in Quebec (Canada)
-                </ui:msg>
-            </li>
-            <li>
-                <ui:msg description="Company History > Key Dates > GWTP 0.5 and Jukito">
-                    <span ui:ph="monthPlaceHolder">March 2011 :</span>
-                    Launch of GWTP 0.5
-                    and 1.0 Jukito
+                    The CQE of Quebec appoints ArcBees winner of the best startup in technology category (local step)
                 </ui:msg>
             </li>
             <li>

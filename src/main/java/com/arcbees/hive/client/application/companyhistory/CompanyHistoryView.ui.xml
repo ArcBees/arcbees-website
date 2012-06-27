@@ -29,9 +29,9 @@
             </ui:msg>
 
         </p>
-        <h4>
+        <h3>
             <ui:msg description="Company History > Objectives Subtitle">ArcBees objectives are to:</ui:msg>
-        </h4>
+        </h3>
         <ul>
             <li>
                 <ui:msg description="Company History > Objectives > High Quality Applications">Deliver applications

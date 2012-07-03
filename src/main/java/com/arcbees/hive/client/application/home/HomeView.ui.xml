@@ -116,7 +116,7 @@
                     <g:Image resource="{home.sliderQuotesGauche}" addStyleNames="{res.style.imgLeft}"/>
                     <g:Image resource="{home.sliderProductGAEStudio}" addStyleNames="{res.style.imgLeft}"/>
                     <p>
-                        <ui:msg description="Home > Products > GAE Studio">Still a society's secret, GAE is coming
+                        <ui:msg description="Home > Products > GAE Studio">Still a society's secret, GAE Studio is coming
                             soon!
                         </ui:msg>
                     </p>

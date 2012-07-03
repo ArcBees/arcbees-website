@@ -94,10 +94,6 @@
                     Opportunities
                 </ui:msg>
             </a>
-            <a href="#{nameTokens.getBlog}">
-                <ui:msg description="Footer navbar > Blog">Blog
-                </ui:msg>
-            </a>
             <a href="#{nameTokens.getContact}">
                 <ui:msg description="Footer navbar > Contact Us">Contact Us</ui:msg>
             </a>

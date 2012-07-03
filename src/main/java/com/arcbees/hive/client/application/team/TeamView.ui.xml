@@ -149,18 +149,11 @@
                     </div>
                     <p>
                         <ui:msg description="Our Team > David Marcotte > Bio">David has a strong interest in visual
-                            communication,
-                            which is a major asset for any company’s
-                            success.
-                            Multidisciplinary in the heart, he is a prizewinner and lends his artistic talent to
-                            different
-                            project
-                            around Quebec. His expertise as art designer is being web site conception to VFX cinema's
-                            industry
-                            (Red
-                            Tails, Immortals, Three Musketeers, Underworld 4..)
+                            communication, which is a major asset for any company’s success. Multidisciplinary in the
+                            heart, he is a prizewinner and lends his artistic talent all around Quebec. His expertise
+                            extends not only to web disign to photography, but also in VFX — where he worked, among
+                            others at RodeoFx for Red Tails, Immortals, Three Musketeers and Underworld 4.
                         </ui:msg>
-
                     </p>
                 </div>
             </div>
@@ -171,7 +164,7 @@
                     <div class="{style.associatedBeeTitle}">
                         <div>Philippe Beaudoin</div>
                         <div>
-                            <ui:msg description="Our Team > Philippe Beaudoin > Position">Co-Founder / Alumni</ui:msg>
+                            <ui:msg description="Our Team > Philippe Beaudoin > Position">Co-Founder</ui:msg>
                         </div>
                     </div>
                     <p>

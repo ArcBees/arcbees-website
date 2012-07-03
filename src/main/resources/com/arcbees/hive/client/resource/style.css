@@ -46,8 +46,8 @@
         font-weight: 300;
     }
 
-    body .mainSectionContainer {
-        /*font-family: Georgia, Times, serif;*/
+    p {
+        word-spacing: 1px;
     }
 
     body .headerContainer,
@@ -118,10 +118,10 @@
 
         /*------- MainSection -------*/
     body .mainSectionContainer {
-        width: 796px;
+        width: 756px;
         margin-left: auto;
         margin-right: auto;
-        padding: 40px 50px;
+        padding: 40px 70px;
     }
 
     .mainSectionContainer a {
@@ -133,10 +133,10 @@
     }
 
     h2 {
-        font-size: 22px;
+        font-size: 21px;
         font-weight: 700;
         text-align: center;
-        margin-bottom: 18px;
+        margin-bottom: 9px;
         line-height: 26px;
     }
 

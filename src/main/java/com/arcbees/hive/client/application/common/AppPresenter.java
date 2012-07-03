@@ -74,6 +74,7 @@ public class AppPresenter extends
     @Override
     public void onResize(ResizeEvent event) {
         Integer size = event.getSize() + bottomMargin;
+
         getView().resizeSlot(event.getSlot(), size);
     }
 

@@ -18,9 +18,9 @@
             left: 0;
         }
 
-        .btCarousel {
+        .btCarouselWrapper {
             position: relative;
-            margin: -30px auto 0 auto;
+            margin: -30px auto 12px auto;
             height: 120px;
         }
 
@@ -71,7 +71,7 @@
             </ui:msg>
         </p>
         <g:Image resource="{res.beeUx}" addStyleNames="{res.style.imgCenter}"/>
-        <div id="btCarousel" class="{style.btCarousel}">
+        <div id="btCarousel" class="{style.btCarouselWrapper}">
             <div class="{style.btsCarousel}">
                 <g:Anchor ui:field="mobileWebsiteMobileApplicationAnchor" addStyleNames="{res.style.uxButtonOn}">
                     <span>
@@ -123,11 +123,8 @@
                         expertise in
                         design mobile of website such as iPhone, Android, BlackBerry and Windows.
                         We can
-                        program, develop and design this mobile website in compatibility of social marketing like
-                        facebook
-                        and
-                        others.
-                        This approach is created to optimize the use and promote the development of your social
+                        program, develop and design this mobile website in compatibility of social marketing. This
+                        approach is created to optimize the use and promote the development of your social
                         networks.
                     </ui:msg>
                 </p>

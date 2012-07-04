@@ -4,22 +4,28 @@ import com.arcbees.hive.shared.ActionImpl;
 import com.arcbees.hive.shared.NoResult;
 
 public class SendMail extends ActionImpl<NoResult> {
-    private String sender;
+    private String senderEmail;
     private String contents;
+    private String senderName;
 
     private SendMail() {
     }
 
-    public SendMail(String sender, String contents) {
-        this.sender = sender;
+    public SendMail(String senderEmail, String senderName, String contents) {
+        this.senderEmail = senderEmail;
         this.contents = contents;
+        this.senderName = senderName;
     }
 
-    public String getSender() {
-        return sender;
+    public String getSenderEmail() {
+        return senderEmail;
     }
 
     public String getContents() {
         return contents;
+    }
+
+    public String getSenderName() {
+        return senderName;
     }
 }

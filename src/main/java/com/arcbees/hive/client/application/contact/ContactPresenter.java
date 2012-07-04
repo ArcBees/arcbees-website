@@ -66,8 +66,8 @@ public class ContactPresenter extends
     }
 
     @Override
-    public void sendMail(String sender, String contents) {
-        dispatcher.execute(new SendMail(sender, contents), new AsyncCallbackImpl<NoResult>() {
+    public void sendMail(String senderEmail, String senderName, String contents) {
+        dispatcher.execute(new SendMail(senderEmail, senderName, contents), new AsyncCallbackImpl<NoResult>() {
             @Override
             public void onSuccess(NoResult result) {
                 Window.alert("Message sent successfully!");

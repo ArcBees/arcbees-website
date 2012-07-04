@@ -43,15 +43,19 @@ public class ContactView extends ViewWithUiHandlers<ContactUiHandlers> implement
     @UiField
     TextArea contentsTextArea;
     @UiField
-    TextBox senderTextBox;
+    TextBox senderEmailTextBox;
+    @UiField
+    TextBox senderNameTextBox;
     @UiField
     Button sendButton;
     @UiField(provided = true)
     SocialMediaWidget socialMediaWidget;
 
+    private final Resources resources;
+
     private String defaultContents;
     private String defaultEmail;
-    private final Resources resources;
+    private String defaultName;
 
     @Inject
     public ContactView(final Binder uiBinder,
@@ -64,6 +68,8 @@ public class ContactView extends ViewWithUiHandlers<ContactUiHandlers> implement
 
         defaultContents = myConstants.tellUsAboutYourProject();
         defaultEmail = myConstants.yourEmail();
+        defaultName = myConstants.yourName();
+
         socialMediaWidget = socialMediaWidgetFactory.create(SocialMediaWidgetSize.Large);
 
         initWidget(uiBinder.createAndBindUi(this));
@@ -72,21 +78,22 @@ public class ContactView extends ViewWithUiHandlers<ContactUiHandlers> implement
     }
 
     private void initUi() {
-        senderTextBox.setText(defaultEmail);
+        senderEmailTextBox.setText(defaultEmail);
         contentsTextArea.setText(defaultContents);
+        senderNameTextBox.setText(defaultName);
 
         switchToItalic(contentsTextArea);
-        switchToItalic(senderTextBox);
+        switchToItalic(senderEmailTextBox);
+        switchToItalic(senderNameTextBox);
     }
-
-
 
     @UiHandler("sendButton")
     public void onSendButton(ClickEvent event) {
-        String sender = senderTextBox.getText();
+        String senderEmail = senderEmailTextBox.getText();
         String contents = contentsTextArea.getText();
+        String senderName = senderNameTextBox.getText();
 
-        getUiHandlers().sendMail(sender, contents);
+        getUiHandlers().sendMail(senderEmail, senderName, contents);
     }
 
     @UiHandler("contentsTextArea")
@@ -107,21 +114,39 @@ public class ContactView extends ViewWithUiHandlers<ContactUiHandlers> implement
         }
     }
 
-    @UiHandler("senderTextBox")
-    public void onSenderTextBox(FocusEvent event) {
-        switchToNormal(senderTextBox);
+    @UiHandler("senderEmailTextBox")
+    public void onSenderEmailTextBox(FocusEvent event) {
+        switchToNormal(senderEmailTextBox);
 
-        if (senderTextBox.getText().equals(defaultEmail)) {
-            senderTextBox.setText("");
+        if (senderEmailTextBox.getText().equals(defaultEmail)) {
+            senderEmailTextBox.setText("");
         }
     }
 
-    @UiHandler("senderTextBox")
-    public void onSenderTextBox(BlurEvent event) {
-        if (senderTextBox.getText().length() == 0) {
-            senderTextBox.setText(defaultEmail);
+    @UiHandler("senderEmailTextBox")
+    public void onSenderEmailTextBox(BlurEvent event) {
+        if (senderEmailTextBox.getText().length() == 0) {
+            senderEmailTextBox.setText(defaultEmail);
 
-            switchToItalic(senderTextBox);
+            switchToItalic(senderEmailTextBox);
+        }
+    }
+
+    @UiHandler("senderNameTextBox")
+    public void onSenderNameTextBox(FocusEvent event) {
+        switchToNormal(senderNameTextBox);
+
+        if (senderNameTextBox.getText().equals(defaultName)) {
+            senderNameTextBox.setText("");
+        }
+    }
+
+    @UiHandler("senderNameTextBox")
+    public void onSenderNameTextBox(BlurEvent event) {
+        if (senderNameTextBox.getText().length() == 0) {
+            senderNameTextBox.setText(defaultName);
+
+            switchToItalic(senderNameTextBox);
         }
     }
 

@@ -72,7 +72,8 @@
             </p>
         </div>
         <div class="{style.message}">
-            <g:TextBox ui:field="senderTextBox" />
+            <g:TextBox ui:field="senderEmailTextBox" />
+            <g:TextBox ui:field="senderNameTextBox" />
             <g:TextArea ui:field="contentsTextArea" />
             <g:Button ui:field="sendButton" addStyleNames="{res.style.cornerTopBottom} btn btn-warning">
                 <ui:msg description="Contact Us > Send">Send</ui:msg>

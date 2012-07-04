@@ -27,8 +27,9 @@ public class SendMailHandler extends AbstractActionHandler<SendMail, NoResult> {
     * */
     @Override
     public NoResult execute(SendMail action, ExecutionContext context) throws ActionException {
-        String sender = action.getSender();
+        String senderEmail = action.getSenderEmail();
         String contents = action.getContents();
+        String senderName = action.getSenderName();
 
         Properties properties = new Properties();
         Session session = Session.getDefaultInstance(properties, null);
@@ -37,7 +38,7 @@ public class SendMailHandler extends AbstractActionHandler<SendMail, NoResult> {
         try {
             message.setFrom(new InternetAddress("queenbee@arcbees.com", "ArcBees Website Contact Form"));
             message.addRecipient(Message.RecipientType.TO, new InternetAddress("queenbee@arcbees.com"));
-            message.setSubject("Sender: " + sender);
+            message.setSubject("Sender's email: " + senderEmail + ", sender's name: " + senderName);
             message.setText(contents);
 
             Transport.send(message);

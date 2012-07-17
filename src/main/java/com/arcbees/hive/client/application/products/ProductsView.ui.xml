@@ -117,7 +117,7 @@
                         wish to speed up their GAE applications.
                     </ui:msg>
                 </p>
-                <a href="http://www.gae-studio.com/" target="_blank">
+                <a href="http://gaestudio.arcbees.com/" target="_blank">
                     <ui:msg description="Products > GAE studio > external link">Visit GAE Studio's official website
                     </ui:msg>
                 </a>

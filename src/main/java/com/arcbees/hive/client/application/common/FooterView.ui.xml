@@ -104,7 +104,7 @@
             </p>
             <a href="http://code.google.com/p/gwt-platform/">GWT-Platform</a>
             <a href="http://code.google.com/p/jukito/">Jukito</a>
-            <a href="http://www.gae-studio.com/">GAE Studio</a>
+            <a href="http://gaestudio.arcbees.com/">GAE Studio</a>
         </g:HTMLPanel>
         <g:HTMLPanel ui:field="recentNews" addStyleNames="{style.news}">
             <p>

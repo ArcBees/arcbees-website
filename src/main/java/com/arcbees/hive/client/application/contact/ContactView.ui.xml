@@ -16,7 +16,9 @@
         .contactInfo {
             position: absolute;
             left: 105px;
-            top: 318px;
+            top: 310px;
+            font-size: 0.9em;
+            line-height: 1.4em;
         }
 
         .message {
@@ -59,22 +61,47 @@
             height: 40px;
             font-size: 1.2em;
         }
+
+        .socialMediaWidget {
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .followUsContainer {
+            font-size: 1.5em;
+            margin-top: -20px;
+            margin-left: -20px;
+        }
     </ui:style>
     <g:HTMLPanel
             addStyleNames="{res.style.mainSectionContainer} {res.style.contactUS} {res.style.cornerBottom} {style.root}">
+        <div class="{style.followUsContainer}">
+            Follow us!
+            <ahive_socmedia:SocialMediaWidget ui:field="socialMediaWidget" addStyleNames="{style.socialMediaWidget}"/>
+        </div>
+
         <div class="{style.contactInfo}">
-            <ahive_socmedia:SocialMediaWidget ui:field="socialMediaWidget"/>
-            <p>
+
+
+            <div>
                 <a href="mailto:queenbee@arcbees.com">queenbee@arcbees.com</a>
-                <br/>
+            </div>
+
+            <div>
                 <ui:msg description="Contact Us > Toll-free">Toll-free:</ui:msg>
                 1.877.635.1585
-            </p>
+            </div>
+
+            <div>
+                <a href="http://goo.gl/maps/pUWyG" target="_blank">
+                250-2299 boul. Versant nord<br/>Québec, Québec G1N 4G2</a>
+            </div>
+
         </div>
         <div class="{style.message}">
-            <g:TextBox ui:field="senderEmailTextBox" />
-            <g:TextBox ui:field="senderNameTextBox" />
-            <g:TextArea ui:field="contentsTextArea" />
+            <g:TextBox ui:field="senderEmailTextBox"/>
+            <g:TextBox ui:field="senderNameTextBox"/>
+            <g:TextArea ui:field="contentsTextArea"/>
             <g:Button ui:field="sendButton" addStyleNames="{res.style.cornerTopBottom} btn btn-warning">
                 <ui:msg description="Contact Us > Send">Send</ui:msg>
             </g:Button>

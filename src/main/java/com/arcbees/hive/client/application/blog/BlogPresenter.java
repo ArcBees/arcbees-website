@@ -35,7 +35,7 @@ public class BlogPresenter extends Presenter<BlogPresenter.MyView,
     @NameToken(NameTokens.blog)
     public interface MyProxy extends ProxyPlace<BlogPresenter> {
     }
-
+                                    //asd
     public interface MyView extends View {
     }
 

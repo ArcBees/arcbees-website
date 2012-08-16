@@ -127,7 +127,7 @@
         </g:HTMLPanel>
 
         <g:HTMLPanel addStyleNames="{style.copyright}">
-            &copy; 2012 ArcBees.
+            &copy; 2012 ArcBees.                      asdasd
             <ui:msg description="Footer copyright">All rights reserved.</ui:msg>
         </g:HTMLPanel>
     </g:HTMLPanel>

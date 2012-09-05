@@ -103,7 +103,7 @@
                 <ui:msg description="Footer projects">Projects</ui:msg>
             </p>
             <a href="http://code.google.com/p/gwt-platform/">GWT-Platform</a>
-            <a href="http://code.google.com/p/jukito/">Jukito</a>
+            <a href="http://jukito.arcbees.com/">Jukito</a>
             <a href="http://gaestudio.arcbees.com/">GAE Studio</a>
         </g:HTMLPanel>
         <g:HTMLPanel ui:field="recentNews" addStyleNames="{style.news}">

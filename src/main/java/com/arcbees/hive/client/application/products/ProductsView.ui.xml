@@ -96,7 +96,7 @@
                         gradually simplify your testing code.
                     </ui:msg>
                 </p>
-                <a href="http://code.google.com/p/jukito/" target="_blank">
+                <a href="http://jukito.arcbees.com/" target="_blank">
                     <ui:msg description="Products > Jukito > external link">Visit Jukito's official website</ui:msg>
                 </a>
             </div>

@@ -212,74 +212,6 @@
                 </div>
             </div>
             <div class="span3">
-                <g:Image resource="{teamres.team_laure_chatenet}" altText="Laure Gabrielle Chatenet"/>
-                <div>Laure Gabrielle
-                    <br/>
-                    Chatenet
-                </div>
-                <div>
-                    <ui:msg description="Our Team > UX specialist">UX Specialist</ui:msg>
-                </div>
-            </div>
-            <div class="span3">
-                <g:Image resource="{teamres.team_simon_pierre_gingras}" altText="Simon-Pierre Gingras"/>
-                <div>Simon-Pierre<br/>Gingras
-                </div>
-                <div>
-                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
-                </div>
-            </div>
-        </div>
-        <div class="row-fluid {style.aRow}">
-            <div class="span3">
-                <g:Image resource="{teamres.team_maxime_meriouma}" altText="Maxime Mériouma-Caron"/>
-                <div>Maxime
-                    <br/>
-                    Mériouma-Caron
-                </div>
-                <div>
-                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
-                </div>
-            </div>
-            <div class="span3">
-                <g:Image resource="{teamres.team_sylvain_perron}" altText="Sylvain Perron"/>
-                <div>Sylvain<br/>Perron
-                </div>
-                <div>
-                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
-                </div>
-            </div>
-            <div class="span3">
-                <g:Image resource="{teamres.team_vincent_roseberry}" altText="Vincent Roseberry"/>
-                <div>Vincent<br/>Roseberry
-                </div>
-                <div>
-                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
-                </div>
-            </div>
-            <div class="span3">
-                <g:Image resource="{teamres.team_chris_viel}" altText="Christopher Viel"/>
-                <div>Christopher
-                    <br/>
-                    Viel
-                </div>
-                <div>
-                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
-                </div>
-            </div>
-        </div>
-        <div class="row-fluid {style.aRow}">
-            <div class="span3">
-                <g:Image resource="{teamres.team_frank_poulin}" altText="François-Xavier Poulin-Darveau"/>
-                <div>François-Xavier
-                    <br/>
-                    Poulin-Darveau
-                </div>
-                <div>
-                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
-                </div>
-            </div>
-            <div class="span3">
                 <g:Image resource="{teamres.team_mrabti_idriss}" altText="Mrabti Idriss"/>
                 <div>Mrabti<br/>Idriss
                 </div>
@@ -295,12 +227,70 @@
                     <ui:msg description="Our Team > Developer">Developer</ui:msg>
                 </div>
             </div>
+        </div>
+        <div class="row-fluid {style.aRow}">
+            <div class="span3">
+                <g:Image resource="{teamres.team_simon_pierre_gingras}" altText="Simon-Pierre Gingras"/>
+                <div>Simon-Pierre<br/>Gingras
+                </div>
+                <div>
+                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
+                </div>
+            </div>
+            <div class="span3">
+                <g:Image resource="{teamres.team_maxime_meriouma}" altText="Maxime Mériouma-Caron"/>
+                <div>Maxime
+                    <br/>
+                    Mériouma-Caron
+                </div>
+                <div>
+                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
+                </div>
+            </div>
+            <div class="span3">
+                <g:Image resource="{teamres.team_chris_viel}" altText="Christopher Viel"/>
+                <div>Christopher
+                    <br/>
+                    Viel
+                </div>
+                <div>
+                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
+                </div>
+            </div>
             <div class="span3">
                 <g:Image resource="{teamres.team_alex_breton}" altText="Alexandre Breton"/>
                 <div>Alexandre<br/>Breton
                 </div>
                 <div>
                     <ui:msg description="Our Team > Integrator">Web Integrator</ui:msg>
+                </div>
+            </div>
+        </div>
+        <div class="row-fluid {style.aRow}">
+            <div class="span3">
+                <g:Image resource="{teamres.team_vincent_roseberry}" altText="Vincent Roseberry"/>
+                <div>Vincent<br/>Roseberry
+                </div>
+                <div>
+                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
+                </div>
+            </div>
+            <div class="span3">
+                <g:Image resource="{teamres.team_frank_poulin}" altText="François-Xavier Poulin-Darveau"/>
+                <div>François-Xavier
+                    <br/>
+                    Poulin-Darveau
+                </div>
+                <div>
+                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
+                </div>
+            </div>
+            <div class="span3">
+                <g:Image resource="{teamres.team_sylvain_perron}" altText="Sylvain Perron"/>
+                <div>Sylvain<br/>Perron
+                </div>
+                <div>
+                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
                 </div>
             </div>
         </div>

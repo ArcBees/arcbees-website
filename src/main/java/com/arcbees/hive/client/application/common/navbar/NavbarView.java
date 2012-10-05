@@ -18,8 +18,6 @@ public class NavbarView extends ViewImpl implements NavbarPresenter.MyView {
     @UiField
     AnchorElement productsAnchor;
     @UiField
-    AnchorElement uxDesignAnchor;
-    @UiField
     AnchorElement teamAnchor;
     @UiField
     AnchorElement contactAnchor;
@@ -43,8 +41,6 @@ public class NavbarView extends ViewImpl implements NavbarPresenter.MyView {
             activateLink(servicesAnchor);
         } else if(nameToken.equals(NameTokens.getProduct())){
             activateLink(productsAnchor);
-        } else if(nameToken.equals(NameTokens.getUxdesign())){
-            activateLink(uxDesignAnchor);
         } else if(nameToken.equals(NameTokens.getTeam())){
             activateLink(teamAnchor);
         } else if(nameToken.equals(NameTokens.getContact())){
@@ -55,7 +51,6 @@ public class NavbarView extends ViewImpl implements NavbarPresenter.MyView {
     private void disableAllLinks() {
         $(servicesAnchor.getChildNodes()).removeClass(style.style().navbarAnchorOn());
         $(productsAnchor.getChildNodes()).removeClass(style.style().navbarAnchorOn());
-        $(uxDesignAnchor.getChildNodes()).removeClass(style.style().navbarAnchorOn());
         $(teamAnchor.getChildNodes()).removeClass(style.style().navbarAnchorOn());
         $(contactAnchor.getChildNodes()).removeClass(style.style().navbarAnchorOn());
     }

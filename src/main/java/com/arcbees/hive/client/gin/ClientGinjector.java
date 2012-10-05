@@ -16,21 +16,20 @@
 
 package com.arcbees.hive.client.gin;
 
-import com.arcbees.hive.client.application.companyhistory.CompanyHistoryPresenter;
-import com.arcbees.hive.client.application.team.TeamPresenter;
-import com.arcbees.hive.client.application.uxdesign.UxdesignPresenter;
-import com.arcbees.hive.client.resource.products.ProductsResources;
-import com.arcbees.hive.client.resource.reinit.ReinitResources;
-import com.arcbees.hive.client.resource.Resources;
+import com.arcbees.hive.client.application.blog.BlogPresenter;
 import com.arcbees.hive.client.application.common.AppPresenter;
+import com.arcbees.hive.client.application.companyhistory.CompanyHistoryPresenter;
 import com.arcbees.hive.client.application.contact.ContactPresenter;
 import com.arcbees.hive.client.application.home.HomePresenter;
 import com.arcbees.hive.client.application.jobs.JobsPresenter;
 import com.arcbees.hive.client.application.products.ProductsPresenter;
 import com.arcbees.hive.client.application.service.ServicePresenter;
-import com.arcbees.hive.client.application.blog.BlogPresenter;
+import com.arcbees.hive.client.application.team.TeamPresenter;
+import com.arcbees.hive.client.resource.Resources;
 import com.arcbees.hive.client.resource.customers.CustomersResources;
 import com.arcbees.hive.client.resource.home.HomeResources;
+import com.arcbees.hive.client.resource.products.ProductsResources;
+import com.arcbees.hive.client.resource.reinit.ReinitResources;
 import com.arcbees.hive.client.resource.socialmedia.SocialMediaResources;
 import com.arcbees.hive.client.resource.team.TeamResources;
 import com.google.gwt.inject.client.GinModules;
@@ -72,8 +71,6 @@ public interface ClientGinjector extends Ginjector {
     Provider<TeamPresenter> getAboutPresenter();
 
     Provider<ContactPresenter> getContactPresenter();
-
-    Provider<UxdesignPresenter> getUxdesignPresenter();
 
     Provider<CompanyHistoryPresenter> getCompanyHistoryPresenter();
 

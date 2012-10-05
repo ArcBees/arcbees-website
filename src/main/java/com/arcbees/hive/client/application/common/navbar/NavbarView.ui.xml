@@ -71,14 +71,6 @@
                     <ui:msg description="Main navbar > Products">Products</ui:msg>
                 </span>
             </a>
-            <a href="#{nameTokens.getUxdesign}" ui:field="uxDesignAnchor">
-                <span>
-                    <ui:msg description="Main navbar > Ux design">UX Design</ui:msg>
-                </span>
-                <span class="{res.style.navBarBgHoverSprite}">
-                    <ui:msg description="Main navbar > Ux design">UX Design</ui:msg>
-                </span>
-            </a>
             <a href="#{nameTokens.getTeam}" ui:field="teamAnchor">
                 <span>
                     <ui:msg description="Main navbar > Our Team">Our Team</ui:msg>

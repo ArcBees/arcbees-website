@@ -22,7 +22,7 @@
 
         <gwt.version>2.4.0</gwt.version>
         <gae.version>1.6.3.1</gae.version>
-        <gwtp.version>0.8-SNAPSHOT</gwtp.version>
+        <gwtp.version>0.8-alpha-2</gwtp.version>
         <arcbees-core.version>1.0-SNAPSHOT</arcbees-core.version>
         <gwtquery-version>1.1.0</gwtquery-version>
         <guice.version>3.0</guice.version>

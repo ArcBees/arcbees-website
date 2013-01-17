@@ -39,7 +39,7 @@
             width: 400px;
             position: absolute;
             top: 55px;
-            left: 270px;
+            left: 335px;
             font-family: 'Shadows Into Light', cursive;
             font-size: 20px;
             word-spacing: 1px;
@@ -55,7 +55,7 @@
         .imgBeeFlying {
             position: absolute;
             top: 30px;
-            left: 690px;
+            left: 740px;
         }
     </ui:style>
     <g:HTMLPanel

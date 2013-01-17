@@ -18,7 +18,7 @@
         <maven-surefire-plugin.version>2.6</maven-surefire-plugin.version>
         <maven-compiler-plugin.version>2.3.2</maven-compiler-plugin.version>
         <maven-gae-plugin.version>0.9.5</maven-gae-plugin.version>
-        <gwt-maven-plugin.version>2.4.0</gwt-maven-plugin.version>
+        <gwt-maven-plugin.version>2.5.0</gwt-maven-plugin.version>
 
         <gwt.version>2.5.0</gwt.version>
         <gae.version>1.7.4</gae.version>

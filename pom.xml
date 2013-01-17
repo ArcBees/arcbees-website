@@ -24,7 +24,7 @@
         <gae.version>1.6.3.1</gae.version>
         <gwtp.version>0.8-SNAPSHOT</gwtp.version>
         <arcbees-core.version>1.0-SNAPSHOT</arcbees-core.version>
-        <gwtquery-version>1.1.0</gwtquery-version>
+        <gwtquery-version>1.2.0</gwtquery-version>
         <guice.version>3.0</guice.version>
         <gin.version>1.5.0</gin.version>
         <jukito.version>1.1</jukito.version>

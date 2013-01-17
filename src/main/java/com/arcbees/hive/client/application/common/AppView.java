@@ -128,14 +128,10 @@ public class AppView extends ViewImpl implements MyView {
         if (fadeBlock.isAttached()) {
             blockFade = true;
 
-            if ($("#" + AppIds.getIframeId()).visible()) {
-                $("#" + AppIds.getIframeId()).hide();
-            } else {
-                $("#" + AppIds.getIframeId()).show();
-            }
+            $(fadeBlock).show();
+            $(element).hide();
 
-            $(fadeBlock).fadeIn(delay, fadeFunction);
-            $(element).fadeOut(delay, fadeFunction);
+            blockFade = false;
         } else {
             mainContent1.setVisible(false);
             mainContent2.setVisible(false);
@@ -145,12 +141,6 @@ public class AppView extends ViewImpl implements MyView {
     }
 
     private void resize(HTMLPanel resizablePanel, Integer height) {
-        $(resizablePanel).as(Effects).animate(
-                Properties.create("{ " + "height: '" + String.valueOf(height) + "px'}"),
-                delay, Easing.LINEAR, new Function() {
-            @Override
-            public void f(Element e) {
-            }
-        });
+        $(resizablePanel).height(height);
     }
 }

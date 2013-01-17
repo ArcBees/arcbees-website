@@ -128,12 +128,6 @@ public class AppView extends ViewImpl implements MyView {
         if (fadeBlock.isAttached()) {
             blockFade = true;
 
-            if ($("#" + AppIds.getIframeId()).visible()) {
-                $("#" + AppIds.getIframeId()).hide();
-            } else {
-                $("#" + AppIds.getIframeId()).show();
-            }
-
             $(fadeBlock).fadeIn(delay, fadeFunction);
             $(element).fadeOut(delay, fadeFunction);
         } else {

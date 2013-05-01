@@ -238,7 +238,7 @@
                 <version>${maven-gae-plugin.version}</version>
                 <configuration>
                     <unpackVersion>${gae.version}</unpackVersion>
-                    <serverId>appengine.google.com</serverId>
+                    <serverId>appengine-credentials</serverId>
                 </configuration>
 
                 <executions>
@@ -246,6 +246,12 @@
                         <phase>validate</phase>
                         <goals>
                             <goal>unpack</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>deploy</id>
+                        <goals>
+                            <goal>deploy</goal>
                         </goals>
                     </execution>
                 </executions>

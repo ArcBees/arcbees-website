@@ -77,7 +77,7 @@
                         to present it to the prestigious Google I/O in 2011.
                     </ui:msg>
                 </p>
-                <a href="http://code.google.com/p/gwt-platform/" target="_blank">
+                <a href="http://gwtp.arcbees.com/" target="_blank">
                     <ui:msg description="Products > GWTP > external link">Visit GWTP's official website</ui:msg>
                 </a>
             </div>

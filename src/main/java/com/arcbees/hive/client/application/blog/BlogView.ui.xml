@@ -94,7 +94,7 @@
             </div>
             <div class="span3">
                 <h3>
-                    <ui:msg description="Blogue > Twiter Feed">Twitter Feed
+                    <ui:msg description="Blogue > Twitter Feed">Twitter Feed
                     </ui:msg>
                 </h3>
                 <p>

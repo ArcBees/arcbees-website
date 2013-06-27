@@ -121,8 +121,8 @@
                 </div>
             </div>
             <div class="span4">
-                <g:Image resource="{teamres.team_genevievre_doyle}" altText="Geneviere Doyle"/>
-                <div>Geneviere Doyle
+                <g:Image resource="{teamres.team_genevieve_doyle}" altText="Genevieve Doyle"/>
+                <div>Genevieve Doyle
                 </div>
                 <div>
                     <ui:msg description="Our Team > Lawyer">Lawyer / COO</ui:msg>
@@ -133,7 +133,7 @@
                 <div>Alexandre Breton
                 </div>
                 <div>
-                    <ui:msg description="Our Team > WebDev">Web Developper</ui:msg>
+                    <ui:msg description="Our Team > WebDev">Web Developer</ui:msg>
                 </div>
             </div>
         </div>
@@ -143,7 +143,7 @@
                 <div>Julien Dramaix
                 </div>
                 <div>
-                    <ui:msg description="Our Team > Senior Developper">Senior Developper</ui:msg>
+                    <ui:msg description="Our Team > Senior Developer">Senior Developer</ui:msg>
                 </div>
             </div>
             <div class="span4">
@@ -151,7 +151,7 @@
                 <div>Brandon Donnelson
                 </div>
                 <div>
-                    <ui:msg description="Our Team > Senior Developper">Senior Developper</ui:msg>
+                    <ui:msg description="Our Team > Senior Developer">Senior Developer</ui:msg>
                 </div>
             </div>
             <div class="span4">
@@ -159,7 +159,7 @@
                 <div>Mrabti Idriss
                 </div>
                 <div>
-                    <ui:msg description="Our Team > Developper">Developper</ui:msg>
+                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
                 </div>
             </div>
         </div>
@@ -169,7 +169,7 @@
                 <div>Gael-Jurin Nkouyee
                 </div>
                 <div>
-                    <ui:msg description="Our Team > Developper">Developper</ui:msg>
+                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
                 </div>
             </div>
             <div class="span4">
@@ -177,7 +177,7 @@
                 <div>Simon-Pierre Gingras
                 </div>
                 <div>
-                    <ui:msg description="Our Team > Developper">Developper</ui:msg>
+                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
                 </div>
             </div>
             <div class="span4">
@@ -185,7 +185,7 @@
                 <div>Maxime Mériouma-Caron
                 </div>
                 <div>
-                    <ui:msg description="Our Team > Developper">Developper</ui:msg>
+                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
                 </div>
             </div>
         </div>
@@ -195,7 +195,7 @@
                 <div>Christopher Viel
                 </div>
                 <div>
-                    <ui:msg description="Our Team > Developper">Developper</ui:msg>
+                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
                 </div>
             </div>
             <div class="span4">
@@ -203,7 +203,7 @@
                 <div>Samuel Dionne
                 </div>
                 <div>
-                    <ui:msg description="Our Team > Developper">Developper</ui:msg>
+                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
                 </div>
             </div>
             <div class="span4">
@@ -211,7 +211,7 @@
                 <div>Olivier Lafleur
                 </div>
                 <div>
-                    <ui:msg description="Our Team > Developper">Developper</ui:msg>
+                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
                 </div>
             </div>
         </div>
@@ -223,7 +223,7 @@
                     Poulin-Darveau
                 </div>
                 <div>
-                    <ui:msg description="Our Team > Developper">Developper</ui:msg>
+                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
                 </div>
             </div>
             <div class="span4">
@@ -231,7 +231,7 @@
                 <div>Sylvain Perron
                 </div>
                 <div>
-                    <ui:msg description="Our Team > Developper">Developper</ui:msg>
+                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
                 </div>
             </div>
         </div>

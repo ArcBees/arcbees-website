@@ -36,7 +36,7 @@ public interface TeamResources extends ClientBundle {
 
     ImageResource team_julien_dramaix();
 
-    ImageResource team_genevievre_doyle();
+    ImageResource team_genevieve_doyle();
 
     ImageResource team_laure_chatenet();
 

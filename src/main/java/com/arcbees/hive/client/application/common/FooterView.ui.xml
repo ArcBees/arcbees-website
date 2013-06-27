@@ -84,7 +84,7 @@
             </a>
 
             <a href="#{nameTokens.getTeam}">
-                <ui:msg description="Footer navbar > Our Team">Our Team</ui:msg>
+                <ui:msg description="Footer navbar > Our Team">Our Bees</ui:msg>
             </a>
             <a href="#{nameTokens.getCompanyhistory}">
                 <ui:msg description="Footer navbar > Company History">Company History</ui:msg>

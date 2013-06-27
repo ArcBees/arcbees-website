@@ -73,10 +73,10 @@
             </a>
             <a href="#{nameTokens.getTeam}" ui:field="teamAnchor">
                 <span>
-                    <ui:msg description="Main navbar > Our Team">Our Team</ui:msg>
+                    <ui:msg description="Main navbar > Our Bees">Our Bees</ui:msg>
                 </span>
                 <span class="{res.style.navBarBgHoverSprite}">
-                    <ui:msg description="Main navbar > Our Team">Our Team</ui:msg>
+                    <ui:msg description="Main navbar > Our Bees">Our Bees</ui:msg>
                 </span>
             </a>
             <a href="#{nameTokens.getContact}" ui:field="contactAnchor">

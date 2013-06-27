@@ -83,190 +83,140 @@
             </ui:msg>
         </p>
 
-        <div class="{style.associatedBeesContainer}">
-            <div class="{style.associatedBeeRow}">
+        <div class="row-fluid {style.aRow}">
+            <div class="span4">
                 <g:Image resource="{teamres.team_chris_goudreau}" altText="Christian Goudreau"/>
+                <div>Christian Goudreau
+                </div>
                 <div>
-                    <div class="{style.associatedBeeTitle}">
-                        <div>Christian Goudreau</div>
-                        <div>
-                            <ui:msg description="Our Team > Chris Goudreau > Position">Co-Founder / CEO</ui:msg>
-                        </div>
-                    </div>
-                    <p>
-                        <ui:msg description="Our Team > Chris Goudreau > Bio">
-                            Over the last five years, Christian was lead Developper for different companies to design
-                            many Web applications based on the Cloud. Other than his passion for development and
-                            software engineering, Christian is self-taught and his involvement is directly linked to the
-                            success of several open-source projects like GWT-platform and Jukito.
-                        </ui:msg>
-                    </p>
+                    <ui:msg description="Our Team > Chris Goudreau > Position">Co-Founder / CEO</ui:msg>
                 </div>
             </div>
-            <div class="{style.clearBoth}"/>
-
-            <div class="{style.associatedBeeRow}">
+            <div class="span4">
                 <g:Image resource="{teamres.team_david_marcotte}" altText="David Marcotte"/>
+                <div>David Marcotte
+                </div>
                 <div>
-                    <div class="{style.associatedBeeTitle}">
-                        <div>David Marcotte</div>
-                        <div>
-                            <ui:msg description="Our Team > David Marcotte > Position">Co-Founder / Senior Designer
-                            </ui:msg>
-                        </div>
-                    </div>
-                    <p>
-                        <ui:msg description="Our Team > David Marcotte > Bio">
-                            David has a strong interest in visual communication, which is a major asset for any
-                            company’s success. Multidisciplinary in the heart, he is a prizewinner and lends his
-                            artistic talent all around Quebec. His expertise extends not only to web disign to
-                            photography, but also in VFX — where he worked, among others at RodeoFx for Red Tails,
-                            Immortals, Three Musketeers and Underworld 4.
-                        </ui:msg>
-                    </p>
+                    <ui:msg description="Our Team > David Marcotte > Position">Co-Founder / Senior Designer</ui:msg>
                 </div>
             </div>
-            <div class="{style.clearBoth}"/>
-
-            <div class="{style.associatedBeeRow}">
+            <div class="span4">
                 <g:Image resource="{teamres.team_francis_menard}" altText="Francis Ménard"/>
+                <div>Francis Ménard
+                </div>
                 <div>
-                    <div class="{style.associatedBeeTitle}">
-                        <div>Francis Ménard</div>
-                        <div>
-                            <ui:msg description="Our Team > Francis Menard > Position">Co-Founder</ui:msg>
-                        </div>
-                    </div>
-                    <p>
-                        <ui:msg description="Our Team > Francis Menard > Bio">
-                            Francis began his career in online commercial sales application development and application
-                            Web. It is through his hard work and strong demand that Francis has specialized, over the
-                            years, in telecommunication project management and delivery. Self-taught, his attention to
-                            solve real business problems led him always be on top of new technological advances.
-                        </ui:msg>
-                    </p>
+                    <ui:msg description="Our Team > Philippe Beaudoin > Position">Co-Founder</ui:msg>
                 </div>
             </div>
-
-
-            <div class="{style.associatedBeeRow}">
-                <g:Image resource="{teamres.team_philippe_beaudoin}" altText="Philippe Beaudoin"/>
-                <div>
-                    <div class="{style.associatedBeeTitle}">
-                        <div>Philippe Beaudoin</div>
-                        <div>
-                            <ui:msg description="Our Team > Philippe Beaudoin > Position">Co-Founder</ui:msg>
-                        </div>
-                    </div>
-                    <p>
-                        <ui:msg description="Our Team > Philippe Beaudoin > Bio">
-                            Philippe holds a Ph.D. in computer science from the University of Montreal and was a
-                            postdoctoral researcher in the Department of Computer Science, University of British
-                            Columbia. Having worked in graphics hardware, where his work has given him a patent,
-                            Philippe has 15 years experience in the gaming industry and the development of Web
-                            applications.
-                        </ui:msg>
-                    </p>
-                </div>
-            </div>
-            <div class="{style.clearBoth}"/>
         </div>
 
         <div class="{style.clearBoth}"/>
         <div class="row-fluid {style.aRow}">
-            <div class="span3">
-                <g:Image resource="{teamres.team_julien_dramaix}" altText="Julien Dramaix"/>
-                <div>Julien
-                    <br/>
-                    Dramaix
+            <div class="span4">
+                <g:Image resource="{teamres.team_philippe_beaudoin}" altText="Philippe Beaudoin"/>
+                <div>Philippe Beaudoin
                 </div>
                 <div>
-                    <ui:msg description="Our Team > Senior Developper">Senior Developper</ui:msg>
+                    <ui:msg description="Our Team > Philippe Beaudoin > Position">Co-Founder</ui:msg>
                 </div>
             </div>
-            <div class="span3">
-                <g:Image resource="{teamres.team_brandon_donnelson}" altText="Brandon Donnelson"/>
-                <div>Brandon
-                    <br/>
-                    Donnelson
+            <div class="span4">
+                <g:Image resource="{teamres.team_genevievre_doyle}" altText="Geneviere Doyle"/>
+                <div>Geneviere Doyle
                 </div>
                 <div>
-                    <ui:msg description="Our Team > Senior Developper">Senior Developper</ui:msg>
+                    <ui:msg description="Our Team > Lawyer">Lawyer / COO</ui:msg>
                 </div>
             </div>
-            <div class="span3">
-                <g:Image resource="{teamres.team_mrabti_idriss}" altText="Mrabti Idriss"/>
-                <div>Mrabti<br/>Idriss
-                </div>
-                <div>
-                    <ui:msg description="Our Team > Developper">Developper</ui:msg>
-                </div>
-            </div>
-            <div class="span3">
-                <g:Image resource="{teamres.team_gael_nkouyee}" altText="Gael-Jurin Nkouyee"/>
-                <div>Gael-Jurin<br/>Nkouyee
-                </div>
-                <div>
-                    <ui:msg description="Our Team > Developper">Developper</ui:msg>
-                </div>
-            </div>
-        </div>
-        <div class="row-fluid {style.aRow}">
-            <div class="span3">
-                <g:Image resource="{teamres.team_simon_pierre_gingras}" altText="Simon-Pierre Gingras"/>
-                <div>Simon-Pierre<br/>Gingras
-                </div>
-                <div>
-                    <ui:msg description="Our Team > Developper">Developper</ui:msg>
-                </div>
-            </div>
-            <div class="span3">
-                <g:Image resource="{teamres.team_maxime_meriouma}" altText="Maxime Mériouma-Caron"/>
-                <div>Maxime
-                    <br/>
-                    Mériouma-Caron
-                </div>
-                <div>
-                    <ui:msg description="Our Team > Developper">Developper</ui:msg>
-                </div>
-            </div>
-            <div class="span3">
-                <g:Image resource="{teamres.team_chris_viel}" altText="Christopher Viel"/>
-                <div>Christopher
-                    <br/>
-                    Viel
-                </div>
-                <div>
-                    <ui:msg description="Our Team > Developper">Developper</ui:msg>
-                </div>
-            </div>
-            <div class="span3">
-                <g:Image resource="{teamres.team_sam_dionne}" altText="Samuel Dionne"/>
-                <div>Samuel<br/>Dionne
-                </div>
-                <div>
-                    <ui:msg description="Our Team > Developper">Developper</ui:msg>
-                </div>
-            </div>
-        </div>
-        <div class="row-fluid {style.aRow}">
-            <div class="span3">
+            <div class="span4">
                 <g:Image resource="{teamres.team_alex_breton}" altText="Alexandre Breton"/>
-                <div>Alexandre<br/>Breton
+                <div>Alexandre Breton
                 </div>
                 <div>
                     <ui:msg description="Our Team > WebDev">Web Developper</ui:msg>
                 </div>
             </div>
-            <div class="span3">
-                <g:Image resource="{teamres.team_oli_lafleur}" altText="Olivier Lafleur"/>
-                <div>Olivier<br/>Lafleur
+        </div>
+        <div class="row-fluid {style.aRow}">
+            <div class="span4">
+                <g:Image resource="{teamres.team_julien_dramaix}" altText="Julien Dramaix"/>
+                <div>Julien Dramaix
+                </div>
+                <div>
+                    <ui:msg description="Our Team > Senior Developper">Senior Developper</ui:msg>
+                </div>
+            </div>
+            <div class="span4">
+                <g:Image resource="{teamres.team_brandon_donnelson}" altText="Brandon Donnelson"/>
+                <div>Brandon Donnelson
+                </div>
+                <div>
+                    <ui:msg description="Our Team > Senior Developper">Senior Developper</ui:msg>
+                </div>
+            </div>
+            <div class="span4">
+                <g:Image resource="{teamres.team_mrabti_idriss}" altText="Mrabti Idriss"/>
+                <div>Mrabti Idriss
                 </div>
                 <div>
                     <ui:msg description="Our Team > Developper">Developper</ui:msg>
                 </div>
             </div>
-            <div class="span3">
+        </div>
+        <div class="row-fluid {style.aRow}">
+            <div class="span4">
+                <g:Image resource="{teamres.team_gael_nkouyee}" altText="Gael-Jurin Nkouyee"/>
+                <div>Gael-Jurin Nkouyee
+                </div>
+                <div>
+                    <ui:msg description="Our Team > Developper">Developper</ui:msg>
+                </div>
+            </div>
+            <div class="span4">
+                <g:Image resource="{teamres.team_simon_pierre_gingras}" altText="Simon-Pierre Gingras"/>
+                <div>Simon-Pierre Gingras
+                </div>
+                <div>
+                    <ui:msg description="Our Team > Developper">Developper</ui:msg>
+                </div>
+            </div>
+            <div class="span4">
+                <g:Image resource="{teamres.team_maxime_meriouma}" altText="Maxime Mériouma-Caron"/>
+                <div>Maxime Mériouma-Caron
+                </div>
+                <div>
+                    <ui:msg description="Our Team > Developper">Developper</ui:msg>
+                </div>
+            </div>
+        </div>
+        <div class="row-fluid {style.aRow}">
+            <div class="span4">
+                <g:Image resource="{teamres.team_chris_viel}" altText="Christopher Viel"/>
+                <div>Christopher Viel
+                </div>
+                <div>
+                    <ui:msg description="Our Team > Developper">Developper</ui:msg>
+                </div>
+            </div>
+            <div class="span4">
+                <g:Image resource="{teamres.team_sam_dionne}" altText="Samuel Dionne"/>
+                <div>Samuel Dionne
+                </div>
+                <div>
+                    <ui:msg description="Our Team > Developper">Developper</ui:msg>
+                </div>
+            </div>
+            <div class="span4">
+                <g:Image resource="{teamres.team_oli_lafleur}" altText="Olivier Lafleur"/>
+                <div>Olivier Lafleur
+                </div>
+                <div>
+                    <ui:msg description="Our Team > Developper">Developper</ui:msg>
+                </div>
+            </div>
+        </div>
+        <div class="row-fluid {style.aRow}">
+            <div class="span4">
                 <g:Image resource="{teamres.team_frank_poulin}" altText="François-Xavier Poulin-Darveau"/>
                 <div>François-Xavier
                     <br/>
@@ -276,9 +226,9 @@
                     <ui:msg description="Our Team > Developper">Developper</ui:msg>
                 </div>
             </div>
-            <div class="span3">
+            <div class="span4">
                 <g:Image resource="{teamres.team_sylvain_perron}" altText="Sylvain Perron"/>
-                <div>Sylvain<br/>Perron
+                <div>Sylvain Perron
                 </div>
                 <div>
                     <ui:msg description="Our Team > Developper">Developper</ui:msg>

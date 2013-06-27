@@ -199,6 +199,8 @@
                     <bindAddress>localhost</bindAddress>
                     <runTarget>Hive.html</runTarget>
                     <extraJvmArgs>-Xmx512m -Xss1024k</extraJvmArgs>
+                    <extraParam>true</extraParam>
+                    <extra>extras</extra>
                     <hostedWebapp>${webappDirectory}</hostedWebapp>
                     <copyWebapp>true</copyWebapp>
                 </configuration>

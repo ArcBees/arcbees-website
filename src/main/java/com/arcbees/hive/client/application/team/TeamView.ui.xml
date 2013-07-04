@@ -24,23 +24,17 @@
             -webkit-border-radius: 7px;
             overflow: hidden;
 
-            margin-right: 12px;
+            margin-right: 10px;
         }
 
         .aRow > div > img + div {
-            margin-top: 13px;
+            margin-top: 8px;
             font-size: 0.9em;
         }
 
         .aRow > div > div + div {
             font-size: 0.8em;
-            font-style: italic;
             color: #5B676F;
-        }
-
-        .associatedBeeRow {
-            margin-bottom: 30px;
-            height: 113px
         }
 
         .associatedBeeRow > img {
@@ -58,10 +52,6 @@
 
         .clearBoth {
             clear: both;
-        }
-
-        .associatedBeeTitle {
-            margin-bottom: 5px;
         }
 
         .associatedBeeTitle > div + div {
@@ -88,24 +78,33 @@
                 <g:Image resource="{teamres.team_chris_goudreau}" altText="Christian Goudreau"/>
                 <div>Christian Goudreau
                 </div>
-                <div>
-                    <ui:msg description="Our Team > Chris Goudreau > Position">Co-Founder / CEO</ui:msg>
+                <div class="{teamres.style.beeTitle}">
+                    <span>Bee-E-O</span>
+                    <span>
+                        <ui:msg description="Our Team > Chris Goudreau > Position">Co-Founder / CEO</ui:msg>
+                    </span>
                 </div>
             </div>
             <div class="span4">
                 <g:Image resource="{teamres.team_david_marcotte}" altText="David Marcotte"/>
                 <div>David Marcotte
                 </div>
-                <div>
-                    <ui:msg description="Our Team > David Marcotte > Position">Co-Founder / Senior Designer</ui:msg>
+                <div class="{teamres.style.beeTitle}">
+                    <span>Wise Artist Bee</span>
+                    <span>
+                        <ui:msg description="Our Team > David Marcotte > Position">Co-Founder / Senior Designer</ui:msg>
+                    </span>
                 </div>
             </div>
             <div class="span4">
                 <g:Image resource="{teamres.team_francis_menard}" altText="Francis Ménard"/>
                 <div>Francis Ménard
                 </div>
-                <div>
-                    <ui:msg description="Our Team > Philippe Beaudoin > Position">Co-Founder</ui:msg>
+                <div class="{teamres.style.beeTitle}">
+                    <span>Founder Bee</span>
+                    <span>
+                        <ui:msg description="Our Team > Philippe Beaudoin > Position">Co-Founder</ui:msg>
+                    </span>
                 </div>
             </div>
         </div>
@@ -116,24 +115,33 @@
                 <g:Image resource="{teamres.team_philippe_beaudoin}" altText="Philippe Beaudoin"/>
                 <div>Philippe Beaudoin
                 </div>
-                <div>
-                    <ui:msg description="Our Team > Philippe Beaudoin > Position">Co-Founder</ui:msg>
+                <div class="{teamres.style.beeTitle}">
+                    <span>Founder Bee</span>
+                    <span>
+                        <ui:msg description="Our Team > Philippe Beaudoin > Position">Co-Founder</ui:msg>
+                    </span>
                 </div>
             </div>
             <div class="span4">
                 <g:Image resource="{teamres.team_genevieve_doyle}" altText="Genevieve Doyle"/>
                 <div>Genevieve Doyle
                 </div>
-                <div>
-                    <ui:msg description="Our Team > Lawyer">Lawyer / COO</ui:msg>
+                <div class="{teamres.style.beeTitle}">
+                    <span>Law Bee</span>
+                    <span>
+                        <ui:msg description="Our Team > Lawyer">Lawyer</ui:msg>
+                    </span>
                 </div>
             </div>
             <div class="span4">
                 <g:Image resource="{teamres.team_alex_breton}" altText="Alexandre Breton"/>
                 <div>Alexandre Breton
                 </div>
-                <div>
-                    <ui:msg description="Our Team > WebDev">Web Developer</ui:msg>
+                <div class="{teamres.style.beeTitle}">
+                    <span>Web Bee</span>
+                    <span>
+                        <ui:msg description="Our Team > WebDev">Web Developer</ui:msg>
+                    </span>
                 </div>
             </div>
         </div>
@@ -142,24 +150,33 @@
                 <g:Image resource="{teamres.team_julien_dramaix}" altText="Julien Dramaix"/>
                 <div>Julien Dramaix
                 </div>
-                <div>
-                    <ui:msg description="Our Team > Senior Developer">Senior Developer</ui:msg>
+                <div class="{teamres.style.beeTitle}">
+                    <span>Wise Architect Bee</span>
+                    <span>
+                        <ui:msg description="Our Team > Senior Developer">Senior Developer</ui:msg>
+                    </span>
                 </div>
             </div>
             <div class="span4">
                 <g:Image resource="{teamres.team_brandon_donnelson}" altText="Brandon Donnelson"/>
                 <div>Brandon Donnelson
                 </div>
-                <div>
-                    <ui:msg description="Our Team > Senior Developer">Senior Developer</ui:msg>
+                <div class="{teamres.style.beeTitle}">
+                    <span>Wise Architect Bee</span>
+                    <span>
+                        <ui:msg description="Our Team > Senior Developer">Senior Developer</ui:msg>
+                    </span>
                 </div>
             </div>
             <div class="span4">
                 <g:Image resource="{teamres.team_mrabti_idriss}" altText="Mrabti Idriss"/>
                 <div>Mrabti Idriss
                 </div>
-                <div>
-                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
+                <div class="{teamres.style.beeTitle}">
+                    <span>Architect Bee</span>
+                    <span>
+                        <ui:msg description="Our Team > Developer">Developer</ui:msg>
+                    </span>
                 </div>
             </div>
         </div>
@@ -168,24 +185,33 @@
                 <g:Image resource="{teamres.team_gael_nkouyee}" altText="Gael-Jurin Nkouyee"/>
                 <div>Gael-Jurin Nkouyee
                 </div>
-                <div>
-                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
+                <div class="{teamres.style.beeTitle}">
+                    <span>Architect Bee</span>
+                    <span>
+                        <ui:msg description="Our Team > Developer">Developer</ui:msg>
+                    </span>
                 </div>
             </div>
             <div class="span4">
                 <g:Image resource="{teamres.team_simon_pierre_gingras}" altText="Simon-Pierre Gingras"/>
                 <div>Simon-Pierre Gingras
                 </div>
-                <div>
-                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
+                <div class="{teamres.style.beeTitle}">
+                    <span>Architect Bee</span>
+                    <span>
+                        <ui:msg description="Our Team > Developer">Developer</ui:msg>
+                    </span>
                 </div>
             </div>
             <div class="span4">
                 <g:Image resource="{teamres.team_maxime_meriouma}" altText="Maxime Mériouma-Caron"/>
                 <div>Maxime Mériouma-Caron
                 </div>
-                <div>
-                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
+                <div class="{teamres.style.beeTitle}">
+                    <span>Architect Bee</span>
+                    <span>
+                        <ui:msg description="Our Team > Developer">Developer</ui:msg>
+                    </span>
                 </div>
             </div>
         </div>
@@ -194,24 +220,33 @@
                 <g:Image resource="{teamres.team_chris_viel}" altText="Christopher Viel"/>
                 <div>Christopher Viel
                 </div>
-                <div>
-                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
+                <div class="{teamres.style.beeTitle}">
+                    <span>Architect Bee</span>
+                    <span>
+                        <ui:msg description="Our Team > Developer">Developer</ui:msg>
+                    </span>
                 </div>
             </div>
             <div class="span4">
                 <g:Image resource="{teamres.team_sam_dionne}" altText="Samuel Dionne"/>
                 <div>Samuel Dionne
                 </div>
-                <div>
-                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
+                <div class="{teamres.style.beeTitle}">
+                    <span>Architect Bee</span>
+                    <span>
+                        <ui:msg description="Our Team > Developer">Developer</ui:msg>
+                    </span>
                 </div>
             </div>
             <div class="span4">
                 <g:Image resource="{teamres.team_oli_lafleur}" altText="Olivier Lafleur"/>
                 <div>Olivier Lafleur
                 </div>
-                <div>
-                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
+                <div class="{teamres.style.beeTitle}">
+                    <span>New Bee</span>
+                    <span>
+                        <ui:msg description="Our Team > InternDeveloper">Intern Developer</ui:msg>
+                    </span>
                 </div>
             </div>
         </div>
@@ -222,16 +257,33 @@
                     <br/>
                     Poulin-Darveau
                 </div>
-                <div>
-                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
+                <div class="{teamres.style.beeTitle}">
+                    <span>Explorer Bee</span>
+                    <span>
+                        <ui:msg description="Our Team > Developer">Developer</ui:msg>
+                    </span>
                 </div>
             </div>
             <div class="span4">
                 <g:Image resource="{teamres.team_sylvain_perron}" altText="Sylvain Perron"/>
                 <div>Sylvain Perron
                 </div>
-                <div>
-                    <ui:msg description="Our Team > Developer">Developer</ui:msg>
+                <div class="{teamres.style.beeTitle}">
+                    <span>Explorer Bee</span>
+                    <span>
+                        <ui:msg description="Our Team > Developer">Developer</ui:msg>
+                    </span>
+                </div>
+            </div>
+            <div class="span4">
+                <g:Image resource="{teamres.team_vincent_roseberry}" altText="Vincent Roseberry"/>
+                <div>Vincent Roseberry
+                </div>
+                <div class="{teamres.style.beeTitle}">
+                    <span>Explorer Bee</span>
+                    <span>
+                        <ui:msg description="Our Team > Developer">Developer</ui:msg>
+                    </span>
                 </div>
             </div>
         </div>

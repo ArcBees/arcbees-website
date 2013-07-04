@@ -36,6 +36,7 @@ public class Hive implements EntryPoint {
         ginjector.getProductsResources().style().ensureInjected();
         ginjector.getSocialMediaResources().style().ensureInjected();
         ginjector.getCustomersResources().style().ensureInjected();
+        ginjector.getTeamResources().style().ensureInjected();
         ginjector.getPlaceManager().revealCurrentPlace();
     }
 }

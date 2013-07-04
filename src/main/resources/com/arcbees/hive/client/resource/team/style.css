@@ -1,0 +1,25 @@
+@sprite .beeTitle {
+    gwt-image: "beeIcon";
+    cursor: pointer;
+
+    height: auto;
+    width: auto;
+    min-height: 15px;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.beeTitle span:first-of-type {
+    color: #D88120;
+}
+
+.beeTitle span:last-of-type {
+    padding-top: 3px;
+    display: none;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.beeTitle:hover span {
+    display: block;
+}

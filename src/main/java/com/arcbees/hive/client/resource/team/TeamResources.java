@@ -1,9 +1,16 @@
 package com.arcbees.hive.client.resource.team;
 
 import com.google.gwt.resources.client.ClientBundle;
+import com.google.gwt.resources.client.CssResource;
 import com.google.gwt.resources.client.ImageResource;
 
 public interface TeamResources extends ClientBundle {
+    public interface Style extends CssResource {
+        String beeTitle();
+    }
+
+    Style style();
+
     ImageResource team_chris_goudreau();
 
     ImageResource team_chris_viel();
@@ -43,4 +50,6 @@ public interface TeamResources extends ClientBundle {
     ImageResource team_gael_nkouyee();
 
     ImageResource team_mrabti_idriss();
+
+    ImageResource beeIcon();
 }

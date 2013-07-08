@@ -19,7 +19,6 @@
     height: 90px;
     width: 200px;
     position: relative;
-    cursor: pointer;
 }
 
 .flipFront {
@@ -114,14 +113,13 @@
 
 @sprite .beeIcon {
     gwt-image: "beeIcon";
+    font-size: 0.8em;
 
     height: auto;
     width: auto;
     min-height: 15px;
     padding-left: 20px;
     margin: 5px 0 3px;
-
-    font-size: 0.8em;
 }
 
 .beeIcon > span {

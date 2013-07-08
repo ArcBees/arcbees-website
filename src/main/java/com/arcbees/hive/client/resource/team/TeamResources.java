@@ -7,6 +7,22 @@ import com.google.gwt.resources.client.ImageResource;
 public interface TeamResources extends ClientBundle {
     public interface Style extends CssResource {
         String beeTitle();
+
+        String beeIcon();
+
+        String jobTitle();
+
+        String at();
+
+        String email();
+
+        String flipCard();
+
+        String name();
+
+        String flipFront();
+
+        String flipBack();
     }
 
     Style style();
@@ -52,4 +68,6 @@ public interface TeamResources extends ClientBundle {
     ImageResource team_mrabti_idriss();
 
     ImageResource beeIcon();
+
+    ImageResource at();
 }

@@ -9,17 +9,155 @@
     margin-top: 5px;
 }
 
-.beeTitle span:first-of-type {
+.beeTitle span {
     color: #D88120;
 }
 
-.beeTitle span:last-of-type {
-    padding-top: 3px;
-    display: none;
-    text-decoration: none;
-    font-style: italic;
+.flipCard {
+    padding: 5px 5px 10px;
+    display: block;
+    height: 90px;
+    width: 200px;
+    position: relative;
+    cursor: pointer;
 }
 
-.beeTitle:hover span {
+.flipFront {
+    padding: 5px;
+    float: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 900;
+    width: inherit;
+    height: inherit;
+
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.flipBack {
+    padding: 5px;
+    float: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 800;
+    width: inherit;
+    height: inherit;
+    border: 1px solid transparent;
+    background: #ededed;
+
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.flipCard:hover .flipFront {
+    z-index: 900;
+    border-color: #f3f3f3;
+    background: #aeaeae;
+
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(-180deg);
+
+    -webkit-box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+    box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+}
+
+.flipCard:hover .flipBack {
+    z-index: 1000;
+    border-color: #ffffff;
+
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+
+    -webkit-box-shadow: 0 8px 35px -20px rgba(0, 0, 0, 0.9);
+    -moz-box-shadow: 0 8px 35px -20px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 8px 35px -20px rgba(0, 0, 0, 0.9);
+}
+
+.flipCard img {
+    float: left;
+    overflow: hidden;
+    margin-right: 10px;
+
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+}
+
+.name {
+    padding-top: 10px;
+    font-size: 0.9em;
+}
+
+@sprite .beeIcon {
+    gwt-image: "beeIcon";
+
+    height: auto;
+    width: auto;
+    min-height: 15px;
+
+    padding-left: 20px;
+    margin: 5px 0 3px;
+
+    font-size: 0.8em;
+}
+
+.beeIcon > span {
     display: block;
+}
+
+.jobTitle {
+    color: #D88120;
+}
+
+@sprite .at {
+    gwt-image: "at";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-position: 1px 3px;
+    background-size: 9px 9px;
+}
+
+.email {
+    font-size: 0.7em;
+    font-style: italic;
+    color: #868f96;
+
+    position: relative;
+    padding-top: 4px;
+    clear: both;
+}
+
+.email span:last-of-type {
+    position: relative;
+    left: -3px;
+}
+
+.email span.at {
+    position: relative;
+    top: 2px;
 }

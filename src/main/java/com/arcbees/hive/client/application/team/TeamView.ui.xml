@@ -17,8 +17,6 @@
         }
 
         .aRow img {
-            /*float: left;*/
-
             border-radius: 7px;
             -moz-border-radius: 7px;
             -webkit-border-radius: 7px;
@@ -37,14 +35,9 @@
             color: #5B676F;
         }
 
-        .clearBoth {
-            clear: both;
-        }
-
         h2:last-child {
             margin-top: 15px;
         }
-
 
     </ui:style>
     <g:HTMLPanel addStyleNames="{res.style.mainSectionContainer} {res.style.cornerBottom}">

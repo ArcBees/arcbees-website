@@ -501,7 +501,7 @@
                         </div>
                         <div class="{teamres.style.beeIcon}">
                             <span class="{teamres.style.jobTitle}">
-                                New Bee
+                                Architect Bee
                             </span>
                         </div>
                     </div>
@@ -512,9 +512,10 @@
                         </div>
                         <div class="{teamres.style.beeIcon}">
                             <span class="{teamres.style.jobTitle}">
-                                <ui:msg description="Our Team > InternDeveloper">Intern Developer</ui:msg>
+                                <ui:msg description="Our Team > Developer">Developer</ui:msg>
                             </span>
                         </div>
+                        w
                         <div class="{teamres.style.email}">
                             <span>olivier.lafleur</span>
                             <span class="{teamres.style.at}"/>

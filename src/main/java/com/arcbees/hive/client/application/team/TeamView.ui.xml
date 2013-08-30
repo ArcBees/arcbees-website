@@ -515,7 +515,6 @@
                                 <ui:msg description="Our Team > Developer">Developer</ui:msg>
                             </span>
                         </div>
-                        w
                         <div class="{teamres.style.email}">
                             <span>olivier.lafleur</span>
                             <span class="{teamres.style.at}"/>

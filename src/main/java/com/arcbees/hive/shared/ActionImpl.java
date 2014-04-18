@@ -16,8 +16,8 @@
 
 package com.arcbees.hive.shared;
 
-import com.gwtplatform.dispatch.shared.Action;
-import com.gwtplatform.dispatch.shared.Result;
+import com.gwtplatform.dispatch.rpc.shared.Action;
+import com.gwtplatform.dispatch.rpc.shared.Result;
 
 public abstract class ActionImpl<R extends Result> implements Action<R> {
     @Override

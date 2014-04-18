@@ -16,18 +16,18 @@
 
 package com.arcbees.hive.client.application.jobs;
 
-import com.arcbees.core.client.mvp.ViewImpl;
 import com.arcbees.hive.client.application.jobs.JobsPresenter.MyView;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
+import com.gwtplatform.mvp.client.ViewImpl;
 
 public class JobsView extends ViewImpl implements MyView {
     public interface Binder extends UiBinder<Widget, JobsView> {
     }
 
     @Inject
-    public JobsView(final Binder uiBinder) {
+    JobsView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
     }
 }

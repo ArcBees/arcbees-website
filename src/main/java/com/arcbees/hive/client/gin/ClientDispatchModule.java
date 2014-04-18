@@ -20,12 +20,12 @@ import com.arcbees.hive.client.dispatch.MyClientActionHandlerRegistry;
 
 import com.google.gwt.inject.client.AbstractGinModule;
 
-import com.gwtplatform.dispatch.client.gin.DispatchAsyncModule;
+import com.gwtplatform.dispatch.rpc.client.gin.RpcDispatchAsyncModule;
 
 public class ClientDispatchModule extends AbstractGinModule {
     @Override
     protected void configure() {
-        install(new DispatchAsyncModule.Builder().clientActionHandlerRegistry(
+        install(new RpcDispatchAsyncModule.Builder().clientActionHandlerRegistry(
                 MyClientActionHandlerRegistry.class).build());
     }
 }

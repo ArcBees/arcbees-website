@@ -30,8 +30,7 @@ import com.gwtplatform.mvp.client.proxy.Proxy;
 import com.gwtplatform.mvp.client.proxy.RevealContentHandler;
 import com.gwtplatform.mvp.client.proxy.RevealRootContentEvent;
 
-public class AppPresenter extends
-        Presenter<AppPresenter.MyView, AppPresenter.MyProxy> implements ResizeHandler {
+public class AppPresenter extends Presenter<AppPresenter.MyView, AppPresenter.MyProxy> implements ResizeHandler {
     @ProxyStandard
     public interface MyProxy extends Proxy<AppPresenter> {
     }
@@ -41,12 +40,12 @@ public class AppPresenter extends
     }
 
     @ContentSlot
-    public static final Type<RevealContentHandler<?>> TYPE_SetMainContent = new Type<RevealContentHandler<?>>();
+    public static final Type<RevealContentHandler<?>> SLOT_SetMainContent = new Type<RevealContentHandler<?>>();
 
-    public static Object TYPE_setHeader = new Object();
-    public static Object TYPE_setNavbar = new Object();
-    public static Object TYPE_setCustomers = new Object();
-    public static Object TYPE_setFooter = new Object();
+    public static Object SLOT_setHeader = new Object();
+    public static Object SLOT_setNavbar = new Object();
+    public static Object SLOT_setCustomers = new Object();
+    public static Object SLOT_setFooter = new Object();
 
     private final HeaderPresenter headerPresenter;
     private final NavbarPresenter navbarPresenter;
@@ -56,13 +55,13 @@ public class AppPresenter extends
     private final Integer bottomMargin = 0;
 
     @Inject
-    public AppPresenter(final EventBus eventBus,
-                        final MyView view,
-                        final MyProxy proxy,
-                        final HeaderPresenter headerPresenter,
-                        final NavbarPresenter navbarPresenter,
-                        final FooterPresenter footerPresenter,
-                        final CustomersPresenter customersPresenter) {
+    AppPresenter(EventBus eventBus,
+                 MyView view,
+                 MyProxy proxy,
+                 HeaderPresenter headerPresenter,
+                 NavbarPresenter navbarPresenter,
+                 FooterPresenter footerPresenter,
+                 CustomersPresenter customersPresenter) {
         super(eventBus, view, proxy);
 
         this.headerPresenter = headerPresenter;
@@ -88,10 +87,10 @@ public class AppPresenter extends
     protected void onBind() {
         super.onBind();
 
-        setInSlot(TYPE_setHeader, headerPresenter);
-        setInSlot(TYPE_setNavbar, navbarPresenter);
-        setInSlot(TYPE_setCustomers, customersPresenter);
-        setInSlot(TYPE_setFooter, footerPresenter);
+        setInSlot(SLOT_setHeader, headerPresenter);
+        setInSlot(SLOT_setNavbar, navbarPresenter);
+        setInSlot(SLOT_setCustomers, customersPresenter);
+        setInSlot(SLOT_setFooter, footerPresenter);
 
         addRegisteredHandler(ResizeEvent.getType(), this);
     }

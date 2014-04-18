@@ -1,5 +1,7 @@
 package com.arcbees.hive.client.application.companyhistory;
 
+import javax.inject.Inject;
+
 import com.arcbees.hive.client.application.common.AppPresenter;
 import com.arcbees.hive.client.application.common.event.ResizeEvent;
 import com.arcbees.hive.client.place.NameTokens;
@@ -11,8 +13,6 @@ import com.gwtplatform.mvp.client.annotations.ProxyStandard;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 import com.gwtplatform.mvp.client.proxy.RevealContentEvent;
 
-import javax.inject.Inject;
-
 public class CompanyHistoryPresenter extends Presenter<CompanyHistoryPresenter.MyView, CompanyHistoryPresenter.MyProxy> {
     @ProxyStandard
     @NameToken(NameTokens.companyhistory)
@@ -23,21 +23,22 @@ public class CompanyHistoryPresenter extends Presenter<CompanyHistoryPresenter.M
     }
 
     @Inject
-    public CompanyHistoryPresenter(final EventBus eventBus, MyView view,
+    public CompanyHistoryPresenter(EventBus eventBus,
+                                   MyView view,
                                    MyProxy proxy) {
         super(eventBus, view, proxy);
     }
 
     @Override
     protected void revealInParent() {
-        RevealContentEvent.fire(this, AppPresenter.TYPE_SetMainContent, this);
+        RevealContentEvent.fire(this, AppPresenter.SLOT_SetMainContent, this);
     }
 
     @Override
     protected void onReveal() {
         super.onReveal();
 
-        ResizeEvent.fire(this, AppPresenter.TYPE_SetMainContent,
+        ResizeEvent.fire(this, AppPresenter.SLOT_SetMainContent,
                 getView().asWidget().getOffsetHeight());
     }
 }

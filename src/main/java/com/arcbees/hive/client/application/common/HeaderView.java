@@ -16,8 +16,8 @@
 
 package com.arcbees.hive.client.application.common;
 
-import com.arcbees.core.client.mvp.ViewWithUiHandlers;
-import com.arcbees.core.client.mvp.uihandlers.UiHandlersStrategy;
+import javax.inject.Inject;
+
 import com.arcbees.hive.client.application.common.HeaderPresenter.MyView;
 import com.arcbees.hive.client.application.common.socialmedia.SocialMediaWidget;
 import com.arcbees.hive.client.application.common.socialmedia.SocialMediaWidgetFactory;
@@ -27,7 +27,7 @@ import com.google.gwt.query.client.Function;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Widget;
-import com.google.inject.Inject;
+import com.gwtplatform.mvp.client.ViewWithUiHandlers;
 
 import static com.google.gwt.query.client.GQuery.$;
 
@@ -41,11 +41,8 @@ public class HeaderView extends ViewWithUiHandlers<HeaderUiHandlers> implements 
     }
 
     @Inject
-    public HeaderView(final Binder uiBinder,
-                      final UiHandlersStrategy<HeaderUiHandlers> uiHandlersStrategy,
+    HeaderView(final Binder uiBinder,
                       final SocialMediaWidgetFactory socialMediaWidgetFactory) {
-        super(uiHandlersStrategy);
-
         this.socialMediaWidget = socialMediaWidgetFactory.create(SocialMediaWidgetSize.Small);
 
         initWidget(uiBinder.createAndBindUi(this));

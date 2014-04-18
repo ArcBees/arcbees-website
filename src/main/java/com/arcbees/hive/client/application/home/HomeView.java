@@ -16,18 +16,16 @@
 
 package com.arcbees.hive.client.application.home;
 
-import com.arcbees.core.client.mvp.ViewWithUiHandlers;
-import com.arcbees.core.client.mvp.uihandlers.UiHandlersStrategy;
+import javax.inject.Inject;
+
 import com.arcbees.hive.client.application.home.HomePresenter.MyView;
 import com.arcbees.hive.client.resource.home.HomeResources;
-import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
-import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Anchor;
 import com.google.gwt.user.client.ui.Widget;
-import com.google.inject.Inject;
+import com.gwtplatform.mvp.client.ViewWithUiHandlers;
 
 public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
         MyView {
@@ -45,8 +43,7 @@ public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
 
     @Inject
     public HomeView(final Binder uiBinder,
-                    UiHandlersStrategy<HomeUiHandlers> uiHandlersStrategy, HomeResources homeResources) {
-        super(uiHandlersStrategy);
+                    HomeResources homeResources) {
         this.homeResources = homeResources;
 
         initWidget(uiBinder.createAndBindUi(this));

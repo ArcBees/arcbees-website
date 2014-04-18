@@ -16,10 +16,9 @@
 
 package com.arcbees.hive.client.application.common;
 
-import com.arcbees.core.client.mvp.ViewImpl;
+import javax.inject.Inject;
+
 import com.arcbees.hive.client.application.common.AppPresenter.MyView;
-import com.arcbees.hive.client.application.common.navbar.NavbarView;
-import com.arcbees.hive.client.place.AppIds;
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.query.client.Function;
 import com.google.gwt.query.client.Properties;
@@ -29,14 +28,11 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.HTMLPanel;
 import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.Widget;
-import com.google.inject.Inject;
+import com.gwtplatform.mvp.client.ViewImpl;
 
 import static com.google.gwt.query.client.GQuery.$;
 import static com.google.gwt.query.client.plugins.Effects.Effects;
 
-/**
- * @author Christian Goudreau
- */
 public class AppView extends ViewImpl implements MyView {
     public interface Binder extends UiBinder<Widget, AppView> {
     }
@@ -60,10 +56,6 @@ public class AppView extends ViewImpl implements MyView {
     private Boolean blockFade = false;
     private Widget lastWidget;
 
-    /**
-     * {@link Function} that insure that we wait until every fade animation is
-     * finished before unblocking upcoming fade animation.
-     */
     private Function fadeFunction = new Function() {
         @Override
         public void f(Element e) {
@@ -76,20 +68,19 @@ public class AppView extends ViewImpl implements MyView {
         initWidget(uiBinder.createAndBindUi(this));
     }
 
-    @Override
     public void setInSlot(Object slot, Widget content) {
-        if (slot == AppPresenter.TYPE_SetMainContent) {
+        if (slot == AppPresenter.SLOT_SetMainContent) {
             fadeWidget(content);
-        } else if (slot == AppPresenter.TYPE_setHeader) {
+        } else if (slot == AppPresenter.SLOT_setHeader) {
             header.clear();
             header.add(content, header.getElement());
-        } else if (slot == AppPresenter.TYPE_setCustomers) {
+        } else if (slot == AppPresenter.SLOT_setCustomers) {
             customers.clear();
             customers.setWidget(content);
-        } else if (slot == AppPresenter.TYPE_setFooter) {
+        } else if (slot == AppPresenter.SLOT_setFooter) {
             footer.clear();
             footer.add(content, footer.getElement());
-        } else if(slot == AppPresenter.TYPE_setNavbar){
+        } else if(slot == AppPresenter.SLOT_setNavbar){
             navbarPanel.clear();
             navbarPanel.setWidget(content);
         }
@@ -97,7 +88,7 @@ public class AppView extends ViewImpl implements MyView {
 
     @Override
     public void resizeSlot(Object slot, Integer size) {
-        if (slot == AppPresenter.TYPE_SetMainContent) {
+        if (slot == AppPresenter.SLOT_SetMainContent) {
             resize(mainContent, size);
         }
     }
@@ -115,12 +106,6 @@ public class AppView extends ViewImpl implements MyView {
         }
     }
 
-    /**
-     * Used to start the animation that switch the opacity of the two fade block.
-     *
-     * @param fadeBlock The fade block to show.
-     * @param element   The {@link Element} of the second block to hide.
-     */
     private void switchFade(HTMLPanel fadeBlock, Element element, Widget content) {
         fadeBlock.clear();
         fadeBlock.add(content);

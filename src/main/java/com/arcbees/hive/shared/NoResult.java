@@ -16,7 +16,7 @@
 
 package com.arcbees.hive.shared;
 
-import com.gwtplatform.dispatch.shared.Result;
+import com.gwtplatform.dispatch.rpc.shared.Result;
 
 public class NoResult implements Result {
 }

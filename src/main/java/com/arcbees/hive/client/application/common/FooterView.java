@@ -16,9 +16,9 @@
 
 package com.arcbees.hive.client.application.common;
 
-import com.arcbees.core.client.mvp.ViewImpl;
-import com.arcbees.hive.client.application.common.FooterPresenter.MyView;
+import javax.inject.Inject;
 
+import com.arcbees.hive.client.application.common.FooterPresenter.MyView;
 import com.google.gwt.safehtml.client.SafeHtmlTemplates;
 import com.google.gwt.safehtml.shared.SafeHtml;
 import com.google.gwt.uibinder.client.UiBinder;
@@ -26,8 +26,8 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.HTMLPanel;
 import com.google.gwt.user.client.ui.Widget;
-import com.google.inject.Inject;
 import com.google.inject.Provider;
+import com.gwtplatform.mvp.client.ViewImpl;
 
 public class FooterView extends ViewImpl implements MyView {
     public interface Binder extends UiBinder<Widget, FooterView> {
@@ -48,8 +48,9 @@ public class FooterView extends ViewImpl implements MyView {
     private final RecentNewsTemplate recentNewsTemplate;
 
     @Inject
-    public FooterView(final Binder uiBinder, final RecentNewsTemplate recentNewsTemplate,
-                      final Provider<HTML> htmlProvider) {
+    FooterView(Binder uiBinder,
+               RecentNewsTemplate recentNewsTemplate,
+               Provider<HTML> htmlProvider) {
         initWidget(uiBinder.createAndBindUi(this));
 
         this.htmlProvider = htmlProvider;

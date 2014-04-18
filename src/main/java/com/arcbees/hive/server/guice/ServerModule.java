@@ -16,17 +16,6 @@
 
 package com.arcbees.hive.server.guice;
 
-import com.arcbees.hive.server.handlers.HandlersModule;
-import com.arcbees.hive.server.home.HomeModule;
-
-import com.google.inject.Provides;
-import com.google.inject.name.Named;
-
-import com.gwtplatform.dispatch.server.guice.HandlerModule;
-
-import org.w3c.dom.Document;
-import org.xml.sax.SAXException;
-
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -34,6 +23,15 @@ import java.net.URL;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
+
+import org.w3c.dom.Document;
+import org.xml.sax.SAXException;
+
+import com.arcbees.hive.server.handlers.HandlersModule;
+import com.arcbees.hive.server.home.HomeModule;
+import com.google.inject.Provides;
+import com.google.inject.name.Named;
+import com.gwtplatform.dispatch.rpc.server.guice.HandlerModule;
 
 public class ServerModule extends HandlerModule {
     private final String arcbeesFetch = "http://arcbees.wordpress.com/feed/";

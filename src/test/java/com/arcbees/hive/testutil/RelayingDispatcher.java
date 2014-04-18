@@ -22,10 +22,10 @@ import java.util.Map;
 import com.arcbees.hive.shared.NoResult;
 import com.google.gwt.user.client.rpc.AsyncCallback;
 import com.gwtplatform.dispatch.client.CompletedDispatchRequest;
-import com.gwtplatform.dispatch.shared.Action;
-import com.gwtplatform.dispatch.shared.DispatchAsync;
+import com.gwtplatform.dispatch.rpc.shared.Action;
+import com.gwtplatform.dispatch.rpc.shared.DispatchAsync;
 import com.gwtplatform.dispatch.shared.DispatchRequest;
-import com.gwtplatform.dispatch.shared.Result;
+import com.gwtplatform.dispatch.rpc.shared.Result;
 
 /**
  * Class used to replace a real implementation of the Dispatcher. When executing
@@ -37,7 +37,7 @@ import com.gwtplatform.dispatch.shared.Result;
  * @author Christian Goudreau
  */
 public class RelayingDispatcher implements DispatchAsync {
-    private Map<Class<? extends Action<?>>, Result> registry = new HashMap<Class<? extends Action<?>>, Result>();
+    private Map<Class<? extends Action<?>>, Result> registry = new HashMap<>();
 
     private Class<? extends Action<?>> currentAction = null;
 

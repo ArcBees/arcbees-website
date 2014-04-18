@@ -18,8 +18,8 @@ package com.arcbees.hive.server.guice;
 
 import com.google.inject.servlet.ServletModule;
 
-import com.gwtplatform.dispatch.server.guice.DispatchServiceImpl;
-import com.gwtplatform.dispatch.shared.ActionImpl;
+import com.gwtplatform.dispatch.rpc.server.guice.DispatchServiceImpl;
+import com.gwtplatform.dispatch.rpc.shared.ActionImpl;
 
 public class DispatchServletModule extends ServletModule {
     @Override

@@ -16,25 +16,31 @@
 
 package com.arcbees.hive.client.application.common;
 
+import javax.inject.Inject;
+
 import com.google.gwt.i18n.client.LocaleInfo;
 import com.google.gwt.user.client.Window;
-import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
+import com.gwtplatform.mvp.client.HasUiHandlers;
 import com.gwtplatform.mvp.client.PresenterWidget;
 import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.proxy.PlaceManager;
 
 public class HeaderPresenter extends PresenterWidget<HeaderPresenter.MyView> implements HeaderUiHandlers {
-    public interface MyView extends View {
+    public interface MyView extends View, HasUiHandlers<HeaderUiHandlers> {
     }
 
     private final PlaceManager placeManager;
 
     @Inject
-    public HeaderPresenter(final EventBus eventBus, final MyView view, final PlaceManager placeManager) {
+    HeaderPresenter(EventBus eventBus,
+                    MyView view,
+                    PlaceManager placeManager) {
         super(eventBus, view);
 
         this.placeManager = placeManager;
+
+        getView().setUiHandlers(this);
     }
 
     @Override

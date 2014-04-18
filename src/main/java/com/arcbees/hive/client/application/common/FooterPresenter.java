@@ -18,13 +18,14 @@ package com.arcbees.hive.client.application.common;
 
 import java.util.List;
 
+import javax.inject.Inject;
+
 import com.arcbees.hive.client.dispatch.AsyncCallbackImpl;
 import com.arcbees.hive.shared.home.blog.BlogItem;
 import com.arcbees.hive.shared.home.blog.GetBlogPosts;
 import com.arcbees.hive.shared.home.blog.GetBlogPostsResult;
-import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
-import com.gwtplatform.dispatch.shared.DispatchAsync;
+import com.gwtplatform.dispatch.rpc.shared.DispatchAsync;
 import com.gwtplatform.mvp.client.PresenterWidget;
 import com.gwtplatform.mvp.client.View;
 

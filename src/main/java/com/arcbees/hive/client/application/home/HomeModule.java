@@ -16,19 +16,11 @@
 
 package com.arcbees.hive.client.application.home;
 
-import com.arcbees.core.client.mvp.uihandlers.ProviderUiHandlersStrategy;
-import com.arcbees.core.client.mvp.uihandlers.UiHandlersStrategy;
-import com.google.inject.TypeLiteral;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
 public class HomeModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
-        bind(new TypeLiteral<UiHandlersStrategy<HomeUiHandlers>>() {
-        }).to(
-                new TypeLiteral<ProviderUiHandlersStrategy<HomeUiHandlers>>() {
-                });
-
         bindPresenter(HomePresenter.class, HomePresenter.MyView.class,
                 HomeView.class, HomePresenter.MyProxy.class);
 

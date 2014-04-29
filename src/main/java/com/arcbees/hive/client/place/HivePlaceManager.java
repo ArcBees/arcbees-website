@@ -16,22 +16,22 @@
 
 package com.arcbees.hive.client.place;
 
+import javax.inject.Inject;
+
 import com.arcbees.hive.client.gin.DefaultPlace;
-
 import com.google.gwt.user.client.History;
-import com.google.inject.Inject;
-
 import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.proxy.PlaceManagerImpl;
-import com.gwtplatform.mvp.client.proxy.PlaceRequest;
-import com.gwtplatform.mvp.client.proxy.TokenFormatter;
+import com.gwtplatform.mvp.shared.proxy.PlaceRequest;
+import com.gwtplatform.mvp.shared.proxy.TokenFormatter;
 
 public class HivePlaceManager extends PlaceManagerImpl {
     private final PlaceRequest defaultPlaceRequest;
 
     @Inject
-    public HivePlaceManager(EventBus eventBus, TokenFormatter tokenFormatter,
-                            @DefaultPlace String defaultPlaceNameToken) {
+    HivePlaceManager(EventBus eventBus,
+                     TokenFormatter tokenFormatter,
+                     @DefaultPlace String defaultPlaceNameToken) {
         super(eventBus, tokenFormatter);
 
         this.defaultPlaceRequest = new PlaceRequest(defaultPlaceNameToken);

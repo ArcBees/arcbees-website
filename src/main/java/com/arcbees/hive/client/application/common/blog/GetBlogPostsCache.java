@@ -16,16 +16,14 @@
 
 package com.arcbees.hive.client.application.common.blog;
 
+import javax.inject.Inject;
+
 import com.arcbees.hive.shared.home.blog.GetBlogPosts;
 import com.arcbees.hive.shared.home.blog.GetBlogPostsResult;
-
-import com.google.inject.Inject;
-
 import com.gwtplatform.dispatch.client.actionhandler.caching.AbstractCachingClientActionHandler;
 import com.gwtplatform.dispatch.client.actionhandler.caching.Cache;
 
-public class GetBlogPostsCache extends
-        AbstractCachingClientActionHandler<GetBlogPosts, GetBlogPostsResult> {
+public class GetBlogPostsCache extends AbstractCachingClientActionHandler<GetBlogPosts, GetBlogPostsResult> {
     @Inject
     GetBlogPostsCache(Cache cache) {
         super(GetBlogPosts.class, cache);

@@ -25,7 +25,7 @@ public class ResizeEvent extends GwtEvent<ResizeEvent.ResizeHandler> {
         void onResize(ResizeEvent event);
     }
 
-    private static Type<ResizeHandler> TYPE = new Type<ResizeEvent.ResizeHandler>();
+    private static Type<ResizeHandler> TYPE = new Type<>();
 
     private final Object slot;
     private final int size;

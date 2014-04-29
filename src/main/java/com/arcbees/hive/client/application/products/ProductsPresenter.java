@@ -16,12 +16,11 @@
 
 package com.arcbees.hive.client.application.products;
 
+import javax.inject.Inject;
+
 import com.arcbees.hive.client.application.common.AppPresenter;
 import com.arcbees.hive.client.application.common.event.ResizeEvent;
 import com.arcbees.hive.client.place.NameTokens;
-
-import com.google.inject.Inject;
-
 import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
@@ -47,14 +46,14 @@ public class ProductsPresenter extends
 
     @Override
     protected void revealInParent() {
-        RevealContentEvent.fire(this, AppPresenter.TYPE_SetMainContent, this);
+        RevealContentEvent.fire(this, AppPresenter.SLOT_SetMainContent, this);
     }
 
     @Override
     protected void onReveal() {
         super.onReveal();
 
-        ResizeEvent.fire(this, AppPresenter.TYPE_SetMainContent,
+        ResizeEvent.fire(this, AppPresenter.SLOT_SetMainContent,
                 getView().asWidget().getOffsetHeight());
     }
 }

@@ -16,19 +16,11 @@
 
 package com.arcbees.hive.client.application.contact;
 
-import com.arcbees.core.client.mvp.uihandlers.ProviderUiHandlersStrategy;
-import com.arcbees.core.client.mvp.uihandlers.UiHandlersStrategy;
-import com.google.inject.TypeLiteral;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
 public class ContactModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
-        bind(new TypeLiteral<UiHandlersStrategy<ContactUiHandlers>>() {
-        }).to(
-                new TypeLiteral<ProviderUiHandlersStrategy<ContactUiHandlers>>() {
-                });
-
         bindPresenter(ContactPresenter.class, ContactPresenter.MyView.class,
                 ContactView.class, ContactPresenter.MyProxy.class);
 

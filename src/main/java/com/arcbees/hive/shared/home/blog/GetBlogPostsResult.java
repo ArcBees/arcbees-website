@@ -16,9 +16,9 @@
 
 package com.arcbees.hive.shared.home.blog;
 
-import com.gwtplatform.dispatch.shared.Result;
-
 import java.util.List;
+
+import com.gwtplatform.dispatch.rpc.shared.Result;
 
 public class GetBlogPostsResult implements Result {
     private List<BlogItem> blogItem;

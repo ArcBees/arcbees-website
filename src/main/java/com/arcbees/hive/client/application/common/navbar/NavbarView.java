@@ -1,14 +1,14 @@
 package com.arcbees.hive.client.application.common.navbar;
 
-import com.arcbees.core.client.mvp.ViewImpl;
+import javax.inject.Inject;
+
 import com.arcbees.hive.client.place.NameTokens;
 import com.arcbees.hive.client.resource.Resources;
 import com.google.gwt.dom.client.AnchorElement;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Widget;
-
-import javax.inject.Inject;
+import com.gwtplatform.mvp.client.ViewImpl;
 
 import static com.google.gwt.query.client.GQuery.$;
 
@@ -28,7 +28,8 @@ public class NavbarView extends ViewImpl implements NavbarPresenter.MyView {
     }
 
     @Inject
-    public NavbarView(final Binder binder, Resources style) {
+    NavbarView(Binder binder,
+               Resources style) {
         this.style = style;
         initWidget(binder.createAndBindUi(this));
     }

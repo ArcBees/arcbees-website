@@ -1,9 +1,7 @@
 package com.arcbees.hive.server.handlers;
 
-import com.arcbees.hive.shared.NoResult;
-import com.arcbees.hive.shared.dispatch.SendMail;
-import com.gwtplatform.dispatch.server.ExecutionContext;
-import com.gwtplatform.dispatch.shared.ActionException;
+import java.io.UnsupportedEncodingException;
+import java.util.Properties;
 
 import javax.inject.Inject;
 import javax.mail.Message;
@@ -12,8 +10,11 @@ import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
-import java.io.UnsupportedEncodingException;
-import java.util.Properties;
+
+import com.arcbees.hive.shared.NoResult;
+import com.arcbees.hive.shared.dispatch.SendMail;
+import com.gwtplatform.dispatch.rpc.server.ExecutionContext;
+import com.gwtplatform.dispatch.shared.ActionException;
 
 public class SendMailHandler extends AbstractActionHandler<SendMail, NoResult> {
 

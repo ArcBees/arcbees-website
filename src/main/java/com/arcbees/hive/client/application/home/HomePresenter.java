@@ -16,46 +16,44 @@
 
 package com.arcbees.hive.client.application.home;
 
+import javax.inject.Inject;
+
 import com.arcbees.hive.client.application.common.AppPresenter;
 import com.arcbees.hive.client.application.common.event.ResizeEvent;
 import com.arcbees.hive.client.application.common.event.ResizeEvent.ResizeHandler;
 import com.arcbees.hive.client.place.NameTokens;
-import com.google.gwt.event.shared.GwtEvent.Type;
-import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
+import com.gwtplatform.mvp.client.HasUiHandlers;
 import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
-import com.gwtplatform.mvp.client.annotations.ContentSlot;
 import com.gwtplatform.mvp.client.annotations.NameToken;
 import com.gwtplatform.mvp.client.annotations.ProxyStandard;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 import com.gwtplatform.mvp.client.proxy.RevealContentEvent;
-import com.gwtplatform.mvp.client.proxy.RevealContentHandler;
 
-public class HomePresenter extends
-        Presenter<HomePresenter.MyView, HomePresenter.MyProxy> implements
-        HomeUiHandlers, ResizeHandler {
+public class HomePresenter extends Presenter<HomePresenter.MyView, HomePresenter.MyProxy>
+        implements HomeUiHandlers, ResizeHandler {
     @ProxyStandard
     @NameToken(NameTokens.home)
     public interface MyProxy extends ProxyPlace<HomePresenter> {
     }
 
-    public interface MyView extends View {
+    public interface MyView extends View, HasUiHandlers<HomeUiHandlers> {
         void startCarousel();
     }
 
-    @ContentSlot
-    public static final Type<RevealContentHandler<?>> TYPE_SetBottomContent1 = new Type<RevealContentHandler<?>>();
-
     @Inject
-    public HomePresenter(final EventBus eventBus, final MyView view,
-                         final MyProxy proxy) {
+    HomePresenter(EventBus eventBus,
+                  MyView view,
+                  MyProxy proxy) {
         super(eventBus, view, proxy);
+
+        getView().setUiHandlers(this);
     }
 
     @Override
     protected void revealInParent() {
-        RevealContentEvent.fire(this, AppPresenter.TYPE_SetMainContent, this);
+        RevealContentEvent.fire(this, AppPresenter.SLOT_SetMainContent, this);
     }
 
     @Override
@@ -73,7 +71,7 @@ public class HomePresenter extends
     protected void onReveal() {
         super.onReveal();
 
-        ResizeEvent.fire(this, AppPresenter.TYPE_SetMainContent, getView().asWidget().getOffsetHeight());
+        ResizeEvent.fire(this, AppPresenter.SLOT_SetMainContent, getView().asWidget().getOffsetHeight());
 
         getView().startCarousel();
     }

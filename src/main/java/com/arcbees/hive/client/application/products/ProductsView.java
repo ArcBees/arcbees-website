@@ -16,7 +16,6 @@
 
 package com.arcbees.hive.client.application.products;
 
-import com.arcbees.core.client.mvp.ViewImpl;
 import com.arcbees.hive.client.application.products.ProductsPresenter.MyView;
 import com.arcbees.hive.client.resource.products.ProductsResources;
 import com.google.gwt.event.dom.client.ClickEvent;
@@ -26,6 +25,7 @@ import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Anchor;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
+import com.gwtplatform.mvp.client.ViewImpl;
 
 import static com.google.gwt.query.client.GQuery.$;
 

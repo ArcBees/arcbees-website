@@ -23,7 +23,7 @@ import com.arcbees.hive.shared.home.blog.GetBlogPosts;
 
 import com.google.inject.Singleton;
 
-import com.gwtplatform.dispatch.server.guice.HandlerModule;
+import com.gwtplatform.dispatch.rpc.server.guice.HandlerModule;
 
 public class HomeModule extends HandlerModule {
     @Override

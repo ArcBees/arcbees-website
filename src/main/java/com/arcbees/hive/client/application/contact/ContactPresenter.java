@@ -16,6 +16,8 @@
 
 package com.arcbees.hive.client.application.contact;
 
+import javax.inject.Inject;
+
 import com.arcbees.hive.client.application.common.AppPresenter;
 import com.arcbees.hive.client.application.common.event.ResizeEvent;
 import com.arcbees.hive.client.dispatch.AsyncCallbackImpl;
@@ -23,9 +25,9 @@ import com.arcbees.hive.client.place.NameTokens;
 import com.arcbees.hive.shared.NoResult;
 import com.arcbees.hive.shared.dispatch.SendMail;
 import com.google.gwt.user.client.Window;
-import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
-import com.gwtplatform.dispatch.shared.DispatchAsync;
+import com.gwtplatform.dispatch.rpc.shared.DispatchAsync;
+import com.gwtplatform.mvp.client.HasUiHandlers;
 import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.annotations.NameToken;
@@ -40,7 +42,7 @@ public class ContactPresenter extends
     public interface MyProxy extends ProxyPlace<ContactPresenter> {
     }
 
-    public interface MyView extends View {
+    public interface MyView extends View, HasUiHandlers<ContactUiHandlers> {
     }
 
     private final DispatchAsync dispatcher;
@@ -50,18 +52,20 @@ public class ContactPresenter extends
         super(eventBus, view, proxy);
 
         this.dispatcher = dispatcher;
+
+        getView().setUiHandlers(this);
     }
 
     @Override
     protected void revealInParent() {
-        RevealContentEvent.fire(this, AppPresenter.TYPE_SetMainContent, this);
+        RevealContentEvent.fire(this, AppPresenter.SLOT_SetMainContent, this);
     }
 
     @Override
     protected void onReveal() {
         super.onReveal();
 
-        ResizeEvent.fire(this, AppPresenter.TYPE_SetMainContent,
+        ResizeEvent.fire(this, AppPresenter.SLOT_SetMainContent,
                 getView().asWidget().getOffsetHeight());
     }
 

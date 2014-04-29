@@ -16,6 +16,8 @@
 
 package com.arcbees.hive.client.application.service;
 
+import javax.inject.Inject;
+
 import com.arcbees.hive.client.application.common.AppPresenter;
 import com.arcbees.hive.client.application.common.event.ResizeEvent;
 import com.arcbees.hive.client.place.NameTokens;
@@ -26,8 +28,6 @@ import com.gwtplatform.mvp.client.annotations.NameToken;
 import com.gwtplatform.mvp.client.annotations.ProxyStandard;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 import com.gwtplatform.mvp.client.proxy.RevealContentEvent;
-
-import javax.inject.Inject;
 
 public class ServicePresenter extends Presenter<ServicePresenter.MyView,
         ServicePresenter.MyProxy> {
@@ -40,20 +40,22 @@ public class ServicePresenter extends Presenter<ServicePresenter.MyView,
     }
 
     @Inject
-    public ServicePresenter(EventBus eventBus, MyView view, MyProxy proxy) {
+    ServicePresenter(EventBus eventBus,
+                     MyView view,
+                     MyProxy proxy) {
         super(eventBus, view, proxy);
     }
 
     @Override
     protected void revealInParent() {
-        RevealContentEvent.fire(this, AppPresenter.TYPE_SetMainContent, this);
+        RevealContentEvent.fire(this, AppPresenter.SLOT_SetMainContent, this);
     }
 
     @Override
     protected void onReveal() {
         super.onReveal();
 
-        ResizeEvent.fire(this, AppPresenter.TYPE_SetMainContent,
+        ResizeEvent.fire(this, AppPresenter.SLOT_SetMainContent,
                 getView().asWidget().getOffsetHeight());
     }
 }

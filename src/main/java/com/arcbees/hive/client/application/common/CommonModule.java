@@ -16,11 +16,8 @@
 
 package com.arcbees.hive.client.application.common;
 
-import com.arcbees.core.client.mvp.uihandlers.ProviderUiHandlersStrategy;
-import com.arcbees.core.client.mvp.uihandlers.UiHandlersStrategy;
 import com.arcbees.hive.client.application.common.navbar.NavbarModule;
 import com.arcbees.hive.client.application.common.socialmedia.SocialMediaModule;
-import com.google.inject.TypeLiteral;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
 public class CommonModule extends AbstractPresenterModule {
@@ -40,10 +37,5 @@ public class CommonModule extends AbstractPresenterModule {
                 CustomersPresenter.MyView.class, CustomersView.class);
 
         bind(HeaderUiHandlers.class).to(HeaderPresenter.class);
-
-        bind(new TypeLiteral<UiHandlersStrategy<HeaderUiHandlers>>() {
-        }).to(
-                new TypeLiteral<ProviderUiHandlersStrategy<HeaderUiHandlers>>() {
-                });
     }
 }

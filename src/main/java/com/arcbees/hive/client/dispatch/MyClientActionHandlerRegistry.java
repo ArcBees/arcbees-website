@@ -16,16 +16,15 @@
 
 package com.arcbees.hive.client.dispatch;
 
+import javax.inject.Inject;
+
 import com.arcbees.hive.client.application.common.blog.GetBlogPostsCache;
-
-import com.google.inject.Inject;
-
 import com.gwtplatform.dispatch.client.actionhandler.DefaultClientActionHandlerRegistry;
 
 public class MyClientActionHandlerRegistry extends
         DefaultClientActionHandlerRegistry {
     @Inject
-    public MyClientActionHandlerRegistry(GetBlogPostsCache getBlogPostsClientActionHandler) {
+    MyClientActionHandlerRegistry(GetBlogPostsCache getBlogPostsClientActionHandler) {
         register(getBlogPostsClientActionHandler);
     }
 }

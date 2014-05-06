@@ -26,6 +26,7 @@ import com.google.gwt.query.client.plugins.effects.PropertiesAnimation.Easing;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.HTMLPanel;
+import com.google.gwt.user.client.ui.IsWidget;
 import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
@@ -54,7 +55,7 @@ public class AppView extends ViewImpl implements MyView {
 
     private Integer delay = 300;
     private Boolean blockFade = false;
-    private Widget lastWidget;
+    private IsWidget lastWidget;
 
     private Function fadeFunction = new Function() {
         @Override
@@ -68,18 +69,19 @@ public class AppView extends ViewImpl implements MyView {
         initWidget(uiBinder.createAndBindUi(this));
     }
 
-    public void setInSlot(Object slot, Widget content) {
+    @Override
+    public void setInSlot(Object slot, IsWidget content) {
         if (slot == AppPresenter.SLOT_SetMainContent) {
             fadeWidget(content);
         } else if (slot == AppPresenter.SLOT_setHeader) {
             header.clear();
-            header.add(content, header.getElement());
+            header.add(content.asWidget(), header.getElement());
         } else if (slot == AppPresenter.SLOT_setCustomers) {
             customers.clear();
             customers.setWidget(content);
         } else if (slot == AppPresenter.SLOT_setFooter) {
             footer.clear();
-            footer.add(content, footer.getElement());
+            footer.add(content.asWidget(), footer.getElement());
         } else if(slot == AppPresenter.SLOT_setNavbar){
             navbarPanel.clear();
             navbarPanel.setWidget(content);
@@ -93,7 +95,7 @@ public class AppView extends ViewImpl implements MyView {
         }
     }
 
-    private void fadeWidget(Widget content) {
+    private void fadeWidget(IsWidget content) {
         // Make sure that fading effect isn't blocked.
         if (!blockFade && !content.equals(lastWidget)) {
             lastWidget = content;
@@ -106,7 +108,7 @@ public class AppView extends ViewImpl implements MyView {
         }
     }
 
-    private void switchFade(HTMLPanel fadeBlock, Element element, Widget content) {
+    private void switchFade(HTMLPanel fadeBlock, Element element, IsWidget content) {
         fadeBlock.clear();
         fadeBlock.add(content);
 

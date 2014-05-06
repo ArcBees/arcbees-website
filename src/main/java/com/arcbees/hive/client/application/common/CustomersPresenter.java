@@ -22,6 +22,6 @@ public class CustomersPresenter extends PresenterWidget<CustomersPresenter.MyVie
     protected void onReveal() {
         super.onReveal();
 
-        getView().startCarousel();
+//        getView().startCarousel();
     }
 }

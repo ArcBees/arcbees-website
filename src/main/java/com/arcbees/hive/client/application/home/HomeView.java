@@ -51,7 +51,7 @@ public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
 
     @Override
     public void startCarousel() {
-        startCarouselNative(this);
+//        startCarouselNative(this);
     }
 
     public native void startCarouselNative(HomeView view) /*-{

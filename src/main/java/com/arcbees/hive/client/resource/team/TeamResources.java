@@ -23,6 +23,8 @@ public interface TeamResources extends ClientBundle {
         String flipFront();
 
         String flipBack();
+
+        String span4();
     }
 
     Style style();

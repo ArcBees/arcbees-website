@@ -12,6 +12,14 @@
             position: relative;
         }
 
+        .customersContainer > div {
+            width: 775px;
+            overflow: hidden;
+            height: 75px;
+            margin: auto;
+            margin-top: 15px
+        }
+
         .customersPrevious {
             left: 30px;
         }

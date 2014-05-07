@@ -96,7 +96,7 @@
             <g:TextBox ui:field="senderEmailTextBox"/>
             <g:TextBox ui:field="senderNameTextBox"/>
             <g:TextArea ui:field="contentsTextArea"/>
-            <g:Button ui:field="sendButton" addStyleNames="{res.style.cornerTopBottom} btn btn-warning">
+            <g:Button ui:field="sendButton" addStyleNames="{res.style.cornerTopBottom} {res.style.btnWarning} {res.style.btn}">
                 <ui:msg description="Contact Us > Send">Send</ui:msg>
             </g:Button>
         </div>

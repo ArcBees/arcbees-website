@@ -20,6 +20,7 @@ import javax.inject.Inject;
 
 import com.arcbees.hive.shared.home.blog.GetBlogPosts;
 import com.arcbees.hive.shared.home.blog.GetBlogPostsResult;
+import com.google.common.collect.Lists;
 import com.gwtplatform.dispatch.rpc.server.ExecutionContext;
 import com.gwtplatform.dispatch.rpc.server.actionhandler.AbstractActionHandler;
 import com.gwtplatform.dispatch.shared.ActionException;
@@ -39,7 +40,7 @@ public class GetBlogPostsHandler extends
     public GetBlogPostsResult execute(GetBlogPosts action,
                                       ExecutionContext context) throws ActionException {
 
-        return new GetBlogPostsResult(blogPostParser.parse());
+        return new GetBlogPostsResult(Lists.newArrayList(blogPostParser.parse()));
     }
 
     @Override

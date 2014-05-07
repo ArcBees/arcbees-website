@@ -16,22 +16,24 @@
 
 package com.arcbees.hive.shared.home.blog;
 
-import java.util.List;
+import java.util.ArrayList;
 
 import com.gwtplatform.dispatch.rpc.shared.Result;
 
 public class GetBlogPostsResult implements Result {
-    private List<BlogItem> blogItem;
+    private ArrayList<BlogItem> blogItem;
+//    private BlogItem blogItem2;
+
 
     @SuppressWarnings("unused")
     private GetBlogPostsResult() {
     }
 
-    public GetBlogPostsResult(final List<BlogItem> blogItem) {
+    public GetBlogPostsResult(final ArrayList<BlogItem> blogItem) {
         this.blogItem = blogItem;
     }
 
-    public List<BlogItem> getBlogPosts() {
+    public ArrayList<BlogItem> getBlogPosts() {
         return blogItem;
     }
 }

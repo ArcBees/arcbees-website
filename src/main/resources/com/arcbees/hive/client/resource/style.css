@@ -196,6 +196,11 @@ body .pHead {
     margin-left: 10px;
 }
 
+.imgQuoteRight {
+    margin-left: 0px;
+    margin-right: 20px;
+}
+
 .imgCenter {
     margin-left: auto;
     margin-right: auto;

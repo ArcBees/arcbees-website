@@ -20,8 +20,10 @@ import javax.inject.Inject;
 
 import com.arcbees.hive.client.application.home.HomePresenter.MyView;
 import com.arcbees.hive.client.resource.home.HomeResources;
+import com.google.gwt.core.client.Scheduler;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.user.client.Command;
 import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Anchor;
 import com.google.gwt.user.client.ui.Widget;
@@ -37,6 +39,9 @@ public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
     Anchor btGAE;
 
     private final HomeResources homeResources;
+    public Scheduler scheduler;
+
+    private boolean isTimerOn;
 
     public interface Binder extends UiBinder<Widget, HomeView> {
     }
@@ -50,32 +55,29 @@ public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
     }
 
     @Override
-    public void startCarousel() {
-//        startCarouselNative(this);
+    public void startTimer() {
+        isTimerOn = true;
+
+        Scheduler.get().scheduleFixedPeriod(new Scheduler.RepeatingCommand() {
+
+            public boolean execute() {
+                Window.alert("lol");
+                return isTimerOn;
+            }
+        }, 6000);
     }
 
-    public native void startCarouselNative(HomeView view) /*-{
-        function pageLoaded(event, data) {
-            view.@com.arcbees.hive.client.application.home.HomeView::setEnabled(I)(data.page);
-        }
+    @Override
+    public void stopTimer() {
+        isTimerOn = false;
+    }
 
-        $wnd.$('#sliderProductsCarousel').rcarousel(
-                {auto:{enabled:true, direction:"prev", interval:6000},
-                    orientation:"vertical",
-                    width:725,
-                    height:88,
-                    visible:1,
-                    step:1,
-                    speed:1000,
-                    pageLoaded:pageLoaded
-                });
-    }-*/;
 
     private void setEnabled(int index) {
         disableAll();
 
         Anchor selected = btGWTP;
-
+¸
         switch (index) {
             case 0:
                 selected = btGWTP;

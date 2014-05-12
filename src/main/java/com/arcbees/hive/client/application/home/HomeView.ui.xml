@@ -103,7 +103,7 @@
                     <p>
                         <ui:msg description="Home > Products > GWTP">The most popular MVP framework for GWT</ui:msg>
                     </p>
-                    <g:Image resource="{home.sliderQuotesDroite}" addStyleNames="{res.style.imgRight}"/>
+                    <g:Image resource="{home.sliderQuotesDroite}" addStyleNames="{res.style.imgRight} {res.style.imgQuoteRight}"/>
                     <a href="#{nameTokens.getProduct}">
                         <ui:msg description="Home > Products > Learn More">Click here to learn more about our
                             products...
@@ -118,7 +118,8 @@
                             soon!
                         </ui:msg>
                     </p>
-                    <g:Image resource="{home.sliderQuotesDroite}" addStyleNames="{res.style.imgRight}"/>
+                    <g:Image resource="{home.sliderQuotesDroite}"
+                             addStyleNames="{res.style.imgRight} {res.style.imgQuoteRight}"/>
                     <a href="#{nameTokens.getProduct}">
                         <ui:msg description="Home > Products > Learn More">Click here to learn more about our
                             products...
@@ -132,7 +133,7 @@
                         <ui:msg description="Home > Products > Jukito">The perfect complement for your unit tests!
                         </ui:msg>
                     </p>
-                    <g:Image resource="{home.sliderQuotesDroite}" addStyleNames="{res.style.imgRight}"/>
+                    <g:Image resource="{home.sliderQuotesDroite}" addStyleNames="{res.style.imgRight} {res.style.imgQuoteRight}"/>
                     <a href="#{nameTokens.getProduct}">
                         <ui:msg description="Home > Products > Learn More">Click here to learn more about our
                             products...

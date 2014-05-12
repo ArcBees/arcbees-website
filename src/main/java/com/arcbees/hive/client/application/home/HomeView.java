@@ -96,7 +96,6 @@ public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
         isTimerOn = true;
 
         Scheduler.get().scheduleFixedPeriod(new Scheduler.RepeatingCommand() {
-
             public boolean execute() {
                 moveProductsUpward();
 
@@ -114,9 +113,7 @@ public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
         $(allCarrouselDivs).addClass(stateTransitionStyleName);
         $(allCarrouselDivs).addClass(stateAboveStyleName);
 
-
         Scheduler.get().scheduleFixedPeriod(new Scheduler.RepeatingCommand() {
-
             public boolean execute() {
                 removeProductClasses();
                 switchInteger();
@@ -128,13 +125,13 @@ public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
     }
 
     private void switchInteger() {
-        if($(divGWTP).is(":first-child")) {
-            productInt=0;
-        }else {
-            if($(divGAE).is(":first-child")){
-                productInt=1;
-            }else {
-                productInt=2;
+        if ($(divGWTP).is(":first-child")) {
+            productInt = 0;
+        } else {
+            if ($(divGAE).is(":first-child")) {
+                productInt = 1;
+            } else {
+                productInt = 2;
             }
         }
     }

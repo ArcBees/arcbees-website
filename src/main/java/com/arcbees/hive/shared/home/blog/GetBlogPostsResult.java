@@ -22,8 +22,6 @@ import com.gwtplatform.dispatch.rpc.shared.Result;
 
 public class GetBlogPostsResult implements Result {
     private ArrayList<BlogItem> blogItem;
-//    private BlogItem blogItem2;
-
 
     @SuppressWarnings("unused")
     private GetBlogPostsResult() {

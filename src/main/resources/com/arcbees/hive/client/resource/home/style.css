@@ -45,10 +45,11 @@ body .home {
 }
 
 .home #boutonsProducts {
+    padding-top: 15px;
+
     position: relative;
     bottom: 80px;
     left: 750px;
-    padding-top: 15px;
 }
 
 .home #boutonsProducts a:first-child {
@@ -56,25 +57,29 @@ body .home {
 }
 
 .home #boutonsProducts a {
-    margin-top: 4px;
     display: block;
+    margin-top: 4px;
 }
 
 .home .productsNav p {
     color: #50575B;
-    margin-top: 20px;
     font-size: 17px;
-    float: left;
+
     width: 500px;
     height: 20px;
+    margin-top: 20px;
+
+    float: left;
 }
 
 .home .productsNav a {
     color: #50575B;
-    width: 375px;
     font-size: 13px;
     font-variant: small-caps;
+
     display: inline-block;
+    width: 375px;
+
     position: relative;
     top: -20px;
     left: 180px;
@@ -86,11 +91,13 @@ body .home {
 
 .home .sliderProductsContainer {
     font-family: Verdana, Arial, sans-serif;
-    position: relative;
-    margin: 55px auto 0 auto;
+
+    overflow: hidden;
     width: 765px;
     height: 80px;
-    overflow: hidden;
+    margin: 55px auto 0 auto;
+
+    position: relative;
 }
 
 .firstParagraph {

@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module rename-to='hive'>
-	<!-- Inherit the core Web Toolkit stuff. -->
-	<inherits name="com.google.gwt.user.User" />
-	<inherits name="com.google.gwt.query.Query" />
-	<inherits name="com.gwtplatform.dispatch.rpc.DispatchRpc"/>
+    <!-- Inherit the core Web Toolkit stuff. -->
+    <inherits name="com.google.gwt.user.User"/>
+    <inherits name="com.google.gwt.query.Query"/>
+    <inherits name="com.gwtplatform.dispatch.rpc.DispatchRpc"/>
     <inherits name='com.gwtplatform.mvp.MvpWithEntryPoint'/>
 
     <!-- French language, independent of country -->
-    <extend-property name="locale" values="fr" />
+    <extend-property name="locale" values="fr"/>
     <!-- English language, independent of country -->
-    <extend-property name="locale" values="en" />
-    <set-property-fallback name="locale" value="en" />
+    <extend-property name="locale" values="en"/>
+    <set-property-fallback name="locale" value="en"/>
 
-	<!-- Specify the paths for translatable code -->
-	<source path="client" />
-	<source path="shared" />
+    <!-- Specify the paths for translatable code -->
+    <source path="client"/>
+    <source path="shared"/>
 
     <extend-configuration-property name="gin.ginjector.modules" value="com.arcbees.hive.client.gin.ClientModule"/>
 </module>

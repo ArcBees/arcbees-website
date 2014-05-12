@@ -102,7 +102,7 @@ public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
 
                 return isTimerOn;
             }
-        }, 6g timer000);
+        }, 6000);
     }
 
     @Override

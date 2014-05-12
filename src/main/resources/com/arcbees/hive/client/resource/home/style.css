@@ -1,3 +1,106 @@
+
+body .home {
+    height: 450px;
+}
+
+.home h2 {
+    font-weight: bold;
+}
+
+.home p {
+    font-size: 17px;
+    line-height: 20px;
+    margin-bottom: 35px;
+}
+
+.home .productsNav {
+    height: 80px;
+    overflow: hidden;
+    position: relative;
+}
+
+.home .productsNav div {
+    position: relative;
+    top: 0;
+}
+
+.home .productsNav div.stateTransition {
+    -webkit-transition: top .5s ease;
+    -moz-transition: top .5s ease;
+    -ms-transition: top .5s ease;
+    -o-transition: top .5s ease;
+    transition: top .5s ease;
+}
+
+.home .productsNav div.stateVisible {
+    top: 0;
+}
+
+.home .productsNav div.stateAbove {
+    top: -91px;
+}
+
+.home .productsNav div.stateBelow {
+    top: 91px;
+}
+
+.home #boutonsProducts {
+    position: relative;
+    bottom: 80px;
+    left: 750px;
+    padding-top: 15px;
+}
+
+.home #boutonsProducts a:first-child {
+    margin-top: 0;
+}
+
+.home #boutonsProducts a {
+    margin-top: 4px;
+    display: block;
+}
+
+.home .productsNav p {
+    color: #50575B;
+    margin-top: 20px;
+    font-size: 17px;
+    float: left;
+    width: 500px;
+    height: 20px;
+}
+
+.home .productsNav a {
+    color: #50575B;
+    width: 375px;
+    font-size: 13px;
+    font-variant: small-caps;
+    display: inline-block;
+    position: relative;
+    top: -20px;
+    left: 180px;
+}
+
+.home .productsNav a:hover {
+    color: #3a3a3a;
+}
+
+.home .sliderProductsContainer {
+    font-family: Verdana, Arial, sans-serif;
+    position: relative;
+    margin: 55px auto 0 auto;
+    width: 765px;
+    height: 80px;
+    overflow: hidden;
+}
+
+.firstParagraph {
+    text-align: center;
+}
+
+.sliderProductsLast{
+    position: relative;
+}
+
 @sprite .sliderProductsButton, .sliderProductsOff {
     gwt-image: "sliderProductsBt";
 }

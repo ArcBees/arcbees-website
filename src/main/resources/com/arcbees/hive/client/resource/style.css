@@ -1,305 +1,429 @@
-    /*------- Color&Font -------*/
+/*------- Color&Font -------*/
 
-    body {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 10px;
-        overflow-y: scroll;
-        overflow-x: hidden;
-    }
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
 
-    html {
-        overflow-y: auto;
-        background-color: transparent;
-    }
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 10px;
+}
 
-    ::-webkit-scrollbar {
-        width: 11px;
-        height: 11px;
-    }
+html {
+    background-color: transparent;
+    overflow-y: auto;
+}
 
-    ::-webkit-scrollbar-button:start:decrement,
-    ::-webkit-scrollbar-button:end:increment {
-        height: 30px;
-        display: block;
-        background-color: transparent;
-    }
+::-webkit-scrollbar {
+    width: 11px;
+    height: 11px;
+}
 
-    ::-webkit-scrollbar-track-piece {
-        background: #a8b5bd none;
-        -webkit-border-radius: 6px;
-        -webkit-box-shadow: inset .0625em .0625em 0 0 #8D98A0, inset -.0625em -.0625em 0 0 #C6D3DB;
-    }
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+    background-color: transparent;
+    display: block;
+    height: 30px;
+}
 
-    ::-webkit-scrollbar-thumb:vertical {
-        height: 50px;
-        background-color: #666;
-        border: 1px solid #777;
-        -webkit-border-radius: 6px;
-    }
+::-webkit-scrollbar-track-piece {
+    background: #a8b5bd none;
 
-    body {
-        background-color: #b4c0c8;
-        font-family: Ubuntu;
-        font-weight: 300;
-    }
+    -webkit-border-radius: 6px;
+    -webkit-box-shadow: inset .0625em .0625em 0 0 #8D98A0, inset -.0625em -.0625em 0 0 #C6D3DB;
+}
 
-    p {
-        word-spacing: 1px;
-    }
+::-webkit-scrollbar-thumb:vertical {
+    background-color: #666;
 
-    body .headerContainer,
-    body .mainSectionContainer,
-    body .customersContainer {
-        background-color: #ffffff;
-    }
+    height: 50px;
+    border: 1px solid #777;
 
-    body .customersContainer {
-    }
+    -webkit-border-radius: 6px;
+}
 
-    body .footerContainer {
-        background-color: #DDA124;
-        color: #5A3A25;
-    }
+body {
+    font-family: Ubuntu;
+    font-weight: 300;
+    background-color: #b4c0c8;
+}
 
-    .localeSwitcher, .rightLinkBox p {
-        color: #9F9F9F;
-        font-size: 12px;
-    }
+p {
+    word-spacing: 1px;
+}
 
-    .localeSwitcher:HOVER {
-        color: #5f5f5f;
-        cursor: pointer;
-    }
+body .headerContainer,
+body .mainSectionContainer,
+body .customersContainer {
+    background-color: #ffffff;
+}
 
-    h2, h3, h4 {
-        font-family: Ubuntu;
-        font-weight: 400;
-    }
+body .customersContainer {
+}
 
-    h2 {
-        color: #6b757a;
-    }
+body .footerContainer {
+    background-color: #DDA124;
+    color: #5A3A25;
+}
 
-    h3, h4 {
-        color: #5B676F;
-    }
+.localeSwitcher, .rightLinkBox p {
+    color: #9F9F9F;
+    font-size: 12px;
+}
 
-    li, .mainSectionContainer p {
-        color: #50575b;
-    }
+.localeSwitcher:HOVER {
+    color: #5f5f5f;
+    cursor: pointer;
+}
 
-    li span {
-        color: #2d3337;
-    }
+h2, h3, h4 {
+    font-family: Ubuntu;
+    font-weight: 400;
+}
 
-    body .pHead {
-        color: #8c9397;
-        font-family: Ubuntu;
-        font-weight: 400;
-    }
+h2 {
+    color: #6b757a;
+}
 
-    body .pHead span {
-        color: #6a7074;
-    }
+h3, h4 {
+    color: #5B676F;
+}
 
-    .footerContainer a {
-        color: #fcf6ed;
-    }
+li, .mainSectionContainer p {
+    color: #50575b;
+}
 
-    .footerContainer a:HOVER {
+li span {
+    color: #2d3337;
+}
 
-        background-color: #ce8a16;
-    }
+body .pHead {
+    color: #8c9397;
+    font-family: Ubuntu;
+    font-weight: 400;
+}
 
-        /*------- Color&FontEnd -------*/
+body .pHead span {
+    color: #6a7074;
+}
 
-        /*------- MainSection -------*/
-    body .mainSectionContainer {
-        width: 756px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 40px 70px;
-    }
+.footerContainer a {
+    color: #fcf6ed;
+}
 
-    .mainSectionContainer a {
-        color: #939698
-    }
+.footerContainer a:HOVER {
 
-    .mainSectionContainer a:hover {
-        color: #6e6e6e
-    }
+    background-color: #ce8a16;
+}
 
-    h2 {
-        font-size: 21px;
-        font-weight: 700;
-        text-align: center;
-        margin-bottom: 9px;
-        line-height: 26px;
-    }
+/*------- Color&FontEnd -------*/
 
-    h3 {
-        font-size: 19px;
-        margin-top: 16px;
-        margin-bottom: 9px;
-        line-height: 20px;
-    }
+/*------- MainSection -------*/
+body .mainSectionContainer {
+    width: 756px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 70px;
+}
 
-    h4 {
-        font-size: 14px;
-        margin-top: 16px;
-        margin-bottom: 12px;
-        line-height: 14px;
-        font-weight: 700;
-    }
+.mainSectionContainer a {
+    color: #939698
+}
 
-    .mainSectionContainer p {
-        font-size: 14px;
-        line-height: 18px;
-        margin-bottom: 10px;
-    }
+.mainSectionContainer a:hover {
+    color: #6e6e6e
+}
 
-    @sprite li {
-        font-size: 13px;
-        line-height: 16px;
-        margin-left: 25px;
-        padding-left: 15px;
-        margin-bottom: 7px;
-        width: auto;
-        height: auto;
-        gwt-image: "listIcon";
-        background-position: 0px 5px;
-    }
+h2 {
+    font-size: 21px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 26px;
 
-    ul {
-        margin-bottom: 20px;
-    }
+    margin-bottom: 9px;
+}
 
-    body .pHead {
-        font-size: 17px;
-        line-height: 20px;
-        margin-bottom: 35px;
-    }
+h3 {
+    font-size: 19px;
+    margin-top: 16px;
+    line-height: 20px;
 
-        /*------- MainSectionEnd -------*/
+    margin-bottom: 9px;
+}
 
-        /*------- Utility -------*/
-    .imgLeft {
-        float: left;
-        margin-right: 10px;
-    }
+h4 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
 
-    .imgRight {
-        float: right;
-        margin-left: 10px;
-    }
+    margin-top: 16px;
+    margin-bottom: 12px;
+}
 
-    .imgCenter {
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-    }
+.mainSectionContainer p {
+    font-size: 14px;
+    line-height: 18px;
 
-    .cornerTop {
-        border-radius: 10px 10px 0px 0px;
-        -moz-border-radius: 10px 10px 0px 0px;
-        -webkit-border-radius: 10px 10px 0px 0px;
-        overflow: hidden;
-    }
+    margin-bottom: 10px;
+}
 
-    .cornerBottom {
-        border-radius: 0px 0px 10px 10px;
-        -moz-border-radius: 0px 0px 10px 10px;
-        -webkit-border-radius: 0px 0px 10px 10px;
-        overflow: hidden;
-    }
+@sprite li {
+    font-size: 13px;
+    line-height: 16px;
+    gwt-image: "listIcon";
+    background-position: 0px 5px;
 
-    .cornerTopBottom {
-        border-radius: 10px;
-        -moz-border-radius: 10px;
-        -webkit-border-radius: 10px;
-        overflow: hidden;
-    }
+    width: auto;
+    height: auto;
 
-    .textOn {
-        display: block;
-    }
+    padding-left: 15px;
+    margin-left: 25px;
+    margin-bottom: 7px;
+}
 
-    .textOff {
-        display: none;
-    }
+ul {
+    margin-bottom: 20px;
+}
 
-    .textOnBack {
-        display: block;
-        bottom: 126px;
-    }
+body .pHead {
+    font-size: 17px;
+    line-height: 20px;
 
-    .navbarAnchorOn {
-        bottom: 30px;
-    }
+    margin-bottom: 35px;
+}
 
-    .contactTextItalic {
-        font-style: italic;
-    }
+/*------- MainSectionEnd -------*/
 
-    .contactTextNormal {
-        font-style: normal;
-    }
+/*------- Utility -------*/
+.imgLeft {
+    float: left;
+    margin-right: 10px;
+}
 
-        /*------- UtilityEnd -------*/
+.imgRight {
+    float: right;
+    margin-left: 10px;
+}
 
-        /*------- Sprite -------*/
-    @sprite .contactUS {
-        gwt-image: "contactUS";
-        background-position: -10px -70px;
-    }
+.imgQuoteRight {
+    margin-left: 0px;
+    margin-right: 20px;
+}
 
-    @sprite .job {
-        gwt-image: "job";
-        background-position: bottom;
-    }
+.imgCenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-    @sprite .navBarBgSprite {
-        gwt-image: "navBarBg";
-    }
+.cornerTop {
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
 
-    @sprite .navBarBgHoverSprite {
-        gwt-image: "navBarBgHover";
-    }
+    -moz-border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+}
 
-    @sprite .mainDegradeBgSprite {
-        gwt-image: "mainDegradeBg";
-        background-position: 0 -50px;
-    }
+.cornerBottom {
+    overflow: hidden;
+    border-radius: 0px 0px 10px 10px;
 
-    @sprite .bulleBgHeader {
-        gwt-image: "bulleBgHeader";
-    }
+    -moz-border-radius: 0px 0px 10px 10px;
+    -webkit-border-radius: 0px 0px 10px 10px;
+}
 
-    @sprite .bulleBgMain {
-        gwt-image: "bulleBgMain";
-    }
+.cornerTopBottom {
+    overflow: hidden;
+    border-radius: 10px;
 
-    @sprite .bulleBgHome {
-        gwt-image: "bulleBgHome";
-    }
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
 
-    @sprite .bulleBgSlider {
-        gwt-image: "bulleBgSlider";
-    }
+.textOn {
+    display: block;
+}
 
-    @sprite .bulleBgFooter {
-        gwt-image: "bulleBgFooter";
-    }
+.textOff {
+    display: none;
+}
 
-    @sprite .uxButton, .uxButtonOff {
-        gwt-image: "uxButton";
-    }
+.textOnBack {
+    display: block;
+    bottom: 126px;
+}
 
-    @sprite .uxButton:hover, .uxButtonOn, .uxButtonOff:hover {
-        gwt-image: "uxButtonRl";
-    }
+.navbarAnchorOn {
+    bottom: 30px;
+}
 
-        /*------- SpriteEnd -------*/
+.contactTextItalic {
+    font-style: italic;
+}
+
+.contactTextNormal {
+    font-style: normal;
+}
+
+/*------- UtilityEnd -------*/
+
+.btn {
+    background-color: #f5f5f5;
+    background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+    background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: linear-gradient(top, #ffffff, #e6e6e6);
+    background-repeat: repeat-x;display: inline-block;
+
+    color: #333333;
+    font-size: 13px;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+    line-height: 18px;
+
+    margin-bottom: 0;
+    padding: 4px 10px 4px;
+    cursor: pointer;
+
+    border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border: 1px solid #cccccc;
+    border-bottom-color: #b3b3b3;
+
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), 0 1px 2px rgba(0, 0, 0, .05);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), 0 1px 2px rgba(0, 0, 0, .05);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), 0 1px 2px rgba(0, 0, 0, .05);
+}
+
+.btn:hover, .btn:active, .btn[disabled] {
+    background-color: #e6e6e6;
+}
+
+.btn:active {
+    background-color: #cccccc;
+}
+
+.btn:hover {
+    color: #333333;
+    text-decoration: none;
+    background-color: #e6e6e6;
+    background-position: 0 -15px;
+
+    -webkit-transition: background-position 0.1s linear;
+    -moz-transition: background-position 0.1s linear;
+    -ms-transition: background-position 0.1s linear;
+    -o-transition: background-position 0.1s linear;
+    transition: background-position 0.1s linear;
+}
+
+.btn:focus {
+    outline: thin dotted #333;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+.btn:active {
+    background-color: #e6e6e6;
+    background-color: #d9d9d9 \9;
+    background-image: none;
+    outline: 0;
+
+    -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, .15), 0 1px 2px rgba(0, 0, 0, .05);
+    -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, .15), 0 1px 2px rgba(0, 0, 0, .05);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, .15), 0 1px 2px rgba(0, 0, 0, .05);
+}
+
+.btn[disabled] {
+    background-color: #e6e6e6;
+    background-image: none;
+    opacity: 0.65;
+    cursor: default;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.btnWarning {
+    background-color: #e3b24c;
+    background-image: -moz-linear-gradient(top, #e7bd66, #dda124);
+    background-image: -ms-linear-gradient(top, #e7bd66, #dda124);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e7bd66), to(#dda124));
+    background-image: -webkit-linear-gradient(top, #e7bd66, #dda124);
+    background-image: -o-linear-gradient(top, #e7bd66, #dda124);
+    background-image: linear-gradient(top, #e7bd66, #dda124);
+    background-repeat: repeat-x;
+
+    border-color: #dda124 #dda124 #9c7118;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+
+.btnWarning:hover, .btnWarning:active, .btnWarning[disabled] {
+    background-color: #dda124;
+}
+
+.btnWarning:active {
+    background-color: #b2811c;
+}
+
+/*------- Sprite -------*/
+@sprite .contactUS {
+    gwt-image: "contactUS";
+    background-position: -10px -70px;
+}
+
+@sprite .job {
+    gwt-image: "job";
+    background-position: bottom;
+}
+
+@sprite .navBarBgSprite {
+    gwt-image: "navBarBg";
+}
+
+@sprite .navBarBgHoverSprite {
+    gwt-image: "navBarBgHover";
+}
+
+@sprite .mainDegradeBgSprite {
+    gwt-image: "mainDegradeBg";
+    background-position: 0 -50px;
+}
+
+@sprite .bulleBgHeader {
+    gwt-image: "bulleBgHeader";
+}
+
+@sprite .bulleBgMain {
+    gwt-image: "bulleBgMain";
+}
+
+@sprite .bulleBgHome {
+    gwt-image: "bulleBgHome";
+}
+
+@sprite .bulleBgSlider {
+    gwt-image: "bulleBgSlider";
+}
+
+@sprite .bulleBgFooter {
+    gwt-image: "bulleBgFooter";
+}
+
+@sprite .uxButton, .uxButtonOff {
+    gwt-image: "uxButton";
+}
+
+@sprite .uxButton:hover, .uxButtonOn, .uxButtonOff:hover {
+    gwt-image: "uxButtonRl";
+}
+
+/*------- SpriteEnd -------*/

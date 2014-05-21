@@ -1,7 +1,7 @@
 package com.arcbees.hive.server.handlers;
 
 import com.arcbees.hive.shared.dispatch.SendMail;
-import com.gwtplatform.dispatch.server.guice.HandlerModule;
+import com.gwtplatform.dispatch.rpc.server.guice.HandlerModule;
 
 public class HandlersModule extends HandlerModule {
     @Override

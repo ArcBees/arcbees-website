@@ -1,5 +1,5 @@
 /*
- * Copyright 2010 ArcBees Inc.
+ * Copyright 2014 ArcBees Inc.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -16,16 +16,15 @@
 
 package com.arcbees.hive.client.dispatch;
 
+import javax.inject.Inject;
+
 import com.arcbees.hive.client.application.common.blog.GetBlogPostsCache;
-
-import com.google.inject.Inject;
-
 import com.gwtplatform.dispatch.client.actionhandler.DefaultClientActionHandlerRegistry;
 
 public class MyClientActionHandlerRegistry extends
         DefaultClientActionHandlerRegistry {
     @Inject
-    public MyClientActionHandlerRegistry(GetBlogPostsCache getBlogPostsClientActionHandler) {
+    MyClientActionHandlerRegistry(GetBlogPostsCache getBlogPostsClientActionHandler) {
         register(getBlogPostsClientActionHandler);
     }
 }

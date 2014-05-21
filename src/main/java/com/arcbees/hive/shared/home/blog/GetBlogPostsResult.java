@@ -1,5 +1,5 @@
 /*
- * Copyright 2010 ArcBees Inc.
+ * Copyright 2014 ArcBees Inc.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -16,22 +16,22 @@
 
 package com.arcbees.hive.shared.home.blog;
 
-import com.gwtplatform.dispatch.shared.Result;
+import java.util.ArrayList;
 
-import java.util.List;
+import com.gwtplatform.dispatch.rpc.shared.Result;
 
 public class GetBlogPostsResult implements Result {
-    private List<BlogItem> blogItem;
+    private ArrayList<BlogItem> blogItem;
 
     @SuppressWarnings("unused")
     private GetBlogPostsResult() {
     }
 
-    public GetBlogPostsResult(final List<BlogItem> blogItem) {
+    public GetBlogPostsResult(final ArrayList<BlogItem> blogItem) {
         this.blogItem = blogItem;
     }
 
-    public List<BlogItem> getBlogPosts() {
+    public ArrayList<BlogItem> getBlogPosts() {
         return blogItem;
     }
 }

@@ -1,5 +1,5 @@
 /*
- * Copyright 2010 ArcBees Inc.
+ * Copyright 2014 ArcBees Inc.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -16,13 +16,13 @@
 
 package com.arcbees.hive.server.home.blog;
 
+import javax.inject.Inject;
+
 import com.arcbees.hive.shared.home.blog.GetBlogPosts;
 import com.arcbees.hive.shared.home.blog.GetBlogPostsResult;
-
-import com.google.inject.Inject;
-
-import com.gwtplatform.dispatch.server.ExecutionContext;
-import com.gwtplatform.dispatch.server.actionhandler.AbstractActionHandler;
+import com.google.common.collect.Lists;
+import com.gwtplatform.dispatch.rpc.server.ExecutionContext;
+import com.gwtplatform.dispatch.rpc.server.actionhandler.AbstractActionHandler;
 import com.gwtplatform.dispatch.shared.ActionException;
 
 public class GetBlogPostsHandler extends
@@ -30,7 +30,7 @@ public class GetBlogPostsHandler extends
     private final BlogPostParser blogPostParser;
 
     @Inject
-    public GetBlogPostsHandler(final BlogPostParser blogPostParser) {
+    GetBlogPostsHandler(BlogPostParser blogPostParser) {
         super(GetBlogPosts.class);
 
         this.blogPostParser = blogPostParser;
@@ -40,7 +40,7 @@ public class GetBlogPostsHandler extends
     public GetBlogPostsResult execute(GetBlogPosts action,
                                       ExecutionContext context) throws ActionException {
 
-        return new GetBlogPostsResult(blogPostParser.parse());
+        return new GetBlogPostsResult(Lists.newArrayList(blogPostParser.parse()));
     }
 
     @Override

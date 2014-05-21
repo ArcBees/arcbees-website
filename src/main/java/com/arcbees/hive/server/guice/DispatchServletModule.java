@@ -1,5 +1,5 @@
 /*
- * Copyright 2010 ArcBees Inc.
+ * Copyright 2014 ArcBees Inc.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -18,8 +18,8 @@ package com.arcbees.hive.server.guice;
 
 import com.google.inject.servlet.ServletModule;
 
-import com.gwtplatform.dispatch.server.guice.DispatchServiceImpl;
-import com.gwtplatform.dispatch.shared.ActionImpl;
+import com.gwtplatform.dispatch.rpc.server.guice.DispatchServiceImpl;
+import com.gwtplatform.dispatch.rpc.shared.ActionImpl;
 
 public class DispatchServletModule extends ServletModule {
     @Override

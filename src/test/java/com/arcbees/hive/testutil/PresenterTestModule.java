@@ -19,7 +19,7 @@ package com.arcbees.hive.testutil;
 import org.jukito.JukitoModule;
 import org.jukito.TestSingleton;
 
-import com.gwtplatform.dispatch.shared.DispatchAsync;
+import com.gwtplatform.dispatch.rpc.shared.DispatchAsync;
 import com.gwtplatform.mvp.client.AutobindDisable;
 
 /**

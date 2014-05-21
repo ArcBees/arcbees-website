@@ -1,5 +1,5 @@
 /*
- * Copyright 2010 ArcBees Inc.
+ * Copyright 2014 ArcBees Inc.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -16,23 +16,23 @@
 
 package com.arcbees.hive.server.home.blog;
 
-import com.arcbees.hive.shared.home.blog.BlogItem;
-
-import com.google.inject.Inject;
-import com.google.inject.Provider;
-import com.google.inject.name.Named;
-
-import org.w3c.dom.DOMException;
-import org.w3c.dom.Document;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+
+import javax.inject.Inject;
+
+import org.w3c.dom.DOMException;
+import org.w3c.dom.Document;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+
+import com.arcbees.hive.shared.home.blog.BlogItem;
+import com.google.inject.Provider;
+import com.google.inject.name.Named;
 
 public class BlogPostParserImpl implements BlogPostParser {
     private final Provider<Document> documentProvider;
@@ -56,7 +56,7 @@ public class BlogPostParserImpl implements BlogPostParser {
     public List<BlogItem> parse() {
         Document document = documentProvider.get();
 
-        List<BlogItem> items = new ArrayList<BlogItem>();
+        List<BlogItem> items = new ArrayList<>();
 
         NodeList nodeListItems = document.getElementsByTagName(item);
 

@@ -1,5 +1,5 @@
 /*
- * Copyright 2010 ArcBees Inc.
+ * Copyright 2014 ArcBees Inc.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -19,7 +19,9 @@ package com.arcbees.hive.shared.home.blog;
 import java.io.Serializable;
 import java.util.Date;
 
-public class BlogItem implements Serializable {
+import com.google.gwt.user.client.rpc.IsSerializable;
+
+public class BlogItem implements IsSerializable {
     private static final long serialVersionUID = -352198600153858944L;
 
     private String title;

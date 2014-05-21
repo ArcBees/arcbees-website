@@ -23,6 +23,8 @@ public interface TeamResources extends ClientBundle {
         String flipFront();
 
         String flipBack();
+
+        String span4();
     }
 
     Style style();
@@ -60,6 +62,12 @@ public interface TeamResources extends ClientBundle {
     ImageResource team_julien_dramaix();
 
     ImageResource team_genevieve_doyle();
+
+    ImageResource team_manon_gruaz();
+
+    ImageResource team_larry_matte();
+
+    ImageResource team_joel_trottier();
 
     ImageResource team_laure_chatenet();
 

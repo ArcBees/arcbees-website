@@ -11,24 +11,23 @@
     <name>MyProject</name>
 
     <properties>
-        <target.jdk>1.6</target.jdk>
+        <target.jdk>1.7</target.jdk>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <maven-surefire-plugin.version>2.6</maven-surefire-plugin.version>
         <maven-compiler-plugin.version>2.3.2</maven-compiler-plugin.version>
         <maven-gae-plugin.version>0.9.5</maven-gae-plugin.version>
-        <gwt-maven-plugin.version>2.5.0</gwt-maven-plugin.version>
 
-        <gwt.version>2.5.0</gwt.version>
-        <gae.version>1.7.4</gae.version>
-        <gwtp.version>0.8-alpha-2</gwtp.version>
-        <arcbees-core.version>1.0-SNAPSHOT</arcbees-core.version>
-        <gwtquery-version>1.2.0</gwtquery-version>
+        <gwt.version>2.6.0</gwt.version>
+        <gae.version>1.9.4</gae.version>
+        <gwtp.version>1.2.1</gwtp.version>
+        <gwtquery-version>1.4.1</gwtquery-version>
         <guice.version>3.0</guice.version>
-        <gin.version>2.0.0</gin.version>
-        <jukito.version>1.1</jukito.version>
-        <junit.version>4.10</junit.version>
+        <guava.version>17.0</guava.version>
+        <gin.version>2.1.2</gin.version>
+        <jukito.version>1.4</jukito.version>
+        <junit.version>4.11</junit.version>
 
         <webappDirectory>${project.build.directory}/${project.build.finalName}</webappDirectory>
     </properties>
@@ -69,20 +68,20 @@
 
         <dependency>
             <groupId>com.gwtplatform</groupId>
-            <artifactId>gwtp-dispatch-client</artifactId>
+            <artifactId>gwtp-dispatch-rpc-client</artifactId>
             <version>${gwtp.version}</version>
             <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>com.gwtplatform</groupId>
-            <artifactId>gwtp-dispatch-server-guice</artifactId>
+            <artifactId>gwtp-dispatch-rpc-server-guice</artifactId>
             <version>${gwtp.version}</version>
         </dependency>
 
         <dependency>
             <groupId>com.gwtplatform</groupId>
-            <artifactId>gwtp-dispatch-shared</artifactId>
+            <artifactId>gwtp-dispatch-rpc-shared</artifactId>
             <version>${gwtp.version}</version>
         </dependency>
 
@@ -107,13 +106,6 @@
             <scope>provided</scope>
         </dependency>
 
-        <dependency>
-            <groupId>com.arcbees.core</groupId>
-            <artifactId>arcbees-core</artifactId>
-            <version>${arcbees-core.version}</version>
-            <scope>provided</scope>
-        </dependency>
-
         <!-- DI dependencies -->
         <dependency>
             <groupId>com.google.inject</groupId>
@@ -131,6 +123,12 @@
             <groupId>com.google.inject.extensions</groupId>
             <artifactId>guice-assistedinject</artifactId>
             <version>${guice.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${guava.version}</version>
         </dependency>
 
         <dependency>
@@ -177,21 +175,24 @@
         <!--suppress MavenModelInspection -->
         <outputDirectory>${webappDirectory}/WEB-INF/classes</outputDirectory>
 
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+        </resources>
+
         <plugins>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>gwt-maven-plugin</artifactId>
-                <version>${gwt-maven-plugin.version}</version>
-
-                <executions>
-                    <execution>
-                        <phase>prepare-package</phase>
-                        <goals>
-                            <goal>compile</goal>
-                        </goals>
-                    </execution>
-                </executions>
-
+                <version>${gwt.version}</version>
                 <configuration>
                     <appEngineVersion>${gae.version}</appEngineVersion>
                     <server>com.google.appengine.tools.development.gwt.AppEngineLauncher</server>
@@ -203,7 +204,17 @@
                     <extra>extras</extra>
                     <hostedWebapp>${webappDirectory}</hostedWebapp>
                     <copyWebapp>true</copyWebapp>
+
+                    <module>com.arcbees.hive.Hive</module>
                 </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>compile</goal>
+                            <goal>test</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
 
             <plugin>
@@ -269,6 +280,24 @@
             </plugin>
         </plugins>
     </build>
+
+    <profiles>
+        <profile>
+            <id>sdm</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>gwt-maven-plugin</artifactId>
+                        <configuration>
+                            <module>com.arcbees.hive.Sdm</module>
+                            <style>DETAILED</style>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 
     <distributionManagement>
         <repository>

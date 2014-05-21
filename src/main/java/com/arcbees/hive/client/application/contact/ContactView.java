@@ -1,5 +1,5 @@
 /**
- * Copyright 2010 ArcBees Inc.
+ * Copyright 2014 ArcBees Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -16,8 +16,6 @@
 
 package com.arcbees.hive.client.application.contact;
 
-import com.arcbees.core.client.mvp.ViewWithUiHandlers;
-import com.arcbees.core.client.mvp.uihandlers.UiHandlersStrategy;
 import com.arcbees.hive.client.application.common.socialmedia.SocialMediaWidget;
 import com.arcbees.hive.client.application.common.socialmedia.SocialMediaWidgetFactory;
 import com.arcbees.hive.client.application.common.socialmedia.SocialMediaWidgetSize;
@@ -35,6 +33,7 @@ import com.google.gwt.user.client.ui.TextArea;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
+import com.gwtplatform.mvp.client.ViewWithUiHandlers;
 
 public class ContactView extends ViewWithUiHandlers<ContactUiHandlers> implements MyView {
     public interface Binder extends UiBinder<Widget, ContactView> {
@@ -58,12 +57,10 @@ public class ContactView extends ViewWithUiHandlers<ContactUiHandlers> implement
     private String defaultName;
 
     @Inject
-    public ContactView(final Binder uiBinder,
-                       final UiHandlersStrategy<ContactUiHandlers> uiHandlersStrategy,
-                       final MyConstants myConstants,
-                       final SocialMediaWidgetFactory socialMediaWidgetFactory,
-                       final Resources resources) {
-        super(uiHandlersStrategy);
+    ContactView(Binder uiBinder,
+                MyConstants myConstants,
+                SocialMediaWidgetFactory socialMediaWidgetFactory,
+                Resources resources) {
         this.resources = resources;
 
         defaultContents = myConstants.tellUsAboutYourProject();

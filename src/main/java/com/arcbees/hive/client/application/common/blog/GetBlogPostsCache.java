@@ -1,5 +1,5 @@
 /*
- * Copyright 2010 ArcBees Inc.
+ * Copyright 2014 ArcBees Inc.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -16,16 +16,14 @@
 
 package com.arcbees.hive.client.application.common.blog;
 
+import javax.inject.Inject;
+
 import com.arcbees.hive.shared.home.blog.GetBlogPosts;
 import com.arcbees.hive.shared.home.blog.GetBlogPostsResult;
-
-import com.google.inject.Inject;
-
 import com.gwtplatform.dispatch.client.actionhandler.caching.AbstractCachingClientActionHandler;
 import com.gwtplatform.dispatch.client.actionhandler.caching.Cache;
 
-public class GetBlogPostsCache extends
-        AbstractCachingClientActionHandler<GetBlogPosts, GetBlogPostsResult> {
+public class GetBlogPostsCache extends AbstractCachingClientActionHandler<GetBlogPosts, GetBlogPostsResult> {
     @Inject
     GetBlogPostsCache(Cache cache) {
         super(GetBlogPosts.class, cache);

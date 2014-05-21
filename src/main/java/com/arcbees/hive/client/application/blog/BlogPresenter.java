@@ -1,5 +1,5 @@
 /*
- * Copyright 2010 ArcBees Inc.
+ * Copyright 2014 ArcBees Inc.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -16,6 +16,8 @@
 
 package com.arcbees.hive.client.application.blog;
 
+import javax.inject.Inject;
+
 import com.arcbees.hive.client.application.common.AppPresenter;
 import com.arcbees.hive.client.application.common.event.ResizeEvent;
 import com.arcbees.hive.client.place.NameTokens;
@@ -27,33 +29,28 @@ import com.gwtplatform.mvp.client.annotations.ProxyStandard;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 import com.gwtplatform.mvp.client.proxy.RevealContentEvent;
 
-import javax.inject.Inject;
-
 public class BlogPresenter extends Presenter<BlogPresenter.MyView,
         BlogPresenter.MyProxy> {
     @ProxyStandard
     @NameToken(NameTokens.blog)
-    public interface MyProxy extends ProxyPlace<BlogPresenter> {
+    interface MyProxy extends ProxyPlace<BlogPresenter> {
     }
-                                    //asd
+
     public interface MyView extends View {
     }
 
     @Inject
-    public BlogPresenter(EventBus eventBus, MyView view, MyProxy proxy) {
-        super(eventBus, view, proxy);
-    }
-
-    @Override
-    protected void revealInParent() {
-        RevealContentEvent.fire(this, AppPresenter.TYPE_SetMainContent, this);
+    BlogPresenter(EventBus eventBus,
+                  MyView view,
+                  MyProxy proxy) {
+        super(eventBus, view, proxy, AppPresenter.SLOT_SetMainContent);
     }
 
     @Override
     protected void onReveal() {
         super.onReveal();
 
-        ResizeEvent.fire(this, AppPresenter.TYPE_SetMainContent,
+        ResizeEvent.fire(this, AppPresenter.SLOT_SetMainContent,
                 getView().asWidget().getOffsetHeight());
     }
 }

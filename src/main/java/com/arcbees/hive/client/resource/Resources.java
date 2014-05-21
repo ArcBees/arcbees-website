@@ -1,5 +1,5 @@
 /*
- * Copyright 2010 ArcBees Inc.
+ * Copyright 2014 ArcBees Inc.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -90,6 +90,12 @@ public interface Resources extends ClientBundle {
         String contactTextNormal();
 
         String contactTextItalic();
+
+        String btnWarning();
+
+        String btn();
+
+        String imgQuoteRight();
     }
 
     Style style();

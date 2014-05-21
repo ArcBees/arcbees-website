@@ -1,5 +1,5 @@
 /*
- * Copyright 2010 ArcBees Inc.
+ * Copyright 2014 ArcBees Inc.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -16,17 +16,6 @@
 
 package com.arcbees.hive.server.guice;
 
-import com.arcbees.hive.server.handlers.HandlersModule;
-import com.arcbees.hive.server.home.HomeModule;
-
-import com.google.inject.Provides;
-import com.google.inject.name.Named;
-
-import com.gwtplatform.dispatch.server.guice.HandlerModule;
-
-import org.w3c.dom.Document;
-import org.xml.sax.SAXException;
-
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -34,6 +23,15 @@ import java.net.URL;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
+
+import org.w3c.dom.Document;
+import org.xml.sax.SAXException;
+
+import com.arcbees.hive.server.handlers.HandlersModule;
+import com.arcbees.hive.server.home.HomeModule;
+import com.google.inject.Provides;
+import com.google.inject.name.Named;
+import com.gwtplatform.dispatch.rpc.server.guice.HandlerModule;
 
 public class ServerModule extends HandlerModule {
     private final String arcbeesFetch = "http://arcbees.wordpress.com/feed/";

@@ -1,5 +1,5 @@
 /*
- * Copyright 2010 ArcBees Inc.
+ * Copyright 2014 ArcBees Inc.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -16,11 +16,12 @@
 
 package com.arcbees.hive.client.application.service;
 
-import com.arcbees.core.client.mvp.ViewImpl;
+import javax.inject.Inject;
+
 import com.arcbees.hive.client.application.service.ServicePresenter.MyView;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.user.client.ui.Widget;
-import com.google.inject.Inject;
+import com.gwtplatform.mvp.client.ViewImpl;
 
 public class ServiceView extends ViewImpl implements MyView {
     public interface Binder extends UiBinder<Widget, ServiceView> {

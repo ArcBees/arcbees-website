@@ -1,5 +1,5 @@
 /*
- * Copyright 2010 ArcBees Inc.
+ * Copyright 2014 ArcBees Inc.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -16,7 +16,6 @@
 
 package com.arcbees.hive.client.application.products;
 
-import com.arcbees.core.client.mvp.ViewImpl;
 import com.arcbees.hive.client.application.products.ProductsPresenter.MyView;
 import com.arcbees.hive.client.resource.products.ProductsResources;
 import com.google.gwt.event.dom.client.ClickEvent;
@@ -26,6 +25,7 @@ import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Anchor;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
+import com.gwtplatform.mvp.client.ViewImpl;
 
 import static com.google.gwt.query.client.GQuery.$;
 

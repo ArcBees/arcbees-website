@@ -1,5 +1,5 @@
 /*
- * Copyright 2010 ArcBees Inc.
+ * Copyright 2014 ArcBees Inc.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -18,13 +18,14 @@ package com.arcbees.hive.client.application.common;
 
 import java.util.List;
 
+import javax.inject.Inject;
+
 import com.arcbees.hive.client.dispatch.AsyncCallbackImpl;
 import com.arcbees.hive.shared.home.blog.BlogItem;
 import com.arcbees.hive.shared.home.blog.GetBlogPosts;
 import com.arcbees.hive.shared.home.blog.GetBlogPostsResult;
-import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
-import com.gwtplatform.dispatch.shared.DispatchAsync;
+import com.gwtplatform.dispatch.rpc.shared.DispatchAsync;
 import com.gwtplatform.mvp.client.PresenterWidget;
 import com.gwtplatform.mvp.client.View;
 

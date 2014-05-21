@@ -5,11 +5,11 @@
 
 package com.arcbees.hive.server.handlers;
 
-import com.gwtplatform.dispatch.server.ExecutionContext;
-import com.gwtplatform.dispatch.server.actionhandler.ActionHandler;
-import com.gwtplatform.dispatch.shared.Action;
+import com.gwtplatform.dispatch.rpc.server.ExecutionContext;
+import com.gwtplatform.dispatch.rpc.server.actionhandler.ActionHandler;
+import com.gwtplatform.dispatch.rpc.shared.Action;
+import com.gwtplatform.dispatch.rpc.shared.Result;
 import com.gwtplatform.dispatch.shared.ActionException;
-import com.gwtplatform.dispatch.shared.Result;
 
 /**
  * Simple abstract super-class for {@link com.gwtplatform.dispatch.server.actionhandler.ActionHandler}

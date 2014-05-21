@@ -9,7 +9,7 @@
             addStyleNames="{res.style.customersContainer} {customers.style.customersContainer} {res.style.bulleBgSlider} {res.style.cornerTopBottom}">
         <div id="container" class="{customers.style.carrouselContainer}">
             <div class="{customers.style.carousel}">
-                <div class="{customers.style.carouselInner}">
+                <div ui:field="customerContainer" class="{customers.style.carouselInner}">
                     <div>
                         <a href="http://getbookedin.com/" target="_blank">
                             <g:Image resource="{customers.sliderClientBookedin}"/>

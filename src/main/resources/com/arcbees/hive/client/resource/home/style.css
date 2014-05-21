@@ -35,10 +35,6 @@ body .home {
     top: -91px;
 }
 
-.home .productsNav div.stateBelow {
-    top: 91px;
-}
-
 .home #boutonsProducts {
     padding-top: 15px;
 
@@ -97,10 +93,6 @@ body .home {
 
 .firstParagraph {
     text-align: center;
-}
-
-.sliderProductsLast{
-    position: relative;
 }
 
 @sprite .sliderProductsButton, .sliderProductsOff {

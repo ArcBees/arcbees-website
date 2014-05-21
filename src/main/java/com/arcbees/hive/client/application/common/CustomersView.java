@@ -4,7 +4,9 @@ import javax.inject.Inject;
 
 import com.arcbees.hive.client.resource.customers.CustomersResources;
 import com.google.gwt.core.client.Scheduler;
+import com.google.gwt.dom.client.DivElement;
 import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 
@@ -14,17 +16,14 @@ public class CustomersView extends ViewImpl implements CustomersPresenter.MyView
     public interface Binder extends UiBinder<Widget, CustomersView> {
     }
 
-    private final CustomersResources customersResources;
-    private boolean isTimerOn;
     private static int animationSidewaysDuration = 1250;
     private static int timerSidewaysPeriod = 7750;
 
-    private String carouselContainer;
-    private String stateTransitionStyleName;
-    private String stateBesideStyleName;
+    @UiField
+    DivElement customerContainer;
 
-    private String allCarrouselDivs;
-    private String firstCarrouselDiv;
+    private final CustomersResources customersResources;
+    private boolean isTimerOn;
 
     @Inject
     CustomersView(Binder binder,
@@ -32,13 +31,6 @@ public class CustomersView extends ViewImpl implements CustomersPresenter.MyView
         initWidget(binder.createAndBindUi(this));
 
         this.customersResources = customersResources;
-
-        carouselContainer = "." + customersResources.style().carouselInner();
-        stateTransitionStyleName = customersResources.style().stateTransition();
-        stateBesideStyleName = customersResources.style().stateBeside();
-
-        allCarrouselDivs = carouselContainer + " div";
-        firstCarrouselDiv = carouselContainer + " div:first-child";
     }
 
     @Override
@@ -60,8 +52,7 @@ public class CustomersView extends ViewImpl implements CustomersPresenter.MyView
     }
 
     private void moveProductsSideways() {
-        $(allCarrouselDivs).addClass(stateTransitionStyleName);
-        $(allCarrouselDivs).addClass(stateBesideStyleName);
+        toggleClass(true);
 
         Scheduler.get().scheduleFixedPeriod(new Scheduler.RepeatingCommand() {
             public boolean execute() {
@@ -72,10 +63,13 @@ public class CustomersView extends ViewImpl implements CustomersPresenter.MyView
         }, animationSidewaysDuration);
     }
 
-
     private void removeProductClasses() {
-        $(firstCarrouselDiv).appendTo(carouselContainer);
-        $(allCarrouselDivs).removeClass(stateTransitionStyleName);
-        $(allCarrouselDivs).removeClass(stateBesideStyleName);
+        $("div:first-child", customerContainer).appendTo(customerContainer);
+        toggleClass(false);
+    }
+
+    private void toggleClass(boolean addOrRemove) {
+        $("div", customerContainer).toggleClass(customersResources.style().stateTransition(), addOrRemove);
+        $("div", customerContainer).toggleClass(customersResources.style().stateBeside(), addOrRemove);
     }
 }

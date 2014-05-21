@@ -50,21 +50,3 @@
 .carouselInner div.stateBeside {
     left: -775px;
 }
-
-@sprite .sliderCustomersButtonGauche {
-    gwt-image: "sliderCustomersButtonGauche";
-    cursor: pointer;
-}
-
-@sprite .sliderCustomersButtonGauche:hover {
-    gwt-image: "sliderCustomersButtonGaucheRl";
-}
-
-@sprite .sliderCustomersButtonDroite {
-    gwt-image: "sliderCustomersButtonDroite";
-    cursor: pointer;
-}
-
-@sprite .sliderCustomersButtonDroite:hover {
-    gwt-image: "sliderCustomersButtonDroiteRl";
-}

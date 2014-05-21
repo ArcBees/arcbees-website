@@ -36,6 +36,9 @@ public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
     public interface Binder extends UiBinder<Widget, HomeView> {
     }
 
+    private static final int animationTopDownDuration = 500;
+    private static final int timerTopDownPeriod = 6000;
+
     @UiField
     Anchor btGWTP;
     @UiField
@@ -48,43 +51,18 @@ public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
     DivElement divGAE;
     @UiField
     DivElement divJukito;
+    @UiField
+    DivElement productsNav;
 
     private final HomeResources homeResources;
+
     private boolean isTimerOn;
     private int productInt;
-    private static int animationTopDownDuration = 500;
-    private static int timerTopDownPeriod = 6000;
-
-    private String productNavStyleName;
-    private String stateAboveStyleName;
-    private String stateBelowStyleName;
-    private String stateTransitionStyleName;
-    private String productsButtonStyleName;
-    private String productsButtonOnStyleName;
-    private String productsButtonOffStyleName;
-    private String productsButtonLastStyleName;
-
-    private String carrouselContainer;
-    private String allCarrouselDivs;
-    private String firstCarrouselDiv;
 
     @Inject
     HomeView(Binder uiBinder,
              HomeResources homeResources) {
         this.homeResources = homeResources;
-
-        productNavStyleName = "." + homeResources.style().productsNav();
-        stateAboveStyleName = homeResources.style().stateAbove();
-        stateBelowStyleName = homeResources.style().stateBelow();
-        stateTransitionStyleName = homeResources.style().stateTransition();
-        productsButtonStyleName = homeResources.style().sliderProductsButton();
-        productsButtonOnStyleName = homeResources.style().sliderProductsOn();
-        productsButtonOffStyleName = homeResources.style().sliderProductsOff();
-        productsButtonLastStyleName = homeResources.style().sliderProductsLast();
-
-        carrouselContainer = productNavStyleName;
-        allCarrouselDivs = productNavStyleName + " div";
-        firstCarrouselDiv = productNavStyleName + " div:first-child";
 
         initWidget(uiBinder.createAndBindUi(this));
     }
@@ -108,8 +86,7 @@ public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
     }
 
     private void moveProductsUpward() {
-        $(allCarrouselDivs).addClass(stateTransitionStyleName);
-        $(allCarrouselDivs).addClass(stateAboveStyleName);
+        toggleClass(true);
 
         Scheduler.get().scheduleFixedPeriod(new Scheduler.RepeatingCommand() {
             public boolean execute() {
@@ -135,9 +112,13 @@ public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
     }
 
     private void removeProductClasses() {
-        $(firstCarrouselDiv).appendTo(carrouselContainer);
-        $(allCarrouselDivs).removeClass(stateTransitionStyleName);
-        $(allCarrouselDivs).removeClass(stateAboveStyleName);
+        $("div:first-child", productsNav).appendTo(productsNav);
+        toggleClass(false);
+    }
+
+    private void toggleClass(boolean addOrRemove) {
+        $("div", productsNav).toggleClass(homeResources.style().stateTransition(), addOrRemove);
+        $("div", productsNav).toggleClass(homeResources.style().stateAbove(), addOrRemove);
     }
 
     private void setEnabled(int index) {

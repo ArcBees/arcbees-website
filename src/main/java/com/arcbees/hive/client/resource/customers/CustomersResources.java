@@ -6,10 +6,6 @@ import com.google.gwt.resources.client.ImageResource;
 
 public interface CustomersResources extends ClientBundle {
     public interface Style extends CssResource {
-        String sliderCustomersButtonGauche();
-
-        String sliderCustomersButtonDroite();
-
         String customersContainer();
 
         String carousel();

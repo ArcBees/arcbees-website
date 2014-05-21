@@ -1,4 +1,3 @@
-
 body .home {
     height: 450px;
 }
@@ -30,10 +29,6 @@ body .home {
     -ms-transition: top .5s ease;
     -o-transition: top .5s ease;
     transition: top .5s ease;
-}
-
-.home .productsNav div.stateVisible {
-    top: 0;
 }
 
 .home .productsNav div.stateAbove {

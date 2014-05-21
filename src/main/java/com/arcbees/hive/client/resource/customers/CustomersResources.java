@@ -9,6 +9,18 @@ public interface CustomersResources extends ClientBundle {
         String sliderCustomersButtonGauche();
 
         String sliderCustomersButtonDroite();
+
+        String customersContainer();
+
+        String carousel();
+
+        String carrouselContainer();
+
+        String carouselInner();
+
+        String stateTransition();
+
+        String stateBeside();
     }
 
     Style style();

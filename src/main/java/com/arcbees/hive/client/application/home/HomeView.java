@@ -51,7 +51,6 @@ public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
     private int productInt;
 
     public String productNavStyleName;
-    public String stateVisibleStyleName;
     public String stateAboveStyleName;
     public String stateBelowStyleName;
     public String stateTransitionStyleName;
@@ -63,7 +62,6 @@ public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
     public String carrouselContainer;
     public String allCarrouselDivs;
     public String firstCarrouselDiv;
-    public String lastCarrouselDiv;
 
     public interface Binder extends UiBinder<Widget, HomeView> {
     }
@@ -74,7 +72,6 @@ public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
         this.homeResources = homeResources;
 
         productNavStyleName = "." + homeResources.style().productsNav();
-        stateVisibleStyleName = homeResources.style().stateVisible();
         stateAboveStyleName = homeResources.style().stateAbove();
         stateBelowStyleName = homeResources.style().stateBelow();
         stateTransitionStyleName = homeResources.style().stateTransition();
@@ -86,7 +83,6 @@ public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
         carrouselContainer = productNavStyleName;
         allCarrouselDivs = productNavStyleName + " div";
         firstCarrouselDiv = productNavStyleName + " div:first-child";
-        lastCarrouselDiv = productNavStyleName + " div:last-child";
 
         initWidget(uiBinder.createAndBindUi(this));
     }

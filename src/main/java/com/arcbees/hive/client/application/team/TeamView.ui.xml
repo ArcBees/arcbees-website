@@ -50,7 +50,7 @@
         </p>
 
         <g:HTMLPanel styleName="row-fluid {style.aRow}">
-            <div class="span4">
+            <div class="{teamres.style.span4}">
                 <div class="{teamres.style.flipCard}">
                     <div class="{teamres.style.flipFront}">
                         <g:Image resource="{teamres.team_chris_goudreau}" altText="Christian Goudreau"/>
@@ -81,7 +81,7 @@
                     </div>
                 </div>
             </div>
-            <div class="span4">
+            <div class="{teamres.style.span4}">
                 <div class="{teamres.style.flipCard}">
                     <div class="{teamres.style.flipFront}">
                         <g:Image resource="{teamres.team_david_marcotte}" altText="David Marcotte"/>
@@ -112,7 +112,7 @@
                     </div>
                 </div>
             </div>
-            <div class="span4">
+            <div class="{teamres.style.span4}">
                 <div class="{teamres.style.flipCard}">
                     <div class="{teamres.style.flipFront}">
                         <g:Image resource="{teamres.team_francis_menard}" altText="Francis Ménard"/>
@@ -145,7 +145,7 @@
             </div>
         </g:HTMLPanel>
         <g:HTMLPanel styleName="row-fluid {style.aRow}">
-            <div class="span4">
+            <div class="{teamres.style.span4}">
                 <div class="{teamres.style.flipCard}">
                     <div class="{teamres.style.flipFront}">
                         <g:Image resource="{teamres.team_philippe_beaudoin}" altText="Philippe Beaudoin"/>
@@ -176,7 +176,7 @@
                     </div>
                 </div>
             </div>
-            <div class="span4">
+            <div class="{teamres.style.span4}">
                 <div class="{teamres.style.flipCard}">
                     <div class="{teamres.style.flipFront}">
                         <g:Image resource="{teamres.team_genevieve_doyle}" altText="Genevieve Doyle"/>
@@ -207,31 +207,31 @@
                     </div>
                 </div>
             </div>
-            <div class="span4">
+            <div class="{teamres.style.span4}">
                 <div class="{teamres.style.flipCard}">
                     <div class="{teamres.style.flipFront}">
-                        <g:Image resource="{teamres.team_alex_breton}" altText="Alexandre Breton"/>
+                        <g:Image resource="{teamres.team_manon_gruaz}" altText="Manon Gruaz"/>
                         <div class="{teamres.style.name}">
-                            Alexandre Breton
+                            Manon Gruaz
                         </div>
                         <div class="{teamres.style.beeIcon}">
                             <span class="{teamres.style.jobTitle}">
-                                Web Bee
+                                Beesign
                             </span>
                         </div>
                     </div>
                     <div class="{teamres.style.flipBack}">
-                        <g:Image resource="{teamres.team_alex_breton}" altText="Alexandre Breton"/>
+                        <g:Image resource="{teamres.team_manon_gruaz}" altText="Manon Gruaz"/>
                         <div class="{teamres.style.name}">
-                            Alexandre Breton
+                            Manon Gruaz
                         </div>
                         <div class="{teamres.style.beeIcon}">
                             <span class="{teamres.style.jobTitle}">
-                                <ui:msg description="Our Team > WebDev">Web Developer</ui:msg>
+                                <ui:msg description="Our Team > BrandDesign">Brand Strategist and Designer</ui:msg>
                             </span>
                         </div>
                         <div class="{teamres.style.email}">
-                            <span>alexandre.breton</span>
+                            <span>beesign</span>
                             <span class="{teamres.style.at}"/>
                             <span>arcbees.com</span>
                         </div>
@@ -240,7 +240,7 @@
             </div>
         </g:HTMLPanel>
         <g:HTMLPanel styleName="row-fluid {style.aRow}">
-            <div class="span4">
+            <div class="{teamres.style.span4}">
                 <div class="{teamres.style.flipCard}">
                     <div class="{teamres.style.flipFront}">
                         <g:Image resource="{teamres.team_julien_dramaix}" altText="Julien Dramaix"/>
@@ -271,7 +271,7 @@
                     </div>
                 </div>
             </div>
-            <div class="span4">
+            <div class="{teamres.style.span4}">
                 <div class="{teamres.style.flipCard}">
                     <div class="{teamres.style.flipFront}">
                         <g:Image resource="{teamres.team_brandon_donnelson}" altText="Brandon Donnelson"/>
@@ -302,7 +302,7 @@
                     </div>
                 </div>
             </div>
-            <div class="span4">
+            <div class="{teamres.style.span4}">
                 <div class="{teamres.style.flipCard}">
                     <div class="{teamres.style.flipFront}">
                         <g:Image resource="{teamres.team_mrabti_idriss}" altText="Mrabti Idriss"/>
@@ -335,7 +335,7 @@
             </div>
         </g:HTMLPanel>
         <g:HTMLPanel styleName="row-fluid {style.aRow}">
-            <div class="span4">
+            <div class="{teamres.style.span4}">
                 <div class="{teamres.style.flipCard}">
                     <div class="{teamres.style.flipFront}">
                         <g:Image resource="{teamres.team_gael_nkouyee}" altText="Gael-Jurin Nkouyee"/>
@@ -366,7 +366,7 @@
                     </div>
                 </div>
             </div>
-            <div class="span4">
+            <div class="{teamres.style.span4}">
                 <div class="{teamres.style.flipCard}">
                     <div class="{teamres.style.flipFront}">
                         <g:Image resource="{teamres.team_simon_pierre_gingras}" altText="Simon-Pierre Gingras"/>
@@ -397,7 +397,7 @@
                     </div>
                 </div>
             </div>
-            <div class="span4">
+            <div class="{teamres.style.span4}">
                 <div class="{teamres.style.flipCard}">
                     <div class="{teamres.style.flipFront}">
                         <g:Image resource="{teamres.team_maxime_meriouma}" altText="Maxime Mériouma-Caron"/>
@@ -430,7 +430,7 @@
             </div>
         </g:HTMLPanel>
         <g:HTMLPanel styleName="row-fluid {style.aRow}">
-            <div class="span4">
+            <div class="{teamres.style.span4}">
                 <div class="{teamres.style.flipCard}">
                     <div class="{teamres.style.flipFront}">
                         <g:Image resource="{teamres.team_chris_viel}" altText="Christopher Viel"/>
@@ -461,7 +461,7 @@
                     </div>
                 </div>
             </div>
-            <div class="span4">
+            <div class="{teamres.style.span4}">
                 <div class="{teamres.style.flipCard}">
                     <div class="{teamres.style.flipFront}">
                         <g:Image resource="{teamres.team_sam_dionne}" altText="Samuel Dionne"/>
@@ -492,7 +492,7 @@
                     </div>
                 </div>
             </div>
-            <div class="span4">
+            <div class="{teamres.style.span4}">
                 <div class="{teamres.style.flipCard}">
                     <div class="{teamres.style.flipFront}">
                         <g:Image resource="{teamres.team_oli_lafleur}" altText="Olivier Lafleur"/>
@@ -525,7 +525,102 @@
             </div>
         </g:HTMLPanel>
         <g:HTMLPanel styleName="row-fluid {style.aRow}">
-            <div class="span4">
+            <div class="{teamres.style.span4}">
+                <div class="{teamres.style.flipCard}">
+                    <div class="{teamres.style.flipFront}">
+                        <g:Image resource="{teamres.team_joel_trottier}" altText="Joel Trottier-Hebert"/>
+                        <div class="{teamres.style.name}">
+                            Joel Trottier-Hebert
+                        </div>
+                        <div class="{teamres.style.beeIcon}">
+                            <span class="{teamres.style.jobTitle}">
+                                Architect Bee
+                            </span>
+                        </div>
+                    </div>
+                    <div class="{teamres.style.flipBack}">
+                        <g:Image resource="{teamres.team_joel_trottier}" altText="Joel Trottier-Hebert"/>
+                        <div class="{teamres.style.name}">
+                            Joel Trottier-Hebert
+                        </div>
+                        <div class="{teamres.style.beeIcon}">
+                            <span class="{teamres.style.jobTitle}">
+                                <ui:msg description="Our Team > Developer">Developer</ui:msg>
+                            </span>
+                        </div>
+                        <div class="{teamres.style.email}">
+                            <span>joel.trottier.hebert</span>
+                            <span class="{teamres.style.at}"/>
+                            <span>arcbees.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="{teamres.style.span4}">
+                <div class="{teamres.style.flipCard}">
+                    <div class="{teamres.style.flipFront}">
+                        <g:Image resource="{teamres.team_alex_breton}" altText="Alexandre Breton"/>
+                        <div class="{teamres.style.name}">
+                            Alexandre Breton
+                        </div>
+                        <div class="{teamres.style.beeIcon}">
+                            <span class="{teamres.style.jobTitle}">
+                                Web Bee
+                            </span>
+                        </div>
+                    </div>
+                    <div class="{teamres.style.flipBack}">
+                        <g:Image resource="{teamres.team_alex_breton}" altText="Alexandre Breton"/>
+                        <div class="{teamres.style.name}">
+                            Alexandre Breton
+                        </div>
+                        <div class="{teamres.style.beeIcon}">
+                            <span class="{teamres.style.jobTitle}">
+                                <ui:msg description="Our Team > WebDev">Web Developer</ui:msg>
+                            </span>
+                        </div>
+                        <div class="{teamres.style.email}">
+                            <span>alexandre.breton</span>
+                            <span class="{teamres.style.at}"/>
+                            <span>arcbees.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="{teamres.style.span4}">
+                <div class="{teamres.style.flipCard}">
+                    <div class="{teamres.style.flipFront}">
+                        <g:Image resource="{teamres.team_larry_matte}" altText="Larry Matte"/>
+                        <div class="{teamres.style.name}">
+                            Larry Matte
+                        </div>
+                        <div class="{teamres.style.beeIcon}">
+                            <span class="{teamres.style.jobTitle}">
+                                Web Bee
+                            </span>
+                        </div>
+                    </div>
+                    <div class="{teamres.style.flipBack}">
+                        <g:Image resource="{teamres.team_larry_matte}" altText="Larry Matte"/>
+                        <div class="{teamres.style.name}">
+                            Larry Matte
+                        </div>
+                        <div class="{teamres.style.beeIcon}">
+                            <span class="{teamres.style.jobTitle}">
+                                <ui:msg description="Our Team > WebDev">Web Developer</ui:msg>
+                            </span>
+                        </div>
+                        <div class="{teamres.style.email}">
+                            <span>larry.matte</span>
+                            <span class="{teamres.style.at}"/>
+                            <span>arcbees.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </g:HTMLPanel>
+        <g:HTMLPanel styleName="row-fluid {style.aRow}">
+            <div class="{teamres.style.span4}">
                 <div class="{teamres.style.flipCard}">
                     <div class="{teamres.style.flipFront}">
                         <g:Image resource="{teamres.team_frank_poulin}" altText="François-Xavier Poulin-Darveau"/>
@@ -556,7 +651,7 @@
                     </div>
                 </div>
             </div>
-            <div class="span4">
+            <div class="{teamres.style.span4}">
                 <div class="{teamres.style.flipCard}">
                     <div class="{teamres.style.flipFront}">
                         <g:Image resource="{teamres.team_sylvain_perron}" altText="Sylvain Perron"/>
@@ -587,7 +682,7 @@
                     </div>
                 </div>
             </div>
-            <div class="span4">
+            <div class="{teamres.style.span4}">
                 <div class="{teamres.style.flipCard}">
                     <div class="{teamres.style.flipFront}">
                         <g:Image resource="{teamres.team_vincent_roseberry}" altText="Vincent Roseberry"/>

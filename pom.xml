@@ -18,7 +18,6 @@
         <maven-surefire-plugin.version>2.6</maven-surefire-plugin.version>
         <maven-compiler-plugin.version>2.3.2</maven-compiler-plugin.version>
         <maven-gae-plugin.version>0.9.5</maven-gae-plugin.version>
-        <gwt-maven-plugin.version>2.5.0</gwt-maven-plugin.version>
 
         <gwt.version>2.6.0</gwt.version>
         <gae.version>1.9.2</gae.version>
@@ -126,6 +125,12 @@
         </dependency>
 
         <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>17.0</version>
+        </dependency>
+
+        <dependency>
             <groupId>com.google.gwt.inject</groupId>
             <artifactId>gin</artifactId>
             <version>${gin.version}</version>
@@ -169,21 +174,24 @@
         <!--suppress MavenModelInspection -->
         <outputDirectory>${webappDirectory}/WEB-INF/classes</outputDirectory>
 
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+        </resources>
+
         <plugins>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>gwt-maven-plugin</artifactId>
-                <version>${gwt-maven-plugin.version}</version>
-
-                <executions>
-                    <execution>
-                        <phase>prepare-package</phase>
-                        <goals>
-                            <goal>compile</goal>
-                        </goals>
-                    </execution>
-                </executions>
-
+                <version>${gwt.version}</version>
                 <configuration>
                     <appEngineVersion>${gae.version}</appEngineVersion>
                     <server>com.google.appengine.tools.development.gwt.AppEngineLauncher</server>
@@ -195,7 +203,17 @@
                     <extra>extras</extra>
                     <hostedWebapp>${webappDirectory}</hostedWebapp>
                     <copyWebapp>true</copyWebapp>
+
+                    <module>com.arcbees.hive.Hive</module>
                 </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>compile</goal>
+                            <goal>test</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
 
             <plugin>
@@ -261,6 +279,24 @@
             </plugin>
         </plugins>
     </build>
+
+    <profiles>
+        <profile>
+            <id>sdm</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>gwt-maven-plugin</artifactId>
+                        <configuration>
+                            <module>com.arcbees.hive.Sdm</module>
+                            <style>DETAILED</style>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 
     <distributionManagement>
         <repository>

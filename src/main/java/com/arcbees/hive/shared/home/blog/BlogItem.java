@@ -19,7 +19,9 @@ package com.arcbees.hive.shared.home.blog;
 import java.io.Serializable;
 import java.util.Date;
 
-public class BlogItem implements Serializable {
+import com.google.gwt.user.client.rpc.IsSerializable;
+
+public class BlogItem implements IsSerializable {
     private static final long serialVersionUID = -352198600153858944L;
 
     private String title;

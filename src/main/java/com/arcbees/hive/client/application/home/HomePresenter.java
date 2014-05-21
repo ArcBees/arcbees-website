@@ -39,7 +39,9 @@ public class HomePresenter extends Presenter<HomePresenter.MyView, HomePresenter
     }
 
     public interface MyView extends View, HasUiHandlers<HomeUiHandlers> {
-        void startCarousel();
+        void startTimer();
+
+        void stopTimer();
     }
 
     @Inject
@@ -73,6 +75,14 @@ public class HomePresenter extends Presenter<HomePresenter.MyView, HomePresenter
 
         ResizeEvent.fire(this, AppPresenter.SLOT_SetMainContent, getView().asWidget().getOffsetHeight());
 
-        getView().startCarousel();
+        getView().startTimer();
+    }
+
+
+    @Override
+    protected void onHide() {
+        super.onHide();
+
+        getView().stopTimer();
     }
 }

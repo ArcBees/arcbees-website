@@ -90,6 +90,12 @@ public interface Resources extends ClientBundle {
         String contactTextNormal();
 
         String contactTextItalic();
+
+        String btnWarning();
+
+        String btn();
+
+        String imgQuoteRight();
     }
 
     Style style();

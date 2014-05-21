@@ -33,6 +33,10 @@ import static com.google.gwt.query.client.GQuery.$;
 
 public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
         MyView {
+
+    public interface Binder extends UiBinder<Widget, HomeView> {
+    }
+
     @UiField
     Anchor btGWTP;
     @UiField
@@ -50,25 +54,22 @@ public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
     private boolean isTimerOn;
     private int productInt;
 
-    public String productNavStyleName;
-    public String stateAboveStyleName;
-    public String stateBelowStyleName;
-    public String stateTransitionStyleName;
-    public String productsButtonStyleName;
-    public String productsButtonOnStyleName;
-    public String productsButtonOffStyleName;
-    public String productsButtonLastStyleName;
+    private String productNavStyleName;
+    private String stateAboveStyleName;
+    private String stateBelowStyleName;
+    private String stateTransitionStyleName;
+    private String productsButtonStyleName;
+    private String productsButtonOnStyleName;
+    private String productsButtonOffStyleName;
+    private String productsButtonLastStyleName;
 
-    public String carrouselContainer;
-    public String allCarrouselDivs;
-    public String firstCarrouselDiv;
-
-    public interface Binder extends UiBinder<Widget, HomeView> {
-    }
+    private String carrouselContainer;
+    private String allCarrouselDivs;
+    private String firstCarrouselDiv;
 
     @Inject
-    public HomeView(final Binder uiBinder,
-                    HomeResources homeResources) {
+    HomeView(Binder uiBinder,
+             HomeResources homeResources) {
         this.homeResources = homeResources;
 
         productNavStyleName = "." + homeResources.style().productsNav();

@@ -11,25 +11,22 @@ import com.gwtplatform.mvp.client.ViewImpl;
 import static com.google.gwt.query.client.GQuery.$;
 
 public class CustomersView extends ViewImpl implements CustomersPresenter.MyView {
+    public interface Binder extends UiBinder<Widget, CustomersView> {
+    }
 
     private final CustomersResources customersResources;
     private boolean isTimerOn;
 
-    public String carouselContainer;
-    public String stateTransitionStyleName;
-    public String stateBesideStyleName;
+    private String carouselContainer;
+    private String stateTransitionStyleName;
+    private String stateBesideStyleName;
 
-    public String allCarrouselDivs;
-    public String firstCarrouselDiv;
-
-
-    public interface Binder extends UiBinder<Widget, CustomersView> {
-
-    }
+    private String allCarrouselDivs;
+    private String firstCarrouselDiv;
 
     @Inject
-    public CustomersView(final Binder binder,
-                         CustomersResources customersResources) {
+    CustomersView(Binder binder,
+                  CustomersResources customersResources) {
         initWidget(binder.createAndBindUi(this));
 
         this.customersResources = customersResources;

@@ -27,10 +27,8 @@ import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.annotations.NameToken;
 import com.gwtplatform.mvp.client.annotations.ProxyStandard;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
-import com.gwtplatform.mvp.client.proxy.RevealContentEvent;
 
-public class TeamPresenter extends
-        Presenter<TeamPresenter.MyView, TeamPresenter.MyProxy> {
+public class TeamPresenter extends Presenter<TeamPresenter.MyView, TeamPresenter.MyProxy> {
     @ProxyStandard
     @NameToken(NameTokens.team)
     public interface MyProxy extends ProxyPlace<TeamPresenter> {
@@ -48,7 +46,6 @@ public class TeamPresenter extends
     protected void onReveal() {
         super.onReveal();
 
-        ResizeEvent.fire(this, AppPresenter.SLOT_SetMainContent,
-                getView().asWidget().getOffsetHeight());
+        ResizeEvent.fire(this, AppPresenter.SLOT_SetMainContent, getView().asWidget().getOffsetHeight());
     }
 }

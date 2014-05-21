@@ -60,8 +60,7 @@ public class ContactPresenter extends
     protected void onReveal() {
         super.onReveal();
 
-        ResizeEvent.fire(this, AppPresenter.SLOT_SetMainContent,
-                getView().asWidget().getOffsetHeight());
+        ResizeEvent.fire(this, AppPresenter.SLOT_SetMainContent, getView().asWidget().getOffsetHeight());
     }
 
     @Override

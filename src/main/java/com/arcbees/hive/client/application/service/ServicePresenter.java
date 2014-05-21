@@ -50,7 +50,6 @@ public class ServicePresenter extends Presenter<ServicePresenter.MyView,
     protected void onReveal() {
         super.onReveal();
 
-        ResizeEvent.fire(this, AppPresenter.SLOT_SetMainContent,
-                getView().asWidget().getOffsetHeight());
+        ResizeEvent.fire(this, AppPresenter.SLOT_SetMainContent, getView().asWidget().getOffsetHeight());
     }
 }

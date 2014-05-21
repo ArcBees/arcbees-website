@@ -24,6 +24,7 @@
         <gwtp.version>1.2.1</gwtp.version>
         <gwtquery-version>1.4.1</gwtquery-version>
         <guice.version>3.0</guice.version>
+        <guava.version>17.0</guava.version>
         <gin.version>2.1.2</gin.version>
         <jukito.version>1.4</jukito.version>
         <junit.version>4.11</junit.version>
@@ -127,7 +128,7 @@
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
-            <version>17.0</version>
+            <version>${guava.version}</version>
         </dependency>
 
         <dependency>

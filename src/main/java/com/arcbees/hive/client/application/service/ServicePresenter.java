@@ -43,12 +43,7 @@ public class ServicePresenter extends Presenter<ServicePresenter.MyView,
     ServicePresenter(EventBus eventBus,
                      MyView view,
                      MyProxy proxy) {
-        super(eventBus, view, proxy);
-    }
-
-    @Override
-    protected void revealInParent() {
-        RevealContentEvent.fire(this, AppPresenter.SLOT_SetMainContent, this);
+        super(eventBus, view, proxy, AppPresenter.SLOT_SetMainContent);
     }
 
     @Override

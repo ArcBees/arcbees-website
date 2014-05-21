@@ -48,14 +48,9 @@ public class HomePresenter extends Presenter<HomePresenter.MyView, HomePresenter
     HomePresenter(EventBus eventBus,
                   MyView view,
                   MyProxy proxy) {
-        super(eventBus, view, proxy);
+        super(eventBus, view, proxy, AppPresenter.SLOT_SetMainContent);
 
         getView().setUiHandlers(this);
-    }
-
-    @Override
-    protected void revealInParent() {
-        RevealContentEvent.fire(this, AppPresenter.SLOT_SetMainContent, this);
     }
 
     @Override

@@ -49,16 +49,11 @@ public class ContactPresenter extends
 
     @Inject
     public ContactPresenter(EventBus eventBus, MyView view, MyProxy proxy, DispatchAsync dispatcher) {
-        super(eventBus, view, proxy);
+        super(eventBus, view, proxy, AppPresenter.SLOT_SetMainContent);
 
         this.dispatcher = dispatcher;
 
         getView().setUiHandlers(this);
-    }
-
-    @Override
-    protected void revealInParent() {
-        RevealContentEvent.fire(this, AppPresenter.SLOT_SetMainContent, this);
     }
 
     @Override

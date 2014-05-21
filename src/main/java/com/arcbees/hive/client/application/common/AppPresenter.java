@@ -62,7 +62,7 @@ public class AppPresenter extends Presenter<AppPresenter.MyView, AppPresenter.My
                  NavbarPresenter navbarPresenter,
                  FooterPresenter footerPresenter,
                  CustomersPresenter customersPresenter) {
-        super(eventBus, view, proxy);
+        super(eventBus, view, proxy, RevealType.Root);
 
         this.headerPresenter = headerPresenter;
         this.navbarPresenter = navbarPresenter;
@@ -75,12 +75,6 @@ public class AppPresenter extends Presenter<AppPresenter.MyView, AppPresenter.My
         Integer size = event.getSize() + bottomMargin;
 
         getView().resizeSlot(event.getSlot(), size);
-    }
-
-
-    @Override
-    protected void revealInParent() {
-        RevealRootContentEvent.fire(this, this);
     }
 
     @Override

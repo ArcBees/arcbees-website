@@ -27,7 +27,6 @@ import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.annotations.NameToken;
 import com.gwtplatform.mvp.client.annotations.ProxyStandard;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
-import com.gwtplatform.mvp.client.proxy.RevealContentEvent;
 
 public class ProductsPresenter extends
         Presenter<ProductsPresenter.MyView, ProductsPresenter.MyProxy> {
@@ -41,12 +40,7 @@ public class ProductsPresenter extends
 
     @Inject
     public ProductsPresenter(EventBus eventBus, MyView view, MyProxy proxy) {
-        super(eventBus, view, proxy);
-    }
-
-    @Override
-    protected void revealInParent() {
-        RevealContentEvent.fire(this, AppPresenter.SLOT_SetMainContent, this);
+        super(eventBus, view, proxy, AppPresenter.SLOT_SetMainContent);
     }
 
     @Override

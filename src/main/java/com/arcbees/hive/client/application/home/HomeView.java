@@ -33,7 +33,6 @@ import static com.google.gwt.query.client.GQuery.$;
 
 public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
         MyView {
-
     public interface Binder extends UiBinder<Widget, HomeView> {
     }
 
@@ -53,6 +52,8 @@ public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
     private final HomeResources homeResources;
     private boolean isTimerOn;
     private int productInt;
+    private static int animationTopDownDuration = 500;
+    private static int timerTopDownPeriod = 6000;
 
     private String productNavStyleName;
     private String stateAboveStyleName;
@@ -98,7 +99,7 @@ public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
 
                 return isTimerOn;
             }
-        }, 6000);
+        }, timerTopDownPeriod);
     }
 
     @Override
@@ -118,7 +119,7 @@ public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
 
                 return false;
             }
-        }, 500);
+        }, animationTopDownDuration);
     }
 
     private void switchInteger() {

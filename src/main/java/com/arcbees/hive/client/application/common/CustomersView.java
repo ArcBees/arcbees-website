@@ -16,6 +16,8 @@ public class CustomersView extends ViewImpl implements CustomersPresenter.MyView
 
     private final CustomersResources customersResources;
     private boolean isTimerOn;
+    private static int animationSidewaysDuration = 1250;
+    private static int timerSidewaysPeriod = 7750;
 
     private String carouselContainer;
     private String stateTransitionStyleName;
@@ -49,7 +51,7 @@ public class CustomersView extends ViewImpl implements CustomersPresenter.MyView
 
                 return isTimerOn;
             }
-        }, 7750);
+        }, timerSidewaysPeriod);
     }
 
     @Override
@@ -67,7 +69,7 @@ public class CustomersView extends ViewImpl implements CustomersPresenter.MyView
 
                 return false;
             }
-        }, 1250);
+        }, animationSidewaysDuration);
     }
 
 

@@ -52,7 +52,7 @@ public class CustomersView extends ViewImpl implements CustomersPresenter.MyView
 
                 return isTimerOn;
             }
-        }, 6000);
+        }, 7750);
     }
 
     @Override
@@ -70,7 +70,7 @@ public class CustomersView extends ViewImpl implements CustomersPresenter.MyView
 
                 return false;
             }
-        }, 500);
+        }, 1250);
     }
 
 

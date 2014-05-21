@@ -20,6 +20,8 @@ import javax.inject.Inject;
 
 import com.arcbees.hive.client.application.home.HomePresenter.MyView;
 import com.arcbees.hive.client.resource.home.HomeResources;
+import com.google.gwt.core.client.Scheduler;
+import com.google.gwt.dom.client.DivElement;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.Window;
@@ -27,49 +29,97 @@ import com.google.gwt.user.client.ui.Anchor;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewWithUiHandlers;
 
+import static com.google.gwt.query.client.GQuery.$;
+
 public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
         MyView {
+    interface Binder extends UiBinder<Widget, HomeView> {
+    }
+
+    private static final int animationTopDownDuration = 500;
+    private static final int timerTopDownPeriod = 6000;
+
     @UiField
     Anchor btGWTP;
     @UiField
     Anchor btJukito;
     @UiField
     Anchor btGAE;
+    @UiField
+    DivElement divGWTP;
+    @UiField
+    DivElement divGAE;
+    @UiField
+    DivElement divJukito;
+    @UiField
+    DivElement productsNav;
 
     private final HomeResources homeResources;
 
-    public interface Binder extends UiBinder<Widget, HomeView> {
-    }
+    private boolean isTimerOn;
+    private int productInt;
 
     @Inject
-    public HomeView(final Binder uiBinder,
-                    HomeResources homeResources) {
+    HomeView(Binder uiBinder,
+             HomeResources homeResources) {
         this.homeResources = homeResources;
 
         initWidget(uiBinder.createAndBindUi(this));
     }
 
     @Override
-    public void startCarousel() {
-//        startCarouselNative(this);
+    public void startTimer() {
+        isTimerOn = true;
+
+        Scheduler.get().scheduleFixedPeriod(new Scheduler.RepeatingCommand() {
+            public boolean execute() {
+                moveProductsUpward();
+
+                return isTimerOn;
+            }
+        }, timerTopDownPeriod);
     }
 
-    public native void startCarouselNative(HomeView view) /*-{
-        function pageLoaded(event, data) {
-            view.@com.arcbees.hive.client.application.home.HomeView::setEnabled(I)(data.page);
-        }
+    @Override
+    public void stopTimer() {
+        isTimerOn = false;
+    }
 
-        $wnd.$('#sliderProductsCarousel').rcarousel(
-                {auto:{enabled:true, direction:"prev", interval:6000},
-                    orientation:"vertical",
-                    width:725,
-                    height:88,
-                    visible:1,
-                    step:1,
-                    speed:1000,
-                    pageLoaded:pageLoaded
-                });
-    }-*/;
+    private void moveProductsUpward() {
+        toggleClass(true);
+
+        Scheduler.get().scheduleFixedPeriod(new Scheduler.RepeatingCommand() {
+            public boolean execute() {
+                removeProductClasses();
+                switchInteger();
+                setEnabled(productInt);
+
+                return false;
+            }
+        }, animationTopDownDuration);
+    }
+
+    private void switchInteger() {
+        if ($(divGWTP).is(":first-child")) {
+            productInt = 0;
+        } else {
+            if ($(divGAE).is(":first-child")) {
+                productInt = 1;
+            } else {
+                productInt = 2;
+            }
+        }
+    }
+
+    private void removeProductClasses() {
+        $("div:first-child", productsNav).appendTo(productsNav);
+        toggleClass(false);
+    }
+
+    private void toggleClass(boolean addOrRemove) {
+        $("div", productsNav).toggleClass(homeResources.style().stateTransition(), addOrRemove);
+        $("div", productsNav).toggleClass(homeResources.style().stateAbove(), addOrRemove);
+    }
 
     private void setEnabled(int index) {
         disableAll();
@@ -80,11 +130,11 @@ public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
             case 0:
                 selected = btGWTP;
                 break;
-            case 2:
-                selected = btJukito;
-                break;
             case 1:
                 selected = btGAE;
+                break;
+            case 2:
+                selected = btJukito;
                 break;
             default:
                 Window.alert("wrong index: " + index);
@@ -96,8 +146,8 @@ public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
 
     private void disableAll() {
         disableAnchor(btGWTP);
-        disableAnchor(btJukito);
         disableAnchor(btGAE);
+        disableAnchor(btJukito);
     }
 
     private void disableAnchor(Anchor toDisable) {

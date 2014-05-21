@@ -8,8 +8,9 @@ import javax.inject.Inject;
 
 public class CustomersPresenter extends PresenterWidget<CustomersPresenter.MyView> {
     public interface MyView extends View {
+        void startTimer();
 
-        void startCarousel();
+        void stopTimer();
     }
 
     @Inject
@@ -22,6 +23,13 @@ public class CustomersPresenter extends PresenterWidget<CustomersPresenter.MyVie
     protected void onReveal() {
         super.onReveal();
 
-//        getView().startCarousel();
+        getView().startTimer();
+    }
+
+    @Override
+    protected void onHide() {
+        super.onHide();
+
+        getView().stopTimer();
     }
 }

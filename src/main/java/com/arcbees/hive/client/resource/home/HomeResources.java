@@ -11,6 +11,18 @@ public interface HomeResources extends ClientBundle {
         String sliderProductsOn();
 
         String sliderProductsOff();
+
+        String home();
+
+        String firstParagraph();
+
+        String sliderProductsContainer();
+
+        String productsNav();
+
+        String stateAbove();
+
+        String stateTransition();
     }
 
     Style style();

@@ -1,17 +1,52 @@
-@sprite .sliderCustomersButtonGauche {
-    gwt-image: "sliderCustomersButtonGauche";
-    cursor: pointer;
+.customersContainer {
+    width: 896px;
+    margin: 10px auto 0 auto;
+    position: relative;
 }
 
-@sprite .sliderCustomersButtonGauche:hover {
-    gwt-image: "sliderCustomersButtonGaucheRl";
+.customersContainer .carousel {
+    width: 775px;
+    overflow: hidden;
+    height: 75px;
+    margin: auto;
+    margin-top: 15px
 }
 
-@sprite .sliderCustomersButtonDroite {
-    gwt-image: "sliderCustomersButtonDroite";
-    cursor: pointer;
+.carrouselContainer {
+    margin-top: 15px;
 }
 
-@sprite .sliderCustomersButtonDroite:hover {
-    gwt-image: "sliderCustomersButtonDroiteRl";
+.carrouselContainer p {
+    margin-top: -15px;
+    text-align: center;
+    color: #8a8e91;
+    font-size: 14px;
+    word-spacing: 2px;
+}
+
+.carouselInner {
+    width: 1700px;
+    position: relative;
+}
+
+.carouselInner div {
+    width: 775px;
+    display: inline;
+}
+
+.carouselInner div {
+    position: relative;
+    left: 0;
+}
+
+.carouselInner div.stateTransition {
+    -webkit-transition: left 1.25s ease;
+    -moz-transition: left 1.25s ease;
+    -ms-transition: left 1.25s ease;
+    -o-transition: left 1.25s ease;
+    transition: left 1.25s ease;
+}
+
+.carouselInner div.stateBeside {
+    left: -775px;
 }

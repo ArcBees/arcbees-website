@@ -22,7 +22,7 @@
         <g:Image resource="{home.gwtHtml5Cloud}" addStyleNames="{res.style.imgCenter}"/>
 
         <div class="{home.style.sliderProductsContainer}">
-            <div id="sliderProductsCarousel" class="{home.style.productsNav}">
+            <div ui:field="productsNav" class="{home.style.productsNav}">
                 <div ui:field="divGWTP">
                     <g:Image resource="{home.sliderQuotesGauche}" addStyleNames="{res.style.imgLeft}"/>
                     <g:Image resource="{home.sliderProductGWTPlatform}" addStyleNames="{res.style.imgLeft}"/>

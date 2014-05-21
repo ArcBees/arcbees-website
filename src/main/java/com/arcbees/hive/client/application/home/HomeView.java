@@ -33,6 +33,12 @@ import static com.google.gwt.query.client.GQuery.$;
 
 public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
         MyView {
+    interface Binder extends UiBinder<Widget, HomeView> {
+    }
+
+    private static final int animationTopDownDuration = 500;
+    private static final int timerTopDownPeriod = 6000;
+
     @UiField
     Anchor btGWTP;
     @UiField
@@ -45,48 +51,18 @@ public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
     DivElement divGAE;
     @UiField
     DivElement divJukito;
+    @UiField
+    DivElement productsNav;
 
     private final HomeResources homeResources;
+
     private boolean isTimerOn;
     private int productInt;
 
-    public String productNavStyleName;
-    public String stateVisibleStyleName;
-    public String stateAboveStyleName;
-    public String stateBelowStyleName;
-    public String stateTransitionStyleName;
-    public String productsButtonStyleName;
-    public String productsButtonOnStyleName;
-    public String productsButtonOffStyleName;
-    public String productsButtonLastStyleName;
-
-    public String carrouselContainer;
-    public String allCarrouselDivs;
-    public String firstCarrouselDiv;
-    public String lastCarrouselDiv;
-
-    public interface Binder extends UiBinder<Widget, HomeView> {
-    }
-
     @Inject
-    public HomeView(final Binder uiBinder,
-                    HomeResources homeResources) {
+    HomeView(Binder uiBinder,
+             HomeResources homeResources) {
         this.homeResources = homeResources;
-
-        productNavStyleName = "." + homeResources.style().productsNav();
-        stateVisibleStyleName = homeResources.style().stateVisible();
-        stateAboveStyleName = homeResources.style().stateAbove();
-        stateBelowStyleName = homeResources.style().stateBelow();
-        stateTransitionStyleName = homeResources.style().stateTransition();
-        productsButtonStyleName = homeResources.style().sliderProductsButton();
-        productsButtonOnStyleName = homeResources.style().sliderProductsOn();
-        productsButtonOffStyleName = homeResources.style().sliderProductsOff();
-        productsButtonLastStyleName = homeResources.style().sliderProductsLast();
-
-        carrouselContainer = productNavStyleName;
-        allCarrouselDivs = productNavStyleName + " div";
-        firstCarrouselDiv = productNavStyleName + " div:first-child";
-        lastCarrouselDiv = productNavStyleName + " div:last-child";
 
         initWidget(uiBinder.createAndBindUi(this));
     }
@@ -101,7 +77,7 @@ public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
 
                 return isTimerOn;
             }
-        }, 6000);
+        }, timerTopDownPeriod);
     }
 
     @Override
@@ -110,8 +86,7 @@ public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
     }
 
     private void moveProductsUpward() {
-        $(allCarrouselDivs).addClass(stateTransitionStyleName);
-        $(allCarrouselDivs).addClass(stateAboveStyleName);
+        toggleClass(true);
 
         Scheduler.get().scheduleFixedPeriod(new Scheduler.RepeatingCommand() {
             public boolean execute() {
@@ -121,7 +96,7 @@ public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
 
                 return false;
             }
-        }, 500);
+        }, animationTopDownDuration);
     }
 
     private void switchInteger() {
@@ -137,9 +112,13 @@ public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
     }
 
     private void removeProductClasses() {
-        $(firstCarrouselDiv).appendTo(carrouselContainer);
-        $(allCarrouselDivs).removeClass(stateTransitionStyleName);
-        $(allCarrouselDivs).removeClass(stateAboveStyleName);
+        $("div:first-child", productsNav).appendTo(productsNav);
+        toggleClass(false);
+    }
+
+    private void toggleClass(boolean addOrRemove) {
+        $("div", productsNav).toggleClass(homeResources.style().stateTransition(), addOrRemove);
+        $("div", productsNav).toggleClass(homeResources.style().stateAbove(), addOrRemove);
     }
 
     private void setEnabled(int index) {

@@ -5,86 +5,41 @@
              ui:generateLocales="en">
     <ui:with field='res' type='com.arcbees.hive.client.resource.Resources'/>
     <ui:with field="customers" type="com.arcbees.hive.client.resource.customers.CustomersResources"/>
-    <ui:style>
-        .customersContainer {
-            width: 896px;
-            margin: 10px auto 0 auto;
-            position: relative;
-        }
-
-        .customersContainer > div {
-            width: 775px;
-            overflow: hidden;
-            height: 75px;
-            margin: auto;
-            margin-top: 15px
-        }
-
-        .customersPrevious {
-            left: 30px;
-        }
-
-        .customersNext {
-            right: 30px;
-        }
-
-        .customersPrevious, .customersNext {
-            position: absolute;
-            top: 40px;
-        }
-
-        .carousel {
-            margin: auto;
-        }
-
-        .carrouselContainer {
-            margin-top: 25px;
-        }
-
-        .carrouselContainer p {
-            margin-top: 10px;
-            text-align: center;
-            color: #8A8E91;
-            font-size: 14px;
-            word-spacing: 2px;
-        }
-        .none{
-            display: none;
-        }
-    </ui:style>
     <g:HTMLPanel
-            addStyleNames="{res.style.customersContainer} {style.customersContainer} {res.style.bulleBgSlider} {res.style.cornerTopBottom}">
-        <div id="container" class="{style.carrouselContainer}">
-
-            <div id="carousel" class="{style.carousel}">
-                <a href="http://getbookedin.com/" target="_blank">
-                    <g:Image resource="{customers.sliderClientBookedin}"/>
-                </a>
-                <a href="http://www.storeplacer.com/" target="_blank">
-                    <g:Image resource="{customers.sliderClientStoreplacer}"/>
-                </a>
-                <a href="http://www.protorisk.com/" target="_blank">
-                    <g:Image resource="{customers.sliderClientProtorisk}"/>
-                </a>
-                <a href="http://www.sceneverse.com/" target="_blank">
-                    <g:Image resource="{customers.sliderClientSceneverse}"/>
-                </a>
-                <a href="http://cobratag.com/" target="_blank" class="{style.none}">
-                    <g:Image resource="{customers.sliderClientCobratag}"/>
-                </a>
-                <a href="http://www.storeplacer.com/" target="_blank" class="{style.none}">
-                    <g:Image resource="{customers.sliderClientStoreplacer}"/>
-                </a>
-                <a href="http://www.storeplacer.com/" target="_blank" class="{style.none}">
-                    <g:Image resource="{customers.sliderClientStoreplacer}"/>
-                </a>
-                <a href="http://www.storeplacer.com/" target="_blank" class="{style.none}">
-                    <g:Image resource="{customers.sliderClientStoreplacer}"/>
-                </a>
+            addStyleNames="{res.style.customersContainer} {customers.style.customersContainer} {res.style.bulleBgSlider} {res.style.cornerTopBottom}">
+        <div id="container" class="{customers.style.carrouselContainer}">
+            <div class="{customers.style.carousel}">
+                <div ui:field="customerContainer" class="{customers.style.carouselInner}">
+                    <div>
+                        <a href="http://getbookedin.com/" target="_blank">
+                            <g:Image resource="{customers.sliderClientBookedin}"/>
+                        </a>
+                        <a href="http://www.storeplacer.com/" target="_blank">
+                            <g:Image resource="{customers.sliderClientStoreplacer}"/>
+                        </a>
+                        <a href="http://www.protorisk.com/" target="_blank">
+                            <g:Image resource="{customers.sliderClientProtorisk}"/>
+                        </a>
+                        <a href="http://www.sceneverse.com/" target="_blank">
+                            <g:Image resource="{customers.sliderClientSceneverse}"/>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="http://getbookedin.com/" target="_blank">
+                            <g:Image resource="{customers.sliderClientBookedin}"/>
+                        </a>
+                        <a href="http://www.sceneverse.com/" target="_blank">
+                            <g:Image resource="{customers.sliderClientSceneverse}"/>
+                        </a>
+                        <a href="http://www.protorisk.com/" target="_blank">
+                            <g:Image resource="{customers.sliderClientProtorisk}"/>
+                        </a>
+                        <a href="http://cobratag.com/" target="_blank">
+                            <g:Image resource="{customers.sliderClientCobratag}"/>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <a id="sliderCustomersPrev"
-               class="{style.customersPrevious} {customers.style.sliderCustomersButtonGauche} {style.none}"></a>
-            <a id="sliderCustomersNext" class="{style.customersNext} {customers.style.sliderCustomersButtonDroite} {style.none}"></a>
             <p>
                 <ui:msg description="Customers > recommendation">
                     Customers who recommend our experience, be it ArcBees services or products!

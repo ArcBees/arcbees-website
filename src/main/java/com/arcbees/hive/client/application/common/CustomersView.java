@@ -13,7 +13,7 @@ import com.gwtplatform.mvp.client.ViewImpl;
 import static com.google.gwt.query.client.GQuery.$;
 
 public class CustomersView extends ViewImpl implements CustomersPresenter.MyView {
-    public interface Binder extends UiBinder<Widget, CustomersView> {
+    interface Binder extends UiBinder<Widget, CustomersView> {
     }
 
     private static int animationSidewaysDuration = 1250;

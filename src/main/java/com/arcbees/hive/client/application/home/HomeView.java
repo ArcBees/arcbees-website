@@ -33,7 +33,7 @@ import static com.google.gwt.query.client.GQuery.$;
 
 public class HomeView extends ViewWithUiHandlers<HomeUiHandlers> implements
         MyView {
-    public interface Binder extends UiBinder<Widget, HomeView> {
+    interface Binder extends UiBinder<Widget, HomeView> {
     }
 
     private static final int animationTopDownDuration = 500;

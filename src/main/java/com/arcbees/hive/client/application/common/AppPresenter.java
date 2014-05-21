@@ -32,10 +32,10 @@ import com.gwtplatform.mvp.client.proxy.RevealRootContentEvent;
 
 public class AppPresenter extends Presenter<AppPresenter.MyView, AppPresenter.MyProxy> implements ResizeHandler {
     @ProxyStandard
-    public interface MyProxy extends Proxy<AppPresenter> {
+    interface MyProxy extends Proxy<AppPresenter> {
     }
 
-    public interface MyView extends View {
+    interface MyView extends View {
         void resizeSlot(Object slot, Integer size);
     }
 

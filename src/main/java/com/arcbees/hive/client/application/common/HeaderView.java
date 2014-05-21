@@ -37,12 +37,12 @@ public class HeaderView extends ViewWithUiHandlers<HeaderUiHandlers> implements 
     @UiField
     DivElement switchLocaleDiv;
 
-    public interface Binder extends UiBinder<Widget, HeaderView> {
+    interface Binder extends UiBinder<Widget, HeaderView> {
     }
 
     @Inject
-    HeaderView(final Binder uiBinder,
-                      final SocialMediaWidgetFactory socialMediaWidgetFactory) {
+    HeaderView(Binder uiBinder,
+               SocialMediaWidgetFactory socialMediaWidgetFactory) {
         this.socialMediaWidget = socialMediaWidgetFactory.create(SocialMediaWidgetSize.Small);
 
         initWidget(uiBinder.createAndBindUi(this));

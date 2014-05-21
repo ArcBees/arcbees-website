@@ -16,16 +16,16 @@ import com.gwtplatform.mvp.client.proxy.RevealContentEvent;
 public class CompanyHistoryPresenter extends Presenter<CompanyHistoryPresenter.MyView, CompanyHistoryPresenter.MyProxy> {
     @ProxyStandard
     @NameToken(NameTokens.companyhistory)
-    public interface MyProxy extends ProxyPlace<CompanyHistoryPresenter> {
+    interface MyProxy extends ProxyPlace<CompanyHistoryPresenter> {
     }
 
-    public interface MyView extends View {
+    interface MyView extends View {
     }
 
     @Inject
-    public CompanyHistoryPresenter(EventBus eventBus,
-                                   MyView view,
-                                   MyProxy proxy) {
+    CompanyHistoryPresenter(EventBus eventBus,
+                            MyView view,
+                            MyProxy proxy) {
         super(eventBus, view, proxy);
     }
 

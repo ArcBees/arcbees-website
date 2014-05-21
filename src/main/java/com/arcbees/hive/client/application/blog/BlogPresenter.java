@@ -33,7 +33,7 @@ public class BlogPresenter extends Presenter<BlogPresenter.MyView,
         BlogPresenter.MyProxy> {
     @ProxyStandard
     @NameToken(NameTokens.blog)
-    public interface MyProxy extends ProxyPlace<BlogPresenter> {
+    interface MyProxy extends ProxyPlace<BlogPresenter> {
     }
 
     public interface MyView extends View {

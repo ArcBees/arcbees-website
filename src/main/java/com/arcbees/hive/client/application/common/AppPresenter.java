@@ -42,10 +42,10 @@ public class AppPresenter extends Presenter<AppPresenter.MyView, AppPresenter.My
     @ContentSlot
     public static final Type<RevealContentHandler<?>> SLOT_SetMainContent = new Type<RevealContentHandler<?>>();
 
-    public static Object SLOT_setHeader = new Object();
-    public static Object SLOT_setNavbar = new Object();
-    public static Object SLOT_setCustomers = new Object();
-    public static Object SLOT_setFooter = new Object();
+    static Object SLOT_setHeader = new Object();
+    static Object SLOT_setNavbar = new Object();
+    static Object SLOT_setCustomers = new Object();
+    static Object SLOT_setFooter = new Object();
 
     private final HeaderPresenter headerPresenter;
     private final NavbarPresenter navbarPresenter;

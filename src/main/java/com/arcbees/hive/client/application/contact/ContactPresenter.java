@@ -39,10 +39,10 @@ public class ContactPresenter extends
         Presenter<ContactPresenter.MyView, ContactPresenter.MyProxy> implements ContactUiHandlers {
     @ProxyStandard
     @NameToken(NameTokens.contact)
-    public interface MyProxy extends ProxyPlace<ContactPresenter> {
+    interface MyProxy extends ProxyPlace<ContactPresenter> {
     }
 
-    public interface MyView extends View, HasUiHandlers<ContactUiHandlers> {
+    interface MyView extends View, HasUiHandlers<ContactUiHandlers> {
     }
 
     private final DispatchAsync dispatcher;

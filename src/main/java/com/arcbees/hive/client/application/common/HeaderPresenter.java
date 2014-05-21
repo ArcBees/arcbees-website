@@ -27,7 +27,7 @@ import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.proxy.PlaceManager;
 
 public class HeaderPresenter extends PresenterWidget<HeaderPresenter.MyView> implements HeaderUiHandlers {
-    public interface MyView extends View, HasUiHandlers<HeaderUiHandlers> {
+    interface MyView extends View, HasUiHandlers<HeaderUiHandlers> {
     }
 
     private final PlaceManager placeManager;

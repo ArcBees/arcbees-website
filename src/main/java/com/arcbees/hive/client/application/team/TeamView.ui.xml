@@ -369,37 +369,6 @@
             <div class="{teamres.style.span4}">
                 <div class="{teamres.style.flipCard}">
                     <div class="{teamres.style.flipFront}">
-                        <g:Image resource="{teamres.team_sam_dionne}" altText="Samuel Dionne"/>
-                        <div class="{teamres.style.name}">
-                            Samuel Dionne
-                        </div>
-                        <div class="{teamres.style.beeIcon}">
-                            <span class="{teamres.style.jobTitle}">
-                                Architect Bee
-                            </span>
-                        </div>
-                    </div>
-                    <div class="{teamres.style.flipBack}">
-                        <g:Image resource="{teamres.team_sam_dionne}" altText="Samuel Dionne"/>
-                        <div class="{teamres.style.name}">
-                            Samuel Dionne
-                        </div>
-                        <div class="{teamres.style.beeIcon}">
-                            <span class="{teamres.style.jobTitle}">
-                                <ui:msg description="Our Team > Developer">Developer</ui:msg>
-                            </span>
-                        </div>
-                        <div class="{teamres.style.email}">
-                            <span>samuel.dionne</span>
-                            <span class="{teamres.style.at}"/>
-                            <span>arcbees.com</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="{teamres.style.span4}">
-                <div class="{teamres.style.flipCard}">
-                    <div class="{teamres.style.flipFront}">
                         <g:Image resource="{teamres.team_oli_lafleur}" altText="Olivier Lafleur"/>
                         <div class="{teamres.style.name}">
                             Olivier Lafleur
@@ -428,8 +397,6 @@
                     </div>
                 </div>
             </div>
-        </g:HTMLPanel>
-        <g:HTMLPanel styleName="{style.aRow}">
             <div class="{teamres.style.span4}">
                 <div class="{teamres.style.flipCard}">
                     <div class="{teamres.style.flipFront}">
@@ -461,6 +428,8 @@
                     </div>
                 </div>
             </div>
+        </g:HTMLPanel>
+        <g:HTMLPanel styleName="{style.aRow}">
             <div class="{teamres.style.span4}">
                 <div class="{teamres.style.flipCard}">
                     <div class="{teamres.style.flipFront}">
@@ -517,6 +486,37 @@
                         </div>
                         <div class="{teamres.style.email}">
                             <span>larry.matte</span>
+                            <span class="{teamres.style.at}"/>
+                            <span>arcbees.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="{teamres.style.span4}">
+                <div class="{teamres.style.flipCard}">
+                    <div class="{teamres.style.flipFront}">
+                        <g:Image resource="{teamres.team_sam_dionne}" altText="Samuel Dionne"/>
+                        <div class="{teamres.style.name}">
+                            Samuel Dionne
+                        </div>
+                        <div class="{teamres.style.beeIcon}">
+                            <span class="{teamres.style.jobTitle}">
+                                Explorer Bee
+                            </span>
+                        </div>
+                    </div>
+                    <div class="{teamres.style.flipBack}">
+                        <g:Image resource="{teamres.team_sam_dionne}" altText="Samuel Dionne"/>
+                        <div class="{teamres.style.name}">
+                            Samuel Dionne
+                        </div>
+                        <div class="{teamres.style.beeIcon}">
+                            <span class="{teamres.style.jobTitle}">
+                                <ui:msg description="Our Team > Developer">Developer</ui:msg>
+                            </span>
+                        </div>
+                        <div class="{teamres.style.email}">
+                            <span>samuel.dionne</span>
                             <span class="{teamres.style.at}"/>
                             <span>arcbees.com</span>
                         </div>

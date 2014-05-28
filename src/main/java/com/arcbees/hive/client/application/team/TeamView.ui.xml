@@ -8,10 +8,6 @@
     <ui:with field="res" type="com.arcbees.hive.client.resource.Resources"/>
     <ui:with field='teamres' type='com.arcbees.hive.client.resource.team.TeamResources'/>
     <ui:style>
-        .associatedBeesContainer {
-            margin-bottom: 60px;
-        }
-
         .aRow {
             margin-bottom: 10px;
         }
@@ -495,123 +491,28 @@
             <div class="{teamres.style.span4}">
                 <div class="{teamres.style.flipCard}">
                     <div class="{teamres.style.flipFront}">
-                        <g:Image resource="{teamres.team_sam_dionne}" altText="Samuel Dionne"/>
+                        <g:Image resource="{teamres.team_sam_dionne}" altText="Jason Lemay"/>
                         <div class="{teamres.style.name}">
-                            Samuel Dionne
+                            Jason Lemay
                         </div>
                         <div class="{teamres.style.beeIcon}">
                             <span class="{teamres.style.jobTitle}">
-                                Explorer Bee
+                                Web Bee
                             </span>
                         </div>
                     </div>
                     <div class="{teamres.style.flipBack}">
-                        <g:Image resource="{teamres.team_sam_dionne}" altText="Samuel Dionne"/>
+                        <g:Image resource="{teamres.team_sam_dionne}" altText="Jason Lemay"/>
                         <div class="{teamres.style.name}">
-                            Samuel Dionne
+                            Jason Lemay
                         </div>
                         <div class="{teamres.style.beeIcon}">
                             <span class="{teamres.style.jobTitle}">
-                                <ui:msg description="Our Team > Developer">Developer</ui:msg>
+                                <ui:msg description="Our Team > Developer">Web Developer</ui:msg>
                             </span>
                         </div>
                         <div class="{teamres.style.email}">
                             <span>samuel.dionne</span>
-                            <span class="{teamres.style.at}"/>
-                            <span>arcbees.com</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </g:HTMLPanel>
-        <g:HTMLPanel styleName="{style.aRow}">
-            <div class="{teamres.style.span4}">
-                <div class="{teamres.style.flipCard}">
-                    <div class="{teamres.style.flipFront}">
-                        <g:Image resource="{teamres.team_frank_poulin}" altText="François-Xavier Poulin-Darveau"/>
-                        <div class="{teamres.style.name}">
-                            François-Xavier Poulin-Darveau
-                        </div>
-                        <div class="{teamres.style.beeIcon}">
-                            <span class="{teamres.style.jobTitle}">
-                                Explorer Bee
-                            </span>
-                        </div>
-                    </div>
-                    <div class="{teamres.style.flipBack}">
-                        <g:Image resource="{teamres.team_frank_poulin}" altText="François-Xavier Poulin-Darveau"/>
-                        <div class="{teamres.style.name}">
-                            François-Xavier Poulin-Darveau
-                        </div>
-                        <div class="{teamres.style.beeIcon}">
-                            <span class="{teamres.style.jobTitle}">
-                                <ui:msg description="Our Team > Developer">Developer</ui:msg>
-                            </span>
-                        </div>
-                        <div class="{teamres.style.email}">
-                            <span>frxpoulin</span>
-                            <span class="{teamres.style.at}"/>
-                            <span>arcbees.com</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="{teamres.style.span4}">
-                <div class="{teamres.style.flipCard}">
-                    <div class="{teamres.style.flipFront}">
-                        <g:Image resource="{teamres.team_sylvain_perron}" altText="Sylvain Perron"/>
-                        <div class="{teamres.style.name}">
-                            Sylvain Perron
-                        </div>
-                        <div class="{teamres.style.beeIcon}">
-                            <span class="{teamres.style.jobTitle}">
-                                Explorer Bee
-                            </span>
-                        </div>
-                    </div>
-                    <div class="{teamres.style.flipBack}">
-                        <g:Image resource="{teamres.team_sylvain_perron}" altText="Sylvain Perron"/>
-                        <div class="{teamres.style.name}">
-                            Sylvain Perron
-                        </div>
-                        <div class="{teamres.style.beeIcon}">
-                            <span class="{teamres.style.jobTitle}">
-                                <ui:msg description="Our Team > Developer">Developer</ui:msg>
-                            </span>
-                        </div>
-                        <div class="{teamres.style.email}">
-                            <span>sylvain.perron</span>
-                            <span class="{teamres.style.at}"/>
-                            <span>arcbees.com</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="{teamres.style.span4}">
-                <div class="{teamres.style.flipCard}">
-                    <div class="{teamres.style.flipFront}">
-                        <g:Image resource="{teamres.team_vincent_roseberry}" altText="Vincent Roseberry"/>
-                        <div class="{teamres.style.name}">
-                            Vincent Roseberry
-                        </div>
-                        <div class="{teamres.style.beeIcon}">
-                            <span class="{teamres.style.jobTitle}">
-                                Explorer Bee
-                            </span>
-                        </div>
-                    </div>
-                    <div class="{teamres.style.flipBack}">
-                        <g:Image resource="{teamres.team_vincent_roseberry}" altText="Vincent Roseberry"/>
-                        <div class="{teamres.style.name}">
-                            Vincent Roseberry
-                        </div>
-                        <div class="{teamres.style.beeIcon}">
-                            <span class="{teamres.style.jobTitle}">
-                                <ui:msg description="Our Team > Developer">Developer</ui:msg>
-                            </span>
-                        </div>
-                        <div class="{teamres.style.email}">
-                            <span>vincent.roseberry</span>
                             <span class="{teamres.style.at}"/>
                             <span>arcbees.com</span>
                         </div>

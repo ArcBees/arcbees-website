@@ -491,7 +491,7 @@
             <div class="{teamres.style.span4}">
                 <div class="{teamres.style.flipCard}">
                     <div class="{teamres.style.flipFront}">
-                        <g:Image resource="{teamres.team_sam_dionne}" altText="Jason Lemay"/>
+                        <g:Image resource="{teamres.team_jason_lemay}" altText="Jason Lemay"/>
                         <div class="{teamres.style.name}">
                             Jason Lemay
                         </div>
@@ -502,7 +502,7 @@
                         </div>
                     </div>
                     <div class="{teamres.style.flipBack}">
-                        <g:Image resource="{teamres.team_sam_dionne}" altText="Jason Lemay"/>
+                        <g:Image resource="{teamres.team_jason_lemay}" altText="Jason Lemay"/>
                         <div class="{teamres.style.name}">
                             Jason Lemay
                         </div>

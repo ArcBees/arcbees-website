@@ -1,18 +1,3 @@
-@sprite .beeTitle {
-    gwt-image: "beeIcon";
-    cursor: pointer;
-
-    height: auto;
-    width: auto;
-    min-height: 15px;
-    padding-left: 20px;
-    margin-top: 5px;
-}
-
-.beeTitle span {
-    color: #D88120;
-}
-
 .span4{
     width: 239px;
     margin-left: 13px;

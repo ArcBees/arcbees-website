@@ -6,8 +6,6 @@ import com.google.gwt.resources.client.ImageResource;
 
 public interface TeamResources extends ClientBundle {
     public interface Style extends CssResource {
-        String beeTitle();
-
         String beeIcon();
 
         String jobTitle();
@@ -78,4 +76,6 @@ public interface TeamResources extends ClientBundle {
     ImageResource beeIcon();
 
     ImageResource at();
+
+    ImageResource team_jason_lemay();
 }

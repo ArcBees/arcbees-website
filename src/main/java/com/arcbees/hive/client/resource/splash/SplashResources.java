@@ -50,6 +50,14 @@ public interface SplashResources extends ClientBundle {
         String right();
 
         String socialContainer();
+
+        String overflow();
+
+        String gp();
+
+        String tw();
+
+        String fb();
     }
 
     Style style();
@@ -57,6 +65,8 @@ public interface SplashResources extends ClientBundle {
     ImageResource bigArcbeesLogo();
 
     ImageResource smallArcbeesLogo();
+
+    ImageResource socialSprite();
 
     @Source("fonts/geometria_r.eot")
     DataResource geometriaRegularEot();

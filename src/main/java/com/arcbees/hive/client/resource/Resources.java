@@ -100,7 +100,6 @@ public interface Resources extends ClientBundle {
 
     Style style();
 
-
     ImageResource uxButton();
 
     ImageResource uxButtonRl();

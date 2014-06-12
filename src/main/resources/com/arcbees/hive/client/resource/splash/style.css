@@ -46,7 +46,7 @@ body {
     color: #231f20;
     font-size: 1em;
     font-weight: normal;
-    font-family: "Geo", Helvetica, Arial, sans-serif;
+    font-family: Geometria, "Geo", Helvetica, Arial, sans-serif;
     text-align: center;
     box-sizing: border-box;
 
@@ -96,13 +96,6 @@ a {
     background-repeat: no-repeat;
 }
 
-
-
-
-
-
-
-
 .logoArcBees {
     margin: 0 auto 40px auto;
     width: 85%;
@@ -125,7 +118,7 @@ span.bold {
 p {
     font-size: 1.1em;
     line-height: 1.375em;
-
+    text-align: center;
     width: 22em;
     margin: 0 auto 38px auto;
 }
@@ -188,7 +181,7 @@ html, body {
     width: 2.5em;
     background: #ffffff;
     z-index: 10;
-    top:0
+    top: 0
 }
 
 .left {
@@ -199,6 +192,107 @@ html, body {
     right: 0;
 }
 
+.overflow {
+    height: 100%;
+}
+
 body {
     font-size: 81.25%;
+}
+
+@media screen and (min-width: 30em) and (min-height: 24em) {
+    p {
+        font-size: 1.125em;
+        width: 26em;
+    }
+
+    .logoArcBees {
+        margin: 0 auto 80px auto;
+    }
+}
+
+@media screen and (min-width: 68em) and (min-height: 53em) {
+    body {
+        font-size: 87.5%;
+    }
+
+    .logoArcBees {
+        width: 61.75em;
+    }
+
+    a.bouton {
+        font-size: 1em;
+    }
+
+    .social {
+        padding-right: 0px;
+    }
+
+    .page-wrap {
+        margin-bottom: -145px;
+    }
+}
+
+@media screen and (min-width: 75em) and (min-height: 57em) {
+    body {
+        font-size: 93.75%;
+    }
+
+    .logoArcBees {
+        width: 60em;
+    }
+
+    .page-wrap {
+        margin-bottom: -147px;
+    }
+}
+
+@media screen and (min-width: 80em) and (min-height: 62em) {
+    body {
+        font-size: 100%;
+    }
+}
+
+
+
+ul li a {
+    gwt-image: "socialSprite";
+    background-position: 0 0;
+    width: 30px;
+    height: 30px;
+}
+
+.fb:hover {
+    gwt-image: "socialSprite";
+    background-position: 0 -80px;
+    width: 30px;
+    height: 30px;
+}
+
+.gp {
+    gwt-image: "socialSprite";
+    background-position: 0 -160px;
+    width: 30px;
+    height: 30px;
+}
+
+.gp:hover {
+    gwt-image: "socialSprite";
+    background-position: 0 -240px;
+    width: 30px;
+    height: 30px;
+}
+
+.tw {
+    gwt-image: "socialSprite";
+    background-position: 0 -320px;
+    width: 31px;
+    height: 30px;
+}
+
+.tw:hover {
+    gwt-image: "socialSprite";
+    background-position: 0 -400px;
+    width: 31px;
+    height: 30px;
 }

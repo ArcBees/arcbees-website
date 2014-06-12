@@ -6,22 +6,25 @@
              ui:generateLocales="en">
 
     <ui:with field="splashRes" type="com.arcbees.hive.client.resource.splash.SplashResources"/>
-    <g:HTMLPanel>
+    <g:HTMLPanel addStyleNames="{splashRes.style.overflow}">
         <div class="{splashRes.style.left}"></div>
-        <div class="{splashRes.style.right"></div>
+        <div class="{splashRes.style.right}"></div>
         <div class="{splashRes.style.pageWrap}">
             <div class="{splashRes.style.main}">
                 <div class="{splashRes.style.contentWidth}">
                     <div class="{splashRes.style.socialContainer">
                         <ul class="{splashRes.style.social}">
                             <li>
-                                <a class="fb" href="https://www.facebook.com/QueenOfTheBees" target="_blank"></a>
+                                <a class="{splashRes.style.fb}" href="https://www.facebook.com/QueenOfTheBees"
+                                   target="_blank"/>
                             </li>
                             <li>
-                                <a class="tw" href="http://twitter.com/#!/arcbees" target="_blank"></a>
+                                <a class="{splashRes.style.tw}" href="http://twitter.com/#!/arcbees"
+                                   target="_blank"></a>
                             </li>
                             <li>
-                                <a class="gp" href="https://plus.google.com/+Arcbees" target="_blank"></a>
+                                <a class="{splashRes.style.gp}" href="https://plus.google.com/+Arcbees"
+                                   target="_blank"></a>
                             </li>
                         </ul>
                     </div>

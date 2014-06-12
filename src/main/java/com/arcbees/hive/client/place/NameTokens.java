@@ -17,6 +17,7 @@
 package com.arcbees.hive.client.place;
 
 public class NameTokens {
+    public static final String splash = "!splash";
     public static final String home = "!home";
     public static final String blog = "!blog";
     public static final String service = "!service";

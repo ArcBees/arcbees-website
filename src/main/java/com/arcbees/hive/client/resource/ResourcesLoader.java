@@ -24,6 +24,7 @@ import com.arcbees.hive.client.resource.home.HomeResources;
 import com.arcbees.hive.client.resource.products.ProductsResources;
 import com.arcbees.hive.client.resource.reinit.ReinitResources;
 import com.arcbees.hive.client.resource.socialmedia.SocialMediaResources;
+import com.arcbees.hive.client.resource.splash.SplashResources;
 import com.arcbees.hive.client.resource.team.TeamResources;
 
 public class ResourcesLoader {
@@ -34,7 +35,8 @@ public class ResourcesLoader {
                     SocialMediaResources socialMediaResources,
                     ProductsResources productsResources,
                     HomeResources homeResources,
-                    CustomersResources customersResources) {
+                    CustomersResources customersResources,
+                    SplashResources splashResources) {
         reinitResources.style().ensureInjected();
         resources.style().ensureInjected();
         teamResources.style().ensureInjected();
@@ -42,5 +44,6 @@ public class ResourcesLoader {
         productsResources.style().ensureInjected();
         homeResources.style().ensureInjected();
         customersResources.style().ensureInjected();
+        splashResources.style().ensureInjected();
     }
 }

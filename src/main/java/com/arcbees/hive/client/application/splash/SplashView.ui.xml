@@ -1,0 +1,80 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+             ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator"
+             ui:generateLocales="en">
+
+    <ui:with field="splashRes" type="com.arcbees.hive.client.resource.splash.SplashResources"/>
+    <g:HTMLPanel>
+        <div class="{splashRes.style.left}"></div>
+        <div class="{splashRes.style.right"></div>
+        <div class="{splashRes.style.pageWrap}">
+            <div class="{splashRes.style.main}">
+                <div class="{splashRes.style.contentWidth}">
+                    <div class="{splashRes.style.socialContainer">
+                        <ul class="{splashRes.style.social}">
+                            <li>
+                                <a class="fb" href="https://www.facebook.com/QueenOfTheBees" target="_blank"></a>
+                            </li>
+                            <li>
+                                <a class="tw" href="http://twitter.com/#!/arcbees" target="_blank"></a>
+                            </li>
+                            <li>
+                                <a class="gp" href="https://plus.google.com/+Arcbees" target="_blank"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <g:Image url='{splashRes.bigArcbeesLogo.getSafeUri.asString}' altText="New Arcbees Logo"
+                             addStyleNames="{splashRes.style.logoArcBees}"/>
+
+                    <h1>
+                        Nous avons
+                        <span class="{splashRes.style.bold}">une nouvelle image.</span>
+                    </h1>
+
+                    <ul class="{splashRes.style.typo}">
+                        <li class="{splashRes.style.boldFam}">
+                            BOLD
+                            <span>Vrai Bold</span>
+                        </li>
+                        <li class="{splashRes.style.regularFamBold}">
+                            BOLD
+                            <span>Bold sur la regular</span>
+                        </li>
+                        <li class="{splashRes.style.regularFam}">
+                            BOLD
+                            <span>Regular</span>
+                        </li>
+                        <li class="{splashRes.style.regularFamL}">
+                            BOLD
+                            <span>1 family 300</span>
+                        </li>
+                        <li class="{splashRes.style.regularFamB}">
+                            BOLD
+                            <span>1 family bold</span>
+                        </li>
+                        <li class="{splashRes.style.regularFamO}">
+                            BOLD
+                            <span>1 family autre</span>
+                        </li>
+                    </ul>
+
+                    <p>Nos abeilles travaillent très fort pour bâtir
+                        <br/>le nouveau site web. Mais nous étions trop excitée pour
+                        ne pas vous la dévoiler avant.
+                    </p>
+                    <a class="{splashRes.style.bouton}" href="http://www.arcbees.com/">Entrer dans l’ancien site</a>
+                </div>
+            </div>
+        </div>
+        <div class="{splashRes.style.siteFooter}">
+            <div class="{splashRes.style.copyright}">
+                <g:Image url="{splashRes.smallArcbeesLogo.getSafeUri.asString}" altText="Small Arcbees Logo"
+                         addStyleNames="{splashRes.style.logoArcBeesSmall}"/>
+                @2014
+            </div>
+            <div class="{splashRes.style.bottomWhiteSpace}"></div>
+        </div>
+    </g:HTMLPanel>
+</ui:UiBinder>

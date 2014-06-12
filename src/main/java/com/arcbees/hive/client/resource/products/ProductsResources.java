@@ -21,7 +21,6 @@ public interface ProductsResources extends ClientBundle {
         String productsGAE();
 
         String productsGAEOn();
-
     }
 
     Style style();

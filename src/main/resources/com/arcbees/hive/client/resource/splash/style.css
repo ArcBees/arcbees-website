@@ -1,0 +1,285 @@
+@def GEOMETRIA_LIGHT_EOT resourceUrl("fonts/geometria_light.eot");
+@def GEOMETRIA_LIGHT_SVG resourceUrl("fonts/geometria_light.svg");
+@def GEOMETRIA_LIGHT_TTF resourceUrl("fonts/geometria_light.ttf");
+@def GEOMETRIA_LIGHT_WOFF resourceUrl("fonts/geometria_light.woff");
+@def GEOMETRIA_REGULAR_EOT resourceUrl("fonts/geometria_regular.eot");
+@def GEOMETRIA_REGULAR_SVG resourceUrl("fonts/geometria_regular.svg");
+@def GEOMETRIA_REGULAR_TTF resourceUrl("fonts/geometria_regular.ttf");
+@def GEOMETRIA_REGULAR_WOFF resourceUrl("fonts/geometria_regular.woff");
+@def GEOMETRIA_BOLD_EOT resourceUrl("fonts/geometria_bold.eot");
+@def GEOMETRIA_BOLD_SVG resourceUrl("fonts/geometria_bold.svg");
+@def GEOMETRIA_BOLD_TTF resourceUrl("fonts/geometria_bold.ttf");
+@def GEOMETRIA_BOLD_WOFF resourceUrl("fonts/geometria_bold.woff");
+@def GEOMETRIA_AUTRE_EOT resourceUrl("fonts/geometria_autre.eot");
+@def GEOMETRIA_AUTRE_SVG resourceUrl("fonts/geometria_autre.svg");
+@def GEOMETRIA_AUTRE_TTF resourceUrl("fonts/geometria_autre.ttf");
+@def GEOMETRIA_AUTRE_WOFF resourceUrl("fonts/geometria_autre.woff");
+
+@font-face {
+    font-family: "GeoL";
+    src: GEOMETRIA_LIGHT_EOT;
+    src: GEOMETRIA_LIGHT_WOFF format("woff"), GEOMETRIA_LIGHT_TTF format("truetype"), GEOMETRIA_LIGHT_SVG format("svg");
+}
+
+@font-face {
+    font-family: "GeoR";
+    src: GEOMETRIA_REGULER_EOT;
+    src: GEOMETRIA_REGULER_WOFF format("woff"), GEOMETRIA_REGULER_TTF format("truetype"), GEOMETRIA_REGULER_SVG format("svg");
+}
+
+@font-face {
+    font-family: "GeoB";
+    src: GEOMETRIA_BOLD_EOT;
+    src: GEOMETRIA_BOLD_WOFF format("woff"), GEOMETRIA_BOLD_TTF format("truetype"), GEOMETRIA_BOLD_SVG format("svg");
+}
+
+@font-face {
+    font-family: "Geo";
+    src: GEOMETRIA_LIGHT_EOT;
+    src: GEOMETRIA_LIGHT_WOFF format("woff"), GEOMETRIA_LIGHT_TTF format("truetype"), GEOMETRIA_LIGHT_SVG format("svg");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Geo";
+    src: GEOMETRIA_AUTRE_EOT;
+    src: GEOMETRIA_AUTRE_WOFF format("woff"), GEOMETRIA_AUTRE_TTF format("truetype"), GEOMETRIA_AUTRE_SVG format("svg");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Geo";
+    src: GEOMETRIA_REGULER_EOT;
+    src: GEOMETRIA_REGULER_WOFF format("woff"), GEOMETRIA_REGULER_TTF format("truetype"), GEOMETRIA_REGULER_SVG format("svg");
+}
+
+@font-face {
+    font-family: "Geo";
+    src: GEOMETRIA_BOLD_EOT;
+    src: GEOMETRIA_BOLD_WOFF format("woff"), GEOMETRIA_BOLD_TTF format("truetype"), GEOMETRIA_BOLD_SVG format("svg");
+    font-weight: bold;
+}
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #ffe400;
+    color: #231f20;
+    font-size: 1em;
+    font-weight: normal;
+    font-family: 'Geo', Helvetica, Arial, sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+
+    overflow: auto;
+    position: relative;
+    z-index: 1;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.main {
+    border-top: 2.5em solid #ffffff;
+    box-sizing: border-box;
+}
+
+.contentWidth {
+    max-width: 65.5em;
+    margin: auto auto;
+    padding: 20px;
+    position: relative;
+}
+
+.socialContainer {
+    display: block;
+    height: 30px;
+    padding-bottom: 40px;
+}
+
+.social {
+    float: right;
+    padding-right: 35px;
+}
+
+.social li {
+    background: none;
+    display: inline-block;
+    margin-left: 4px;
+}
+
+.social a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+.logoArcBees {
+    margin: 0 auto 40px auto;
+    width: 85%;
+}
+
+h1 {
+    font-size: 1.875em;
+    line-height: 1.075em;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    margin-bottom: 25px;
+}
+
+span.bold {
+    font-weight: bold;
+    display: block;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.375em;
+
+    width: 22em;
+    margin: 0 auto 38px auto;
+}
+
+a.bouton {
+    background: #ffffff;
+    color: #231f20;
+    font-size: 1.1em;
+    line-height: 45px;
+
+    display: block;
+    margin: 0 auto 80px auto;
+    width: 240px;
+    height: 45px;
+}
+
+a.bouton:hover {
+    background: #000000;
+    color: #ffffff;
+}
+
+.logoArcBeesSmall {
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.copyright {
+    font-size: 0.750em;
+
+    display: inline-block;
+    margin: auto auto;
+    padding-bottom: 20px;
+}
+
+html, body {
+    height: 100%;
+}
+
+.pageWrap {
+    min-height: 100%;
+    margin-bottom: -142px;
+}
+
+.pageWrap:after {
+    content: "";
+    display: block;
+}
+
+.siteFooter, .pageWrap:after {
+    height: 90px;
+}
+
+.bottomWhiteSpace {
+    border-bottom: 2.5em solid #ffffff;
+}
+
+.left, .right {
+    position: fixed;
+    min-height: 100%;
+    width: 2.5em;
+    background: #ffffff;
+    z-index: 10;
+    top:0
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+body {
+    font-size: 81.25%;
+}
+
+
+
+
+
+
+
+
+
+.typo{
+    text-align: center;
+}
+
+.typo li{
+    text-align: center;
+    font-size: 26px;
+    display: inline-block;
+    margin-left: 4px;
+    background: none;
+    line-height: 20px;
+}
+
+.typo span{
+    font-family: Arial;
+    display: block;
+    text-align: center;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.regularFam{
+    font-family: "GeoR";
+}
+
+.boldFam{
+    font-family: "GeoB";
+}
+
+.regularFamBold{
+    font-family: "GeoR";
+    font-weight: bold;
+}
+
+.regularFamB{
+    font-family: "Geo";
+    font-weight: bold;
+}
+
+.regularFamL{
+    font-family: "Geo";
+    font-weight: 300;
+}
+
+.regularFamO{
+    font-family: "Geo";
+    font-weight: 600;
+}

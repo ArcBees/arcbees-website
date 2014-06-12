@@ -33,33 +33,6 @@
                         <span class="{splashRes.style.bold}">une nouvelle image.</span>
                     </h1>
 
-                    <ul class="{splashRes.style.typo}">
-                        <li class="{splashRes.style.boldFam}">
-                            BOLD
-                            <span>Vrai Bold</span>
-                        </li>
-                        <li class="{splashRes.style.regularFamBold}">
-                            BOLD
-                            <span>Bold sur la regular</span>
-                        </li>
-                        <li class="{splashRes.style.regularFam}">
-                            BOLD
-                            <span>Regular</span>
-                        </li>
-                        <li class="{splashRes.style.regularFamL}">
-                            BOLD
-                            <span>1 family 300</span>
-                        </li>
-                        <li class="{splashRes.style.regularFamB}">
-                            BOLD
-                            <span>1 family bold</span>
-                        </li>
-                        <li class="{splashRes.style.regularFamO}">
-                            BOLD
-                            <span>1 family autre</span>
-                        </li>
-                    </ul>
-
                     <p>Nos abeilles travaillent très fort pour bâtir
                         <br/>le nouveau site web. Mais nous étions trop excitée pour
                         ne pas vous la dévoiler avant.

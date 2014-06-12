@@ -17,6 +17,7 @@
 package com.arcbees.hive.client.resource.splash;
 
 import com.google.gwt.resources.client.ClientBundle;
+import com.google.gwt.resources.client.DataResource;
 import com.google.gwt.resources.client.GssResource;
 import com.google.gwt.resources.client.ImageResource;
 
@@ -56,5 +57,41 @@ public interface SplashResources extends ClientBundle {
     ImageResource bigArcbeesLogo();
 
     ImageResource smallArcbeesLogo();
+
+    @Source("fonts/geometria_r.eot")
+    DataResource geometriaRegularEot();
+
+    @Source("fonts/geometria_r.ttf")
+    DataResource geometriaRegularTtf();
+
+    @Source("fonts/geometria_r.svg")
+    DataResource geometriaRegularSvg();
+
+    @Source("fonts/geometria_r.woff")
+    DataResource geometriaRegularWoff();
+
+    @Source("fonts/geometria_l.eot")
+    DataResource geometriaLightEot();
+
+    @Source("fonts/geometria_l.ttf")
+    DataResource geometriaLightTtf();
+
+    @Source("fonts/geometria_l.svg")
+    DataResource geometriaLightSvg();
+
+    @Source("fonts/geometria_l.woff")
+    DataResource geometriaLightWoff();
+
+    @Source("fonts/geometria_b.eot")
+    DataResource geometriaBoldEot();
+
+    @Source("fonts/geometria_b.ttf")
+    DataResource geometriaBoldTtf();
+
+    @Source("fonts/geometria_b.svg")
+    DataResource geometriaBoldSvg();
+
+    @Source("fonts/geometria_b.woff")
+    DataResource geometriaBoldWoff();
 
 }

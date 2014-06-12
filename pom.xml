@@ -154,6 +154,12 @@
         </dependency>
 
         <!-- Other dependencies -->
+        <dependency>
+            <groupId>com.github.jdramaix</groupId>
+            <artifactId>gssresource</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
 
         <dependency>
             <groupId>com.googlecode.gwtquery</groupId>

@@ -1,19 +1,19 @@
-@def GEOMETRIA_LIGHT_EOT resourceUrl("fonts/geometria_light.eot");
-@def GEOMETRIA_LIGHT_SVG resourceUrl("fonts/geometria_light.svg");
-@def GEOMETRIA_LIGHT_TTF resourceUrl("fonts/geometria_light.ttf");
-@def GEOMETRIA_LIGHT_WOFF resourceUrl("fonts/geometria_light.woff");
-@def GEOMETRIA_REGULAR_EOT resourceUrl("fonts/geometria_regular.eot");
-@def GEOMETRIA_REGULAR_SVG resourceUrl("fonts/geometria_regular.svg");
-@def GEOMETRIA_REGULAR_TTF resourceUrl("fonts/geometria_regular.ttf");
-@def GEOMETRIA_REGULAR_WOFF resourceUrl("fonts/geometria_regular.woff");
-@def GEOMETRIA_BOLD_EOT resourceUrl("fonts/geometria_bold.eot");
-@def GEOMETRIA_BOLD_SVG resourceUrl("fonts/geometria_bold.svg");
-@def GEOMETRIA_BOLD_TTF resourceUrl("fonts/geometria_bold.ttf");
-@def GEOMETRIA_BOLD_WOFF resourceUrl("fonts/geometria_bold.woff");
-@def GEOMETRIA_AUTRE_EOT resourceUrl("fonts/geometria_autre.eot");
-@def GEOMETRIA_AUTRE_SVG resourceUrl("fonts/geometria_autre.svg");
-@def GEOMETRIA_AUTRE_TTF resourceUrl("fonts/geometria_autre.ttf");
-@def GEOMETRIA_AUTRE_WOFF resourceUrl("fonts/geometria_autre.woff");
+@def GEOMETRIA_LIGHT_EOT resourceUrl("geometriaLightEot");
+@def GEOMETRIA_LIGHT_SVG resourceUrl("geometriaLightSvg");
+@def GEOMETRIA_LIGHT_TTF resourceUrl("geometriaLightTtf");
+@def GEOMETRIA_LIGHT_WOFF resourceUrl("geometriaLightWoff");
+@def GEOMETRIA_REGULAR_EOT resourceUrl("geometriaRegularEot");
+@def GEOMETRIA_REGULAR_SVG resourceUrl("geometriaRegularSvg");
+@def GEOMETRIA_REGULAR_TTF resourceUrl("geometriaRegularTtf");
+@def GEOMETRIA_REGULAR_WOFF resourceUrl("geometriaRegularWoff");
+@def GEOMETRIA_BOLD_EOT resourceUrl("geometriaBoldEot");
+@def GEOMETRIA_BOLD_SVG resourceUrl("geometriaBoldSvg");
+@def GEOMETRIA_BOLD_TTF resourceUrl("geometriaBoldTtf");
+@def GEOMETRIA_BOLD_WOFF resourceUrl("geometriaBoldWoff");
+@def GEOMETRIA_AUTRE_EOT resourceUrl("geometriaAutreEot");
+@def GEOMETRIA_AUTRE_SVG resourceUrl("geometriaAutreSvg");
+@def GEOMETRIA_AUTRE_TTF resourceUrl("geometriaAutreTtf");
+@def GEOMETRIA_AUTRE_WOFF resourceUrl("geometriaAutreWoff");
 
 @font-face {
     font-family: "GeoL";

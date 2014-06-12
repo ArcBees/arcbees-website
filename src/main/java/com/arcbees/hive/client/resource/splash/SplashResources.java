@@ -17,12 +17,12 @@
 package com.arcbees.hive.client.resource.splash;
 
 import com.google.gwt.resources.client.ClientBundle;
-import com.google.gwt.resources.client.CssResource;
+import com.google.gwt.resources.client.GssResource;
 import com.google.gwt.resources.client.DataResource;
 import com.google.gwt.resources.client.ImageResource;
 
 public interface SplashResources extends ClientBundle {
-    public interface Style extends CssResource {
+    public interface Style extends GssResource {
         String logoArcBees();
 
         String logoArcBeesSmall();

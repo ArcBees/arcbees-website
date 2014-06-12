@@ -1,0 +1,26 @@
+@sprite ul li a {
+    gwt-image: "socialSprite";
+    background-position: 0 0;
+    width: 31px;
+    height: 30px;
+}
+
+.fb:hover {
+    background-position: 0 -80px;
+}
+
+.gp {
+    background-position: 0 -160px;
+}
+
+.gp:hover {
+    background-position: 0 -240px;
+}
+
+.tw {
+    background-position: 0 -320px;
+}
+
+.tw:hover {
+    background-position: 0 -400px;
+}

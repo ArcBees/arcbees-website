@@ -91,7 +91,7 @@ a {
 
 .social a {
     display: block;
-    width: 30px;
+    width: 31px;
     height: 30px;
     background-repeat: no-repeat;
 }
@@ -251,48 +251,4 @@ body {
     body {
         font-size: 100%;
     }
-}
-
-
-
-ul li a {
-    gwt-image: "socialSprite";
-    background-position: 0 0;
-    width: 30px;
-    height: 30px;
-}
-
-.fb:hover {
-    gwt-image: "socialSprite";
-    background-position: 0 -80px;
-    width: 30px;
-    height: 30px;
-}
-
-.gp {
-    gwt-image: "socialSprite";
-    background-position: 0 -160px;
-    width: 30px;
-    height: 30px;
-}
-
-.gp:hover {
-    gwt-image: "socialSprite";
-    background-position: 0 -240px;
-    width: 30px;
-    height: 30px;
-}
-
-.tw {
-    gwt-image: "socialSprite";
-    background-position: 0 -320px;
-    width: 31px;
-    height: 30px;
-}
-
-.tw:hover {
-    gwt-image: "socialSprite";
-    background-position: 0 -400px;
-    width: 31px;
-    height: 30px;
 }

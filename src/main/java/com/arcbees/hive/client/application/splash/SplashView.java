@@ -23,11 +23,11 @@ import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewImpl;
 
 public class SplashView extends ViewImpl implements SplashPresenter.MyView {
-    public interface Binder extends UiBinder<Widget, SplashView> {
+    interface Binder extends UiBinder<Widget, SplashView> {
     }
 
     @Inject
-    public SplashView(final Binder uiBinder) {
+    SplashView(final Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
     }
 }

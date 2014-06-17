@@ -18,7 +18,6 @@ package com.arcbees.hive.client.application.splash;
 
 import javax.inject.Inject;
 
-import com.arcbees.hive.client.application.common.AppPresenter;
 import com.arcbees.hive.client.place.NameTokens;
 import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.Presenter;
@@ -31,10 +30,10 @@ public class SplashPresenter extends Presenter<SplashPresenter.MyView,
         SplashPresenter.MyProxy> {
     @ProxyStandard
     @NameToken(NameTokens.splash)
-    public interface MyProxy extends ProxyPlace<SplashPresenter> {
+    interface MyProxy extends ProxyPlace<SplashPresenter> {
     }
 
-    public interface MyView extends View {
+    interface MyView extends View {
     }
 
     @Inject
@@ -43,5 +42,4 @@ public class SplashPresenter extends Presenter<SplashPresenter.MyView,
                     MyProxy proxy) {
         super(eventBus, view, proxy, RevealType.Root);
     }
-
 }

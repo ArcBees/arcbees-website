@@ -37,7 +37,8 @@
     font-style: normal;
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -172,16 +173,19 @@ html, body {
 }
 
 .bottomWhiteSpace {
-    border-bottom: 2.5em solid #ffffff;
+    border-bottom: 2.5em solid #fff;
 }
 
-.left, .right {
+.left,
+.right {
+    background: #fff;
+
+    z-index: 10;
     position: fixed;
+    top: 0;
+
     min-height: 100%;
     width: 2.5em;
-    background: #ffffff;
-    z-index: 10;
-    top: 0
 }
 
 .left {
@@ -251,4 +255,31 @@ body {
     body {
         font-size: 100%;
     }
+}
+
+ul li a {
+    gwt-image: "socialSprite";
+    background-position: 0 0;
+    width: 31px;
+    height: 30px;
+}
+
+.fb:hover {
+    background-position: 0 -80px;
+}
+
+.gp {
+    background-position: 0 -160px;
+}
+
+.gp:hover {
+    background-position: 0 -240px;
+}
+
+.tw {
+    background-position: 0 -320px;
+}
+
+.tw:hover {
+    background-position: 0 -400px;
 }

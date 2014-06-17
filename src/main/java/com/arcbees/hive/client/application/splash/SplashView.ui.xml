@@ -7,7 +7,6 @@
 
     <ui:with field="nameTokens" type="com.arcbees.hive.client.place.NameTokens"/>
     <ui:with field="splashRes" type="com.arcbees.hive.client.resource.splash.SplashResources"/>
-    <ui:with field="splashSpriteRes" type="com.arcbees.hive.client.resource.splash.SplashSpriteResources"/>
     <g:HTMLPanel addStyleNames="{splashRes.style.overflow}">
         <div class="{splashRes.style.left}"></div>
         <div class="{splashRes.style.right}"></div>
@@ -17,15 +16,15 @@
                     <div class="{splashRes.style.socialContainer">
                         <ul class="{splashRes.style.social}">
                             <li>
-                                <a class="{splashSpriteRes.sprite.fb}" href="https://www.facebook.com/QueenOfTheBees"
+                                <a class="{splashRes.style.fb}" href="https://www.facebook.com/QueenOfTheBees"
                                    target="_blank"/>
                             </li>
                             <li>
-                                <a class="{splashSpriteRes.sprite.tw}" href="http://twitter.com/#!/arcbees"
+                                <a class="{splashRes.style.tw}" href="http://twitter.com/#!/arcbees"
                                    target="_blank"></a>
                             </li>
                             <li>
-                                <a class="{splashSpriteRes.sprite.gp}" href="https://plus.google.com/+Arcbees"
+                                <a class="{splashRes.style.gp}" href="https://plus.google.com/+Arcbees"
                                    target="_blank"></a>
                             </li>
                         </ul>

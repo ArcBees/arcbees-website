@@ -18,14 +18,12 @@ package com.arcbees.hive.client.resource;
 
 import javax.inject.Inject;
 
-import com.arcbees.hive.client.application.common.CustomersPresenter;
 import com.arcbees.hive.client.resource.customers.CustomersResources;
 import com.arcbees.hive.client.resource.home.HomeResources;
 import com.arcbees.hive.client.resource.products.ProductsResources;
 import com.arcbees.hive.client.resource.reinit.ReinitResources;
 import com.arcbees.hive.client.resource.socialmedia.SocialMediaResources;
 import com.arcbees.hive.client.resource.splash.SplashResources;
-import com.arcbees.hive.client.resource.splash.SplashSpriteResources;
 import com.arcbees.hive.client.resource.team.TeamResources;
 
 public class ResourcesLoader {
@@ -37,8 +35,7 @@ public class ResourcesLoader {
                     ProductsResources productsResources,
                     HomeResources homeResources,
                     CustomersResources customersResources,
-                    SplashResources splashResources,
-                    SplashSpriteResources splashSpriteResources) {
+                    SplashResources splashResources) {
         reinitResources.style().ensureInjected();
         resources.style().ensureInjected();
         teamResources.style().ensureInjected();
@@ -47,6 +44,5 @@ public class ResourcesLoader {
         homeResources.style().ensureInjected();
         customersResources.style().ensureInjected();
         splashResources.style().ensureInjected();
-        splashSpriteResources.sprite().ensureInjected();
     }
 }

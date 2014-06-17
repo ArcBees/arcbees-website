@@ -2,7 +2,7 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:g="urn:import:com.google.gwt.user.client.ui"
              ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
-             ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator"
+             ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
              ui:generateLocales="en">
 
     <ui:with field="res" type="com.arcbees.hive.client.resource.Resources"/>
@@ -429,6 +429,37 @@
             <div class="{teamres.style.span4}">
                 <div class="{teamres.style.flipCard}">
                     <div class="{teamres.style.flipFront}">
+                        <g:Image resource="{teamres.team_jason_lemay}" altText="Jean-Christophe Larivière"/>
+                        <div class="{teamres.style.name}">
+                            Jean-Christophe Larivière
+                        </div>
+                        <div class="{teamres.style.beeIcon}">
+                            <span class="{teamres.style.jobTitle}">
+                                Architect Bee
+                            </span>
+                        </div>
+                    </div>
+                    <div class="{teamres.style.flipBack}">
+                        <g:Image resource="{teamres.team_jason_lemay}" altText="Jean-Christophe Larivière"/>
+                        <div class="{teamres.style.name}">
+                            Jean-Christophe Larivière
+                        </div>
+                        <div class="{teamres.style.beeIcon}">
+                            <span class="{teamres.style.jobTitle}">
+                                <ui:msg description="Our Team > Developer">Developer</ui:msg>
+                            </span>
+                        </div>
+                        <div class="{teamres.style.email}">
+                            <span>jclariviere</span>
+                            <span class="{teamres.style.at}"/>
+                            <span>arcbees.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="{teamres.style.span4}">
+                <div class="{teamres.style.flipCard}">
+                    <div class="{teamres.style.flipFront}">
                         <g:Image resource="{teamres.team_alex_breton}" altText="Alexandre Breton"/>
                         <div class="{teamres.style.name}">
                             Alexandre Breton
@@ -488,6 +519,8 @@
                     </div>
                 </div>
             </div>
+        </g:HTMLPanel>
+        <g:HTMLPanel styleName="{style.aRow}">
             <div class="{teamres.style.span4}">
                 <div class="{teamres.style.flipCard}">
                     <div class="{teamres.style.flipFront}">

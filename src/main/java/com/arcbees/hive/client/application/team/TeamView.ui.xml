@@ -429,7 +429,7 @@
             <div class="{teamres.style.span4}">
                 <div class="{teamres.style.flipCard}">
                     <div class="{teamres.style.flipFront}">
-                        <g:Image resource="{teamres.team_jason_lemay}" altText="Jean-Christophe Larivière"/>
+                        <g:Image resource="{teamres.team_jc_lariviere}" altText="Jean-Christophe Larivière"/>
                         <div class="{teamres.style.name}">
                             Jean-Christophe Larivière
                         </div>
@@ -440,7 +440,7 @@
                         </div>
                     </div>
                     <div class="{teamres.style.flipBack}">
-                        <g:Image resource="{teamres.team_jason_lemay}" altText="Jean-Christophe Larivière"/>
+                        <g:Image resource="{teamres.team_jc_lariviere}" altText="Jean-Christophe Larivière"/>
                         <div class="{teamres.style.name}">
                             Jean-Christophe Larivière
                         </div>

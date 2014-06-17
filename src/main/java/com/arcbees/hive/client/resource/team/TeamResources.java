@@ -78,4 +78,6 @@ public interface TeamResources extends ClientBundle {
     ImageResource at();
 
     ImageResource team_jason_lemay();
+
+    ImageResource team_jc_lariviere();
 }

@@ -46,11 +46,7 @@ body {
 
 body {
     background: #ffe400;
-    color: #231f20;
     font-size: 1em;
-    font-weight: normal;
-    font-family: Geometria, "Geo", Helvetica, Arial, sans-serif;
-    text-align: center;
     box-sizing: border-box;
 
     overflow: auto;
@@ -58,54 +54,60 @@ body {
     z-index: 1;
 }
 
-a {
+.splash a {
     cursor: pointer;
     text-decoration: none;
 }
 
-.main {
+.splash .main {
     border-top: 2.5em solid #ffffff;
     box-sizing: border-box;
 }
 
-.contentWidth {
+.splash .contentWidth {
     max-width: 65.5em;
     margin: auto auto;
     padding: 20px;
     position: relative;
+    text-align: center;
 }
 
-.socialContainer {
+.splash .socialContainer {
     display: block;
     height: 30px;
     padding-bottom: 40px;
 }
 
-.social {
+.splash .social {
     float: right;
     padding-right: 35px;
 }
 
-.social li {
+.splash .social li {
     background: none;
     display: inline-block;
     margin-left: 4px;
     padding-left: 0;
 }
 
-.social a {
+.splash .social a {
     display: block;
     width: 31px;
     height: 30px;
     background-repeat: no-repeat;
 }
 
-.logoArcBees {
+.splash .logoArcBees {
     margin: 0 auto 40px auto;
-    width: 75%;
+    width: 82%;
+    text-align: center;
 }
 
-h1 {
+.splash h1 {
+    color: #231f20;
+    font-family: Geometria, "Geo", Helvetica, Arial, sans-serif;
+    text-align: center;
+
     font-size: 1.875em;
     line-height: 1.075em;
     font-weight: 300;
@@ -114,23 +116,30 @@ h1 {
     margin-bottom: 25px;
 }
 
-span.bold {
+.splash span.bold {
     font-weight: bold;
     display: block;
 }
 
-p {
+.splash p {
+    color: #231f20;
+    font-weight: normal;
+    font-family: Geometria, "Geo", Helvetica, Arial, sans-serif;
     font-size: 1.1em;
     line-height: 1.375em;
     text-align: center;
+
     width: 22em;
     margin: 0 auto 38px auto;
 }
 
-a.bouton {
-    background: #ffffff;
+.splash a.bouton {
     color: #231f20;
+    font-weight: normal;
+    font-family: Geometria, "Geo", Helvetica, Arial, sans-serif;
+    text-align: center;
     font-size: 1.1em;
+    background: #ffffff;
     line-height: 45px;
 
     display: block;
@@ -139,18 +148,22 @@ a.bouton {
     height: 45px;
 }
 
-a.bouton:hover {
+.splash a.bouton:hover {
     background: #000000;
     color: #ffffff;
 }
 
-.logoArcBeesSmall {
+.splash .logoArcBeesSmall {
     display: block;
     margin: 0 auto 10px auto;
 }
 
-.copyright {
+.splash .copyright {
+    color: #231f20;
+    font-weight: normal;
+    font-family: Geometria, "Geo", Helvetica, Arial, sans-serif;
     font-size: 0.750em;
+    text-align: center;
 
     display: inline-block;
     margin: auto auto;
@@ -162,26 +175,27 @@ body {
     height: 100%;
 }
 
-.pageWrap {
+.splash .pageWrap {
     min-height: 100%;
     margin-bottom: -142px;
 }
 
-.pageWrap:after {
+.splash .pageWrap:after {
     content: "";
     display: block;
 }
 
-.siteFooter, .pageWrap:after {
+.splash .siteFooter, .pageWrap:after {
     height: 90px;
+    text-align: center;
 }
 
-.bottomWhiteSpace {
+.splash .bottomWhiteSpace {
     border-bottom: 2.5em solid #fff;
 }
 
-.left,
-.right {
+.splash .left,
+.splash .right {
     background: #fff;
 
     z-index: 10;
@@ -192,15 +206,15 @@ body {
     width: 2.5em;
 }
 
-.left {
+.splash .left {
     left: 0;
 }
 
-.right {
+.splash .right {
     right: 0;
 }
 
-.overflow {
+.overflow.splash {
     height: 100%;
 }
 
@@ -209,12 +223,12 @@ body {
 }
 
 @media screen and (min-width: 30em) and (min-height: 24em) {
-    p {
+    .splash p {
         font-size: 1.125em;
         width: 26em;
     }
 
-    .logoArcBees {
+    .splash .logoArcBees {
         margin: 0 auto 80px auto;
     }
 }
@@ -224,19 +238,15 @@ body {
         font-size: 87.5%;
     }
 
-    .logoArcBees {
-        width: 48.25em;
-    }
-
-    a.bouton {
+    .splash a.bouton {
         font-size: 1em;
     }
 
-    .social {
+    .splash .social {
         padding-right: 0px;
     }
 
-    .page-wrap {
+    .splash .page-wrap {
         margin-bottom: -145px;
     }
 }
@@ -246,11 +256,7 @@ body {
         font-size: 93.75%;
     }
 
-    .logoArcBees {
-        width: 50em;
-    }
-
-    .page-wrap {
+    .splash .page-wrap {
         margin-bottom: -147px;
     }
 }
@@ -261,29 +267,29 @@ body {
     }
 }
 
-ul li a {
+.splash ul li a {
     background: SOCIAL_SPRITE;
     background-position: 0 0;
     width: 31px;
     height: 30px;
 }
 
-.fb:hover {
+.splash .fb:hover {
     background-position: 0 -80px;
 }
 
-.gp {
+.splash .gp {
     background-position: 0 -160px;
 }
 
-.gp:hover {
+.splash .gp:hover {
     background-position: 0 -240px;
 }
 
-.tw {
+.splash .tw {
     background-position: 0 -320px;
 }
 
-.tw:hover {
+.splash .tw:hover {
     background-position: 0 -400px;
 }

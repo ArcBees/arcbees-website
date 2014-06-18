@@ -7,7 +7,7 @@
 
     <ui:with field="nameTokens" type="com.arcbees.hive.client.place.NameTokens"/>
     <ui:with field="splashRes" type="com.arcbees.hive.client.resource.splash.SplashResources"/>
-    <g:HTMLPanel addStyleNames="{splashRes.style.overflow}">
+    <g:HTMLPanel addStyleNames="{splashRes.style.overflow} {splashRes.style.splash}">
         <div class="{splashRes.style.left}"></div>
         <div class="{splashRes.style.right}"></div>
         <div class="{splashRes.style.pageWrap}">

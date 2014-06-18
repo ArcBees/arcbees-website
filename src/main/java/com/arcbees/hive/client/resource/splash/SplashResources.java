@@ -58,6 +58,8 @@ public interface SplashResources extends ClientBundle {
         String tw();
 
         String fb();
+
+        String splash();
     }
 
     Style style();

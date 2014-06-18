@@ -62,7 +62,8 @@ public interface SplashResources extends ClientBundle {
         String bottom();
     }
 
-    Style style();
+    @Source({"fonts.css", "style.css"})
+    public Style style();
 
     ImageResource bigArcbeesLogo();
 

@@ -18,6 +18,7 @@ package com.arcbees.hive.client.gin;
 
 import com.arcbees.hive.client.application.blog.BlogModule;
 import com.arcbees.hive.client.application.companyhistory.CompanyHistoryModule;
+import com.arcbees.hive.client.application.splash.SplashModule;
 import com.arcbees.hive.client.application.team.TeamModule;
 import com.arcbees.hive.client.resource.Resources;
 import com.arcbees.hive.client.application.common.CommonModule;
@@ -53,7 +54,7 @@ public class ClientModule extends AbstractGinModule {
         bind(GoogleAnalyticsNavigationTracker.class).asEagerSingleton();
 
         // Constants
-        bindConstant().annotatedWith(DefaultPlace.class).to(NameTokens.home);
+        bindConstant().annotatedWith(DefaultPlace.class).to(NameTokens.splash);
         bindConstant().annotatedWith(ErrorPlace.class).to(NameTokens.home);
         bindConstant().annotatedWith(UnauthorizedPlace.class).to(NameTokens.home);
         bindConstant().annotatedWith(GaAccount.class).to("UA-19115423-2");
@@ -63,6 +64,7 @@ public class ClientModule extends AbstractGinModule {
         // Modules
         install(new DefaultModule(DefaultPlaceManager.class));
         install(new CommonModule());
+        install(new SplashModule());
         install(new HomeModule());
         install(new ServiceModule());
         install(new ProductsModule());

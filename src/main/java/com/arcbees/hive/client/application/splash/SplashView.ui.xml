@@ -1,0 +1,68 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+             ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
+             ui:generateLocales="en">
+
+    <ui:with field="nameTokens" type="com.arcbees.hive.client.place.NameTokens"/>
+    <ui:with field="splashRes" type="com.arcbees.hive.client.resource.splash.SplashResources"/>
+    <g:HTMLPanel addStyleNames="{splashRes.style.overflow} {splashRes.style.splash}">
+        <div class="{splashRes.style.left}"></div>
+        <div class="{splashRes.style.right}"></div>
+        <div class="{splashRes.style.pageWrap}">
+            <div class="{splashRes.style.main}">
+                <div class="{splashRes.style.contentWidth}">
+                    <div class="{splashRes.style.socialContainer}">
+                        <ul class="{splashRes.style.social}">
+                            <li>
+                                <a class="{splashRes.style.fb}" href="https://www.facebook.com/arcbees"
+                                   target="_blank"/>
+                            </li>
+                            <li>
+                                <a class="{splashRes.style.tw}" href="http://twitter.com/#!/arcbees"
+                                   target="_blank"></a>
+                            </li>
+                            <li>
+                                <a class="{splashRes.style.gp}" href="https://plus.google.com/+Arcbees"
+                                   target="_blank"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <g:Image url='{splashRes.bigArcbeesLogo.getSafeUri.asString}' altText="New Arcbees Logo"
+                             addStyleNames="{splashRes.style.logoArcBees}"/>
+
+                    <h1>
+                        <ui:msg description="Splash > We have">We have</ui:msg>
+                        <span class="{splashRes.style.bold}">
+                            <ui:msg description="Splash > a new image">
+                                a new branding.
+                            </ui:msg>
+                        </span>
+                    </h1>
+
+                    <p>
+                        <ui:msg description="Splash > Our bees work hard">
+                            Our bees are working very hard to build
+                        </ui:msg>
+                        <br/>
+                        <ui:msg description="Splash > the new website">
+                            the new website. But we were too excited  to keep it a secret for you.
+                        </ui:msg>
+                    </p>
+                    <a class="{splashRes.style.bouton}" href="#{nameTokens.getHome}">
+                        <ui:msg description="Splash > Entrer old website">Enter the old website</ui:msg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="{splashRes.style.siteFooter}">
+            <div class="{splashRes.style.copyright}">
+                <g:Image url="{splashRes.smallArcbeesLogo.getSafeUri.asString}" altText="Small Arcbees Logo"
+                         addStyleNames="{splashRes.style.logoArcBeesSmall}"/>
+                @2014
+            </div>
+            <div class="{splashRes.style.bottom}"></div>
+        </div>
+    </g:HTMLPanel>
+</ui:UiBinder>

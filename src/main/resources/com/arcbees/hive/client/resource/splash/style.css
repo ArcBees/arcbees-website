@@ -1,0 +1,264 @@
+@def SOCIAL_SPRITE resourceUrl("socialSprite");
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: #ffe400;
+    font-size: 1em;
+    box-sizing: border-box;
+
+    overflow: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.splash a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.splash .main {
+    border-top: 2em solid #fff;
+    box-sizing: border-box;
+}
+
+.splash .contentWidth {
+    max-width: 65.5em;
+    margin: auto;
+    padding: 15px;
+    position: relative;
+    text-align: center;
+}
+
+.splash .socialContainer {
+    display: block;
+    height: 30px;
+    padding-bottom: 40px;
+}
+
+.splash .social {
+    float: right;
+    padding-right: 35px;
+}
+
+.splash .social li {
+    background: none;
+    display: inline-block;
+    margin-left: 4px;
+    padding-left: 0;
+}
+
+.splash .social a {
+    display: block;
+    width: 31px;
+    height: 30px;
+    background-repeat: no-repeat;
+}
+
+.splash .logoArcBees {
+    margin: 0 auto 5em;
+    width: 78%;
+    text-align: center;
+}
+
+.splash h1 {
+    color: #231f20;
+    font-family: Geometria, "Geo", Helvetica, Arial, sans-serif;
+    text-align: center;
+
+    font-size: 1.875em;
+    line-height: 1.075em;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    margin-bottom: 0.7em;
+}
+
+.splash span.bold {
+    font-weight: bold;
+    display: block;
+}
+
+.splash p {
+    color: #231f20;
+    font-weight: normal;
+    font-family: Geometria, "Geo", Helvetica, Arial, sans-serif;
+    font-size: 1.1em;
+    line-height: 1.375em;
+    text-align: center;
+
+    width: 22em;
+    margin: 0 auto 1.9em;
+}
+
+.splash a.bouton {
+    color: #231f20;
+    font-weight: normal;
+    font-family: Geometria, "Geo", Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-size: 1.1em;
+    background: #fff;
+    line-height: 45px;
+
+    display: block;
+    margin: 0 auto 80px;
+    width: 240px;
+    height: 45px;
+}
+
+.splash a.bouton:hover {
+    background: #000;
+    color: #fff;
+}
+
+.splash .logoArcBeesSmall {
+    display: block;
+    margin: 0 auto 10px;
+    width: 65%;
+}
+
+.splash .copyright {
+    color: #231f20;
+    font-weight: normal;
+    font-family: Geometria, "Geo", Helvetica, Arial, sans-serif;
+    font-size: 0.750em;
+    text-align: center;
+
+    display: inline-block;
+    margin: auto;
+    padding-bottom: 15px;
+    position: relative;
+    top: 30px;
+}
+
+.splash .pageWrap {
+    min-height: 100%;
+    margin-bottom: -142px;
+}
+
+.splash .pageWrap:after {
+    content: "";
+    display: block;
+}
+
+.splash .siteFooter,
+.pageWrap:after {
+    height: 70px;
+    text-align: center;
+}
+
+.splash .left,
+.splash .right {
+    background: #fff;
+
+    z-index: 10;
+    position: fixed;
+    top: 0;
+
+    min-height: 100%;
+    width: 2em;
+}
+
+.splash .left {
+    left: 0;
+}
+
+.splash .right {
+    right: 0;
+}
+
+.splash .bottom {
+    background: #fff;
+
+    z-index: 10;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    height: 2em;
+    min-width: 100%;
+}
+
+
+.overflow.splash {
+    height: 100%;
+}
+
+body {
+    font-size: 81.25%;
+}
+
+@media screen and (min-width: 30em) and (min-height: 24em) {
+    .splash p {
+        font-size: 1.125em;
+        width: 26em;
+    }
+
+    .splash .logoArcBees {
+        margin: 0 auto 5em;
+    }
+}
+
+@media screen and (min-width: 68em) and (min-height: 53em) {
+    body {
+        font-size: 87.5%;
+    }
+
+    .splash a.bouton {
+        font-size: 1em;
+    }
+
+    .splash .social {
+        padding-right: 0px;
+    }
+
+    .splash .pageWrap {
+        margin-bottom: -145px;
+    }
+}
+
+@media screen and (min-width: 75em) and (min-height: 57em) {
+    body {
+        font-size: 93.75%;
+    }
+
+    .splash .pageWrap {
+        margin-bottom: -147px;
+    }
+}
+
+@media screen and (min-width: 80em) and (min-height: 62em) {
+    body {
+        font-size: 100%;
+    }
+}
+
+.splash ul li a {
+    background: SOCIAL_SPRITE;
+    background-position: 0 0;
+    width: 31px;
+    height: 30px;
+}
+
+.splash .fb:hover {
+    background-position: 0 -80px;
+}
+
+.splash .gp {
+    background-position: 0 -160px;
+}
+
+.splash .gp:hover {
+    background-position: 0 -240px;
+}
+
+.splash .tw {
+    background-position: 0 -320px;
+}
+
+.splash .tw:hover {
+    background-position: 0 -400px;
+}

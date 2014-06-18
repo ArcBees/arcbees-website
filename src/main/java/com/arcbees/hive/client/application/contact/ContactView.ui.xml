@@ -38,6 +38,7 @@
             padding-right: 0px;
             color: #838383;
             font-family: Arial;
+            font-size: 13px;
         }
 
         .message textarea {
@@ -53,6 +54,7 @@
             resize: none;
             color: #838383;
             font-family: Arial;
+            font-size: 13px;
         }
 
         .message button {

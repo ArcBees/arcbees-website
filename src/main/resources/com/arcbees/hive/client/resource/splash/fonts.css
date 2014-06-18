@@ -1,0 +1,40 @@
+@provide 'fonts';
+
+@def GEOMETRIA_REGULAR_EOT resourceUrl("geometriaRegularEot");
+@def GEOMETRIA_REGULAR_TTF resourceUrl("geometriaRegularTtf");
+@def GEOMETRIA_REGULAR_SVG resourceUrl("geometriaRegularSvg");
+@def GEOMETRIA_REGULAR_WOFF resourceUrl("geometriaRegularWoff");
+
+@def GEOMETRIA_LIGHT_EOT resourceUrl("geometriaLightEot");
+@def GEOMETRIA_LIGHT_TTF resourceUrl("geometriaLightTtf");
+@def GEOMETRIA_LIGHT_SVG resourceUrl("geometriaLightSvg");
+@def GEOMETRIA_LIGHT_WOFF resourceUrl("geometriaLightWoff");
+
+@def GEOMETRIA_BOLD_EOT resourceUrl("geometriaBoldEot");
+@def GEOMETRIA_BOLD_TTF resourceUrl("geometriaBoldTtf");
+@def GEOMETRIA_BOLD_SVG resourceUrl("geometriaBoldSvg");
+@def GEOMETRIA_BOLD_WOFF resourceUrl("geometriaBoldWoff");
+
+@font-face {
+    font-family: "Geo";
+    src: GEOMETRIA_REGULAR_EOT;
+    src: GEOMETRIA_REGULAR_WOFF format("woff"), GEOMETRIA_REGULAR_TTF format("truetype"), GEOMETRIA_REGULAR_SVG format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Geo";
+    src: GEOMETRIA_LIGHT_EOT;
+    src: GEOMETRIA_LIGHT_WOFF format("woff"), GEOMETRIA_LIGHT_TTF format("truetype"), GEOMETRIA_LIGHT_SVG format("svg");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Geo";
+    src: GEOMETRIA_BOLD_EOT;
+    src: GEOMETRIA_BOLD_WOFF format("woff"), GEOMETRIA_BOLD_TTF format("truetype"), GEOMETRIA_BOLD_SVG format("svg");
+    font-weight: bold;
+    font-style: normal;
+}

@@ -27,7 +27,7 @@ public class SplashView extends ViewImpl implements SplashPresenter.MyView {
     }
 
     @Inject
-    SplashView(final Binder uiBinder) {
+    SplashView(Binder uiBinder) {
         initWidget(uiBinder.createAndBindUi(this));
     }
 }

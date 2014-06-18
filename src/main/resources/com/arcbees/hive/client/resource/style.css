@@ -16,38 +16,9 @@ html {
     overflow-y: auto;
 }
 
-::-webkit-scrollbar {
-    width: 11px;
-    height: 11px;
-}
-
-::-webkit-scrollbar-button:start:decrement,
-::-webkit-scrollbar-button:end:increment {
-    background-color: transparent;
-    display: block;
-    height: 30px;
-}
-
-::-webkit-scrollbar-track-piece {
-    background: #a8b5bd none;
-
-    -webkit-border-radius: 6px;
-    -webkit-box-shadow: inset .0625em .0625em 0 0 #8D98A0, inset -.0625em -.0625em 0 0 #C6D3DB;
-}
-
-::-webkit-scrollbar-thumb:vertical {
-    background-color: #666;
-
-    height: 50px;
-    border: 1px solid #777;
-
-    -webkit-border-radius: 6px;
-}
-
 body {
     font-family: Ubuntu;
     font-weight: 300;
-    background-color: #b4c0c8;
 }
 
 p {

@@ -33,15 +33,26 @@
                              addStyleNames="{splashRes.style.logoArcBees}"/>
 
                     <h1>
-                        Nous avons
-                        <span class="{splashRes.style.bold}">une nouvelle image.</span>
+                        <ui:msg description="Splash > We have">We have</ui:msg>
+                        <span class="{splashRes.style.bold}">
+                            <ui:msg description="Splash > a new image">
+                                a new branding.
+                            </ui:msg>
+                        </span>
                     </h1>
 
-                    <p>Nos abeilles travaillent très fort pour bâtir
-                        <br/>le nouveau site web. Mais nous étions trop excitées pour
-                        ne pas vous la dévoiler avant.
+                    <p>
+                        <ui:msg description="Splash > Our bees work hard">
+                            Our bees are working very hard to build
+                        </ui:msg>
+                        <br/>
+                        <ui:msg description="Splash > the new website">
+                            the new website. But we were too excited  to keep it a secret for you.
+                        </ui:msg>
                     </p>
-                    <a class="{splashRes.style.bouton}" href="#{nameTokens.getHome}">Entrer dans l’ancien site</a>
+                    <a class="{splashRes.style.bouton}" href="#{nameTokens.getHome}">
+                        <ui:msg description="Splash > Entrer old website">Enter the old website</ui:msg>
+                    </a>
                 </div>
             </div>
         </div>

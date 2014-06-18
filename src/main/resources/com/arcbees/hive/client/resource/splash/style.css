@@ -13,6 +13,8 @@
 @def GEOMETRIA_BOLD_SVG resourceUrl("geometriaBoldSvg");
 @def GEOMETRIA_BOLD_WOFF resourceUrl("geometriaBoldWoff");
 
+@def SOCIAL_SPRITE resourceUrl("socialSprite");
+
 @font-face {
     font-family: "Geo";
     src: GEOMETRIA_REGULAR_EOT;
@@ -154,7 +156,8 @@ a.bouton:hover {
     padding-bottom: 20px;
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -258,7 +261,7 @@ body {
 }
 
 ul li a {
-    gwt-image: "socialSprite";
+    background: SOCIAL_SPRITE;
     background-position: 0 0;
     width: 31px;
     height: 30px;

@@ -13,7 +13,7 @@
         <div class="{splashRes.style.pageWrap}">
             <div class="{splashRes.style.main}">
                 <div class="{splashRes.style.contentWidth}">
-                    <div class="{splashRes.style.socialContainer">
+                    <div class="{splashRes.style.socialContainer}">
                         <ul class="{splashRes.style.social}">
                             <li>
                                 <a class="{splashRes.style.fb}" href="https://www.facebook.com/QueenOfTheBees"
@@ -38,7 +38,7 @@
                     </h1>
 
                     <p>Nos abeilles travaillent très fort pour bâtir
-                        <br/>le nouveau site web. Mais nous étions trop excitée pour
+                        <br/>le nouveau site web. Mais nous étions trop excitées pour
                         ne pas vous la dévoiler avant.
                     </p>
                     <a class="{splashRes.style.bouton}" href="#{nameTokens.getHome}">Entrer dans l’ancien site</a>

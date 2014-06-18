@@ -45,8 +45,6 @@ public interface SplashResources extends ClientBundle {
 
         String copyright();
 
-        String bottomWhiteSpace();
-
         String right();
 
         String socialContainer();
@@ -60,6 +58,8 @@ public interface SplashResources extends ClientBundle {
         String fb();
 
         String splash();
+
+        String bottom();
     }
 
     Style style();

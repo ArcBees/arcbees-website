@@ -62,7 +62,7 @@
                          addStyleNames="{splashRes.style.logoArcBeesSmall}"/>
                 @2014
             </div>
-            <div class="{splashRes.style.bottomWhiteSpace}"></div>
+            <div class="{splashRes.style.bottom}"></div>
         </div>
     </g:HTMLPanel>
 </ui:UiBinder>

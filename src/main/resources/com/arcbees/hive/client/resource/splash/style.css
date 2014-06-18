@@ -60,14 +60,14 @@ body {
 }
 
 .splash .main {
-    border-top: 2.5em solid #fff;
+    border-top: 2em solid #fff;
     box-sizing: border-box;
 }
 
 .splash .contentWidth {
     max-width: 65.5em;
     margin: auto auto;
-    padding: 20px;
+    padding: 15px;
     position: relative;
     text-align: center;
 }
@@ -98,8 +98,8 @@ body {
 }
 
 .splash .logoArcBees {
-    margin: 0 auto 40px auto;
-    width: 82%;
+    margin: 0 auto 5em auto;
+    width: 78%;
     text-align: center;
 }
 
@@ -113,7 +113,7 @@ body {
     font-weight: 300;
     text-transform: uppercase;
 
-    margin-bottom: 25px;
+    margin-bottom: 0.7em;
 }
 
 .splash span.bold {
@@ -130,7 +130,7 @@ body {
     text-align: center;
 
     width: 22em;
-    margin: 0 auto 38px auto;
+    margin: 0 auto 1.9em auto;
 }
 
 .splash a.bouton {
@@ -156,6 +156,7 @@ body {
 .splash .logoArcBeesSmall {
     display: block;
     margin: 0 auto 10px auto;
+    width: 65%;
 }
 
 .splash .copyright {
@@ -167,7 +168,9 @@ body {
 
     display: inline-block;
     margin: auto auto;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
+    position: relative;
+    top: 30px;
 }
 
 html,
@@ -186,12 +189,8 @@ body {
 }
 
 .splash .siteFooter, .pageWrap:after {
-    height: 90px;
+    height: 70px;
     text-align: center;
-}
-
-.splash .bottomWhiteSpace {
-    border-bottom: 2.5em solid #fff;
 }
 
 .splash .left,
@@ -203,7 +202,7 @@ body {
     top: 0;
 
     min-height: 100%;
-    width: 2.5em;
+    width: 2em;
 }
 
 .splash .left {
@@ -213,6 +212,19 @@ body {
 .splash .right {
     right: 0;
 }
+
+.splash .bottom {
+    background: #fff;
+
+    z-index: 10;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    height: 2em;
+    min-width: 100%;
+}
+
 
 .overflow.splash {
     height: 100%;
@@ -229,7 +241,7 @@ body {
     }
 
     .splash .logoArcBees {
-        margin: 0 auto 80px auto;
+        margin: 0 auto 5em auto;
     }
 }
 

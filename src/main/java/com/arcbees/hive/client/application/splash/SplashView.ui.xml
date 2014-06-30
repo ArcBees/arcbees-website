@@ -47,7 +47,7 @@
                         </ui:msg>
                         <br/>
                         <ui:msg description="Splash > the new website">
-                            the new website. But we were too excited  to keep it a secret for you.
+                            the new website. But we were too excited  to keep it a secret from you.
                         </ui:msg>
                     </p>
                     <a class="{splashRes.style.bouton}" href="#{nameTokens.getHome}">

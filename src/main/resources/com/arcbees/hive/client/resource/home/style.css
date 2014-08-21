@@ -1,7 +1,0 @@
-@sprite .sliderProductsButton, .sliderProductsOff {
-    gwt-image: "sliderProductsBt";
-}
-
-@sprite .sliderProductsOn {
-    gwt-image: "sliderProductsBtRl";
-}

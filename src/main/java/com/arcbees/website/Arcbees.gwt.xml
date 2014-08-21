@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='arcbees'>
+	<inherits name='com.google.gwt.user.User'/>
+    <inherits name='com.google.gwt.user.theme.standard.Standard'/>
+
+    <inherits name='com.gwtplatform.mvp.MvpWithEntryPoint'/>
+
+    <source path='client'/>
+    <source path='shared'/>
+
+    <extend-configuration-property name="gin.ginjector.modules" value="com.arcbees.website.client.ClientModule"/>
+</module>

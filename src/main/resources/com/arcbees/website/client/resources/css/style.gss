@@ -1,0 +1,58 @@
+@require "colors";
+
+/* -- Init ----------------------------------------------- */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: C_TEXT;
+}
+
+/* -- Headings ------------------------------------------- */
+
+h1 {
+    font-size: 4rem;
+    font-weight: 400;
+
+    margin: 0.3em 0 0.9em;
+}
+
+h2 {
+    font-size: 1.6rem;
+
+    margin: 0.2em 0 0.9em;
+}
+
+h3 {
+    font-size: 1.4rem;
+
+    margin: 0.1em 0 0.9em;
+}
+
+/* -- Elements ------------------------------------------- */
+
+p {
+    line-height: 1.7em;
+
+    margin-bottom: 0.8em;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+/* -- Classes ------------------------------------------- */
+
+/*.hidden { display: none; visibility: hidden; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }*/
+
+/* -- Style -- */

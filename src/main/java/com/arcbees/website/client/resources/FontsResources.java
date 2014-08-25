@@ -109,4 +109,73 @@ public interface FontsResources extends ClientBundle {
 
     @Source("fonts/icons/icons.gss")
     Icons icons();
+
+    String MIME_TYPE_TTF = "application/font-sfnt";
+    String MIME_TYPE_EOT = "application/vnd.ms-fontobject";
+    String MIME_TYPE_WOFF = "application/font-woff";
+    String MIME_TYPE_SVG = "image/svg+xml";
+
+    @DataResource.MimeType(MIME_TYPE_TTF)
+    @Source("geometria/geometria.ttf")
+    DataResource geometriaTtf();
+
+    @DataResource.MimeType(MIME_TYPE_EOT)
+    @Source("geometria/geometria.eot")
+    DataResource geometriaEot();
+
+    @DataResource.MimeType(MIME_TYPE_SVG)
+    @Source("geometria/geometria.svg")
+    DataResource geometriaSvg();
+
+    @DataResource.MimeType(MIME_TYPE_WOFF)
+    @Source("geometria/geometria_bold.woff")
+    DataResource geometriaWBoldoff();
+
+    @DataResource.MimeType(MIME_TYPE_TTF)
+    @Source("geometria/geometria_bold.ttf")
+    DataResource geometriaBoldTtf();
+
+    @DataResource.MimeType(MIME_TYPE_EOT)
+    @Source("geometria/geometria_bold.eot")
+    DataResource geometriaBoldEot();
+
+    @DataResource.MimeType(MIME_TYPE_SVG)
+    @Source("geometria/geometria_bold.svg")
+    DataResource geometriaBoldSvg();
+
+    @DataResource.MimeType(MIME_TYPE_WOFF)
+    @Source("geometria/geometria_bold.woff")
+    DataResource geometriaWBoldWoff();
+
+    @DataResource.MimeType(MIME_TYPE_TTF)
+    @Source("geometria/geometria_light.ttf")
+    DataResource geometriLightaTtf();
+
+    @DataResource.MimeType(MIME_TYPE_EOT)
+    @Source("geometria/geometria_light.eot")
+    DataResource geometriLightaEot();
+
+    @DataResource.MimeType(MIME_TYPE_SVG)
+    @Source("geometria/geometria_light.svg")
+    DataResource geometriLightaSvg();
+
+    @DataResource.MimeType(MIME_TYPE_WOFF)
+    @Source("geometria/geometria_light.woff")
+    DataResource geometriaLightWoff();
+
+    @DataResource.MimeType(MIME_TYPE_TTF)
+    @Source("geometria/geometria_light_italic.ttf")
+    DataResource geometriaLightItalicTtf();
+
+    @DataResource.MimeType(MIME_TYPE_EOT)
+    @Source("geometria/geometria_light_italic.eot")
+    DataResource geometriaLightItalicEot();
+
+    @DataResource.MimeType(MIME_TYPE_SVG)
+    @Source("geometria/geometria_light_italic.svg")
+    DataResource geometriaLightItalicSvg();
+
+    @DataResource.MimeType(MIME_TYPE_WOFF)
+    @Source("geometria/geometria_light_italic.woff")
+    DataResource geometriaWLightItalicWoff();
 }

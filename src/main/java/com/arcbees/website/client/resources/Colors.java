@@ -17,7 +17,6 @@
 package com.arcbees.website.client.resources;
 
 public class Colors {
-
     public static final String C_PRIMARY = "#fbe605";
 
     public static final String C_TEXT = "#333";
@@ -26,5 +25,4 @@ public class Colors {
     public static final String C_PRODUCT_GAE = "#36baec";
     public static final String C_PRODUCT_GWTP = "#f7941e";
     public static final String C_PRODUCT_JUKITO = "#ed1c24";
-
 }

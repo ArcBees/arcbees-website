@@ -5,6 +5,8 @@
         ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator"
         ui:generateLocales="en">
 
+    <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
+
     <g:HTMLPanel>
         Hello world!
     </g:HTMLPanel>

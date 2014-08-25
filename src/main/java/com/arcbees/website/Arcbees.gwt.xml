@@ -4,6 +4,7 @@
     <inherits name='com.google.gwt.user.theme.standard.Standard'/>
 
     <inherits name='com.gwtplatform.mvp.MvpWithEntryPoint'/>
+    <inherits name="com.google.gwt.resources.GssResource"/>
 
     <source path='client'/>
     <source path='shared'/>

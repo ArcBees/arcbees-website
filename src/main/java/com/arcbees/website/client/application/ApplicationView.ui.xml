@@ -5,11 +5,9 @@
         ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator"
         ui:generateLocales="en">
 
-    <ui:with field="res" type="com.arcbees.website.client.resources.FontsResources"/>
+    <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
+
     <g:HTMLPanel>
         Hello world!
-
-        <i class="{res.icons.iconArcbees}"></i>
-        <p>TITRE</p>
     </g:HTMLPanel>
 </ui:UiBinder>

@@ -22,7 +22,7 @@ import com.google.gwt.resources.client.GssResource;
 
 import static com.google.gwt.resources.client.DataResource.MimeType;
 
-public interface FontsResources extends ClientBundle {
+public interface AppResources extends ClientBundle {
     String MIME_TYPE_TTF = "application/font-sfnt";
     String MIME_TYPE_EOT = "application/vnd.ms-fontobject";
     String MIME_TYPE_WOFF = "application/font-woff";

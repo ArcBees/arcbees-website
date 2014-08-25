@@ -16,10 +16,9 @@
 
 package com.arcbees.website.client.resources;
 
-import com.google.gwt.resources.client.ClientBundle;
 import com.google.gwt.resources.client.GssResource;
 
-public interface AppResources extends ClientBundle {
+public interface AppResources extends FontResources {
     interface Normalize extends GssResource {
     }
 
@@ -29,6 +28,6 @@ public interface AppResources extends ClientBundle {
     @Source("css/normalize.gss")
     Normalize normalize();
 
-    @Source({"css/colors.gss", "css/style.gss"})
+    @Source({"css/colors.gss", "fonts/geometria/geometria.gss", "css/style.gss"})
     Style style();
 }

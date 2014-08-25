@@ -22,9 +22,9 @@ public class ResourceLoader {
     @Inject
     ResourceLoader(
             AppResources appResources,
-            FontsResources fontsResources) {
+            FontResources fontResources) {
         appResources.normalize().ensureInjected();
         appResources.style().ensureInjected();
-        fontsResources.icons().ensureInjected();
+        fontResources.icons().ensureInjected();
     }
 }

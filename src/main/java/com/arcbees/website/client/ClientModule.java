@@ -17,6 +17,7 @@
 package com.arcbees.website.client;
 
 import com.arcbees.website.client.application.ApplicationModule;
+import com.arcbees.website.client.resources.ResourceLoader;
 import com.google.gwt.inject.client.AbstractGinModule;
 import com.gwtplatform.mvp.client.annotations.DefaultPlace;
 import com.gwtplatform.mvp.client.annotations.ErrorPlace;
@@ -30,6 +31,8 @@ public class ClientModule extends AbstractGinModule {
         install(new Builder().tokenFormatter(RouteTokenFormatter.class).build());
 
         install(new ApplicationModule());
+
+        bind(ResourceLoader.class).asEagerSingleton();
 
         bindConstant().annotatedWith(DefaultPlace.class).to(NameTokens.HOME);
         bindConstant().annotatedWith(ErrorPlace.class).to(NameTokens.HOME);

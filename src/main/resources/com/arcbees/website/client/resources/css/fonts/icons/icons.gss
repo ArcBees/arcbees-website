@@ -1,0 +1,83 @@
+@def ICONS_TTF resourceUrl("iconsTtf");
+@def ICONS_EOT resourceUrl("iconsEot");
+@def ICONS_WOFF resourceUrl("iconsWoff");
+@def ICONS_SVG resourceUrl("iconsSvg");
+
+@font-face {
+    font-family: 'icons';
+    src: ICONS_EOT;
+    src: ICONS_WOFF format('woff'),
+    ICONS_TTF format('truetype'),
+    ICONS_SVG format('svg');
+}
+
+*[data-icon] {
+    font-size: 21px;
+}
+
+*[data-icon]:before,
+[class^="icon"]:before,
+[class*="icon"]:before {
+    font-family: "icons";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    line-height: 1em;
+    text-decoration: inherit;
+    text-align: center;
+    text-transform: none;
+    content: attr(data-icon);
+    vertical-align: baseline;
+
+    display: inline-block;
+
+    width: 1em;
+
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Icons code - legend for the data-icon */
+/* ------------------------------ */
+@external iconSignCode iconArcbees iconArrowDown iconArrowOutside iconHexagon iconLadder iconBees iconChosen iconClose
+iconDevTime iconFb iconGae iconGithub iconGPlus iconGwtp iconInfo iconJukito iconLkdIn iconMapPin iconMenu iconQ1a
+iconQ1b iconQ1c iconQ2a iconQ2b iconQ2c iconQ3a iconQ3b iconQ3c iconQ4a iconQ4b iconQ4c iconSearch iconShare iconTwit
+iconWordpress;
+
+.iconSignCode:before { content: "\e600";}
+.iconArcbees:before { content: "\e601";}
+.iconArrowDown:before { content: "\e602";}
+.iconArrowOutside:before { content: "\e603";}
+.iconHexagon:before { content: "\e604";}
+.iconLadder:before { content: "\e605";}
+.iconBees:before { content: "\e606";}
+.iconChosen:before { content: "\e607";}
+.iconClose:before { content: "\e608";}
+.iconDevTime:before { content: "\e609";}
+.iconFb:before { content: "\e60a";}
+.iconGae:before { content: "\e60b";}
+.iconGithub:before { content: "\e60c";}
+.iconGPlus:before { content: "\e60d";}
+.iconGwtp:before { content: "\e60e";}
+.iconInfo:before { content: "\e60f";}
+.iconJukito:before { content: "\e610";}
+.iconLkdIn:before { content: "\e611";}
+.iconMapPin:before { content: "\e612";}
+.iconMenu:before { content: "\e613";}
+.iconQ1a:before { content: "\e614";}
+.iconQ1b:before { content: "\e615";}
+.iconQ1c:before { content: "\e616";}
+.iconQ2a:before { content: "\e617";}
+.iconQ2b:before { content: "\e618";}
+.iconQ2c:before { content: "\e619";}
+.iconQ3a:before { content: "\e61a";}
+.iconQ3b:before { content: "\e61b";}
+.iconQ3c:before { content: "\e61c";}
+.iconQ4a:before { content: "\e61d";}
+.iconQ4b:before { content: "\e61e";}
+.iconQ4c:before { content: "\e61f";}
+.iconSearch:before { content: "\e620";}
+.iconShare:before { content: "\e621";}
+.iconTwit:before { content: "\e622";}
+.iconWordpress:before { content: "\e623";}

@@ -20,7 +20,14 @@ import com.google.gwt.resources.client.ClientBundle;
 import com.google.gwt.resources.client.DataResource;
 import com.google.gwt.resources.client.GssResource;
 
+import static com.google.gwt.resources.client.DataResource.MimeType;
+
 public interface FontsResources extends ClientBundle {
+    String MIME_TYPE_TTF = "application/font-sfnt";
+    String MIME_TYPE_EOT = "application/vnd.ms-fontobject";
+    String MIME_TYPE_WOFF = "application/font-woff";
+    String MIME_TYPE_SVG = "image/svg+xml";
+
     public interface Icons extends GssResource {
         String iconSignCode();
 
@@ -95,6 +102,21 @@ public interface FontsResources extends ClientBundle {
         String iconWordpress();
     }
 
+    interface Normalize extends GssResource {
+    }
+
+    interface Style extends GssResource {
+    }
+
+    @Source("fonts/icons/icons.gss")
+    Icons icons();
+
+    @Source("css/normalize.gss")
+    Normalize normalize();
+
+    @Source({"css/colors.gss", "fonts/geometria/geometria.gss", "css/style.gss"})
+    Style style();
+
     @Source("fonts/icons/icons.ttf")
     DataResource iconsTtf();
 
@@ -107,75 +129,67 @@ public interface FontsResources extends ClientBundle {
     @Source("fonts/icons/icons.woff")
     DataResource iconsWoff();
 
-    @Source("fonts/icons/icons.gss")
-    Icons icons();
-
-    String MIME_TYPE_TTF = "application/font-sfnt";
-    String MIME_TYPE_EOT = "application/vnd.ms-fontobject";
-    String MIME_TYPE_WOFF = "application/font-woff";
-    String MIME_TYPE_SVG = "image/svg+xml";
-
-    @DataResource.MimeType(MIME_TYPE_TTF)
-    @Source("geometria/geometria.ttf")
+    @MimeType(MIME_TYPE_TTF)
+    @Source("fonts/geometria/geometria-webfont.ttf")
     DataResource geometriaTtf();
 
-    @DataResource.MimeType(MIME_TYPE_EOT)
-    @Source("geometria/geometria.eot")
+    @MimeType(MIME_TYPE_EOT)
+    @Source("fonts/geometria/geometria-webfont.eot")
     DataResource geometriaEot();
 
-    @DataResource.MimeType(MIME_TYPE_SVG)
-    @Source("geometria/geometria.svg")
+    @MimeType(MIME_TYPE_SVG)
+    @Source("fonts/geometria/geometria-webfont.svg")
     DataResource geometriaSvg();
 
-    @DataResource.MimeType(MIME_TYPE_WOFF)
-    @Source("geometria/geometria_bold.woff")
-    DataResource geometriaWBoldoff();
+    @MimeType(MIME_TYPE_WOFF)
+    @Source("fonts/geometria/geometria-webfont.woff")
+    DataResource geometriaWoff();
 
-    @DataResource.MimeType(MIME_TYPE_TTF)
-    @Source("geometria/geometria_bold.ttf")
+    @MimeType(MIME_TYPE_TTF)
+    @Source("fonts/geometria/geometriabold-webfont.ttf")
     DataResource geometriaBoldTtf();
 
-    @DataResource.MimeType(MIME_TYPE_EOT)
-    @Source("geometria/geometria_bold.eot")
+    @MimeType(MIME_TYPE_EOT)
+    @Source("fonts/geometria/geometriabold-webfont.eot")
     DataResource geometriaBoldEot();
 
-    @DataResource.MimeType(MIME_TYPE_SVG)
-    @Source("geometria/geometria_bold.svg")
+    @MimeType(MIME_TYPE_SVG)
+    @Source("fonts/geometria/geometriabold-webfont.svg")
     DataResource geometriaBoldSvg();
 
-    @DataResource.MimeType(MIME_TYPE_WOFF)
-    @Source("geometria/geometria_bold.woff")
-    DataResource geometriaWBoldWoff();
+    @MimeType(MIME_TYPE_WOFF)
+    @Source("fonts/geometria/geometriabold-webfont.woff")
+    DataResource geometriaBoldWoff();
 
-    @DataResource.MimeType(MIME_TYPE_TTF)
-    @Source("geometria/geometria_light.ttf")
-    DataResource geometriLightaTtf();
+    @MimeType(MIME_TYPE_TTF)
+    @Source("fonts/geometria/geometrialight-webfont.ttf")
+    DataResource geometriaLightTtf();
 
-    @DataResource.MimeType(MIME_TYPE_EOT)
-    @Source("geometria/geometria_light.eot")
-    DataResource geometriLightaEot();
+    @MimeType(MIME_TYPE_EOT)
+    @Source("fonts/geometria/geometrialight-webfont.eot")
+    DataResource geometriaLightEot();
 
-    @DataResource.MimeType(MIME_TYPE_SVG)
-    @Source("geometria/geometria_light.svg")
-    DataResource geometriLightaSvg();
+    @MimeType(MIME_TYPE_SVG)
+    @Source("fonts/geometria/geometrialight-webfont.svg")
+    DataResource geometriaLightSvg();
 
-    @DataResource.MimeType(MIME_TYPE_WOFF)
-    @Source("geometria/geometria_light.woff")
+    @MimeType(MIME_TYPE_WOFF)
+    @Source("fonts/geometria/geometrialight-webfont.woff")
     DataResource geometriaLightWoff();
 
-    @DataResource.MimeType(MIME_TYPE_TTF)
-    @Source("geometria/geometria_light_italic.ttf")
+    @MimeType(MIME_TYPE_TTF)
+    @Source("fonts/geometria/geometrialightitalic-webfont.ttf")
     DataResource geometriaLightItalicTtf();
 
-    @DataResource.MimeType(MIME_TYPE_EOT)
-    @Source("geometria/geometria_light_italic.eot")
+    @MimeType(MIME_TYPE_EOT)
+    @Source("fonts/geometria/geometrialightitalic-webfont.eot")
     DataResource geometriaLightItalicEot();
 
-    @DataResource.MimeType(MIME_TYPE_SVG)
-    @Source("geometria/geometria_light_italic.svg")
+    @MimeType(MIME_TYPE_SVG)
+    @Source("fonts/geometria/geometrialightitalic-webfont.svg")
     DataResource geometriaLightItalicSvg();
 
-    @DataResource.MimeType(MIME_TYPE_WOFF)
-    @Source("geometria/geometria_light_italic.woff")
-    DataResource geometriaWLightItalicWoff();
+    @MimeType(MIME_TYPE_WOFF)
+    @Source("fonts/geometria/geometrialightitalic-webfont.woff")
+    DataResource geometriaLightItalicWoff();
 }

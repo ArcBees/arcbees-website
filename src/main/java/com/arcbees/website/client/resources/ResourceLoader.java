@@ -21,10 +21,9 @@ import javax.inject.Inject;
 public class ResourceLoader {
     @Inject
     ResourceLoader(
-            AppResources appResources,
             FontsResources fontsResources) {
-        appResources.normalize().ensureInjected();
-        appResources.style().ensureInjected();
+        fontsResources.normalize().ensureInjected();
         fontsResources.icons().ensureInjected();
+        fontsResources.style().ensureInjected();
     }
 }

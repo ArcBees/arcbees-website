@@ -5,7 +5,13 @@
         ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator"
         ui:generateLocales="en">
 
+    <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
+
     <g:HTMLPanel>
-        Hello world!
+        <h1>Application view</h1>
+
+        <!-- Main content -->
+        <g:SimplePanel ui:field="main"/>
+
     </g:HTMLPanel>
 </ui:UiBinder>

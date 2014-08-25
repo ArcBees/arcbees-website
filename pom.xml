@@ -26,9 +26,18 @@
         <guice.version>3.0</guice.version>
         <gin.version>2.1.2</gin.version>
         <gssresources.version>1.0-SNAPSHOT</gssresources.version>
+        <gsss.version>1.0-SNAPSHOT</gsss.version>
 
         <webappDirectory>${project.build.directory}/${project.build.finalName}</webappDirectory>
     </properties>
+
+    <repositories>
+        <repository>
+            <id>sonatype.snapshots</id>
+            <name>Sonatype snapshot repository</name>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+        </repository>
+    </repositories>
 
     <dependencies>
         <!-- Google Web Toolkit dependencies -->
@@ -65,6 +74,12 @@
             <groupId>com.github.jdramaix</groupId>
             <artifactId>gssresource</artifactId>
             <version>${gssresources.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.arcbees.gss</groupId>
+            <artifactId>gsss</artifactId>
+            <version>${gsss.version}</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>

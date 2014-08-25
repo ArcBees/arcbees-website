@@ -14,14 +14,14 @@
  * the License.
  */
 
-package com.arcbees.website.client;
+package com.arcbees.website.client.application.bees;
 
-public class NameTokens {
-    public static final String HOME = "/home";
-    public static final String BEES = "/bees";
-    public static final String CAREERS = "/careers";
-    public static final String CONTACT = "/contact";
-    public static final String EXPERTISE = "/expertise";
-    public static final String LICENSE = "/license";
-    public static final String WORK = "/work";
+import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
+
+public class BeesModule extends AbstractPresenterModule {
+    @Override
+    protected void configure() {
+        bindPresenter(BeesPresenter.class, BeesPresenter.MyView.class,
+                BeesView.class, BeesPresenter.MyProxy.class);
+    }
 }

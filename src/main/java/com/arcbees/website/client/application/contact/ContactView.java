@@ -14,14 +14,20 @@
  * the License.
  */
 
-package com.arcbees.website.client;
+package com.arcbees.website.client.application.contact;
 
-public class NameTokens {
-    public static final String HOME = "/home";
-    public static final String BEES = "/bees";
-    public static final String CAREERS = "/careers";
-    public static final String CONTACT = "/contact";
-    public static final String EXPERTISE = "/expertise";
-    public static final String LICENSE = "/license";
-    public static final String WORK = "/work";
+import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.user.client.ui.Widget;
+import com.google.inject.Inject;
+import com.gwtplatform.mvp.client.ViewImpl;
+
+public class ContactView extends ViewImpl implements ContactPresenter.MyView {
+    interface Binder extends UiBinder<Widget, ContactView> {
+    }
+
+    @Inject
+    ContactView(
+            Binder binder) {
+        initWidget(binder.createAndBindUi(this));
+    }
 }

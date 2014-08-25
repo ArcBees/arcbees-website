@@ -95,18 +95,18 @@ public interface FontsResources extends ClientBundle {
         String iconWordpress();
     }
 
-    @Source("fonts/icons/icons.ttf")
+    @Source("css/fonts/icons/icons.ttf")
     DataResource iconsTtf();
 
-    @Source("fonts/icons/icons.eot")
+    @Source("css/fonts/icons/icons.eot")
     DataResource iconsEot();
 
-    @Source("fonts/icons/icons.svg")
+    @Source("css/fonts/icons/icons.svg")
     DataResource iconsSvg();
 
-    @Source("fonts/icons/icons.woff")
+    @Source("css/fonts/icons/icons.woff")
     DataResource iconsWoff();
 
-    @Source("fonts/icons/icons.gss")
+    @Source("css/fonts/icons/icons.gss")
     Icons icons();
 }

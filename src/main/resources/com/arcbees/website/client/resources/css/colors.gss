@@ -4,6 +4,10 @@
 
 @def C_TEXT                         eval("com.arcbees.website.client.resources.Colors.C_TEXT");
 
+@def C_STRIPE_LIGHT                 eval("com.arcbees.website.client.resources.Colors.C_STRIPE_LIGHT");
+@def C_STRIPE_DARK                  eval("com.arcbees.website.client.resources.Colors.C_STRIPE_DARK");
+@def C_STRIPE_COLORED               eval("com.arcbees.website.client.resources.Colors.C_STRIPE_COLORED");
+
 @def C_PRODUCT_CHOSEN               eval("com.arcbees.website.client.resources.Colors.C_PRODUCT_CHOSEN");
 @def C_PRODUCT_GAE                  eval("com.arcbees.website.client.resources.Colors.C_PRODUCT_GAE");
 @def C_PRODUCT_GWTP                 eval("com.arcbees.website.client.resources.Colors.C_PRODUCT_GWTP");

@@ -21,6 +21,10 @@ public class Colors {
 
     public static final String C_TEXT = "#333";
 
+    public static final String C_STRIPE_LIGHT = "#fff";
+    public static final String C_STRIPE_DARK = "#000";
+    public static final String C_STRIPE_COLORED = C_PRIMARY;
+
     public static final String C_PRODUCT_CHOSEN = "#b4d333";
     public static final String C_PRODUCT_GAE = "#36baec";
     public static final String C_PRODUCT_GWTP = "#f7941e";

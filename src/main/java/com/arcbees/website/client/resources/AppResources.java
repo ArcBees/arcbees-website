@@ -16,6 +16,7 @@
 
 package com.arcbees.website.client.resources;
 
+import com.arcbees.gsss.grid.client.GridResources;
 import com.google.gwt.resources.client.GssResource;
 
 public interface AppResources extends FontResources {
@@ -23,6 +24,10 @@ public interface AppResources extends FontResources {
     }
 
     interface Style extends GssResource {
+        String hidden();
+
+        String clearfix();
+
         String stripe();
 
         String light();
@@ -30,11 +35,16 @@ public interface AppResources extends FontResources {
         String dark();
 
         String colored();
+
+        String footer();
     }
 
     @Source("css/normalize.gss")
     Normalize normalize();
 
-    @Source({"css/colors.gss", "fonts/geometria/geometria.gss", "css/style.gss"})
+    @Source({"com/arcbees/gsss/mixin/client/mixins.gss", "css/colors.gss", "fonts/geometria/geometria.gss", "css/style.gss"})
     Style style();
+
+    @Source("com/arcbees/gsss/grid/client/grid.gss")
+    GridResources.Grid grid();
 }

@@ -19,7 +19,8 @@ package com.arcbees.website.client.resources;
 public class Colors {
     public static final String C_PRIMARY = "#fbe605";
 
-    public static final String C_TEXT = "#333";
+    public static final String C_TEXT = "#231f20";
+    public static final String C_TEXT_LIGHT = "#fff";
 
     public static final String C_STRIPE_LIGHT = "#fff";
     public static final String C_STRIPE_DARK = "#000";

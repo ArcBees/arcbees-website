@@ -5,6 +5,7 @@
 
     <inherits name='com.gwtplatform.mvp.MvpWithEntryPoint'/>
     <inherits name="com.google.gwt.resources.GssResource"/>
+    <inherits name="com.arcbees.gsss.grid.Grid"/>
 
     <source path='client'/>
     <source path='shared'/>

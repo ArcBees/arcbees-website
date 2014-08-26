@@ -11,10 +11,6 @@
     ICONS_SVG format('svg');
 }
 
-*[data-icon] {
-    font-size: 21px;
-}
-
 *[data-icon]:before,
 [class^="icon"]:before,
 [class*="icon"]:before {
@@ -22,6 +18,7 @@
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
+    font-size: 200%;
     line-height: 1em;
     text-decoration: inherit;
     text-align: center;

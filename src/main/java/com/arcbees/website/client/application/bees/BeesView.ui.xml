@@ -7,7 +7,19 @@
     <g:HTMLPanel>
 
         <section class="{res.style.stripe}">
-            <h1>Bees homepage</h1>
+
+            <div class="{res.grid.row} {res.style.clearfix}">
+                <div class="{res.grid.col} {res.grid.col_full}">
+                    <h1>Bees homepage</h1>
+                </div>
+                <div class="{res.grid.col} {res.grid.col_1_2}">
+                    <p>demi</p>
+                </div>
+                <div class="{res.grid.col} {res.grid.col_1_2}">
+                    <p>demi</p>
+                </div>
+            </div>
+
         </section>
 
     </g:HTMLPanel>

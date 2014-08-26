@@ -3,12 +3,18 @@
 
 /* -- Init ----------------------------------------------- */
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     font-size: 62.5%;
 }
 
 body {
     color: C_TEXT;
+    font-family: "geometriaLight", Arial, sans-serif;
+    font-size: 1.5rem;
 }
 
 /* -- Headings ------------------------------------------- */
@@ -36,14 +42,12 @@ h3 {
 
 p {
     line-height: 1.7em;
-    font-family: "geometriaLight";
-    font-size: 60px;
 
     margin-bottom: 0.8em;
 }
 
 strong {
-    font-weight: bold;
+    font-family: "geometriaBold", Arial, sans-serif;
 }
 
 em {
@@ -52,11 +56,21 @@ em {
 
 /* -- Classes ------------------------------------------- */
 
-/*.hidden { display: none; visibility: hidden; }
-.invisible { visibility: hidden; }
+.hidden {
+    overflow: hidden;
+
+    height: 1px;
+    width: 1px;
+
+    position: absolute !important;
+
+    clip: rect(1px 1px 1px 1px);
+    /* @alternate */ clip: rect(1px, 1px, 1px, 1px);
+}
+
 .clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
 .clearfix:after { clear: both; }
-.clearfix { zoom: 1; }*/
+.clearfix { zoom: 1; }
 
 /* -- Style --------------------------------------------- */
 
@@ -72,8 +86,31 @@ em {
 
 .stripe.dark {
     background-color: C_STRIPE_DARK;
+    color: C_TEXT_LIGHT;
 }
 
 .stripe.colored {
     background-color: C_STRIPE_COLORED;
+}
+
+/* -> Footer -- */
+
+.footer {
+    background-color: C_STRIPE_DARK;
+    color: C_TEXT_LIGHT;
+    text-align: center;
+    font-size: 1.2rem;
+
+    padding: 2em;
+}
+
+.footer i {
+    font-size: 3rem;
+
+    display: block;
+    margin: -10px 0;
+}
+
+.footer span {
+    text-indent: -9999px;
 }

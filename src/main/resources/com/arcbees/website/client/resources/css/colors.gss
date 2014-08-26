@@ -3,6 +3,7 @@
 @def C_PRIMARY                      eval("com.arcbees.website.client.resources.Colors.C_PRIMARY");
 
 @def C_TEXT                         eval("com.arcbees.website.client.resources.Colors.C_TEXT");
+@def C_TEXT_LIGHT                   eval("com.arcbees.website.client.resources.Colors.C_TEXT_LIGHT");
 
 @def C_STRIPE_LIGHT                 eval("com.arcbees.website.client.resources.Colors.C_STRIPE_LIGHT");
 @def C_STRIPE_DARK                  eval("com.arcbees.website.client.resources.Colors.C_STRIPE_DARK");

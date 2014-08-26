@@ -6,11 +6,19 @@
         ui:generateLocales="en">
 
     <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
+    <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
 
     <g:HTMLPanel>
 
         <!-- Main content -->
         <g:SimplePanel ui:field="main"/>
+
+        <footer class="{res.style.footer}">
+            <p>
+                <i class="{fonts.icons.iconArcbees}"><span class="{res.style.hidden}">Arcbees</span></i>
+                Architects of simplicity
+            </p>
+        </footer>
 
     </g:HTMLPanel>
 </ui:UiBinder>

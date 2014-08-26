@@ -23,6 +23,10 @@ public interface AppResources extends FontResources {
     }
 
     interface Style extends GssResource {
+        String hidden();
+
+        String clearfix();
+
         String stripe();
 
         String light();
@@ -30,6 +34,8 @@ public interface AppResources extends FontResources {
         String dark();
 
         String colored();
+
+        String footer();
     }
 
     @Source("css/normalize.gss")

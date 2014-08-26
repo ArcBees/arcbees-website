@@ -25,6 +25,7 @@ public class ResourceLoader {
             FontResources fontResources) {
         appResources.normalize().ensureInjected();
         appResources.style().ensureInjected();
+        appResources.grid().ensureInjected();
         fontResources.icons().ensureInjected();
     }
 }

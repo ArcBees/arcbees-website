@@ -1,0 +1,14 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+        xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+    <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
+
+    <g:HTMLPanel>
+
+        <section class="{res.style.stripe}">
+            <h1>Expertise homepage</h1>
+        </section>
+
+    </g:HTMLPanel>
+</ui:UiBinder>

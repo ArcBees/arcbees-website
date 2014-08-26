@@ -18,4 +18,10 @@ package com.arcbees.website.client;
 
 public class NameTokens {
     public static final String HOME = "/home";
+    public static final String BEES = "/bees";
+    public static final String CAREERS = "/careers";
+    public static final String CONTACT = "/contact";
+    public static final String EXPERTISE = "/expertise";
+    public static final String LICENSE = "/license";
+    public static final String WORK = "/work";
 }

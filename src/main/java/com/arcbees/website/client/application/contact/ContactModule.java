@@ -1,12 +1,12 @@
 /*
  * Copyright 2014 ArcBees Inc.
- *
+ * 
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
  * the License at
- *
+ * 
  * http://www.apache.org/licenses/LICENSE-2.0
- *
+ * 
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
@@ -14,17 +14,16 @@
  * the License.
  */
 
-package com.arcbees.website.client.resources;
+package com.arcbees.website.client.application.contact;
 
-import javax.inject.Inject;
+import com.arcbees.website.client.application.careers.CareersPresenter;
+import com.arcbees.website.client.application.careers.CareersView;
+import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
-public class ResourceLoader {
-    @Inject
-    ResourceLoader(
-            AppResources appResources,
-            FontResources fontResources) {
-        appResources.normalize().ensureInjected();
-        appResources.style().ensureInjected();
-        fontResources.icons().ensureInjected();
+public class ContactModule extends AbstractPresenterModule {
+    @Override
+    protected void configure() {
+        bindPresenter(ContactPresenter.class, ContactPresenter.MyView.class,
+                ContactView.class, ContactPresenter.MyProxy.class);
     }
 }

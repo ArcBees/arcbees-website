@@ -16,12 +16,27 @@
 
 package com.arcbees.website.client.application;
 
+import com.arcbees.website.client.application.bees.BeesModule;
+import com.arcbees.website.client.application.careers.CareersModule;
+import com.arcbees.website.client.application.contact.ContactModule;
+import com.arcbees.website.client.application.expertise.ExpertiseModule;
+import com.arcbees.website.client.application.home.HomeModule;
+import com.arcbees.website.client.application.license.LicenseModule;
+import com.arcbees.website.client.application.work.WorkModule;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
 public class ApplicationModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
-        bindPresenter(ApplicationPresenter.class, ApplicationPresenter.MyView.class,
-                ApplicationView.class, ApplicationPresenter.MyProxy.class);
+        install(new HomeModule());
+        install(new BeesModule());
+        install(new CareersModule());
+        install(new ContactModule());
+        install(new ExpertiseModule());
+        install(new LicenseModule());
+        install(new WorkModule());
+
+        bindPresenter(ApplicationPresenter.class, ApplicationPresenter.MyView.class, ApplicationView.class,
+                ApplicationPresenter.MyProxy.class);
     }
 }

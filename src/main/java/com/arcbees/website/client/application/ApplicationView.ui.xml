@@ -5,11 +5,12 @@
         ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator"
         ui:generateLocales="en">
 
-    <ui:with field="patate" type="com.arcbees.website.client.resources.FontResources"/>
+    <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
 
     <g:HTMLPanel>
-        <i class="{patate.icons.iconGithub}"></i>
-        <p>loooooool</p>
-        Hello world!
+
+        <!-- Main content -->
+        <g:SimplePanel ui:field="main"/>
+
     </g:HTMLPanel>
 </ui:UiBinder>

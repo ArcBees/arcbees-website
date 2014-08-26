@@ -14,34 +14,32 @@
  * the License.
  */
 
-package com.arcbees.website.client.application;
+package com.arcbees.website.client.application.license;
 
-import com.google.gwt.event.shared.GwtEvent;
+import com.arcbees.website.client.NameTokens;
+import com.arcbees.website.client.application.ApplicationPresenter;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
-import com.gwtplatform.mvp.client.annotations.ContentSlot;
+import com.gwtplatform.mvp.client.annotations.NameToken;
 import com.gwtplatform.mvp.client.annotations.ProxyStandard;
-import com.gwtplatform.mvp.client.proxy.Proxy;
-import com.gwtplatform.mvp.client.proxy.RevealContentHandler;
+import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 
-public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView, ApplicationPresenter.MyProxy> {
-    @ProxyStandard
-    interface MyProxy extends Proxy<ApplicationPresenter> {
-    }
-
-    @ContentSlot
-    public static final GwtEvent.Type<RevealContentHandler<?>> SLOT_MAIN = new GwtEvent.Type<>();
-
+public class LicensePresenter extends Presenter<LicensePresenter.MyView, LicensePresenter.MyProxy> {
     interface MyView extends View {
     }
 
+    @ProxyStandard
+    @NameToken(NameTokens.LICENSE)
+    interface MyProxy extends ProxyPlace<LicensePresenter> {
+    }
+
     @Inject
-    ApplicationPresenter(
+    LicensePresenter(
             EventBus eventBus,
             MyView view,
             MyProxy proxy) {
-        super(eventBus, view, proxy, RevealType.Root);
+        super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN);
     }
 }

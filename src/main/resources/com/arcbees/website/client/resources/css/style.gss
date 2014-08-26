@@ -58,5 +58,22 @@ em {
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }*/
 
-/* -- Style -- */
+/* -- Style --------------------------------------------- */
 
+/* -> Sections -- */
+
+.stripe {
+    padding: 60px 0;
+}
+
+.stripe.light {
+    background-color: C_STRIPE_LIGHT;
+}
+
+.stripe.dark {
+    background-color: C_STRIPE_DARK;
+}
+
+.stripe.colored {
+    background-color: C_STRIPE_COLORED;
+}

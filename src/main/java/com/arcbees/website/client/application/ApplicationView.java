@@ -16,19 +16,29 @@
 
 package com.arcbees.website.client.application;
 
-import com.arcbees.website.client.application.ApplicationPresenter.MyView;
 import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.user.client.ui.IsWidget;
+import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
 
-public class ApplicationView extends ViewImpl implements MyView {
+public class ApplicationView extends ViewImpl implements ApplicationPresenter.MyView {
     interface Binder extends UiBinder<Widget, ApplicationView> {
     }
+
+    @UiField
+    SimplePanel main;
 
     @Inject
     ApplicationView(
             Binder binder) {
         initWidget(binder.createAndBindUi(this));
+    }
+
+    @Override
+    public void setInSlot(Object slot, IsWidget content) {
+        main.setWidget(content);
     }
 }

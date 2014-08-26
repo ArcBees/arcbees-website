@@ -1,0 +1,224 @@
+@def BG_CODE resourceUrl("bgCode");
+
+/* -- Init ----------------------------------------------- */
+
+body {
+    background-color: #f2f2f2;
+}
+
+/* -- Headings ------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-family: "geometriaBold";
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 3rem;
+
+    margin: .175em 0;
+}
+
+h2 {
+    font-size: 2rem;
+
+    margin-bottom: .65em;
+}
+
+p,
+li {
+    line-height: 1.25em;
+    font-size: 1.5rem;
+
+    margin: 0.8em 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+li:before {
+    content: "• ";
+    font-size: 35px;
+
+    margin-right: 7px;
+
+    vertical-align: middle;
+}
+
+/* -- Header ------------------------------------------- */
+
+header {
+    position: relative;
+    padding: 17px 0 20px;
+}
+
+.title {
+    padding-top: 35px;
+}
+
+select {
+    background: #f8f8f8;
+
+    display: inline-block;
+    padding: 3px;
+    margin: 0;
+    width: 230px;
+    height: 40px;
+    border: 2px solid #000;
+
+    position: absolute;
+
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    outline: none;
+
+    cursor:pointer;
+}
+
+.logo {
+    color: #fff;
+    font-size: 100px;
+
+    position: absolute;
+    top: calc(50% - 96px);
+    left: calc(50% - 50px); 
+}
+
+.github {
+    font-size: 33px;
+
+    position: absolute;
+    right: 0;
+    top: 72px;
+}
+
+.search {
+    font-size: 17px;
+
+    position: absolute;
+    right: 16px;
+    top: 20px;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding-right: 245px;
+    width: 980px;
+
+    position: relative;
+    z-index: 99;
+}
+
+@media (max-width: 979px) {
+    .wrapper {
+        width: 650px;
+    }
+}
+
+/* -- Main section ------------------------------------------- */
+
+.main {
+    padding-top: 60px;
+}
+
+.main h2:before {
+    content: "#";
+    font-family: "geometria";
+
+    margin: 0 14px 0 -27px;
+}
+
+.code,
+.note {
+    background-image: BG_CODE;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+}
+
+.code .wrapper,
+.note .wrapper {
+    background-color: #fff;
+
+    margin-bottom: 42px;
+    margin-top: 22px;
+    padding: 20px 17px;
+}
+
+.note .wrapper {
+    padding: 1px 12px;
+}
+
+/* -- Support ------------------------------------------- */
+
+.support {
+    text-align: center;
+
+    margin-top: 80px;
+}
+
+.support h2 {
+    font-size: 4rem;
+
+    margin-bottom: .4em;
+}
+
+.btn {
+    display: inline-block;
+    border: 2px solid #000;
+    padding: 8px 15px;
+}
+
+a.btn {
+    text-decoration: none;
+    color: #000;
+}
+
+.backTop {
+    font-size: 2rem;
+
+    margin-top: 45px;
+
+    @mixin rotate_180_ccw();
+}
+
+/* -- Chosen ------------------------------------------- */
+
+.chosen header {
+    background-color: C_PRODUCT_CHOSEN;
+}
+
+.chosen h2:before {
+    color: C_PRODUCT_CHOSEN;
+}
+
+.chosen li:before {
+    color: C_PRODUCT_CHOSEN;
+}
+
+/* -- Elastic ------------------------------------------- */
+
+.elastic header {
+    background-color: C_PRODUCT_ELASTIC;
+}
+
+.elastic h2:before {
+    color: C_PRODUCT_ELASTIC;
+}
+
+.elastic li:before {
+    color: C_PRODUCT_ELASTIC;
+}

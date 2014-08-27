@@ -9,7 +9,7 @@
 
     <ui:with field="doc" type="com.arcbees.website.client.resources.DocsResources"/>
 
-    <g:HTMLPanel>
+    <g:HTMLPanel styleName="{doc.style.doc}">
         <!-- Docs content -->
         <g:SimplePanel ui:field="docs"/>
         <section class="{doc.style.support}">

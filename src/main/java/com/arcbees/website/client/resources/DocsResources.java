@@ -47,6 +47,8 @@ public interface DocsResources extends FontResources {
         String elastic();
 
         String note();
+
+        String doc();
     }
 
     @Source("img/docs/bgCode.gif")

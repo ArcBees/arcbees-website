@@ -51,7 +51,7 @@ h3 {
 
 /* -- Elements ------------------------------------------- */
 
-p, 
+p,
 li {
     line-height: 1.25em;
     font-size: 1.5rem;
@@ -124,9 +124,16 @@ em {
 }
 
 .menu ul {
-    list-style-type: none;
     padding: 0;
+
+    list-style-type: none;
  }
+
+.menu li {
+    line-height: 1em;
+
+    margin-bottom: 0;
+}
 
 .menu li a {
     display: block;
@@ -172,12 +179,13 @@ em {
 }
 
 .socialmedias ul {
-    list-style-type: none;
     text-align: center;
 
     width: 100%;
     padding: 0;
     margin: 0 0 0 0.9em;
+
+    list-style-type: none;
 }
 
 .socialmedias li {

@@ -6,6 +6,21 @@ body {
     background-color: #f2f2f2;
 }
 
+.wrapper {
+    margin: 0 auto;
+    padding-right: 245px;
+    width: 980px;
+
+    position: relative;
+    z-index: 99;
+}
+
+@media (max-width: 979px) {
+    .wrapper {
+        width: 650px;
+    }
+}
+
 /* -- Headings ------------------------------------------- */
 
 h1,
@@ -47,7 +62,7 @@ ul {
 }
 
 li:before {
-    content: "• ";
+    content: "\2022";
     font-size: 35px;
 
     margin-right: 7px;
@@ -58,8 +73,9 @@ li:before {
 /* -- Header ------------------------------------------- */
 
 header {
-    position: relative;
     padding: 17px 0 20px;
+
+    position: relative;
 }
 
 .title {
@@ -78,9 +94,7 @@ select {
 
     position: absolute;
 
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 0px;
+    @mixin rounded(0px);
     -webkit-appearance:none;
     -moz-appearance:none;
     appearance:none;
@@ -114,21 +128,6 @@ select {
     top: 20px;
 }
 
-.wrapper {
-    margin: 0 auto;
-    padding-right: 245px;
-    width: 980px;
-
-    position: relative;
-    z-index: 99;
-}
-
-@media (max-width: 979px) {
-    .wrapper {
-        width: 650px;
-    }
-}
-
 /* -- Main section ------------------------------------------- */
 
 .main {
@@ -153,8 +152,7 @@ select {
 .note .wrapper {
     background-color: #fff;
 
-    margin-bottom: 42px;
-    margin-top: 22px;
+    margin: 22px auto 42px;
     padding: 20px 17px;
 }
 

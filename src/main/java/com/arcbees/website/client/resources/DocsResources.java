@@ -22,7 +22,6 @@ import com.google.gwt.resources.client.ImageResource;
 public interface DocsResources extends FontResources {
 
     interface Style extends GssResource {
-
         String wrapper();
 
         String code();

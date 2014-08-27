@@ -5,7 +5,6 @@
     <ui:with field="docs" type="com.arcbees.website.client.resources.DocsResources"/>
 
     <g:HTMLPanel styleName="{docs.style.elastic}">
-
         <header>
             <div class="{docs.style.wrapper}">
                 <div class="{docs.style.title}">

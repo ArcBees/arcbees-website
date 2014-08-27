@@ -6,9 +6,7 @@
 @font-face {
     font-family: 'icons';
     src: ICONS_EOT;
-    src: ICONS_WOFF format('woff'),
-    ICONS_TTF format('truetype'),
-    ICONS_SVG format('svg');
+    src: ICONS_WOFF format('woff'), ICONS_TTF format('truetype'), ICONS_SVG format('svg');
 }
 
 *[data-icon]:before,
@@ -18,7 +16,7 @@
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
-    font-size: 200%;
+    font-size: 100%;
     line-height: 1em;
     text-decoration: inherit;
     text-align: center;
@@ -37,44 +35,44 @@
 
 /* Icons code - legend for the data-icon */
 /* ------------------------------ */
-@external iconSignCode iconArcbees iconArrowDown iconArrowOutside iconHexagon iconLadder iconBees iconChosen iconClose
-iconDevTime iconFb iconGae iconGithub iconGPlus iconGwtp iconInfo iconJukito iconLkdIn iconMapPin iconMenu iconQ1a
-iconQ1b iconQ1c iconQ2a iconQ2b iconQ2c iconQ3a iconQ3b iconQ3c iconQ4a iconQ4b iconQ4c iconSearch iconShare iconTwit
-iconWordpress;
+@external iconArcbees iconSignCode iconArcbeesName iconArrowOutside iconArrowDown iconBeer iconChosen iconDevTime
+iconCode iconHeart iconClose iconFb iconFbSquare iconGae iconGitHub iconGPlus iconBees iconGwtp iconHeadQuestion
+iconHero iconHive iconInfinite iconInfo iconJukito iconLike iconLkd iconMapPin iconPyramid iconRadar iconRubic
+iconSearch iconShare iconSkull iconTrophe iconTwitter iconWordpress;
 
-.iconSignCode:before { content: "\e600";}
 .iconArcbees:before { content: "\e601";}
-.iconArrowDown:before { content: "\e602";}
+.iconSignCode:before { content: "\e600";}
+.iconArcbeesName:before { content: "\e613";}
 .iconArrowOutside:before { content: "\e603";}
-.iconHexagon:before { content: "\e604";}
-.iconLadder:before { content: "\e605";}
-.iconBees:before { content: "\e606";}
+.iconArrowDown:before { content: "\e602";}
+.iconBeer:before { content: "\e61b";}
 .iconChosen:before { content: "\e607";}
-.iconClose:before { content: "\e608";}
 .iconDevTime:before { content: "\e609";}
+.iconCode:before { content: "\e61a";}
+.iconHeart:before { content: "\e63b";}
+.iconClose:before { content: "\e608";}
 .iconFb:before { content: "\e60a";}
+.iconFbSquare:before { content: "\e64a";}
 .iconGae:before { content: "\e60b";}
-.iconGithub:before { content: "\e60c";}
+.iconGitHub:before { content: "\e60c";}
 .iconGPlus:before { content: "\e60d";}
+.iconBees:before { content: "\e606";}
 .iconGwtp:before { content: "\e60e";}
+.iconHeadQuestion:before { content: "\e63a";}
+.iconHero:before { content: "\e64c";}
+.iconHive:before { content: "\e604";}
+.iconInfinite:before { content: "\e63c";}
 .iconInfo:before { content: "\e60f";}
 .iconJukito:before { content: "\e610";}
-.iconLkdIn:before { content: "\e611";}
+.iconLike:before { content: "\e62b";}
+.iconLkd:before { content: "\e611";}
 .iconMapPin:before { content: "\e612";}
-.iconMenu:before { content: "\e613";}
-.iconQ1a:before { content: "\e614";}
-.iconQ1b:before { content: "\e615";}
-.iconQ1c:before { content: "\e616";}
-.iconQ2a:before { content: "\e617";}
-.iconQ2b:before { content: "\e618";}
-.iconQ2c:before { content: "\e619";}
-.iconQ3a:before { content: "\e61a";}
-.iconQ3b:before { content: "\e61b";}
-.iconQ3c:before { content: "\e61c";}
-.iconQ4a:before { content: "\e61d";}
-.iconQ4b:before { content: "\e61e";}
-.iconQ4c:before { content: "\e61f";}
+.iconPyramid:before { content: "\e605";}
+.iconRadar:before { content: "\e61c";}
+.iconRubic:before { content: "\e64b";}
 .iconSearch:before { content: "\e620";}
 .iconShare:before { content: "\e621";}
-.iconTwit:before { content: "\e622";}
+.iconSkull:before { content: "\e62a";}
+.iconTrophe:before { content: "\e62c";}
+.iconTwitter:before { content: "\e622";}
 .iconWordpress:before { content: "\e623";}

@@ -11,77 +11,7 @@ public interface FontResources extends ClientBundle {
     String MIME_TYPE_SVG = "image/svg+xml";
 
     public interface Icons extends GssResource {
-        String iconSignCode();
-
         String iconArcbees();
-
-        String iconArrowDown();
-
-        String iconArrowOutside();
-
-        String iconHexagon();
-
-        String iconLadder();
-
-        String iconBees();
-
-        String iconChosen();
-
-        String iconClose();
-
-        String iconDevTime();
-
-        String iconFb();
-
-        String iconGae();
-
-        String iconGithub();
-
-        String iconGPlus();
-
-        String iconGwtp();
-
-        String iconInfo();
-
-        String iconJukito();
-
-        String iconLkdIn();
-
-        String iconMapPin();
-
-        String iconMenu();
-
-        String iconQ1a();
-
-        String iconQ1b();
-
-        String iconQ1c();
-
-        String iconQ2a();
-
-        String iconQ2b();
-
-        String iconQ2c();
-
-        String iconQ3a();
-
-        String iconQ3b();
-
-        String iconQ3c();
-
-        String iconQ4a();
-
-        String iconQ4b();
-
-        String iconQ4c();
-
-        String iconSearch();
-
-        String iconShare();
-
-        String iconTwit();
-
-        String iconWordpress();
     }
 
     @ClientBundle.Source("fonts/icons/icons.gss")

@@ -18,7 +18,11 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
 
                 <div class="{res.grid.col} {res.grid.col_1_2}">
-                    <h2 class="{res.style.slogan}">Bee <span>the <strong>best</strong></span></h2>
+                    <h2 class="{res.style.slogan}">Bee
+                        <span>the
+                            <strong>best</strong>
+                        </span>
+                    </h2>
                 </div>
 
                 <div class="{res.grid.col} {res.grid.col_1_2} {res.style.sloganSide}">
@@ -57,19 +61,55 @@
         </section>
 
         <section class="{res.style.stripe} {res.style.dark} {res.style.centered}">
-            <h2>Our quest</h2>
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <h2>Our quest</h2>
+                <p>Create, build applications that optimise process, habits and thinking, demonstrate value and
+                    simplicity, and transform the way people work around the world.
+                </p>
+            </div>
         </section>
 
-        <section class="{res.style.stripe} {res.style.light}">
-            <h2>Architects</h2>
+        <section class="{res.style.stripe} {res.style.light} {res.style.centered}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <h2>Architects</h2>
+                <p>We are architects developer</p>
+            </div>
         </section>
 
         <section class="{res.style.stripe} {res.style.colored}">
-            <h2>Bees</h2>
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <div class="{res.grid.col} {res.grid.col_full} {res.style.centered}">
+                    <h2>Bees</h2>
+                </div>
+                <div class="{res.grid.col} {res.grid.col_1_2}">
+                    <p>L'homme a fait de l'abeille le symbole de l'organisation sociale, d'intelligence supérieure de
+                        sagesse divine par la perfection de son travail.
+                    </p>
+                    <p>Les abeilles en savent quelque chose en ce qui concerne l’ingénierie et la conception. La forme
+                        hexagonale des alvéoles est le résultat de millénaires de sélection, pour obtenir le système de
+                        construction le plus efficace, moins coûteux et plus fort.
+                    </p>
+                    <p>La construction de la ruche, chef-d’œuvre d’ingénierie et demeure de l’abeille domestique, repose
+                        sur une structure très connue : le rayon de miel.
+                    </p>
+                </div>
+                <div class="{res.grid.col} {res.grid.col_1_2}">
+                    <p>Cette étonnante structure est faite d’une suite d’hexagones mathématiquement parfaits et organisés
+                        de manière à optimiser l’espace tout en minimisant la quantité du matériau requis pour leur
+                        fabrication.
+                    </p>
+                    <p>Un exploit pratiquement inégalé en matière d’efficacité et de génie. Compte tenu des efforts et du
+                        savoir-faire qui doivent être déployés pour construire une ruche, c’est presque un euphémisme de
+                        dire qu’on « s’active comme une abeille ».
+                    </p>
+                </div>
+            </div>
         </section>
 
-        <section class="{res.style.stripe} {res.style.light}">
-            <h2>Architects of simplicity</h2>
+        <section class="{res.style.stripe} {res.style.light} {res.style.centered}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <h2>Architects of simplicity</h2>
+            </div>
         </section>
 
     </g:HTMLPanel>

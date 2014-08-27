@@ -37,6 +37,18 @@ public interface AppResources extends FontResources {
         String colored();
 
         String footer();
+
+        String menu();
+
+        String sidebar();
+
+        String content();
+
+        String backHome();
+
+        String menuContact();
+
+        String socialmedias();
     }
 
     @Source("css/normalize.gss")

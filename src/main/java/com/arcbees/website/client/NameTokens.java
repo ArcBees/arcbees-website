@@ -17,11 +17,19 @@
 package com.arcbees.website.client;
 
 public class NameTokens {
-    public static final String HOME = "/home";
+    public static final String HOME = "/";
     public static final String BEES = "/bees";
     public static final String CAREERS = "/careers";
     public static final String CONTACT = "/contact";
+    public static final String DEVELOPPERS = "/developpers";
     public static final String EXPERTISE = "/expertise";
     public static final String LICENSE = "/license";
+    public static final String SHOP = "/shop";
     public static final String WORK = "/work";
+
+    public static final String PRODUCTS = "/products";
+    public static final String GAE = PRODUCTS + "/gae-stydio";
+    public static final String JUKITO = PRODUCTS + "/jukito";
+    public static final String GWTP = PRODUCTS + "/gwtp";
+
 }

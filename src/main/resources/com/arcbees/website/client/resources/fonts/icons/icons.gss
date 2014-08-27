@@ -24,7 +24,7 @@
     text-align: center;
     text-transform: none;
     content: attr(data-icon);
-    vertical-align: baseline;
+    vertical-align: middle;
 
     display: inline-block;
 

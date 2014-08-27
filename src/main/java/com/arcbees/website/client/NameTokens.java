@@ -24,4 +24,8 @@ public class NameTokens {
     public static final String EXPERTISE = "/expertise";
     public static final String LICENSE = "/license";
     public static final String WORK = "/work";
+
+    public static final String DOCS = "/docs";
+    public static final String CHOSEN = DOCS + "/chosen";
+    public static final String ELASTIC = DOCS + "/elastic";
 }

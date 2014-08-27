@@ -19,6 +19,7 @@ package com.arcbees.website.client.application;
 import com.arcbees.website.client.application.bees.BeesModule;
 import com.arcbees.website.client.application.careers.CareersModule;
 import com.arcbees.website.client.application.contact.ContactModule;
+import com.arcbees.website.client.application.docs.DocsModule;
 import com.arcbees.website.client.application.expertise.ExpertiseModule;
 import com.arcbees.website.client.application.home.HomeModule;
 import com.arcbees.website.client.application.license.LicenseModule;
@@ -35,6 +36,7 @@ public class ApplicationModule extends AbstractPresenterModule {
         install(new ExpertiseModule());
         install(new LicenseModule());
         install(new WorkModule());
+        install(new DocsModule());
 
         bindPresenter(ApplicationPresenter.class, ApplicationPresenter.MyView.class, ApplicationView.class,
                 ApplicationPresenter.MyProxy.class);

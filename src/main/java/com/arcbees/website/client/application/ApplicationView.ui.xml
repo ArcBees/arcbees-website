@@ -71,7 +71,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="{fonts.icons.iconTwit}">
+                        <a href="#" class="{fonts.icons.iconTwitter}">
                             <span class="{res.style.hidden}">Twitter</span>
                         </a>
                     </li>
@@ -81,12 +81,12 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="{fonts.icons.iconLkdIn}">
+                        <a href="#" class="{fonts.icons.iconLkd}">
                             <span class="{res.style.hidden}">LinkedIn</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="{fonts.icons.iconGithub}">
+                        <a href="#" class="{fonts.icons.iconGitHub}">
                             <span class="{res.style.hidden}">GitHub</span>
                         </a>
                     </li>

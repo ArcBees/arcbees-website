@@ -12,6 +12,24 @@ public interface FontResources extends ClientBundle {
 
     public interface Icons extends GssResource {
         String iconArcbees();
+
+        String iconGae();
+
+        String iconJukito();
+
+        String iconGwtp();
+
+        String iconFb();
+
+        String iconGPlus();
+
+        String iconWordpress();
+
+        String iconLkd();
+
+        String iconGitHub();
+
+        String iconTwitter();
     }
 
     @ClientBundle.Source("fonts/icons/icons.gss")

@@ -56,7 +56,7 @@
             </div>
         </section>
 
-        <section class="{res.style.stripe} {res.style.dark}">
+        <section class="{res.style.stripe} {res.style.dark} {res.style.centered}">
             <h2>Our quest</h2>
         </section>
 

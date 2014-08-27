@@ -19,6 +19,17 @@ body {
 
 /* -- Headings ------------------------------------------- */
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-family: "geometriaBold";
+    text-transform: uppercase;
+}
+
 h1 {
     font-size: 4rem;
     font-weight: 400;
@@ -40,14 +51,17 @@ h3 {
 
 /* -- Elements ------------------------------------------- */
 
-p {
-    line-height: 1.7em;
+p, 
+li {
+    line-height: 1.25em;
+    font-size: 1.5rem;
 
     margin-bottom: 0.8em;
 }
 
 strong {
     font-family: "geometriaBold", Arial, sans-serif;
+    font-weight: normal;
 }
 
 em {

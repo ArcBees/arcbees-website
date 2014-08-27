@@ -16,7 +16,7 @@
             <nav role="navigation" class="{res.style.menu}">
                 <ul>
                     <li>
-                        <a href="#{HOME}" class="{fonts.icons.iconArcbees} {res.style.backHome}">
+                        <a href="#{HOME}" class="{fonts.icons.iconArcbeesName} {res.style.backHome}">
                             <span class="{res.style.hidden}">Back to homepage</span>
                         </a>
                     </li>
@@ -106,7 +106,9 @@
 
             <footer class="{res.style.footer}">
                 <p>
-                    <i class="{fonts.icons.iconArcbees}"><span class="{res.style.hidden}">Arcbees</span></i>
+                    <i class="{fonts.icons.iconArcbees}">
+                        <span class="{res.style.hidden}">Arcbees</span>
+                    </i>
                     Architects of simplicity
                 </p>
             </footer>

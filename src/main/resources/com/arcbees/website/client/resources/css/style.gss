@@ -172,7 +172,7 @@ em {
 
 .menu li a {
     display: block;
-    padding: 7px 10px 7px 70px;
+    padding: 7px 10px 9px 70px;
 
     @mixin transition(color, .2s);
 }
@@ -185,8 +185,7 @@ em {
 }
 
 .menu ul ul a::before {
-    margin-left: -7px;
-    margin-top: -3px;
+    margin: -2px 8px 0 0;
 }
 
 .menu li a:hover {
@@ -194,7 +193,7 @@ em {
 }
 
 .menu li a.backHome {
-    font-size: 4.5rem;
+    font-size: 8.3rem;
     color: #fff;
 
     margin-left: 12px;
@@ -229,9 +228,7 @@ em {
 
 .socialmedias a {
     color: #6f6f6f;
-    font-size: 1.8rem;
-
-    margin-left: -0.9em;
+    font-size: 2rem;
 
     @mixin transition(color, .2s);
 }
@@ -294,11 +291,15 @@ em {
     padding: 2em;
 }
 
+.footer p {
+    font-size: 1rem;
+}
+
 .footer i {
-    font-size: 3rem;
+    font-size: 4rem;
 
     display: block;
-    margin: -10px 0;
+    margin: -10px 0 3px;
 }
 
 .footer span {

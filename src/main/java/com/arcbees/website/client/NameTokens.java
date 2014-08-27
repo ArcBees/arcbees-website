@@ -31,5 +31,4 @@ public class NameTokens {
     public static final String GAE = PRODUCTS + "/gae-stydio";
     public static final String JUKITO = PRODUCTS + "/jukito";
     public static final String GWTP = PRODUCTS + "/gwtp";
-
 }

@@ -2,23 +2,116 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
         xmlns:g="urn:import:com.google.gwt.user.client.ui"
         ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
-        ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator"
+        ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
         ui:generateLocales="en">
+
+    <ui:import field="com.arcbees.website.client.NameTokens.*"/>
 
     <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
     <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
 
     <g:HTMLPanel>
 
-        <!-- Main content -->
-        <g:SimplePanel ui:field="main"/>
+        <div class="{res.style.sidebar}">
+            <nav role="navigation" class="{res.style.menu}">
+                <ul>
+                    <li>
+                        <a href="#{HOME}" class="{fonts.icons.iconArcbees} {res.style.backHome}">
+                            <span class="{res.style.hidden}">Back to homepage</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#{HOME}">About</a>
+                    </li>
+                    <li>
+                        <a href="#{EXPERTISE}">Expertise</a>
+                    </li>
+                    <li>
+                        <a href="#{WORK}">Work</a>
+                    </li>
+                    <li>
+                        <a href="#{PRODUCTS}">Products</a>
+                        <ul>
+                            <li>
+                                <a href="#{GAE}" class="{fonts.icons.iconGae}">GAE Studio</a>
+                            </li>
+                            <li>
+                                <a href="#{JUKITO}" class="{fonts.icons.iconJukito}">Jukito</a>
+                            </li>
+                            <li>
+                                <a href="#{GWTP}" class="{fonts.icons.iconGwtp}">GWTP</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#{LICENSE}">License</a>
+                    </li>
+                    <li>
+                        <a href="#{BEES}">Our bees</a>
+                    </li>
+                    <li>
+                        <a href="#{CAREERS}">Careers</a>
+                    </li>
+                    <li>
+                        <a href="#{CONTACT}" class="{res.style.menuContact}">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#{DEVELOPPERS}">Developpers</a>
+                    </li>
+                    <li>
+                        <a href="#{SHOP}">Shop</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="{res.style.socialmedias}">
+                <ul>
+                    <li>
+                        <a href="#" class="{fonts.icons.iconFb}">
+                            <span class="{res.style.hidden}">Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="{fonts.icons.iconTwit}">
+                            <span class="{res.style.hidden}">Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="{fonts.icons.iconGPlus}">
+                            <span class="{res.style.hidden}">Google</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="{fonts.icons.iconLkdIn}">
+                            <span class="{res.style.hidden}">LinkedIn</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="{fonts.icons.iconGithub}">
+                            <span class="{res.style.hidden}">GitHub</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="{fonts.icons.iconWordpress}">
+                            <span class="{res.style.hidden}">Wordpress</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
-        <footer class="{res.style.footer}">
-            <p>
-                <i class="{fonts.icons.iconArcbees}"><span class="{res.style.hidden}">Arcbees</span></i>
-                Architects of simplicity
-            </p>
-        </footer>
+        <div class="{res.style.content}">
+
+            <!-- Main content -->
+            <g:SimplePanel ui:field="main"/>
+
+            <footer class="{res.style.footer}">
+                <p>
+                    <i class="{fonts.icons.iconArcbees}"><span class="{res.style.hidden}">Arcbees</span></i>
+                    Architects of simplicity
+                </p>
+            </footer>
+
+        </div>
 
     </g:HTMLPanel>
 </ui:UiBinder>

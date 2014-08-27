@@ -28,6 +28,5 @@ public class ResourceLoader {
         appResources.style().ensureInjected();
         appResources.grid().ensureInjected();
         fontResources.icons().ensureInjected();
-        docsResources.style().ensureInjected();
     }
 }

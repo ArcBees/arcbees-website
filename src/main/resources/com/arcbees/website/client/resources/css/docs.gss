@@ -6,7 +6,7 @@ body {
     background-color: #f2f2f2;
 }
 
-.wrapper {
+.doc .wrapper {
     margin: 0 auto;
     padding-right: 245px;
     width: 980px;
@@ -16,52 +16,52 @@ body {
 }
 
 @media (max-width: 979px) {
-    .wrapper {
+    .doc .wrapper {
         width: 650px;
     }
 }
 
 /* -- Headings ------------------------------------------- */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.doc h1,
+.doc h2,
+.doc h3,
+.doc h4,
+.doc h5,
+.doc h6 {
     font-weight: normal;
     font-family: "geometriaBold";
     text-transform: uppercase;
 }
 
-h1 {
+.doc h1 {
     font-size: 3rem;
 
     margin: .175em 0;
 }
 
-h2 {
+.doc h2 {
     font-size: 2rem;
 
     margin-bottom: .65em;
 }
 
-p,
-li {
+.doc p,
+.doc li {
     line-height: 1.25em;
     font-size: 1.5rem;
 
     margin: 0.8em 0;
 }
 
-ul {
+.doc ul {
     margin: 0;
     padding: 0;
 
     list-style: none;
 }
 
-li:before {
+.doc li:before {
     content: "\2022";
     font-size: 35px;
 
@@ -72,17 +72,17 @@ li:before {
 
 /* -- Header ------------------------------------------- */
 
-header {
+.doc header {
     padding: 17px 0 20px;
 
     position: relative;
 }
 
-.title {
+.doc .title {
     padding-top: 35px;
 }
 
-select {
+.doc select {
     background: #f8f8f8;
 
     display: inline-block;
@@ -103,7 +103,7 @@ select {
     cursor:pointer;
 }
 
-.logo {
+.doc .logo {
     color: #fff;
     font-size: 10.6rem;
 
@@ -112,7 +112,7 @@ select {
     left: calc(50% - 50px); 
 }
 
-.github {
+.doc .github {
     font-size: 3.6rem;
 
     position: absolute;
@@ -120,7 +120,7 @@ select {
     top: 77px;
 }
 
-.search {
+.doc .search {
     font-size: 1.7rem;
 
     position: absolute;
@@ -130,62 +130,62 @@ select {
 
 /* -- Main section ------------------------------------------- */
 
-.main {
+.doc .main {
     padding-top: 60px;
 }
 
-.main h2:before {
+.doc .main h2:before {
     content: "#";
     font-family: "geometria";
 
     margin: 0 14px 0 -27px;
 }
 
-.code,
-.note {
+.doc .code,
+.doc .note {
     background-image: BG_CODE;
     -webkit-background-size: 100%;
     background-size: 100%;
 }
 
-.code .wrapper,
-.note .wrapper {
+.doc .code .wrapper,
+.doc .note .wrapper {
     background-color: #fff;
 
     margin: 22px auto 42px;
     padding: 20px 17px;
 }
 
-.note .wrapper {
+.doc .note .wrapper {
     padding: 1px 12px;
 }
 
 /* -- Support ------------------------------------------- */
 
-.support {
+.doc .support {
     text-align: center;
 
     margin-top: 80px;
 }
 
-.support h2 {
+.doc .support h2 {
     font-size: 4rem;
 
     margin-bottom: .4em;
 }
 
-.btn {
+.doc .btn {
     display: inline-block;
     border: 2px solid #000;
     padding: 8px 15px;
 }
 
-a.btn {
+.doc a.btn {
     text-decoration: none;
     color: #000;
 }
 
-.backTop {
+.doc .backTop {
     font-size: 2.5rem;
 
     margin-top: 45px;
@@ -195,28 +195,28 @@ a.btn {
 
 /* -- Chosen ------------------------------------------- */
 
-.chosen header {
+.doc .chosen header {
     background-color: C_PRODUCT_CHOSEN;
 }
 
-.chosen h2:before {
+.doc .chosen h2:before {
     color: C_PRODUCT_CHOSEN;
 }
 
-.chosen li:before {
+.doc .chosen li:before {
     color: C_PRODUCT_CHOSEN;
 }
 
 /* -- Elastic ------------------------------------------- */
 
-.elastic header {
+.doc .elastic header {
     background-color: C_PRODUCT_ELASTIC;
 }
 
-.elastic h2:before {
+.doc .elastic h2:before {
     color: C_PRODUCT_ELASTIC;
 }
 
-.elastic li:before {
+.doc .elastic li:before {
     color: C_PRODUCT_ELASTIC;
 }

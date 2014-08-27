@@ -4,7 +4,7 @@
 
     <ui:with field="docs" type="com.arcbees.website.client.resources.DocsResources"/>
 
-    <g:HTMLPanel styleName="{docs.style.chosen}">
+    <g:HTMLPanel styleName="{docs.style.chosen} {docs.style.doc}">
         <header>
             <div class="{docs.style.wrapper}">
                 <div class="{docs.style.title}">

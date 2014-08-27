@@ -51,7 +51,7 @@ h3 {
 
 /* -- Elements ------------------------------------------- */
 
-p, 
+p,
 li {
     line-height: 1.25em;
     font-size: 1.5rem;
@@ -88,6 +88,135 @@ em {
 
 /* -- Style --------------------------------------------- */
 
+/* -> Main nav -- */
+
+.sidebar {
+    background-color: #1c1c1c;
+
+    height: 100%;
+    width: 255px;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.sidebar:hover ~ .content{
+    right: -255px;
+}
+
+.sidebar:hover ~ .menu {
+    color: #fff;
+}
+
+.sidebar:hover ~ .menu:before {
+
+}
+
+.sidebar a {
+    color: #6f6f6f;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    font-family: "geometriaBold", Arial, sans-serif;
+}
+
+.menu ul {
+    padding: 0;
+
+    list-style-type: none;
+ }
+
+.menu li {
+    line-height: 1em;
+
+    margin-bottom: 0;
+}
+
+.menu li a {
+    display: block;
+    padding: 7px 10px 7px 70px;
+
+    @mixin transition(color, .2s);
+}
+
+.menu ul ul a {
+    font-family: "geometria", Arial, sans-serif;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.menu ul ul a::before {
+    margin-left: -7px;
+    margin-top: -3px;
+}
+
+.menu li a:hover {
+    color: #fff;
+}
+
+.menu li a.backHome {
+    font-size: 4.5rem;
+    color: #fff;
+
+    margin-left: 12px;
+    margin-bottom: 1em;
+}
+
+.menu li a.menuContact {
+    margin: 4em 0;
+}
+
+.socialmedias {
+    width: 100%;
+
+    position: absolute;
+    bottom: 1em;
+    left: 0;
+}
+
+.socialmedias ul {
+    text-align: center;
+
+    width: 100%;
+    padding: 0;
+    margin: 0 0 0 0.9em;
+
+    list-style-type: none;
+}
+
+.socialmedias li {
+    display: inline-block;
+}
+
+.socialmedias a {
+    color: #6f6f6f;
+    font-size: 1.8rem;
+
+    margin-left: -0.9em;
+
+    @mixin transition(color, .2s);
+}
+
+.socialmedias a:hover {
+    color: #fff;
+}
+
+/* -> Main -- */
+
+.content {
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    right: -50px;
+
+    @mixin transition(right, .5s);
+}
+
 /* -> Sections -- */
 
 .stripe {
@@ -114,6 +243,7 @@ em {
     color: C_TEXT_LIGHT;
     text-align: center;
     font-size: 1.2rem;
+    text-transform: uppercase;
 
     padding: 2em;
 }

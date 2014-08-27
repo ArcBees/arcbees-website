@@ -102,7 +102,7 @@
         <div class="{res.style.content}">
 
             <!-- Main content -->
-            <g:SimplePanel ui:field="main"/>
+            <g:SimplePanel ui:field="main" styleName="{res.style.main}"/>
 
             <footer class="{res.style.footer}">
                 <p>

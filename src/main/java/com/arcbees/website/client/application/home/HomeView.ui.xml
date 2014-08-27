@@ -1,17 +1,59 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-        xmlns:g="urn:import:com.google.gwt.user.client.ui">
+             xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
     <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
 
     <g:HTMLPanel>
 
         <section class="{res.style.stripe} {res.style.colored}">
-            <h1>Yeah I'm H1</h1>
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+
+                <h1>Yeah I'm H1</h1>
+
+            </div>
         </section>
 
         <section class="{res.style.stripe} {res.style.light}">
-            <h2>Bee the best</h2>
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+
+                <div class="{res.grid.col} {res.grid.col_1_2}">
+                    <h2 class="{res.style.slogan}">Bee <span>the <strong>best</strong></span></h2>
+                </div>
+
+                <div class="{res.grid.col} {res.grid.col_1_2} {res.style.sloganSide}">
+                    <p>
+                        <strong>Arcbees est une entreprise regroupant plusieurs passionnés des technologies et de
+                            l’architecture logiciel avides de résoudre les problèmes complexes et concrets auxquels
+                            font face les entreprises.
+                        </strong>
+                    </p>
+                    <p>Armés de cette vision,
+                        <strong>Philippe Beaudoin et Christian Goudreau</strong>
+                        ont conçu
+                        <strong>GWT-Platform, un outil Open Source de création d’applications web</strong>
+                        doté d’une incroyable capacité d’adaptation accélérant la vitesse de développement des
+                        applications afin d’améliorer leur efficacité de production.
+                    </p>
+                    <p>Rapidement, GWT-Platform a généré une importante demande de soutien de la part de ses
+                        utilisateurs et les deux entrepreneurs n’ont eu d’autres choix que de créer officiellement
+                        Arcbees le 16 juillet 2010 afin de répondre à ces requêtes.
+                    </p>
+                    <h3>Récompensée et reconnue</h3>
+                    <p>De plus, malgré le jeune âge de l’entreprise, celle-ci a été récompensée lors du Concours
+                        Québécois en entrepreneuriat au volet local, régional et provincial en 2011 en plus d’être
+                        sélectionnée à titre d’entreprise finaliste au DEVTECH50. Arcbees fut de nouveau récompensée
+                        lorsque son président, Christian Goudreau, a été nommé Jeune personnalité d’affaires -
+                        technologie et recherche en 2012.
+                    </p>
+                    <h3>Membre du comité Google Web Toolkit</h3>
+                    <p>Outre ses reconnaissances entrepreneuriales, Arcbees peut être fière d’être membre depuis
+                        juin 2012 du comité de direction du Google Web Toolkit, outil derrière l’application web la
+                        plus lucrative de tous les temps, Google Adwords.
+                    </p>
+                </div>
+
+            </div>
         </section>
 
         <section class="{res.style.stripe} {res.style.dark}">

@@ -3,13 +3,16 @@
              xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
     <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
+    <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
 
     <g:HTMLPanel>
+
+        <h1 class="{fonts.icons.iconArcbees} {res.style.withLogo}"><span>Arcbees</span></h1>
 
         <section class="{res.style.stripe} {res.style.colored}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
 
-                <h1>Yeah I'm H1</h1>
+
 
             </div>
         </section>

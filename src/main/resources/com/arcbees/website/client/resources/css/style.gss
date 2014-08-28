@@ -47,14 +47,29 @@ h6 {
 }
 
 h1 {
-    font-size: 4rem;
-    font-weight: 400;
+    font-size: 4.8rem;
 
-    margin: 0.3em 0 0.9em;
+    margin: 0;
+
+    position: absolute;
+    top: 25px;
+    left: 49px;
+
+    @mixin transition(all, 0.4s);
+}
+
+h1 span {
+    font-size: 1.3rem;
+    vertical-align: middle;
+
+    display: inline-block;
+    margin-left: 10px;
+
+    @mixin transition(all, 0.4s);
 }
 
 h2 {
-    font-size: 1.6rem;
+    font-size: 4rem;
 
     margin: 0.2em 0 0.9em;
 }
@@ -140,9 +155,14 @@ em {
     width: calc(100% - 255px);
 }
 
-.sidebar:hover ~ .content > .main,
-.sidebar:hover ~ .content > footer {
+.sidebar:hover ~ .content .withLogo {
+    left: -156px;
+}
 
+.sidebar:hover ~ .content .withLogo span {
+    letter-spacing: 0.3em;
+
+    @mixin opacity(0);
 }
 
 .sidebar:hover ~ .menu {
@@ -248,12 +268,12 @@ em {
 
     overflow: hidden;
 
-    @mixin transition(width, .5s);
+    @mixin transition(width, 0.4s);
 }
 
 .content .main,
 .content footer {
-    @mixin transition(margin, .5s);
+    @mixin transition(margin, 0.4s);
 }
 
 /* -> Sections -- */

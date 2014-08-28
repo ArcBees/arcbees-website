@@ -59,6 +59,8 @@ public interface AppResources extends FontResources {
         String sloganSide();
 
         String centered();
+
+        String withLogo();
     }
 
     @Source("css/normalize.gss")

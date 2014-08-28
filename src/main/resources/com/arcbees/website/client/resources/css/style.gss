@@ -13,8 +13,24 @@ html {
 
 body {
     color: C_TEXT;
-    font-family: "geometriaLight", Arial, sans-serif;
+    font-family: "geometria", Arial, sans-serif;
     font-size: 1.5rem;
+}
+
+/* -- Wrapper -------------------------------------------- */
+
+.wrapper {
+    margin: 0 auto;
+    width: 980px;
+
+    position: relative;
+    z-index: 99;
+}
+
+@media (max-width: 979px) {
+    .wrapper {
+        width: 650px;
+    }
 }
 
 /* -- Headings ------------------------------------------- */
@@ -43,10 +59,24 @@ h2 {
     margin: 0.2em 0 0.9em;
 }
 
-h3 {
-    font-size: 1.4rem;
+h2.slogan {
+    font-size: 6rem;
+    font-family: "geometriaBold", Arial, sans-serif;
+}
 
-    margin: 0.1em 0 0.9em;
+h2.slogan span {
+    display: block;
+}
+
+h2.slogan strong {
+    border-bottom: 0.2em solid C_PRIMARY;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-family: "geometriaBold", Arial, sans-serif;
+
+    margin: 2.5em 0 0.9em;
 }
 
 /* -- Elements ------------------------------------------- */
@@ -69,6 +99,10 @@ em {
 }
 
 /* -- Classes ------------------------------------------- */
+
+.centered {
+    text-align: center;
+}
 
 .hidden {
     overflow: hidden;
@@ -103,15 +137,16 @@ em {
 }
 
 .sidebar:hover ~ .content{
-    right: -255px;
+    width: calc(100% - 255px);
+}
+
+.sidebar:hover ~ .content > .main,
+.sidebar:hover ~ .content > footer {
+
 }
 
 .sidebar:hover ~ .menu {
     color: #fff;
-}
-
-.sidebar:hover ~ .menu:before {
-
 }
 
 .sidebar a {
@@ -137,7 +172,7 @@ em {
 
 .menu li a {
     display: block;
-    padding: 7px 10px 7px 70px;
+    padding: 7px 10px 9px 70px;
 
     @mixin transition(color, .2s);
 }
@@ -150,8 +185,7 @@ em {
 }
 
 .menu ul ul a::before {
-    margin-left: -7px;
-    margin-top: -3px;
+    margin: -2px 8px 0 0;
 }
 
 .menu li a:hover {
@@ -159,7 +193,7 @@ em {
 }
 
 .menu li a.backHome {
-    font-size: 4.5rem;
+    font-size: 8.3rem;
     color: #fff;
 
     margin-left: 12px;
@@ -194,9 +228,7 @@ em {
 
 .socialmedias a {
     color: #6f6f6f;
-    font-size: 1.8rem;
-
-    margin-left: -0.9em;
+    font-size: 2rem;
 
     @mixin transition(color, .2s);
 }
@@ -208,13 +240,20 @@ em {
 /* -> Main -- */
 
 .content {
-    width: 100%;
+    width: calc(100% - 50px);
 
     position: absolute;
     top: 0;
-    right: -50px;
+    right: 0;
 
-    @mixin transition(right, .5s);
+    overflow: hidden;
+
+    @mixin transition(width, .5s);
+}
+
+.content .main,
+.content footer {
+    @mixin transition(margin, .5s);
 }
 
 /* -> Sections -- */
@@ -236,6 +275,10 @@ em {
     background-color: C_STRIPE_COLORED;
 }
 
+.sloganSide {
+    margin-top: 9.4em;
+}
+
 /* -> Footer -- */
 
 .footer {
@@ -248,11 +291,15 @@ em {
     padding: 2em;
 }
 
+.footer p {
+    font-size: 1rem;
+}
+
 .footer i {
-    font-size: 3rem;
+    font-size: 4rem;
 
     display: block;
-    margin: -10px 0;
+    margin: -10px 0 3px;
 }
 
 .footer span {

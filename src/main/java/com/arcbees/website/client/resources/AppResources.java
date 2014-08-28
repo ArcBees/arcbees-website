@@ -49,6 +49,16 @@ public interface AppResources extends FontResources {
         String menuContact();
 
         String socialmedias();
+
+        String wrapper();
+
+        String slogan();
+
+        String main();
+
+        String sloganSide();
+
+        String centered();
     }
 
     @Source("css/normalize.gss")

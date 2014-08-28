@@ -16,7 +16,7 @@
             <nav role="navigation" class="{res.style.menu}">
                 <ul>
                     <li>
-                        <a href="#{HOME}" class="{fonts.icons.iconArcbees} {res.style.backHome}">
+                        <a href="#{HOME}" class="{fonts.icons.iconArcbeesName} {res.style.backHome}">
                             <span class="{res.style.hidden}">Back to homepage</span>
                         </a>
                     </li>
@@ -71,7 +71,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="{fonts.icons.iconTwit}">
+                        <a href="#" class="{fonts.icons.iconTwitter}">
                             <span class="{res.style.hidden}">Twitter</span>
                         </a>
                     </li>
@@ -81,12 +81,12 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="{fonts.icons.iconLkdIn}">
+                        <a href="#" class="{fonts.icons.iconLkd}">
                             <span class="{res.style.hidden}">LinkedIn</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="{fonts.icons.iconGithub}">
+                        <a href="#" class="{fonts.icons.iconGitHub}">
                             <span class="{res.style.hidden}">GitHub</span>
                         </a>
                     </li>
@@ -102,11 +102,13 @@
         <div class="{res.style.content}">
 
             <!-- Main content -->
-            <g:SimplePanel ui:field="main"/>
+            <g:SimplePanel ui:field="main" styleName="{res.style.main}"/>
 
             <footer class="{res.style.footer}">
                 <p>
-                    <i class="{fonts.icons.iconArcbees}"><span class="{res.style.hidden}">Arcbees</span></i>
+                    <i class="{fonts.icons.iconArcbees}">
+                        <span class="{res.style.hidden}">Arcbees</span>
+                    </i>
                     Architects of simplicity
                 </p>
             </footer>

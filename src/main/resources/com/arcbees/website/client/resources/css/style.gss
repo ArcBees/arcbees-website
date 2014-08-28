@@ -113,6 +113,14 @@ em {
     font-style: italic;
 }
 
+/* -- Components ---------------------------------------- */
+
+.btn {
+    display: inline-block;
+    padding: 1em;
+    border: 2px solid C_STRIPE_DARK;
+}
+
 /* -- Classes ------------------------------------------- */
 
 .centered {
@@ -160,8 +168,6 @@ em {
 }
 
 .sidebar:hover ~ .content .withLogo span {
-    letter-spacing: 0.3em;
-
     @mixin opacity(0);
 }
 

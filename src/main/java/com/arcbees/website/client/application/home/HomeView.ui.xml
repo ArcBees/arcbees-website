@@ -3,9 +3,10 @@
              xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
     <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
+    <ui:with field="page" type="com.arcbees.website.client.resources.PageHomeResources"/>
     <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
 
-    <g:HTMLPanel>
+    <g:HTMLPanel styleName="{page.style.home}">
 
         <h1 class="{fonts.icons.iconArcbees} {res.style.withLogo}"><span>Arcbees</span></h1>
 
@@ -85,8 +86,11 @@
                     <h2>Bees</h2>
                 </div>
                 <div class="{res.grid.col} {res.grid.col_1_2}">
-                    <p>L'homme a fait de l'abeille le symbole de l'organisation sociale, d'intelligence supérieure de
-                        sagesse divine par la perfection de son travail.
+                    <p>
+                        <strong>L'homme a fait de l'abeille le symbole de l'organisation sociale, d'intelligence
+                            supérieure de
+                            sagesse divine par la perfection de son travail.
+                        </strong>
                     </p>
                     <p>Les abeilles en savent quelque chose en ce qui concerne l’ingénierie et la conception. La forme
                         hexagonale des alvéoles est le résultat de millénaires de sélection, pour obtenir le système de
@@ -112,6 +116,8 @@
         <section class="{res.style.stripe} {res.style.light} {res.style.centered}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <h2>Architects of simplicity</h2>
+
+                <a href="#" class="{res.style.btn}">Learn more about our expertise</a>
             </div>
         </section>
 

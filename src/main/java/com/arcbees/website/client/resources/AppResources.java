@@ -63,6 +63,8 @@ public interface AppResources extends FontResources {
         String withLogo();
 
         String btn();
+
+        String accent();
     }
 
     @Source("css/normalize.gss")

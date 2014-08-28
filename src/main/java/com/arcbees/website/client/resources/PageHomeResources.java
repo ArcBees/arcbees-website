@@ -17,12 +17,22 @@
 package com.arcbees.website.client.resources;
 
 import com.google.gwt.resources.client.GssResource;
+import com.google.gwt.resources.client.ImageResource;
 
 public interface PageHomeResources extends FontResources {
 
     interface Style extends GssResource {
         String home();
+
+        String quest();
+
+        String bees();
+
+        String beesContent();
     }
+
+    @Source("img/pages/homeBeesBg.png")
+    ImageResource beesBg();
 
     @Source({"com/arcbees/gsss/mixin/client/mixins.gss", "css/colors.gss", "fonts/geometria/geometria.gss", "css/pages/home.gss"})
     Style style();

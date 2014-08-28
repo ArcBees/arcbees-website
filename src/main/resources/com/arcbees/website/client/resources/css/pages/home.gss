@@ -1,8 +1,23 @@
 @require "colors";
 @require "geometria";
 
+@def BEES_BG resourceUrl("beesBg");
+
 /* -- Page : home ---------------------------------------- */
 
-.home {
+.home .quest p {
+    font-family: "geometriaLight", Arial, sans-serif;
+    font-size: 2.5rem;
+}
 
+.home .bees {
+    background: C_PRIMARY BEES_BG repeat-x center top;
+}
+
+.home .bees h2 {
+    margin-bottom: 0.1em;
+}
+
+.home .beesContent {
+    padding-top: 230px;
 }

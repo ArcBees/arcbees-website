@@ -116,7 +116,6 @@
         <section class="{res.style.stripe} {res.style.light} {res.style.centered}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <h2>Architects of simplicity</h2>
-
                 <a href="#" class="{res.style.btn}">Learn more about our expertise</a>
             </div>
         </section>

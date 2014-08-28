@@ -115,11 +115,43 @@ em {
 
 /* -- Components ---------------------------------------- */
 
-.btn {
+.btn,
+.btn:visited {
+    color: C_TEXT;
+    text-decoration: none;
+
     display: inline-block;
     padding: 1em;
-    border: 2px solid C_STRIPE_DARK;
+    border: 2px solid C_TEXT;
+
+    position: relative;
+
+    @mixin transition(color, .2s);
 }
+
+.btn::after {
+    content: '';
+    background-color: C_TEXT;
+
+    width: 100%;
+    height: 0;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    @mixin transition(all, .2s);
+}
+
+.btn:hover {
+    color: C_TEXT_LIGHT;
+}
+
+.btn:hover::after {
+    height: 100%;
+}
+
 
 /* -- Classes ------------------------------------------- */
 

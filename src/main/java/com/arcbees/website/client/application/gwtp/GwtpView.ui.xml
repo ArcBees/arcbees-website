@@ -9,7 +9,7 @@
     <g:HTMLPanel styleName="{page.style.products} {page.style.gwtp}">
 
         <h1 class="{fonts.icons.iconArcbees} {res.style.withLogo}">
-            <span>PRODUCT > GWTP</span>
+            <span>PRODUCT &gt; GWTP</span>
         </h1>
 
         <section class="{res.style.stripe} {page.style.colored} {res.style.centered}">

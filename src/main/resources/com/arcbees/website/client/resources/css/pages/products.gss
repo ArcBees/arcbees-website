@@ -171,11 +171,11 @@ ul.social {
 
 .slideshow .pager li {
     display: inline-block;
-    margin:0 7px;
+    margin: 0 7px;
 }
 
 .slideshow .pager a,
-.slideshow .pager a:visited{
+.slideshow .pager a:visited {
     background-color: C_PRODUCT_GWTP;
 
     display: block;
@@ -198,7 +198,7 @@ ul.social {
 /* --> Need support -- */
 
 .stripeSupport {
-    padding: 60px 0 10px 0;
+    padding: 60px 0 10px;
 }
 
 .stripeSupport h3 {
@@ -236,16 +236,19 @@ a.anchor {
     margin-top: 45px;
 }
 
+.gae form {
+    margin: 45px 0 55px;
+}
+
 .gae label {
     color: C_PRODUCT_GAE;
 
     display: block;
-    margin-top: 45px;
 }
 
 .gae input {
     display: block;
-    margin: 20px auto 55px;
+    margin: 20px auto 0;
     width: 400px;
 }
 

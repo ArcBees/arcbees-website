@@ -9,7 +9,7 @@
     <g:HTMLPanel styleName="{page.style.products} {page.style.jukito}">
 
         <h1 class="{fonts.icons.iconArcbees} {res.style.withLogo}">
-            <span>PRODUCT > JUKITO</span>
+            <span>PRODUCT &gt; JUKITO</span>
         </h1>
 
         <section class="{res.style.stripe} {page.style.colored} {res.style.centered}">

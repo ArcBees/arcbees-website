@@ -9,7 +9,7 @@
     <g:HTMLPanel styleName="{page.style.products} {page.style.gae}">
 
         <h1 class="{fonts.icons.iconArcbees} {res.style.withLogo}">
-            <span>PRODUCT > GAE</span>
+            <span>PRODUCT &gt; GAE</span>
         </h1>
 
         <section class="{res.style.stripe} {page.style.colored} {res.style.centered}">
@@ -135,8 +135,13 @@
         <section class="{res.style.stripe} {res.style.dark} {res.style.centered}">
             <h3>Subscribe</h3>
             <p>GAE studio is still in development, subscribe to get an early access!</p>
-            <label>What's your email address?<span data-icon="&#xe60f;" class="{fonts.icons.valignSup}"></span></label>
-            <input type="email" name="email"></input>
+            <form>
+                <label>What's your email address?
+                    <span data-icon="&#xe60f;" class="{fonts.icons.valignSup}"></span>
+                </label>
+                <input type="email" name="email"></input>
+            </form>
+
             <a href="#" class="{res.style.btn}">Subscribe</a>
         </section>
 

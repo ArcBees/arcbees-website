@@ -23,6 +23,9 @@ public class Colors {
     public static final String C_TEXT_LIGHT = "#fff";
 
     public static final String C_STRIPE_LIGHT = "#fff";
+    public static final String C_STRIPE_MEDIUM1 = "#fafafa";
+    public static final String C_STRIPE_MEDIUM2 = "#f2f2f2";
+    public static final String C_STRIPE_MEDIUM3 = "#ebebeb";
     public static final String C_STRIPE_DARK = "#000";
     public static final String C_STRIPE_COLORED = C_PRIMARY;
 

@@ -1,0 +1,171 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+        xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+    <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
+    <ui:with field="page" type="com.arcbees.website.client.resources.PageProductResources"/>
+    <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
+
+    <g:HTMLPanel styleName="{page.style.products} {page.style.gae}">
+
+        <h1 class="{fonts.icons.iconArcbees} {res.style.withLogo}">
+            <span>PRODUCT > GAE</span>
+        </h1>
+
+        <section class="{res.style.stripe} {page.style.colored} {res.style.centered}">
+                <nav class="{page.style.menuHeader}">
+                    <ul>
+                        <li>
+                            <a href="#" class="{fonts.icons.iconGae} {page.style.active}">
+                                <span class="{res.style.hidden}">Gae</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="{fonts.icons.iconGwtp}">
+                                <span class="{res.style.hidden}">GWTP</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="{fonts.icons.iconJukito}">
+                                <span class="{res.style.hidden}">Jukito</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+        </section>
+
+        <section class="{res.style.stripe}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <div class="{res.grid.col} {res.grid.col_1_2}">
+                    <h2>gae studio
+                        <a href="#" class="{page.style.anchor}">#</a>
+                    </h2>
+                    <p class="{page.style.presentation}">optimizing google app engine applications
+                    </p>
+                    <div class="{page.style.socialTop}">
+                        <ul class="{page.style.social}">
+                            <li>
+                                <a href="#" class="{fonts.icons.iconGPlus}">
+                                    <span class="{res.style.hidden}">Google plus</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="{fonts.icons.iconGitHub}">
+                                    <span class="{res.style.hidden}">Github</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="#" class="{res.style.btn}">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <div class="{res.grid.col} {res.grid.col_push_1_2}">
+                    <p>
+                        <strong>GAE Studio is a tool destined to assist developers in optimizing their applications
+                            hosted on Google App Engine.
+                        </strong>
+                    </p>
+                    <p>Using real-time analysis of database requests, GAE Studio will rapidly identify inefficient
+                        queries and gather precious data that will help developers trim query delays.
+                    </p>
+                    <p>GAE Studio also allows database exploration, entry modification and deletion. As a whole, GAE
+                        Studio is an essential tool for developers who wish to speed up their GAE applications.
+                    </p>
+                </div>
+            </div>
+            <div class="{page.style.slideshow} {res.style.wrapper}">
+                <div class="{page.style.slides}">
+                    <g:Image resource="{page.gwtpScreen1}"/>
+                </div>
+                <a href="#" class="{page.style.prev}">
+                    <span class="{res.style.hidden}">Prev</span>
+                </a>
+                <a href="#" class="{page.style.next}">
+                    <span class="{res.style.hidden}">Next</span>
+                </a>
+                <nav class="{page.style.pager} {res.style.centered}">
+                    <ul>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.centered}">
+            <h3>in details</h3>
+        </section>
+
+        <section class="{res.style.stripe} {res.style.medium2} {res.style.centered}">
+            <div class="{res.style.wrapper}">
+                <h4>Quick and easy
+                    <span>installation</span>
+                    <a href="#" class="{page.style.anchor}">#</a>
+                </h4>
+                <a href="#" class="{res.style.btn}">Add our provided servlet</a>
+                <p>Simply add our provided servlet to your web.xml file, and you’re ready to go!</p>
+                <g:Image resource="{page.gaeScreen2}" styleName="{page.style.code}"/>
+            </div>
+        </section>
+
+        <section class="{res.style.stripe} {page.style.colored} {res.style.centered}">
+            <h3>DATA
+                <span>VISUALISATION</span>
+                <a href="#" class="{page.style.anchor}">#</a>
+            </h3>
+            <a href="#" class="{res.style.btn}">Browser your different kinds</a>
+        </section>
+
+        <section class="{res.style.stripe} {res.style.medium2} {res.style.centered}">
+            <h3>ON-THE-FLY DATA
+                <span>EDITING</span>
+                <a href="#" class="{page.style.anchor}">#</a>
+            </h3>
+            <a href="#" class="{res.style.btn}">Browser your different kinds</a>
+        </section>
+
+        <section class="{res.style.stripe} {res.style.dark} {res.style.centered}">
+            <h3>Subscribe</h3>
+            <p>GAE studio is still in development, subscribe to get an early access!</p>
+            <label>What's your email address?<span data-icon="&#xe60f;" class="{fonts.icons.valignSup}"></span></label>
+            <input type="email" name="email"></input>
+            <a href="#" class="{res.style.btn}">Subscribe</a>
+        </section>
+
+        <section class="{res.style.stripe} {page.style.colored} {res.style.centered}">
+            <h3>SHARE</h3>
+            <ul class="{page.style.social}">
+                <li>
+                    <a href="#" class="{fonts.icons.iconFb}">
+                        <span class="{res.style.hidden}">Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="{fonts.icons.iconTwitter}">
+                        <span class="{res.style.hidden}">Twitter</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="{fonts.icons.iconGPlus}">
+                        <span class="{res.style.hidden}">Google</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="{res.style.stripe} {page.style.stripeSupport} {res.style.centered}">
+            <h3>Need support?</h3>
+            <a href="#" class="{res.style.btn}">Arcbees offer a variety of supports options</a>
+            <a href="#" data-icon="&#xe602;" class="{res.style.backTop}"></a>
+        </section>
+
+    </g:HTMLPanel>
+</ui:UiBinder>

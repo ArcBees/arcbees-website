@@ -32,6 +32,10 @@ public interface FontResources extends ClientBundle {
         String iconTwitter();
 
         String iconArcbeesName();
+
+        String iconArrowDown();
+
+        String valignSup();
     }
 
     @ClientBundle.Source("fonts/icons/icons.gss")

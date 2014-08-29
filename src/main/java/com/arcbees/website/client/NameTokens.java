@@ -28,7 +28,7 @@ public class NameTokens {
     public static final String WORK = "/work";
 
     public static final String PRODUCTS = "/products";
-    public static final String GAE = PRODUCTS + "/gae-stydio";
+    public static final String GAE = PRODUCTS + "/gae-studio";
     public static final String JUKITO = PRODUCTS + "/jukito";
     public static final String GWTP = PRODUCTS + "/gwtp";
 

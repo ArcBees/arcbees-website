@@ -1,0 +1,236 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+        xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+    <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
+    <ui:with field="page" type="com.arcbees.website.client.resources.PageProductResources"/>
+    <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
+
+    <g:HTMLPanel styleName="{page.style.products} {page.style.jukito}">
+
+        <h1 class="{fonts.icons.iconArcbees} {res.style.withLogo}">
+            <span>PRODUCT > JUKITO</span>
+        </h1>
+
+        <section class="{res.style.stripe} {page.style.colored} {res.style.centered}">
+            <nav class="{page.style.menuHeader}">
+                <ul>
+                    <li>
+                        <a href="#" class="{fonts.icons.iconGae}">
+                            <span class="{res.style.hidden}">Gae</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="{fonts.icons.iconGwtp}">
+                            <span class="{res.style.hidden}">GWTP</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="{fonts.icons.iconJukito} {page.style.active}">
+                            <span class="{res.style.hidden}">Jukito</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="{res.style.stripe}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <div class="{res.grid.col} {res.grid.col_1_2}">
+                    <h2>jukito
+                        <a href="#" class="{page.style.anchor}">#</a>
+                    </h2>
+                    <p class="{page.style.presentation}">The new martial
+                        <span>art for programmers</span>
+                    </p>
+                    <div class="{page.style.socialTop}">
+                        <ul class="{page.style.social}">
+                            <li>
+                                <a href="#" class="{fonts.icons.iconGPlus}">
+                                    <span class="{res.style.hidden}">Google plus</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="{fonts.icons.iconGitHub}">
+                                    <span class="{res.style.hidden}">Github</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <div class="{res.grid.col} {res.grid.col_push_1_2}">
+                    <p>
+                        <strong>Jukito lets you use the power of dependency injection in all your tests.
+                        </strong>
+                    </p>
+                    <p>You will quickly grow addicted to its ease of use and all the boilerplate economy! Jukito combine
+                        power of JUnit, Guice and Mockito
+                    </p>
+                    <ul class="{page.style.frameworkList}">
+                        <li><g:Image resource="{page.jukitoMockito}"/></li>
+                        <li><g:Image resource="{page.jukitoGuice}"/></li>
+                        <li><g:Image resource="{page.jukitoJUnit}"/></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="{page.style.slideshow} {res.style.wrapper}">
+                <div class="{page.style.slides}">
+                    <g:Image resource="{page.gwtpScreen1}"/>
+                </div>
+                <a href="#" class="{page.style.prev}">
+                    <span class="{res.style.hidden}">Prev</span>
+                </a>
+                <a href="#" class="{page.style.next}">
+                    <span class="{res.style.hidden}">Next</span>
+                </a>
+                <nav class="{page.style.pager} {res.style.centered}">
+                    <ul>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.centered}">
+            <h3>in details</h3>
+        </section>
+
+        <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium1}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+
+                <div class="{res.grid.col} {res.grid.col_1_3}">
+                    <h4>Automocking</h4>
+                    <a href="#" class="{page.style.anchor}">#</a>
+                </div>
+
+                <div class="{res.grid.col} {res.grid.col_2_3}">
+                    <p>Jukito lets you inject objects in your tests everywhere! Constructor, method and field injection
+                        are supported.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium2}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+
+                <div class="{res.grid.col} {res.grid.col_1_3}">
+                    <h4>Inject wherever you want!</h4>
+                    <a href="#" class="{page.style.anchor}">#</a>
+                </div>
+
+                <div class="{res.grid.col} {res.grid.col_2_3}">
+                    <p>GWTP was engineered with dependency injection in mind. Leveraging the full power of Google Gin
+                        and Guice, GWTP makes your web apps more modular and testable.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium3}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+
+                <div class="{res.grid.col} {res.grid.col_1_3}">
+                    <h4>@All annotation</h4>
+                    <a href="#" class="{page.style.anchor}">#</a>
+                </div>
+
+                <div class="{res.grid.col} {res.grid.col_2_3}">
+                    <p>Need to run your test using a wide set of data? Jukito allows you to concisely write a single
+                        test that runs on a whole suite of test cases.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="{res.style.stripe} {page.style.stripeDetails}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+
+                <div class="{res.grid.col} {res.grid.col_1_3}">
+                    <h4>Lightweight</h4>
+                    <a href="#" class="{page.style.anchor}">#</a>
+                </div>
+
+                <div class="{res.grid.col} {res.grid.col_2_3}">
+                    <p>The last thing you want is your tests slowing you down. Jukito is fast and will not impact your
+                        suite’s run time. And, your tests will be easier to read, write and maintain.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium1}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+
+                <div class="{res.grid.col} {res.grid.col_1_3}">
+                    <h4>Scales to all size of test</h4>
+                    <a href="#" class="{page.style.anchor}">#</a>
+                </div>
+
+                <div class="{res.grid.col} {res.grid.col_2_3}">
+                    <p>Jukito can be used within unit, integration and end-to-end tests, all with one framework!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium2}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+
+                <div class="{res.grid.col} {res.grid.col_1_3}">
+                    <h4>Easy installation</h4>
+                    <a href="#" class="{page.style.anchor}">#</a>
+                </div>
+
+                <div class="{res.grid.col} {res.grid.col_2_3}">
+                    <p>Simply add a Maven dependency to your POM, and Jukito will be downloaded from Maven Central.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="{res.style.stripe} {res.style.dark} {res.style.centered}">
+            <h3>ALL THE DOCUMENTATIONS
+                <span>YOU NEED</span>
+            </h3>
+            <a href="#" class="{res.style.btn}">Go to Arcbees Developers</a>
+        </section>
+
+        <section class="{res.style.stripe} {page.style.colored} {res.style.centered}">
+            <h3>SHARE</h3>
+            <ul class="{page.style.social}">
+                <li>
+                    <a href="#" class="{fonts.icons.iconFb}">
+                        <span class="{res.style.hidden}">Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="{fonts.icons.iconTwitter}">
+                        <span class="{res.style.hidden}">Twitter</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="{fonts.icons.iconGPlus}">
+                        <span class="{res.style.hidden}">Google</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="{res.style.stripe} {page.style.stripeSupport} {res.style.centered}">
+            <h3>Need support?</h3>
+            <a href="#" class="{res.style.btn}">Arcbees offer a variety of supports options</a>
+            <a href="#" data-icon="&#xe602;" class="{res.style.backTop}"></a>
+        </section>
+
+    </g:HTMLPanel>
+</ui:UiBinder>

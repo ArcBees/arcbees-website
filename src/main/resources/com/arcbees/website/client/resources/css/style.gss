@@ -54,6 +54,7 @@ h1 {
     position: absolute;
     top: 25px;
     left: 49px;
+    z-index: 1;
 
     @mixin transition(all, 0.4s);
 }
@@ -63,7 +64,7 @@ h1 span {
     vertical-align: middle;
 
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 2px;
 
     @mixin transition(all, 0.4s);
 }
@@ -95,6 +96,10 @@ h3 {
 }
 
 /* -- Elements ------------------------------------------- */
+a,
+a:visited {
+    text-decoration: none;
+}
 
 p,
 li {
@@ -152,6 +157,21 @@ em {
     height: 100%;
 }
 
+/* -> Btn light -- */
+
+.dark .btn,
+.dark .btn:visited {
+    color: C_TEXT_LIGHT;
+    border: 2px solid C_TEXT_LIGHT;
+}
+
+.dark .btn::after {
+    background-color: C_TEXT_LIGHT;
+}
+
+.dark .btn:hover {
+    color: C_TEXT;
+}
 
 /* -- Classes ------------------------------------------- */
 
@@ -318,10 +338,24 @@ em {
 
 .stripe {
     padding: 60px 0;
+
+    position: relative;
 }
 
 .stripe.light {
     background-color: C_STRIPE_LIGHT;
+}
+
+.stripe.medium1 {
+    background-color: C_STRIPE_MEDIUM1;
+}
+
+.stripe.medium2 {
+    background-color: C_STRIPE_MEDIUM2;
+}
+
+.stripe.medium3 {
+    background-color: C_STRIPE_MEDIUM3;
 }
 
 .stripe.dark {
@@ -338,6 +372,18 @@ em {
 }
 
 /* -> Footer -- */
+
+a.backTop {
+    color: #000;
+    font-size: 2.5rem;
+
+    display: block;
+    height: 25px;
+    width: 25px;
+    margin: 45px auto -6px;
+
+@mixin rotate_180_ccw();
+}
 
 .footer {
     background-color: C_STRIPE_DARK;

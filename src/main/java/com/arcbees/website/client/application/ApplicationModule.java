@@ -21,7 +21,10 @@ import com.arcbees.website.client.application.careers.CareersModule;
 import com.arcbees.website.client.application.contact.ContactModule;
 import com.arcbees.website.client.application.docs.DocsModule;
 import com.arcbees.website.client.application.expertise.ExpertiseModule;
+import com.arcbees.website.client.application.gae.GaeModule;
+import com.arcbees.website.client.application.gwtp.GwtpModule;
 import com.arcbees.website.client.application.home.HomeModule;
+import com.arcbees.website.client.application.jukito.JukitoModule;
 import com.arcbees.website.client.application.license.LicenseModule;
 import com.arcbees.website.client.application.work.WorkModule;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
@@ -37,6 +40,9 @@ public class ApplicationModule extends AbstractPresenterModule {
         install(new LicenseModule());
         install(new WorkModule());
         install(new DocsModule());
+        install(new GaeModule());
+        install(new JukitoModule());
+        install(new GwtpModule());
 
         bindPresenter(ApplicationPresenter.class, ApplicationPresenter.MyView.class, ApplicationView.class,
                 ApplicationPresenter.MyProxy.class);

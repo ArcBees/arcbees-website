@@ -14,7 +14,7 @@
  * the License.
  */
 
-package com.arcbees.website.client.application.jukito;
+package com.arcbees.website.client.application.products.jukito;
 
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.user.client.ui.Widget;

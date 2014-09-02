@@ -14,20 +14,14 @@
  * the License.
  */
 
-package com.arcbees.website.client.application.gae;
+package com.arcbees.website.client.application.products.jukito;
 
-import com.google.gwt.uibinder.client.UiBinder;
-import com.google.gwt.user.client.ui.Widget;
-import com.google.inject.Inject;
-import com.gwtplatform.mvp.client.ViewImpl;
+import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
-public class GaeView extends ViewImpl implements GaePresenter.MyView {
-    interface Binder extends UiBinder<Widget, GaeView> {
-    }
-
-    @Inject
-    GaeView(
-            Binder binder) {
-        initWidget(binder.createAndBindUi(this));
+public class JukitoModule extends AbstractPresenterModule {
+    @Override
+    protected void configure() {
+        bindPresenter(JukitoPresenter.class, JukitoPresenter.MyView.class,
+                JukitoView.class, JukitoPresenter.MyProxy.class);
     }
 }

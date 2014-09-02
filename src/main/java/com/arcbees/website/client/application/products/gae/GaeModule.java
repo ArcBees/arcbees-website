@@ -14,7 +14,7 @@
  * the License.
  */
 
-package com.arcbees.website.client.application.gae;
+package com.arcbees.website.client.application.products.gae;
 
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 

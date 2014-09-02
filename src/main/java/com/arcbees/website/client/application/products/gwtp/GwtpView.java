@@ -14,7 +14,7 @@
  * the License.
  */
 
-package com.arcbees.website.client.application.gwtp;
+package com.arcbees.website.client.application.products.gwtp;
 
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.user.client.ui.Widget;

@@ -23,10 +23,15 @@ public class ResourceLoader {
     ResourceLoader(
             AppResources appResources,
             FontResources fontResources,
-            DocsResources docsResources) {
+            DocsResources docsResources,
+            PageProductResources pageProductResources,
+            PageHomeResources pageHomeResources) {
         appResources.normalize().ensureInjected();
         appResources.style().ensureInjected();
         appResources.grid().ensureInjected();
+        docsResources.style().ensureInjected();
         fontResources.icons().ensureInjected();
+        pageHomeResources.style().ensureInjected();
+        pageProductResources.style().ensureInjected();
     }
 }

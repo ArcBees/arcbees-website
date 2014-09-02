@@ -1,0 +1,301 @@
+@require "colors";
+@require "geometria";
+
+.products {
+    background-color: C_STRIPE_LIGHT;
+}
+
+/* -- Headings ------------------------------------------- */
+
+.products h2 {
+    font-size: 2.5rem;
+
+    margin: 0em 0 .25em;
+}
+
+.products h3 {
+    font-size: 2.5rem;
+
+    margin: .7em 0 1em;
+}
+
+.products h4 {
+    font-size: 2rem;
+
+    margin: 1.6em 0 .5em;
+}
+
+/* -- Style ---------------------------------------- */
+
+/* --> Header -- */
+
+.menuHeader ul {
+    padding: 0;
+
+    list-style-type: none;
+}
+
+.menuHeader li {
+    line-height: 1em;
+
+    display: inline-block;
+    margin: 0 11px;
+}
+
+.menuHeader a {
+    color: #fff;
+    font-size: 22.7rem;
+
+    @mixin opacity(.5);
+    @mixin transition(opacity, .5s);
+}
+
+.menuHeader a.active,
+.menuHeader a:hover {
+    @mixin opacity(1);
+}
+
+.menuHeader a.active:after {
+    content:"";
+
+    width: 0;
+    height: 0;
+    margin-left: -50px;
+    border-style: solid;
+    border-width: 0 50px 50px 50px;
+    border-color: transparent transparent #fff transparent;
+
+    position: absolute;
+    bottom: 0;
+
+    cursor: default;
+}
+
+/* --> Main -- */
+
+.presentation {
+    font-size: 4.2rem;
+    text-transform: uppercase;
+    font-family: "geometriaBold";
+    line-height: 1em;
+
+    margin: 0;
+}
+
+.socialTop {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+ul.social {
+    text-align: center;
+
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+
+    list-style-type: none;
+}
+
+.social li {
+    display: inline-block;
+    margin: 0 1px;
+}
+
+.social a {
+    color: #000;
+    font-size: 3.5rem;
+
+    @mixin transition(color, .2s);
+}
+
+.social a:hover {
+    color: #fff;
+}
+
+.socialTop .social a:hover {
+    color: #ebebeb;
+}
+
+/* --> Slideshow -- */
+
+.slideshow {
+    margin-top: 60px;
+
+    position: relative;
+}
+
+.slideshow .slides {
+    margin: 0 auto;
+    width: 905px;
+}
+
+.slideshow a.next,
+.slideshow a.prev{
+    color: #000;
+    font-size: 2.5rem;
+
+    margin-top: -12px;
+
+    top: 50%;
+    left: 0;
+    position: absolute;
+
+    @mixin rotate(90deg);
+    @mixin transition(color, .2s);
+}
+
+.slideshow a.next{
+    right: 0;
+    left: auto;
+
+    @mixin rotate(-90deg);
+}
+
+.slideshow a.prev::before,
+.slideshow a.next::before{
+    content: "\e602";
+    font-family: "icons";
+}
+
+.slideshow a.prev:hover,
+.slideshow a.next:hover {
+    color: #f2f2f2;
+}
+
+.slideshow .pager ul{
+    padding: 0;
+    margin: 25px 0 0;
+}
+
+.slideshow .pager li {
+    display: inline-block;
+    margin: 0 7px;
+}
+
+.slideshow .pager a,
+.slideshow .pager a:visited {
+    background-color: C_PRODUCT_GWTP;
+
+    display: block;
+    height: 14px;
+    width: 14px;
+
+    @mixin rounded(7px);
+}
+
+/* --> In Details -- */
+
+.stripeDetails {
+    padding: 23px 0 30px;
+}
+
+.stripeDetails h4 {
+    margin-top: .7em;
+}
+
+/* --> Need support -- */
+
+.stripeSupport {
+    padding: 60px 0 10px;
+}
+
+.stripeSupport h3 {
+    font-size: 4rem;
+    line-height: 1;
+
+    margin: 0 0 .55em;
+}
+
+a.anchor {
+    color: #afafaf;
+    font-size: 2.5rem;
+    font-family: "geometria";
+
+    display: inline-block;
+    margin-top: -7px;
+}
+
+/* -- Page : Gae ---------------------------------------- */
+
+.gae .colored {
+    background-color: C_PRODUCT_GAE;
+}
+
+.gae .presentation {
+    color: C_PRODUCT_GAE;
+}
+
+.gae .slideshow .pager a,
+.gae .slideshow .pager a:visited {
+    background-color: C_PRODUCT_GAE;
+}
+
+.gae .code {
+    margin-top: 45px;
+}
+
+.gae form {
+    margin: 45px 0 55px;
+}
+
+.gae label {
+    color: C_PRODUCT_GAE;
+
+    display: block;
+}
+
+.gae input {
+    display: block;
+    margin: 20px auto 0;
+    width: 400px;
+}
+
+/* -- Page : Jukito ---------------------------------------- */
+
+.jukito .colored {
+    background-color: C_PRODUCT_JUKITO;
+}
+
+.jukito .presentation {
+    color: C_PRODUCT_JUKITO;
+}
+
+.jukito .slideshow .pager a,
+.jukito .slideshow .pager a:visited {
+    background-color: C_PRODUCT_JUKITO;
+}
+
+.frameworkList {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.frameworkList li {
+    margin: 0 10px 0 0;
+    display: inline-block;
+}
+
+/* -- Page : GWTP ---------------------------------------- */
+
+.gwtp .colored {
+    background-color: C_PRODUCT_GWTP;
+}
+
+.gwtp .presentation {
+    color: C_PRODUCT_GWTP;
+}
+
+.gwtp .slideshow .pager a,
+.gwtp .slideshow .pager a:visited {
+    background-color: C_PRODUCT_GWTP;
+}
+
+/* -- Overwrite ---------------------------------------- */
+
+.slideshow .pager a:hover {
+    background-color: #000;
+
+    @mixin transition(background-color, .5s);
+}

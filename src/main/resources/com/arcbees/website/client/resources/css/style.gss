@@ -47,25 +47,41 @@ h6 {
 }
 
 h1 {
-    font-size: 4rem;
-    font-weight: 400;
+    font-size: 4.8rem;
 
-    margin: 0.3em 0 0.9em;
+    margin: 0;
+
+    position: absolute;
+    top: 25px;
+    left: 49px;
+    z-index: 1;
+
+    @mixin transition(all, 0.4s);
+}
+
+h1 span {
+    font-size: 1.3rem;
+    vertical-align: middle;
+
+    display: inline-block;
+    margin-left: 2px;
+
+    @mixin transition(all, 0.4s);
 }
 
 h2 {
-    font-size: 1.6rem;
+    font-size: 4rem;
 
     margin: 0.2em 0 0.9em;
+}
+
+h2 span {
+    display: block;
 }
 
 h2.slogan {
     font-size: 6rem;
     font-family: "geometriaBold", Arial, sans-serif;
-}
-
-h2.slogan span {
-    display: block;
 }
 
 h2.slogan strong {
@@ -81,12 +97,29 @@ h3 {
 
 /* -- Elements ------------------------------------------- */
 
+a,
+a:visited {
+    text-decoration: none;
+}
+
 p,
 li {
     line-height: 1.25em;
     font-size: 1.5rem;
 
     margin-bottom: 0.8em;
+}
+
+p.accent {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-family: "geometriaBold", Arial, sans-serif;
+
+    margin-top: 2.2em;
+}
+
+p.accent span {
+    display: block;
 }
 
 strong {
@@ -96,6 +129,61 @@ strong {
 
 em {
     font-style: italic;
+}
+
+/* -- Components ---------------------------------------- */
+
+.btn,
+.btn:visited {
+    color: C_TEXT;
+    text-decoration: none;
+
+    display: inline-block;
+    padding: 1em;
+    border: 2px solid C_TEXT;
+
+    position: relative;
+
+    @mixin transition(color, .2s);
+}
+
+.btn::after {
+    content: '';
+    background-color: C_TEXT;
+
+    width: 100%;
+    height: 0;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    @mixin transition(all, .2s);
+}
+
+.btn:hover {
+    color: C_TEXT_LIGHT;
+}
+
+.btn:hover::after {
+    height: 100%;
+}
+
+/* -> Btn light -- */
+
+.dark .btn,
+.dark .btn:visited {
+    color: C_TEXT_LIGHT;
+    border: 2px solid C_TEXT_LIGHT;
+}
+
+.dark .btn::after {
+    background-color: C_TEXT_LIGHT;
+}
+
+.dark .btn:hover {
+    color: C_TEXT;
 }
 
 /* -- Classes ------------------------------------------- */
@@ -140,9 +228,12 @@ em {
     width: calc(100% - 255px);
 }
 
-.sidebar:hover ~ .content > .main,
-.sidebar:hover ~ .content > footer {
+.sidebar:hover ~ .content .withLogo {
+    left: -156px;
+}
 
+.sidebar:hover ~ .content .withLogo span {
+    @mixin opacity(0);
 }
 
 .sidebar:hover ~ .menu {
@@ -248,26 +339,44 @@ em {
 
     overflow: hidden;
 
-    @mixin transition(width, .5s);
+    @mixin transition(width, 0.4s);
 }
 
 .content .main,
 .content footer {
-    @mixin transition(margin, .5s);
+    @mixin transition(margin, 0.4s);
 }
 
 /* -> Sections -- */
 
 .stripe {
     padding: 60px 0;
+
+    position: relative;
 }
 
 .stripe.light {
     background-color: C_STRIPE_LIGHT;
 }
 
+.stripe.medium1 {
+    background-color: C_STRIPE_MEDIUM1;
+}
+
+.stripe.medium2 {
+    background-color: C_STRIPE_MEDIUM2;
+}
+
+.stripe.medium3 {
+    background-color: C_STRIPE_MEDIUM3;
+}
+
 .stripe.dark {
     background-color: C_STRIPE_DARK;
+    color: C_TEXT_LIGHT;
+}
+
+.stripe.dark .accent {
     color: C_TEXT_LIGHT;
 }
 
@@ -280,6 +389,18 @@ em {
 }
 
 /* -> Footer -- */
+
+a.backTop {
+    color: #000;
+    font-size: 2.5rem;
+
+    display: block;
+    height: 25px;
+    width: 25px;
+    margin: 45px auto -6px;
+
+@mixin rotate_180_ccw();
+}
 
 .footer {
     background-color: C_STRIPE_DARK;

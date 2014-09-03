@@ -17,10 +17,8 @@
 package com.arcbees.website.client.resources;
 
 import com.google.gwt.resources.client.GssResource;
-import com.google.gwt.resources.client.ImageResource;
 
 public interface PageContactResources extends FontResources {
-
     interface Style extends GssResource {
         String contact();
 

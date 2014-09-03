@@ -34,7 +34,7 @@
 }
 
 .realisations img {
-    @mixin shadow(5px, 6px, 6px,.1);
+    @mixin shadow(5px, 6px, 6px, .1);
     @mixin rounded(7px);
 }
 

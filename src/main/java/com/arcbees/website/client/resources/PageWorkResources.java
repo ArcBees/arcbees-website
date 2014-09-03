@@ -20,7 +20,6 @@ import com.google.gwt.resources.client.GssResource;
 import com.google.gwt.resources.client.ImageResource;
 
 public interface PageWorkResources extends FontResources {
-
     interface Style extends GssResource {
         String work();
 

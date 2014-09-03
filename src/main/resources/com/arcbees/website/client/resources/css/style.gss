@@ -416,7 +416,7 @@ a.anchor {
 }
 
 .sloganSide {
-    margin: 9.4em;
+    margin-top: 9.4em;
 }
 
 /* -> Footer -- */

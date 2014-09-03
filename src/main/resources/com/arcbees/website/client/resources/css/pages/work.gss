@@ -64,6 +64,5 @@
 .trusted li.last {
     margin-bottom: 25px;
     padding-bottom: 0;
-
     border-bottom: none;
 }

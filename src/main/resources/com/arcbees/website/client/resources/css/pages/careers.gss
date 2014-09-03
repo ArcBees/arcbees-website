@@ -3,7 +3,7 @@
 
 @def CAREERS_BANNER resourceUrl("careersBanner");
 
-/* -- Page : home ---------------------------------------- */
+/* -- Page : career ---------------------------------------- */
 
 .careers {
     background-color: C_STRIPE_LIGHT;
@@ -15,17 +15,9 @@
     min-height: 500px;
 }
 
-.offers > div {
-    border-bottom: 2px solid #000;
-}
+/* -- offers ------------------------------------------- */
 
-.offers > div:first-child,
-.offers > div:last-child {
-    border-bottom: none
-}
-
-.offers h2,
-.quiz h2 {
+.offers h2 {
     font-size: 2.5rem;
 
     margin-bottom: 0;
@@ -37,11 +29,21 @@
     margin: 0 0 .3em;
 }
 
-.quiz span[data-icon] {
-    font-size: 9.5rem;
+.offers > div {
+    border-bottom: 2px solid #000;
+}
 
-    display: block;
-    margin-top: -10px;
+.offers > div:first-child,
+.offers > div:last-child {
+    border-bottom: none
+}
+
+/* -- quiz ------------------------------------------- */
+
+.quiz h2 {
+    font-size: 2.5rem;
+
+    margin-bottom: 0;
 }
 
 .quiz h3 {
@@ -64,6 +66,13 @@
     color: C_STRIPE_COLORED;
     font-style: normal;
     font-family: "geometriaLight";
+}
+
+.quiz span[data-icon] {
+    font-size: 9.5rem;
+
+    display: block;
+    margin-top: -10px;
 }
 
 .answer {

@@ -3,7 +3,7 @@
 
 @def WORK_BANNER resourceUrl("workBanner");
 
-/* -- Page : home ---------------------------------------- */
+/* -- Page : work ---------------------------------------- */
 
 .work {
     background: C_STRIPE_LIGHT;
@@ -15,10 +15,9 @@
     min-height: 500px;
 }
 
-/* -- Headings ------------------------------------------- */
+/* -- realisations ------------------------------------------- */
 
-.realisations h2,
-.trusted h2 {
+.realisations h2 {
     font-size: 2.5rem;
 
     margin: 0 0 3em;
@@ -30,13 +29,21 @@
     margin-bottom: 1px;
 }
 
+.realisations p {
+    margin: 0 0 65px;
+}
+
 .realisations img {
     @mixin shadow(5px, 6px, 6px,.1);
     @mixin rounded(7px);
 }
 
-.realisations p {
-    margin: 0 0 65px;
+/* -- trusted ------------------------------------------- */
+
+.trusted h2 {
+    font-size: 2.5rem;
+
+    margin: 0 0 3em;
 }
 
 .trusted ul {

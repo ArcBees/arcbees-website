@@ -1,7 +1,7 @@
 @require "colors";
 @require "geometria";
 
-/* -- Page : home ---------------------------------------- */
+/* -- Page : contact ---------------------------------------- */
 
 .contact {
     background-color: C_STRIPE_LIGHT;
@@ -10,6 +10,8 @@
 .headerBg iframe {
     min-width: 100%;
 }
+
+/* -- social ------------------------------------------- */
 
 .social h2 {
     font-size: 2.5rem;
@@ -37,6 +39,8 @@
 .social a:hover {
     color: #f2f2f2;
 }
+
+/* -- quebec ------------------------------------------- */
 
 .quebec h3 {
     font-size: 1.7rem;

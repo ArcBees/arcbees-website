@@ -28,7 +28,8 @@ public class ResourceLoader {
             PageWorkResources pageWorkResources,
             PageContactResources pageContactResources,
             PageCareersResources pageCareersResources,
-            PageHomeResources pageHomeResources) {
+            PageHomeResources pageHomeResources,
+            PageLicenseResources pageLicenseResources) {
         appResources.normalize().ensureInjected();
         appResources.style().ensureInjected();
         appResources.grid().ensureInjected();
@@ -39,5 +40,6 @@ public class ResourceLoader {
         pageContactResources.style().ensureInjected();
         pageCareersResources.style().ensureInjected();
         pageWorkResources.style().ensureInjected();
+        pageLicenseResources.style().ensureInjected();
     }
 }

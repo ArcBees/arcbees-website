@@ -14,10 +14,12 @@
     background: C_PRIMARY BEES_BG repeat-x center top;
 }
 
-.home .bees h2 {
-    margin-bottom: 0.1em;
+.home .bees h3 {
+    margin: 0.2em 0 0.1em;
 }
 
 .home .beesContent {
-    padding-top: 230px;
+    text-align: left;
+
+    padding-top: 270px;
 }

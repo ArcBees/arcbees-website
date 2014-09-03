@@ -61,67 +61,79 @@
                     </p>
                 </div>
 
-                <div class="{res.grid.col} {res.grid.col_full} {res.style.centered}">
-                    <p class="{res.style.accent}">Why we do what we do</p>
-                </div>
-
             </div>
         </section>
 
-        <section class="{res.style.stripe} {res.style.dark} {res.style.centered} {page.style.quest}">
-            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4}">
+        <section class="{res.style.centered}">
+            <div class="{res.style.stripe} {res.style.light}">
+                <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
 
-                    <h2>Our quest</h2>
-                    <p>Create, build applications that optimise process, habits and thinking, demonstrate value and
-                        simplicity, and transform the way people work around the world.
-                    </p>
+                    <div class="{res.grid.col} {res.grid.col_full}">
+                        <h2 class="{res.style.accent}">Why we do what we do</h2>
+                    </div>
 
                 </div>
+            </div>
+            <div class="{res.style.stripe} {res.style.dark} {page.style.quest}">
+                <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                    <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4}">
 
-                <div class="{res.grid.col} {res.grid.col_full} {res.style.centered}">
-                    <p class="{res.style.accent}">Why do we call us<span>Arcbees?</span></p>
+                        <h3>Our quest</h3>
+                        <p>Create, build applications that optimise process, habits and thinking, demonstrate value and
+                            simplicity, and transform the way people work around the world.
+                        </p>
+
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="{res.style.stripe} {res.style.light} {res.style.centered}">
-            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <h2>Architects</h2>
-                <p>We are architects developer</p>
+        <section class="{res.style.centered}">
+            <div class="{res.style.stripe} {res.style.dark}">
+                <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                    <h2 class="{res.style.accent}">Why do we call us
+                        <span>Arcbees?</span>
+                    </h2>
+                </div>
             </div>
-        </section>
 
-        <section class="{res.style.stripe} {res.style.colored} {page.style.bees}">
-            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_full} {res.style.centered}">
-                    <h2>Bees</h2>
-                    <p><a href="#" class="{res.style.btn}">Who are the best architects?</a></p>
+            <div class="{res.style.stripe} {res.style.light}">
+                <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                    <h3>Architects</h3>
+                    <p>We are architects developer</p>
                 </div>
-                <div class="{res.grid.col} {res.grid.col_1_2} {page.style.beesContent}">
-                    <p>
-                        <strong>L'homme a fait de l'abeille le symbole de l'organisation sociale, d'intelligence
-                            supérieure de
-                            sagesse divine par la perfection de son travail.
-                        </strong>
-                    </p>
-                    <p>Les abeilles en savent quelque chose en ce qui concerne l’ingénierie et la conception. La forme
-                        hexagonale des alvéoles est le résultat de millénaires de sélection, pour obtenir le système de
-                        construction le plus efficace, moins coûteux et plus fort.
-                    </p>
-                    <p>La construction de la ruche, chef-d’œuvre d’ingénierie et demeure de l’abeille domestique, repose
-                        sur une structure très connue : le rayon de miel.
-                    </p>
-                </div>
-                <div class="{res.grid.col} {res.grid.col_1_2} {page.style.beesContent}">
-                    <p>Cette étonnante structure est faite d’une suite d’hexagones mathématiquement parfaits et organisés
-                        de manière à optimiser l’espace tout en minimisant la quantité du matériau requis pour leur
-                        fabrication.
-                    </p>
-                    <p>Un exploit pratiquement inégalé en matière d’efficacité et de génie. Compte tenu des efforts et du
-                        savoir-faire qui doivent être déployés pour construire une ruche, c’est presque un euphémisme de
-                        dire qu’on « s’active comme une abeille ».
-                    </p>
+            </div>
+
+            <div class="{res.style.stripe} {res.style.colored} {page.style.bees}">
+                <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                    <div class="{res.grid.col} {res.grid.col_full}">
+                        <h3>Bees</h3>
+                        <p><a href="#" class="{res.style.btn}">Who are the best architects?</a></p>
+                    </div>
+                    <div class="{res.grid.col} {res.grid.col_1_2} {page.style.beesContent}">
+                        <p>
+                            <strong>L'homme a fait de l'abeille le symbole de l'organisation sociale, d'intelligence
+                                supérieure de sagesse divine par la perfection de son travail.
+                            </strong>
+                        </p>
+                        <p>Les abeilles en savent quelque chose en ce qui concerne l’ingénierie et la conception. La forme
+                            hexagonale des alvéoles est le résultat de millénaires de sélection, pour obtenir le système de
+                            construction le plus efficace, moins coûteux et plus fort.
+                        </p>
+                        <p>La construction de la ruche, chef-d’œuvre d’ingénierie et demeure de l’abeille domestique, repose
+                            sur une structure très connue : le rayon de miel.
+                        </p>
+                    </div>
+                    <div class="{res.grid.col} {res.grid.col_1_2} {page.style.beesContent}">
+                        <p>Cette étonnante structure est faite d’une suite d’hexagones mathématiquement parfaits et organisés
+                            de manière à optimiser l’espace tout en minimisant la quantité du matériau requis pour leur
+                            fabrication.
+                        </p>
+                        <p>Un exploit pratiquement inégalé en matière d’efficacité et de génie. Compte tenu des efforts et du
+                            savoir-faire qui doivent être déployés pour construire une ruche, c’est presque un euphémisme de
+                            dire qu’on « s’active comme une abeille ».
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>

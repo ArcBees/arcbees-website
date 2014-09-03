@@ -25,6 +25,9 @@ public class ResourceLoader {
             FontResources fontResources,
             DocsResources docsResources,
             PageProductResources pageProductResources,
+            PageWorkResources pageWorkResources,
+            PageContactResources pageContactResources,
+            PageCareersResources pageCareersResources,
             PageHomeResources pageHomeResources,
             PageLicenseResources pageLicenseResources) {
         appResources.normalize().ensureInjected();
@@ -34,6 +37,9 @@ public class ResourceLoader {
         fontResources.icons().ensureInjected();
         pageHomeResources.style().ensureInjected();
         pageProductResources.style().ensureInjected();
+        pageContactResources.style().ensureInjected();
+        pageCareersResources.style().ensureInjected();
+        pageWorkResources.style().ensureInjected();
         pageLicenseResources.style().ensureInjected();
     }
 }

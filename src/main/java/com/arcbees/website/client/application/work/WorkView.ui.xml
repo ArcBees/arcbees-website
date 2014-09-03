@@ -3,11 +3,132 @@
         xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
     <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
+    <ui:with field="page" type="com.arcbees.website.client.resources.PageWorkResources"/>
+    <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
 
-    <g:HTMLPanel>
+    <g:HTMLPanel styleName="{page.style.work}">
+
+        <h1 class="{fonts.icons.iconArcbees} {res.style.withLogo}">
+            <span>realisations</span>
+        </h1>
+
+        <section class="{res.style.stripe} {page.style.headerBg} {res.style.colored}">
+        </section>
 
         <section class="{res.style.stripe}">
-            <h1>Work homepage</h1>
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <div class="{res.grid.col} {res.grid.col_1_2}">
+                    <h2 class="{res.style.sloganSm}">We work hard
+                        <span>like
+                            <strong>bees</strong>
+                            <a href="#" class="{res.style.anchor}">#</a>
+                        </span>
+                    </h2>
+                </div>
+            </div>
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <div class="{res.grid.col} {res.grid.col_push_1_2}">
+                    <p>
+                        <strong>Arcbees est une entreprise regroupant plusieurs passionnés des technologies et de
+                            l’architecture logiciel avides de résoudre les problèmes complexes et concrets auxquels
+                            font face les entreprises.
+                        </strong>
+                    </p>
+                    <p>Armés de cette vision,
+                        <strong>Philippe Beaudoin et Christian Goudreau</strong>
+                        ont conçu
+                        <strong>GWT-Platform, un outil Open Source de création d’applications web</strong>
+                        doté d’une incroyable capacité d’adaptation accélérant la vitesse de développement des
+                        applications afin d’améliorer leur efficacité de production.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="{page.style.realisations} {res.style.centered}">
+            <h2>Recent works</h2>
+            <div class="{res.style.stripe} {res.style.medium2}">
+                <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                    <div class="{res.grid.col} {res.grid.col_1_2}">
+                        <g:Image resource="{page.workLille}"/>
+                        <h5>E-SCRIBE HOST</h5>
+                        <p>Medical</p>
+                    </div>
+                    <div class="{res.grid.col} {res.grid.col_1_2}">
+                        <g:Image resource="{page.workRoller}"/>
+                        <h5>ROLER</h5>
+                        <p>Banking</p>
+                    </div>
+                </div>
+                <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                    <div class="{res.grid.col} {res.grid.col_1_2}">
+                        <g:Image resource="{page.workKaam}"/>
+                        <h5>Kaam</h5>
+                        <p>Real estate</p>
+                    </div>
+                    <div class="{res.grid.col} {res.grid.col_1_2}">
+                        <g:Image resource="{page.workGwt}"/>
+                        <h5>GWT</h5>
+                        <p>Technology</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="{page.style.trusted} {res.style.stripe} {res.style.centered}">
+            <div class="{res.style.wrapper}">
+                <h2>Trusted by</h2>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <g:Image resource="{page.workTrustedRoler}"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://zafin.com/" target="_blank">
+                            <g:Image resource="{page.workTrustedZafin}"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.lillegroup.com/" target="_blank">
+                            <g:Image resource="{page.workTrustedLille}"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.protorisk.com/main.html" target="_blank">
+                            <g:Image resource="{page.workTrustedProtorisk}"/>
+                        </a>
+                    </li>
+                    <li class="{page.style.last}">
+                        <a href="http://cobratag.com/" target="_blank">
+                            <g:Image resource="{page.workTrustedCobra}"/>
+                        </a>
+                    </li>
+                    <li class="{page.style.last}">
+                        <a href="http://www.swiftiq.com/" target="_blank">
+                            <g:Image resource="{page.workTrustedStorePlacer}"/>
+                        </a>
+                    </li>
+                    <li class="{page.style.last}">
+                        <a href="https://getbookedin.com/" target="_blank">
+                            <g:Image resource="{page.workTrustedBooked}"/>
+                        </a>
+                    </li>
+                    <li class="{page.style.last}">
+                        <a href="https://www.sceneverse.com/" target="_blank">
+                            <g:Image resource="{page.workTrustedSceneverse}"/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="{res.style.stripe} {res.style.stripeLast} {res.style.colored} {res.style.centered}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <h2>Work with us</h2>
+                <a href="#" class="{res.style.btn}">Get in touch with our Queenbee</a>
+                <a href="#" data-icon="&#xe602;" class="{res.style.backTop}"></a>
+            </div>
         </section>
 
     </g:HTMLPanel>

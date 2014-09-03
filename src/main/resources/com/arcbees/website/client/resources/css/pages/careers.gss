@@ -1,0 +1,88 @@
+@require "colors";
+@require "geometria";
+
+@def CAREERS_BANNER resourceUrl("careersBanner");
+
+/* -- Page : career ---------------------------------------- */
+
+.careers {
+    background-color: C_STRIPE_LIGHT;
+}
+
+.headerBg {
+    background: CAREERS_BANNER no-repeat center;
+
+    min-height: 500px;
+}
+
+/* -- offers ------------------------------------------- */
+
+.offers h2 {
+    font-size: 2.5rem;
+
+    margin-bottom: 0;
+}
+
+.offers h3 {
+    font-size: 4rem;
+
+    margin: 0 0 .3em;
+}
+
+.offers > div {
+    border-bottom: 2px solid #000;
+}
+
+.offers > div:first-child,
+.offers > div:last-child {
+    border-bottom: none
+}
+
+/* -- quiz ------------------------------------------- */
+
+.quiz h2 {
+    font-size: 2.5rem;
+
+    margin-bottom: 0;
+}
+
+.quiz h3 {
+    font-size: 4rem;
+
+    margin: .4em 0 .3em;
+}
+
+.quiz h3 span {
+    display: block;
+    line-height: .95em;
+}
+
+.quiz h3 sup {
+    color: C_STRIPE_COLORED;
+    font-family: "geometria";
+}
+
+.quiz p em {
+    color: C_STRIPE_COLORED;
+    font-style: normal;
+    font-family: "geometriaLight";
+}
+
+.quiz span[data-icon] {
+    font-size: 9.5rem;
+
+    display: block;
+    margin-top: -10px;
+}
+
+.answer {
+    font-size: 2rem;
+}
+
+.btnGroup {
+    margin: 78px 0 20px;
+}
+
+.btnGroup a {
+    margin: 0 10px;
+}

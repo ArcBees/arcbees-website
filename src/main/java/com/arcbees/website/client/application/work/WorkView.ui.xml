@@ -44,6 +44,7 @@
                 </div>
             </div>
         </section>
+
         <section class="{page.style.realisations} {res.style.centered}">
             <h2>Recent works</h2>
             <div class="{res.style.stripe} {res.style.medium2}">
@@ -74,7 +75,7 @@
             </div>
         </section>
 
-        <section class="{res.style.stripe} {page.style.trusted} {res.style.centered}">
+        <section class="{page.style.trusted} {res.style.stripe} {res.style.centered}">
             <div class="{res.style.wrapper}">
                 <h2>Trusted by</h2>
                 <ul>

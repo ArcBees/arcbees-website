@@ -33,8 +33,7 @@
                         <strong>You want to have awesomes bees by your side, to build your apps, you know what to do :
                         </strong>
                     </p>
-                    <p>250-2299 boul. Versant nord<br/>Québec, Québec G1N 4G2
-                    </p>
+                    <p>250-2299 boul. Versant nord<br/>Québec, Québec G1N 4G2</p>
                     <p>
                         <strong>E:</strong>
                         QUEENBEE@ARCBEES.COM
@@ -46,12 +45,13 @@
                 </div>
             </div>
         </section>
+
         <section class="{page.style.social} {res.style.centered}">
             <div class="{res.style.stripe} {res.style.colored}">
-                <h2 class="{res.style.centered}">Let's be friends</h2>
+                <h2>Let's be friends</h2>
             </div>
             <div class="{res.style.stripe}">
-                <ul class="{page.style.social}">
+                <ul>
                     <li>
                         <a href="#" data-icon="&#xe622;"></a>
                     </li>
@@ -73,6 +73,7 @@
                 </ul>
             </div>
         </section>
+
         <section class="{page.style.quebec} {res.style.stripe} {res.style.dark} {res.style.centered}">
             <h3>We have fun in
                 <span>beautiful quebec city</span>
@@ -81,6 +82,7 @@
                 une pelleter d'image
             </div>
         </section>
+
         <section class="{res.style.stripe} {res.style.stripeLast} {res.style.centered}">
             <div class="{res.grid.row} {res.style.clearfix}">
                 <h2>our awesomeness

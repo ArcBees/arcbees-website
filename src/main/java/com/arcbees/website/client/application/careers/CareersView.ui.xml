@@ -42,28 +42,30 @@
                 </div>
             </div>
         </section>
-        <section class="{page.style.offers}">
+
+        <section class="{page.style.offers} {res.style.centered}">
             <div class="{res.style.stripe} {res.style.colored}">
-                <h2 class="{res.style.accent} {res.style.centered}">open positions</h2>
+                <h2>open positions</h2>
             </div>
-            <div class="{res.style.stripe} {res.style.centered}">
+            <div class="{res.style.stripe}">
                 <h3>Software engineer</h3>
                 <a href="#" class="{res.style.btn}">How can you be the best programmer you can be</a>
             </div>
-            <div class="{res.style.stripe} {res.style.centered}">
+            <div class="{res.style.stripe}">
                 <h3>Web developer</h3>
                 <a href="#" class="{res.style.btn}">Awesome CSS Master</a>
             </div>
-            <div class="{res.style.stripe} {res.style.centered}">
+            <div class="{res.style.stripe}">
                 <h3>Designer slave</h3>
                 <a href="#" class="{res.style.btn}">We hope you like to suffer</a>
             </div>
         </section>
+
         <section class="{page.style.quiz} {res.style.centered}">
             <div class="{res.style.stripe}">
-                <h2 class="{res.style.accent}">will you be a good bee?</h2>
+                <h2>will you be a good bee?</h2>
             </div>
-            <div class="{page.style.quiz} {res.style.stripe} {res.style.dark}">
+            <div class="{res.style.stripe} {res.style.dark}">
                 <span data-icon="&#xe601;"></span>
                 <h3>everybody<span>can be a bee<sup>*</sup></span>
                 </h3>
@@ -77,6 +79,7 @@
                 </p>
             </div>
         </section>
+
         <section class="{res.style.stripe} {res.style.stripeLast} {res.style.centered}">
             <div class="{res.grid.row} {res.style.clearfix}">
                 <h2>Get in touch</h2>

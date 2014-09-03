@@ -15,9 +15,13 @@
     min-height: 500px;
 }
 
-.realisations img {
-    @mixin shadow(5px, 6px, 6px,.1);
-    @mixin rounded(7px);
+/* -- Headings ------------------------------------------- */
+
+.realisations h2,
+.trusted h2 {
+    font-size: 2.5rem;
+
+    margin: 0 0 3em;
 }
 
 .realisations h5 {
@@ -26,15 +30,13 @@
     margin-bottom: 1px;
 }
 
-.realisations p {
-    margin: 0 0 65px;
+.realisations img {
+    @mixin shadow(5px, 6px, 6px,.1);
+    @mixin rounded(7px);
 }
 
-.realisations h2,
-.trusted h2 {
-    font-size: 2.5rem;
-
-    margin: 0 0 3em;
+.realisations p {
+    margin: 0 0 65px;
 }
 
 .trusted ul {

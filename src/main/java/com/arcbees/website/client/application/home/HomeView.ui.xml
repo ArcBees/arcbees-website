@@ -64,17 +64,17 @@
             </div>
         </section>
 
-        <section>
-            <div class="{res.style.stripe} {res.style.light} {res.style.centered}">
+        <section class="{res.style.centered}">
+            <div class="{res.style.stripe} {res.style.light}">
                 <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
 
-                    <div class="{res.grid.col} {res.grid.col_full} {res.style.centered}">
+                    <div class="{res.grid.col} {res.grid.col_full}">
                         <h2 class="{res.style.accent}">Why we do what we do</h2>
                     </div>
 
                 </div>
             </div>
-            <div class="{res.style.stripe} {res.style.dark} {res.style.centered} {page.style.quest}">
+            <div class="{res.style.stripe} {res.style.dark} {page.style.quest}">
                 <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                     <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4}">
 
@@ -88,8 +88,8 @@
             </div>
         </section>
 
-        <section>
-            <div class="{res.style.stripe} {res.style.dark} {res.style.centered}">
+        <section class="{res.style.centered}">
+            <div class="{res.style.stripe} {res.style.dark}">
                 <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                     <h2 class="{res.style.accent}">Why do we call us
                         <span>Arcbees?</span>
@@ -97,7 +97,7 @@
                 </div>
             </div>
 
-            <div class="{res.style.stripe} {res.style.light} {res.style.centered}">
+            <div class="{res.style.stripe} {res.style.light}">
                 <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                     <h3>Architects</h3>
                     <p>We are architects developer</p>
@@ -106,7 +106,7 @@
 
             <div class="{res.style.stripe} {res.style.colored} {page.style.bees}">
                 <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                    <div class="{res.grid.col} {res.grid.col_full} {res.style.centered}">
+                    <div class="{res.grid.col} {res.grid.col_full}">
                         <h3>Bees</h3>
                         <p><a href="#" class="{res.style.btn}">Who are the best architects?</a></p>
                     </div>

@@ -19,5 +19,7 @@
 }
 
 .home .beesContent {
+    text-align: left;
+
     padding-top: 270px;
 }

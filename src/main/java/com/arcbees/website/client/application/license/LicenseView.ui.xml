@@ -56,7 +56,6 @@
         </section>
 
         <section>
-
             <div class="{res.style.stripe} {res.style.light}">
                 <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                     <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.style.centered}">
@@ -147,7 +146,7 @@
         <section class="{res.style.stripe} {res.style.light} {res.style.centered}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
 
-                <div class="{res.grid.col} {res.grid.col_full} {res.style.centered}">
+                <div class="{res.grid.col} {res.grid.col_full}">
                     <h2>Products support</h2>
                 </div>
 
@@ -184,7 +183,7 @@
         <section class="{res.style.stripe} {res.style.medium2} {res.style.centered}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
 
-                <div class="{res.grid.col} {res.grid.col_full} {res.style.centered}">
+                <div class="{res.grid.col} {res.grid.col_full}">
                     <h2>More support</h2>
                 </div>
 

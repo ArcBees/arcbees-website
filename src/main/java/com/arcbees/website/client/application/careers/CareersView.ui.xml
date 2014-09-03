@@ -3,11 +3,86 @@
         xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
     <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
+    <ui:with field="page" type="com.arcbees.website.client.resources.PageCareersResources"/>
+    <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
 
-    <g:HTMLPanel>
+    <g:HTMLPanel styleName="{page.style.careers}">
 
-        <section class="{res.style.stripe}">
-            <h1>Careers homepage</h1>
+        <h1 class="{fonts.icons.iconArcbees} {res.style.withLogo}">
+            <span>Careers</span>
+        </h1>
+
+        <section class="{res.style.stripe} {page.style.headerBg}">
+        </section>
+
+        <section class="{res.style.stripe} {res.style.colored}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <div class="{res.grid.col} {res.grid.col_1_2}">
+                    <h2 class="{res.style.sloganSm}">Bee part
+                        <span>of the
+                            <strong>hive</strong>
+                        </span>
+                    </h2>
+                </div>
+            </div>
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <div class="{res.grid.col} {res.grid.col_push_1_2}">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur culpa delectus fugit
+                        laboriosam odit officiis praesentium sed voluptatum! Cumque dolor id maxime nesciunt officia
+                        porro, quia sequi. Ducimus nesciunt, provident.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dignissimos dolor eius
+                        facilis fuga, id magnam odit officia officiis perspiciatis placeat quia quo repellendus saepe
+                        soluta suscipit ullam velit voluptates?
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dignissimos dolor eius
+                        facilis fuga, id magnam odit officia officiis perspiciatis placeat quia quo repellendus saepe
+                        soluta suscipit ullam velit voluptates?
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="{page.style.offers}">
+            <div class="{res.style.stripe} {res.style.colored}">
+                <h2 class="{res.style.accent} {res.style.centered}">open positions</h2>
+            </div>
+            <div class="{res.style.stripe} {res.style.centered}">
+                <h3>Software engineer</h3>
+                <a href="#" class="{res.style.btn}">How can you be the best programmer you can be</a>
+            </div>
+            <div class="{res.style.stripe} {res.style.centered}">
+                <h3>Web developer</h3>
+                <a href="#" class="{res.style.btn}">Awesome CSS Master</a>
+            </div>
+            <div class="{res.style.stripe} {res.style.centered}">
+                <h3>Designer slave</h3>
+                <a href="#" class="{res.style.btn}">We hope you like to suffer</a>
+            </div>
+        </section>
+        <section class="{page.style.quiz} {res.style.centered}">
+            <div class="{res.style.stripe}">
+                <h2 class="{res.style.accent}">will you be a good bee?</h2>
+            </div>
+            <div class="{page.style.quiz} {res.style.stripe} {res.style.dark}">
+                <span data-icon="&#xe601;"></span>
+                <h3>everybody<span>can be a bee<sup>*</sup></span>
+                </h3>
+                <p class="{page.style.answer}">Be the best at what you do</p>
+                <div class="{page.style.btnGroup}">
+                    <a href="#" class="{res.style.btn}">Share</a>
+                    <a href="#" class="{res.style.btn}">Try again</a>
+                </div>
+                <p>
+                    <em><sup>*</sup>but you must know how to play BabyFoot table</em>
+                </p>
+            </div>
+        </section>
+        <section class="{res.style.stripe} {res.style.stripeLast} {res.style.centered}">
+            <div class="{res.grid.row} {res.style.clearfix}">
+                <h2>Get in touch</h2>
+                <a href="#" class="{res.style.btn}">We like to meet new people</a>
+                <a href="#" data-icon="&#xe602;" class="{res.style.backTop}"></a>
+            </div>
         </section>
 
     </g:HTMLPanel>

@@ -73,6 +73,12 @@ public interface AppResources extends FontResources {
         String medium3();
 
         String backTop();
+
+        String stripeLast();
+
+        String anchor();
+
+        String sloganSm();
     }
 
     @Source("css/normalize.gss")

@@ -1,0 +1,49 @@
+@require "colors";
+@require "geometria";
+
+/* -- Page : home ---------------------------------------- */
+
+.contact {
+    background-color: C_STRIPE_LIGHT;
+}
+
+.headerBg iframe {
+    min-width: 100%;
+}
+
+.social h2 {
+    font-size: 2.5rem;
+
+    margin: 0;
+}
+
+.social ul{
+    padding-left: 0;
+}
+
+.social li {
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.social a,
+.social a:visited {
+    color: #000;
+    font-size: 5.6rem;
+
+    @mixin transition(color, .2s);
+}
+
+.social a:hover {
+    color: #f2f2f2;
+}
+
+.quebec h3 {
+    font-size: 1.7rem;
+
+    margin-top: 0;
+}
+
+.quebec h3 span {
+    display: block;
+}

@@ -46,8 +46,12 @@
 @external iconArcbees iconSignCode iconArcbeesName iconArrowOutside iconArrowDown iconBeer iconChosen iconDevTime
 iconCode iconHeart iconClose iconFb iconFbSquare iconGae iconGitHub iconGPlus iconBees iconGwtp iconHeadQuestion
 iconHero iconHive iconInfinite iconInfo iconJukito iconLike iconLkd iconMapPin iconPyramid iconRadar iconRubic
-iconSearch iconShare iconSkull iconTrophe iconTwitter iconWordpress;
+iconSearch iconShare iconSkull iconTrophe iconTwitter iconWordpress iconChat iconEmail iconPhone iconUser;
 
+.iconChat:before {content: "\e614";}
+.iconEmail:before {content: "\e615";}
+.iconPhone:before {content: "\e616";}
+.iconUser:before {content: "\e617";}
 .iconArcbees:before { content: "\e601";}
 .iconSignCode:before { content: "\e600";}
 .iconArcbeesName:before { content: "\e613";}

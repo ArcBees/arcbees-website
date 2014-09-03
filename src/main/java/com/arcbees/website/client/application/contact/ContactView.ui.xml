@@ -3,11 +3,94 @@
         xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
     <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
+    <ui:with field="page" type="com.arcbees.website.client.resources.PageContactResources"/>
+    <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
 
-    <g:HTMLPanel>
+    <g:HTMLPanel styleName="{page.style.contact}">
 
-        <section class="{res.style.stripe}">
-            <h1>Contact homepage</h1>
+        <h1 class="{fonts.icons.iconArcbees} {res.style.withLogo}">
+            <span>Contact</span>
+        </h1>
+
+        <section class="{page.style.headerBg}">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2731.6257709284914!2d-71.28753899999998!3d46.79197799999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb8971fd358c99b%3A0xd5dc164e651a11d7!2sArcBees!5e0!3m2!1sen!2sca!4v1409755097883"
+                    width="600" height="550" frameborder="0" style="border:0"></iframe>
+        </section>
+
+        <section class="{res.style.stripe} {res.style.colored}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <div class="{res.grid.col} {res.grid.col_1_2}">
+                    <h2 class="{res.style.slogan}">Work with
+                        <span>the
+                            <strong>bees</strong>
+                        </span>
+                    </h2>
+                </div>
+            </div>
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <div class="{res.grid.col} {res.grid.col_push_1_2}">
+                    <p>
+                        <strong>You want to have awesomes bees by your side, to build your apps, you know what to do :
+                        </strong>
+                    </p>
+                    <p>250-2299 boul. Versant nord<br/>Québec, Québec G1N 4G2</p>
+                    <p>
+                        <strong>E:</strong>
+                        QUEENBEE@ARCBEES.COM
+                        <br/>
+                        <strong>Toll-free:</strong>
+                        1.877.635.1585
+                    </p>
+                    <a href="#" class="{res.style.btn}">Get directions</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="{page.style.social} {res.style.centered}">
+            <div class="{res.style.stripe} {res.style.colored}">
+                <h2>Let's be friends</h2>
+            </div>
+            <div class="{res.style.stripe}">
+                <ul>
+                    <li>
+                        <a href="#" data-icon="&#xe622;"></a>
+                    </li>
+                    <li>
+                        <a href="#" data-icon="&#xe60d;"></a>
+                    </li>
+                    <li>
+                        <a href="#" data-icon="&#xe611;"></a>
+                    </li>
+                    <li>
+                        <a href="#" data-icon="&#xe623;"></a>
+                    </li>
+                    <li>
+                        <a href="#" data-icon="&#xe60a;"></a>
+                    </li>
+                    <li>
+                        <a href="#" data-icon="&#xe60c;"></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="{page.style.quebec} {res.style.stripe} {res.style.dark} {res.style.centered}">
+            <h3>We have fun in
+                <span>beautiful quebec city</span>
+            </h3>
+            <div>
+                une pelleter d'image
+            </div>
+        </section>
+
+        <section class="{res.style.stripe} {res.style.stripeLast} {res.style.centered}">
+            <div class="{res.grid.row} {res.style.clearfix}">
+                <h2>our awesomeness
+                    <span>at work</span>
+                </h2>
+                <a href="#" class="{res.style.btn}">See your projects and products</a>
+                <a href="#" data-icon="&#xe602;" class="{res.style.backTop}"></a>
+            </div>
         </section>
 
     </g:HTMLPanel>

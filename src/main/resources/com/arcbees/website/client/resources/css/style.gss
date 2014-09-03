@@ -71,6 +71,7 @@ h1 span {
 
 h2 {
     font-size: 4rem;
+    line-height: .9em;
 
     margin: 0.2em 0 0.9em;
 }
@@ -82,10 +83,25 @@ h2 span {
 h2.slogan {
     font-size: 6rem;
     font-family: "geometriaBold", Arial, sans-serif;
+    line-height: .9em;
+
+    margin-bottom: 0;
 }
 
-h2.slogan strong {
+h2.sloganSm {
+    font-size: 4.25rem;
+    line-height: .9em;
+
+    margin: 0;
+}
+
+h2.slogan strong,
+h2.sloganSm strong {
     border-bottom: 0.2em solid C_PRIMARY;
+}
+
+.colored h2 strong {
+    border-color: C_STRIPE_LIGHT;
 }
 
 h3 {
@@ -129,6 +145,17 @@ strong {
 
 em {
     font-style: italic;
+}
+
+a.anchor {
+    color: #afafaf;
+    font-size: 2.5rem;
+    font-family: "geometria";
+
+    display: inline-block;
+    margin-top: -7px;
+
+    vertical-align: middle;
 }
 
 /* -- Components ---------------------------------------- */
@@ -382,6 +409,10 @@ em {
 
 .stripe.colored {
     background-color: C_STRIPE_COLORED;
+}
+
+.stripeLast {
+    padding: 60px 0 10px;
 }
 
 .sloganSide {

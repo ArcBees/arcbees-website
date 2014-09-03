@@ -36,6 +36,8 @@ public interface FontResources extends ClientBundle {
         String iconArrowDown();
 
         String valignSup();
+
+        String iconChosen();
     }
 
     @ClientBundle.Source("fonts/icons/icons.gss")

@@ -1,0 +1,153 @@
+@require "colors";
+@require "geometria";
+
+/* -- Page : license ------------------------------------- */
+
+.license ul {
+    padding-left: 0;
+
+    list-style-type: none;
+}
+
+.license ul li::before {
+    content: "+ ";
+    font-family: "geometriaBold", Arial, sans-serif;
+}
+
+.license .featuredIcons {
+    color: #fff;
+    font-size: 22rem;
+
+    padding-bottom: 0.2em;
+}
+
+.plan {
+    padding-top: 1.8em;
+}
+
+.plan header {
+    background-color: C_STRIPE_DARK;
+    color: C_STRIPE_LIGHT;
+
+    padding: 10px 20px 2px;
+}
+
+.plan header h3 {
+    font-family: "geometriaLight", Arial, sans-serif;
+    font-weight: normal;
+    text-align: left;
+
+    margin-top: 0.5em;
+}
+
+.plan .price {
+    text-align: right;
+    font-family: "geometriaBold", Arial, sans-serif;
+    text-transform: uppercase;
+
+    padding: 1.5em 0 1em;
+}
+
+.plan .price strong {
+    font-size: 4rem;
+    font-family: "geometriaLight", Arial, sans-serif;
+    text-align: center;
+    
+    display: block;
+}
+
+.plan header .billed {
+    color: #525252;
+    font-style: normal;
+    font-size: 1.3rem;
+    text-align: left;
+}
+
+.plan ul {
+    background-color: #fdf382;
+    text-align: center;
+
+    padding: 0 0 1em;
+    margin-top: 0.4em;
+}
+
+.plan li {
+    margin-bottom: 0;
+    padding: 0.1em 1em 0.5em;
+}
+
+.plan li::before {
+    display: none;
+}
+
+.plan li strong {
+    display: block;
+}
+
+.plan li.point {
+    background-color: #fff;
+    font-size: 2rem;
+    font-family: "geometriaBold", Arial, sans-serif;
+}
+
+.plan li.point:first-child {
+    padding-top: 1em;
+}
+
+.plan li.point.last {
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+/* -> Best buy plan -- */
+
+.bestbuy {
+    padding-top: 0;
+}
+
+.bestbuy header h3 {
+    margin-bottom: 1.8em;
+}
+
+.bestbuy .price {
+    padding-bottom: 1.5em;
+}
+
+/* -> Products -- */
+
+.license .gwtp,
+.license .jukito,
+.license .chosen {
+    font-size: 5rem;
+    line-height: 0.75em;
+
+    margin-top: 0.8em;
+    min-height: 220px;
+}
+
+.license .gwtp i,
+.license .jukito i,
+.license .chosen i {
+    font-size: 13rem;
+
+    display: block;
+    margin-bottom: 0.1em;
+}
+
+.license .gwtp i {
+    color: C_PRODUCT_GWTP;
+}
+
+.license .jukito i {
+    color: C_PRODUCT_JUKITO;
+}
+
+.license .chosen i {
+    color: C_PRODUCT_CHOSEN;
+}
+
+.license .chosen span {
+    font-size: 3rem;
+
+    display: block;
+}

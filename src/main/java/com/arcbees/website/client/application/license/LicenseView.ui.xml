@@ -3,11 +3,217 @@
         xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
     <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
+    <ui:with field="page" type="com.arcbees.website.client.resources.PageLicenseResources"/>
+    <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
 
-    <g:HTMLPanel>
+    <ui:import field="com.arcbees.website.client.NameTokens.*"/>
 
-        <section class="{res.style.stripe}">
-            <h1>Expertise homepage</h1>
+    <g:HTMLPanel styleName="{page.style.license}">
+
+        <h1 class="{fonts.icons.iconArcbees} {res.style.withLogo}"><span>Licenses</span></h1>
+
+        <section class="{res.style.stripe} {res.style.colored} {res.style.centered}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {page.style.featuredIcons}">
+
+                <i class="{fonts.icons.iconGwtp}"></i>
+                <i class="{fonts.icons.iconJukito}"></i>
+                <i class="{fonts.icons.iconChosen}"></i>
+
+            </div>
+        </section>
+
+        <section class="{res.style.stripe} {res.style.light}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+
+                <div class="{res.grid.col} {res.grid.col_1_2}">
+                    <h2 class="{res.style.slogan}">Bee here
+                        <span>to
+                            <strong>help you</strong>
+                        </span>
+                    </h2>
+                </div>
+
+                <div class="{res.grid.col} {res.grid.col_1_2} {res.style.sloganSide}">
+                    <p>
+                        <strong>Need support? We're here to help you in many ways: forum, email, phone, hangout, Skype
+                            and even in person! Just choose according to your needs.
+                        </strong>
+                    </p>
+                    <h3>Free community resources</h3>
+                    <p>We monitor our online forums, and answer most questions in a day or so.</p>
+                    <p>
+                        <strong>Find us at our:</strong>
+                    </p>
+                    <ul>
+                        <li>Google Group</li>
+                        <li>Google+ Community</li>
+                        <li>Stack Overflow</li>
+                    </ul>
+                    <p>Also, check out our GitHub Wiki for the latest documentation.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+
+            <div class="{res.style.stripe} {res.style.light}">
+                <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                    <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.style.centered}">
+                        <h2>Support packages</h2>
+                        <p>ArcBees is pleased to offer a variety of supports options to its clients. Pick the one that
+                            fits you best. You can also contact us for a custom made kit just for you.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="{res.style.stripe} {res.style.colored}">
+                <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+
+                    <h2 class="{res.style.hidden}">Licenses type</h2>
+
+                    <article class="{res.grid.col} {res.grid.col_1_3} {page.style.plan}">
+                        <header>
+                            <h3>Basic</h3>
+                            <p class="{page.style.price}">
+                                <strong>199.95</strong>
+                                $/mo
+                            </p>
+                            <p class="{page.style.billed}">Billed annually or monthly</p>
+                        </header>
+                        <ul>
+                            <li class="{page.style.point}">1 Developer</li>
+                            <li class="{page.style.point}">1 Support Case</li>
+                            <li class="{page.style.point} {page.style.last}">1 Advisory Hour</li>
+                            <li>Free Community Resources Accessible</li>
+                            <li>Guaranteed Response Time <strong>48 hours</strong></li>
+                            <li>Support</li>
+                        </ul>
+                        <p class="{res.style.centered}">
+                            <a href="#" class="{res.style.btn}">Subscribe</a>
+                        </p>
+                    </article>
+
+                    <article class="{res.grid.col} {res.grid.col_1_3} {page.style.plan} {page.style.bestbuy}">
+                        <header>
+                            <h3>Professional</h3>
+                            <p class="{page.style.price}">
+                                <strong>499.95</strong>
+                                $/mo
+                            </p>
+                            <p class="{page.style.billed}">Billed annually or monthly</p>
+                        </header>
+                        <ul>
+                            <li class="{page.style.point}">5 Developers</li>
+                            <li class="{page.style.point}">4 Support Cases</li>
+                            <li class="{page.style.point} {page.style.last}">3 Advisory Hours</li>
+                            <li>Free Community Resources Accessible</li>
+                            <li>Guaranteed Response Time <strong>24 hours</strong></li>
+                            <li>Support</li>
+                        </ul>
+                        <p class="{res.style.centered}">
+                            <a href="#" class="{res.style.btn}">Subscribe</a>
+                        </p>
+                    </article>
+
+                    <article class="{res.grid.col} {res.grid.col_1_3} {page.style.plan}">
+                        <header>
+                            <h3>Entreprise</h3>
+                            <p class="{page.style.price}">
+                                <strong>2 999.95</strong>
+                                $/mo
+                            </p>
+                            <p class="{page.style.billed}">Billed annually or monthly</p>
+                        </header>
+                        <ul>
+                            <li class="{page.style.point}">25 Developers</li>
+                            <li class="{page.style.point}">20 Support Cases</li>
+                            <li class="{page.style.point} {page.style.last}">16 Advisory Hours</li>
+                            <li>Free Community Resources Accessible</li>
+                            <li>Guaranteed Response Time <strong>12 hours</strong></li>
+                            <li>Support</li>
+                        </ul>
+                        <p class="{res.style.centered}">
+                            <a href="#" class="{res.style.btn}">Subscribe</a>
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="{res.style.stripe} {res.style.light} {res.style.centered}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+
+                <div class="{res.grid.col} {res.grid.col_full} {res.style.centered}">
+                    <h2>Products support</h2>
+                </div>
+
+                <div class="{res.grid.col} {res.grid.col_1_3}">
+                    <h3 class="{page.style.gwtp}">
+                        <i class="{fonts.icons.iconGwtp}"></i>
+                        GWTP
+                    </h3>
+                    <p>Combining powerful features, GWTP is an out-of-the-box solution that supports all the requirements of modern web apps.</p>
+                    <p><a href="#" class="{res.style.btn}">Learn more</a></p>
+                </div>
+
+                <div class="{res.grid.col} {res.grid.col_1_3}">
+                    <h3 class="{page.style.jukito}">
+                        <i class="{fonts.icons.iconJukito}"></i>
+                        Jukito
+                    </h3>
+                    <p>Jukito lets you use the power of dependency injection in all your tests. Jukito combine power of JUnit, Guice and Mockito.</p>
+                    <p><a href="#" class="{res.style.btn}">Learn more</a></p>
+                </div>
+
+                <div class="{res.grid.col} {res.grid.col_1_3}">
+                    <h3 class="{page.style.chosen}">
+                        <i class="{fonts.icons.iconChosen}"></i>
+                        GWT<span>Chosen</span>
+                    </h3>
+                    <p>GWT Chosen is a javascript plugin (for jQuery and Prototype) that makes long, unwieldy select boxes much more user-friendly.</p>
+                    <p><a href="#" class="{res.style.btn}">Learn more</a></p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="{res.style.stripe} {res.style.medium2} {res.style.centered}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+
+                <div class="{res.grid.col} {res.grid.col_full} {res.style.centered}">
+                    <h2>More support</h2>
+                </div>
+
+                <div class="{res.grid.col} {res.grid.col_1_2}">
+                    <h3>Gss on Steroids</h3>
+                    <p><a href="#" class="{res.style.btn}">Learn more</a></p>
+                </div>
+
+                <div class="{res.grid.col} {res.grid.col_1_2}">
+                    <h3>GWT Elastic</h3>
+                    <p><a href="#" class="{res.style.btn}">Learn more</a></p>
+                </div>
+
+                <div class="{res.grid.col} {res.grid.col_1_2}">
+                    <h3>GWT Stripe</h3>
+                    <p><a href="#" class="{res.style.btn}">Learn more</a></p>
+                </div>
+
+                <div class="{res.grid.col} {res.grid.col_1_2}">
+                    <h3>GWT Tooltip</h3>
+                    <p><a href="#" class="{res.style.btn}">Learn more</a></p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="{res.style.stripe} {res.style.light} {res.style.centered}">
+            <h2>Need support?</h2>
+            <a href="#{LICENSE}" class="{res.style.btn}">Arcbees offer a variety of supports options</a>
         </section>
 
     </g:HTMLPanel>

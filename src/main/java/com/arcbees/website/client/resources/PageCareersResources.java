@@ -46,9 +46,6 @@ public interface PageCareersResources extends FontResources {
         String icon6();
     }
 
-    @Source("img/pages/careersBanner.png")
-    ImageResource careersBanner();
-
     @Source({"com/arcbees/gsss/mixin/client/mixins.gss", "css/colors.gss", "fonts/geometria/geometria.gss", "css/pages/careers.gss"})
     Style style();
 }

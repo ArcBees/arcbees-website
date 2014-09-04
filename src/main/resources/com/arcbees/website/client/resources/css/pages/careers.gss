@@ -1,8 +1,6 @@
 @require "colors";
 @require "geometria";
 
-@def CAREERS_BANNER resourceUrl("careersBanner");
-
 /* -- Page : career ---------------------------------------- */
 
 .careers {

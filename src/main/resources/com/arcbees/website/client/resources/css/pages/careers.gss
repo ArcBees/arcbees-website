@@ -9,10 +9,113 @@
     background-color: C_STRIPE_LIGHT;
 }
 
-.headerBg {
-    background: CAREERS_BANNER no-repeat center;
+.careers .intro {
+    height: 600px;
 
-    min-height: 500px;
+    position: relative;
+}
+
+.careers .intro i {
+    font-size: 20rem;
+    color: C_PRIMARY;
+
+    position: absolute;
+}
+
+.careers .intro i.icon1 {
+    margin-right: -50px;
+
+    top: 185px;
+    right: 50%;
+
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    -o-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+.careers .intro i.icon1::before {
+    @mixin rotate(30deg);
+}
+
+.careers .intro i.icon2 {
+    top: 98px;
+    right: 50%;
+
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.careers .intro i.icon2::before {
+    @mixin rotate(90deg);
+}
+
+.careers .intro i.icon3 {
+    margin-right: -50px;
+
+    top: 11px;
+    right: 50%;
+
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    -o-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+.careers .intro i.icon3::before {
+    @mixin rotate(150deg);
+}
+
+.careers .intro i.icon4 {
+    margin-left: -50px;
+
+    top: 11px;
+    left: 50%;
+
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    -o-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+.careers .intro i.icon4::before {
+    @mixin rotate(-150deg);
+}
+
+.careers .intro i.icon5 {
+    color: C_STRIPE_DARK;
+
+    top: 98px;
+    left: 50%;
+
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    -o-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+
+    @mixin translate(80px, 0);
+}
+
+.careers .intro i.icon5::before {
+    @mixin rotate(-90deg);
+}
+
+.careers .intro i.icon6 {
+    margin-left: -50px;
+
+    top: 185px;
+    left: 50%;
+
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    -o-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+.careers .intro i.icon6::before {
+    @mixin rotate(-30deg);
 }
 
 /* -- offers ------------------------------------------- */

@@ -36,10 +36,10 @@
                                 <a href="#{GAE}" class="{fonts.icons.iconGae}">GAE Studio</a>
                             </li>
                             <li>
-                                <a href="#{JUKITO}" class="{fonts.icons.iconJukito}">Jukito</a>
+                                <a href="#{GWTP}" class="{fonts.icons.iconGwtp}">GWTP</a>
                             </li>
                             <li>
-                                <a href="#{GWTP}" class="{fonts.icons.iconGwtp}">GWTP</a>
+                                <a href="#{JUKITO}" class="{fonts.icons.iconJukito}">Jukito</a>
                             </li>
                         </ul>
                     </li>

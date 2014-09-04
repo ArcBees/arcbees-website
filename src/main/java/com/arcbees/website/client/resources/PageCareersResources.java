@@ -23,8 +23,6 @@ public interface PageCareersResources extends FontResources {
     interface Style extends GssResource {
         String careers();
 
-        String headerBg();
-
         String offers();
 
         String quiz();
@@ -32,6 +30,20 @@ public interface PageCareersResources extends FontResources {
         String answer();
 
         String btnGroup();
+
+        String intro();
+
+        String icon1();
+
+        String icon2();
+
+        String icon3();
+
+        String icon4();
+
+        String icon5();
+
+        String icon6();
     }
 
     @Source("img/pages/careersBanner.png")

@@ -117,32 +117,50 @@
         </section>
 
         <section class="{res.style.stripe} {page.style.colored} {res.style.centered}">
-            <h3>DATA
-                <span>VISUALISATION</span>
-                <a href="#" class="{page.style.anchor}">#</a>
-            </h3>
-            <a href="#" class="{res.style.btn}">Browser your different kinds</a>
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <div class="{res.grid.col} {res.grid.col_full}">
+
+                    <h3>DATA
+                        <span>VISUALISATION</span>
+                        <a href="#" class="{page.style.anchor}">#</a>
+                    </h3>
+                    <a href="#" class="{res.style.btn}">Browser your different kinds</a>
+
+                </div>
+            </div>
         </section>
 
         <section class="{res.style.stripe} {res.style.medium2} {res.style.centered}">
-            <h3>ON-THE-FLY DATA
-                <span>EDITING</span>
-                <a href="#" class="{page.style.anchor}">#</a>
-            </h3>
-            <a href="#" class="{res.style.btn}">Browser your different kinds</a>
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <div class="{res.grid.col} {res.grid.col_full}">
+
+                    <h3>ON-THE-FLY DATA
+                        <span>EDITING</span>
+                        <a href="#" class="{page.style.anchor}">#</a>
+                    </h3>
+                    <a href="#" class="{res.style.btn}">Browser your different kinds</a>
+
+                </div>
+            </div>
         </section>
 
         <section class="{res.style.stripe} {res.style.dark} {res.style.centered}">
-            <h3>Subscribe</h3>
-            <p>GAE studio is still in development, subscribe to get an early access!</p>
-            <form>
-                <label>What's your email address?
-                    <span data-icon="&#xe60f;" class="{fonts.icons.valignSup}"></span>
-                </label>
-                <input type="email" name="email"></input>
-            </form>
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <div class="{res.grid.col} {res.grid.col_full}">
 
-            <a href="#" class="{res.style.btn}">Subscribe</a>
+                    <h3>Subscribe</h3>
+                    <p>GAE studio is still in development, subscribe to get an early access!</p>
+                    <form>
+                        <label>What's your email address?
+                            <span data-icon="&#xe60f;" class="{fonts.icons.valignSup}"></span>
+                        </label>
+                        <input type="email" name="email"></input>
+                    </form>
+
+                    <a href="#" class="{res.style.btn}">Subscribe</a>
+
+                </div>
+            </div>
         </section>
 
         <section class="{res.style.stripe} {page.style.colored} {res.style.centered}">
@@ -167,9 +185,15 @@
         </section>
 
         <section class="{res.style.stripe} {page.style.stripeSupport} {res.style.centered}">
-            <h3>Need support?</h3>
-            <a href="#" class="{res.style.btn}">Arcbees offer a variety of supports options</a>
-            <a href="#" data-icon="&#xe602;" class="{res.style.backTop}"></a>
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <div class="{res.grid.col} {res.grid.col_full}">
+
+                    <h3>Need support?</h3>
+                    <a href="#" class="{res.style.btn}">Arcbees offer a variety of supports options</a>
+                    <a href="#" data-icon="&#xe602;" class="{res.style.backTop}"></a>
+
+                </div>
+            </div>
         </section>
 
     </g:HTMLPanel>

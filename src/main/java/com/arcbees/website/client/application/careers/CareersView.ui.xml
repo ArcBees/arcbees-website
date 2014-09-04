@@ -5,6 +5,7 @@
     <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
     <ui:with field="page" type="com.arcbees.website.client.resources.PageCareersResources"/>
     <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
+    <ui:with field="animations" type="com.arcbees.website.client.resources.AnimationsResources"/>
 
     <g:HTMLPanel styleName="{page.style.careers}">
 
@@ -12,7 +13,17 @@
             <span>Careers</span>
         </h1>
 
-        <section class="{res.style.stripe} {page.style.headerBg}">
+        <section class="{res.style.stripe} {res.style.light} {res.style.centered} {page.style.intro}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+
+                <i class="{fonts.icons.iconArcbees} {page.style.icon1} {animations.style.animated} {animations.style.bounceIn}"></i>
+                <i class="{fonts.icons.iconArcbees} {page.style.icon2} {animations.style.animated} {animations.style.bounceIn}"></i>
+                <i class="{fonts.icons.iconArcbees} {page.style.icon3} {animations.style.animated} {animations.style.bounceIn}"></i>
+                <i class="{fonts.icons.iconArcbees} {page.style.icon4} {animations.style.animated} {animations.style.bounceIn}"></i>
+                <i class="{fonts.icons.iconArcbees} {page.style.icon5}"></i>
+                <i class="{fonts.icons.iconArcbees} {page.style.icon6} {animations.style.animated} {animations.style.bounceIn}"></i>
+
+            </div>
         </section>
 
         <section class="{res.style.stripe} {res.style.colored}">
@@ -48,16 +59,28 @@
                 <h2>open positions</h2>
             </div>
             <div class="{res.style.stripe}">
-                <h3>Software engineer</h3>
-                <a href="#" class="{res.style.btn}">How can you be the best programmer you can be</a>
+                <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                    <div class="{res.grid.col} {res.grid.col_full}">
+                        <h3>Software engineer</h3>
+                        <a href="#" class="{res.style.btn}">How can you be the best programmer you can be</a>
+                    </div>
+                </div>
             </div>
             <div class="{res.style.stripe}">
-                <h3>Web developer</h3>
-                <a href="#" class="{res.style.btn}">Awesome CSS Master</a>
+                <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                    <div class="{res.grid.col} {res.grid.col_full}">
+                        <h3>Web developer</h3>
+                        <a href="#" class="{res.style.btn}">Awesome CSS Master</a>
+                    </div>
+                </div>
             </div>
             <div class="{res.style.stripe}">
-                <h3>Designer slave</h3>
-                <a href="#" class="{res.style.btn}">We hope you like to suffer</a>
+                <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                    <div class="{res.grid.col} {res.grid.col_full}">
+                        <h3>Designer slave</h3>
+                        <a href="#" class="{res.style.btn}">We hope you like to suffer</a>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -66,25 +89,35 @@
                 <h2>will you be a good bee?</h2>
             </div>
             <div class="{res.style.stripe} {res.style.dark}">
-                <span data-icon="&#xe601;"></span>
-                <h3>everybody<span>can be a bee<sup>*</sup></span>
-                </h3>
-                <p class="{page.style.answer}">Be the best at what you do</p>
-                <div class="{page.style.btnGroup}">
-                    <a href="#" class="{res.style.btn}">Share</a>
-                    <a href="#" class="{res.style.btn}">Try again</a>
+                <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                    <div class="{res.grid.col} {res.grid.col_full}">
+
+                        <span data-icon="&#xe601;"></span>
+                        <h3>everybody<span>can be a bee<sup>*</sup></span>
+                        </h3>
+                        <p class="{page.style.answer}">Be the best at what you do</p>
+                        <div class="{page.style.btnGroup}">
+                            <a href="#" class="{res.style.btn}">Share</a>
+                            <a href="#" class="{res.style.btn}">Try again</a>
+                        </div>
+                        <p>
+                            <em><sup>*</sup>but you must know how to play BabyFoot table</em>
+                        </p>
+
+                    </div>
                 </div>
-                <p>
-                    <em><sup>*</sup>but you must know how to play BabyFoot table</em>
-                </p>
             </div>
         </section>
 
         <section class="{res.style.stripe} {res.style.stripeLast} {res.style.centered}">
-            <div class="{res.grid.row} {res.style.clearfix}">
-                <h2>Get in touch</h2>
-                <a href="#" class="{res.style.btn}">We like to meet new people</a>
-                <a href="#" data-icon="&#xe602;" class="{res.style.backTop}"></a>
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <div class="{res.grid.col} {res.grid.col_full}">
+
+                    <h2>Get in touch</h2>
+                    <a href="#" class="{res.style.btn}">We like to meet new people</a>
+                    <a href="#" data-icon="&#xe602;" class="{res.style.backTop}"></a>
+
+                </div>
             </div>
         </section>
 

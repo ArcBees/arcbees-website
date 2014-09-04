@@ -1,0 +1,245 @@
+@require "colors";
+@require "geometria";
+
+/* -- Page : bees ----------------------------------------- */
+
+.bees .intro {
+    height: 600px;
+
+    position: relative;
+}
+
+.bees .intro i {
+    font-size: 20rem;
+    color: C_PRIMARY;
+
+    position: absolute;
+}
+
+.bees .intro i.icon1 {
+    margin-right: -50px;
+
+    top: 185px;
+    right: 50%;
+
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.bees .intro i.icon1::before {
+    @mixin rotate(30deg);
+}
+
+.bees .intro i.icon2 {
+    top: 98px;
+    right: 50%;
+
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    -o-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+.bees .intro i.icon2::before {
+    @mixin rotate(90deg);
+}
+
+.bees .intro i.icon3 {
+    margin-right: -50px;
+
+    top: 11px;
+    right: 50%;
+
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    -o-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+.bees .intro i.icon3::before {
+    @mixin rotate(150deg);
+}
+
+.bees .intro i.icon4 {
+    margin-left: -50px;
+
+    top: 11px;
+    left: 50%;
+
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    -o-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+.bees .intro i.icon4::before {
+    @mixin rotate(-150deg);
+}
+
+.bees .intro i.icon5 {
+    top: 98px;
+    left: 50%;
+
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+    -o-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+.bees .intro i.icon5::before {
+    @mixin rotate(-90deg);
+}
+
+.bees .intro i.icon6 {
+    margin-left: -50px;
+
+    top: 185px;
+    left: 50%;
+
+    -webkit-animation-delay: 0.7s;
+    -moz-animation-delay: 0.7s;
+    -o-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+
+.bees .intro i.icon6::before {
+    @mixin rotate(-30deg);
+}
+
+.bees .slides {
+
+}
+
+.bees .slide {
+
+}
+
+.bees a.next,
+.bees a.prev {
+    color: #000;
+    font-size: 2.5rem;
+
+    margin-top: -12px;
+
+    top: 50%;
+    left: 0;
+    position: absolute;
+
+    @mixin rotate(90deg);
+    @mixin transition(color, .2s);
+}
+
+.bees a.next {
+    right: 0;
+    left: auto;
+
+    @mixin rotate(-90deg);
+}
+
+.bees a.prev::before,
+.bees a.next::before {
+    content: "\e602";
+    font-family: "icons";
+}
+
+.bees a.prev:hover,
+.bees a.next:hover {
+    color: #f2f2f2;
+}
+
+.bees .pager ul {
+    padding: 0;
+    margin: 25px 0 0;
+}
+
+.bees .pager li {
+    display: inline-block;
+    margin: 0 7px;
+}
+
+.bees .pager a,
+.bees .pager a:visited {
+    background-color: C_PRIMARY;
+
+    display: block;
+    height: 14px;
+    width: 14px;
+
+    @mixin rounded(7px);
+}
+
+.bees .pager a.active,
+.bees .pager a:hover {
+    background-color: C_STRIPE_DARK;
+}
+
+/* -> Bee -- */
+
+.bees .hive {
+    padding-top: 50px;
+}
+
+.bees .bee {
+    background-color: #000;
+
+    overflow: hidden;
+    visibility: hidden;
+    width: 400px;
+    height: 240px;
+
+    @mixin rotate(120deg);
+}
+
+.bees .bee1 {
+    margin-left: -200px;
+    margin-top: 10px;
+
+    position: relative;
+    left: 50%;
+}
+
+.bees .bee2,
+.bees .bee3 {
+    margin-top: -114px;
+}
+
+.bees .bee2 {
+    margin-left: -400px;
+
+    float: left;
+    position: relative;
+    left: 464px;
+}
+
+.bees .bee3 {
+    margin-right: 65px;
+
+    float: right;
+}
+
+.bees .beeHolder1 {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+
+    @mixin rotate(-60deg);
+}
+
+.bees .beeHolder2 {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-image: url(http://placekitten.com/280/280);
+
+    visibility: visible;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+
+    @mixin rotate(-60deg);
+}
+
+.bees .bee:hover img {
+    display: none;
+}

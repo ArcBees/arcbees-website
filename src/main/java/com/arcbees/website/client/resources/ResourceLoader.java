@@ -24,16 +24,19 @@ public class ResourceLoader {
             AppResources appResources,
             FontResources fontResources,
             DocsResources docsResources,
+            AnimationsResources animationsResources,
             PageProductResources pageProductResources,
             PageWorkResources pageWorkResources,
             PageContactResources pageContactResources,
             PageCareersResources pageCareersResources,
             PageHomeResources pageHomeResources,
-            PageLicenseResources pageLicenseResources) {
+            PageLicenseResources pageLicenseResources,
+            PageBeesResources pageBeesResources) {
         appResources.normalize().ensureInjected();
         appResources.style().ensureInjected();
         appResources.grid().ensureInjected();
         docsResources.style().ensureInjected();
+        animationsResources.style().ensureInjected();
         fontResources.icons().ensureInjected();
         pageHomeResources.style().ensureInjected();
         pageProductResources.style().ensureInjected();
@@ -41,5 +44,6 @@ public class ResourceLoader {
         pageCareersResources.style().ensureInjected();
         pageWorkResources.style().ensureInjected();
         pageLicenseResources.style().ensureInjected();
+        pageBeesResources.style().ensureInjected();
     }
 }

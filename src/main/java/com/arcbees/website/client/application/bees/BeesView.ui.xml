@@ -3,23 +3,177 @@
         xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
     <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
+    <ui:with field="page" type="com.arcbees.website.client.resources.PageBeesResources"/>
+    <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
+    <ui:with field="animations" type="com.arcbees.website.client.resources.AnimationsResources"/>
 
-    <g:HTMLPanel>
+    <g:HTMLPanel styleName="{page.style.bees}">
 
-        <section class="{res.style.stripe}">
+        <h1 class="{fonts.icons.iconArcbees} {res.style.withLogo}"><span>Bees</span></h1>
 
-            <div class="{res.grid.row} {res.style.clearfix}">
-                <div class="{res.grid.col} {res.grid.col_full}">
-                    <h1>Bees homepage</h1>
-                </div>
+        <section class="{res.style.stripe} {res.style.light} {res.style.centered} {page.style.intro}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+
+                <i class="{fonts.icons.iconArcbees} {page.style.icon1} {animations.style.animated} {animations.style.bounceIn}"></i>
+                <i class="{fonts.icons.iconArcbees} {page.style.icon2} {animations.style.animated} {animations.style.bounceIn}"></i>
+                <i class="{fonts.icons.iconArcbees} {page.style.icon3} {animations.style.animated} {animations.style.bounceIn}"></i>
+                <i class="{fonts.icons.iconArcbees} {page.style.icon4} {animations.style.animated} {animations.style.bounceIn}"></i>
+                <i class="{fonts.icons.iconArcbees} {page.style.icon5} {animations.style.animated} {animations.style.bounceIn}"></i>
+                <i class="{fonts.icons.iconArcbees} {page.style.icon6} {animations.style.animated} {animations.style.bounceIn}"></i>
+
+            </div>
+        </section>
+
+        <section class="{res.style.stripe} {res.style.colored}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+
                 <div class="{res.grid.col} {res.grid.col_1_2}">
-                    <p>demi</p>
+                    <h2 class="{res.style.slogan}">Bee-ing
+                        <span>great</span>
+                        <span>
+                            <strong>together</strong>
+                        </span>
+                    </h2>
                 </div>
-                <div class="{res.grid.col} {res.grid.col_1_2}">
-                    <p>demi</p>
+
+                <div class="{res.grid.col} {res.grid.col_1_2} {res.style.sloganSide}">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                    <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                    <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="{res.style.stripe} {res.style.colored} {res.style.centered}">
+
+                 <h2>Our culture</h2>
+
+            </div>
+            <div class="{res.style.stripe} {res.style.light} {res.style.centered}">
+                <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+
+
+                    <div class="{page.style.slides}">
+                        <div class="{page.style.slide}">
+                            <h3>Bee
+                                <strong>dedicated</strong>
+                            </h3>
+                            <p>Designed by top shelf geeks, ArcBees' open source software speed up and sharpen your
+                                projects
+                            </p>
+                        </div>
+                    </div>
+
+                    <a href="#" class="{page.style.prev}">
+                        <span class="{res.style.hidden}">Prev</span>
+                    </a>
+                    <a href="#" class="{page.style.next}">
+                        <span class="{res.style.hidden}">Next</span>
+                    </a>
+                    <nav class="{page.style.pager} {res.style.centered}">
+                        <ul>
+                            <li>
+                                <a href="#" class="{page.style.active}"></a>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                    </nav>
+
                 </div>
             </div>
+        </section>
 
+        <section class="{res.style.stripe} {res.style.light} {res.style.centered}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <div class="{res.grid.col} {res.grid.col_full}">
+
+                    <h2>Our bees</h2>
+
+                    <div class="{page.style.hive}">
+                        <div class="{page.style.bee} {page.style.bee1}">
+                            <div class="{page.style.beeHolder1}">
+                                <div class="{page.style.beeHolder2}">
+                                    <g:Image resource="{page.beeChristian}"></g:Image>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="{page.style.bee} {page.style.bee2}">
+                            <div class="{page.style.beeHolder1}">
+                                <div class="{page.style.beeHolder2}">
+                                    <g:Image resource="{page.beeChristian}"></g:Image>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="{page.style.bee} {page.style.bee3}">
+                            <div class="{page.style.beeHolder1}">
+                                <div class="{page.style.beeHolder2}">
+                                    <g:Image resource="{page.beeChristian}"></g:Image>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="{page.style.bee} {page.style.bee1}">
+                            <div class="{page.style.beeHolder1}">
+                                <div class="{page.style.beeHolder2}">
+                                    <g:Image resource="{page.beeChristian}"></g:Image>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="{page.style.bee} {page.style.bee2}">
+                            <div class="{page.style.beeHolder1}">
+                                <div class="{page.style.beeHolder2}">
+                                    <g:Image resource="{page.beeChristian}"></g:Image>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="{page.style.bee} {page.style.bee3}">
+                            <div class="{page.style.beeHolder1}">
+                                <div class="{page.style.beeHolder2}">
+                                    <g:Image resource="{page.beeChristian}"></g:Image>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="{page.style.bee} {page.style.bee1}">
+                            <div class="{page.style.beeHolder1}">
+                                <div class="{page.style.beeHolder2}">
+                                    <g:Image resource="{page.beeChristian}"></g:Image>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="{res.style.stripe} {res.style.light} {res.style.centered}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <div class="{res.grid.col} {res.grid.col_full}">
+
+                    <h2>Wanna bee?</h2>
+
+                    <p><a href="#" class="{res.style.btn}">Make something you love</a></p>
+
+                </div>
+            </div>
         </section>
 
     </g:HTMLPanel>

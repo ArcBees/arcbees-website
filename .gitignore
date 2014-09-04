@@ -4,3 +4,4 @@ target/
 extras/
 .gitignore
 /gen
+.DS_Store

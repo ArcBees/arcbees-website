@@ -23,8 +23,6 @@ public interface PageCareersResources extends FontResources {
     interface Style extends GssResource {
         String careers();
 
-        String headerBg();
-
         String offers();
 
         String quiz();
@@ -32,10 +30,21 @@ public interface PageCareersResources extends FontResources {
         String answer();
 
         String btnGroup();
-    }
 
-    @Source("img/pages/careersBanner.png")
-    ImageResource careersBanner();
+        String intro();
+
+        String icon1();
+
+        String icon2();
+
+        String icon3();
+
+        String icon4();
+
+        String icon5();
+
+        String icon6();
+    }
 
     @Source({"com/arcbees/gsss/mixin/client/mixins.gss", "css/colors.gss", "fonts/geometria/geometria.gss", "css/pages/careers.gss"})
     Style style();

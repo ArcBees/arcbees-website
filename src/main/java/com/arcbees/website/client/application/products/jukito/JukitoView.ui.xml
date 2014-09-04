@@ -199,10 +199,16 @@
         </section>
 
         <section class="{res.style.stripe} {res.style.dark} {res.style.centered}">
-            <h3>ALL THE DOCUMENTATIONS
-                <span>YOU NEED</span>
-            </h3>
-            <a href="#" class="{res.style.btn}">Go to Arcbees Developers</a>
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <div class="{res.grid.col} {res.grid.col_full}">
+
+                    <h3>ALL THE DOCUMENTATIONS
+                        <span>YOU NEED</span>
+                    </h3>
+                    <a href="#" class="{res.style.btn}">Go to Arcbees Developers</a>
+
+                </div>
+            </div>
         </section>
 
         <section class="{res.style.stripe} {page.style.colored} {res.style.centered}">
@@ -227,9 +233,15 @@
         </section>
 
         <section class="{res.style.stripe} {page.style.stripeSupport} {res.style.centered}">
-            <h3>Need support?</h3>
-            <a href="#" class="{res.style.btn}">Arcbees offer a variety of supports options</a>
-            <a href="#" data-icon="&#xe602;" class="{res.style.backTop}"></a>
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <div class="{res.grid.col} {res.grid.col_full}">
+
+                    <h3>Need support?</h3>
+                    <a href="#" class="{res.style.btn}">Arcbees offer a variety of supports options</a>
+                    <a href="#" data-icon="&#xe602;" class="{res.style.backTop}"></a>
+
+                </div>
+            </div>
         </section>
 
     </g:HTMLPanel>

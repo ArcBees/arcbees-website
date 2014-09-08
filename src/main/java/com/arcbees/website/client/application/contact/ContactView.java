@@ -36,7 +36,6 @@ import com.google.gwt.maps.client.overlays.Marker;
 import com.google.gwt.maps.client.overlays.MarkerOptions;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
-import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
@@ -108,7 +107,7 @@ public class ContactView extends ViewImpl implements ContactPresenter.MyView {
 
         // -> Then we tell the map to use our new style by default
         MapTypeControlOptions controlOptions = MapTypeControlOptions.newInstance();
-        controlOptions.setMapTypeIds(new String[] { MapTypeId.ROADMAP.toString(), ARCBEES_MAPTYPE });
+        controlOptions.setMapTypeIds(new String[] {});
         controlOptions.setPosition(ControlPosition.TOP_RIGHT);
 
         // -> And tell the map what our custom style is
@@ -124,7 +123,6 @@ public class ContactView extends ViewImpl implements ContactPresenter.MyView {
         options.setCenter(arcbeesCoord);
         options.setZoom(16);
         options.setScrollWheel(false);
-        options.setMapTypeId(MapTypeId.ROADMAP);
         options.setMapTypeControlOptions(controlOptions);
         options.setMapTypeId(ARCBEES_MAPTYPE);
         options.setPanControl(false);

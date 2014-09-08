@@ -112,6 +112,14 @@ h3 {
     margin: 2.5em 0 0.9em;
 }
 
+h3.stripeTitle {
+    font-size: 4rem;
+    font-family: "geometriaBold";
+    line-height: 1em;
+
+    margin-bottom: .5em;
+}
+
 /* -- Elements ------------------------------------------- */
 
 a,

@@ -79,6 +79,8 @@ public interface AppResources extends FontResources {
         String anchor();
 
         String sloganSm();
+
+        String stripeTitle();
     }
 
     @Source("css/normalize.gss")

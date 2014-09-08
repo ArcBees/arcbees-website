@@ -97,23 +97,8 @@ public interface PageExpertisesResources extends FontResources {
     @Source("img/pages/expertisesBanner.png")
     ImageResource expertisesBanner();
 
-    @Source("img/pages/expertisesCostRisk.png")
-    ImageResource expertisesCostRisk();
-
-    @Source("img/pages/expertisesDeliver.png")
-    ImageResource expertisesDeliver();
-
-    @Source("img/pages/expertisesIterative.png")
-    ImageResource expertisesIterative();
-
-    @Source("img/pages/expertisesLearnAdapt.png")
-    ImageResource expertisesLearnAdapt();
-
     @Source("img/pages/expertisesLightBulb.png")
     ImageResource expertisesLightBulb();
-
-    @Source("img/pages/expertisesPartner.png")
-    ImageResource expertisesPartner();
 
     @Source({"com/arcbees/gsss/mixin/client/mixins.gss", "css/colors.gss", "fonts/geometria/geometria.gss", "css/pages/expertise.gss"})
     Style style();

@@ -13,4 +13,6 @@
 
     <extend-configuration-property name="gin.ginjector.modules" value="com.arcbees.website.client.ClientModule"/>
     <set-configuration-property name="CssResource.style" value="pretty"/>
+
+    <set-configuration-property name="gwtp.bootstrapper" value="com.arcbees.website.client.BootstrapperImpl"/>
 </module>

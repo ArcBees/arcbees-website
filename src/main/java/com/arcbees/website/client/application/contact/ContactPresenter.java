@@ -1,12 +1,12 @@
 /*
  * Copyright 2014 ArcBees Inc.
- * 
+ *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
  * the License at
- * 
+ *
  * http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
@@ -16,6 +16,7 @@
 
 package com.arcbees.website.client.application.contact;
 
+import com.arcbees.website.client.GwtMapsLoadedEvent;
 import com.arcbees.website.client.NameTokens;
 import com.arcbees.website.client.application.ApplicationPresenter;
 import com.google.inject.Inject;
@@ -26,8 +27,9 @@ import com.gwtplatform.mvp.client.annotations.NameToken;
 import com.gwtplatform.mvp.client.annotations.ProxyStandard;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 
-public class ContactPresenter extends Presenter<ContactPresenter.MyView, ContactPresenter.MyProxy> {
+public class ContactPresenter extends Presenter<ContactPresenter.MyView, ContactPresenter.MyProxy> implements GwtMapsLoadedEvent.GwtMapsLoadedHandler {
     interface MyView extends View {
+        void drawMap();
     }
 
     @ProxyStandard
@@ -41,5 +43,17 @@ public class ContactPresenter extends Presenter<ContactPresenter.MyView, Contact
             MyView view,
             MyProxy proxy) {
         super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN);
+    }
+
+    @Override
+    public void onGwtMaps(GwtMapsLoadedEvent event) {
+        getView().drawMap();
+    }
+
+    @Override
+    protected void onBind() {
+        super.onBind();
+
+        addRegisteredHandler(GwtMapsLoadedEvent.TYPE, this);
     }
 }

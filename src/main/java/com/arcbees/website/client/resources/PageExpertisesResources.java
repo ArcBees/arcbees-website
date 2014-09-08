@@ -92,6 +92,8 @@ public interface PageExpertisesResources extends FontResources {
         String whatWeDo();
 
         String developping();
+
+        String title();
     }
 
     @Source("img/pages/expertisesBanner.png")

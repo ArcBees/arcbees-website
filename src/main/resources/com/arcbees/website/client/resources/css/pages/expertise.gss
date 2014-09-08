@@ -32,6 +32,21 @@
 
 /* -> Products -- */
 
+.products p.title {
+    font-size: 4rem;
+    font-family: "geometriaLight";
+    line-height: .5em;
+
+    margin-bottom: 0;
+}
+
+.products h2 {
+    font-size: 4rem;
+    line-height: .95em;
+
+    margin-bottom: 0;
+}
+
 .products .gwtp,
 .products .jukito,
 .products .gae {

@@ -16,7 +16,12 @@
 
 package com.arcbees.website.client.application.contact;
 
+import com.arcbees.website.client.application.home.HomePresenter;
+import com.arcbees.website.client.resources.PageHomeResources;
+import com.google.gwt.dom.client.Element;
 import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
@@ -29,5 +34,12 @@ public class ContactView extends ViewImpl implements ContactPresenter.MyView {
     ContactView(
             Binder binder) {
         initWidget(binder.createAndBindUi(this));
+
+        bind();
+    }
+
+    private void bind() {
+
+
     }
 }

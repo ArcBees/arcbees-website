@@ -38,6 +38,8 @@ public interface FontResources extends ClientBundle {
         String valignSup();
 
         String iconChosen();
+
+        String iconhexagon();
     }
 
     @ClientBundle.Source("fonts/icons/icons.gss")

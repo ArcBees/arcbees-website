@@ -16,21 +16,27 @@
 
 package com.arcbees.website.client.application.contact;
 
+import com.arcbees.website.client.resources.PageContactResources;
 import com.google.gwt.ajaxloader.client.ArrayHelper;
 import com.google.gwt.core.client.JsArray;
 import com.google.gwt.maps.client.MapOptions;
 import com.google.gwt.maps.client.MapTypeId;
 import com.google.gwt.maps.client.MapWidget;
 import com.google.gwt.maps.client.base.LatLng;
+import com.google.gwt.maps.client.controls.ControlPosition;
 import com.google.gwt.maps.client.controls.MapTypeControlOptions;
 import com.google.gwt.maps.client.controls.MapTypeStyle;
+import com.google.gwt.maps.client.controls.ZoomControlOptions;
 import com.google.gwt.maps.client.maptypes.MapTypeStyleElementType;
 import com.google.gwt.maps.client.maptypes.MapTypeStyleFeatureType;
 import com.google.gwt.maps.client.maptypes.MapTypeStyler;
 import com.google.gwt.maps.client.maptypes.StyledMapType;
 import com.google.gwt.maps.client.maptypes.StyledMapTypeOptions;
+import com.google.gwt.maps.client.overlays.Marker;
+import com.google.gwt.maps.client.overlays.MarkerOptions;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
@@ -40,19 +46,26 @@ public class ContactView extends ViewImpl implements ContactPresenter.MyView {
     interface Binder extends UiBinder<Widget, ContactView> {
     }
 
-    public final static String MY_COOL_MAPTYPE = "eyeBleedMap";
+    public final static String ARCBEES_MAPTYPE = "arcbeesMapStyle";
 
     @UiField
     SimplePanel container;
 
+    private final PageContactResources pageContactResources;
+
     @Inject
     ContactView(
-            Binder binder) {
+            Binder binder,
+            PageContactResources pageContactResources) {
+        this.pageContactResources = pageContactResources;
+
         initWidget(binder.createAndBindUi(this));
     }
 
     @Override
     public void drawMap() {
+        // -- HOW TO STYLE A GOOGLE MAP
+        // -> First, we create the style. To help : http://software.stadtwerk.org/google_maps_colorizr/
         MapTypeStyle style1 = MapTypeStyle.newInstance();
         style1.setElementType(MapTypeStyleElementType.GEOMETRY);
         style1.setFeatureType(MapTypeStyleFeatureType.ROAD);
@@ -66,9 +79,9 @@ public class ContactView extends ViewImpl implements ContactPresenter.MyView {
         style2.setElementType(MapTypeStyleElementType.ALL);
         style2.setFeatureType(MapTypeStyleFeatureType.LANDSCAPE);
         style2.setStylers(new MapTypeStyler[] {
-                MapTypeStyler.newHueStyler("#fbe605"),
-                MapTypeStyler.newSaturationStyler(96),
-                MapTypeStyler.newLightnessStyler(-44)
+                MapTypeStyler.newHueStyler("#cccccc"),
+                MapTypeStyler.newSaturationStyler(-100),
+                MapTypeStyler.newLightnessStyler(-10)
         });
 
         MapTypeStyle style3 = MapTypeStyle.newInstance();
@@ -93,25 +106,47 @@ public class ContactView extends ViewImpl implements ContactPresenter.MyView {
 
         JsArray<MapTypeStyle> styles = ArrayHelper.toJsArray(array);
 
+        // -> Then we tell the map to use our new style by default
         MapTypeControlOptions controlOptions = MapTypeControlOptions.newInstance();
-        controlOptions.setMapTypeIds(new String[] { MapTypeId.ROADMAP.toString(), MY_COOL_MAPTYPE });
+        controlOptions.setMapTypeIds(new String[] { MapTypeId.ROADMAP.toString(), ARCBEES_MAPTYPE });
+        controlOptions.setPosition(ControlPosition.TOP_RIGHT);
 
-        MapOptions options = MapOptions.newInstance();
-        options.setCenter(LatLng.newInstance(46.792136, -71.287528));
-        options.setZoom(16);
-        options.setMapTypeId(MapTypeId.ROADMAP);
-        options.setMapTypeControlOptions(controlOptions);
-        options.setMapTypeId(MY_COOL_MAPTYPE);
-
+        // -> And tell the map what our custom style is
         StyledMapTypeOptions styledMapTypeOptions = StyledMapTypeOptions.newInstance();
+        styledMapTypeOptions.setName("Arcbees");
         StyledMapType customMapType = StyledMapType.newInstance(styles, styledMapTypeOptions);
 
+        // -> Then we define our Lat and Long
+        LatLng arcbeesCoord = LatLng.newInstance(46.792097, -71.285362);
+
+        // -> Then goes the map options
+        MapOptions options = MapOptions.newInstance();
+        options.setCenter(arcbeesCoord);
+        options.setZoom(16);
+        options.setScrollWheel(false);
+        options.setMapTypeId(MapTypeId.ROADMAP);
+        options.setMapTypeControlOptions(controlOptions);
+        options.setMapTypeId(ARCBEES_MAPTYPE);
+        options.setPanControl(false);
+
+        ZoomControlOptions zoomControlOptions = ZoomControlOptions.newInstance();
+        zoomControlOptions.setPosition(ControlPosition.RIGHT_CENTER);
+        options.setZoomControlOptions(zoomControlOptions);
+
+        // -> We create the map with our options
         MapWidget mapWidget = new MapWidget(options);
+        mapWidget.setSize("100%", "700px");
+        mapWidget.setCustomMapType(ARCBEES_MAPTYPE, customMapType);
 
-        mapWidget.setSize("100%", "400px");
+        // -> We define the marker
+        MarkerOptions markerOptions = MarkerOptions.newInstance();
+        markerOptions.setIcon(pageContactResources.marker().getSafeUri().asString());
+        markerOptions.setMap(mapWidget);
+        markerOptions.setPosition(arcbeesCoord);
 
-        mapWidget.setCustomMapType(MY_COOL_MAPTYPE, customMapType);
+        Marker.newInstance(markerOptions);
 
+        // -> And finally, add it to its container
         container.add(mapWidget);
     }
 }

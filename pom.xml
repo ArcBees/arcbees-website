@@ -27,6 +27,7 @@
         <gin.version>2.1.2</gin.version>
         <gssresources.version>1.0-SNAPSHOT</gssresources.version>
         <gsss.version>1.0-SNAPSHOT</gsss.version>
+        <gwt-maps-api.version>3.10.0-alpha-7</gwt-maps-api.version>
 
         <webappDirectory>${project.build.directory}/${project.build.finalName}</webappDirectory>
     </properties>
@@ -85,7 +86,7 @@
         <dependency>
             <groupId>com.github.branflake2267</groupId>
             <artifactId>gwt-maps-api</artifactId>
-            <version>3.10.0-alpha-7</version>
+            <version>${gwt-maps-api.version}</version>
         </dependency>
     </dependencies>
 

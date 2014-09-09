@@ -21,6 +21,18 @@
     padding-bottom: 0.2em;
 }
 
+@media (max-width: 979px) {
+    .license .featuredIcons {
+        font-size: 17rem;
+    }
+}
+
+@media (max-width: 649px) {
+    .license .featuredIcons {
+        font-size: 8rem;
+    }
+}
+
 .plan {
     padding-top: 1.8em;
 }
@@ -150,4 +162,12 @@
     font-size: 3rem;
 
     display: block;
+}
+
+@media (max-width: 649px) {
+    .license .gwtp,
+    .license .jukito,
+    .license .chosen {
+        min-height: 0;
+    }
 }

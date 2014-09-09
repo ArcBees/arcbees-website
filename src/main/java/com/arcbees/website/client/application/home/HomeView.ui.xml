@@ -29,7 +29,7 @@
                     </h2>
                 </div>
 
-                <div class="{res.grid.col} {res.grid.col_1_2} {res.style.sloganSide}">
+                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full} {res.style.sloganSide}">
                     <p>
                         <strong>Arcbees est une entreprise regroupant plusieurs passionnés des technologies et de
                             l’architecture logiciel avides de résoudre les problèmes complexes et concrets auxquels
@@ -76,7 +76,7 @@
             </div>
             <div class="{res.style.stripe} {res.style.dark} {page.style.quest}">
                 <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                    <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4}">
+                    <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
 
                         <h3>Our quest</h3>
                         <p>Create, build applications that optimise process, habits and thinking, demonstrate value and
@@ -110,7 +110,7 @@
                         <h3>Bees</h3>
                         <p><a href="#" class="{res.style.btn}">Who are the best architects?</a></p>
                     </div>
-                    <div class="{res.grid.col} {res.grid.col_1_2} {page.style.beesContent}">
+                    <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full} {page.style.beesContent}">
                         <p>
                             <strong>L'homme a fait de l'abeille le symbole de l'organisation sociale, d'intelligence
                                 supérieure de sagesse divine par la perfection de son travail.
@@ -124,7 +124,7 @@
                             sur une structure très connue : le rayon de miel.
                         </p>
                     </div>
-                    <div class="{res.grid.col} {res.grid.col_1_2} {page.style.beesContent}">
+                    <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full} {page.style.beesContent}">
                         <p>Cette étonnante structure est faite d’une suite d’hexagones mathématiquement parfaits et organisés
                             de manière à optimiser l’espace tout en minimisant la quantité du matériau requis pour leur
                             fabrication.

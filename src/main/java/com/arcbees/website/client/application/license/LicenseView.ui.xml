@@ -33,7 +33,7 @@
                     </h2>
                 </div>
 
-                <div class="{res.grid.col} {res.grid.col_1_2} {res.style.sloganSide}">
+                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full} {res.style.sloganSide}">
                     <p>
                         <strong>Need support? We're here to help you in many ways: forum, email, phone, hangout, Skype
                             and even in person! Just choose according to your needs.
@@ -58,7 +58,7 @@
         <section>
             <div class="{res.style.stripe} {res.style.light}">
                 <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                    <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.style.centered}">
+                    <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0} {res.style.centered}">
                         <h2>Support packages</h2>
                         <p>ArcBees is pleased to offer a variety of supports options to its clients. Pick the one that
                             fits you best. You can also contact us for a custom made kit just for you.
@@ -187,22 +187,22 @@
                     <h2>More support</h2>
                 </div>
 
-                <div class="{res.grid.col} {res.grid.col_1_2}">
+                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full}">
                     <h3>Gss on Steroids</h3>
                     <p><a href="#" class="{res.style.btn}">Learn more</a></p>
                 </div>
 
-                <div class="{res.grid.col} {res.grid.col_1_2}">
+                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full}">
                     <h3>GWT Elastic</h3>
                     <p><a href="#" class="{res.style.btn}">Learn more</a></p>
                 </div>
 
-                <div class="{res.grid.col} {res.grid.col_1_2}">
+                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full}">
                     <h3>GWT Stripe</h3>
                     <p><a href="#" class="{res.style.btn}">Learn more</a></p>
                 </div>
 
-                <div class="{res.grid.col} {res.grid.col_1_2}">
+                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full}">
                     <h3>GWT Tooltip</h3>
                     <p><a href="#" class="{res.style.btn}">Learn more</a></p>
                 </div>

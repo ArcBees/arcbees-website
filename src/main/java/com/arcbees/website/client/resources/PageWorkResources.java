@@ -30,6 +30,8 @@ public interface PageWorkResources extends FontResources {
         String trusted();
 
         String last();
+
+        String lastMobile();
     }
 
     @Source("img/pages/workBanner.png")

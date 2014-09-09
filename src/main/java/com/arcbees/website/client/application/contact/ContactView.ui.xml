@@ -25,9 +25,8 @@
                         </span>
                     </h2>
                 </div>
-            </div>
-            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_push_1_2}">
+
+                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full} {res.style.sloganSide}">
                     <p>
                         <strong>You want to have awesomes bees by your side, to build your apps, you know what to do :
                         </strong>

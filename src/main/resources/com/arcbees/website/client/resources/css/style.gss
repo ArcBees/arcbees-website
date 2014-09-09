@@ -11,6 +11,18 @@ html {
     font-size: 62.5%;
 }
 
+@media (max-width: 979px) {
+    html {
+        font-size: 59%;
+    }
+}
+
+@media (max-width: 649px) {
+    html {
+        font-size: 56%;
+    }
+}
+
 body {
     color: C_TEXT;
     font-family: "geometria", Arial, sans-serif;
@@ -30,6 +42,12 @@ body {
 @media (max-width: 979px) {
     .wrapper {
         width: 650px;
+    }
+}
+
+@media (max-width: 649px) {
+    .wrapper {
+        width: 320px;
     }
 }
 
@@ -112,6 +130,18 @@ h3 {
     margin: 2.5em 0 0.9em;
 }
 
+@media (max-width: 979px) {
+    h2 {
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width: 649px) {
+    h2 {
+        font-size: 2rem;
+    }
+}
+
 /* -- Elements ------------------------------------------- */
 
 a,
@@ -157,6 +187,11 @@ a.anchor {
     margin-top: -7px;
 
     vertical-align: middle;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* -- Components ---------------------------------------- */
@@ -356,6 +391,14 @@ a.anchor {
     color: #fff;
 }
 
+/* -> Menu for mobile */
+
+@media (max-width: 649px) {
+    .sidebar {
+        display: none;
+    }
+}
+
 /* -> Main -- */
 
 .content {
@@ -368,6 +411,12 @@ a.anchor {
     overflow: hidden;
 
     @mixin transition(width, 0.4s);
+}
+
+@media (max-width: 649px) {
+    .content {
+        width: 100%;
+    }
 }
 
 .content .main,
@@ -418,6 +467,16 @@ a.anchor {
 
 .sloganSide {
     margin-top: 9.4em;
+}
+
+@media (max-width: 649px) {
+    .stripe {
+        padding: 30px 0;
+    }
+
+    .sloganSide {
+        margin-top: 2em;
+    }
 }
 
 /* -> Footer -- */

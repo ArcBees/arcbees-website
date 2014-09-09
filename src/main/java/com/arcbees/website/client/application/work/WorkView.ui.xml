@@ -18,7 +18,7 @@
         <section class="{res.style.stripe}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_1_2}">
-                    <h2 class="{res.style.sloganSm}">We work hard
+                    <h2 class="{res.style.slogan}">We work hard
                         <span>like
                             <strong>bees</strong>
                             <a href="#" class="{res.style.anchor}">#</a>
@@ -51,24 +51,24 @@
                 <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                     <div class="{res.grid.col} {res.grid.col_1_2}">
                         <g:Image resource="{page.workLille}"/>
-                        <h5>E-SCRIBE HOST</h5>
+                        <h3>E-SCRIBE HOST</h3>
                         <p>Medical</p>
                     </div>
                     <div class="{res.grid.col} {res.grid.col_1_2}">
                         <g:Image resource="{page.workRoller}"/>
-                        <h5>ROLER</h5>
+                        <h3>ROLER</h3>
                         <p>Banking</p>
                     </div>
                 </div>
                 <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                     <div class="{res.grid.col} {res.grid.col_1_2}">
                         <g:Image resource="{page.workKaam}"/>
-                        <h5>Kaam</h5>
+                        <h3>Kaam</h3>
                         <p>Real estate</p>
                     </div>
                     <div class="{res.grid.col} {res.grid.col_1_2}">
                         <g:Image resource="{page.workGwt}"/>
-                        <h5>GWT</h5>
+                        <h3>GWT</h3>
                         <p>Technology</p>
                     </div>
                 </div>

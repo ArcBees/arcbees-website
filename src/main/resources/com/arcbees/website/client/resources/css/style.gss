@@ -89,13 +89,6 @@ h2.slogan {
     margin-bottom: 0;
 }
 
-h2.sloganSm {
-    font-size: 4.25rem;
-    line-height: .9em;
-
-    margin: 0;
-}
-
 h2.slogan strong,
 h2.sloganSm strong {
     border-bottom: 0.2em solid C_PRIMARY;
@@ -107,7 +100,7 @@ h2.sloganSm strong {
 
 h3 {
     font-size: 2rem;
-    font-family: "geometria", Arial, sans-serif;
+    /*font-family: "geometria", Arial, sans-serif;*/
 
     margin: 2.5em 0 0.9em;
 }
@@ -117,7 +110,7 @@ h3.stripeTitle {
     font-family: "geometriaBold";
     line-height: 1em;
 
-    margin-bottom: .5em;
+    margin: 0 0 .5em;
 }
 
 /* -- Elements ------------------------------------------- */

@@ -78,7 +78,7 @@
                 <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                     <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4}">
 
-                        <h3>Our quest</h3>
+                        <h3 class="{res.style.stripeTitle}">Our quest</h3>
                         <p>Create, build applications that optimise process, habits and thinking, demonstrate value and
                             simplicity, and transform the way people work around the world.
                         </p>
@@ -99,15 +99,16 @@
 
             <div class="{res.style.stripe} {res.style.light}">
                 <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                    <h3>Architects</h3>
+                    <h3 class="{res.style.stripeTitle}">Architects</h3>
                     <p>We are architects developer</p>
+                    <i class="{fonts.icons.iconClose} {page.style.iconPlus}"></i>
                 </div>
             </div>
 
             <div class="{res.style.stripe} {res.style.colored} {page.style.bees}">
                 <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                     <div class="{res.grid.col} {res.grid.col_full}">
-                        <h3>Bees</h3>
+                        <h3 class="{res.style.stripeTitle}">Bees</h3>
                         <p><a href="#" class="{res.style.btn}">Who are the best architects?</a></p>
                     </div>
                     <div class="{res.grid.col} {res.grid.col_1_2} {page.style.beesContent}">
@@ -139,6 +140,7 @@
         </section>
 
         <section class="{res.style.stripe} {res.style.light} {res.style.centered}">
+            <div class="{page.style.equal}"></div>
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <h2>Architects<span>of simplicity</span></h2>
                 <a href="#" class="{res.style.btn}">Learn more about our expertise</a>

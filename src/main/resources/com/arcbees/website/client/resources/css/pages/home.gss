@@ -23,3 +23,35 @@
 
     padding-top: 270px;
 }
+
+.iconPlus {
+    font-size: 3.7rem;
+
+    display: block;
+    margin-left: -14px;
+
+    position: absolute;
+    bottom: -74px;
+    left: 50%;
+
+    @mixin rotate(45deg);
+}
+
+.equal,
+.equal::after {
+    background-color: #000;
+
+    display: block;
+    height: 10px;
+    width: 40px;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -20px;
+}
+
+.equal::after {
+    content: "";
+    margin-top: 18px;
+}

@@ -1,0 +1,841 @@
+@require "colors";
+@require "geometria";
+
+@def EXPERTISES_BANNER resourceUrl("expertisesBanner");
+
+/* -- Page : expertises ---------------------------------------- */
+
+.expertises {
+    background-color: C_STRIPE_LIGHT;
+}
+
+.headerBg {
+    background: EXPERTISES_BANNER no-repeat center;
+
+    min-height: 500px;
+}
+
+/* -> what we do -- */
+
+.whatWeDo h3 {
+    margin-top: 0;
+}
+
+.whatWeDo h3 span,
+.whatWeDo a span {
+    display: block;
+}
+
+.whatWeDo .developping a {
+    margin-bottom: 35px;
+}
+
+/* -> Products -- */
+
+.products p.title {
+    font-size: 4rem;
+    font-family: "geometriaLight";
+    line-height: .5em;
+
+    margin-bottom: 0;
+}
+
+.products h2 {
+    font-size: 4rem;
+    line-height: .95em;
+
+    margin-bottom: 0;
+}
+
+.products .gwtp,
+.products .jukito,
+.products .gae {
+    font-size: 5rem;
+    line-height: 0.75em;
+
+    margin: 0.8em auto 0;
+}
+
+.products .gwtp i,
+.products .jukito i,
+.products .gae i {
+    font-size: 10.7rem;
+
+    display: block;
+    margin-bottom: 0.1em;
+}
+
+.products .gwtp i {
+    color: C_PRODUCT_GWTP;
+}
+
+.products .jukito i {
+    color: C_PRODUCT_JUKITO;
+}
+
+.products .gae i {
+    color: C_PRODUCT_GAE;
+}
+
+.products a {
+    font-family: 'geometriaBold';
+}
+
+/* --> how we work -- */
+
+.howWeWork h3 {
+    margin-top: 30px;
+}
+
+.triangleTop,
+.triangleBottom {
+    width: 100%;
+    padding: 50% 0 0;
+    overflow: hidden;
+
+    position: absolute;
+    left: 0;
+}
+
+.triangleTop {
+    top: 0;
+}
+
+.triangleTop::after,
+.triangleBottom::after {
+    content: "";
+
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left: -1500px;
+    border-top: 311px solid #fff;
+    border-right: 1500px solid transparent;
+    border-left: 1500px solid transparent;
+
+    position: absolute;
+    right: 0;
+    left: 50%;
+    top: 0;
+}
+
+.triangleBottom::after {
+    border-top: 311px solid C_PRIMARY;
+
+    bottom: 0;
+}
+
+/* --> partner -- */
+
+.partner {
+    margin: 78px auto 140px;
+    height: 333px;
+
+    position: relative;
+}
+
+.partner::before,
+.partner::after {
+    content: "";
+    background-color: #000;
+
+    display: block;
+    height: 57px;
+    width: 5px;
+    margin-top: -51px;
+    margin-left: -2.5px;
+
+    position: absolute;
+    left: 50%;
+
+    @mixin rounded(5px);
+}
+
+.partner::before {
+    top: 0px;
+}
+
+.partner::after {
+    height: 108px;
+    margin-bottom: -115px;
+
+    bottom: 0;
+}
+
+.partner i {
+    font-size: 15.5rem;
+    color: C_TEXT_LIGHT;
+
+    position: absolute;
+}
+
+.partner i.icon1 {
+    margin-right: -39px;
+
+    top: 133px;
+    right: 50%;
+
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.partner i.icon1::before {
+    @mixin rotate(30deg);
+}
+
+.partner i.icon2 {
+    top: 67px;
+    right: 50%;
+
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    -o-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+.partner i.icon2::before {
+    @mixin rotate(90deg);
+}
+
+.partner i.icon3 {
+    margin-right: -38px;
+
+    top: 0px;
+    right: 50%;
+
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    -o-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+.partner i.icon3::before {
+    @mixin rotate(150deg);
+}
+
+.partner i.icon4 {
+    margin-left: -39px;
+
+    top: -1px;
+    left: 50%;
+
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    -o-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+.partner i.icon4::before {
+    @mixin rotate(-150deg);
+}
+
+.partner i.icon5 {
+    top: 66px;
+    left: 50%;
+
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+    -o-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+.partner i.icon5::before {
+    @mixin rotate(-90deg);
+}
+
+.partner i.icon5.iconDark {
+    color: #000;
+
+    margin-left: 45px;
+
+    top: 66px;
+    left: 50%;
+}
+
+.partner i.icon6 {
+    margin-left: -38px;
+
+    top: 133px;
+    left: 50%;
+
+    -webkit-animation-delay: 0.7s;
+    -moz-animation-delay: 0.7s;
+    -o-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+
+.partner i.icon6::before {
+    @mixin rotate(-30deg);
+}
+
+.partner i.iconHexa {
+    color: #000;
+    font-size: 3rem;
+
+    margin-left: -14px;
+
+    left: 50%;
+    top: 152px;
+}
+
+/* --> iterative process -- */
+
+.iterative .diagram {
+    height: 313px;
+
+    position: relative;
+}
+
+.iterative .diagram::before {
+    content: "";
+    background-color: #000;
+
+    display: block;
+    margin-left: -2px;
+    height: 313px;
+    width: 5px;
+
+    position: absolute;
+    left: 50%;
+
+    @mixin rounded(5px);
+}
+
+.iterative .launch {
+    margin-left: -171px;
+
+    position: absolute;
+    left: 50%;
+    top: 204px;
+}
+
+.iterative .iteration1 {
+    margin-left: 44px;
+
+    position: absolute;
+    left: 50%;
+    top: 131px;
+}
+
+.iterative i.iconHexa {
+    color: #000;
+    font-size: 1.6rem;
+
+    margin-left: -93px;
+
+    position: absolute;
+    left: 50%;
+    top: 202px;
+}
+
+.circleQuarter {
+    margin-left: -151px;
+    width: 151px;
+    height: 164px;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    border-bottom-color: #000;
+
+    position: absolute;
+    top: 54px;
+    left: 50%;
+
+    transform: rotate(-51deg);
+}
+
+.circleQuarter::before {
+    content: "";
+    background-color: #000;
+
+    display: block;
+    margin-left: 18px;
+    height: 5px;
+    width: 5px;
+
+    position: absolute;
+    top: 133px;
+    left: 0;
+
+    @mixin rounded(5px);
+}
+
+.circle {
+    margin-left: -2px;
+    width: 167px;
+    height: 167px;
+    border-radius: 50%;
+    border: 5px solid #000;
+
+    position: absolute;
+    top: 58px;
+    left: 50%;
+}
+
+.iterative .bar1 {
+    background-color: #000;
+    margin-right: -82px;
+
+    width: 5px;
+    height: 16px;
+
+    position: absolute;
+    top: 53px;
+    right: 50%;
+
+    @mixin rounded(5px);
+}
+
+.iterative .bar2 {
+    background-color: #000;
+    margin-right: -171px;
+
+    width: 16px;
+    height: 5px;
+
+    position: absolute;
+    top: 140px;
+    right: 50%;
+
+    @mixin rounded(5px);
+}
+
+.iterative .bar3 {
+    background-color: #000;
+    margin-right: -84px;
+
+    width: 5px;
+    height: 16px;
+
+    position: absolute;
+    top: 214px;
+    right: 50%;
+
+    @mixin rounded(5px);
+}
+
+/* --> cost risk -- */
+
+.costRisk {
+    height: 275px;
+
+    position: relative;
+}
+
+.costRisk .diagram {
+    margin-top: 31px;
+
+    position: relative;
+}
+
+.costRisk .bar1 {
+    background-color: #000;
+    margin-left: -2px;
+
+    width: 5px;
+    height: 13px;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    @mixin rounded(5px);
+}
+
+.costRisk .bar2 {
+    background-color: #000;
+    margin-left: -2px;
+
+    width: 5px;
+    height: 13px;
+
+    position: absolute;
+    top: 17px;
+    left: 50%;
+
+    @mixin rounded(5px);
+}
+
+.costRisk .bar3 {
+    background-color: #000;
+    margin-left: -2px;
+
+    width: 5px;
+    height: 13px;
+
+    position: absolute;
+    top: 34px;
+    left: 50%;
+
+    @mixin rounded(5px);
+}
+
+.costRisk .bar4 {
+    background-color: #000;
+    margin-left: -2px;
+
+    width: 5px;
+    height: 13px;
+
+    position: absolute;
+    top: 100px;
+    left: 50%;
+
+    @mixin rounded(5px);
+}
+
+.costRisk .bar5 {
+    background-color: #000;
+    margin-left: -2px;
+
+    width: 5px;
+    height: 13px;
+
+    position: absolute;
+    top: 117px;
+    left: 50%;
+
+    @mixin rounded(5px);
+}
+
+.costRisk .bar6 {
+    background-color: #000;
+    margin-left: -2px;
+
+    width: 5px;
+    height: 13px;
+
+    position: absolute;
+    top: 134px;
+    left: 50%;
+
+    @mixin rounded(5px);
+}
+
+.costRisk .bar7 {
+    background-color: #000;
+    margin-left: -2px;
+
+    width: 5px;
+    height: 10px;
+
+    position: absolute;
+    top: 151px;
+    left: 50%;
+
+    @mixin rounded(5px);
+}
+
+.costRisk i {
+    font-size: 1.5rem;
+
+    position: absolute;
+}
+
+.costRisk i.icon1 {
+    margin-left: -7px;
+
+    top: 50px;
+    left: 50%;
+
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.costRisk i.icon2 {
+    margin-left: -15px;
+
+    top: 63px;
+    left: 50%;
+
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.costRisk i.icon3 {
+    margin-left: 0px;
+
+    top: 63px;
+    left: 50%;
+
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.costRisk i.icon4 {
+    margin-left: -23px;
+
+    top: 75px;
+    left: 50%;
+
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.costRisk i.icon5 {
+    margin-left: -7px;
+
+    top: 75px;
+    left: 50%;
+
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.costRisk i.icon6 {
+    margin-left: 8px;
+
+    top: 75px;
+    left: 50%;
+
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+/* --> learn adapt -- */
+
+.learnAdapt {
+    position: relative;
+}
+
+.learnAdapt .diagram {
+    height: 361px;
+
+    position: relative;
+}
+
+.learnAdapt .bar1 {
+    background-color: #000;
+    margin-left: -2px;
+
+    width: 5px;
+    height: 170px;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    @mixin rounded(5px);
+}
+
+.learnAdapt i {
+    font-size: 15.5rem;
+    color: C_TEXT_LIGHT;
+
+    position: absolute;
+}
+
+.learnAdapt i.icon1 {
+    margin-right: -29px;
+
+    top: 162px;
+    right: 50%;
+
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.learnAdapt i.icon1::before {
+    @mixin rotate(30deg);
+}
+
+.learnAdapt i.icon2 {
+    margin-right: 12px;
+
+    top: 82px;
+    right: 50%;
+
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    -o-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+.learnAdapt i.icon2::before {
+    @mixin rotate(90deg);
+}
+
+.learnAdapt i.icon3 {
+    margin-right: -29px;
+
+    top: 0px;
+    right: 50%;
+
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    -o-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+.learnAdapt i.icon3::before {
+    @mixin rotate(150deg);
+}
+
+.learnAdapt i.icon4 {
+    margin-left: -29px;
+
+    top: -1px;
+    left: 50%;
+
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    -o-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+.learnAdapt i.icon4::before {
+    @mixin rotate(-150deg);
+}
+
+.learnAdapt i.icon5 {
+    margin-left: 12px;
+
+    top: 81px;
+    left: 50%;
+
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+    -o-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+.learnAdapt i.icon5::before {
+    @mixin rotate(-90deg);
+}
+
+.learnAdapt i.icon6 {
+    margin-left: -29px;
+
+    top: 162px;
+    left: 50%;
+
+    -webkit-animation-delay: 0.7s;
+    -moz-animation-delay: 0.7s;
+    -o-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+
+.learnAdapt i.icon6::before {
+    @mixin rotate(-30deg);
+}
+
+.learnAdapt i.iconHexa {
+    color: #000;
+    font-size: 5.25rem;
+
+    margin-left: -26px;
+
+    left: 50%;
+    top: 152px;
+}
+
+/* --> deliver -- */
+
+.deliver {
+    margin-top: -60px;
+}
+
+.deliver .diagram {
+    margin-top: 36px;
+    height: 145px;
+
+    position: relative;
+}
+
+.deliver i.iconHexa {
+    color: #000;
+    font-size: 5.25rem;
+
+    margin-left: -26px;
+
+    position: absolute;
+    left: 50%;
+    top: 20px;
+}
+
+.deliver .bar1 {
+    background-color: #000;
+    margin-left: -2px;
+
+    width: 4px;
+    height: 17px;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    @mixin rounded(5px);
+}
+
+.deliver .bar2 {
+    background-color: #000;
+    margin-left: -52px;
+
+    width: 17px;
+    height: 4px;
+
+    position: absolute;
+    top: 40px;
+    left: 50%;
+
+    @mixin rounded(5px);
+}
+
+.deliver .bar3 {
+    background-color: #000;
+    margin-left: -37px;
+
+    width: 17px;
+    height: 4px;
+
+    position: absolute;
+    top: 15px;
+    left: 50%;
+
+    @mixin rounded(5px);
+    @mixin rotate(45deg);
+}
+
+.deliver .bar4 {
+    background-color: #000;
+    margin-left: 19px;
+
+    width: 17px;
+    height: 4px;
+
+    position: absolute;
+    top: 15px;
+    left: 50%;
+
+    @mixin rounded(5px);
+    @mixin rotate(-45deg);
+}
+
+.deliver .bar5 {
+    background-color: #000;
+    margin-left: 34px;
+
+    width: 17px;
+    height: 4px;
+
+    position: absolute;
+    top: 40px;
+    left: 50%;
+
+    @mixin rounded(5px);
+}

@@ -60,6 +60,12 @@ public interface PageProductResources extends FontResources {
         String stripeSupport();
 
         String code();
+
+        String breadcrumb();
+
+        String logo();
+
+        String moreFeatures();
     }
 
     @Source("img/products/jukitoGuice.png")

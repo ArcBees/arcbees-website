@@ -60,7 +60,6 @@
     margin-bottom: 50px;
     padding-bottom: 50px;
     width: 25%;
-
     border-bottom: 5px solid C_STRIPE_MEDIUM1;
 }
 

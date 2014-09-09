@@ -5,7 +5,19 @@
     background-color: C_STRIPE_LIGHT;
 }
 
+.products .colored {
+    background-color: C_PRODUCT_JUKITO;
+}
+
 /* -- Headings ------------------------------------------- */
+
+.products h1 {
+    font-size: 2.5rem;
+
+    position: relative;
+    top: 0;
+    left: 0;
+}
 
 .products h2 {
     font-size: 2.5rem;
@@ -13,21 +25,64 @@
     margin: 0em 0 .25em;
 }
 
-.products h3 {
-    font-size: 2.5rem;
+.products h2.presentation {
+    font-size: 4.2rem;
+    text-transform: uppercase;
+    font-family: "geometriaBold";
+    line-height: 1em;
 
-    margin: .7em 0 1em;
+    margin: 0;
 }
 
-.products h4 {
-    font-size: 2rem;
-
-    margin: 1.6em 0 .5em;
+.products h3 {
+    margin-top: 0;
 }
 
 /* -- Style ---------------------------------------- */
 
 /* --> Header -- */
+
+.logo {
+    font-size: 5rem;
+}
+
+.breadcrumb {
+    margin: 0;
+
+    position: absolute;
+    top: 25px;
+    left: 49px;
+
+    z-index: 1;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+}
+
+.breadcrumb ul {
+    font-family: "geometriaBold";
+
+    display: inline-block;
+    margin-left: 10px;
+    padding: 0;
+    vertical-align: super;
+}
+
+.breadcrumb li {
+    display: inline;
+}
+
+.breadcrumb li::before {
+    content: ">";
+    padding-right: 3px;
+}
+
+.breadcrumb li:first-child::before {
+    content: "";
+    padding-right: 0;
+}
 
 .menuHeader ul {
     padding: 0;
@@ -72,15 +127,6 @@
 }
 
 /* --> Main -- */
-
-.presentation {
-    font-size: 4.2rem;
-    text-transform: uppercase;
-    font-family: "geometriaBold";
-    line-height: 1em;
-
-    margin: 0;
-}
 
 .socialTop {
     position: absolute;
@@ -203,6 +249,7 @@ ul.social {
 
 .stripeSupport h3 {
     font-size: 4rem;
+    font-family: "geometriaBold";
     line-height: 1;
 
     margin: 0 0 .55em;
@@ -218,6 +265,10 @@ a.anchor {
 }
 
 /* -- Page : Gae ---------------------------------------- */
+
+.gae h3 span {
+    display: block;
+}
 
 .gae .colored {
     background-color: C_PRODUCT_GAE;
@@ -258,6 +309,10 @@ a.anchor {
     background-color: C_PRODUCT_JUKITO;
 }
 
+.jukito h3 span {
+    display: block;
+}
+
 .jukito .presentation {
     color: C_PRODUCT_JUKITO;
 }
@@ -279,6 +334,10 @@ a.anchor {
 
 /* -- Page : GWTP ---------------------------------------- */
 
+.gwtp h3 span {
+    display: block;
+}
+
 .gwtp .colored {
     background-color: C_PRODUCT_GWTP;
 }
@@ -290,6 +349,16 @@ a.anchor {
 .gwtp .slideshow .pager a,
 .gwtp .slideshow .pager a:visited {
     background-color: C_PRODUCT_GWTP;
+}
+
+.gwtp .moreFeatures h2 {
+    color: C_PRODUCT_GWTP;
+}
+
+.gwtp .moreFeatures h3 {
+    font-size: 2rem;
+
+    margin: 1.6em 0 .5em;
 }
 
 /* -- Overwrite ---------------------------------------- */

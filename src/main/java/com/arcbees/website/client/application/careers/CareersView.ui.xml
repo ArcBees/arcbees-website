@@ -29,7 +29,7 @@
         <section class="{res.style.stripe} {res.style.colored}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_1_2}">
-                    <h2 class="{res.style.sloganSm}">Bee part
+                    <h2 class="{res.style.slogan}">Bee part
                         <span>of the
                             <strong>hive</strong>
                         </span>

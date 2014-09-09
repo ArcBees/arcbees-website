@@ -8,42 +8,24 @@
 
     <g:HTMLPanel styleName="{page.style.products} {page.style.gwtp}">
 
-        <h1 class="{fonts.icons.iconArcbees} {res.style.withLogo}">
-            <span>PRODUCT &gt; GWTP</span>
-        </h1>
-
-        <section class="{res.style.stripe} {page.style.colored} {res.style.centered}">
-            <nav class="{page.style.menuHeader}">
-                <ul>
-                    <li>
-                        <a href="#" class="{fonts.icons.iconGae}">
-                            <span class="{res.style.hidden}">Gae</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="{fonts.icons.iconGwtp} {page.style.active}">
-                            <span class="{res.style.hidden}">GWTP</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="{fonts.icons.iconJukito}">
-                            <span class="{res.style.hidden}">Jukito</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
+        <nav class="{page.style.breadcrumb}">
+            <span class="{fonts.icons.iconArcbees} {page.style.logo}"></span>
+            <ul>
+                <li>PRODUCT</li>
+                <li>GWTP</li>
+            </ul>
+        </nav>
 
         <section class="{res.style.stripe}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_1_2}">
-                    <h2>gwt platform
-                        <a href="#" class="{page.style.anchor}">#</a>
-                    </h2>
-                    <p class="{page.style.presentation}">The best Model View
+                    <h1>gwt platform
+                        <a href="#" class="{res.style.anchor}">#</a>
+                    </h1>
+                    <h2 class="{page.style.presentation}">The best Model View
                         <span>Presenter framework</span>
                         for GWT
-                    </p>
+                    </h2>
                     <div class="{page.style.socialTop}">
                         <ul class="{page.style.social}">
                             <li>
@@ -102,15 +84,15 @@
         </section>
 
         <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.centered}">
-            <h3>in details</h3>
+            <h2>in details</h2>
         </section>
 
         <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium1}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
 
                 <div class="{res.grid.col} {res.grid.col_1_3}">
-                    <h4>Model View Presenter Framework</h4>
-                    <a href="#" class="{page.style.anchor}">#</a>
+                    <h3>Model View Presenter Framework</h3>
+                    <a href="#" class="{res.style.anchor}">#</a>
                 </div>
 
                 <div class="{res.grid.col} {res.grid.col_2_3}">
@@ -126,8 +108,8 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
 
                 <div class="{res.grid.col} {res.grid.col_1_3}">
-                    <h4>dependency injection</h4>
-                    <a href="#" class="{page.style.anchor}">#</a>
+                    <h3>dependency injection</h3>
+                    <a href="#" class="{res.style.anchor}">#</a>
                 </div>
 
                 <div class="{res.grid.col} {res.grid.col_2_3}">
@@ -142,8 +124,8 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
 
                 <div class="{res.grid.col} {res.grid.col_1_3}">
-                    <h4>history management</h4>
-                    <a href="#" class="{page.style.anchor}">#</a>
+                    <h3>history management</h3>
+                    <a href="#" class="{res.style.anchor}">#</a>
                 </div>
 
                 <div class="{res.grid.col} {res.grid.col_2_3}">
@@ -158,8 +140,8 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
 
                 <div class="{res.grid.col} {res.grid.col_1_3}">
-                    <h4>command pattern</h4>
-                    <a href="#" class="{page.style.anchor}">#</a>
+                    <h3>command pattern</h3>
+                    <a href="#" class="{res.style.anchor}">#</a>
                 </div>
 
                 <div class="{res.grid.col} {res.grid.col_2_3}">
@@ -175,8 +157,8 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
 
                 <div class="{res.grid.col} {res.grid.col_1_3}">
-                    <h4>code splitting</h4>
-                    <a href="#" class="{page.style.anchor}">#</a>
+                    <h3>code splitting</h3>
+                    <a href="#" class="{res.style.anchor}">#</a>
                 </div>
 
                 <div class="{res.grid.col} {res.grid.col_2_3}">
@@ -192,8 +174,8 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
 
                 <div class="{res.grid.col} {res.grid.col_1_3}">
-                    <h4>mobile ready</h4>
-                    <a href="#" class="{page.style.anchor}">#</a>
+                    <h3>mobile ready</h3>
+                    <a href="#" class="{res.style.anchor}">#</a>
                 </div>
 
                 <div class="{res.grid.col} {res.grid.col_2_3}">
@@ -208,8 +190,8 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
 
                 <div class="{res.grid.col} {res.grid.col_1_3}">
-                    <h4>Nested Presenters</h4>
-                    <a href="#" class="{page.style.anchor}">#</a>
+                    <h3>Nested Presenters</h3>
+                    <a href="#" class="{res.style.anchor}">#</a>
                 </div>
 
                 <div class="{res.grid.col} {res.grid.col_2_3}">
@@ -221,30 +203,30 @@
             </div>
         </section>
 
-        <section class="{res.style.stripe}">
+        <section class="{page.style.moreFeatures} {res.style.stripe}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_full} {res.style.centered}">
-                    <h3>more features
-                        <a href="#" class="{page.style.anchor}">#</a>
-                    </h3>
+                    <h2>more features
+                        <a href="#" class="{res.style.anchor}">#</a>
+                    </h2>
                 </div>
 
                 <div class="{res.grid.col} {res.grid.col_1_2}">
-                    <h4>security</h4>
+                    <h3>security</h3>
                     <p>GWTP allows you to protect your server using Action validation. In addition, you can block
                         specific pages using custom Gatekeepers. Also included: Automatic XSRF attack detection.
                     </p>
-                    <h4>google analytics</h4>
+                    <h3>google analytics</h3>
                     <p>With as little as 3 lines of code, your web application will be integrated with Google Analytics.
                         Also, GWTP allows your website to be easily crawlable by search engines that follow Google's
                         AJAX Crawling specification.
                     </p>
-                    <h4>Tabbed Presenters</h4>
+                    <h3>Tabbed Presenters</h3>
                     <p>Often times you'll want to display a list of links that cause a child Presenter to appear. GWTP
                         makes it easy to create loosely-coupled Tabbed Presenters that live within their parent
                         Presenter.
                     </p>
-                    <h4>maven</h4>
+                    <h3>maven</h3>
                     <p>If your project uses Maven, you're all set for GWTP. All the dependencies that you need to
                         migrate your project to GWTP are published to Maven Central. So, a couple lines in your POM, and
                         GWTP is ready!
@@ -252,20 +234,20 @@
                 </div>
 
                 <div class="{res.grid.col} {res.grid.col_1_2}">
-                    <h4>Internationalization</h4>
+                    <h3>Internationalization</h3>
                     <p>GWTP makes i18n easy. Using a custom Python script, GWTP will store all your translations in
                         separate properties files for all languages.
                     </p>
-                    <h4>Crawlability</h4>
+                    <h3>Crawlability</h3>
                     <p>Wondering if it's possible to make crawlable applications with GWTP? Absolutely! GWTP includes a
                         crawling engine that lets you make any of your asynchronous web sites crawlable - even if you're
                         not building them in GWTP!
                     </p>
-                    <h4>Testability</h4>
+                    <h3>Testability</h3>
                     <p>Because GWTP implements the Model View Presenter design pattern, most of your app logic will be
                         found inside the Presenters, which can be easily tested using Junit, Mockito and Jukito.
                     </p>
-                    <h4>Route-like NameTokens</h4>
+                    <h3>Route-like NameTokens</h3>
                     <p>Want human-readable URLs? With GWTP, your URLs can look like REST calls! Using Route-Like
                         NameTokens, fussy web addresses like /#userprofile?id=999 can be replaced with
                         /#/userprofile/999. It’s a format your users will be able to recognize, remember and share.
@@ -309,18 +291,6 @@
                             </a>
                         </li>
                     </ul>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="{res.style.stripe} {page.style.stripeSupport} {res.style.centered}">
-            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_full}">
-
-                    <h3>Need support?</h3>
-                    <a href="#" class="{res.style.btn}">Arcbees offer a variety of supports options</a>
-                    <a href="#" data-icon="&#xe602;" class="{res.style.backTop}"></a>
 
                 </div>
             </div>

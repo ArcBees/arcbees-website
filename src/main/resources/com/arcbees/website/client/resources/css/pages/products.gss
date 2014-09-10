@@ -5,7 +5,15 @@
     background-color: C_STRIPE_LIGHT;
 }
 
-.products .colored {
+.productHead.gae {
+    background-color: C_PRODUCT_GAE;
+}
+
+.productHead.gwtp {
+    background-color: C_PRODUCT_GWTP;
+}
+
+.productHead.jukito {
     background-color: C_PRODUCT_JUKITO;
 }
 
@@ -110,7 +118,7 @@
     @mixin opacity(1);
 }
 
-.menuHeader a.active:after {
+.productHead .arrow::after {
     content:"";
 
     width: 0;
@@ -122,8 +130,67 @@
 
     position: absolute;
     bottom: 0;
+    left: 50%;
 
     cursor: default;
+
+    @mixin transition(all, 0.3s);
+}
+
+.productHead.gae .arrow::after {
+    margin-left: -302px;
+}
+
+.productHead.gwtp .arrow::after {
+    margin-left: -50px;
+}
+
+.productHead.jukito .arrow::after {
+    margin-left: 205px;
+}
+
+@media (max-width: 979px) {
+    .menuHeader a {
+        font-size: 17rem;
+    }
+
+    .productHead .arrow::after {
+        border-width: 0 40px 40px 40px;
+    }
+
+    .productHead.gae .arrow::after {
+        margin-left: -228px;
+    }
+
+    .productHead.gwtp .arrow::after {
+        margin-left: -40px;
+    }
+
+    .productHead.jukito .arrow::after {
+        margin-left: 146px;
+    }
+}
+
+@media (max-width: 649px) {
+    .menuHeader a {
+        font-size: 8rem;
+    }
+
+    .productHead .arrow::after {
+        border-width: 0 20px 20px 20px;
+    }
+
+    .productHead.gae .arrow::after {
+        margin-left: -118px;
+    }
+
+    .productHead.gwtp .arrow::after {
+        margin-left: -20px;
+    }
+
+    .productHead.jukito .arrow::after {
+        margin-left: 78px;
+    }
 }
 
 /* --> Main -- */

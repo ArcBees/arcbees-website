@@ -66,6 +66,10 @@ public interface PageProductResources extends FontResources {
         String logo();
 
         String moreFeatures();
+
+        String productHead();
+
+        String arrow();
     }
 
     @Source("img/products/jukitoGuice.png")

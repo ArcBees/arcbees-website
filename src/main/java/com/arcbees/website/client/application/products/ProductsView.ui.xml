@@ -14,26 +14,27 @@
 
     <g:HTMLPanel styleName="{page.style.products}">
 
-        <section class="{res.style.stripe} {page.style.colored} {res.style.centered}">
+        <section class="{res.style.stripe} {res.style.centered} {page.style.productHead}" ui:field="productHead">
             <nav class="{page.style.menuHeader}">
                 <ul>
                     <li>
-                        <a href="#" class="{fonts.icons.iconGae}">
+                        <a href="#{GAE}" class="{fonts.icons.iconGae}" data-resource="gae">
                             <span class="{res.style.hidden}">Gae</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="{fonts.icons.iconGwtp} {page.style.active}">
+                        <a href="#{GWTP}" class="{fonts.icons.iconGwtp}" data-resource="gwtp">
                             <span class="{res.style.hidden}">GWTP</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="{fonts.icons.iconJukito}">
+                        <a href="#{JUKITO}" class="{fonts.icons.iconJukito}" data-resource="jukito">
                             <span class="{res.style.hidden}">Jukito</span>
                         </a>
                     </li>
                 </ul>
             </nav>
+            <div class="{page.style.arrow}"></div>
         </section>
 
         <!-- Docs content -->

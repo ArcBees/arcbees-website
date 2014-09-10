@@ -26,7 +26,6 @@
 
         <section class="{res.style.stripe} {res.style.colored}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
                 <div class="{res.grid.col} {res.grid.col_1_2}">
                     <h2 class="{res.style.slogan}">Bee-ing
                         <span>great</span>
@@ -35,25 +34,22 @@
                         </span>
                     </h2>
                 </div>
-
-                <div class="{res.grid.col} {res.grid.col_1_2} {res.style.sloganSide}">
+            </div>
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_2}">
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
                     <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
                     <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
                 </div>
-
             </div>
         </section>
 
         <section>
             <div class="{res.style.stripe} {res.style.colored} {res.style.centered}">
-
                  <h2>Our culture</h2>
-
             </div>
             <div class="{res.style.stripe} {res.style.light} {res.style.centered}">
                 <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
 
                     <div class="{page.style.slides}">
                         <div class="{page.style.slide}">

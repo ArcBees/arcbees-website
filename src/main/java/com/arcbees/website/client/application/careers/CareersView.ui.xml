@@ -37,7 +37,7 @@
                 </div>
             </div>
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_push_1_2}">
+                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_2}">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur culpa delectus fugit
                         laboriosam odit officiis praesentium sed voluptatum! Cumque dolor id maxime nesciunt officia
                         porro, quia sequi. Ducimus nesciunt, provident.

@@ -17,7 +17,6 @@
 package com.arcbees.website.client.resources;
 
 import com.google.gwt.resources.client.GssResource;
-import com.google.gwt.resources.client.ImageResource;
 
 public interface PageLicenseResources extends FontResources {
     interface Style extends GssResource {
@@ -42,6 +41,10 @@ public interface PageLicenseResources extends FontResources {
         String jukito();
 
         String chosen();
+
+        String productSupport();
+
+        String moreSupport();
     }
 
     @Source({"com/arcbees/gsss/mixin/client/mixins.gss", "css/colors.gss", "fonts/geometria/geometria.gss", "css/pages/license.gss"})

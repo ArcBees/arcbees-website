@@ -20,7 +20,6 @@
 
         <section class="{res.style.stripe} {res.style.light}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
                 <div class="{res.grid.col} {res.grid.col_1_2}">
                     <h2 class="{res.style.slogan}">Bee
                         <span>the
@@ -28,8 +27,9 @@
                         </span>
                     </h2>
                 </div>
-
-                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full} {res.style.sloganSide}">
+            </div>
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_2}">
                     <p>
                         <strong>Arcbees est une entreprise regroupant plusieurs passionnés des technologies et de
                             l’architecture logiciel avides de résoudre les problèmes complexes et concrets auxquels
@@ -60,7 +60,6 @@
                         plus lucrative de tous les temps, Google Adwords.
                     </p>
                 </div>
-
             </div>
         </section>
 

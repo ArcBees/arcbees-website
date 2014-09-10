@@ -23,8 +23,9 @@
     margin: 0 0 3em;
 }
 
-.realisations h5 {
+.realisations h3 {
     font-size: 1.6rem;
+    font-family: "geometriaBold";
 
     margin-bottom: 1px;
 }
@@ -48,6 +49,8 @@
 
 .trusted ul {
     font-size: 0;
+
+    padding-left: 0;
 }
 
 .trusted li {
@@ -57,7 +60,6 @@
     margin-bottom: 50px;
     padding-bottom: 50px;
     width: 25%;
-
     border-bottom: 5px solid C_STRIPE_MEDIUM1;
 }
 
@@ -65,4 +67,23 @@
     margin-bottom: 25px;
     padding-bottom: 0;
     border-bottom: none;
+}
+
+@media (max-width: 649px) {
+    .trusted li {
+        width: 50%;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+
+    .trusted li.last {
+        border-bottom: 5px solid C_STRIPE_MEDIUM1;
+
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+    }
+
+    .trusted li.lastMobile {
+        border-bottom: none;
+    }
 }

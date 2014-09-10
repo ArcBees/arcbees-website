@@ -6,6 +6,7 @@
     <inherits name='com.gwtplatform.mvp.MvpWithEntryPoint'/>
     <inherits name="com.google.gwt.resources.GssResource"/>
     <inherits name="com.arcbees.gsss.grid.Grid"/>
+    <inherits name='com.google.gwt.maps.Maps' />
     <inherits name="com.google.gwt.query.Query"/>
 
     <source path='client'/>
@@ -13,4 +14,6 @@
 
     <extend-configuration-property name="gin.ginjector.modules" value="com.arcbees.website.client.ClientModule"/>
     <set-configuration-property name="CssResource.style" value="pretty"/>
+
+    <set-configuration-property name="gwtp.bootstrapper" value="com.arcbees.website.client.BootstrapperImpl"/>
 </module>

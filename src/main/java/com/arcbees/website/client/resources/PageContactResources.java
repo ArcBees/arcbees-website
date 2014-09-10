@@ -17,6 +17,7 @@
 package com.arcbees.website.client.resources;
 
 import com.google.gwt.resources.client.GssResource;
+import com.google.gwt.resources.client.ImageResource;
 
 public interface PageContactResources extends FontResources {
     interface Style extends GssResource {
@@ -28,6 +29,9 @@ public interface PageContactResources extends FontResources {
 
         String quebec();
     }
+
+    @Source("img/pages/contactMapMarker.png")
+    ImageResource marker();
 
     @Source({"com/arcbees/gsss/mixin/client/mixins.gss", "css/colors.gss", "fonts/geometria/geometria.gss", "css/pages/contact.gss"})
     Style style();

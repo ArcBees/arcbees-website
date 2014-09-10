@@ -21,6 +21,18 @@
     padding-bottom: 0.2em;
 }
 
+@media (max-width: 979px) {
+    .license .featuredIcons {
+        font-size: 17rem;
+    }
+}
+
+@media (max-width: 649px) {
+    .license .featuredIcons {
+        font-size: 8rem;
+    }
+}
+
 .plan {
     padding-top: 1.8em;
 }
@@ -29,10 +41,11 @@
     background-color: C_STRIPE_DARK;
     color: C_STRIPE_LIGHT;
 
-    padding: 10px 20px 2px;
+    padding: 8px 23px 2px;
 }
 
 .plan header h3 {
+    font-size: 1.5rem;
     font-family: "geometriaLight", Arial, sans-serif;
     font-weight: normal;
     text-align: left;
@@ -52,20 +65,18 @@
     font-size: 4rem;
     font-family: "geometriaLight", Arial, sans-serif;
     text-align: center;
-    
+
     display: block;
 }
 
 .plan header .billed {
     color: #525252;
     font-style: normal;
-    font-size: 1.3rem;
-    text-align: left;
+    font-size: 1.5rem;
 }
 
 .plan ul {
     background-color: #fdf382;
-    text-align: center;
 
     padding: 0 0 1em;
     margin-top: 0.4em;
@@ -84,6 +95,10 @@
     display: block;
 }
 
+.plan li span {
+    display: block;
+}
+
 .plan li.point {
     background-color: #fff;
     font-size: 2rem;
@@ -97,6 +112,10 @@
 .plan li.point.last {
     padding-bottom: 1em;
     margin-bottom: 1em;
+}
+
+.plan i {
+    font-size: 2.8rem;
 }
 
 /* -> Best buy plan -- */
@@ -114,6 +133,11 @@
 }
 
 /* -> Products -- */
+
+.productSupport h3,
+.moreSupport h3 {
+    font-family: 'geometria';
+}
 
 .license .gwtp,
 .license .jukito,
@@ -150,4 +174,16 @@
     font-size: 3rem;
 
     display: block;
+}
+
+.productSupport a {
+    margin-top: 20px;
+}
+
+@media (max-width: 649px) {
+    .license .gwtp,
+    .license .jukito,
+    .license .chosen {
+        min-height: 0;
+    }
 }

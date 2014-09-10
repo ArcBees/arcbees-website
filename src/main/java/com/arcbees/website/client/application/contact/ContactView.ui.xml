@@ -13,8 +13,7 @@
         </h1>
 
         <section class="{page.style.headerBg}">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2731.6257709284914!2d-71.28753899999998!3d46.79197799999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb8971fd358c99b%3A0xd5dc164e651a11d7!2sArcBees!5e0!3m2!1sen!2sca!4v1409755097883"
-                    width="600" height="550" frameborder="0" style="border:0"></iframe>
+            <g:SimplePanel ui:field="container"/>
         </section>
 
         <section class="{res.style.stripe} {res.style.colored}">
@@ -26,9 +25,8 @@
                         </span>
                     </h2>
                 </div>
-            </div>
-            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_push_1_2}">
+
+                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full} {res.style.sloganSide}">
                     <p>
                         <strong>You want to have awesomes bees by your side, to build your apps, you know what to do :
                         </strong>

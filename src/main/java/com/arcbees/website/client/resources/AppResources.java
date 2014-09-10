@@ -78,7 +78,7 @@ public interface AppResources extends FontResources {
 
         String anchor();
 
-        String sloganSm();
+        String stripeTitle();
     }
 
     @Source("css/normalize.gss")
@@ -87,6 +87,6 @@ public interface AppResources extends FontResources {
     @Source({"com/arcbees/gsss/mixin/client/mixins.gss", "css/colors.gss", "fonts/geometria/geometria.gss", "css/style.gss"})
     Style style();
 
-    @Source({"com/arcbees/gsss/grid/client/gridsettings.gss", "com/arcbees/gsss/grid/client/grid.gss"})
+    @Source({"com/arcbees/website/client/resources/css/gridSettings.gss", "com/arcbees/gsss/grid/client/grid.gss"})
     GridResources.Grid grid();
 }

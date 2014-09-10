@@ -41,9 +41,8 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_push_1_2}">
+
+                <div class="{res.grid.col} {res.grid.col_push_1_2} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                     <p>
                         <strong>GWT-Platform (GWTP) is your best friend for building large Google Web Toolkit (GWT) web
                             apps.
@@ -211,7 +210,7 @@
                     </h2>
                 </div>
 
-                <div class="{res.grid.col} {res.grid.col_1_2}">
+                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full}">
                     <h3>security</h3>
                     <p>GWTP allows you to protect your server using Action validation. In addition, you can block
                         specific pages using custom Gatekeepers. Also included: Automatic XSRF attack detection.
@@ -232,8 +231,7 @@
                         GWTP is ready!
                     </p>
                 </div>
-
-                <div class="{res.grid.col} {res.grid.col_1_2}">
+                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full}">
                     <h3>Internationalization</h3>
                     <p>GWTP makes i18n easy. Using a custom Python script, GWTP will store all your translations in
                         separate properties files for all languages.

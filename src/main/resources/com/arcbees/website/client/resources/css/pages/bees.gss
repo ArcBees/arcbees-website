@@ -255,3 +255,39 @@
 .bees .bee:hover img {
     display: none;
 }
+
+@media (max-width: 979px) {
+    .bees .bee1,
+    .bees .bee2,
+    .bees .bee3 {
+        margin: 0;
+        width: 100%;
+
+        float: none;
+        left: 0;
+    }
+
+    .bees .bee {
+        margin-top: -117px;
+    }
+
+    .bees .bee:first-child {
+        margin-top: 0;
+    }
+
+    .bees .bee:nth-child(even) {
+        margin-left: -106px;
+    }
+
+    .bees .bee:nth-child(odd) {
+        margin-left: 107px;
+    }
+}
+
+@media (max-width: 649px) {
+    .bees .bee,
+    .bees .bee:nth-child(even),
+    .bees .bee:nth-child(odd) {
+        margin: 0 0 7px;
+    }
+}

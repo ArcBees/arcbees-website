@@ -107,8 +107,7 @@ h2.slogan {
     margin-bottom: 4px;
 }
 
-h2.slogan strong,
-h2.sloganSm strong {
+h2.slogan strong {
     border-bottom: 0.2em solid C_PRIMARY;
 }
 
@@ -140,6 +139,10 @@ h3.stripeTitle {
 @media (max-width: 649px) {
     h2 {
         font-size: 2rem;
+    }
+
+    h2.slogan strong {
+        border-bottom: 0;
     }
 }
 

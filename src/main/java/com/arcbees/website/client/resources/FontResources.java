@@ -40,6 +40,14 @@ public interface FontResources extends ClientBundle {
         String iconChosen();
 
         String iconhexagon();
+
+        String iconClose();
+
+        String iconEmail();
+
+        String iconChat();
+
+        String iconPhone();
     }
 
     @ClientBundle.Source("fonts/icons/icons.gss")

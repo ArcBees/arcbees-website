@@ -10,6 +10,12 @@
     font-size: 2.5rem;
 }
 
+@media (max-width: 649px) {
+    .home .quest p {
+        font-size: 1.8rem;
+    }
+}
+
 .home .bees {
     background: C_PRIMARY BEES_BG repeat-x center top;
 }
@@ -22,4 +28,46 @@
     text-align: left;
 
     padding-top: 270px;
+}
+
+@media (max-width: 649px) {
+    .home .beesContent {
+        padding-top: 300px;
+    }
+
+    .home .beesContent:last-child {
+        padding-top: 0;
+    }
+}
+
+.iconPlus {
+    font-size: 3.7rem;
+
+    display: block;
+    margin-left: -14px;
+
+    position: absolute;
+    bottom: -74px;
+    left: 50%;
+
+    @mixin rotate(45deg);
+}
+
+.equal,
+.equal::after {
+    background-color: #000;
+
+    display: block;
+    height: 10px;
+    width: 40px;
+    margin-left: -20px;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.equal::after {
+    content: "";
+    margin-top: 18px;
 }

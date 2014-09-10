@@ -60,11 +60,11 @@
     display: block;
     height: 10px;
     width: 40px;
+    margin-left: -20px;
 
     position: absolute;
     top: 0;
     left: 50%;
-    margin-left: -20px;
 }
 
 .equal::after {

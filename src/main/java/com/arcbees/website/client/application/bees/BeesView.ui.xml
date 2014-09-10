@@ -96,7 +96,7 @@
             </div>
         </section>
 
-        <section class="{res.style.stripe} {res.style.light} {res.style.centered}">
+        <section ui:field="bees" class="{res.style.stripe} {res.style.light} {res.style.centered}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_full}">
 

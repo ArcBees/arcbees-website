@@ -199,7 +199,7 @@ ul.social {
     margin-top: .7em;
 }
 
-/* -- Page : Gae ---------------------------------------- */
+/* -- developpers : Chosen ---------------------------------------- */
 
 .chosen h3 span {
     display: block;
@@ -228,7 +228,7 @@ ul.social {
     margin-top: 45px;
 }
 
-/* -- Page : Jukito ---------------------------------------- */
+/* -- developpers : Jukito ---------------------------------------- */
 
 .jukito .colored {
     background-color: C_PRODUCT_JUKITO;
@@ -263,7 +263,7 @@ ul.social {
     display: inline-block;
 }
 
-/* -- Page : Gwtp ---------------------------------------- */
+/* -- developpers : Gwtp ---------------------------------------- */
 
 .gwtp .colored {
     background-color: C_PRODUCT_GWTP;

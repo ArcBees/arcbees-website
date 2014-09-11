@@ -49,6 +49,18 @@ public interface DeveloppersResources extends FontResources {
         String pager();
 
         String stripeDetails();
+
+        String code();
+
+        String colored();
+
+        String headerBg();
+
+        String gwtp();
+
+        String moreFeatures();
+
+        String chosen();
     }
 
     @Source("img/developpers/jukitoGuice.png")
@@ -63,6 +75,24 @@ public interface DeveloppersResources extends FontResources {
     @Source("img/developpers/gwtpScreen1.png")
     ImageResource gwtpScreen1();
 
-    @Source({"com/arcbees/gsss/mixin/client/mixins.gss", "css/colors.gss", "fonts/geometria/geometria.gss", "css/pages/developpers.gss"})
+    @Source("img/developpers/gaeScreen2.png")
+    ImageResource gaeScreen2();
+
+    @Source("img/developpers/jukitoBanner.png")
+    ImageResource jukitoBanner();
+
+    @Source("img/developpers/gwtpBanner.png")
+    ImageResource gwtpBanner();
+
+    @Source("img/developpers/chosenBanner.png")
+    ImageResource chosenBanner();
+
+    @Source("img/developpers/chosenRelease.jpg")
+    ImageResource chosenRelease();
+
+    @Source("img/developpers/chosenSnapshot.jpg")
+    ImageResource chosenSnapshot();
+
+    @Source({"com/arcbees/gsss/mixin/client/mixins.gss", "css/colors.gss", "fonts/geometria/geometria.gss", "css/developpers.gss"})
     Style style();
 }

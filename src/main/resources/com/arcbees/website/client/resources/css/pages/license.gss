@@ -58,6 +58,8 @@
     font-family: "geometriaBold", Arial, sans-serif;
     text-transform: uppercase;
 
+    display: table;
+    margin: 0 auto;
     padding: 1.5em 0 1em;
 }
 
@@ -65,6 +67,7 @@
     font-size: 4rem;
     font-family: "geometriaLight", Arial, sans-serif;
     text-align: center;
+    line-height: 1;
 
     display: block;
 }

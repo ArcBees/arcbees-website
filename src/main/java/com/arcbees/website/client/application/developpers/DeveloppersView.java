@@ -16,7 +16,6 @@
 
 package com.arcbees.website.client.application.developpers;
 
-import com.arcbees.website.client.application.products.ProductsPresenter;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.IsWidget;
@@ -25,12 +24,12 @@ import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
 
-public class DeveloppersView extends ViewImpl implements ProductsPresenter.MyView {
+public class DeveloppersView extends ViewImpl implements DeveloppersPresenter.MyView {
     interface Binder extends UiBinder<Widget, DeveloppersView> {
     }
 
     @UiField
-    SimplePanel products;
+    SimplePanel developpers;
 
     @Inject
     DeveloppersView(
@@ -40,6 +39,6 @@ public class DeveloppersView extends ViewImpl implements ProductsPresenter.MyVie
 
     @Override
     public void setInSlot(Object slot, IsWidget content) {
-        products.setWidget(content);
+        developpers.setWidget(content);
     }
 }

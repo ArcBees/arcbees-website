@@ -175,10 +175,9 @@
     top: 133px;
     right: 50%;
 
-    -webkit-animation-delay: 0.2s;
-    -moz-animation-delay: 0.2s;
-    -o-animation-delay: 0.2s;
-    animation-delay: 0.2s;
+@mixin animation_delay(1s);
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
 }
 
 .partner i.icon1::before {
@@ -189,10 +188,9 @@
     top: 67px;
     right: 50%;
 
-    -webkit-animation-delay: 0.3s;
-    -moz-animation-delay: 0.3s;
-    -o-animation-delay: 0.3s;
-    animation-delay: 0.3s;
+@mixin animation_delay(1.3s);
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
 }
 
 .partner i.icon2::before {
@@ -205,10 +203,9 @@
     top: 0px;
     right: 50%;
 
-    -webkit-animation-delay: 0.4s;
-    -moz-animation-delay: 0.4s;
-    -o-animation-delay: 0.4s;
-    animation-delay: 0.4s;
+    @mixin animation_delay(1.4s);
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
 }
 
 .partner i.icon3::before {
@@ -221,10 +218,9 @@
     top: -1px;
     left: 50%;
 
-    -webkit-animation-delay: 0.5s;
-    -moz-animation-delay: 0.5s;
-    -o-animation-delay: 0.5s;
-    animation-delay: 0.5s;
+@mixin animation_delay(1.5s);
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
 }
 
 .partner i.icon4::before {
@@ -235,10 +231,9 @@
     top: 66px;
     left: 50%;
 
-    -webkit-animation-delay: 0.6s;
-    -moz-animation-delay: 0.6s;
-    -o-animation-delay: 0.6s;
-    animation-delay: 0.6s;
+@mixin animation_delay(1.6s);
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
 }
 
 .partner i.icon5::before {
@@ -248,10 +243,11 @@
 .partner i.icon5.iconDark {
     color: #000;
 
-    margin-left: 45px;
-
     top: 66px;
     left: 50%;
+
+    -webkit-animation-name: partner;
+    animation-name: partner;
 }
 
 .partner i.icon6 {
@@ -260,10 +256,9 @@
     top: 133px;
     left: 50%;
 
-    -webkit-animation-delay: 0.7s;
-    -moz-animation-delay: 0.7s;
-    -o-animation-delay: 0.7s;
-    animation-delay: 0.7s;
+@mixin animation_delay(1.7s);
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
 }
 
 .partner i.icon6::before {
@@ -274,10 +269,19 @@
     color: #000;
     font-size: 3rem;
 
-    margin-left: -14px;
+    margin-left: -15px;
 
     left: 50%;
     top: 152px;
+}
+
+@-webkit-keyframes partner {
+    from {-ms-transform: translate(100px,0px);opacity:0;
+        -webkit-transform: translate(100px,0px);opacity:0;
+        transform: translate(100px,0px);opacity:0;}
+    to {-ms-transform: translate(0px,0px);opacity: 1;
+        -webkit-transform: translate(0px,0px);opacity: 1;
+        transform: translate(0px,0px);opacity: 1;}
 }
 
 /* --> iterative process -- */
@@ -308,41 +312,51 @@
 
     position: absolute;
     left: 50%;
-    top: 204px;
+    top: 48px;
 }
 
 .iterative .iteration1 {
-    margin-left: 44px;
+    margin-left: 55px;
 
     position: absolute;
     left: 50%;
     top: 131px;
 }
 
-.iterative i.iconHexa {
-    color: #000;
-    font-size: 1.6rem;
-
-    margin-left: -93px;
+.iterative .iconHexa {
+    width: 167px;
+    height: 167px;
+    margin-left: -155px;
 
     position: absolute;
     left: 50%;
-    top: 202px;
+    top: 53px;
+}
+
+.iterative .iconHexa i {
+    color: #000;
+    font-size: 1.6rem;
+
+    display: block;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
 }
 
 .circleQuarter {
-    margin-left: -151px;
-    width: 151px;
+    margin-left: -161px;
+    width: 164px;
     height: 164px;
     border-radius: 50%;
     border: 5px solid transparent;
-    border-bottom-color: #000;
+    border-top-color: #000;
 
     position: absolute;
     top: 54px;
     left: 50%;
 
-    transform: rotate(-51deg);
+    transform: rotate(50deg);
 }
 
 .circleQuarter::before {
@@ -350,12 +364,12 @@
     background-color: #000;
 
     display: block;
-    margin-left: 18px;
+    margin-left: 19px;
     height: 5px;
     width: 5px;
 
     position: absolute;
-    top: 133px;
+    top: 18px;
     left: 0;
 
     @mixin rounded(5px);
@@ -375,13 +389,13 @@
 
 .iterative .bar1 {
     background-color: #000;
-    margin-right: -82px;
+    margin-right: -2px;
 
     width: 5px;
     height: 16px;
 
     position: absolute;
-    top: 53px;
+    top: -11px;
     right: 50%;
 
     @mixin rounded(5px);
@@ -389,13 +403,13 @@
 
 .iterative .bar2 {
     background-color: #000;
-    margin-right: -171px;
+    margin-right: -88px;
 
     width: 16px;
     height: 5px;
 
     position: absolute;
-    top: 140px;
+    top: 50%;
     right: 50%;
 
     @mixin rounded(5px);
@@ -403,16 +417,30 @@
 
 .iterative .bar3 {
     background-color: #000;
-    margin-right: -84px;
+    margin-right: -2px;
 
     width: 5px;
     height: 16px;
 
     position: absolute;
-    top: 214px;
+    bottom: -11px;
     right: 50%;
 
     @mixin rounded(5px);
+}
+
+.iterative .bar4 {
+    background-color: #000;
+    left: -11px;
+
+    width: 16px;
+    height: 5px;
+
+    position: absolute;
+    top: 50%;
+    right: 50%;
+
+@mixin rounded(5px);
 }
 
 /* --> cost risk -- */
@@ -539,10 +567,7 @@
     top: 50px;
     left: 50%;
 
-    -webkit-animation-delay: 0.2s;
-    -moz-animation-delay: 0.2s;
-    -o-animation-delay: 0.2s;
-    animation-delay: 0.2s;
+    @mixin animation_delay(.2s);
 }
 
 .costRisk i.icon2 {
@@ -551,10 +576,7 @@
     top: 63px;
     left: 50%;
 
-    -webkit-animation-delay: 0.2s;
-    -moz-animation-delay: 0.2s;
-    -o-animation-delay: 0.2s;
-    animation-delay: 0.2s;
+    @mixin animation_delay(.4s);
 }
 
 .costRisk i.icon3 {
@@ -563,10 +585,7 @@
     top: 63px;
     left: 50%;
 
-    -webkit-animation-delay: 0.2s;
-    -moz-animation-delay: 0.2s;
-    -o-animation-delay: 0.2s;
-    animation-delay: 0.2s;
+    @mixin animation_delay(.6s);
 }
 
 .costRisk i.icon4 {
@@ -575,10 +594,7 @@
     top: 75px;
     left: 50%;
 
-    -webkit-animation-delay: 0.2s;
-    -moz-animation-delay: 0.2s;
-    -o-animation-delay: 0.2s;
-    animation-delay: 0.2s;
+    @mixin animation_delay(.8s);
 }
 
 .costRisk i.icon5 {
@@ -587,10 +603,7 @@
     top: 75px;
     left: 50%;
 
-    -webkit-animation-delay: 0.2s;
-    -moz-animation-delay: 0.2s;
-    -o-animation-delay: 0.2s;
-    animation-delay: 0.2s;
+    @mixin animation_delay(1s);
 }
 
 .costRisk i.icon6 {
@@ -599,10 +612,7 @@
     top: 75px;
     left: 50%;
 
-    -webkit-animation-delay: 0.2s;
-    -moz-animation-delay: 0.2s;
-    -o-animation-delay: 0.2s;
-    animation-delay: 0.2s;
+    @mixin animation_delay(1.2s);
 }
 
 /* --> learn adapt -- */
@@ -629,6 +639,30 @@
     left: 50%;
 
     @mixin rounded(5px);
+
+    -webkit-animation-name: bar1;
+    animation-name: bar1;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+}
+
+@-webkit-keyframes bar1 {
+    from {height: 0;}
+    to {height: 170px;}
+}
+
+.learnAdapt i.iconHexa {
+    color: #000;
+    font-size: 5.25rem;
+
+    margin-left: -26px;
+
+    left: 50%;
+    top: 152px;
+
+@mixin animation_delay(3s);
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
 }
 
 .learnAdapt i {
@@ -644,10 +678,9 @@
     top: 162px;
     right: 50%;
 
-    -webkit-animation-delay: 0.2s;
-    -moz-animation-delay: 0.2s;
-    -o-animation-delay: 0.2s;
-    animation-delay: 0.2s;
+    @mixin animation_delay(1s);
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
 }
 
 .learnAdapt i.icon1::before {
@@ -660,10 +693,9 @@
     top: 82px;
     right: 50%;
 
-    -webkit-animation-delay: 0.3s;
-    -moz-animation-delay: 0.3s;
-    -o-animation-delay: 0.3s;
-    animation-delay: 0.3s;
+    @mixin animation_delay(1.3s);
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
 }
 
 .learnAdapt i.icon2::before {
@@ -676,10 +708,9 @@
     top: 0px;
     right: 50%;
 
-    -webkit-animation-delay: 0.4s;
-    -moz-animation-delay: 0.4s;
-    -o-animation-delay: 0.4s;
-    animation-delay: 0.4s;
+    @mixin animation_delay(1.4s);
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
 }
 
 .learnAdapt i.icon3::before {
@@ -692,10 +723,9 @@
     top: -1px;
     left: 50%;
 
-    -webkit-animation-delay: 0.5s;
-    -moz-animation-delay: 0.5s;
-    -o-animation-delay: 0.5s;
-    animation-delay: 0.5s;
+    @mixin animation_delay(1.5s);
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
 }
 
 .learnAdapt i.icon4::before {
@@ -708,10 +738,9 @@
     top: 81px;
     left: 50%;
 
-    -webkit-animation-delay: 0.6s;
-    -moz-animation-delay: 0.6s;
-    -o-animation-delay: 0.6s;
-    animation-delay: 0.6s;
+    @mixin animation_delay(1.6s);
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
 }
 
 .learnAdapt i.icon5::before {
@@ -724,24 +753,13 @@
     top: 162px;
     left: 50%;
 
-    -webkit-animation-delay: 0.7s;
-    -moz-animation-delay: 0.7s;
-    -o-animation-delay: 0.7s;
-    animation-delay: 0.7s;
+    @mixin animation_delay(1.7s);
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
 }
 
 .learnAdapt i.icon6::before {
     @mixin rotate(-30deg);
-}
-
-.learnAdapt i.iconHexa {
-    color: #000;
-    font-size: 5.25rem;
-
-    margin-left: -26px;
-
-    left: 50%;
-    top: 152px;
 }
 
 /* --> deliver -- */
@@ -766,6 +784,9 @@
     position: absolute;
     left: 50%;
     top: 20px;
+
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
 }
 
 .deliver .bar1 {
@@ -780,6 +801,12 @@
     left: 50%;
 
     @mixin rounded(5px);
+    @mixin animation_delay(.6s);
+
+    -webkit-animation-name: deliver;
+    animation-name: deliver;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
 }
 
 .deliver .bar2 {
@@ -794,6 +821,12 @@
     left: 50%;
 
     @mixin rounded(5px);
+    @mixin animation_delay(.2s);
+
+    -webkit-animation-name: deliver;
+    animation-name: deliver;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
 }
 
 .deliver .bar3 {
@@ -809,6 +842,12 @@
 
     @mixin rounded(5px);
     @mixin rotate(45deg);
+    @mixin animation_delay(.4s);
+
+    -webkit-animation-name: deliver;
+    animation-name: deliver;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
 }
 
 .deliver .bar4 {
@@ -824,6 +863,12 @@
 
     @mixin rounded(5px);
     @mixin rotate(-45deg);
+    @mixin animation_delay(.8s);
+
+    -webkit-animation-name: deliver;
+    animation-name: deliver;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
 }
 
 .deliver .bar5 {
@@ -838,4 +883,15 @@
     left: 50%;
 
     @mixin rounded(5px);
+    @mixin animation_delay(1s);
+
+    -webkit-animation-name: deliver;
+    animation-name: deliver;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+}
+
+@-webkit-keyframes deliver {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }

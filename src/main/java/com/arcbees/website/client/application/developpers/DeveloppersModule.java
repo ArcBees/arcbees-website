@@ -16,21 +16,21 @@
 
 package com.arcbees.website.client.application.developpers;
 
-import com.arcbees.website.client.application.products.ProductsPresenter;
-import com.arcbees.website.client.application.products.ProductsView;
-import com.arcbees.website.client.application.products.gae.GaeModule;
-import com.arcbees.website.client.application.products.gwtp.GwtpModule;
-import com.arcbees.website.client.application.products.jukito.JukitoModule;
+import com.arcbees.website.client.application.developpers.chosen.ChosenModule;
+import com.arcbees.website.client.application.developpers.gwtp.GwtpModule;
+import com.arcbees.website.client.application.developpers.jukito.JukitoModule;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
 public class DeveloppersModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
         install(new JukitoModule());
-        install(new GaeModule());
+        install(new ChosenModule());
         install(new GwtpModule());
 
-        bindPresenter(ProductsPresenter.class, ProductsPresenter.MyView.class, ProductsView.class,
-                ProductsPresenter.MyProxy.class);
+        bindPresenter(DeveloppersPresenter.class, DeveloppersPresenter.MyView.class, DeveloppersView.class,
+                DeveloppersPresenter.MyProxy.class);
     }
+
+
 }

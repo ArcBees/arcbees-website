@@ -1,222 +1,311 @@
-@def BG_CODE resourceUrl("bgCode");
+@require "colors";
+@require "geometria";
 
-/* -- Init ----------------------------------------------- */
+@def JUKITO_BANNER resourceUrl("jukitoBanner");
+@def GWTP_BANNER resourceUrl("gwtpBanner");
+@def CHOSEN_BANNER resourceUrl("chosenBanner");
 
-body {
-    background-color: #f2f2f2;
-}
-
-.doc .wrapper {
-    margin: 0 auto;
-    padding-right: 245px;
-    width: 980px;
-
-    position: relative;
-    z-index: 99;
-}
-
-@media (max-width: 979px) {
-    .doc .wrapper {
-        width: 650px;
-    }
+.developpers {
+    background-color: C_STRIPE_LIGHT;
 }
 
 /* -- Headings ------------------------------------------- */
 
-.doc h1,
-.doc h2,
-.doc h3,
-.doc h4,
-.doc h5,
-.doc h6 {
-    font-weight: normal;
-    font-family: "geometriaBold";
+.developpers h1 {
+    font-size: 2.5rem;
+
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.developpers h2 {
+    font-size: 2.5rem;
+
+    margin: 0em 0 .25em;
+}
+
+.developpers h2.presentation {
+    font-size: 4.2rem;
     text-transform: uppercase;
-}
+    font-family: "geometriaBold";
+    line-height: 1em;
 
-.doc h1 {
-    font-size: 3rem;
-
-    margin: .175em 0;
-}
-
-.doc h2 {
-    font-size: 2rem;
-
-    margin-bottom: .65em;
-}
-
-.doc p,
-.doc li {
-    line-height: 1.25em;
-    font-size: 1.5rem;
-
-    margin: 0.8em 0;
-}
-
-.doc ul {
     margin: 0;
+}
+
+.developpers h3 {
+    margin-top: 0;
+}
+
+/* -- Style ---------------------------------------- */
+
+/* --> Header -- */
+
+.logo {
+    font-size: 5rem;
+}
+
+.breadcrumb {
+    margin: 0;
+
+    position: absolute;
+    top: 25px;
+    left: 49px;
+
+    z-index: 1;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+}
+
+.breadcrumb ul {
+    font-family: "geometriaBold";
+
+    display: inline-block;
+    margin-left: 10px;
     padding: 0;
-
-    list-style: none;
+    vertical-align: super;
 }
 
-.doc li:before {
-    content: "\2022";
-    font-size: 35px;
-
-    margin-right: 7px;
-
-    vertical-align: middle;
+.breadcrumb li {
+    display: inline;
 }
 
-/* -- Header ------------------------------------------- */
+.breadcrumb li::before {
+    content: ">";
+    padding-right: 3px;
+}
 
-.doc header {
-    padding: 17px 0 20px;
+.breadcrumb li:first-child::before {
+    content: "";
+    padding-right: 0;
+}
+
+/* --> Main -- */
+
+.socialTop {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+ul.social {
+    text-align: center;
+
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+
+    list-style-type: none;
+}
+
+.social li {
+    display: inline-block;
+    margin: 0 1px;
+}
+
+.social a {
+    color: #000;
+    font-size: 3.5rem;
+
+    @mixin transition(color, .2s);
+}
+
+.social a:hover {
+    color: #fff;
+}
+
+.socialTop .social a:hover {
+    color: #ebebeb;
+}
+
+/* --> Slideshow -- */
+
+.slideshow {
+    margin-top: 60px;
 
     position: relative;
 }
 
-.doc .title {
-    padding-top: 35px;
+.slideshow .slides {
+    margin: 0 auto;
+    width: 905px;
 }
 
-.doc select {
-    background: #f8f8f8;
-
-    display: inline-block;
-    padding: 3px;
-    margin: 0;
-    width: 230px;
-    height: 40px;
-    border: 2px solid #000;
-
-    position: absolute;
-
-    @mixin rounded(0px);
-    -webkit-appearance:none;
-    -moz-appearance:none;
-    appearance:none;
-    outline: none;
-
-    cursor:pointer;
-}
-
-.doc .logo {
-    color: #fff;
-    font-size: 10.6rem;
-
-    position: absolute;
-    top: calc(50% - 68px);
-    left: calc(50% - 50px); 
-}
-
-.doc .github {
-    font-size: 3.6rem;
-
-    position: absolute;
-    right: 0;
-    top: 77px;
-}
-
-.doc .search {
-    font-size: 1.7rem;
-
-    position: absolute;
-    right: 16px;
-    top: 20px;
-}
-
-/* -- Main section ------------------------------------------- */
-
-.doc .main {
-    padding-top: 60px;
-}
-
-.doc .main h2:before {
-    content: "#";
-    font-family: "geometria";
-
-    margin: 0 14px 0 -27px;
-}
-
-.doc .code,
-.doc .note {
-    background-image: BG_CODE;
-    -webkit-background-size: 100%;
-    background-size: 100%;
-}
-
-.doc .code .wrapper,
-.doc .note .wrapper {
-    background-color: #fff;
-
-    margin: 22px auto 42px;
-    padding: 20px 17px;
-}
-
-.doc .note .wrapper {
-    padding: 1px 12px;
-}
-
-/* -- Support ------------------------------------------- */
-
-.doc .support {
-    text-align: center;
-
-    margin-top: 80px;
-}
-
-.doc .support h2 {
-    font-size: 4rem;
-
-    margin-bottom: .4em;
-}
-
-.doc .btn {
-    display: inline-block;
-    border: 2px solid #000;
-    padding: 8px 15px;
-}
-
-.doc a.btn {
-    text-decoration: none;
+.slideshow a.next,
+.slideshow a.prev {
     color: #000;
-}
-
-.doc .backTop {
     font-size: 2.5rem;
 
-    margin-top: 45px;
+    margin-top: -12px;
 
-    @mixin rotate_180_ccw();
+    top: 50%;
+    left: 0;
+    position: absolute;
+
+    @mixin rotate(90deg);
+    @mixin transition(color, .2s);
 }
 
-/* -- Chosen ------------------------------------------- */
+.slideshow a.next {
+    right: 0;
+    left: auto;
 
-.doc .chosen header {
+    @mixin rotate(-90deg);
+}
+
+.slideshow a.prev::before,
+.slideshow a.next::before {
+    content: "\e602";
+    font-family: "icons";
+}
+
+.slideshow a.prev:hover,
+.slideshow a.next:hover {
+    color: #f2f2f2;
+}
+
+.slideshow .pager ul{
+    padding: 0;
+    margin: 25px 0 0;
+}
+
+.slideshow .pager li {
+    display: inline-block;
+    margin: 0 7px;
+}
+
+.slideshow .pager a,
+.slideshow .pager a:visited {
+    background-color: C_PRODUCT_GWTP;
+
+    display: block;
+    height: 14px;
+    width: 14px;
+
+@mixin rounded(7px);
+}
+
+/* --> In Details -- */
+
+.stripeDetails {
+    padding: 23px 0 30px;
+}
+
+.stripeDetails h4 {
+    margin-top: .7em;
+}
+
+/* -- Page : Gae ---------------------------------------- */
+
+.chosen h3 span {
+    display: block;
+}
+
+.chosen .colored {
     background-color: C_PRODUCT_CHOSEN;
 }
 
-.doc .chosen h2:before {
+.chosen .headerBg {
+    background: CHOSEN_BANNER no-repeat center #b4d333;
+
+    min-height: 500px;
+}
+
+.chosen .presentation {
     color: C_PRODUCT_CHOSEN;
 }
 
-.doc .chosen li:before {
-    color: C_PRODUCT_CHOSEN;
+.chosen .slideshow .pager a,
+.chosen .slideshow .pager a:visited {
+    background-color: C_PRODUCT_CHOSEN;
 }
 
-/* -- Elastic ------------------------------------------- */
-
-.doc .elastic header {
-    background-color: C_PRODUCT_ELASTIC;
+.chosen .code {
+    margin-top: 45px;
 }
 
-.doc .elastic h2:before {
-    color: C_PRODUCT_ELASTIC;
+/* -- Page : Jukito ---------------------------------------- */
+
+.jukito .colored {
+    background-color: C_PRODUCT_JUKITO;
 }
 
-.doc .elastic li:before {
-    color: C_PRODUCT_ELASTIC;
+.jukito .headerBg {
+    background: JUKITO_BANNER no-repeat center #a0191c;
+
+    min-height: 500px;
+}
+
+.jukito h3 span {
+    display: block;
+}
+
+.jukito .presentation {
+    color: C_PRODUCT_JUKITO;
+}
+
+.jukito .slideshow .pager a,
+.jukito .slideshow .pager a:visited {
+    background-color: C_PRODUCT_JUKITO;
+}
+
+.frameworkList {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.frameworkList li {
+    margin: 0 10px 0 0;
+    display: inline-block;
+}
+
+/* -- Page : Gwtp ---------------------------------------- */
+
+.gwtp .colored {
+    background-color: C_PRODUCT_GWTP;
+}
+
+.gwtp .headerBg {
+    background: GWTP_BANNER no-repeat top center #e2830b;
+
+    min-height: 500px;
+}
+
+.gwtp h3 span {
+    display: block;
+}
+
+.gwtp .colored {
+    background-color: C_PRODUCT_GWTP;
+}
+
+.gwtp .presentation {
+    color: C_PRODUCT_GWTP;
+}
+
+.gwtp .slideshow .pager a,
+.gwtp .slideshow .pager a:visited {
+    background-color: C_PRODUCT_GWTP;
+}
+
+.gwtp .moreFeatures h2 {
+    color: C_PRODUCT_GWTP;
+}
+
+.gwtp .moreFeatures h3 {
+    font-size: 2rem;
+
+    margin: 1.6em 0 .5em;
+}
+
+/* -- Overwrite ---------------------------------------- */
+
+.slideshow .pager a:hover {
+    background-color: #000;
+
+@mixin transition(background-color, .5s);
 }

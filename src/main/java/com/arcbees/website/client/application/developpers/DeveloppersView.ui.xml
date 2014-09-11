@@ -9,46 +9,13 @@
 
     <ui:with field="doc" type="com.arcbees.website.client.resources.DocsResources"/>
     <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
-    <ui:with field="page" type="com.arcbees.website.client.resources.PageProductResources"/>
+    <ui:with field="page" type="com.arcbees.website.client.resources.DeveloppersResources"/>
     <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
 
-    <g:HTMLPanel styleName="{page.style.products}">
-
-        <section class="{res.style.stripe} {page.style.colored} {res.style.centered}">
-            <nav class="{page.style.menuHeader}">
-                <ul>
-                    <li>
-                        <a href="#" class="{fonts.icons.iconGae}">
-                            <span class="{res.style.hidden}">Gae</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="{fonts.icons.iconGwtp} {page.style.active}">
-                            <span class="{res.style.hidden}">GWTP</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="{fonts.icons.iconJukito}">
-                            <span class="{res.style.hidden}">Jukito</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
+    <g:HTMLPanel styleName="{page.style.developpers}">
 
         <!-- Docs content -->
-        <g:SimplePanel ui:field="products"/>
+        <g:SimplePanel ui:field="developpers"/>
 
-        <section class="{res.style.stripe} {page.style.stripeSupport} {res.style.centered}">
-            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_full}">
-
-                    <h3>Need support?</h3>
-                    <a href="#" class="{res.style.btn}">Arcbees offer a variety of supports options</a>
-                    <a href="#" data-icon="&#xe602;" class="{res.style.backTop}"></a>
-
-                </div>
-            </div>
-        </section>
     </g:HTMLPanel>
 </ui:UiBinder>

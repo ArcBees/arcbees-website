@@ -31,7 +31,7 @@ public class GwtpPresenter extends Presenter<GwtpPresenter.MyView, GwtpPresenter
     }
 
     @ProxyStandard
-    @NameToken(NameTokens.JUKITO_DEVELOPPERS)
+    @NameToken(NameTokens.GWTP_DEVELOPPERS)
     interface MyProxy extends ProxyPlace<GwtpPresenter> {
     }
 

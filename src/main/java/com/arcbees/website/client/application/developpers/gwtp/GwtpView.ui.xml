@@ -6,13 +6,13 @@
     <ui:with field="page" type="com.arcbees.website.client.resources.DeveloppersResources"/>
     <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
 
-    <g:HTMLPanel styleName="{page.style.developpers} {page.style.jukito}">
+    <g:HTMLPanel styleName="{page.style.developpers} {page.style.gwtp}">
 
         <nav class="{page.style.breadcrumb}">
             <span class="{fonts.icons.iconArcbees} {page.style.logo}"></span>
             <ul>
                 <li>DEVELOPPERS</li>
-                <li>JUKITO</li>
+                <li>GWTP</li>
             </ul>
         </nav>
 
@@ -22,11 +22,12 @@
         <section class="{res.style.stripe}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_1_2}">
-                    <h1>jukito
+                    <h1>gwt platform
                         <a href="#" class="{res.style.anchor}">#</a>
                     </h1>
-                    <h2 class="{page.style.presentation}">The new martial
-                        <span>art for programmers</span>
+                    <h2 class="{page.style.presentation}">The best Model View
+                        <span>Presenter framework</span>
+                        for GWT
                     </h2>
                     <div class="{page.style.socialTop}">
                         <ul class="{page.style.social}">
@@ -47,17 +48,16 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_push_1_2}">
                     <p>
-                        <strong>Jukito lets you use the power of dependency injection in all your tests.
+                        <strong>GWT-Platform (GWTP) is your best friend for building large Google Web Toolkit (GWT) web
+                            apps.
                         </strong>
                     </p>
-                    <p>You will quickly grow addicted to its ease of use and all the boilerplate economy! Jukito combine
-                        power of JUnit, Guice and Mockito
+                    <p>Used by hundreds of teams around the world, GWTP will help you push your GWT app to the next
+                        level!
                     </p>
-                    <ul class="{page.style.frameworkList}">
-                        <li><g:Image resource="{page.jukitoMockito}"/></li>
-                        <li><g:Image resource="{page.jukitoGuice}"/></li>
-                        <li><g:Image resource="{page.jukitoJUnit}"/></li>
-                    </ul>
+                    <p>Combining powerful features, GWTP is an out-of-the-box solution that supports all the
+                        requirements of modern web apps.
+                    </p>
                 </div>
             </div>
             <div class="{page.style.slideshow} {res.style.wrapper}">
@@ -94,13 +94,14 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
 
                 <div class="{res.grid.col} {res.grid.col_1_3}">
-                    <h3>Automocking</h3>
+                    <h3>Model View Presenter Framework</h3>
                     <a href="#" class="{res.style.anchor}">#</a>
                 </div>
 
                 <div class="{res.grid.col} {res.grid.col_2_3}">
-                    <p>Jukito lets you inject objects in your tests everywhere! Constructor, method and field injection
-                        are supported.
+                    <p>Web applications need a solid underlying architecture to build upon as they grow. GWTP’s MVP
+                        framework helps you organize your code for scalability right from the start, with a clear
+                        separation of concerns between your UI and your business logic.
                     </p>
                 </div>
             </div>
@@ -110,7 +111,7 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
 
                 <div class="{res.grid.col} {res.grid.col_1_3}">
-                    <h3>Inject wherever you want!</h3>
+                    <h3>dependency injection</h3>
                     <a href="#" class="{res.style.anchor}">#</a>
                 </div>
 
@@ -126,13 +127,13 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
 
                 <div class="{res.grid.col} {res.grid.col_1_3}">
-                    <h3>@All annotation</h3>
+                    <h3>history management</h3>
                     <a href="#" class="{res.style.anchor}">#</a>
                 </div>
 
                 <div class="{res.grid.col} {res.grid.col_2_3}">
-                    <p>Need to run your test using a wide set of data? Jukito allows you to concisely write a single
-                        test that runs on a whole suite of test cases.
+                    <p>GWTP's PlaceManager makes it trivial to build a blazing fast modern web app that minimizes
+                        client-server roundtrips while making sure the Back button works as users expect.
                     </p>
                 </div>
             </div>
@@ -142,13 +143,14 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
 
                 <div class="{res.grid.col} {res.grid.col_1_3}">
-                    <h3>Lightweight</h3>
+                    <h3>command pattern</h3>
                     <a href="#" class="{res.style.anchor}">#</a>
                 </div>
 
                 <div class="{res.grid.col} {res.grid.col_2_3}">
-                    <p>The last thing you want is your tests slowing you down. Jukito is fast and will not impact your
-                        suite’s run time. And, your tests will be easier to read, write and maintain.
+                    <p>Client/Server communication is made easy using GWTP's integrated command pattern. With it, you
+                        can easily create Actions that are managed by server-side Handlers. Also included: asynchronous
+                        callbacks and server-side Handler protection.
                     </p>
                 </div>
             </div>
@@ -158,12 +160,14 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
 
                 <div class="{res.grid.col} {res.grid.col_1_3}">
-                    <h3>Scales to all size of test</h3>
+                    <h3>code splitting</h3>
                     <a href="#" class="{res.style.anchor}">#</a>
                 </div>
 
                 <div class="{res.grid.col} {res.grid.col_2_3}">
-                    <p>Jukito can be used within unit, integration and end-to-end tests, all with one framework!
+                    <p>Javascript-heavy web applications can take too long to download as your application grows in
+                        size. Thankfully, GWTP comes with effortless and efficient code splitting that will cut through
+                        your application's startup time.
                     </p>
                 </div>
             </div>
@@ -173,12 +177,84 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
 
                 <div class="{res.grid.col} {res.grid.col_1_3}">
-                    <h3>Easy installation</h3>
+                    <h3>mobile ready</h3>
                     <a href="#" class="{res.style.anchor}">#</a>
                 </div>
 
                 <div class="{res.grid.col} {res.grid.col_2_3}">
-                    <p>Simply add a Maven dependency to your POM, and Jukito will be downloaded from Maven Central.</p>
+                    <p>GWTP allows you to easily create multiple instances of a Presenter. This lets you reuse the same
+                        widgets and logic throughout your application without duplicating your code.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium3}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+
+                <div class="{res.grid.col} {res.grid.col_1_3}">
+                    <h3>Nested Presenters</h3>
+                    <a href="#" class="{res.style.anchor}">#</a>
+                </div>
+
+                <div class="{res.grid.col} {res.grid.col_2_3}">
+                    <p>Web apps usually require a consistent layout across all your pages. The last thing you want to do
+                        is replicate your website header code on every page! GWTP solves that problem using Nested
+                        Presenters, which are loosely coupled and communicate via a shared Event Bus.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="{page.style.moreFeatures} {res.style.stripe}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <div class="{res.grid.col} {res.grid.col_full} {res.style.centered}">
+                    <h2>more features
+                        <a href="#" class="{res.style.anchor}">#</a>
+                    </h2>
+                </div>
+
+                <div class="{res.grid.col} {res.grid.col_1_2}">
+                    <h3>security</h3>
+                    <p>GWTP allows you to protect your server using Action validation. In addition, you can block
+                        specific pages using custom Gatekeepers. Also included: Automatic XSRF attack detection.
+                    </p>
+                    <h3>google analytics</h3>
+                    <p>With as little as 3 lines of code, your web application will be integrated with Google Analytics.
+                        Also, GWTP allows your website to be easily crawlable by search engines that follow Google's
+                        AJAX Crawling specification.
+                    </p>
+                    <h3>Tabbed Presenters</h3>
+                    <p>Often times you'll want to display a list of links that cause a child Presenter to appear. GWTP
+                        makes it easy to create loosely-coupled Tabbed Presenters that live within their parent
+                        Presenter.
+                    </p>
+                    <h3>maven</h3>
+                    <p>If your project uses Maven, you're all set for GWTP. All the dependencies that you need to
+                        migrate your project to GWTP are published to Maven Central. So, a couple lines in your POM, and
+                        GWTP is ready!
+                    </p>
+                </div>
+
+                <div class="{res.grid.col} {res.grid.col_1_2}">
+                    <h3>Internationalization</h3>
+                    <p>GWTP makes i18n easy. Using a custom Python script, GWTP will store all your translations in
+                        separate properties files for all languages.
+                    </p>
+                    <h3>Crawlability</h3>
+                    <p>Wondering if it's possible to make crawlable applications with GWTP? Absolutely! GWTP includes a
+                        crawling engine that lets you make any of your asynchronous web sites crawlable - even if you're
+                        not building them in GWTP!
+                    </p>
+                    <h3>Testability</h3>
+                    <p>Because GWTP implements the Model View Presenter design pattern, most of your app logic will be
+                        found inside the Presenters, which can be easily tested using Junit, Mockito and Jukito.
+                    </p>
+                    <h3>Route-like NameTokens</h3>
+                    <p>Want human-readable URLs? With GWTP, your URLs can look like REST calls! Using Route-Like
+                        NameTokens, fussy web addresses like /#userprofile?id=999 can be replaced with
+                        /#/userprofile/999. It’s a format your users will be able to recognize, remember and share.
+                    </p>
                 </div>
             </div>
         </section>

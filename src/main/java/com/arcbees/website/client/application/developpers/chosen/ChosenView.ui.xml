@@ -6,13 +6,13 @@
     <ui:with field="page" type="com.arcbees.website.client.resources.DeveloppersResources"/>
     <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
 
-    <g:HTMLPanel styleName="{page.style.developpers} {page.style.gae}">
+    <g:HTMLPanel styleName="{page.style.developpers} {page.style.chosen}">
 
         <nav class="{page.style.breadcrumb}">
             <span class="{fonts.icons.iconArcbees} {page.style.logo}"></span>
             <ul>
                 <li>DEVELOPPERS</li>
-                <li>GAE STUDIO</li>
+                <li>CHOSEN</li>
             </ul>
         </nav>
 
@@ -22,10 +22,10 @@
         <section class="{res.style.stripe}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_1_2}">
-                    <h1>gae studio
+                    <h1>gwt chosen
                         <a href="#" class="{res.style.anchor}">#</a>
                     </h1>
-                    <h2 class="{page.style.presentation}">optimizing google app engine applications</h2>
+                    <h2 class="{page.style.presentation}">Making unwieldy select boxes more user-friendly</h2>
                     <div class="{page.style.socialTop}">
                         <ul class="{page.style.social}">
                             <li>
@@ -39,48 +39,34 @@
                                 </a>
                             </li>
                         </ul>
-                        <a href="#" class="{res.style.btn}">Subscribe</a>
                     </div>
                 </div>
             </div>
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_push_1_2}">
                     <p>
-                        <strong>GAE Studio is a tool destined to assist developers in optimizing their applications
-                            hosted on Google App Engine.
+                        <strong>Chosen is a javascript plugin (for jQuery and Prototype) that makes long, unwieldy
+                            select boxes much more user-friendly.
                         </strong>
                     </p>
-                    <p>Using real-time analysis of database requests, GAE Studio will rapidly identify inefficient
-                        queries and gather precious data that will help developers trim query delays.
-                    </p>
-                    <p>GAE Studio also allows database exploration, entry modification and deletion. As a whole, GAE
-                        Studio is an essential tool for developers who wish to speed up their GAE applications.
+                    <p>GwtChosen is a port of the jquery version of Chosen for GWT Web Toolkit. It is not a wrapper but
+                        a complete rewrite using the GWT standards. It is available as a GwtQuery plugin or as a widget.
                     </p>
                 </div>
             </div>
-            <div class="{page.style.slideshow} {res.style.wrapper}">
-                <div class="{page.style.slides}">
-                    <g:Image resource="{page.gwtpScreen1}"/>
+        </section>
+
+        <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.centered}">
+            <h2>demo
+                <a href="#" class="{res.style.anchor}">#</a>
+            </h2>
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <div class="{res.grid.col} {res.grid.col_1_2}">
+                    <p>Simple ChosenListBox</p>
                 </div>
-                <a href="#" class="{page.style.prev}">
-                    <span class="{res.style.hidden}">Prev</span>
-                </a>
-                <a href="#" class="{page.style.next}">
-                    <span class="{res.style.hidden}">Next</span>
-                </a>
-                <nav class="{page.style.pager} {res.style.centered}">
-                    <ul>
-                        <li>
-                            <a href="#"></a>
-                        </li>
-                        <li>
-                            <a href="#"></a>
-                        </li>
-                        <li>
-                            <a href="#"></a>
-                        </li>
-                    </ul>
-                </nav>
+                <div class="{res.grid.col} {res.grid.col_1_2}">
+                    <p>Multiple ChosenListBox</p>
+                </div>
             </div>
         </section>
 
@@ -88,81 +74,48 @@
             <h2>in details</h2>
         </section>
 
-        <section class="{res.style.stripe} {res.style.medium2} {res.style.centered}">
-            <div class="{res.style.wrapper}">
+        <section class="{res.style.stripe} {res.style.medium2}">
+            <div class="{res.style.wrapper} {res.style.centered}">
                 <h3 class="{res.style.stripeTitle}">Quick and easy
-                    <span>installation <a href="#" class="{res.style.anchor}">#</a></span>
+                    <span>installation
+                        <a href="#" class="{res.style.anchor}">#</a>
+                    </span>
                 </h3>
                 <a href="#" class="{res.style.btn}">Add our provided servlet</a>
                 <p>Simply add our provided servlet to your web.xml file, and you’re ready to go!</p>
-                <g:Image resource="{page.gaeScreen2}" styleName="{page.style.code}"/>
             </div>
-        </section>
-
-        <section class="{res.style.stripe} {page.style.colored} {res.style.centered}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_full}">
+                <div class="{res.grid.col} {res.grid.col_3_4} {res.grid.col_push_1_6}">
+                    <h4>release</h4>
+                    <g:Image resource="{page.chosenRelease}"/>
 
-                    <h3 class="{res.style.stripeTitle}">DATA
-                        <span>VISUALISATION <a href="#" class="{res.style.anchor}">#</a></span>
-                    </h3>
-                    <a href="#" class="{res.style.btn}">Browser your different kinds</a>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="{res.style.stripe} {res.style.medium2} {res.style.centered}">
-            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_full}">
-
-                    <h3 class="{res.style.stripeTitle}">ON-THE-FLY DATA
-                        <span>EDITING <a href="#" class="{res.style.anchor}">#</a></span>
-                    </h3>
-                    <a href="#" class="{res.style.btn}">Browser your different kinds</a>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="{res.style.stripe} {res.style.dark} {res.style.centered}">
-            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_full}">
-
-                    <h3>Subscribe</h3>
-                    <p>GAE studio is still in development, subscribe to get an early access!</p>
-                    <form>
-                        <label>What's your email address?
-                            <span data-icon="&#xe60f;" class="{fonts.icons.valignSup}"></span>
-                        </label>
-                        <input type="email" name="email"></input>
-                    </form>
-
-                    <a href="#" class="{res.style.btn}">Subscribe</a>
-
+                    <h4>Snapshot:</h4>
+                    <g:Image resource="{page.chosenSnapshot}"/>
                 </div>
             </div>
         </section>
 
         <section class="{res.style.stripe} {page.style.colored} {res.style.centered}">
-            <h3>SHARE</h3>
-            <ul class="{page.style.social}">
-                <li>
-                    <a href="#" class="{fonts.icons.iconFb}">
-                        <span class="{res.style.hidden}">Facebook</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="{fonts.icons.iconTwitter}">
-                        <span class="{res.style.hidden}">Twitter</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="{fonts.icons.iconGPlus}">
-                        <span class="{res.style.hidden}">Google</span>
-                    </a>
-                </li>
-            </ul>
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <div class="{res.grid.col} {res.grid.col_full}">
+
+                    <h3 class="{res.style.stripeTitle}">Style
+                        <a href="#" class="{res.style.anchor}">#</a>
+                    </h3>
+                    <a href="#" class="{res.style.btn}">Browse your diffferent entity kinds</a>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="{res.style.stripe} {res.style.centered}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <div class="{res.grid.col} {res.grid.col_full}">
+
+                    <a href="#" class="{res.style.btn}">Go to Documentations</a>
+
+                </div>
+            </div>
         </section>
 
     </g:HTMLPanel>

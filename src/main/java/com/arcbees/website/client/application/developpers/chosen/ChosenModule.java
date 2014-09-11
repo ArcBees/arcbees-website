@@ -21,7 +21,7 @@ import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 public class ChosenModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
-        bindPresenter(GaePresenter.class, GaePresenter.MyView.class,
-                GaeView.class, GaePresenter.MyProxy.class);
+        bindPresenter(ChosenPresenter.class, ChosenPresenter.MyView.class,
+                ChosenView.class, ChosenPresenter.MyProxy.class);
     }
 }

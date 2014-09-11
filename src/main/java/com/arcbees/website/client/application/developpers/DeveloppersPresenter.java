@@ -36,7 +36,7 @@ public class DeveloppersPresenter extends Presenter<DeveloppersPresenter.MyView,
     }
 
     @ContentSlot
-    public static final GwtEvent.Type<RevealContentHandler<?>> SLOT_PRODUCTS = new GwtEvent.Type<>();
+    public static final GwtEvent.Type<RevealContentHandler<?>> SLOT_DEVELOPPERS = new GwtEvent.Type<>();
 
     @Inject
     DeveloppersPresenter(

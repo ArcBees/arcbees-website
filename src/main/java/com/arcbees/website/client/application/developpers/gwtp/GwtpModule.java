@@ -16,14 +16,12 @@
 
 package com.arcbees.website.client.application.developpers.gwtp;
 
-import com.arcbees.website.client.application.developpers.jukito.JukitoPresenter;
-import com.arcbees.website.client.application.developpers.jukito.JukitoView;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
 public class GwtpModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
-        bindPresenter(JukitoPresenter.class, JukitoPresenter.MyView.class,
-                JukitoView.class, JukitoPresenter.MyProxy.class);
+        bindPresenter(GwtpPresenter.class, GwtpPresenter.MyView.class,
+                GwtpView.class, GwtpPresenter.MyProxy.class);
     }
 }

@@ -3,18 +3,21 @@
         xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
     <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
-    <ui:with field="page" type="com.arcbees.website.client.resources.PageProductResources"/>
+    <ui:with field="page" type="com.arcbees.website.client.resources.DeveloppersResources"/>
     <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
 
-    <g:HTMLPanel styleName="{page.style.products} {page.style.jukito}">
+    <g:HTMLPanel styleName="{page.style.developpers} {page.style.jukito}">
 
         <nav class="{page.style.breadcrumb}">
             <span class="{fonts.icons.iconArcbees} {page.style.logo}"></span>
             <ul>
-                <li>PRODUCT</li>
+                <li>DEVELOPPERS</li>
                 <li>JUKITO</li>
             </ul>
         </nav>
+
+        <section class="{res.style.stripe} {page.style.headerBg} {res.style.colored}">
+        </section>
 
         <section class="{res.style.stripe}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
@@ -180,38 +183,14 @@
             </div>
         </section>
 
-        <section class="{res.style.stripe} {res.style.dark} {res.style.centered}">
+        <section class="{res.style.stripe} {res.style.centered}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_full}">
 
-                    <h3>ALL THE DOCUMENTATIONS
-                        <span>YOU NEED</span>
-                    </h3>
-                    <a href="#" class="{res.style.btn}">Go to Arcbees Developers</a>
+                    <a href="#" class="{res.style.btn}">Go to Documentations</a>
 
                 </div>
             </div>
-        </section>
-
-        <section class="{res.style.stripe} {page.style.colored} {res.style.centered}">
-            <h3>SHARE</h3>
-            <ul class="{page.style.social}">
-                <li>
-                    <a href="#" class="{fonts.icons.iconFb}">
-                        <span class="{res.style.hidden}">Facebook</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="{fonts.icons.iconTwitter}">
-                        <span class="{res.style.hidden}">Twitter</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="{fonts.icons.iconGPlus}">
-                        <span class="{res.style.hidden}">Google</span>
-                    </a>
-                </li>
-            </ul>
         </section>
 
     </g:HTMLPanel>

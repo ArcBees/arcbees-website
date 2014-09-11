@@ -16,13 +16,12 @@
 
 package com.arcbees.website.client.application.developpers.gwtp;
 
-import com.arcbees.website.client.application.developpers.jukito.JukitoPresenter;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
 
-public class GwtpView extends ViewImpl implements JukitoPresenter.MyView {
+public class GwtpView extends ViewImpl implements GwtpPresenter.MyView {
     interface Binder extends UiBinder<Widget, GwtpView> {
     }
 

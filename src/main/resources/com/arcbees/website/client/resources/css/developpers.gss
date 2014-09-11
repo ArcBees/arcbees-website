@@ -1,0 +1,222 @@
+@def BG_CODE resourceUrl("bgCode");
+
+/* -- Init ----------------------------------------------- */
+
+body {
+    background-color: #f2f2f2;
+}
+
+.doc .wrapper {
+    margin: 0 auto;
+    padding-right: 245px;
+    width: 980px;
+
+    position: relative;
+    z-index: 99;
+}
+
+@media (max-width: 979px) {
+    .doc .wrapper {
+        width: 650px;
+    }
+}
+
+/* -- Headings ------------------------------------------- */
+
+.doc h1,
+.doc h2,
+.doc h3,
+.doc h4,
+.doc h5,
+.doc h6 {
+    font-weight: normal;
+    font-family: "geometriaBold";
+    text-transform: uppercase;
+}
+
+.doc h1 {
+    font-size: 3rem;
+
+    margin: .175em 0;
+}
+
+.doc h2 {
+    font-size: 2rem;
+
+    margin-bottom: .65em;
+}
+
+.doc p,
+.doc li {
+    line-height: 1.25em;
+    font-size: 1.5rem;
+
+    margin: 0.8em 0;
+}
+
+.doc ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.doc li:before {
+    content: "\2022";
+    font-size: 35px;
+
+    margin-right: 7px;
+
+    vertical-align: middle;
+}
+
+/* -- Header ------------------------------------------- */
+
+.doc header {
+    padding: 17px 0 20px;
+
+    position: relative;
+}
+
+.doc .title {
+    padding-top: 35px;
+}
+
+.doc select {
+    background: #f8f8f8;
+
+    display: inline-block;
+    padding: 3px;
+    margin: 0;
+    width: 230px;
+    height: 40px;
+    border: 2px solid #000;
+
+    position: absolute;
+
+    @mixin rounded(0px);
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    outline: none;
+
+    cursor:pointer;
+}
+
+.doc .logo {
+    color: #fff;
+    font-size: 10.6rem;
+
+    position: absolute;
+    top: calc(50% - 68px);
+    left: calc(50% - 50px); 
+}
+
+.doc .github {
+    font-size: 3.6rem;
+
+    position: absolute;
+    right: 0;
+    top: 77px;
+}
+
+.doc .search {
+    font-size: 1.7rem;
+
+    position: absolute;
+    right: 16px;
+    top: 20px;
+}
+
+/* -- Main section ------------------------------------------- */
+
+.doc .main {
+    padding-top: 60px;
+}
+
+.doc .main h2:before {
+    content: "#";
+    font-family: "geometria";
+
+    margin: 0 14px 0 -27px;
+}
+
+.doc .code,
+.doc .note {
+    background-image: BG_CODE;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+}
+
+.doc .code .wrapper,
+.doc .note .wrapper {
+    background-color: #fff;
+
+    margin: 22px auto 42px;
+    padding: 20px 17px;
+}
+
+.doc .note .wrapper {
+    padding: 1px 12px;
+}
+
+/* -- Support ------------------------------------------- */
+
+.doc .support {
+    text-align: center;
+
+    margin-top: 80px;
+}
+
+.doc .support h2 {
+    font-size: 4rem;
+
+    margin-bottom: .4em;
+}
+
+.doc .btn {
+    display: inline-block;
+    border: 2px solid #000;
+    padding: 8px 15px;
+}
+
+.doc a.btn {
+    text-decoration: none;
+    color: #000;
+}
+
+.doc .backTop {
+    font-size: 2.5rem;
+
+    margin-top: 45px;
+
+    @mixin rotate_180_ccw();
+}
+
+/* -- Chosen ------------------------------------------- */
+
+.doc .chosen header {
+    background-color: C_PRODUCT_CHOSEN;
+}
+
+.doc .chosen h2:before {
+    color: C_PRODUCT_CHOSEN;
+}
+
+.doc .chosen li:before {
+    color: C_PRODUCT_CHOSEN;
+}
+
+/* -- Elastic ------------------------------------------- */
+
+.doc .elastic header {
+    background-color: C_PRODUCT_ELASTIC;
+}
+
+.doc .elastic h2:before {
+    color: C_PRODUCT_ELASTIC;
+}
+
+.doc .elastic li:before {
+    color: C_PRODUCT_ELASTIC;
+}

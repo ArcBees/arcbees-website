@@ -1,17 +1,17 @@
 @require "colors";
 @require "geometria";
 
-.products {
-    background-color: C_STRIPE_LIGHT;
-}
+@def JUKITO_BANNER resourceUrl("jukitoBanner");
+@def GWTP_BANNER resourceUrl("gwtpBanner");
+@def CHOSEN_BANNER resourceUrl("chosenBanner");
 
-.products .colored {
-    background-color: C_PRODUCT_JUKITO;
+.developpers {
+    background-color: C_STRIPE_LIGHT;
 }
 
 /* -- Headings ------------------------------------------- */
 
-.products h1 {
+.developpers h1 {
     font-size: 2.5rem;
 
     position: relative;
@@ -19,13 +19,13 @@
     left: 0;
 }
 
-.products h2 {
+.developpers h2 {
     font-size: 2.5rem;
 
     margin: 0em 0 .25em;
 }
 
-.products h2.presentation {
+.developpers h2.presentation {
     font-size: 4.2rem;
     text-transform: uppercase;
     font-family: "geometriaBold";
@@ -34,7 +34,7 @@
     margin: 0;
 }
 
-.products h3 {
+.developpers h3 {
     margin-top: 0;
 }
 
@@ -82,48 +82,6 @@
 .breadcrumb li:first-child::before {
     content: "";
     padding-right: 0;
-}
-
-.menuHeader ul {
-    padding: 0;
-
-    list-style-type: none;
-}
-
-.menuHeader li {
-    line-height: 1em;
-
-    display: inline-block;
-    margin: 0 11px;
-}
-
-.menuHeader a {
-    color: #fff;
-    font-size: 22.7rem;
-
-    @mixin opacity(.5);
-    @mixin transition(opacity, .5s);
-}
-
-.menuHeader a.active,
-.menuHeader a:hover {
-    @mixin opacity(1);
-}
-
-.menuHeader a.active:after {
-    content:"";
-
-    width: 0;
-    height: 0;
-    margin-left: -50px;
-    border-style: solid;
-    border-width: 0 50px 50px 50px;
-    border-color: transparent transparent #fff transparent;
-
-    position: absolute;
-    bottom: 0;
-
-    cursor: default;
 }
 
 /* --> Main -- */
@@ -210,7 +168,7 @@ ul.social {
     color: #f2f2f2;
 }
 
-.slideshow .pager ul {
+.slideshow .pager ul{
     padding: 0;
     margin: 25px 0 0;
 }
@@ -228,7 +186,7 @@ ul.social {
     height: 14px;
     width: 14px;
 
-    @mixin rounded(7px);
+@mixin rounded(7px);
 }
 
 /* --> In Details -- */
@@ -241,72 +199,45 @@ ul.social {
     margin-top: .7em;
 }
 
-/* --> Need support -- */
+/* -- developpers : Chosen ---------------------------------------- */
 
-.stripeSupport {
-    padding: 60px 0 10px;
-}
-
-.stripeSupport h3 {
-    font-size: 4rem;
-    font-family: "geometriaBold";
-    line-height: 1;
-
-    margin: 0 0 .55em;
-}
-
-a.anchor {
-    color: #afafaf;
-    font-size: 2.5rem;
-    font-family: "geometria";
-
-    display: inline-block;
-    margin-top: -7px;
-}
-
-/* -- Page : Gae ---------------------------------------- */
-
-.gae h3 span {
+.chosen h3 span {
     display: block;
 }
 
-.gae .colored {
-    background-color: C_PRODUCT_GAE;
+.chosen .colored {
+    background-color: C_PRODUCT_CHOSEN;
 }
 
-.gae .presentation {
-    color: C_PRODUCT_GAE;
+.chosen .headerBg {
+    background: CHOSEN_BANNER no-repeat center #b4d333;
+
+    min-height: 500px;
 }
 
-.gae .slideshow .pager a,
-.gae .slideshow .pager a:visited {
-    background-color: C_PRODUCT_GAE;
+.chosen .presentation {
+    color: C_PRODUCT_CHOSEN;
 }
 
-.gae .code {
+.chosen .slideshow .pager a,
+.chosen .slideshow .pager a:visited {
+    background-color: C_PRODUCT_CHOSEN;
+}
+
+.chosen .code {
     margin-top: 45px;
 }
 
-.gae form {
-    margin: 45px 0 55px;
-}
-
-.gae label {
-    color: C_PRODUCT_GAE;
-
-    display: block;
-}
-
-.gae input {
-    display: block;
-    margin: 20px auto 0;
-    width: 400px;
-}
-
-/* -- Page : Jukito ---------------------------------------- */
+/* -- developpers : Jukito ---------------------------------------- */
 
 .jukito .colored {
     background-color: C_PRODUCT_JUKITO;
+}
+
+.jukito .headerBg {
+    background: JUKITO_BANNER no-repeat center #a0191c;
+
+    min-height: 500px;
 }
 
 .jukito h3 span {
@@ -332,7 +263,17 @@ a.anchor {
     display: inline-block;
 }
 
-/* -- Page : GWTP_PRODUCTS ---------------------------------------- */
+/* -- developpers : Gwtp ---------------------------------------- */
+
+.gwtp .colored {
+    background-color: C_PRODUCT_GWTP;
+}
+
+.gwtp .headerBg {
+    background: GWTP_BANNER no-repeat top center #e2830b;
+
+    min-height: 500px;
+}
 
 .gwtp h3 span {
     display: block;
@@ -366,5 +307,5 @@ a.anchor {
 .slideshow .pager a:hover {
     background-color: #000;
 
-    @mixin transition(background-color, .5s);
+@mixin transition(background-color, .5s);
 }

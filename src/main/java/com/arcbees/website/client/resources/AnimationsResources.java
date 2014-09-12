@@ -16,27 +16,18 @@
 
 package com.arcbees.website.client.resources;
 
+import com.arcbees.gsss.animation.client.AnimationResources;
 import com.google.gwt.resources.client.ClientBundle;
-import com.google.gwt.resources.client.GssResource;
 
 public interface AnimationsResources extends ClientBundle {
 
-    interface Style extends GssResource {
-        String animated();
-
-        String infinite();
-
-        String bounceIn();
-
-        String bounceInDown();
-
-        String spin();
-
+    interface Style extends AnimationResources.Animation {
         String hexaMove();
 
         String line();
     }
 
-    @Source("css/animations.gss")
+    @Source({"com/arcbees/gsss/animation/client/animationsettings.gss",
+            "com/arcbees/gsss/animation/client/animations.gss", "css/animations.gss"})
     Style style();
 }

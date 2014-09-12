@@ -16,11 +16,11 @@
 
 package com.arcbees.website.client.resources;
 
-import com.google.gwt.resources.client.GssResource;
+import com.arcbees.gsss.animation.client.AnimationResources;
 import com.google.gwt.resources.client.ImageResource;
 
 public interface PageExpertisesResources extends FontResources {
-    interface Style extends GssResource {
+    interface Style extends AnimationResources.Animation {
         String expertises();
 
         String headerBg();
@@ -102,6 +102,8 @@ public interface PageExpertisesResources extends FontResources {
     @Source("img/pages/expertisesLightBulb.png")
     ImageResource expertisesLightBulb();
 
-    @Source({"com/arcbees/gsss/mixin/client/mixins.gss", "css/colors.gss", "fonts/geometria/geometria.gss", "css/pages/expertise.gss"})
+    @Source({"com/arcbees/gsss/animation/client/animationsettings.gss",
+            "com/arcbees/gsss/animation/client/animations.gss", "com/arcbees/gsss/mixin/client/mixins.gss",
+            "css/colors.gss", "fonts/geometria/geometria.gss", "css/pages/expertise.gss"})
     Style style();
 }

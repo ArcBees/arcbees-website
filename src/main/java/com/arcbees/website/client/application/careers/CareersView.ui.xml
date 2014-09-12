@@ -16,12 +16,12 @@
         <section class="{res.style.stripe} {res.style.light} {res.style.centered} {page.style.intro}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
 
-                <i class="{fonts.icons.iconArcbees} {page.style.icon1} {animations.style.animated} {animations.style.bounceIn}"></i>
-                <i class="{fonts.icons.iconArcbees} {page.style.icon2} {animations.style.animated} {animations.style.bounceIn}"></i>
-                <i class="{fonts.icons.iconArcbees} {page.style.icon3} {animations.style.animated} {animations.style.bounceIn}"></i>
-                <i class="{fonts.icons.iconArcbees} {page.style.icon4} {animations.style.animated} {animations.style.bounceIn}"></i>
+                <i class="{fonts.icons.iconArcbees} {page.style.icon1} {animations.style.animation} {animations.style.bounceIn}"></i>
+                <i class="{fonts.icons.iconArcbees} {page.style.icon2} {animations.style.animation} {animations.style.bounceIn}"></i>
+                <i class="{fonts.icons.iconArcbees} {page.style.icon3} {animations.style.animation} {animations.style.bounceIn}"></i>
+                <i class="{fonts.icons.iconArcbees} {page.style.icon4} {animations.style.animation} {animations.style.bounceIn}"></i>
                 <i class="{fonts.icons.iconArcbees} {page.style.icon5}"></i>
-                <i class="{fonts.icons.iconArcbees} {page.style.icon6} {animations.style.animated} {animations.style.bounceIn}"></i>
+                <i class="{fonts.icons.iconArcbees} {page.style.icon6} {animations.style.animation} {animations.style.bounceIn}"></i>
 
             </div>
         </section>

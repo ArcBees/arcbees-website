@@ -175,7 +175,7 @@
     top: 133px;
     right: 50%;
 
-@mixin animation_delay(1s);
+    @mixin animation_delay_speed(1s);
     -webkit-animation-duration: 5s;
     animation-duration: 5s;
 }
@@ -188,7 +188,7 @@
     top: 67px;
     right: 50%;
 
-@mixin animation_delay(1.3s);
+    @mixin animation_delay_speed(1.3s);
     -webkit-animation-duration: 5s;
     animation-duration: 5s;
 }
@@ -203,7 +203,7 @@
     top: 0px;
     right: 50%;
 
-    @mixin animation_delay(1.4s);
+    @mixin animation_delay_speed(1.4s);
     -webkit-animation-duration: 5s;
     animation-duration: 5s;
 }
@@ -218,7 +218,7 @@
     top: -1px;
     left: 50%;
 
-@mixin animation_delay(1.5s);
+    @mixin animation_delay_speed(1.5s);
     -webkit-animation-duration: 5s;
     animation-duration: 5s;
 }
@@ -231,7 +231,7 @@
     top: 66px;
     left: 50%;
 
-@mixin animation_delay(1.6s);
+    @mixin animation_delay_speed(1.6s);
     -webkit-animation-duration: 5s;
     animation-duration: 5s;
 }
@@ -256,7 +256,7 @@
     top: 133px;
     left: 50%;
 
-@mixin animation_delay(1.7s);
+    @mixin animation_delay_speed(1.7s);
     -webkit-animation-duration: 5s;
     animation-duration: 5s;
 }
@@ -567,7 +567,7 @@
     top: 50px;
     left: 50%;
 
-    @mixin animation_delay(.2s);
+    @mixin animation_delay_speed(.2s);
 }
 
 .costRisk i.icon2 {
@@ -576,7 +576,7 @@
     top: 63px;
     left: 50%;
 
-    @mixin animation_delay(.4s);
+    @mixin animation_delay_speed(.4s);
 }
 
 .costRisk i.icon3 {
@@ -585,7 +585,7 @@
     top: 63px;
     left: 50%;
 
-    @mixin animation_delay(.6s);
+    @mixin animation_delay_speed(.6s);
 }
 
 .costRisk i.icon4 {
@@ -594,7 +594,7 @@
     top: 75px;
     left: 50%;
 
-    @mixin animation_delay(.8s);
+    @mixin animation_delay_speed(.8s);
 }
 
 .costRisk i.icon5 {
@@ -603,7 +603,7 @@
     top: 75px;
     left: 50%;
 
-    @mixin animation_delay(1s);
+    @mixin animation_delay_speed(1s);
 }
 
 .costRisk i.icon6 {
@@ -612,7 +612,7 @@
     top: 75px;
     left: 50%;
 
-    @mixin animation_delay(1.2s);
+    @mixin animation_delay_speed(1.2s);
 }
 
 /* --> learn adapt -- */
@@ -660,7 +660,7 @@
     left: 50%;
     top: 152px;
 
-@mixin animation_delay(3s);
+    @mixin animation_delay_speed(3s);
     -webkit-animation-duration: 5s;
     animation-duration: 5s;
 }
@@ -678,7 +678,7 @@
     top: 162px;
     right: 50%;
 
-    @mixin animation_delay(1s);
+    @mixin animation_delay_speed(1s);
     -webkit-animation-duration: 5s;
     animation-duration: 5s;
 }
@@ -693,7 +693,7 @@
     top: 82px;
     right: 50%;
 
-    @mixin animation_delay(1.3s);
+    @mixin animation_delay_speed(1.3s);
     -webkit-animation-duration: 5s;
     animation-duration: 5s;
 }
@@ -708,7 +708,7 @@
     top: 0px;
     right: 50%;
 
-    @mixin animation_delay(1.4s);
+    @mixin animation_delay_speed(1.4s);
     -webkit-animation-duration: 5s;
     animation-duration: 5s;
 }
@@ -723,7 +723,7 @@
     top: -1px;
     left: 50%;
 
-    @mixin animation_delay(1.5s);
+    @mixin animation_delay_speed(1.5s);
     -webkit-animation-duration: 5s;
     animation-duration: 5s;
 }
@@ -738,7 +738,7 @@
     top: 81px;
     left: 50%;
 
-    @mixin animation_delay(1.6s);
+    @mixin animation_delay_speed(1.6s);
     -webkit-animation-duration: 5s;
     animation-duration: 5s;
 }
@@ -753,7 +753,7 @@
     top: 162px;
     left: 50%;
 
-    @mixin animation_delay(1.7s);
+    @mixin animation_delay_speed(1.7s);
     -webkit-animation-duration: 5s;
     animation-duration: 5s;
 }
@@ -801,7 +801,7 @@
     left: 50%;
 
     @mixin rounded(5px);
-    @mixin animation_delay(.6s);
+    @mixin animation_delay_speed(.6s);
 
     -webkit-animation-name: deliver;
     animation-name: deliver;
@@ -821,7 +821,7 @@
     left: 50%;
 
     @mixin rounded(5px);
-    @mixin animation_delay(.2s);
+    @mixin animation_delay_speed(.2s);
 
     -webkit-animation-name: deliver;
     animation-name: deliver;
@@ -842,7 +842,7 @@
 
     @mixin rounded(5px);
     @mixin rotate(45deg);
-    @mixin animation_delay(.4s);
+    @mixin animation_delay_speed(.4s);
 
     -webkit-animation-name: deliver;
     animation-name: deliver;
@@ -863,7 +863,7 @@
 
     @mixin rounded(5px);
     @mixin rotate(-45deg);
-    @mixin animation_delay(.8s);
+    @mixin animation_delay_speed(.8s);
 
     -webkit-animation-name: deliver;
     animation-name: deliver;
@@ -883,7 +883,7 @@
     left: 50%;
 
     @mixin rounded(5px);
-    @mixin animation_delay(1s);
+    @mixin animation_delay_speed(1s);
 
     -webkit-animation-name: deliver;
     animation-name: deliver;

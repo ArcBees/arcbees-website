@@ -39,9 +39,7 @@
                         <a href="#" class="{res.style.btn}">Subscribe</a>
                     </div>
                 </div>
-            </div>
-            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_push_1_2}">
+                <div class="{res.grid.col} {res.grid.col_push_1_2} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                     <p>
                         <strong>GAE Studio is a tool destined to assist developers in optimizing their applications
                             hosted on Google App Engine.

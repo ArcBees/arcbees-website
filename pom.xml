@@ -19,7 +19,6 @@
         <maven-compiler-plugin.version>2.3.2</maven-compiler-plugin.version>
         <maven-gae-plugin.version>0.9.5</maven-gae-plugin.version>
         <gwt-maven-plugin.version>2.6.1</gwt-maven-plugin.version>
-        <gwtquery.version>1.4.1</gwtquery.version>
 
         <gwt.version>2.6.1</gwt.version>
         <gae.version>1.9.9</gae.version>
@@ -28,6 +27,7 @@
         <gin.version>2.1.2</gin.version>
         <gssresources.version>1.0-SNAPSHOT</gssresources.version>
         <gsss.version>1.0-SNAPSHOT</gsss.version>
+        <gwtquery.version>1.4.2</gwtquery.version>
         <gwt-maps-api.version>3.10.0-alpha-7</gwt-maps-api.version>
 
         <webappDirectory>${project.build.directory}/${project.build.finalName}</webappDirectory>
@@ -89,6 +89,11 @@
             <artifactId>gwtquery</artifactId>
             <version>${gwtquery.version}</version>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.googlecode.gwtquery</groupId>
+            <artifactId>gwtquery</artifactId>
+            <version>${gwtquery.version}</version>
         </dependency>
         <dependency>
             <groupId>com.github.branflake2267</groupId>

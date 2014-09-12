@@ -24,6 +24,7 @@ import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.annotations.ContentSlot;
 import com.gwtplatform.mvp.client.annotations.ProxyStandard;
+import com.gwtplatform.mvp.client.proxy.PlaceManager;
 import com.gwtplatform.mvp.client.proxy.Proxy;
 import com.gwtplatform.mvp.client.proxy.RevealContentHandler;
 
@@ -33,16 +34,30 @@ public class ProductsPresenter extends Presenter<ProductsPresenter.MyView, Produ
     }
 
     interface MyView extends View {
+        void selectProduct(String nameToken);
     }
 
     @ContentSlot
     public static final GwtEvent.Type<RevealContentHandler<?>> SLOT_PRODUCTS = new GwtEvent.Type<>();
 
+    private final PlaceManager placeManager;
+
     @Inject
     ProductsPresenter(
             EventBus eventBus,
             MyView view,
-            MyProxy proxy) {
+            MyProxy proxy,
+            PlaceManager placeManager) {
         super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN);
+
+        this.placeManager = placeManager;
+    }
+
+    @Override
+    protected void onReset() {
+        super.onReset();
+
+        String nameToken = placeManager.getCurrentPlaceRequest().getNameToken();
+        getView().selectProduct(nameToken);
     }
 }

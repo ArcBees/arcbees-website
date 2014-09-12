@@ -31,7 +31,7 @@ public class GaePresenter extends Presenter<GaePresenter.MyView, GaePresenter.My
     }
 
     @ProxyStandard
-    @NameToken(NameTokens.GAE_PRODUCTS)
+    @NameToken(NameTokens.GAE)
     interface MyProxy extends ProxyPlace<GaePresenter> {
     }
 

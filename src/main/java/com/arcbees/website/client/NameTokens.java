@@ -27,10 +27,11 @@ public class NameTokens {
     public static final String SHOP = "/shop";
     public static final String WORK = "/work";
 
-    public static final String PRODUCTS = "/products";
-    public static final String GAE = PRODUCTS + "/gae-studio";
-    public static final String JUKITO = PRODUCTS + "/jukito";
-    public static final String GWTP = PRODUCTS + "/gwtp";
+    public static final String PRODUCTS_BASE = "/products";
+    public static final String GAE = PRODUCTS_BASE + "/gae-studio";
+    public static final String JUKITO = PRODUCTS_BASE + "/jukito";
+    public static final String GWTP = PRODUCTS_BASE + "/gwtp";
+    public static final String PRODUCTS = GAE;
 
     public static final String DOCS = "/docs";
     public static final String CHOSEN = DOCS + "/chosen";

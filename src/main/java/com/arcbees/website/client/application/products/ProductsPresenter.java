@@ -16,26 +16,21 @@
 
 package com.arcbees.website.client.application.products;
 
-import com.arcbees.website.client.NameTokens;
 import com.arcbees.website.client.application.ApplicationPresenter;
 import com.google.gwt.event.shared.GwtEvent;
-import com.google.gwt.user.client.Window;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.annotations.ContentSlot;
-import com.gwtplatform.mvp.client.annotations.NameToken;
 import com.gwtplatform.mvp.client.annotations.ProxyStandard;
 import com.gwtplatform.mvp.client.proxy.PlaceManager;
-import com.gwtplatform.mvp.client.proxy.ProxyPlace;
+import com.gwtplatform.mvp.client.proxy.Proxy;
 import com.gwtplatform.mvp.client.proxy.RevealContentHandler;
-import com.gwtplatform.mvp.shared.proxy.PlaceRequest;
 
 public class ProductsPresenter extends Presenter<ProductsPresenter.MyView, ProductsPresenter.MyProxy> {
     @ProxyStandard
-    @NameToken(NameTokens.PRODUCTS)
-    interface MyProxy extends ProxyPlace<ProductsPresenter> {
+    interface MyProxy extends Proxy<ProductsPresenter> {
     }
 
     interface MyView extends View {
@@ -56,15 +51,6 @@ public class ProductsPresenter extends Presenter<ProductsPresenter.MyView, Produ
         super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN);
 
         this.placeManager = placeManager;
-    }
-
-    @Override
-    public void prepareFromRequest(PlaceRequest request) {
-        super.prepareFromRequest(request);
-
-        PlaceRequest placeRequest = new PlaceRequest.Builder().nameToken(NameTokens.GAE).build();
-
-        placeManager.revealPlace(placeRequest);
     }
 
     @Override

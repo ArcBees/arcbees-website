@@ -59,27 +59,13 @@ public class ProductsView extends ViewImpl implements ProductsPresenter.MyView {
 
     @Override
     public void selectProduct(String nameToken) {
-        String className = $("a[href=#" + nameToken + "]", productHead).attr("data-resource");
-        String productSelected;
-
-        switch(className){
-            case "gwtp":
-                productSelected = pageProductResources.style().gwtp();
-                break;
-            case "jukito":
-                productSelected = pageProductResources.style().jukito();
-                break;
-            case "gae":
-            default:
-                productSelected = pageProductResources.style().gae();
-                break;
-        }
+        String className = $("a[href=#" + nameToken + "]", productHead).attr("data-style");
 
         $(productHead).find("a").removeClass(pageProductResources.style().active());
         $("a[href=#" + nameToken + "]", productHead).addClass(pageProductResources.style().active());
 
         $(productHead).removeClass();
         $(productHead).addClass(headClassNames);
-        $(productHead).addClass(productSelected);
+        $(productHead).addClass(className);
     }
 }

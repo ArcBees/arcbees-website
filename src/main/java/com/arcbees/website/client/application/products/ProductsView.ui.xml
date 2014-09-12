@@ -18,17 +18,17 @@
             <nav class="{page.style.menuHeader}">
                 <ul>
                     <li>
-                        <a href="#{GAE}" class="{fonts.icons.iconGae}" data-resource="gae">
+                        <a href="#{GAE}" class="{fonts.icons.iconGae}" data-style="{page.style.gae}">
                             <span class="{res.style.hidden}">Gae</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#{GWTP}" class="{fonts.icons.iconGwtp}" data-resource="gwtp">
+                        <a href="#{GWTP}" class="{fonts.icons.iconGwtp}" data-style="{page.style.gwtp}">
                             <span class="{res.style.hidden}">GWTP</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#{JUKITO}" class="{fonts.icons.iconJukito}" data-resource="jukito">
+                        <a href="#{JUKITO}" class="{fonts.icons.iconJukito}" data-style="{page.style.jukito}">
                             <span class="{res.style.hidden}">Jukito</span>
                         </a>
                     </li>

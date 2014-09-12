@@ -40,9 +40,7 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_push_1_2}">
+                <div class="{res.grid.col} {res.grid.col_push_1_2} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                     <p>
                         <strong>Jukito lets you use the power of dependency injection in all your tests.
                         </strong>

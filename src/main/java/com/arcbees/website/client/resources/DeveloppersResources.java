@@ -21,7 +21,6 @@ import com.google.gwt.resources.client.ImageResource;
 
 public interface DeveloppersResources extends FontResources {
     interface Style extends GssResource {
-
         String developpers();
 
         String jukito();

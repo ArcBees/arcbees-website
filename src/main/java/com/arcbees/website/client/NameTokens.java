@@ -39,5 +39,4 @@ public class NameTokens {
     public static final String JUKITO_DEVELOPPERS = DEVELOPPERS + "/jukito";
     public static final String CHOSEN_DEVELOPPERS = DEVELOPPERS + "/chosen";
     public static final String GWTP_DEVELOPPERS = DEVELOPPERS + "/gwtp";
-
 }

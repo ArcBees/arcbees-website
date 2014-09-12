@@ -31,6 +31,4 @@ public class DeveloppersModule extends AbstractPresenterModule {
         bindPresenter(DeveloppersPresenter.class, DeveloppersPresenter.MyView.class, DeveloppersView.class,
                 DeveloppersPresenter.MyProxy.class);
     }
-
-
 }

@@ -16,11 +16,10 @@
 
 package com.arcbees.website.client.resources;
 
-import com.google.gwt.resources.client.GssResource;
-import com.google.gwt.resources.client.ImageResource;
+import com.arcbees.gsss.animation.client.AnimationResources;
 
 public interface PageCareersResources extends FontResources {
-    interface Style extends GssResource {
+    interface Style extends AnimationResources.Animation {
         String careers();
 
         String offers();
@@ -46,6 +45,8 @@ public interface PageCareersResources extends FontResources {
         String icon6();
     }
 
-    @Source({"com/arcbees/gsss/mixin/client/mixins.gss", "css/colors.gss", "fonts/geometria/geometria.gss", "css/pages/careers.gss"})
+    @Source({"com/arcbees/gsss/animation/client/animationsettings.gss",
+            "com/arcbees/gsss/animation/client/animations.gss", "com/arcbees/gsss/mixin/client/mixins.gss",
+            "css/colors.gss", "fonts/geometria/geometria.gss", "css/pages/careers.gss"})
     Style style();
 }

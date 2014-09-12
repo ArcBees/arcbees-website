@@ -16,11 +16,11 @@
 
 package com.arcbees.website.client.resources;
 
-import com.google.gwt.resources.client.GssResource;
+import com.arcbees.gsss.animation.client.AnimationResources;
 import com.google.gwt.resources.client.ImageResource;
 
 public interface PageBeesResources extends FontResources {
-    interface Style extends GssResource {
+    interface Style extends AnimationResources.Animation {
         String bees();
 
         String slide();
@@ -67,6 +67,8 @@ public interface PageBeesResources extends FontResources {
     @Source("img/bees/christian.jpg")
     ImageResource beeChristian();
 
-    @Source({"com/arcbees/gsss/mixin/client/mixins.gss", "css/colors.gss", "fonts/geometria/geometria.gss", "css/pages/bees.gss"})
+    @Source({"com/arcbees/gsss/animation/client/animationsettings.gss",
+            "com/arcbees/gsss/animation/client/animations.gss", "com/arcbees/gsss/mixin/client/mixins.gss",
+            "css/colors.gss", "fonts/geometria/geometria.gss", "css/pages/bees.gss"})
     Style style();
 }

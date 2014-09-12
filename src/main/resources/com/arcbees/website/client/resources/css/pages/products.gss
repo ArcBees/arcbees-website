@@ -305,7 +305,6 @@ ul.social {
     }
 }
 
-
 .slideshow .pager ul{
     padding: 0;
     margin: 25px 0 0;

@@ -33,13 +33,13 @@
                         <a href="#{PRODUCTS}">Products</a>
                         <ul>
                             <li>
-                                <a href="#{GAE_PRODUCTS}" class="{fonts.icons.iconGae}">GAE Studio</a>
+                                <a href="#{GAE}" class="{fonts.icons.iconGae}">GAE Studio</a>
                             </li>
                             <li>
-                                <a href="#{GWTP_PRODUCTS}" class="{fonts.icons.iconGwtp}">GWTP</a>
+                                <a href="#{GWTP}" class="{fonts.icons.iconGwtp}">GWTP</a>
                             </li>
                             <li>
-                                <a href="#{JUKITO_PRODUCTS}" class="{fonts.icons.iconJukito}">Jukito</a>
+                                <a href="#{JUKITO}" class="{fonts.icons.iconJukito}">Jukito</a>
                             </li>
                         </ul>
                     </li>

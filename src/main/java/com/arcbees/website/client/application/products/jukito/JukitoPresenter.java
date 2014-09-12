@@ -31,7 +31,7 @@ public class JukitoPresenter extends Presenter<JukitoPresenter.MyView, JukitoPre
     }
 
     @ProxyStandard
-    @NameToken(NameTokens.JUKITO_PRODUCTS)
+    @NameToken(NameTokens.JUKITO)
     interface MyProxy extends ProxyPlace<JukitoPresenter> {
     }
 

@@ -1,0 +1,122 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+        xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+    <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
+    <ui:with field="page" type="com.arcbees.website.client.resources.DeveloppersResources"/>
+    <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
+
+    <g:HTMLPanel styleName="{page.style.developpers} {page.style.chosen}">
+
+        <nav class="{page.style.breadcrumb}">
+            <span class="{fonts.icons.iconArcbees} {page.style.logo}"></span>
+            <ul>
+                <li>DEVELOPPERS</li>
+                <li>CHOSEN</li>
+            </ul>
+        </nav>
+
+        <section class="{res.style.stripe} {page.style.headerBg} {res.style.colored}">
+        </section>
+
+        <section class="{res.style.stripe}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <div class="{res.grid.col} {res.grid.col_1_2}">
+                    <h1>gwt chosen
+                        <a href="#" class="{res.style.anchor}">#</a>
+                    </h1>
+                    <h2 class="{page.style.presentation}">Making unwieldy select boxes more user-friendly</h2>
+                    <div class="{page.style.socialTop}">
+                        <ul class="{page.style.social}">
+                            <li>
+                                <a href="#" class="{fonts.icons.iconGPlus}">
+                                    <span class="{res.style.hidden}">Google plus</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="{fonts.icons.iconGitHub}">
+                                    <span class="{res.style.hidden}">Github</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <div class="{res.grid.col} {res.grid.col_push_1_2}">
+                    <p>
+                        <strong>Chosen is a javascript plugin (for jQuery and Prototype) that makes long, unwieldy
+                            select boxes much more user-friendly.
+                        </strong>
+                    </p>
+                    <p>GwtChosen is a port of the jquery version of Chosen for GWT Web Toolkit. It is not a wrapper but
+                        a complete rewrite using the GWT standards. It is available as a GwtQuery plugin or as a widget.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.centered}">
+            <h2>demo
+                <a href="#" class="{res.style.anchor}">#</a>
+            </h2>
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <div class="{res.grid.col} {res.grid.col_1_2}">
+                    <p>Simple ChosenListBox</p>
+                </div>
+                <div class="{res.grid.col} {res.grid.col_1_2}">
+                    <p>Multiple ChosenListBox</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.centered}">
+            <h2>in details</h2>
+        </section>
+
+        <section class="{res.style.stripe} {res.style.medium2}">
+            <div class="{res.style.wrapper} {res.style.centered}">
+                <h3 class="{res.style.stripeTitle}">Quick and easy
+                    <span>installation
+                        <a href="#" class="{res.style.anchor}">#</a>
+                    </span>
+                </h3>
+                <a href="#" class="{res.style.btn}">Add our provided servlet</a>
+                <p>Simply add our provided servlet to your web.xml file, and you’re ready to go!</p>
+            </div>
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <div class="{res.grid.col} {res.grid.col_3_4} {res.grid.col_push_1_6}">
+                    <h4>release</h4>
+                    <g:Image resource="{page.chosenRelease}"/>
+
+                    <h4>Snapshot:</h4>
+                    <g:Image resource="{page.chosenSnapshot}"/>
+                </div>
+            </div>
+        </section>
+
+        <section class="{res.style.stripe} {page.style.colored} {res.style.centered}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <div class="{res.grid.col} {res.grid.col_full}">
+
+                    <h3 class="{res.style.stripeTitle}">Style
+                        <a href="#" class="{res.style.anchor}">#</a>
+                    </h3>
+                    <a href="#" class="{res.style.btn}">Browse your diffferent entity kinds</a>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="{res.style.stripe} {res.style.centered}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <div class="{res.grid.col} {res.grid.col_full}">
+
+                    <a href="#" class="{res.style.btn}">Go to Documentations</a>
+
+                </div>
+            </div>
+        </section>
+
+    </g:HTMLPanel>
+</ui:UiBinder>

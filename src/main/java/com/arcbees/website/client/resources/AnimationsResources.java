@@ -29,6 +29,12 @@ public interface AnimationsResources extends ClientBundle {
         String bounceIn();
 
         String bounceInDown();
+
+        String spin();
+
+        String hexaMove();
+
+        String line();
     }
 
     @Source("css/animations.gss")

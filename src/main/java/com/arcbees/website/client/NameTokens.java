@@ -21,7 +21,6 @@ public class NameTokens {
     public static final String BEES = "/bees";
     public static final String CAREERS = "/careers";
     public static final String CONTACT = "/contact";
-    public static final String DEVELOPPERS = "/developpers";
     public static final String EXPERTISE = "/expertise";
     public static final String LICENSE = "/license";
     public static final String SHOP = "/shop";
@@ -36,4 +35,9 @@ public class NameTokens {
     public static final String DOCS = "/docs";
     public static final String CHOSEN = DOCS + "/chosen";
     public static final String ELASTIC = DOCS + "/elastic";
+
+    public static final String DEVELOPPERS = "/developpers";
+    public static final String JUKITO_DEVELOPPERS = DEVELOPPERS + "/jukito";
+    public static final String CHOSEN_DEVELOPPERS = DEVELOPPERS + "/chosen";
+    public static final String GWTP_DEVELOPPERS = DEVELOPPERS + "/gwtp";
 }

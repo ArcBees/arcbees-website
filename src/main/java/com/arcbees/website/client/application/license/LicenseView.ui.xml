@@ -77,7 +77,7 @@
                             <h3>Basic</h3>
                             <p class="{page.style.price}">
                                 <strong>199.95</strong>
-                                <span>$/mo</span>
+                                $/mo
                             </p>
                             <p class="{page.style.billed}">Billed annually or monthly</p>
                         </header>

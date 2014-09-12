@@ -22,10 +22,7 @@
     top: 185px;
     right: 50%;
 
-    -webkit-animation-delay: 0.2s;
-    -moz-animation-delay: 0.2s;
-    -o-animation-delay: 0.2s;
-    animation-delay: 0.2s;
+    @mixin animation_delay(0.2sec);
 }
 
 .bees .intro i.icon1::before {
@@ -36,10 +33,7 @@
     top: 98px;
     right: 50%;
 
-    -webkit-animation-delay: 0.3s;
-    -moz-animation-delay: 0.3s;
-    -o-animation-delay: 0.3s;
-    animation-delay: 0.3s;
+    @mixin animation_delay(0.3sec);
 }
 
 .bees .intro i.icon2::before {
@@ -52,10 +46,7 @@
     top: 11px;
     right: 50%;
 
-    -webkit-animation-delay: 0.4s;
-    -moz-animation-delay: 0.4s;
-    -o-animation-delay: 0.4s;
-    animation-delay: 0.4s;
+    @mixin animation_delay(0.4sec);
 }
 
 .bees .intro i.icon3::before {
@@ -68,10 +59,7 @@
     top: 11px;
     left: 50%;
 
-    -webkit-animation-delay: 0.5s;
-    -moz-animation-delay: 0.5s;
-    -o-animation-delay: 0.5s;
-    animation-delay: 0.5s;
+    @mixin animation_delay(0.5sec);
 }
 
 .bees .intro i.icon4::before {
@@ -82,10 +70,7 @@
     top: 98px;
     left: 50%;
 
-    -webkit-animation-delay: 0.6s;
-    -moz-animation-delay: 0.6s;
-    -o-animation-delay: 0.6s;
-    animation-delay: 0.6s;
+    @mixin animation_delay(0.6sec);
 }
 
 .bees .intro i.icon5::before {
@@ -98,10 +83,7 @@
     top: 185px;
     left: 50%;
 
-    -webkit-animation-delay: 0.7s;
-    -moz-animation-delay: 0.7s;
-    -o-animation-delay: 0.7s;
-    animation-delay: 0.7s;
+    @mixin animation_delay(0.7sec);
 }
 
 .bees .intro i.icon6::before {

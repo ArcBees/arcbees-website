@@ -1,12 +1,12 @@
 /*
  * Copyright 2014 ArcBees Inc.
- *
+ * 
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
  * the License at
- *
+ * 
  * http://www.apache.org/licenses/LICENSE-2.0
- *
+ * 
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
@@ -14,10 +14,10 @@
  * the License.
  */
 
-package com.arcbees.website.client.application.bees;
+package com.arcbees.website.client.application.developpers.jukito;
 
 import com.arcbees.website.client.NameTokens;
-import com.arcbees.website.client.application.ApplicationPresenter;
+import com.arcbees.website.client.application.developpers.DeveloppersPresenter;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.Presenter;
@@ -26,33 +26,20 @@ import com.gwtplatform.mvp.client.annotations.NameToken;
 import com.gwtplatform.mvp.client.annotations.ProxyStandard;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 
-public class BeesPresenter extends Presenter<BeesPresenter.MyView, BeesPresenter.MyProxy> implements KonamiEvent.KonamiHandler {
+public class JukitoPresenter extends Presenter<JukitoPresenter.MyView, JukitoPresenter.MyProxy> {
     interface MyView extends View {
-        void konami();
     }
 
     @ProxyStandard
-    @NameToken(NameTokens.BEES)
-    interface MyProxy extends ProxyPlace<BeesPresenter> {
+    @NameToken(NameTokens.JUKITO_DEVELOPPERS)
+    interface MyProxy extends ProxyPlace<JukitoPresenter> {
     }
 
     @Inject
-    BeesPresenter(
+    JukitoPresenter(
             EventBus eventBus,
             MyView view,
             MyProxy proxy) {
-        super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN);
-    }
-
-    @Override
-    public void onKonami(KonamiEvent event) {
-        getView().konami();
-    }
-
-    @Override
-    protected void onBind() {
-        super.onBind();
-
-        addRegisteredHandler(KonamiEvent.getType(), this);
+        super(eventBus, view, proxy, DeveloppersPresenter.SLOT_DEVELOPPERS);
     }
 }

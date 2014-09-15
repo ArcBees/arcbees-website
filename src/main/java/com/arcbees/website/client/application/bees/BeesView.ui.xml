@@ -103,6 +103,10 @@
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeChristian}"></g:Image>
+                                    <a href="#">
+                                        <h3>Croustillant Goudreau</h3>
+                                        <p>BE-E-O and founder</p>
+                                    </a>
                                 </div>
                             </div>
                         </div>

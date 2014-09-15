@@ -183,6 +183,8 @@
     width: 400px;
     height: 240px;
 
+    position: relative;
+
     @mixin rotate(120deg);
 }
 
@@ -234,8 +236,43 @@
     @mixin rotate(-60deg);
 }
 
-.bees .bee:hover img {
+.bees .beeHolder2 img {
+    margin-left: -144px;
+
+    position: absolute;
+    z-index: 2000;
+    top: 0;
+    left: 50%;
+}
+
+.bees .beeHolder2 a {
+    background-color: rgba(251, 230, 5, 0.8);
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+
     display: none;
+    width: 100%;
+    height: 101%;
+    padding: 20px 90px;
+
+    position: absolute;
+    z-index: 3000;
+}
+
+.bees .beeHolder2 p::after {
+    content: "+";
+    font-family: "geometriaBold";
+    font-size: 2.5rem;
+
+    display: block;
+
+    position: relative;
+    top: 25px;
+}
+
+.bees .beeHolder2:hover a {
+    display: block;
 }
 
 @media (max-width: 979px) {

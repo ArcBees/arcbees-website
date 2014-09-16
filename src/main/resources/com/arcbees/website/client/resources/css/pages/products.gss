@@ -20,6 +20,7 @@
 /* -- Headings ------------------------------------------- */
 
 .products h1 {
+    color: C_TEXT;
     font-size: 2.5rem;
 
     position: relative;
@@ -90,6 +91,35 @@
 .breadcrumb li:first-child::before {
     content: "";
     padding-right: 0;
+}
+
+@media (max-width: 649px) {
+    .logo {
+        font-size: 2.4rem;
+    }
+
+    .breadcrumb {
+        color: #fff;
+        font-size: 2.4rem;
+
+        position: fixed;
+        top: 0;
+        left: 6px;
+        z-index: 9000;
+    }
+
+    .breadcrumb::before {
+        margin-right: 3px;
+    }
+
+    .breadcrumb ul {
+        margin: 0 0 0 -1px;
+        vertical-align: bottom;
+    }
+
+    .breadcrumb ul li {
+        font-size: 1.3rem;
+    }
 }
 
 .menuHeader ul {

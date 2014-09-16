@@ -9,9 +9,7 @@
 
     <g:HTMLPanel styleName="{page.style.careers}">
 
-        <h1 class="{fonts.icons.iconArcbees} {res.style.withLogo}">
-            <span>Careers</span>
-        </h1>
+        <h1 class="{fonts.icons.iconArcbees} {res.style.withLogo}"><span>Careers</span></h1>
 
         <section class="{res.style.stripe} {res.style.light} {res.style.centered} {page.style.intro}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">

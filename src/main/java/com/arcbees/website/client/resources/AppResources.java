@@ -79,6 +79,12 @@ public interface AppResources extends FontResources {
         String anchor();
 
         String stripeTitle();
+
+        String menuToggle();
+
+        String active();
+
+        String menuStart();
     }
 
     @Source("css/normalize.gss")

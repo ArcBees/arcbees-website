@@ -16,29 +16,86 @@
 
 package com.arcbees.website.client.application;
 
+import com.arcbees.website.client.resources.AppResources;
+import com.google.gwt.dom.client.DivElement;
+import com.google.gwt.query.client.Function;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.user.client.Event;
+import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.IsWidget;
 import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
 
+import static com.google.gwt.query.client.GQuery.$;
+
 public class ApplicationView extends ViewImpl implements ApplicationPresenter.MyView {
+
     interface Binder extends UiBinder<Widget, ApplicationView> {
     }
 
+    private final AppResources appResources;
+
     @UiField
     SimplePanel main;
+    @UiField
+    DivElement sidebar;
+    @UiField
+    DivElement menuToggle;
+    @UiField
+    DivElement content;
 
     @Inject
     ApplicationView(
-            Binder binder) {
+            Binder binder,
+            AppResources appResources) {
         initWidget(binder.createAndBindUi(this));
+
+        this.appResources = appResources;
+
+        bind();
     }
 
     @Override
     public void setInSlot(Object slot, IsWidget content) {
         main.setWidget(content);
+    }
+
+    public void bind() {
+        $(menuToggle).find("a").on("click", new Function() {
+            @Override
+            public boolean f(Event event) {
+                Window.scrollTo(0,0);
+
+                $(sidebar).toggleClass(appResources.style().active());
+
+                $(menuToggle).removeClass(appResources.style().active());
+                if($(sidebar).hasClass(appResources.style().active())){
+                    $(menuToggle).toggleClass(appResources.style().active());
+                }
+
+                return false;
+            }
+        });
+
+        $(sidebar).find("a").on("click", new Function() {
+            @Override
+            public void f() {
+                Window.scrollTo(0,0);
+
+                $(sidebar).removeClass(appResources.style().active());
+                $(menuToggle).removeClass(appResources.style().active());
+            }
+        });
+
+        $(content).on("click", new Function() {
+            @Override
+            public void f() {
+                $(sidebar).removeClass(appResources.style().active());
+                $(menuToggle).removeClass(appResources.style().active());
+            }
+        });
     }
 }

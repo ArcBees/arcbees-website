@@ -12,7 +12,7 @@
 
     <g:HTMLPanel>
 
-        <div class="{res.style.sidebar}">
+        <div class="{res.style.sidebar}" ui:field="sidebar">
             <nav role="navigation" class="{res.style.menu}">
                 <ul>
                     <li>
@@ -20,7 +20,7 @@
                             <span class="{res.style.hidden}">Back to homepage</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="{res.style.menuStart}">
                         <a href="#{HOME}">About</a>
                     </li>
                     <li>
@@ -99,7 +99,15 @@
             </nav>
         </div>
 
-        <div class="{res.style.content}">
+        <div ui:field="menuToggle" class="{res.style.menuToggle}">
+            <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+
+        <div class="{res.style.content}" ui:field="content">
 
             <!-- Main content -->
             <g:SimplePanel ui:field="main" styleName="{res.style.main}"/>

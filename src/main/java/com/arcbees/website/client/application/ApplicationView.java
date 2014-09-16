@@ -64,10 +64,10 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     }
 
     public void bind() {
-        $(menuToggle).find("a").on("click", new Function() {
+        $("a", menuToggle).click(new Function() {
             @Override
             public boolean f(Event event) {
-                Window.scrollTo(0,0);
+                Window.scrollTo(0, 0);
 
                 $(sidebar).toggleClass(appResources.style().active());
 
@@ -80,17 +80,17 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
             }
         });
 
-        $(sidebar).find("a").on("click", new Function() {
+        $("a", sidebar).click(new Function() {
             @Override
             public void f() {
-                Window.scrollTo(0,0);
+                Window.scrollTo(0, 0);
 
                 $(sidebar).removeClass(appResources.style().active());
                 $(menuToggle).removeClass(appResources.style().active());
             }
         });
 
-        $(content).on("click", new Function() {
+        $(content).click(new Function() {
             @Override
             public void f() {
                 $(sidebar).removeClass(appResources.style().active());

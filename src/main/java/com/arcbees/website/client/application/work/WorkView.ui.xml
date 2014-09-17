@@ -8,9 +8,7 @@
 
     <g:HTMLPanel styleName="{page.style.work}">
 
-        <h1 class="{fonts.icons.iconArcbees} {res.style.withLogo}">
-            <span>realisations</span>
-        </h1>
+        <h1 class="{fonts.icons.iconArcbees} {res.style.withLogo}"><span>realisations</span></h1>
 
         <section class="{res.style.stripe} {page.style.headerBg} {res.style.colored}">
         </section>

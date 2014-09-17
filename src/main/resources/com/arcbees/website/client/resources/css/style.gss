@@ -87,6 +87,22 @@ h1 span {
     @mixin transition(all, 0.4s);
 }
 
+@media (max-width: 649px) {
+    h1 {
+        color: #fff;
+        font-size: 2.4rem;
+
+        position: fixed;
+        top: 1px;
+        left: 6px;
+        z-index: 9000;
+    }
+
+    h1::before {
+        margin-right: 3px;
+    }
+}
+
 h2 {
     font-size: 2.5rem;
     font-family: "geometriaBold", Arial, sans-serif;
@@ -291,20 +307,35 @@ img {
     z-index: -1;
 }
 
-.sidebar:hover ~ .content{
-    width: calc(100% - 255px);
-}
+@media(min-width: 650px) {
+    .sidebar:hover ~ .content,
+    .sidebar.active ~ .content,
+    .menuToggle:hover ~ .content {
+        width: calc(100% - 255px);
+    }
 
-.sidebar:hover ~ .content .withLogo {
-    left: -156px;
-}
+    .sidebar:hover ~ .content .withLogo,
+    .sidebar.active ~ .content .withLogo,
+    .menuToggle:hover ~ .content .withLogo {
+        left: -156px;
+    }
 
-.sidebar:hover ~ .content .withLogo span {
+    .sidebar:hover ~ .content .withLogo span,
+    .sidebar.active ~ .content .withLogo span,
+    .menuToggle:hover ~ .content .withLogo span {
     @mixin opacity(0);
-}
+    }
 
-.sidebar:hover ~ .menu {
-    color: #fff;
+    .sidebar:hover ~ .menu,
+    .sidebar.active ~ .menu,
+    .menuToggle:hover ~ .menu {
+        color: #fff;
+    }
+
+    .sidebar:hover ~ .menuToggle,
+    .sidebar.active ~ .menuToggle {
+        left: -40px;
+    }
 }
 
 .sidebar a {
@@ -330,7 +361,8 @@ img {
 
 .menu li a {
     display: block;
-    padding: 7px 10px 9px 70px;
+    padding: 7px 10px 9px 20px;
+    margin-left: 50px;
 
     @mixin transition(color, .2s);
 }
@@ -354,12 +386,12 @@ img {
     font-size: 8.3rem;
     color: #fff;
 
-    margin-left: 12px;
+    margin-left: 62px;
     margin-bottom: 1em;
 }
 
 .menu li a.menuContact {
-    margin: 4em 0;
+    margin: 4em 0 4em 50px;
 }
 
 .socialmedias {
@@ -375,7 +407,7 @@ img {
 
     width: 100%;
     padding: 0;
-    margin: 0 0 0 0.9em;
+    margin: 0.9em 0 0;
 
     list-style-type: none;
 }
@@ -395,11 +427,150 @@ img {
     color: #fff;
 }
 
+.menuToggle {
+    position: absolute;
+    top: 46px;
+    left: 15px;
+    z-index: 9000;
+
+    @mixin transition(left, .2s);
+}
+
+.menuToggle a {
+    text-decoration: none;
+
+    position: relative;
+
+    @mixin transition(top, .3s);
+}
+
+.menuToggle span {
+    content: "";
+    background-color: #525252;
+
+    display: block;
+    width: 20px;
+    height: 3px;
+    margin-top: 3px;
+
+    position: relative;
+    top: 2px;
+    left: 0;
+
+    @mixin transition(all, .3s);
+}
+
 /* -> Menu for mobile */
 
 @media (max-width: 649px) {
-    .sidebar {
+    .sidebar{
+        background-color: C_STRIPE_DARK;
+
+        width: 100%;
+        height: auto;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5000;
+    }
+
+    .sidebar:hover ~ .content,
+    .sidebar.active ~ .content {
+        width: 100%;
+    }
+
+    .sidebar:hover ~ .content .withLogo span,
+    .sidebar.active ~ .content .withLogo span {
+        @mixin opacity(1);
+    }
+
+    .sidebar:hover ~ .menu,
+    .sidebar.active ~ .menu {
+        color: #fff;
+    }
+
+    .sidebar:hover ~ .menuToggle,
+    .sidebar.active ~ .menuToggle {
+        left: auto;
+    }
+
+    .sidebar nav {
         display: none;
+
+        @mixin transition(all, .2s);
+    }
+
+    .sidebar.active nav {
+        display: block;
+    }
+
+    .menu li a {
+        display: block;
+        padding: 12px 20px 9px;
+        margin-left: 0;
+        border-bottom: 1px solid #333;
+
+        @mixin transition(color, .2s);
+    }
+
+    .menu ul ul a {
+        padding: 12px 20px 9px;
+    }
+
+    .menu li.menuStart a {
+        border-top: 1px solid #333;
+    }
+
+    .menu li a.menuContact {
+        margin: 0;
+    }
+
+    .menu li a.backHome {
+        text-align: center;
+
+        margin-left: 0;
+        margin-bottom: 10px;
+        border-bottom: none;
+    }
+    
+    .menu li a:hover {
+        background-color: #333;
+    }
+    
+    .menu li a.backHome:hover {
+        background-color: C_STRIPE_DARK;
+    }
+
+    .socialmedias {
+        position: relative;
+        bottom: 5px;
+    }
+
+    .socialmedias li {
+        margin: 5px 3px 8px;
+    }
+
+    .socialmedias a {
+        font-size: 3rem;
+    }
+
+    .menuToggle {
+        background-color: C_STRIPE_DARK;
+
+        width: 100%;
+        height: 32px;
+
+        position: fixed;
+        left: auto;
+        right: 0;
+        top: 0;
+    }
+
+    .menuToggle a {
+        position: absolute;
+        top: 3px;
+        right: 6px;
     }
 }
 
@@ -420,6 +591,8 @@ img {
 @media (max-width: 649px) {
     .content {
         width: 100%;
+
+        position: relative;
     }
 }
 

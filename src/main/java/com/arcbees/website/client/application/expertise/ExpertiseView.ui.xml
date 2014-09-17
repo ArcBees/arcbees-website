@@ -9,9 +9,7 @@
 
     <g:HTMLPanel styleName="{page.style.expertises}">
 
-        <h1 class="{fonts.icons.iconArcbees} {res.style.withLogo}">
-            <span>Expertises</span>
-        </h1>
+        <h1 class="{fonts.icons.iconArcbees} {res.style.withLogo}"><span>Expertises</span></h1>
 
         <section class="{res.style.stripe} {page.style.headerBg}">
         </section>

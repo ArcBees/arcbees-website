@@ -95,11 +95,6 @@
             <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>com.googlecode.gwtquery</groupId>
-            <artifactId>gwtquery</artifactId>
-            <version>${gwtquery.version}</version>
-        </dependency>
-        <dependency>
             <groupId>com.github.branflake2267</groupId>
             <artifactId>gwt-maps-api</artifactId>
             <version>${gwt-maps-api.version}</version>

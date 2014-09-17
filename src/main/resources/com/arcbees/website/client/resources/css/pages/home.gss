@@ -71,3 +71,13 @@
     content: "";
     margin-top: 18px;
 }
+
+@media (max-width: 649px) {
+    .iconPlus {
+        bottom: -44px;
+    }
+
+    .equal {
+        top: -10px;
+    }
+}

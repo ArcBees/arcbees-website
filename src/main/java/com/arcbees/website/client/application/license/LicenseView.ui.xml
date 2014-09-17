@@ -31,9 +31,7 @@
                         </span>
                     </h2>
                 </div>
-            </div>
-            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_2} {res.grid.col_m_full}">
+                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_2} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                     <p>
                         <strong>Need support? We're here to help you in many ways: forum, email, phone, hangout, Skype
                             and even in person! Just choose according to your needs.
@@ -57,8 +55,8 @@
 
         <section>
             <div class="{res.style.stripe} {res.style.light}">
-                <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                    <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0} {res.style.centered}">
+                <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.centered}">
+                    <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                         <h2>Support packages</h2>
                         <p>ArcBees is pleased to offer a variety of supports options to its clients. Pick the one that
                             fits you best. You can also contact us for a custom made kit just for you.
@@ -72,7 +70,7 @@
 
                     <h2 class="{res.style.hidden}">Licenses type</h2>
 
-                    <article class="{res.grid.col} {res.grid.col_1_3} {page.style.plan}">
+                    <article class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_t_full} {page.style.plan}">
                         <header>
                             <h3>Basic</h3>
                             <p class="{page.style.price}">
@@ -95,7 +93,7 @@
                         </p>
                     </article>
 
-                    <article class="{res.grid.col} {res.grid.col_1_3} {page.style.plan} {page.style.bestbuy}">
+                    <article class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_t_full} {page.style.plan} {page.style.bestbuy}">
                         <header>
                             <h3>Professional</h3>
                             <p class="{page.style.price}">
@@ -119,7 +117,7 @@
                         </p>
                     </article>
 
-                    <article class="{res.grid.col} {res.grid.col_1_3} {page.style.plan}">
+                    <article class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_t_full} {page.style.plan}">
                         <header>
                             <h3>Entreprise</h3>
                             <p class="{page.style.price}">
@@ -156,7 +154,7 @@
                     <h2>Products support</h2>
                 </div>
 
-                <div class="{res.grid.col} {res.grid.col_1_3}">
+                <div class="{res.grid.col} {res.grid.col_1_3} {page.style.product}">
                     <h3 class="{page.style.gwtp}">
                         <i class="{fonts.icons.iconGwtp}"></i>
                         GWTP
@@ -165,7 +163,7 @@
                     <p><a href="#" class="{res.style.btn}">Learn more</a></p>
                 </div>
 
-                <div class="{res.grid.col} {res.grid.col_1_3}">
+                <div class="{res.grid.col} {res.grid.col_1_3} {page.style.product}">
                     <h3 class="{page.style.jukito}">
                         <i class="{fonts.icons.iconJukito}"></i>
                         Jukito
@@ -174,7 +172,7 @@
                     <p><a href="#" class="{res.style.btn}">Learn more</a></p>
                 </div>
 
-                <div class="{res.grid.col} {res.grid.col_1_3}">
+                <div class="{res.grid.col} {res.grid.col_1_3} {page.style.product}">
                     <h3 class="{page.style.chosen}">
                         <i class="{fonts.icons.iconChosen}"></i>
                         GWT<span>Chosen</span>

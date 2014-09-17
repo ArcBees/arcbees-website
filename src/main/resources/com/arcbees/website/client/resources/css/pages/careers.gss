@@ -97,6 +97,48 @@
     @mixin rotate(-30deg);
 }
 
+@media (max-width: 649px) {
+    .careers .intro {
+        height: 351px;
+    }
+
+    .careers .intro i {
+        font-size: 18rem;
+    }
+
+    .careers .intro i.icon1 {
+        margin-right: -40px;
+
+        top: 110px;
+    }
+
+    .careers .intro i.icon2 {
+        top: 40px;
+    }
+
+    .careers .intro i.icon3 {
+        margin-right: -40px;
+
+        top: -30px;
+    }
+
+    .careers .intro i.icon4 {
+        margin-left: -40px;
+
+        top: -30px;
+    }
+
+    .careers .intro i.icon5 {
+        top: 40px;
+    }
+
+    .careers .intro i.icon6 {
+        margin-left: -40px;
+
+        top: 110px;
+    }
+}
+
 /* -- offers ------------------------------------------- */
 
 .offers h2 {

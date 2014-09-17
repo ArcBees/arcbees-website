@@ -15,6 +15,15 @@
     min-height: 500px;
 }
 
+@media (max-width: 649px) {
+    .headerBg {
+        -webkit-background-size: 90% auto;
+        background-size: 90% auto;
+
+        min-height: 200px;
+    }
+}
+
 /* -> what we do -- */
 
 .whatWeDo h3 {
@@ -28,6 +37,12 @@
 
 .whatWeDo .developping a {
     margin-bottom: 35px;
+}
+
+@media (max-width: 649px) {
+    .whatWeDo a span {
+        display: inline;
+    }
 }
 
 /* -> Products -- */

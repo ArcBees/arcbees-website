@@ -20,7 +20,7 @@
 
         <section class="{res.style.stripe} {res.style.light}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_1_2}">
+                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full}">
                     <h2 class="{res.style.slogan}">Bee
                         <span>the
                             <strong>best</strong>
@@ -29,7 +29,7 @@
                 </div>
             </div>
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_2}">
+                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_2} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                     <p>
                         <strong>Arcbees est une entreprise regroupant plusieurs passionnés des technologies et de
                             l’architecture logiciel avides de résoudre les problèmes complexes et concrets auxquels

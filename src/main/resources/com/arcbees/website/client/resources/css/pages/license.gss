@@ -121,6 +121,28 @@
     font-size: 2.8rem;
 }
 
+@media (max-width: 979px) and (min-width: 650px) {
+    .plan {
+        width: 33%;
+        padding-top: 1.4em;
+    }
+
+    .plan .price strong {
+        font-size: 3rem;
+    }
+
+    .plan li.point {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 649px) {
+    .plan {
+        padding-top: 0;
+        margin-bottom: 1em;
+    }
+}
+
 /* -> Best buy plan -- */
 
 .bestbuy {
@@ -181,6 +203,12 @@
 
 .productSupport a {
     margin-top: 20px;
+}
+
+@media (max-width: 979px) and (min-width: 650px) {
+    .productSupport .product {
+        width: 33%;
+    }
 }
 
 @media (max-width: 649px) {

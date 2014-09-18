@@ -15,6 +15,15 @@
     min-height: 500px;
 }
 
+@media (max-width: 649px) {
+    .headerBg {
+        -webkit-background-size: 90% auto;
+        background-size: 90% auto;
+
+        min-height: 250px;
+    }
+}
+
 /* -- realisations ------------------------------------------- */
 
 .realisations h2 {
@@ -37,6 +46,20 @@
 .realisations img {
     @mixin shadow(5px, 6px, 6px, .1);
     @mixin rounded(7px);
+}
+
+@media (max-width: 649px) {
+    .realisations h2 {
+        margin: 0 0 2em;
+    }
+
+    .realisations h3 {
+        margin-top: 16px;
+    }
+
+    .realisations p {
+        margin: 0 0 35px;
+    }
 }
 
 /* -- trusted ------------------------------------------- */

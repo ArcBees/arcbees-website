@@ -90,12 +90,66 @@
     @mixin rotate(-30deg);
 }
 
+@media (max-width: 649px) {
+    .bees .intro {
+        height: 351px;
+    }
+
+    .bees .intro i {
+        font-size: 18rem;
+    }
+
+    .bees .intro i.icon1 {
+        margin-right: -40px;
+
+        top: 110px;
+    }
+
+    .bees .intro i.icon2 {
+        top: 40px;
+    }
+
+    .bees .intro i.icon3 {
+        margin-right: -40px;
+
+        top: -30px;
+    }
+
+    .bees .intro i.icon4 {
+        margin-left: -40px;
+
+        top: -30px;
+    }
+
+    .bees .intro i.icon5 {
+        top: 40px;
+    }
+
+    .bees .intro i.icon6 {
+        margin-left: -40px;
+
+        top: 110px;
+    }
+}
+
 .bees .slides {
 
 }
 
 .bees .slide {
 
+}
+
+@media (max-width: 649px) {
+    .bees .slide{
+        padding: 0 20px;
+    }
+
+    .bees .slide h3 {
+        font-size: 3rem;
+
+        margin-top: 1em;
+    }
 }
 
 .bees .slides h3 {

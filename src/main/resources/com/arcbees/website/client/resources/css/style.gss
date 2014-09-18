@@ -157,8 +157,16 @@ h3.stripeTitle {
         font-size: 2rem;
     }
 
+    h2.slogan {
+        font-size: 4rem;
+    }
+
     h2.slogan strong {
         border-bottom: 0;
+    }
+
+    h3.stripeTitle {
+        font-size: 2.5rem;
     }
 }
 
@@ -367,6 +375,10 @@ img {
     @mixin transition(color, .2s);
 }
 
+.menu ul ul {
+    margin-bottom: 4px;
+}
+
 .menu ul ul a {
     font-family: "geometria", Arial, sans-serif;
 
@@ -514,6 +526,10 @@ img {
         @mixin transition(color, .2s);
     }
 
+    .menu ul ul {
+        margin-bottom: 0;
+    }
+
     .menu ul ul a {
         padding: 12px 20px 9px;
     }
@@ -593,6 +609,7 @@ img {
         width: 100%;
 
         position: relative;
+        top: 27px;
     }
 }
 

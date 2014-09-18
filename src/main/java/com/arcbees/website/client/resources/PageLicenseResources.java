@@ -45,6 +45,8 @@ public interface PageLicenseResources extends FontResources {
         String productSupport();
 
         String moreSupport();
+
+        String product();
     }
 
     @Source({"com/arcbees/gsss/mixin/client/mixins.gss", "css/colors.gss", "fonts/geometria/geometria.gss", "css/pages/license.gss"})

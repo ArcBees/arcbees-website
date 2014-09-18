@@ -47,6 +47,12 @@
     margin-top: 0;
 }
 
+@media (max-width: 649px) {
+    .products h2.presentation {
+        font-size: 3rem;
+    }
+}
+
 /* -- Style ---------------------------------------- */
 
 /* --> Header -- */
@@ -387,6 +393,12 @@ a.anchor {
 
     display: inline-block;
     margin-top: -7px;
+}
+
+@media (max-width: 649px) {
+    .stripeSupport h3 {
+        font-size: 3rem;
+    }
 }
 
 /* -- Page : Gae ---------------------------------------- */

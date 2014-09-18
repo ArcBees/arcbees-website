@@ -16,7 +16,7 @@
 
         <section class="{res.style.stripe} {res.style.colored}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_1_2}">
+                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full}">
                     <h2 class="{res.style.slogan}">Bee
                         <span>the
                             <strong>code</strong>
@@ -25,7 +25,7 @@
                 </div>
             </div>
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_push_1_2}">
+                <div class="{res.grid.col} {res.grid.col_push_1_2} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                     <p>ArcBees offers consulting and development services that can help you improve the quality of your
                         web applications and the performance of your development team during your project.
                     </p>
@@ -43,19 +43,21 @@
             <div class="{res.style.stripe} {res.style.colored} {res.style.centered}">
                 <h2>what we do</h2>
             </div>
-            <div class="{res.style.stripe}">
-                <div class="{res.style.wrapper} {res.style.centered}">
-                    <h3 class="{res.style.stripeTitle}">Consulting</h3>
-                    <a href="#" class="{res.style.btn}">How we help you improve your performance</a>
+            <div class="{res.style.stripe} {res.style.centered}">
+                <div class="{res.style.wrapper} {res.grid.row} {res.style.clearfix}">
+                    <div class="{res.grid.col} {res.grid.col_full}">
+                        <h3 class="{res.style.stripeTitle}">Consulting</h3>
+                        <a href="#" class="{res.style.btn}">How we help you improve your performance</a>
+                    </div>
                 </div>
             </div>
             <div class="{res.style.stripe} {res.style.dark} {page.style.developping}">
-                <div class="{res.style.wrapper} {res.style.centered}">
-                    <h3 class="{res.style.stripeTitle}">Developping</h3>
-                    <a href="#" class="{res.style.btn}">How we provide you a key-in-hand development team</a>
-                </div>
-                <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                    <div class="{res.grid.col} {res.grid.col_1_2}">
+                <div class="{res.style.wrapper} {res.grid.row} {res.style.clearfix}">
+                    <div class="{res.grid.col} {res.grid.col_full} {res.style.centered}">
+                        <h3 class="{res.style.stripeTitle}">Developping</h3>
+                        <a href="#" class="{res.style.btn}">How we provide you a key-in-hand development team</a>
+                    </div>
+                    <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full}">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse explicabo placeat repellat,
                             sapiente tempora temporibus totam voluptatibus. Accusamus eligendi, exercitationem facere
                             ipsa itaque minima nisi odit officia omnis reiciendis, sed.
@@ -65,7 +67,7 @@
                             similique sit tempore voluptas voluptatibus.
                         </p>
                     </div>
-                    <div class="{res.grid.col} {res.grid.col_1_2}">
+                    <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full}">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse explicabo placeat repellat,
                             sapiente tempora temporibus totam voluptatibus. Accusamus eligendi, exercitationem facere
                             ipsa itaque minima nisi odit officia omnis reiciendis, sed.
@@ -78,44 +80,46 @@
                 </div>
             </div>
             <div class="{res.style.stripe} {res.style.colored} {res.style.centered}">
-                <h3 class="{res.style.stripeTitle}">personalized training
-                    <span>and support</span>
-                </h3>
-                <a href="#" class="{res.style.btn}">How we provide tools and processes to ensure that
-                    <span>your development team reach their full potential</span>
-                </a>
+                <div class="{res.style.wrapper} {res.grid.row} {res.style.clearfix}">
+                    <div class="{res.grid.col} {res.grid.col_full}">
+                        <h3 class="{res.style.stripeTitle}">personalized training
+                            <span>and support</span>
+                        </h3>
+                        <a href="#" class="{res.style.btn}">How we provide tools and processes to ensure that
+                            <span>your development team reach their full potential</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="{res.style.stripe} {res.style.centered} {page.style.products}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4}">
+                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                     <p class="{page.style.title}">AND</p>
                     <h2>We create
                         <span>our products</span>
                     </h2>
                     <p>Designed by top shelf geeks, ArcBees' open source software speed up and sharpen your projects</p>
-                    <div class="{res.grid.row} {res.style.clearfix}">
-                        <div class="{res.grid.col} {res.grid.col_1_3}">
-                            <h3 class="{page.style.gae}">
-                                <i class="{fonts.icons.iconGae}"></i>
-                            </h3>
-                            <a href="#" class="{res.style.btn}">GAE STUDIO</a>
-                        </div>
+                    <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_t_full}">
+                        <h3 class="{page.style.gae}">
+                            <i class="{fonts.icons.iconGae}"></i>
+                        </h3>
+                        <a href="#" class="{res.style.btn}">GAE STUDIO</a>
+                    </div>
 
-                        <div class="{res.grid.col} {res.grid.col_1_3}">
-                            <h3 class="{page.style.gwtp}">
-                                <i class="{fonts.icons.iconGwtp}"></i>
-                            </h3>
-                            <a href="#" class="{res.style.btn}">GWTP</a>
-                        </div>
+                    <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_t_full}">
+                        <h3 class="{page.style.gwtp}">
+                            <i class="{fonts.icons.iconGwtp}"></i>
+                        </h3>
+                        <a href="#" class="{res.style.btn}">GWTP</a>
+                    </div>
 
-                        <div class="{res.grid.col} {res.grid.col_1_3}">
-                            <h3 class="{page.style.jukito}">
-                                <i class="{fonts.icons.iconJukito}"></i>
-                            </h3>
-                            <a href="#" class="{res.style.btn}">JUKITO</a>
-                        </div>
+                    <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_t_full}">
+                        <h3 class="{page.style.jukito}">
+                            <i class="{fonts.icons.iconJukito}"></i>
+                        </h3>
+                        <a href="#" class="{res.style.btn}">JUKITO</a>
                     </div>
                 </div>
             </div>

@@ -32,6 +32,8 @@ public class NameTokens {
     public static final String GWTP = PRODUCTS_BASE + "/gwtp";
     public static final String PRODUCTS = GAE;
 
+    public static final String BEE_CHRISTIAN = BEES + "/christian-goudreau";
+
     public static final String DOCS = "/docs";
     public static final String CHOSEN = DOCS + "/chosen";
     public static final String ELASTIC = DOCS + "/elastic";

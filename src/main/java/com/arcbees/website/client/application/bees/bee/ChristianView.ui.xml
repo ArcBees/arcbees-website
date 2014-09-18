@@ -1,0 +1,44 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+        xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+    <ui:with field="page" type="com.arcbees.website.client.resources.PageBeesResources"/>
+    <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
+
+    <g:HTMLPanel>
+
+        <div class="{page.style.bee} {page.style.bee1}">
+            <div class="{page.style.beeHolder1}">
+                <div class="{page.style.beeHolder2}">
+                    <g:Image resource="{page.beeChristian}"></g:Image>
+                </div>
+            </div>
+        </div>
+
+        <h1>Croustillant Goudreau <span>BE-E-O and founder</span></h1>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At corporis culpa cum cumque, distinctio dolore
+            doloremque error, et illo molestias praesentium provident quasi qui quis quo saepe sunt totam, unde.
+        </p>
+
+        <p>
+            <a href="mailto:queenbee@arcbees.com">queenbee@arcbees.com</a>
+        </p>
+
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="{fonts.icons.iconLkd}"></i>
+                    <span>Profil LinkedIn de Christian Goudreau</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="{fonts.icons.iconGPlus}"></i>
+                    <span>Profil Google+ de Christian Goudreau</span>
+                </a>
+            </li>
+        </ul>
+
+    </g:HTMLPanel>
+</ui:UiBinder>

@@ -9,14 +9,97 @@
     background: C_STRIPE_LIGHT;
 }
 
-.headerBg {
-    background: WORK_BANNER no-repeat center bottom C_STRIPE_COLORED;
+/* -- Header animation ---------------------------------------- */
 
+.header {
     min-height: 500px;
 }
 
+.header i.iconPyramid {
+    color: #fff;
+    font-size: 18rem;
+
+    right: 50%;
+    position: absolute;
+
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+}
+
+.pyramidAnim1 {
+    bottom: -18px;
+    margin-right: 85px;
+
+    -webkit-animation-name: pyramid1;
+    animation-name: pyramid1;
+}
+
+.pyramidAnim2 {
+    bottom: -18px;
+    margin-right: -90px;
+
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s;
+    -webkit-animation-name: pyramid1;
+    animation-name: pyramid1;
+}
+
+.pyramidAnim3 {
+    bottom: -18px;
+    margin-right: -265px;
+
+    -webkit-animation-delay: .4s;
+    animation-delay: .4s;
+    -webkit-animation-name: pyramid1;
+    animation-name: pyramid1;
+}
+
+.pyramidAnim4 {
+    bottom: 135px;
+
+    -webkit-animation-delay: .6s;
+    animation-delay: .6s;
+    -webkit-animation-name: pyramid2;
+    animation-name: pyramid2;
+}
+
+.pyramidAnim5 {
+    bottom: 135px;
+    margin-right: -179px;
+
+    -webkit-animation-delay: .8s;
+    animation-delay: .8s;
+    -webkit-animation-name: pyramid2;
+    animation-name: pyramid2;
+}
+
+.pyramidAnim6 {
+    bottom: 293px;
+    margin-right: -90px;
+
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-name: pyramid3;
+    animation-name: pyramid3;
+}
+
+@-webkit-keyframes pyramid1 {
+    0% {transform: translate(0px, 240px);}
+    100% {transform: translate(0px, 0px);}
+}
+
+@-webkit-keyframes pyramid2 {
+    0% {transform: translate(0px, 320px);}
+    100% {transform: translate(0px, 0px);}
+}
+
+@-webkit-keyframes pyramid3 {
+    0% {transform: translate(0px, 500px);}
+    100% {transform: translate(0px, 0px);}
+}
+
 @media (max-width: 649px) {
-    .headerBg {
+    .header {
         -webkit-background-size: 90% auto;
         background-size: 90% auto;
 

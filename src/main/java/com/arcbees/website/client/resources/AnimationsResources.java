@@ -25,6 +25,18 @@ public interface AnimationsResources extends ClientBundle {
         String hexaMove();
 
         String line();
+
+        String leave();
+
+        String leave6();
+
+        String leave5();
+
+        String leave4();
+
+        String leave3();
+
+        String leave2();
     }
 
     @Source({"com/arcbees/gsss/animation/client/animationsettings.gss",

@@ -23,8 +23,6 @@ public interface PageWorkResources extends FontResources {
     interface Style extends GssResource {
         String work();
 
-        String headerBg();
-
         String realisations();
 
         String trusted();
@@ -32,6 +30,22 @@ public interface PageWorkResources extends FontResources {
         String last();
 
         String lastMobile();
+
+        String iconPyramid();
+
+        String pyramidAnim1();
+
+        String pyramidAnim2();
+
+        String pyramidAnim6();
+
+        String pyramidAnim5();
+
+        String pyramidAnim4();
+
+        String pyramidAnim3();
+
+        String header();
     }
 
     @Source("img/pages/workBanner.png")

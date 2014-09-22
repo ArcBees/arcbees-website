@@ -16,26 +16,77 @@
 
 package com.arcbees.website.client.application.bees;
 
+import com.arcbees.website.client.resources.PageBeesResources;
+import com.google.gwt.dom.client.BrowserEvents;
+import com.google.gwt.dom.client.DivElement;
 import com.google.gwt.dom.client.Element;
+import com.google.gwt.event.logical.shared.AttachEvent;
+import com.google.gwt.query.client.Function;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.user.client.Event;
+import com.google.gwt.user.client.ui.HTMLPanel;
+import com.google.gwt.user.client.ui.IsWidget;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
-import com.gwtplatform.mvp.client.ViewImpl;
+import com.gwtplatform.mvp.client.ViewWithUiHandlers;
 
 import static com.google.gwt.query.client.GQuery.$;
 
-public class BeesView extends ViewImpl implements BeesPresenter.MyView {
+public class BeesView extends ViewWithUiHandlers<BeesUiHandlers> implements BeesPresenter.MyView, AttachEvent.Handler {
     interface Binder extends UiBinder<Widget, BeesView> {
     }
 
+    private final PageBeesResources pageBeesResources;
+
+    @UiField
+    DivElement popup;
     @UiField
     Element bees;
+    @UiField
+    HTMLPanel bee;
 
     @Inject
     BeesView(
-            Binder binder) {
+            Binder binder,
+            final PageBeesResources pageBeesResources) {
+        this.pageBeesResources = pageBeesResources;
+
         initWidget(binder.createAndBindUi(this));
+
+        asWidget().addAttachHandler(this);
+    }
+
+    @Override
+    public void setInSlot(Object slot, IsWidget content) {
+        if (slot == BeesPresenter.SLOT_BEE) {
+            bee.clear();
+
+            $(popup).toggleClass(pageBeesResources.style().active(), content != null);
+            if (content != null) {
+                bee.add(content);
+            }
+        }
+    }
+
+    @Override
+    public void onAttachOrDetach(AttachEvent event) {
+        if (event.isAttached()) {
+            $(popup).click(new Function() {
+                public void f() {
+                    getUiHandlers().hidePopup();
+                }
+            });
+            $(bee).click(new Function() {
+                @Override
+                public boolean f(Event e) {
+                    return false;
+                }
+            });
+        } else {
+            $(popup).unbind(BrowserEvents.CLICK);
+            $(bee).unbind(BrowserEvents.CLICK);
+        }
     }
 
     @Override

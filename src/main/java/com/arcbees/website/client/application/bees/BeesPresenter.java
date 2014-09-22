@@ -18,35 +18,58 @@ package com.arcbees.website.client.application.bees;
 
 import com.arcbees.website.client.NameTokens;
 import com.arcbees.website.client.application.ApplicationPresenter;
+import com.google.gwt.event.shared.GwtEvent;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
+import com.gwtplatform.mvp.client.HasUiHandlers;
 import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
+import com.gwtplatform.mvp.client.annotations.ContentSlot;
 import com.gwtplatform.mvp.client.annotations.NameToken;
 import com.gwtplatform.mvp.client.annotations.ProxyStandard;
+import com.gwtplatform.mvp.client.proxy.PlaceManager;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
+import com.gwtplatform.mvp.client.proxy.RevealContentHandler;
+import com.gwtplatform.mvp.shared.proxy.PlaceRequest;
 
-public class BeesPresenter extends Presenter<BeesPresenter.MyView, BeesPresenter.MyProxy> implements KonamiEvent.KonamiHandler {
-    interface MyView extends View {
+public class BeesPresenter extends Presenter<BeesPresenter.MyView, BeesPresenter.MyProxy>
+        implements KonamiEvent.KonamiHandler, BeesUiHandlers {
+    interface MyView extends View, HasUiHandlers<BeesUiHandlers> {
         void konami();
     }
+
+    @ContentSlot
+    public static final GwtEvent.Type<RevealContentHandler<?>> SLOT_BEE = new GwtEvent.Type<>();
 
     @ProxyStandard
     @NameToken(NameTokens.BEES)
     interface MyProxy extends ProxyPlace<BeesPresenter> {
     }
 
+    private final PlaceManager placeManager;
+
     @Inject
     BeesPresenter(
             EventBus eventBus,
             MyView view,
+            PlaceManager placeManager,
             MyProxy proxy) {
         super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN);
+
+        this.placeManager = placeManager;
+
+        getView().setUiHandlers(this);
     }
 
     @Override
     public void onKonami(KonamiEvent event) {
         getView().konami();
+    }
+
+    @Override
+    public void hidePopup() {
+        clearSlot(SLOT_BEE);
+        placeManager.revealPlace(new PlaceRequest.Builder().nameToken(NameTokens.BEES).build());
     }
 
     @Override

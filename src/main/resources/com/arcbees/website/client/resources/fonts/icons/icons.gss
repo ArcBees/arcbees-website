@@ -46,8 +46,9 @@
 @external iconArcbees iconSignCode iconArcbeesName iconArrowOutside iconArrowDown iconBeer iconChosen iconDevTime
 iconCode iconHeart iconClose iconFb iconFbSquare iconGae iconGitHub iconGPlus iconBees iconGwtp iconHeadQuestion
 iconHero iconHive iconInfinite iconInfo iconJukito iconLike iconLkd iconMapPin iconPyramid iconRadar iconRubic
-iconSearch iconShare iconSkull iconTrophe iconTwitter iconWordpress iconChat iconEmail iconPhone iconUser;
+iconSearch iconShare iconSkull iconTrophe iconTwitter iconWordpress iconChat iconEmail iconPhone iconUser iconhexaEmpty;
 
+.iconhexaEmpty:before {content: "\e619";}
 .iconhexagon:before {content: "\e618";}
 .iconChat:before {content: "\e614";}
 .iconEmail:before {content: "\e615";}

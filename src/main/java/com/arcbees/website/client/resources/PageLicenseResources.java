@@ -16,10 +16,10 @@
 
 package com.arcbees.website.client.resources;
 
-import com.google.gwt.resources.client.GssResource;
+import com.arcbees.gsss.animation.client.AnimationResources;
 
 public interface PageLicenseResources extends FontResources {
-    interface Style extends GssResource {
+    interface Style extends AnimationResources.Animation {
         String license();
 
         String plan();
@@ -47,8 +47,25 @@ public interface PageLicenseResources extends FontResources {
         String moreSupport();
 
         String product();
+
+        String header();
+
+        String iconhexa1();
+
+        String iconhexa2();
+
+        String iconhexa3();
+
+        String iconGwtp();
+
+        String iconJukito();
+
+        String iconChosen();
     }
 
-    @Source({"com/arcbees/gsss/mixin/client/mixins.gss", "css/colors.gss", "fonts/geometria/geometria.gss", "css/pages/license.gss"})
+    @Source({"com/arcbees/gsss/animation/client/animationsettings.gss",
+            "com/arcbees/gsss/animation/client/animations.gss",
+            "com/arcbees/gsss/mixin/client/mixins.gss",
+            "css/colors.gss", "fonts/geometria/geometria.gss", "css/pages/license.gss"})
     Style style();
 }

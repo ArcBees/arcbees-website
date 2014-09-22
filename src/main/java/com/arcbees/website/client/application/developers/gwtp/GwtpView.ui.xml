@@ -3,20 +3,20 @@
         xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
     <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
-    <ui:with field="page" type="com.arcbees.website.client.resources.DeveloppersResources"/>
+    <ui:with field="page" type="com.arcbees.website.client.resources.DevelopersResources"/>
     <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
 
-    <g:HTMLPanel styleName="{page.style.developpers} {page.style.gwtp}">
+    <g:HTMLPanel styleName="{page.style.developers} {page.style.gwtp}">
 
         <nav class="{page.style.breadcrumb}">
             <span class="{fonts.icons.iconArcbees} {page.style.logo}"></span>
             <ul>
-                <li>DEVELOPPERS</li>
+                <li>DEVELOPERS</li>
                 <li>GWTP</li>
             </ul>
         </nav>
 
-        <section class="{res.style.stripe} {page.style.headerBg} {res.style.colored}">
+        <section class="{res.style.stripe} {page.style.header} {res.style.colored}">
         </section>
 
         <section class="{res.style.stripe}">

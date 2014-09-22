@@ -14,14 +14,20 @@
  * the License.
  */
 
-package com.arcbees.website.client.application.developpers.chosen;
+package com.arcbees.website.client.application.developers.jukito;
 
-import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
+import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.user.client.ui.Widget;
+import com.google.inject.Inject;
+import com.gwtplatform.mvp.client.ViewImpl;
 
-public class ChosenModule extends AbstractPresenterModule {
-    @Override
-    protected void configure() {
-        bindPresenter(ChosenPresenter.class, ChosenPresenter.MyView.class,
-                ChosenView.class, ChosenPresenter.MyProxy.class);
+public class JukitoView extends ViewImpl implements JukitoPresenter.MyView {
+    interface Binder extends UiBinder<Widget, JukitoView> {
+    }
+
+    @Inject
+    JukitoView(
+            Binder binder) {
+        initWidget(binder.createAndBindUi(this));
     }
 }

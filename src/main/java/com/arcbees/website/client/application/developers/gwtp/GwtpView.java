@@ -14,31 +14,20 @@
  * the License.
  */
 
-package com.arcbees.website.client.application.developpers;
+package com.arcbees.website.client.application.developers.gwtp;
 
 import com.google.gwt.uibinder.client.UiBinder;
-import com.google.gwt.uibinder.client.UiField;
-import com.google.gwt.user.client.ui.IsWidget;
-import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
 
-public class DeveloppersView extends ViewImpl implements DeveloppersPresenter.MyView {
-    interface Binder extends UiBinder<Widget, DeveloppersView> {
+public class GwtpView extends ViewImpl implements GwtpPresenter.MyView {
+    interface Binder extends UiBinder<Widget, GwtpView> {
     }
-
-    @UiField
-    SimplePanel developpers;
 
     @Inject
-    DeveloppersView(
+    GwtpView(
             Binder binder) {
         initWidget(binder.createAndBindUi(this));
-    }
-
-    @Override
-    public void setInSlot(Object slot, IsWidget content) {
-        developpers.setWidget(content);
     }
 }

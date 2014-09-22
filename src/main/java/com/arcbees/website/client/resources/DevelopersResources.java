@@ -19,10 +19,8 @@ package com.arcbees.website.client.resources;
 import com.google.gwt.resources.client.GssResource;
 import com.google.gwt.resources.client.ImageResource;
 
-public interface DeveloppersResources extends FontResources {
+public interface DevelopersResources extends FontResources {
     interface Style extends GssResource {
-        String developpers();
-
         String jukito();
 
         String breadcrumb();
@@ -53,45 +51,61 @@ public interface DeveloppersResources extends FontResources {
 
         String colored();
 
-        String headerBg();
+        String header();
 
         String gwtp();
 
         String moreFeatures();
 
         String chosen();
+
+        String moreSupport();
+
+        String productSupport();
+
+        String reason();
+
+        String docsLink();
+
+        String developers();
+
+        String simplifyCode();
     }
 
-    @Source("img/developpers/jukitoGuice.png")
+    @Source("img/developers/devsBanner.png")
+    ImageResource devsBanner();
+
+    @Source("img/developers/jukitoGuice.png")
     ImageResource jukitoGuice();
 
-    @Source("img/developpers/jukitoJUnit.png")
+    @Source("img/developers/jukitoJUnit.png")
     ImageResource jukitoJUnit();
 
-    @Source("img/developpers/jukitoMockito.png")
+    @Source("img/developers/jukitoMockito.png")
     ImageResource jukitoMockito();
 
-    @Source("img/developpers/gwtpScreen1.png")
+    @Source("img/developers/gwtpScreen1.png")
     ImageResource gwtpScreen1();
 
-    @Source("img/developpers/gaeScreen2.png")
+    @Source("img/developers/gaeScreen2.png")
     ImageResource gaeScreen2();
 
-    @Source("img/developpers/jukitoBanner.png")
+    @Source("img/developers/jukitoBanner.png")
     ImageResource jukitoBanner();
 
-    @Source("img/developpers/gwtpBanner.png")
+    @Source("img/developers/gwtpBanner.png")
     ImageResource gwtpBanner();
 
-    @Source("img/developpers/chosenBanner.png")
+    @Source("img/developers/chosenBanner.png")
     ImageResource chosenBanner();
 
-    @Source("img/developpers/chosenRelease.jpg")
+    @Source("img/developers/chosenRelease.jpg")
     ImageResource chosenRelease();
 
-    @Source("img/developpers/chosenSnapshot.jpg")
+    @Source("img/developers/chosenSnapshot.jpg")
     ImageResource chosenSnapshot();
 
-    @Source({"com/arcbees/gsss/mixin/client/mixins.gss", "css/colors.gss", "fonts/geometria/geometria.gss", "css/developpers.gss"})
+    @Source({"com/arcbees/gsss/mixin/client/mixins.gss", "css/colors.gss", "fonts/geometria/geometria.gss", "css" +
+            "/developers.gss"})
     Style style();
 }

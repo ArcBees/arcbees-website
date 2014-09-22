@@ -56,7 +56,7 @@
                         <a href="#{CONTACT}" class="{res.style.menuContact}">Contact</a>
                     </li>
                     <li>
-                        <a href="#{DEVELOPPERS}">Developpers</a>
+                        <a href="#{DEVELOPERS}">Developers</a>
                     </li>
                     <li>
                         <a href="#{SHOP}">Shop</a>

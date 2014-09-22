@@ -16,8 +16,6 @@
 
 package com.arcbees.website.client.application.expertise;
 
-import com.arcbees.website.client.application.contact.ContactPresenter;
-import com.arcbees.website.client.application.contact.ContactView;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
 public class ExpertiseModule extends AbstractPresenterModule {

@@ -14,19 +14,19 @@
  * the License.
  */
 
-package com.arcbees.website.client.application.developpers.jukito;
+package com.arcbees.website.client.application.developers;
 
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
 
-public class JukitoView extends ViewImpl implements JukitoPresenter.MyView {
-    interface Binder extends UiBinder<Widget, JukitoView> {
+public class DevelopersView extends ViewImpl implements DevelopersPresenter.MyView {
+    interface Binder extends UiBinder<Widget, DevelopersView> {
     }
 
     @Inject
-    JukitoView(
+    DevelopersView(
             Binder binder) {
         initWidget(binder.createAndBindUi(this));
     }

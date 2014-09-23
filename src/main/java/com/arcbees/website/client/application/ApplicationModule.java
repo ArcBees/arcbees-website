@@ -19,7 +19,10 @@ package com.arcbees.website.client.application;
 import com.arcbees.website.client.application.bees.BeesModule;
 import com.arcbees.website.client.application.careers.CareersModule;
 import com.arcbees.website.client.application.contact.ContactModule;
-import com.arcbees.website.client.application.developpers.DeveloppersModule;
+import com.arcbees.website.client.application.developers.DevelopersModule;
+import com.arcbees.website.client.application.developers.chosen.ChosenModule;
+import com.arcbees.website.client.application.developers.gwtp.GwtpModule;
+import com.arcbees.website.client.application.developers.jukito.JukitoModule;
 import com.arcbees.website.client.application.docs.DocsModule;
 import com.arcbees.website.client.application.expertise.ExpertiseModule;
 import com.arcbees.website.client.application.home.HomeModule;
@@ -40,7 +43,10 @@ public class ApplicationModule extends AbstractPresenterModule {
         install(new WorkModule());
         install(new DocsModule());
         install(new ProductsModule());
-        install(new DeveloppersModule());
+        install(new DevelopersModule());
+        install(new ChosenModule());
+        install(new JukitoModule());
+        install(new GwtpModule());
 
         bindPresenter(ApplicationPresenter.class, ApplicationPresenter.MyView.class, ApplicationView.class,
                 ApplicationPresenter.MyProxy.class);

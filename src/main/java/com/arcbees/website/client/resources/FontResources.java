@@ -48,6 +48,12 @@ public interface FontResources extends ClientBundle {
         String iconChat();
 
         String iconPhone();
+
+        String iconSignCode();
+
+        String iconDevTime();
+
+        String iconUser();
     }
 
     @ClientBundle.Source("fonts/icons/icons.gss")

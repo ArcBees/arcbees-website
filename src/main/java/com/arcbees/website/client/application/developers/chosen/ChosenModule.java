@@ -14,20 +14,14 @@
  * the License.
  */
 
-package com.arcbees.website.client.application.developpers.gwtp;
+package com.arcbees.website.client.application.developers.chosen;
 
-import com.google.gwt.uibinder.client.UiBinder;
-import com.google.gwt.user.client.ui.Widget;
-import com.google.inject.Inject;
-import com.gwtplatform.mvp.client.ViewImpl;
+import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
-public class GwtpView extends ViewImpl implements GwtpPresenter.MyView {
-    interface Binder extends UiBinder<Widget, GwtpView> {
-    }
-
-    @Inject
-    GwtpView(
-            Binder binder) {
-        initWidget(binder.createAndBindUi(this));
+public class ChosenModule extends AbstractPresenterModule {
+    @Override
+    protected void configure() {
+        bindPresenter(ChosenPresenter.class, ChosenPresenter.MyView.class,
+                ChosenView.class, ChosenPresenter.MyProxy.class);
     }
 }

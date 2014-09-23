@@ -14,21 +14,14 @@
  * the License.
  */
 
-package com.arcbees.website.client.application.developpers;
+package com.arcbees.website.client.application.developers.jukito;
 
-import com.arcbees.website.client.application.developpers.chosen.ChosenModule;
-import com.arcbees.website.client.application.developpers.gwtp.GwtpModule;
-import com.arcbees.website.client.application.developpers.jukito.JukitoModule;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
-public class DeveloppersModule extends AbstractPresenterModule {
+public class JukitoModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
-        install(new JukitoModule());
-        install(new ChosenModule());
-        install(new GwtpModule());
-
-        bindPresenter(DeveloppersPresenter.class, DeveloppersPresenter.MyView.class, DeveloppersView.class,
-                DeveloppersPresenter.MyProxy.class);
+        bindPresenter(JukitoPresenter.class, JukitoPresenter.MyView.class,
+                JukitoView.class, JukitoPresenter.MyProxy.class);
     }
 }

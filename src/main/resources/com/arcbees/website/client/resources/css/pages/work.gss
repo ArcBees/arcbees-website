@@ -22,65 +22,53 @@
     right: 50%;
     position: absolute;
 
-    -webkit-animation-duration: .5s;
-    animation-duration: .5s;
+    @mixin animation_delay_speed(.5s);
 }
 
 .pyramidAnim1 {
     bottom: -18px;
     margin-right: 85px;
 
-    -webkit-animation-name: pyramid1;
-    animation-name: pyramid1;
+    @mixin animation_name(pyramid1);
 }
 
 .pyramidAnim2 {
     bottom: -18px;
     margin-right: -90px;
 
-    -webkit-animation-delay: .2s;
-    animation-delay: .2s;
-    -webkit-animation-name: pyramid1;
-    animation-name: pyramid1;
+    @mixin animation_delay_speed(.2s);
+    @mixin animation_name(pyramid1);
 }
 
 .pyramidAnim3 {
     bottom: -18px;
     margin-right: -265px;
 
-    -webkit-animation-delay: .4s;
-    animation-delay: .4s;
-    -webkit-animation-name: pyramid1;
-    animation-name: pyramid1;
+    @mixin animation_delay_speed(.4s);
+    @mixin animation_name(pyramid1);
 }
 
 .pyramidAnim4 {
     bottom: 135px;
 
-    -webkit-animation-delay: .6s;
-    animation-delay: .6s;
-    -webkit-animation-name: pyramid2;
-    animation-name: pyramid2;
+    @mixin animation_delay_speed(.6s);
+    @mixin animation_name(pyramid2);
 }
 
 .pyramidAnim5 {
     bottom: 135px;
     margin-right: -179px;
 
-    -webkit-animation-delay: .8s;
-    animation-delay: .8s;
-    -webkit-animation-name: pyramid2;
-    animation-name: pyramid2;
+    @mixin animation_delay_speed(.8s);
+    @mixin animation_name(pyramid2);
 }
 
 .pyramidAnim6 {
     bottom: 293px;
     margin-right: -90px;
 
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
-    -webkit-animation-name: pyramid3;
-    animation-name: pyramid3;
+    @mixin animation_delay_speed(1s);
+    @mixin animation_name(pyramid3);
 }
 
 @-webkit-keyframes pyramid1 {

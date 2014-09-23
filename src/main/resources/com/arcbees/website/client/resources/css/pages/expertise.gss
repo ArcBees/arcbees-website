@@ -23,8 +23,7 @@
     position: absolute;
 
     @mixin animation_delay_speed(1s);
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+    @mixin animation_speed(1s);
 }
 
 .header div.icon3 {
@@ -34,13 +33,11 @@
     position: absolute;
 
     @mixin animation_delay_speed(2s);
-    -webkit-animation-duration: 4s;
-    animation-duration: 4s;
+    @mixin animation_speed(4s);
 }
 
 .codeAnim1 {
-    -webkit-animation-name: logo1;
-    animation-name: logo1;
+    @mixin animation_name(logo1);
 }
 
 @-webkit-keyframes logo1 {
@@ -50,8 +47,7 @@
 }
 
 .codeAnim2 {
-    -webkit-animation-name: logo2;
-    animation-name: logo2;
+    @mixin animation_name(logo2);
 }
 
 @-webkit-keyframes logo2 {
@@ -61,8 +57,7 @@
 }
 
 .codeAnim3 {
-    -webkit-animation-name: slash;
-    animation-name: slash;
+    @mixin animation_name(slash);
 }
 
 @-webkit-keyframes slash {

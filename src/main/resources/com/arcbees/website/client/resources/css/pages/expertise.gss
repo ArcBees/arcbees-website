@@ -9,12 +9,16 @@
 
 /* -- Header animation ---------------------------------------- */
 
-.header {
-    min-height: 500px;
+.expertises .header > div {
+    margin-top: -215px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }
 
-.header i.icon1,
-.header i.icon2 {
+.expertises .header i.icon1,
+.expertises .header i.icon2 {
     font-size: 24rem;
 
     margin: 40px -120px 0 0;
@@ -26,8 +30,8 @@
     @mixin animation_speed(1s);
 }
 
-.header div.icon3 {
-    margin: 30px -105px 0;
+.expertises .header div.icon3 {
+    margin: 15px -105px 0;
 
     right: 50%;
     position: absolute;

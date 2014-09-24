@@ -14,7 +14,7 @@
 
     <g:HTMLPanel styleName="{page.style.developers}">
 
-        <section class="{res.style.stripe} {page.style.header} {res.style.colored}">
+        <section class="{res.style.stripe} {res.style.header} {page.style.header} {res.style.colored}">
             <div class="{res.style.centered}">
                 <p>Welcome to arcbees
                     <span>platform for developers</span>

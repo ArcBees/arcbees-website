@@ -9,13 +9,17 @@
 
     <g:HTMLPanel styleName="{page.style.expertises}">
 
-        <h1 class="{fonts.icons.iconArcbees} {res.style.withLogo}"><span>Expertises</span></h1>
+        <h1 class="{fonts.icons.iconArcbees} {res.style.withLogo}">
+            <span>Expertises</span>
+        </h1>
 
-        <section class="{res.style.stripe} {page.style.header}">
-            <i class="{fonts.icons.iconArcbees} {page.style.icon1} {page.style.codeAnim1} {animations.style.animation}"></i>
-            <i class="{fonts.icons.iconArcbees} {page.style.icon2} {page.style.codeAnim2} {animations.style.animation}"></i>
-            <div class="{page.style.icon3} {page.style.codeAnim3} {animations.style.animation} {animations.style.bounceIn}">
-                <g:Image resource="{page.expertisesSlash}"/>
+        <section class="{res.style.stripe} {res.style.header} {page.style.header}">
+            <div>
+                <i class="{fonts.icons.iconArcbees} {page.style.icon1} {page.style.codeAnim1} {animations.style.animation}"></i>
+                <i class="{fonts.icons.iconArcbees} {page.style.icon2} {page.style.codeAnim2} {animations.style.animation}"></i>
+                <div class="{page.style.icon3} {page.style.codeAnim3} {animations.style.animation} {animations.style.bounceIn}">
+                    <g:Image resource="{page.expertisesSlash}"/>
+                </div>
             </div>
         </section>
 

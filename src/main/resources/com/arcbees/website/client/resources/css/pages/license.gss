@@ -6,20 +6,26 @@
 
 /* -- Header-- */
 
-.header {
-    min-height: 550px;
+.license .header > div {
+    margin: -133px 0 0 -377px;
+    height: 200px;
+    width: 755px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }
 
-.header .iconhexa1,
-.header .iconhexa2,
-.header .iconhexa3 {
+.license .header .iconhexa1,
+.license .header .iconhexa2,
+.license .header .iconhexa3 {
     margin-left: -113px;
 
     position: absolute;
     left: 50%;
 }
 
-.header .iconhexa1 {
+.license .header .iconhexa1 {
     @mixin animation_name(iconhexa1);
 }
 
@@ -28,7 +34,7 @@
     100% {transform: translate(-250px, 0px);}
 }
 
-.header .iconhexa3 {
+.license .header .iconhexa3 {
     @mixin animation_name(iconhexa3);
 }
 
@@ -37,9 +43,9 @@
     100% {transform: translate(250px, 0px);}
 }
 
-.header .iconGwtp,
-.header .iconChosen,
-.header .iconJukito {
+.license .header .iconGwtp,
+.license .header .iconChosen,
+.license .header .iconJukito {
     position: absolute;
     left: 50%;
 
@@ -52,19 +58,19 @@
     100% {opacity: 1;}
 }
 
-.header .iconGwtp {
+.license .header .iconGwtp {
     margin-left: -363px;
 
     @mixin animation_delay_speed(.8s);
 }
 
-.header .iconJukito {
+.license .header .iconJukito {
     margin-left: -113px;
 
     @mixin animation_delay_speed(1s);
 }
 
-.header .iconChosen {
+.license .header .iconChosen {
     margin-left: 137px;
 
     @mixin animation_delay_speed(1.25s);
@@ -86,6 +92,7 @@
 .license .featuredIcons i {
     color: #fff;
     font-size: 22.5rem;
+    line-height: 1;
 
     padding-bottom: 0.2em;
 }

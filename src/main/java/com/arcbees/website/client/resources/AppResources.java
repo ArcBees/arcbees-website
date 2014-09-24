@@ -85,6 +85,8 @@ public interface AppResources extends FontResources {
         String active();
 
         String menuStart();
+
+        String header();
     }
 
     @Source("css/normalize.gss")

@@ -5,6 +5,43 @@
 
 /* -- Page : home ---------------------------------------- */
 
+.home .header {
+    display: table;
+    width: 100%;
+}
+
+.home .header > div {
+    display: table-cell;
+
+    vertical-align: middle;
+}
+
+.home .header:before {
+    content: "\e601";
+    font-family: "icons";
+    font-size: 40rem;
+    color: #fff;
+
+    margin: -217px 0 0 -200px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.home .header p {
+    font-size: 6.5rem;
+    font-family: "geometriaBold";
+    text-transform: uppercase;
+    line-height: .9em;
+}
+
+.home .header p span {
+    font-family: "geometria";
+
+    display: block;
+}
+
 .home .quest p {
     font-family: "geometriaLight", Arial, sans-serif;
     font-size: 2.5rem;

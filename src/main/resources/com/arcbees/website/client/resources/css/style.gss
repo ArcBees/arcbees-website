@@ -592,6 +592,9 @@ img {
 
 /* -> Main -- */
 
+.header{
+}
+
 .content {
     width: calc(100% - 50px);
 

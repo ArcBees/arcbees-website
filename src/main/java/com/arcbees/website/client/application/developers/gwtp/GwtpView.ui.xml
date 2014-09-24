@@ -16,7 +16,7 @@
             </ul>
         </nav>
 
-        <section class="{res.style.stripe} {page.style.header} {res.style.colored}">
+        <section class="{res.style.stripe} {res.style.header} {page.style.header} {res.style.colored}">
         </section>
 
         <section class="{res.style.stripe}">

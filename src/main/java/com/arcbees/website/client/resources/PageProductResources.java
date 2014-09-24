@@ -70,6 +70,10 @@ public interface PageProductResources extends FontResources {
         String productHead();
 
         String arrow();
+
+        String header();
+
+        String container();
     }
 
     @Source("img/products/jukitoGuice.png")

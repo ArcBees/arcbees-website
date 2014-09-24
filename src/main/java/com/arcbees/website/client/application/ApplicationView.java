@@ -18,6 +18,8 @@ package com.arcbees.website.client.application;
 
 import com.arcbees.website.client.resources.AppResources;
 import com.google.gwt.dom.client.DivElement;
+import com.google.gwt.event.logical.shared.ResizeEvent;
+import com.google.gwt.event.logical.shared.ResizeHandler;
 import com.google.gwt.query.client.Function;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
@@ -36,8 +38,6 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     interface Binder extends UiBinder<Widget, ApplicationView> {
     }
 
-    private final AppResources appResources;
-
     @UiField
     SimplePanel main;
     @UiField
@@ -46,6 +46,8 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     DivElement menuToggle;
     @UiField
     DivElement content;
+
+    private final AppResources appResources;
 
     @Inject
     ApplicationView(
@@ -61,6 +63,11 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     @Override
     public void setInSlot(Object slot, IsWidget content) {
         main.setWidget(content);
+    }
+
+    @Override
+    public void resetHeaderHeight() {
+        setHeaderHeight(Window.getClientHeight());
     }
 
     public void bind() {
@@ -97,5 +104,16 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
                 $(menuToggle).removeClass(appResources.style().active());
             }
         });
+
+        Window.addResizeHandler(new ResizeHandler() {
+            @Override
+            public void onResize(ResizeEvent event) {
+                setHeaderHeight(event .getHeight());
+            }
+        });
+    }
+
+    private void setHeaderHeight(int height) {
+        $("." + appResources.style().header()).height(height);
     }
 }

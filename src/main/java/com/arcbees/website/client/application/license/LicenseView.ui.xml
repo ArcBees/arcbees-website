@@ -13,8 +13,8 @@
 
         <h1 class="{fonts.icons.iconArcbees} {res.style.withLogo}"><span>Licenses</span></h1>
 
-        <section class="{res.style.stripe} {page.style.header} {res.style.colored} {res.style.centered}">
-            <div class="{res.style.wrapper} {page.style.featuredIcons}">
+        <section class="{res.style.stripe} {res.style.header} {page.style.header} {res.style.colored}">
+            <div class="{page.style.featuredIcons}">
 
                 <i class="{fonts.icons.iconGwtp} {page.style.iconGwtp} {animations.style.animation}"></i>
                 <i class="{fonts.icons.iconJukito} {page.style.iconJukito} {animations.style.animation}"></i>

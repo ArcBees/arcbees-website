@@ -14,10 +14,10 @@
  * the License.
  */
 
-package com.arcbees.website.client.application.developpers.chosen;
+package com.arcbees.website.client.application.developers.gwtp;
 
 import com.arcbees.website.client.NameTokens;
-import com.arcbees.website.client.application.developpers.DeveloppersPresenter;
+import com.arcbees.website.client.application.ApplicationPresenter;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.Presenter;
@@ -26,20 +26,20 @@ import com.gwtplatform.mvp.client.annotations.NameToken;
 import com.gwtplatform.mvp.client.annotations.ProxyStandard;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 
-public class ChosenPresenter extends Presenter<ChosenPresenter.MyView, ChosenPresenter.MyProxy> {
+public class GwtpPresenter extends Presenter<GwtpPresenter.MyView, GwtpPresenter.MyProxy> {
     interface MyView extends View {
     }
 
     @ProxyStandard
-    @NameToken(NameTokens.CHOSEN_DEVELOPPERS)
-    interface MyProxy extends ProxyPlace<ChosenPresenter> {
+    @NameToken(NameTokens.GWTP_DEVELOPERS)
+    interface MyProxy extends ProxyPlace<GwtpPresenter> {
     }
 
     @Inject
-    ChosenPresenter(
+    GwtpPresenter(
             EventBus eventBus,
             MyView view,
             MyProxy proxy) {
-        super(eventBus, view, proxy, DeveloppersPresenter.SLOT_DEVELOPPERS);
+        super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN);
     }
 }

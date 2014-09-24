@@ -14,10 +14,10 @@
  * the License.
  */
 
-package com.arcbees.website.client.application.developpers.jukito;
+package com.arcbees.website.client.application.developers.jukito;
 
 import com.arcbees.website.client.NameTokens;
-import com.arcbees.website.client.application.developpers.DeveloppersPresenter;
+import com.arcbees.website.client.application.ApplicationPresenter;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.Presenter;
@@ -31,7 +31,7 @@ public class JukitoPresenter extends Presenter<JukitoPresenter.MyView, JukitoPre
     }
 
     @ProxyStandard
-    @NameToken(NameTokens.JUKITO_DEVELOPPERS)
+    @NameToken(NameTokens.JUKITO_DEVELOPERS)
     interface MyProxy extends ProxyPlace<JukitoPresenter> {
     }
 
@@ -40,6 +40,6 @@ public class JukitoPresenter extends Presenter<JukitoPresenter.MyView, JukitoPre
             EventBus eventBus,
             MyView view,
             MyProxy proxy) {
-        super(eventBus, view, proxy, DeveloppersPresenter.SLOT_DEVELOPPERS);
+        super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN);
     }
 }

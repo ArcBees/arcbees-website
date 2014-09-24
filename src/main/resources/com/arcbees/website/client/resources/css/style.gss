@@ -106,7 +106,7 @@ h1 span {
 h2 {
     font-size: 2.5rem;
     font-family: "geometriaBold", Arial, sans-serif;
-    line-height: .9em;
+    line-height: 1em;
 
     margin: 0.2em 0 0.9em;
 }

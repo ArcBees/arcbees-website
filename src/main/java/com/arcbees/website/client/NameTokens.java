@@ -38,8 +38,8 @@ public class NameTokens {
     public static final String CHOSEN = DOCS + "/chosen";
     public static final String ELASTIC = DOCS + "/elastic";
 
-    public static final String DEVELOPPERS = "/developpers";
-    public static final String JUKITO_DEVELOPPERS = DEVELOPPERS + "/jukito";
-    public static final String CHOSEN_DEVELOPPERS = DEVELOPPERS + "/chosen";
-    public static final String GWTP_DEVELOPPERS = DEVELOPPERS + "/gwtp";
+    public static final String DEVELOPERS = "/developers";
+    public static final String JUKITO_DEVELOPERS = DEVELOPERS + "/jukito";
+    public static final String CHOSEN_DEVELOPERS = DEVELOPERS + "/chosen";
+    public static final String GWTP_DEVELOPERS = DEVELOPERS + "/gwtp";
 }

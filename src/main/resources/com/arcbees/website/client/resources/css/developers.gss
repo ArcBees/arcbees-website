@@ -1,17 +1,18 @@
 @require "colors";
 @require "geometria";
 
+@def DEVELOPERS_BANNER resourceUrl("devsBanner");
 @def JUKITO_BANNER resourceUrl("jukitoBanner");
 @def GWTP_BANNER resourceUrl("gwtpBanner");
 @def CHOSEN_BANNER resourceUrl("chosenBanner");
 
-.developpers {
+.developers {
     background-color: C_STRIPE_LIGHT;
 }
 
 /* -- Headings ------------------------------------------- */
 
-.developpers h1 {
+.developers h1 {
     font-size: 2.5rem;
 
     position: relative;
@@ -19,23 +20,17 @@
     left: 0;
 }
 
-.developpers h2 {
-    font-size: 2.5rem;
-
-    margin: 0em 0 .25em;
+.developers h2 span {
+    display: block;
 }
 
-.developpers h2.presentation {
+.developers h2.presentation {
     font-size: 4.2rem;
     text-transform: uppercase;
     font-family: "geometriaBold";
     line-height: 1em;
 
     margin: 0;
-}
-
-.developpers h3 {
-    margin-top: 0;
 }
 
 /* -- Style ---------------------------------------- */
@@ -76,11 +71,13 @@
 
 .breadcrumb li::before {
     content: ">";
+
     padding-right: 3px;
 }
 
 .breadcrumb li:first-child::before {
     content: "";
+
     padding-right: 0;
 }
 
@@ -168,7 +165,7 @@ ul.social {
     color: #f2f2f2;
 }
 
-.slideshow .pager ul{
+.slideshow .pager ul {
     padding: 0;
     margin: 25px 0 0;
 }
@@ -186,7 +183,7 @@ ul.social {
     height: 14px;
     width: 14px;
 
-@mixin rounded(7px);
+    @mixin rounded(7px);
 }
 
 /* --> In Details -- */
@@ -195,11 +192,128 @@ ul.social {
     padding: 23px 0 30px;
 }
 
-.stripeDetails h4 {
+.stripeDetails h3 {
     margin-top: .7em;
 }
 
-/* -- developpers : Chosen ---------------------------------------- */
+/* -- developers Home ---------------------------------------- */
+
+.developers .header {
+    background: DEVELOPERS_BANNER no-repeat center C_PRIMARY;
+
+    min-height: 500px;
+    display: table;
+    width: 100%;
+}
+
+.developers .header > div {
+    display: table-cell;
+    height: 100%;
+
+    vertical-align: middle;
+}
+
+.developers .header > div p {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-family: "geometriaBold";
+}
+
+.developers .header > div p span {
+    display: block;
+}
+
+.reason i {
+    font-size: 10rem;
+}
+
+.reason i.simplifyCode {
+    font-size: 13.25rem;
+
+    display: block;
+    margin: -24px 0 0 -40px;
+}
+
+.reason i.simplifyCode ~ h3 {
+    margin-top: 1em;
+}
+
+.reason h3 {
+    font-size: 1.6rem;
+
+    margin-top: 1.9em;
+}
+
+.productSupport h3,
+.moreSupport h3 {
+    font-family: "geometria";
+}
+
+.productSupport h3 {
+    font-size: 5rem;
+    line-height: .75em;
+    margin-top: 0;
+    min-height: 220px;
+}
+
+.productSupport a.docsLink {
+    font-family: "geometriaBold";
+}
+
+.productSupport .gwtp a.docsLink {
+    color: C_PRODUCT_GWTP;
+}
+
+.productSupport .jukito a.docsLink {
+    color: C_PRODUCT_JUKITO;
+}
+
+.productSupport .chosen a.docsLink {
+    color: C_PRODUCT_CHOSEN;
+}
+
+.developers .gwtp,
+.developers .jukito,
+.developers .chosen {
+    font-size: 5rem;
+    line-height: 0.75em;
+
+    margin-top: 0.8em;
+    min-height: 220px;
+}
+
+.developers .gwtp i,
+.developers .jukito i,
+.developers .chosen i {
+    font-size: 13rem;
+
+    display: block;
+    margin-bottom: 0.1em;
+}
+
+.developers .gwtp i {
+    color: C_PRODUCT_GWTP;
+}
+
+.developers .jukito i {
+    color: C_PRODUCT_JUKITO;
+}
+
+.developers .chosen i {
+    color: C_PRODUCT_CHOSEN;
+}
+
+.developers .chosen span {
+    font-size: 3rem;
+
+    display: block;
+}
+
+.productSupport a {
+    margin-top: 20px;
+}
+
+/* -- developers : Chosen ---------------------------------------- */
 
 .chosen h3 span {
     display: block;
@@ -209,7 +323,7 @@ ul.social {
     background-color: C_PRODUCT_CHOSEN;
 }
 
-.chosen .headerBg {
+.chosen .header {
     background: CHOSEN_BANNER no-repeat center #b4d333;
 
     min-height: 500px;
@@ -228,13 +342,13 @@ ul.social {
     margin-top: 45px;
 }
 
-/* -- developpers : Jukito ---------------------------------------- */
+/* -- developers : Jukito ---------------------------------------- */
 
 .jukito .colored {
     background-color: C_PRODUCT_JUKITO;
 }
 
-.jukito .headerBg {
+.jukito .header {
     background: JUKITO_BANNER no-repeat center #a0191c;
 
     min-height: 500px;
@@ -263,13 +377,13 @@ ul.social {
     display: inline-block;
 }
 
-/* -- developpers : Gwtp ---------------------------------------- */
+/* -- developers : Gwtp ---------------------------------------- */
 
 .gwtp .colored {
     background-color: C_PRODUCT_GWTP;
 }
 
-.gwtp .headerBg {
+.gwtp .header {
     background: GWTP_BANNER no-repeat top center #e2830b;
 
     min-height: 500px;
@@ -307,5 +421,5 @@ ul.social {
 .slideshow .pager a:hover {
     background-color: #000;
 
-@mixin transition(background-color, .5s);
+    @mixin transition(background-color, .5s);
 }

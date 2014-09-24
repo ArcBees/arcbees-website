@@ -23,8 +23,6 @@ public interface PageExpertisesResources extends FontResources {
     interface Style extends AnimationResources.Animation {
         String expertises();
 
-        String headerBg();
-
         String gwtp();
 
         String jukito();
@@ -94,7 +92,22 @@ public interface PageExpertisesResources extends FontResources {
         String developping();
 
         String title();
+
+        String lightbulb();
+
+        String codeAnim1();
+
+        String codeAnim2();
+
+        String codeAnim3();
+
+        String light();
+
+        String header();
     }
+
+    @Source("img/pages/expertisesSlash.png")
+    ImageResource expertisesSlash();
 
     @Source("img/pages/expertisesBanner.png")
     ImageResource expertisesBanner();

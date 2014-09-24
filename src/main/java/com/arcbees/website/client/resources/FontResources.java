@@ -49,6 +49,8 @@ public interface FontResources extends ClientBundle {
 
         String iconPhone();
 
+        String iconhexaEmpty();
+
         String iconSignCode();
 
         String iconDevTime();

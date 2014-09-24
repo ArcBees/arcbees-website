@@ -5,6 +5,7 @@
     <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
     <ui:with field="page" type="com.arcbees.website.client.resources.PageLicenseResources"/>
     <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
+    <ui:with field="animations" type="com.arcbees.website.client.resources.AnimationsResources"/>
 
     <ui:import field="com.arcbees.website.client.NameTokens.*"/>
 
@@ -12,12 +13,16 @@
 
         <h1 class="{fonts.icons.iconArcbees} {res.style.withLogo}"><span>Licenses</span></h1>
 
-        <section class="{res.style.stripe} {res.style.colored} {res.style.centered}">
-            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {page.style.featuredIcons}">
+        <section class="{res.style.stripe} {page.style.header} {res.style.colored} {res.style.centered}">
+            <div class="{res.style.wrapper} {page.style.featuredIcons}">
 
-                <i class="{fonts.icons.iconGwtp}"></i>
-                <i class="{fonts.icons.iconJukito}"></i>
-                <i class="{fonts.icons.iconChosen}"></i>
+                <i class="{fonts.icons.iconGwtp} {page.style.iconGwtp} {animations.style.animation}"></i>
+                <i class="{fonts.icons.iconJukito} {page.style.iconJukito} {animations.style.animation}"></i>
+                <i class="{fonts.icons.iconChosen} {page.style.iconChosen} {animations.style.animation}"></i>
+
+                <i class="{fonts.icons.iconhexaEmpty} {page.style.iconhexa1} {animations.style.animation}"></i>
+                <i class="{fonts.icons.iconhexaEmpty} {page.style.iconhexa2} {animations.style.animation}"></i>
+                <i class="{fonts.icons.iconhexaEmpty} {page.style.iconhexa3} {animations.style.animation}"></i>
 
             </div>
         </section>

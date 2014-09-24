@@ -3,6 +3,75 @@
 
 /* -- Page : license ------------------------------------- */
 
+
+/* -- Header-- */
+
+.header {
+    min-height: 550px;
+}
+
+.header .iconhexa1,
+.header .iconhexa2,
+.header .iconhexa3 {
+    margin-left: -113px;
+
+    position: absolute;
+    left: 50%;
+}
+
+.header .iconhexa1 {
+    @mixin animation_name(iconhexa1);
+}
+
+@-webkit-keyframes iconhexa1 {
+    0% {transform: translate(0px, 0px);}
+    100% {transform: translate(-250px, 0px);}
+}
+
+.header .iconhexa3 {
+    @mixin animation_name(iconhexa3);
+}
+
+@-webkit-keyframes iconhexa3 {
+    0% {transform: translate(0px, 0px);}
+    100% {transform: translate(250px, 0px);}
+}
+
+.header .iconGwtp,
+.header .iconChosen,
+.header .iconJukito {
+    position: absolute;
+    left: 50%;
+
+    @mixin animation_name(iconhexaProduct);
+    @mixin animation_speed(.3s);
+}
+
+@-webkit-keyframes iconhexaProduct {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.header .iconGwtp {
+    margin-left: -363px;
+
+    @mixin animation_delay_speed(.8s);
+}
+
+.header .iconJukito {
+    margin-left: -113px;
+
+    @mixin animation_delay_speed(1s);
+}
+
+.header .iconChosen {
+    margin-left: 137px;
+
+    @mixin animation_delay_speed(1.25s);
+}
+
+/* -- Main-- */
+
 .license ul {
     padding-left: 0;
 
@@ -14,9 +83,9 @@
     font-family: "geometriaBold", Arial, sans-serif;
 }
 
-.license .featuredIcons {
+.license .featuredIcons i {
     color: #fff;
-    font-size: 22rem;
+    font-size: 22.5rem;
 
     padding-bottom: 0.2em;
 }
@@ -34,7 +103,7 @@
 }
 
 .plan {
-    padding-top: 1.8em;
+    padding-top: 1.4em;
 }
 
 .plan header {

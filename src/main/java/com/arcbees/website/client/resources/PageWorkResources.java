@@ -16,14 +16,12 @@
 
 package com.arcbees.website.client.resources;
 
-import com.google.gwt.resources.client.GssResource;
+import com.arcbees.gsss.animation.client.AnimationResources;
 import com.google.gwt.resources.client.ImageResource;
 
 public interface PageWorkResources extends FontResources {
-    interface Style extends GssResource {
+    interface Style extends AnimationResources.Animation {
         String work();
-
-        String headerBg();
 
         String realisations();
 
@@ -32,6 +30,22 @@ public interface PageWorkResources extends FontResources {
         String last();
 
         String lastMobile();
+
+        String iconPyramid();
+
+        String pyramidAnim1();
+
+        String pyramidAnim2();
+
+        String pyramidAnim6();
+
+        String pyramidAnim5();
+
+        String pyramidAnim4();
+
+        String pyramidAnim3();
+
+        String header();
     }
 
     @Source("img/pages/workBanner.png")
@@ -73,6 +87,9 @@ public interface PageWorkResources extends FontResources {
     @Source("img/pages/workTrustedLille.png")
     ImageResource workTrustedLille();
 
-    @Source({"com/arcbees/gsss/mixin/client/mixins.gss", "css/colors.gss", "fonts/geometria/geometria.gss", "css/pages/work.gss"})
+    @Source({"com/arcbees/gsss/animation/client/animationsettings.gss",
+            "com/arcbees/gsss/animation/client/animations.gss",
+            "com/arcbees/gsss/mixin/client/mixins.gss",
+            "css/colors.gss", "fonts/geometria/geometria.gss", "css/pages/work.gss"})
     Style style();
 }

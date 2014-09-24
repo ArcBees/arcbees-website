@@ -11,7 +11,12 @@
 
         <h1 class="{fonts.icons.iconArcbees} {res.style.withLogo}"><span>Expertises</span></h1>
 
-        <section class="{res.style.stripe} {page.style.headerBg}">
+        <section class="{res.style.stripe} {page.style.header}">
+            <i class="{fonts.icons.iconArcbees} {page.style.icon1} {page.style.codeAnim1} {animations.style.animation}"></i>
+            <i class="{fonts.icons.iconArcbees} {page.style.icon2} {page.style.codeAnim2} {animations.style.animation}"></i>
+            <div class="{page.style.icon3} {page.style.codeAnim3} {animations.style.animation} {animations.style.bounceIn}">
+                <g:Image resource="{page.expertisesSlash}"/>
+            </div>
         </section>
 
         <section class="{res.style.stripe} {res.style.colored}">
@@ -129,19 +134,30 @@
             <div class="{page.style.triangleTop}"></div>
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col_1_2} {res.grid.col_push_1_4}">
-                    <h2>How we work</h2>
-                    <p>Agile is embedded in the ArcBees way of life. It drives our culture and productivity.</p>
-                    <g:Image resource="{page.expertisesLightBulb}"/>
-                    <h3>we work as partner</h3>
-                    <p>Small teams working on big challenges in total partnership with our clients.</p>
+                    <div class="{page.style.lightbulb}">
+                        <h2>How we work</h2>
+                        <p>Agile is embedded in the ArcBees way of life. It drives our culture and productivity.</p>
+                        <div class="{page.style.diagram}">
+                            <div class="{page.style.light} {page.style.bar1} {animations.style.animation} {animations.style.infinite}"></div>
+                            <div class="{page.style.light} {page.style.bar2} {animations.style.animation} {animations.style.infinite}"></div>
+                            <div class="{page.style.light} {page.style.bar3} {animations.style.animation} {animations.style.infinite}"></div>
+                            <div class="{page.style.light} {page.style.bar4} {animations.style.animation} {animations.style.infinite}"></div>
+                            <div class="{page.style.light} {page.style.bar5} {animations.style.animation} {animations.style.infinite}"></div>
+                            <g:Image resource="{page.expertisesLightBulb}"/>
+                        </div>
+                    </div>
                     <div class="{page.style.partner}">
-                        <i class="{fonts.icons.iconArcbees} {page.style.icon1} {animations.style.animation} {animations.style.infinite} {animations.style.bounceIn}"></i>
-                        <i class="{fonts.icons.iconArcbees} {page.style.icon2} {animations.style.animation} {animations.style.infinite} {animations.style.bounceIn}"></i>
-                        <i class="{fonts.icons.iconArcbees} {page.style.icon3} {animations.style.animation} {animations.style.infinite} {animations.style.bounceIn}"></i>
-                        <i class="{fonts.icons.iconArcbees} {page.style.icon4} {animations.style.animation} {animations.style.infinite} {animations.style.bounceIn}"></i>
-                        <i class="{fonts.icons.iconArcbees} {page.style.icon6} {animations.style.animation} {animations.style.infinite} {animations.style.bounceIn}"></i>
-                        <i class="{fonts.icons.iconArcbees} {page.style.icon5} {page.style.iconDark} {animations.style.animation} {animations.style.infinite} {animations.style.bounceIn}"></i>
-                        <i class="{fonts.icons.iconhexagon} {page.style.iconHexa}"></i>
+                        <h3>we work as partner</h3>
+                        <p>Small teams working on big challenges in total partnership with our clients.</p>
+                        <div class="{page.style.diagram}">
+                            <i class="{fonts.icons.iconArcbees} {page.style.icon1} {animations.style.animation} {animations.style.infinite} {animations.style.bounceIn}"></i>
+                            <i class="{fonts.icons.iconArcbees} {page.style.icon2} {animations.style.animation} {animations.style.infinite} {animations.style.bounceIn}"></i>
+                            <i class="{fonts.icons.iconArcbees} {page.style.icon3} {animations.style.animation} {animations.style.infinite} {animations.style.bounceIn}"></i>
+                            <i class="{fonts.icons.iconArcbees} {page.style.icon4} {animations.style.animation} {animations.style.infinite} {animations.style.bounceIn}"></i>
+                            <i class="{fonts.icons.iconArcbees} {page.style.icon6} {animations.style.animation} {animations.style.infinite} {animations.style.bounceIn}"></i>
+                            <i class="{fonts.icons.iconArcbees} {page.style.icon5} {page.style.iconDark} {animations.style.animation} {animations.style.infinite} {animations.style.bounceIn}"></i>
+                            <i class="{fonts.icons.iconhexagon} {page.style.iconHexa}"></i>
+                        </div>
                     </div>
                     <div class="{page.style.iterative}">
                         <h3>A simple, iterative process</h3>
@@ -160,7 +176,7 @@
                             </div>
 
                             <div class="{page.style.circleQuarter}"></div>
-                            <div class="{page.style.circle} {animations.style.spin}">
+                            <div class="{page.style.circle} {animations.style.animation} {animations.style.infinite} {animations.style.spin}">
                                 <div class="{page.style.bar1}"></div>
                                 <div class="{page.style.bar2}"></div>
                                 <div class="{page.style.bar3}"></div>
@@ -172,19 +188,19 @@
                         <h3>Manage cost and limit risk</h3>
                         <p>You build that as quickly and cheaply as possible, and watch people use it.</p>
                         <div class="{page.style.diagram}">
-                            <i class="{fonts.icons.iconhexagon} {page.style.icon1} {animations.style.animation} {animations.style.infinite} {animations.style.line}"></i>
-                            <i class="{fonts.icons.iconhexagon} {page.style.icon2} {animations.style.animation} {animations.style.infinite} {animations.style.line}"></i>
-                            <i class="{fonts.icons.iconhexagon} {page.style.icon3} {animations.style.animation} {animations.style.infinite} {animations.style.line}"></i>
-                            <i class="{fonts.icons.iconhexagon} {page.style.icon4} {animations.style.animation} {animations.style.infinite} {animations.style.line}"></i>
-                            <i class="{fonts.icons.iconhexagon} {page.style.icon5} {animations.style.animation} {animations.style.infinite} {animations.style.line}"></i>
-                            <i class="{fonts.icons.iconhexagon} {page.style.icon6} {animations.style.animation} {animations.style.infinite} {animations.style.line}"></i>
-                            <div class="{page.style.bar1}"></div>
-                            <div class="{page.style.bar2}"></div>
-                            <div class="{page.style.bar3}"></div>
-                            <div class="{page.style.bar4}"></div>
-                            <div class="{page.style.bar5}"></div>
-                            <div class="{page.style.bar6}"></div>
-                            <div class="{page.style.bar7}"></div>
+                            <i class="{fonts.icons.iconhexagon} {page.style.icon1} {animations.style.animation} {animations.style.line}"></i>
+                            <i class="{fonts.icons.iconhexagon} {page.style.icon2} {animations.style.animation} {animations.style.line}"></i>
+                            <i class="{fonts.icons.iconhexagon} {page.style.icon3} {animations.style.animation} {animations.style.line}"></i>
+                            <i class="{fonts.icons.iconhexagon} {page.style.icon4} {animations.style.animation} {animations.style.line}"></i>
+                            <i class="{fonts.icons.iconhexagon} {page.style.icon5} {animations.style.animation} {animations.style.line}"></i>
+                            <i class="{fonts.icons.iconhexagon} {page.style.icon6} {animations.style.animation} {animations.style.line}"></i>
+                            <div class="{page.style.bar1} {animations.style.animation} {animations.style.line}"></div>
+                            <div class="{page.style.bar2} {animations.style.animation} {animations.style.line}"></div>
+                            <div class="{page.style.bar3} {animations.style.animation} {animations.style.line}"></div>
+                            <div class="{page.style.bar4} {animations.style.animation} {animations.style.line}"></div>
+                            <div class="{page.style.bar5} {animations.style.animation} {animations.style.line}"></div>
+                            <div class="{page.style.bar6} {animations.style.animation} {animations.style.line}"></div>
+                            <div class="{page.style.bar7} {animations.style.animation} {animations.style.line}"></div>
                         </div>
                     </div>
                     <div class="{page.style.learnAdapt}">
@@ -192,32 +208,35 @@
                         <p>Then you improve the product based on what you learn.</p>
                         <div class="{page.style.diagram}">
                             <div class="{page.style.bar1} {animations.style.animation}"></div>
-                            <i class="{fonts.icons.iconArcbees} {page.style.icon1} {animations.style.animation} {animations.style.infinite} {animations.style.bounceIn}"></i>
-                            <i class="{fonts.icons.iconArcbees} {page.style.icon2} {animations.style.animation} {animations.style.infinite} {animations.style.bounceIn}"></i>
-                            <i class="{fonts.icons.iconArcbees} {page.style.icon3} {animations.style.animation} {animations.style.infinite} {animations.style.bounceIn}"></i>
-                            <i class="{fonts.icons.iconArcbees} {page.style.icon4} {animations.style.animation} {animations.style.infinite} {animations.style.bounceIn}"></i>
-                            <i class="{fonts.icons.iconArcbees} {page.style.icon5} {animations.style.animation} {animations.style.infinite} {animations.style.bounceIn}"></i>
-                            <i class="{fonts.icons.iconArcbees} {page.style.icon6} {animations.style.animation} {animations.style.infinite} {animations.style.bounceIn}"></i>
+                            <i class="{fonts.icons.iconArcbees} {page.style.icon1} {animations.style.animation} {animations.style.infinite} {animations.style.leave}"></i>
+                            <i class="{fonts.icons.iconArcbees} {page.style.icon2} {animations.style.animation} {animations.style.infinite} {animations.style.leave2}"></i>
+                            <i class="{fonts.icons.iconArcbees} {page.style.icon3} {animations.style.animation} {animations.style.infinite} {animations.style.leave3}"></i>
+                            <i class="{fonts.icons.iconArcbees} {page.style.icon4} {animations.style.animation} {animations.style.infinite} {animations.style.leave4}"></i>
+                            <i class="{fonts.icons.iconArcbees} {page.style.icon5} {animations.style.animation} {animations.style.infinite} {animations.style.leave5}"></i>
+                            <i class="{fonts.icons.iconArcbees} {page.style.icon6} {animations.style.animation} {animations.style.infinite} {animations.style.leave6}"></i>
                             <i class="{fonts.icons.iconhexagon} {page.style.iconHexa} {animations.style.animation} {animations.style.bounceIn}"></i>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="{page.style.deliver} {res.style.centered}">
+        <div class="{res.style.centered}">
             <div class="{page.style.triangleBottom}"></div>
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col_1_2} {res.grid.col_push_1_4}">
-                    <h3>deliver the best product ever</h3>
-                    <p>After many cycles of real-time feedback, the end product is well-tested and useful.</p>
-                    <div class="{page.style.diagram}">
-                        <div class="{page.style.bar1} {animations.style.animation} {animations.style.infinite}"></div>
-                        <div class="{page.style.bar2} {animations.style.animation} {animations.style.infinite}"></div>
-                        <div class="{page.style.bar3} {animations.style.animation} {animations.style.infinite}"></div>
-                        <div class="{page.style.bar4} {animations.style.animation} {animations.style.infinite}"></div>
-                        <div class="{page.style.bar5} {animations.style.animation} {animations.style.infinite}"></div>
-                        <i class="{fonts.icons.iconhexagon} {page.style.iconHexa} {animations.style.animation} {animations.style.infinite} {animations.style.bounceIn}"></i>
-                    </div>
+                    <section class="{page.style.deliver}">
+                        <h3>deliver the best product ever</h3>
+                        <p>After many cycles of real-time feedback, the end product is well-tested and useful.</p>
+                        <div class="{page.style.diagram}">
+                            <div class="{page.style.bar1} {animations.style.animation} {animations.style.infinite}"></div>
+                            <div class="{page.style.bar2} {animations.style.animation} {animations.style.infinite}"></div>
+                            <div class="{page.style.bar3} {animations.style.animation} {animations.style.infinite}"></div>
+                            <div class="{page.style.bar4} {animations.style.animation} {animations.style.infinite}"></div>
+                            <div class="{page.style.bar5} {animations.style.animation} {animations.style.infinite}"></div>
+                            <i class="{fonts.icons.iconhexagon} {page.style.iconHexa} {animations.style.animation} {animations.style.infinite} {animations.style.bounceIn}"></i>
+                        </div>
+                    </section>
+
                 </div>
             </div>
         </div>

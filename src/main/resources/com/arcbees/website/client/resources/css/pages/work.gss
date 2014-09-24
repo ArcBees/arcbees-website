@@ -9,14 +9,85 @@
     background: C_STRIPE_LIGHT;
 }
 
-.headerBg {
-    background: WORK_BANNER no-repeat center bottom C_STRIPE_COLORED;
+/* -- Header animation ---------------------------------------- */
 
+.header {
     min-height: 500px;
 }
 
+.header i.iconPyramid {
+    color: #fff;
+    font-size: 18rem;
+
+    right: 50%;
+    position: absolute;
+
+    @mixin animation_delay_speed(.5s);
+}
+
+.pyramidAnim1 {
+    bottom: -18px;
+    margin-right: 85px;
+
+    @mixin animation_name(pyramid1);
+}
+
+.pyramidAnim2 {
+    bottom: -18px;
+    margin-right: -90px;
+
+    @mixin animation_delay_speed(.2s);
+    @mixin animation_name(pyramid1);
+}
+
+.pyramidAnim3 {
+    bottom: -18px;
+    margin-right: -265px;
+
+    @mixin animation_delay_speed(.4s);
+    @mixin animation_name(pyramid1);
+}
+
+.pyramidAnim4 {
+    bottom: 135px;
+
+    @mixin animation_delay_speed(.6s);
+    @mixin animation_name(pyramid2);
+}
+
+.pyramidAnim5 {
+    bottom: 135px;
+    margin-right: -179px;
+
+    @mixin animation_delay_speed(.8s);
+    @mixin animation_name(pyramid2);
+}
+
+.pyramidAnim6 {
+    bottom: 293px;
+    margin-right: -90px;
+
+    @mixin animation_delay_speed(1s);
+    @mixin animation_name(pyramid3);
+}
+
+@-webkit-keyframes pyramid1 {
+    0% {transform: translate(0px, 240px);}
+    100% {transform: translate(0px, 0px);}
+}
+
+@-webkit-keyframes pyramid2 {
+    0% {transform: translate(0px, 320px);}
+    100% {transform: translate(0px, 0px);}
+}
+
+@-webkit-keyframes pyramid3 {
+    0% {transform: translate(0px, 500px);}
+    100% {transform: translate(0px, 0px);}
+}
+
 @media (max-width: 649px) {
-    .headerBg {
+    .header {
         -webkit-background-size: 90% auto;
         background-size: 90% auto;
 

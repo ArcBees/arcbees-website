@@ -32,6 +32,8 @@ public interface PageHomeResources extends FontResources {
         String iconPlus();
 
         String equal();
+
+        String header();
     }
 
     @Source("img/pages/homeBeesBg.png")

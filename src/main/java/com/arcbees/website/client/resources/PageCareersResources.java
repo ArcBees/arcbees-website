@@ -43,6 +43,8 @@ public interface PageCareersResources extends FontResources {
         String icon5();
 
         String icon6();
+
+        String header();
     }
 
     @Source({"com/arcbees/gsss/animation/client/animationsettings.gss",

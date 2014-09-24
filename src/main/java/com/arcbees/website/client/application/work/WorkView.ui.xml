@@ -13,13 +13,15 @@
 
         <h1 class="{fonts.icons.iconArcbees} {res.style.withLogo}"><span>realisations</span></h1>
 
-        <section class="{res.style.stripe} {page.style.header} {res.style.colored}">
-            <i class="{fonts.icons.iconArcbees} {page.style.iconPyramid} {page.style.pyramidAnim1} {animations.style.animation}"></i>
-            <i class="{fonts.icons.iconArcbees} {page.style.iconPyramid} {page.style.pyramidAnim2} {animations.style.animation}"></i>
-            <i class="{fonts.icons.iconArcbees} {page.style.iconPyramid} {page.style.pyramidAnim3} {animations.style.animation}"></i>
-            <i class="{fonts.icons.iconArcbees} {page.style.iconPyramid} {page.style.pyramidAnim4} {animations.style.animation}"></i>
-            <i class="{fonts.icons.iconArcbees} {page.style.iconPyramid} {page.style.pyramidAnim5} {animations.style.animation}"></i>
-            <i class="{fonts.icons.iconArcbees} {page.style.iconPyramid} {page.style.pyramidAnim6} {animations.style.animation}"></i>
+        <section class="{res.style.stripe} {res.style.header} {page.style.header} {res.style.colored}">
+            <div>
+                <i class="{fonts.icons.iconArcbees} {page.style.iconPyramid} {page.style.pyramidAnim1} {animations.style.animation}"></i>
+                <i class="{fonts.icons.iconArcbees} {page.style.iconPyramid} {page.style.pyramidAnim2} {animations.style.animation}"></i>
+                <i class="{fonts.icons.iconArcbees} {page.style.iconPyramid} {page.style.pyramidAnim3} {animations.style.animation}"></i>
+                <i class="{fonts.icons.iconArcbees} {page.style.iconPyramid} {page.style.pyramidAnim4} {animations.style.animation}"></i>
+                <i class="{fonts.icons.iconArcbees} {page.style.iconPyramid} {page.style.pyramidAnim5} {animations.style.animation}"></i>
+                <i class="{fonts.icons.iconArcbees} {page.style.iconPyramid} {page.style.pyramidAnim6} {animations.style.animation}"></i>
+            </div>
         </section>
 
         <section class="{res.style.stripe}">

@@ -7,6 +7,16 @@
     background-color: C_STRIPE_LIGHT;
 }
 
+.careers .header > div {
+    margin: -225px 0 0 -180px;
+    height: 410px;
+    width: 360px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
 .careers .intro {
     height: 600px;
 
@@ -23,7 +33,7 @@
 .careers .intro i.icon1 {
     margin-right: -50px;
 
-    top: 185px;
+    top: 174px;
     right: 50%;
 
     @mixin animation_delay_speed(0.3sec);
@@ -34,7 +44,7 @@
 }
 
 .careers .intro i.icon2 {
-    top: 98px;
+    top: 87px;
     right: 50%;
 
     @mixin animation_delay_speed(0.2sec);
@@ -47,7 +57,7 @@
 .careers .intro i.icon3 {
     margin-right: -50px;
 
-    top: 11px;
+    top: 0;
     right: 50%;
 
     @mixin animation_delay_speed(0.3sec);
@@ -60,7 +70,7 @@
 .careers .intro i.icon4 {
     margin-left: -50px;
 
-    top: 11px;
+    top: 0;
     left: 50%;
 
     @mixin animation_delay_speed(0.4sec);
@@ -73,7 +83,7 @@
 .careers .intro i.icon5 {
     color: C_STRIPE_DARK;
 
-    top: 98px;
+    top: 87px;
     left: 50%;
 
     @mixin animation_delay_speed(0.5sec);
@@ -87,7 +97,7 @@
 .careers .intro i.icon6 {
     margin-left: -50px;
 
-    top: 185px;
+    top: 174px;
     left: 50%;
 
     @mixin animation_delay_speed(0.4sec);

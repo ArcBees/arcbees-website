@@ -11,8 +11,14 @@
 
 /* -- Header animation ---------------------------------------- */
 
-.header {
-    min-height: 500px;
+.work .header > div {
+    margin: -227px 0 0 -267px;
+    height: 455px;
+    width: 534px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }
 
 .header i.iconPyramid {
@@ -72,18 +78,18 @@
 }
 
 @-webkit-keyframes pyramid1 {
-    0% {transform: translate(0px, 240px);}
-    100% {transform: translate(0px, 0px);}
+    0% {transform: translate(0px, 240px); opacity: 0;}
+    100% {transform: translate(0px, 0px); opacity: 1;}
 }
 
 @-webkit-keyframes pyramid2 {
-    0% {transform: translate(0px, 320px);}
-    100% {transform: translate(0px, 0px);}
+    0% {transform: translate(0px, 320px); opacity: 0;}
+    100% {transform: translate(0px, 0px); opacity: 1;}
 }
 
 @-webkit-keyframes pyramid3 {
-    0% {transform: translate(0px, 500px);}
-    100% {transform: translate(0px, 0px);}
+    0% {transform: translate(0px, 500px); opacity: 0;}
+    100% {transform: translate(0px, 0px); opacity: 1;}
 }
 
 @media (max-width: 649px) {

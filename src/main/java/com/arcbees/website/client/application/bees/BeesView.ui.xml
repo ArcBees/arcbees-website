@@ -13,16 +13,14 @@
 
         <h1 class="{fonts.icons.iconArcbees} {res.style.withLogo}"><span>Bees</span></h1>
 
-        <section class="{res.style.stripe} {res.style.light} {res.style.centered} {page.style.intro}">
-            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
+        <section class="{res.style.stripe} {res.style.header} {page.style.header} {res.style.light} {page.style.intro}">
+            <div>
                 <i class="{fonts.icons.iconArcbees} {page.style.icon1} {animations.style.animation} {animations.style.bounceIn}"></i>
                 <i class="{fonts.icons.iconArcbees} {page.style.icon2} {animations.style.animation} {animations.style.bounceIn}"></i>
                 <i class="{fonts.icons.iconArcbees} {page.style.icon3} {animations.style.animation} {animations.style.bounceIn}"></i>
                 <i class="{fonts.icons.iconArcbees} {page.style.icon4} {animations.style.animation} {animations.style.bounceIn}"></i>
                 <i class="{fonts.icons.iconArcbees} {page.style.icon5} {animations.style.animation} {animations.style.bounceIn}"></i>
                 <i class="{fonts.icons.iconArcbees} {page.style.icon6} {animations.style.animation} {animations.style.bounceIn}"></i>
-
             </div>
         </section>
 

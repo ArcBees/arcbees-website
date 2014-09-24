@@ -108,7 +108,7 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
         Window.addResizeHandler(new ResizeHandler() {
             @Override
             public void onResize(ResizeEvent event) {
-                setHeaderHeight(event .getHeight());
+                setHeaderHeight(event.getHeight());
             }
         });
     }

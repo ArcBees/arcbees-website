@@ -61,7 +61,7 @@
 
 /* -- animation on the "bee" word -- */
 
-.home .header span.txtBees {
+.home .header .txtBees {
     background: none;
 
     display: inline;

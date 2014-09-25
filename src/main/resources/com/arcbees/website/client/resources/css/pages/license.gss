@@ -27,6 +27,7 @@
 
 .license .header .iconhexa1 {
     @mixin animation_name(iconhexa1);
+    @mixin animation_speed(.6s);
 }
 
 @-webkit-keyframes iconhexa1 {
@@ -36,6 +37,7 @@
 
 .license .header .iconhexa3 {
     @mixin animation_name(iconhexa3);
+    @mixin animation_speed(.6s);
 }
 
 @-webkit-keyframes iconhexa3 {
@@ -50,7 +52,7 @@
     left: 50%;
 
     @mixin animation_name(iconhexaProduct);
-    @mixin animation_speed(.3s);
+    @mixin animation_speed(.2s);
 }
 
 @-webkit-keyframes iconhexaProduct {
@@ -67,13 +69,13 @@
 .license .header .iconJukito {
     margin-left: -113px;
 
-    @mixin animation_delay_speed(1s);
+    @mixin animation_delay_speed(1.2s);
 }
 
 .license .header .iconChosen {
     margin-left: 137px;
 
-    @mixin animation_delay_speed(1.25s);
+    @mixin animation_delay_speed(1.6s);
 }
 
 /* -- Main-- */

@@ -5,6 +5,9 @@
     <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
     <ui:with field="page" type="com.arcbees.website.client.resources.PageHomeResources"/>
     <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
+    <ui:with field="animations" type="com.arcbees.website.client.resources.AnimationsResources"/>
+
+    <ui:import field="com.arcbees.website.client.NameTokens.*"/>
 
     <g:HTMLPanel styleName="{page.style.home}">
 
@@ -13,15 +16,16 @@
         </h1>
 
         <section class="{res.style.stripe} {res.style.header} {page.style.header} {res.style.colored}">
-            <div>
-                <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                    <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_push_1_6}">
-                        <p>we are
-                            <span>architects bees</span>
-                        </p>
-                    </div>
+                <div class="{page.style.txtBanner}">
+                    <p>
+                        <strong>we<span class="{page.style.txtAre} {animations.style.animation}">are</span><span class="{page.style.txtBuild} {animations.style.animation}">build</span>
+                        </strong>
+                        <span class="{page.style.txtArch} {animations.style.animation}">
+                            arc<span class="{page.style.txtArchitects} {animations.style.animation}">hitect</span><span class="{page.style.txtBees} {animations.style.animation}">bees</span>
+                        </span>
+                        <span class="{page.style.txtWeb} {animations.style.animation}">web applications</span>
+                    </p>
                 </div>
-            </div>
         </section>
 
         <section class="{res.style.stripe} {res.style.light}">

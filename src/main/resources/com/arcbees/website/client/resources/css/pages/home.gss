@@ -6,14 +6,9 @@
 /* -- Page : home ---------------------------------------- */
 
 .home .header {
-    display: table;
-    width: 100%;
 }
 
 .home .header > div {
-    display: table-cell;
-
-    vertical-align: middle;
 }
 
 .home .header:before {
@@ -29,11 +24,115 @@
     top: 50%;
 }
 
+.txtBanner {
+    height: 110px;
+    width: 680px;
+    margin: -52px 0 0 -325px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+@-webkit-keyframes disappear {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@-webkit-keyframes appear {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/* -- animation on the "are" word -- */
+
+.home .header .txtAre {
+    font-family: "geometriaBold";
+
+    display: inline;
+    margin-left: 17px;
+
+    position: absolute;
+
+    @mixin animation_name(disappear);
+    @mixin animation_speed(.5s);
+    @mixin animation_delay_speed(3s);
+}
+
+/* -- animation on the "bee" word -- */
+
+.home .header .txtBees {
+    background: none;
+
+    display: inline;
+
+    position: absolute;
+
+    @mixin animation_name(bees);
+    @mixin animation_speed(.5s);
+    @mixin animation_delay_speed(.75s);
+}
+
+@-webkit-keyframes bees {
+    0% {transform: translate(0px, 0px);}
+    100% {transform: translate(255px, 0px);}
+}
+
+/* -- animation on the "architects" word -- */
+
+.home .header .txtArchitects {
+    display: inline;
+
+    position: absolute;
+
+    @mixin animation_name(appear);
+    @mixin animation_speed(.5s);
+    @mixin animation_delay_speed(1.5s);
+}
+
+/* -- animation on the "architects bees" words -- */
+
+.home .header .txtArch {
+    display: inline;
+
+    position: absolute;
+
+    @mixin animation_name(disappear);
+    @mixin animation_speed(.5s);
+    @mixin animation_delay_speed(3s);
+}
+
+/* -- animation on the "build" word -- */
+
+.home .header .txtBuild {
+    font-family: "geometriaBold";
+
+    margin-left: 17px;
+}
+
+.home .header .txtBuild,
+.home .header .txtWeb {
+    display: inline;
+
+    position: absolute;
+
+    @mixin animation_name(appear);
+    @mixin animation_speed(1s);
+    @mixin animation_delay_speed(3s);
+}
+
+/* -- END OF ANIMATIONS -- */
+
 .home .header p {
     font-size: 6.5rem;
-    font-family: "geometriaBold";
     text-transform: uppercase;
     line-height: .9em;
+
+    margin: 0;
+}
+
+.home .header p strong {
+    display: block;
 }
 
 .home .header p span {

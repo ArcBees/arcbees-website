@@ -27,46 +27,45 @@
 
     right: 50%;
     position: absolute;
+}
 
-    @mixin animation_delay_speed(.5s);
+.pyramidAnim1,
+.pyramidAnim2,
+.pyramidAnim3 {
+    @mixin animation_delay_speed(.2s);
+    @mixin animation_speed(.5s);
+    @mixin animation_name(pyramid1);
 }
 
 .pyramidAnim1 {
     bottom: -18px;
     margin-right: 85px;
-
-    @mixin animation_name(pyramid1);
 }
 
 .pyramidAnim2 {
     bottom: -18px;
     margin-right: -90px;
-
-    @mixin animation_delay_speed(.2s);
-    @mixin animation_name(pyramid1);
 }
 
 .pyramidAnim3 {
     bottom: -18px;
     margin-right: -265px;
+}
 
-    @mixin animation_delay_speed(.4s);
-    @mixin animation_name(pyramid1);
+.pyramidAnim4,
+.pyramidAnim5 {
+    @mixin animation_delay_speed(.6s);
+    @mixin animation_speed(.5s);
+    @mixin animation_name(pyramid2);
 }
 
 .pyramidAnim4 {
     bottom: 135px;
-
-    @mixin animation_delay_speed(.6s);
-    @mixin animation_name(pyramid2);
 }
 
 .pyramidAnim5 {
     bottom: 135px;
     margin-right: -179px;
-
-    @mixin animation_delay_speed(.8s);
-    @mixin animation_name(pyramid2);
 }
 
 .pyramidAnim6 {
@@ -74,6 +73,7 @@
     margin-right: -90px;
 
     @mixin animation_delay_speed(1s);
+    @mixin animation_speed(.5s);
     @mixin animation_name(pyramid3);
 }
 

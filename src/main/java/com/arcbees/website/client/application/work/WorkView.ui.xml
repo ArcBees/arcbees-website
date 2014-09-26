@@ -107,13 +107,13 @@
                         </a>
                     </li>
                     <li class="{page.style.last}">
-                        <a href="http://cobratag.com/" target="_blank">
-                            <g:Image resource="{page.workTrustedCobra}"/>
+                        <a href="http://www.thetrackr.com/" target="_blank">
+                            <g:Image resource="{page.workTrustedTrackR}"/>
                         </a>
                     </li>
                     <li class="{page.style.last}">
                         <a href="http://www.swiftiq.com/" target="_blank">
-                            <g:Image resource="{page.workTrustedStorePlacer}"/>
+                            <g:Image resource="{page.workTrustedSwiftIQ}"/>
                         </a>
                     </li>
                     <li class="{page.style.last} {page.style.lastMobile}">

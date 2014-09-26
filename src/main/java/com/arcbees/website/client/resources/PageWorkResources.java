@@ -63,8 +63,8 @@ public interface PageWorkResources extends FontResources {
     @Source("img/pages/workRoller.png")
     ImageResource workRoller();
 
-    @Source("img/pages/workTrustedCobra.png")
-    ImageResource workTrustedCobra();
+    @Source("img/pages/workTrustedTrackR.png")
+    ImageResource workTrustedTrackR();
 
     @Source("img/pages/workTrustedBooked.png")
     ImageResource workTrustedBooked();
@@ -75,8 +75,8 @@ public interface PageWorkResources extends FontResources {
     @Source("img/pages/workTrustedSceneverse.png")
     ImageResource workTrustedSceneverse();
 
-    @Source("img/pages/workTrustedStorePlacer.png")
-    ImageResource workTrustedStorePlacer();
+    @Source("img/pages/workTrustedSwiftIQ.png")
+    ImageResource workTrustedSwiftIQ();
 
     @Source("img/pages/workTrustedZafin.png")
     ImageResource workTrustedZafin();

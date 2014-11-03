@@ -5,6 +5,7 @@
     <inherits name="com.google.gwt.query.Query"/>
     <inherits name="com.gwtplatform.dispatch.rpc.DispatchRpc"/>
     <inherits name='com.gwtplatform.mvp.MvpWithEntryPoint'/>
+    <inherits name="com.google.gwt.resources.GssResource"/>
 
     <!-- French language, independent of country -->
     <extend-property name="locale" values="fr"/>

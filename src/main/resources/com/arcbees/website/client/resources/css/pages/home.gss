@@ -2,14 +2,9 @@
 @require "geometria";
 
 @def BEES_BG resourceUrl("beesBg");
+@def SS_BG resourceUrl("ssrainbow");
 
 /* -- Page : home ---------------------------------------- */
-
-.home .header {
-}
-
-.home .header > div {
-}
 
 .home .header:before {
     content: "\e601";
@@ -141,19 +136,23 @@
     display: block;
 }
 
-.home .quest p {
-    font-family: "geometriaLight", Arial, sans-serif;
-    font-size: 2.5rem;
-}
+.home .header .btns {
+    width: 100%;
 
-@media (max-width: 649px) {
-    .home .quest p {
-        font-size: 1.8rem;
-    }
+    position: absolute;
+    bottom: 5em;
+    left: 0;
+
+    z-index: 100;
 }
 
 .home .bees {
+    background: C_PRIMARY;
+}
+
+.home .bees.opened {
     background: C_PRIMARY BEES_BG repeat-x center top;
+    background-size: auto 100%;
 }
 
 .home .bees h3 {
@@ -163,7 +162,42 @@
 .home .beesContent {
     text-align: left;
 
-    padding-top: 270px;
+    padding-top: 190px;
+}
+
+.home .successStoryHolder {
+    padding-bottom: 0;
+}
+
+.home .successStory {
+    padding-bottom: 60px;
+}
+
+.home .successStory i {
+    font-size: 8em;
+
+    margin-bottom: 0.15em;
+    display: block;
+}
+
+.home .successStory p {
+    margin-bottom: 2em;
+}
+
+.home .successStoryMore {
+    background: SS_BG no-repeat center bottom;
+}
+
+.home .successStoryMore h2 {
+    margin-top: 1em;
+}
+
+.home .ssicons {
+    margin-left: -0.8em;
+}
+
+.home .successStoryMore a {
+    margin: 14em 0 2em;
 }
 
 @media (max-width: 649px) {
@@ -183,7 +217,7 @@
     margin-left: -14px;
 
     position: absolute;
-    bottom: -74px;
+    bottom: -76px;
     left: 50%;
 
     @mixin rotate(45deg);
@@ -199,13 +233,15 @@
     margin-left: -20px;
 
     position: absolute;
-    top: 0;
+    top: -10px;
     left: 50%;
 }
 
 .equal::after {
     content: "";
     margin-top: 18px;
+
+    top: 0;
 }
 
 @media (max-width: 649px) {
@@ -216,4 +252,8 @@
     .equal {
         top: -10px;
     }
+}
+
+.btns a {
+    margin: 0 4em;
 }

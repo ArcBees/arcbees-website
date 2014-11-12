@@ -58,9 +58,6 @@
                     <li>
                         <a href="#{DEVELOPERS}">Developers</a>
                     </li>
-                    <li>
-                        <a href="#{SHOP}">Shop</a>
-                    </li>
                 </ul>
             </nav>
             <nav class="{res.style.socialmedias}">

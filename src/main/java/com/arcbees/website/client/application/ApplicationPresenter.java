@@ -35,7 +35,6 @@ public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView,
     public static final GwtEvent.Type<RevealContentHandler<?>> SLOT_MAIN = new GwtEvent.Type<>();
 
     interface MyView extends View {
-        void resetHeaderHeight();
     }
 
     @Inject
@@ -49,7 +48,5 @@ public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView,
     @Override
     protected void onReset() {
         super.onReset();
-
-        getView().resetHeaderHeight();
     }
 }

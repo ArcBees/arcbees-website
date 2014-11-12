@@ -23,8 +23,6 @@ public interface PageHomeResources extends FontResources {
     interface Style extends AnimationResources.Animation {
         String home();
 
-        String quest();
-
         String bees();
 
         String beesContent();
@@ -48,10 +46,28 @@ public interface PageHomeResources extends FontResources {
         String txtWeb();
 
         String txtBanner();
+
+        String successStory();
+
+        String successStoryMore();
+
+        String opened();
+
+        String ssicons();
+
+        String successStoryHolder();
+
+        String btns();
     }
 
     @Source("img/pages/homeBeesBg.png")
     ImageResource beesBg();
+
+    @Source("img/pages/homeSuccessStoryIcons.png")
+    ImageResource ssicons();
+
+    @Source("img/pages/homeSuccessStoryRainbow.png")
+    ImageResource ssrainbow();
 
     @Source({"com/arcbees/gsss/animation/client/animationsettings.gss",
             "com/arcbees/gsss/animation/client/animations.gss", "com/arcbees/gsss/mixin/client/mixins.gss",

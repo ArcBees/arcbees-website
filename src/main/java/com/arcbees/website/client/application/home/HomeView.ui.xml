@@ -26,131 +26,175 @@
                         <span class="{page.style.txtWeb} {animations.style.animation}">web applications</span>
                     </p>
                 </div>
-        </section>
-
-        <section class="{res.style.stripe} {res.style.light}">
-            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full}">
-                    <h2 class="{res.style.slogan}">Bee
-                        <span>the
-                            <strong>best</strong>
-                        </span>
-                    </h2>
-                </div>
-            </div>
-            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_2} {res.grid.col_m_full} {res.grid.col_m_push_0}">
-                    <p>
-                        <strong>Arcbees est une entreprise regroupant plusieurs passionnés des technologies et de
-                            l’architecture logiciel avides de résoudre les problèmes complexes et concrets auxquels
-                            font face les entreprises.
-                        </strong>
-                    </p>
-                    <p>Armés de cette vision,
-                        <strong>Philippe Beaudoin et Christian Goudreau</strong>
-                        ont conçu
-                        <strong>GWT-Platform, un outil Open Source de création d’applications web</strong>
-                        doté d’une incroyable capacité d’adaptation accélérant la vitesse de développement des
-                        applications afin d’améliorer leur efficacité de production.
-                    </p>
-                    <p>Rapidement, GWT-Platform a généré une importante demande de soutien de la part de ses
-                        utilisateurs et les deux entrepreneurs n’ont eu d’autres choix que de créer officiellement
-                        Arcbees le 16 juillet 2010 afin de répondre à ces requêtes.
-                    </p>
-                    <h3>Récompensée et reconnue</h3>
-                    <p>De plus, malgré le jeune âge de l’entreprise, celle-ci a été récompensée lors du Concours
-                        Québécois en entrepreneuriat au volet local, régional et provincial en 2011 en plus d’être
-                        sélectionnée à titre d’entreprise finaliste au DEVTECH50. Arcbees fut de nouveau récompensée
-                        lorsque son président, Christian Goudreau, a été nommé Jeune personnalité d’affaires -
-                        technologie et recherche en 2012.
-                    </p>
-                    <h3>Membre du comité Google Web Toolkit</h3>
-                    <p>Outre ses reconnaissances entrepreneuriales, Arcbees peut être fière d’être membre depuis
-                        juin 2012 du comité de direction du Google Web Toolkit, outil derrière l’application web la
-                        plus lucrative de tous les temps, Google Adwords.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="{res.style.centered}">
-            <div class="{res.style.stripe} {res.style.light}">
-                <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
+                <div class="{res.grid.row} {res.style.clearfix} {page.style.btns} {res.style.centered}">
                     <div class="{res.grid.col} {res.grid.col_full}">
-                        <h2 class="{res.style.accent}">Why we do what we do</h2>
+                        <a href="#{EXPERTISE}" class="{res.style.btn}">Expertise</a>
+                        <a href="#{PRODUCTS}" class="{res.style.btn}">Products</a>
+                        <a href="#{WORK}" class="{res.style.btn}">Services</a>
                     </div>
+                </div>
+        </section>
+
+        <section class="{res.style.stripe} {res.style.dark} {res.style.triangleBottom} {res.style.nextLight}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.focusBlock}">
+                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+
+                    <h2 class="{res.style.stripeTitle}">Our quest</h2>
+                    <p>Create, build applications that optimise process, habits and thinking, demonstrate value and
+                        simplicity, and transform the way people work around the world.
+                    </p>
 
                 </div>
             </div>
-            <div class="{res.style.stripe} {res.style.dark} {page.style.quest}">
-                <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                    <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+        </section>
 
-                        <h3 class="{res.style.stripeTitle}">Our quest</h3>
-                        <p>Create, build applications that optimise process, habits and thinking, demonstrate value and
-                            simplicity, and transform the way people work around the world.
+        <section class="{res.style.stripe} {res.style.light} {res.style.triangleBottom} {res.style.nextColored}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.focusBlock}">
+                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+
+                    <h2 class="{res.style.stripeTitle}">Bee the best</h2>
+                    <p>Our products allow you to be the best developper by simplifying your code, enhancing the user
+                        experience and optimizing your time.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="{res.style.stripe} {res.style.colored} {page.style.successStoryHolder}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.centered} {page.style.successStory}">
+                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+
+                    <i class="{fonts.icons.iconGwtp}"></i>
+                    <h2 class="{res.style.stripeTitle}">Success <span>story</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consequatur corporis ea eos
+                        error minus necessitatibus nisi numquam perspiciatis quas.
+                    </p>
+                    <p><a class="{res.style.btn}" ui:field="successStoryBtn" href="javascript:;">Learn more</a></p>
+
+                </div>
+            </div>
+            <div class="{res.style.wrapper} {res.style.centered} {page.style.successStoryMore}" ui:field="successStoryMore">
+                <div class="{res.grid.row} {res.style.clearfix}">
+                    <div class="{res.grid.col} {res.grid.col_full} {res.style.centered} {page.style.ssicons}">
+                        <g:Image resource="{page.ssicons}"></g:Image>
+                    </div>
+                    <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
+                        <h3>GWTP <span>the beginning</span></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dignissimos dolor,
+                            dolores
+                            eligendi esse eum, explicabo harum in incidunt nemo numquam perferendis, perspiciatis quae
+                            quaerat sed tempore unde veritatis voluptatibus.
                         </p>
-
+                    </div>
+                    <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
+                        <h3>Growth <span>on products</span></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dignissimos dolor,
+                            dolores
+                            eligendi esse eum, explicabo harum in incidunt nemo numquam perferendis, perspiciatis quae
+                            quaerat sed tempore unde veritatis voluptatibus.
+                        </p>
+                    </div>
+                    <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
+                        <h3>Invited <span>by Google</span></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dignissimos dolor,
+                            dolores
+                            eligendi esse eum, explicabo harum in incidunt nemo numquam perferendis, perspiciatis quae
+                            quaerat sed tempore unde veritatis voluptatibus.
+                        </p>
                     </div>
                 </div>
+                <div class="{res.grid.row} {res.style.clearfix}">
+                    <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1_3} {res.grid.col_m_full}">
+                        <h2>The bee <span>way</span></h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dignissimos dolor,
+                            dolores
+                            eligendi esse eum, explicabo harum in incidunt nemo numquam perferendis, perspiciatis quae
+                            quaerat sed tempore unde veritatis voluptatibus.
+                        </p>
+                    </div>
+                    <div class="{res.grid.col} {res.grid.col_full} {res.style.centered}">
+                        <a class="{res.style.btn} {res.style.collapsable} {res.style.closer}" href="javascript:;" ui:field="successStoryCloser"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="{res.style.stripe} {res.style.light} {res.style.centered}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <h2 class="{res.style.lonely}">Why do we call us
+                    <span>Arcbees?</span>
+                </h2>
             </div>
         </section>
 
         <section class="{res.style.centered}">
             <div class="{res.style.stripe} {res.style.dark}">
                 <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                    <h2 class="{res.style.accent}">Why do we call us
-                        <span>Arcbees?</span>
-                    </h2>
-                </div>
-            </div>
-
-            <div class="{res.style.stripe} {res.style.light}">
-                <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                    <h3 class="{res.style.stripeTitle}">Architects</h3>
-                    <p>We are architects developer</p>
+                    <h3 class="{res.style.stripeTitle}">Optimization</h3>
+                    <p>L'efficacité intelligente, c'est notre raison de créer des produits pour les développeurs</p>
                     <i class="{fonts.icons.iconClose} {page.style.iconPlus}"></i>
                 </div>
             </div>
 
-            <div class="{res.style.stripe} {res.style.colored} {page.style.bees}">
-                <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                    <div class="{res.grid.col} {res.grid.col_full}">
-                        <h3 class="{res.style.stripeTitle}">Bees</h3>
-                        <p>
-                            <a href="#" class="{res.style.btn}">Who are the best architects?</a>
-                        </p>
+            <div class="{page.style.bees}" ui:field="bees">
+                <div class="{res.style.stripe}">
+                    <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                        <div class="{res.grid.col} {res.grid.col_full}">
+                            <h3 class="{res.style.stripeTitle}">Bees</h3>
+                            <p>
+                                <a href="javascript:;" class="{res.style.btn}" ui:field="beesBtn">Who are the best
+                                    architects?
+                                </a>
+                            </p>
+                        </div>
                     </div>
-                    <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full} {page.style.beesContent}">
-                        <p>
-                            <strong>L'homme a fait de l'abeille le symbole de l'organisation sociale, d'intelligence
-                                supérieure de sagesse divine par la perfection de son travail.
-                            </strong>
-                        </p>
-                        <p>Les abeilles en savent quelque chose en ce qui concerne l’ingénierie et la conception. La
-                            forme
-                            hexagonale des alvéoles est le résultat de millénaires de sélection, pour obtenir le système
-                            de
-                            construction le plus efficace, moins coûteux et plus fort.
-                        </p>
-                        <p>La construction de la ruche, chef-d’œuvre d’ingénierie et demeure de l’abeille domestique,
-                            repose
-                            sur une structure très connue : le rayon de miel.
-                        </p>
-                    </div>
-                    <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full} {page.style.beesContent}">
-                        <p>Cette étonnante structure est faite d’une suite d’hexagones mathématiquement parfaits et
-                            organisés
-                            de manière à optimiser l’espace tout en minimisant la quantité du matériau requis pour leur
-                            fabrication.
-                        </p>
-                        <p>Un exploit pratiquement inégalé en matière d’efficacité et de génie. Compte tenu des efforts
-                            et du
-                            savoir-faire qui doivent être déployés pour construire une ruche, c’est presque un
-                            euphémisme de
-                            dire qu’on « s’active comme une abeille ».
-                        </p>
+                </div>
+                <div class="{res.style.stripe}" ui:field="beesMore">
+                    <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                        <div>
+                            <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full} {page.style.beesContent}">
+                                <p>
+                                    <strong>L'homme a fait de l'abeille le symbole de l'organisation sociale,
+                                        d'intelligence
+                                        supérieure de sagesse divine par la perfection de son travail.
+                                    </strong>
+                                </p>
+                                <p>Les abeilles en savent quelque chose en ce qui concerne l’ingénierie et la
+                                    conception. La
+                                    forme
+                                    hexagonale des alvéoles est le résultat de millénaires de sélection, pour obtenir le
+                                    système
+                                    de
+                                    construction le plus efficace, moins coûteux et plus fort.
+                                </p>
+                                <p>La construction de la ruche, chef-d’œuvre d’ingénierie et demeure de l’abeille
+                                    domestique,
+                                    repose
+                                    sur une structure très connue : le rayon de miel.
+                                </p>
+                            </div>
+                            <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full} {page.style.beesContent}">
+                                <p>Cette étonnante structure est faite d’une suite d’hexagones mathématiquement parfaits
+                                    et
+                                    organisés
+                                    de manière à optimiser l’espace tout en minimisant la quantité du matériau requis
+                                    pour
+                                    leur
+                                    fabrication.
+                                </p>
+                                <p>Un exploit pratiquement inégalé en matière d’efficacité et de génie. Compte tenu des
+                                    efforts
+                                    et du
+                                    savoir-faire qui doivent être déployés pour construire une ruche, c’est presque un
+                                    euphémisme de
+                                    dire qu’on « s’active comme une abeille ».
+                                </p>
+                            </div>
+                            <div class="{res.grid.col} {res.grid.col_full} {res.style.centered}">
+                                <a class="{res.style.btn} {res.style.collapsable} {res.style.closer}" href="javascript:;" ui:field="beesCloser"></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -159,10 +203,25 @@
         <section class="{res.style.stripe} {res.style.light} {res.style.centered}">
             <div class="{page.style.equal}"></div>
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <h2>Architects
-                    <span>of simplicity</span>
-                </h2>
-                <a href="#" class="{res.style.btn}">Learn more about our expertise</a>
+                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4}">
+                    <h2>Architects
+                        <span>of simplicity</span>
+                    </h2>
+                    <p>La compagnie puisent directement dans ‘univers des abeilles pour son organisation et sa vision de
+                        la
+                        simplicité. Nous nous voyons comme des évangélistes de la simplicités.
+                    </p>
+                    <p><strong>Amorcement de la bee way</strong></p>
+                </div>
+            </div>
+
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {page.style.btns}">
+                <div class="{res.grid.col} {res.grid.col_full}">
+                    <h3>Learn more about</h3>
+                    <a href="#{EXPERTISE}" class="{res.style.btn}">Expertise</a>
+                    <a href="#{PRODUCTS}" class="{res.style.btn}">Products</a>
+                    <a href="#{WORK}" class="{res.style.btn}">Services</a>
+                </div>
             </div>
         </section>
 

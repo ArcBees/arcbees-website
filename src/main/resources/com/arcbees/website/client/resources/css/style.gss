@@ -104,11 +104,11 @@ h1 span {
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 4rem;
     font-family: "geometriaBold", Arial, sans-serif;
     line-height: 1em;
 
-    margin: 0.2em 0 0.9em;
+    margin: 0.2em 0;
 }
 
 h2 span {
@@ -127,15 +127,23 @@ h2.slogan strong {
     border-bottom: 0.2em solid C_PRIMARY;
 }
 
+h2.lonely {
+    margin: 0;
+}
+
 .colored h2 strong {
     border-color: C_STRIPE_LIGHT;
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: "geometriaBold", Arial, sans-serif;
 
     margin: 2.5em 0 0.9em;
+}
+
+h3 span {
+    display: block;
 }
 
 h3.stripeTitle {
@@ -250,7 +258,7 @@ img {
     left: 0;
     z-index: -1;
 
-    @mixin transition(all, .2s);
+    @mixin transition(height, .2s);
 }
 
 .btn:hover {
@@ -259,6 +267,65 @@ img {
 
 .btn:hover::after {
     height: 100%;
+}
+
+.btn.collapsable {
+    color: C_TEXT;
+    background-color: C_TEXT;
+}
+
+.btn.collapsable::before,
+.btn.collapsable::after {
+    content: "\e602";
+    font-family: "icons";
+    color: C_TEXT_LIGHT;
+
+    height: auto;
+    width: auto;
+    margin-left: -5px;
+
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    z-index: 500;
+
+    -webkit-transition: top 0.2s, bottom 0.2s, height 0;
+    -moz-transition: top 0.2s, bottom 0.2s, height 0;
+    -ms-transition: top 0.2s, bottom 0.2s, height 0;
+    -o-transition: top 0.2s, bottom 0.2s, height 0;
+    transition: top 0.2s, bottom 0.2s, height 0;
+}
+
+.btn.collapsable::before {
+    top: auto;
+    bottom: 5px;
+
+    @mixin rotate_180_cw();
+}
+
+.btn.collapsable:hover::before {
+    height: auto;
+
+    bottom: 7px;
+}
+
+.btn.collapsable:hover::after {
+    height: auto;
+
+    top: 7px;
+}
+
+.btn.collapsable.closer {
+    background-color: transparent;
+
+    height: 43px;
+    border: 0;
+}
+
+.btn.collapsable.closer::before,
+.btn.collapsable.closer::after {
+    background-color: transparent;
+    color: C_TEXT;
 }
 
 /* -> Btn light -- */
@@ -593,6 +660,7 @@ img {
 /* -> Main -- */
 
 .header{
+    height: 750px;
 }
 
 .content {
@@ -619,6 +687,23 @@ img {
 .content .main,
 .content footer {
     @mixin transition(margin, 0.4s);
+}
+
+.focusBlock {
+    text-align: center;
+
+    padding: 70px 0;
+}
+
+.focusBlock p {
+    font-family: "geometriaLight", Arial, sans-serif;
+    font-size: 2.5rem;
+}
+
+@media (max-width: 649px) {
+    .focusBlock p {
+        font-size: 1.8rem;
+    }
 }
 
 /* -> Sections -- */
@@ -664,6 +749,48 @@ img {
 
 .sloganSide {
     margin-top: 9.4em;
+}
+
+.triangleBottom::after {
+    content: "";
+
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left: -1500px;
+    border: 0 solid transparent;
+    border-top-width: 311px;
+    border-right-width: 1500px;
+    border-left-width: 1500px;
+
+    position: absolute;
+    right: 0;
+    left: 50%;
+    bottom: 0;
+}
+
+.light.triangleBottom::after {
+    border-top-color: C_STRIPE_LIGHT;
+}
+
+.dark.triangleBottom::after {
+    border-top-color: C_STRIPE_DARK;
+}
+
+.colored.triangleBottom::after {
+    border-top-color: C_STRIPE_COLORED;
+}
+
+.nextLight.triangleBottom::after {
+    background-color: C_STRIPE_LIGHT;
+}
+
+.nextDark.triangleBottom::after {
+    background-color: C_STRIPE_DARK;
+}
+
+.nextColored.triangleBottom::after {
+    background-color: C_STRIPE_COLORED;
 }
 
 @media (max-width: 649px) {

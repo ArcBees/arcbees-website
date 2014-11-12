@@ -65,7 +65,7 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
         main.setWidget(content);
     }
 
-    public void bind() {
+    private void bind() {
         $("a", menuToggle).click(new Function() {
             @Override
             public boolean f(Event event) {
@@ -87,17 +87,20 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
             public void f() {
                 Window.scrollTo(0, 0);
 
-                $(sidebar).removeClass(appResources.style().active());
-                $(menuToggle).removeClass(appResources.style().active());
+                removeActiveStyle();
             }
         });
 
         $(content).click(new Function() {
             @Override
             public void f() {
-                $(sidebar).removeClass(appResources.style().active());
-                $(menuToggle).removeClass(appResources.style().active());
+                removeActiveStyle();
             }
         });
+    }
+
+    private void removeActiveStyle() {
+        $(sidebar).removeClass(appResources.style().active());
+        $(menuToggle).removeClass(appResources.style().active());
     }
 }

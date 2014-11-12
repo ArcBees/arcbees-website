@@ -34,6 +34,8 @@ public class HomeView extends ViewImpl implements HomePresenter.MyView {
     interface Binder extends UiBinder<Widget, HomeView> {
     }
 
+    private static final int SLIDE_DELAY = 250;
+
     @UiField
     AnchorElement successStoryBtn;
     @UiField
@@ -65,45 +67,43 @@ public class HomeView extends ViewImpl implements HomePresenter.MyView {
         bind();
     }
 
-    public void bind() {
-        $(successStoryMore).hide();
+    private void bind() {
+        bindSuccessStory();
+        bindBees();
+    }
+
+    private void bindBees() {
         $(beesMore).hide();
-
-        $(successStoryBtn).click(new Function() {
-            public void f(Element e) {
-                $(this).toggleClass(appResources.style().collapsable());
-                if ($(this).hasClass(appResources.style().collapsable())) {
-                    $(successStoryMore).slideDown(250);
-                } else {
-                    $(successStoryMore).slideUp(250);
-                }
-            }
-        });
-
-        $(successStoryCloser).click(new Function() {
-           public void f(Element e) {
-               $(successStoryMore).slideUp(250);
-               $(successStoryBtn).removeClass(appResources.style().collapsable());
-           }
-        });
-
         $(beesBtn).click(new Function() {
             public void f(Element e) {
-                $(this).toggleClass(appResources.style().collapsable());
+                $(beesMore).slideToggle(SLIDE_DELAY);
+                $(beesBtn).toggleClass(appResources.style().collapsable());
                 $(bees).toggleClass(pageResources.style().opened());
-                if ($(this).hasClass(appResources.style().collapsable())) {
-                    $(beesMore).slideDown(250);
-                } else {
-                    $(beesMore).slideUp(250);
-                }
             }
         });
 
         $(beesCloser).click(new Function() {
             public void f(Element e) {
-                $(beesMore).slideUp(250);
+                $(beesMore).slideUp(SLIDE_DELAY);
                 $(beesBtn).removeClass(appResources.style().collapsable());
                 $(bees).removeClass(pageResources.style().opened());
+            }
+        });
+    }
+
+    private void bindSuccessStory() {
+        $(successStoryMore).hide();
+        $(successStoryBtn).click(new Function() {
+            public void f(Element e) {
+                $(successStoryMore).slideToggle(SLIDE_DELAY);
+                $(successStoryBtn).toggleClass(appResources.style().collapsable());
+            }
+        });
+
+        $(successStoryCloser).click(new Function() {
+            public void f(Element e) {
+                $(successStoryMore).slideUp(SLIDE_DELAY);
+                $(successStoryBtn).removeClass(appResources.style().collapsable());
             }
         });
     }

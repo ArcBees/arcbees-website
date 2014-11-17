@@ -31,12 +31,12 @@ public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView,
     interface MyProxy extends Proxy<ApplicationPresenter> {
     }
 
-    @ContentSlot
-    public static final GwtEvent.Type<RevealContentHandler<?>> SLOT_MAIN = new GwtEvent.Type<>();
 
     interface MyView extends View {
-        void resetHeaderHeight();
     }
+
+    @ContentSlot
+    public static final GwtEvent.Type<RevealContentHandler<?>> SLOT_MAIN = new GwtEvent.Type<>();
 
     @Inject
     ApplicationPresenter(
@@ -44,12 +44,5 @@ public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView,
             MyView view,
             MyProxy proxy) {
         super(eventBus, view, proxy, RevealType.Root);
-    }
-
-    @Override
-    protected void onReset() {
-        super.onReset();
-
-        getView().resetHeaderHeight();
     }
 }

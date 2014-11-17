@@ -87,6 +87,22 @@ public interface AppResources extends FontResources {
         String menuStart();
 
         String header();
+
+        String triangleBottom();
+
+        String nextLight();
+
+        String nextDark();
+
+        String nextColored();
+
+        String focusBlock();
+
+        String lonely();
+
+        String collapsable();
+
+        String closer();
     }
 
     @Source("css/normalize.gss")

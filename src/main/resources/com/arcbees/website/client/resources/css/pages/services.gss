@@ -341,20 +341,17 @@
     @mixin animation_speed(1s);
 }
 
+.lightbulb [class*="bar"] {
+    width: 10px;
+    height: 4px;
+}
+
 .lightbulb .bar1 {
     margin-left: -2px;
     width: 4px;
     height: 10px;
 
     top: 12px;
-}
-
-.lightbulb .bar2,
-.lightbulb .bar3,
-.lightbulb .bar4,
-.lightbulb .bar5 {
-    width: 10px;
-    height: 4px;
 }
 
 .lightbulb .bar2 {
@@ -652,10 +649,7 @@
     border-radius: 50%;
 }
 
-.iterative .bar1,
-.iterative .bar2,
-.iterative .bar3,
-.iterative .bar4 {
+.iterative [class*="bar"] {
     background-color: #000;
 
     position: absolute;
@@ -839,13 +833,7 @@
     position: relative;
 }
 
-.costRisk .bar1,
-.costRisk .bar2,
-.costRisk .bar3,
-.costRisk .bar4,
-.costRisk .bar5,
-.costRisk .bar6,
-.costRisk .bar7 {
+.costRisk [class*="bar"] {
     background-color: #000;
 
     margin-left: -2px;
@@ -1118,17 +1106,15 @@
     @mixin animation_speed(5s);
 }
 
-.deliver .bar1,
-.deliver .bar2,
-.deliver .bar3,
-.deliver .bar4,
-.deliver .bar5 {
+.deliver [class*="bar"] {
     background-color: #000;
 
     left: 50%;
     position: absolute;
 
     @mixin rounded(5px);
+    @mixin animation_name(deliver);
+    @mixin animation_speed(5s);
 }
 
 .deliver .bar1 {
@@ -1139,8 +1125,6 @@
     top: 0;
 
     @mixin animation_delay_speed(.6s);
-    @mixin animation_name(deliver);
-    @mixin animation_speed(5s);
 }
 
 .deliver .bar2 {
@@ -1151,8 +1135,6 @@
     top: 40px;
 
     @mixin animation_delay_speed(.2s);
-    @mixin animation_name(deliver);
-    @mixin animation_speed(5s);
 }
 
 .deliver .bar3 {
@@ -1164,8 +1146,6 @@
 
     @mixin rotate(45deg);
     @mixin animation_delay_speed(.4s);
-    @mixin animation_name(deliver);
-    @mixin animation_speed(5s);
 }
 
 .deliver .bar4 {
@@ -1177,8 +1157,6 @@
 
     @mixin rotate(-45deg);
     @mixin animation_delay_speed(.8s);
-    @mixin animation_name(deliver);
-    @mixin animation_speed(5s);
 }
 
 .deliver .bar5 {
@@ -1189,8 +1167,6 @@
     top: 40px;
 
     @mixin animation_delay_speed(1s);
-    @mixin animation_name(deliver);
-    @mixin animation_speed(5s);
 }
 
 @-webkit-keyframes deliver {

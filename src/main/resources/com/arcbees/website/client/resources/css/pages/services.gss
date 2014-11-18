@@ -1135,7 +1135,7 @@
     left: 50%;
     position: absolute;
 }
-ss
+
 .deliver .bar1 {
     margin-left: -2px;
     height: 17px;

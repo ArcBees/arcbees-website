@@ -23,8 +23,6 @@ public interface PageServicesResources extends FontResources {
     interface Style extends AnimationResources.Animation {
         String services();
 
-        String realisations();
-
         String trusted();
 
         String last();
@@ -130,6 +128,8 @@ public interface PageServicesResources extends FontResources {
         String beauty();
 
         String worksEverywhere();
+
+        String advantages();
     }
 
     @Source("img/pages/servicesBanner.png")

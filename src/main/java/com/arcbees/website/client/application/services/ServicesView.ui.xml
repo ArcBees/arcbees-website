@@ -43,7 +43,7 @@
             </div>
         </section>
 
-        <section class="{page.style.realisations}">
+        <section class="{page.style.advantages}">
             <div class="{res.style.stripe} {res.style.centered}">
                 <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                     <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full} {page.style.knowledge}">

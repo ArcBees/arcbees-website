@@ -28,7 +28,7 @@ import com.arcbees.website.client.application.expertise.ExpertiseModule;
 import com.arcbees.website.client.application.home.HomeModule;
 import com.arcbees.website.client.application.license.LicenseModule;
 import com.arcbees.website.client.application.products.ProductsModule;
-import com.arcbees.website.client.application.work.WorkModule;
+import com.arcbees.website.client.application.services.ServicesModule;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
 public class ApplicationModule extends AbstractPresenterModule {
@@ -40,7 +40,7 @@ public class ApplicationModule extends AbstractPresenterModule {
         install(new ContactModule());
         install(new ExpertiseModule());
         install(new LicenseModule());
-        install(new WorkModule());
+        install(new ServicesModule());
         install(new DocsModule());
         install(new ProductsModule());
         install(new DevelopersModule());

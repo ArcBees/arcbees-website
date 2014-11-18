@@ -40,6 +40,11 @@
     @mixin animation_ease(linear);
 }
 
+.spinCCW {
+    @mixin animation_speed(5s);
+    @mixin animation_ease(linear);
+}
+
 /* -> leave -- */
 
 .leave {

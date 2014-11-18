@@ -30,7 +30,7 @@
                     <div class="{res.grid.col} {res.grid.col_full}">
                         <a href="#{EXPERTISE}" class="{res.style.btn}">Expertise</a>
                         <a href="#{PRODUCTS}" class="{res.style.btn}">Products</a>
-                        <a href="#{WORK}" class="{res.style.btn}">Services</a>
+                        <a href="#{SERVICES}" class="{res.style.btn}">Services</a>
                     </div>
                 </div>
         </section>
@@ -220,7 +220,7 @@
                     <h3>Learn more about</h3>
                     <a href="#{EXPERTISE}" class="{res.style.btn}">Expertise</a>
                     <a href="#{PRODUCTS}" class="{res.style.btn}">Products</a>
-                    <a href="#{WORK}" class="{res.style.btn}">Services</a>
+                    <a href="#{SERVICES}" class="{res.style.btn}">Services</a>
                 </div>
             </div>
         </section>

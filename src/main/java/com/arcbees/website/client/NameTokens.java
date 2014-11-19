@@ -22,7 +22,7 @@ public class NameTokens {
     public static final String CAREERS = "/careers";
     public static final String CONTACT = "/contact";
     public static final String EXPERTISE = "/expertise";
-    public static final String LICENSE = "/license";
+    public static final String SUPPORT = "/support";
     public static final String SHOP = "/shop";
     public static final String SERVICES = "/services";
 

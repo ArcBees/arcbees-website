@@ -23,77 +23,11 @@ public interface PageExpertisesResources extends FontResources {
     interface Style extends AnimationResources.Animation {
         String expertises();
 
-        String gwtp();
-
-        String jukito();
-
-        String products();
-
-        String gae();
-
-        String howWeWork();
-
-        String partner();
-
         String icon1();
 
         String icon2();
 
         String icon3();
-
-        String icon4();
-
-        String icon5();
-
-        String icon6();
-
-        String iconDark();
-
-        String triangleTop();
-
-        String triangleBottom();
-
-        String deliver();
-
-        String costRisk();
-
-        String iconHexa();
-
-        String circleQuarter();
-
-        String circle();
-
-        String iterative();
-
-        String launch();
-
-        String iteration1();
-
-        String bar1();
-
-        String bar2();
-
-        String bar3();
-
-        String diagram();
-
-        String bar7();
-
-        String bar6();
-
-        String bar5();
-
-        String bar4();
-
-        String learnAdapt();
-
-        String whatWeDo();
-
-        String developping();
-
-        String title();
-
-        String lightbulb();
 
         String codeAnim1();
 
@@ -101,9 +35,15 @@ public interface PageExpertisesResources extends FontResources {
 
         String codeAnim3();
 
-        String light();
-
         String header();
+
+        String tools();
+
+        String plus();
+
+        String equal();
+
+        String services();
     }
 
     @Source("img/pages/expertisesSlash.png")

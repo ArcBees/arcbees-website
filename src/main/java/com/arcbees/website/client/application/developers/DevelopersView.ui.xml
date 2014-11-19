@@ -165,7 +165,7 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_full}">
                     <h2>Who are we?</h2>
-                    <a href="#{LICENSE}" class="{res.style.btn}">Go to our website</a>
+                    <a href="#{SUPPORT}" class="{res.style.btn}">Go to our website</a>
                 </div>
             </div>
         </section>

@@ -14,19 +14,19 @@
  * the License.
  */
 
-package com.arcbees.website.client.application.license;
+package com.arcbees.website.client.application.support;
 
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
 
-public class LicenseView extends ViewImpl implements LicensePresenter.MyView {
-    interface Binder extends UiBinder<Widget, LicenseView> {
+public class SupportView extends ViewImpl implements SupportPresenter.MyView {
+    interface Binder extends UiBinder<Widget, SupportView> {
     }
 
     @Inject
-    LicenseView(
+    SupportView(
             Binder binder) {
         initWidget(binder.createAndBindUi(this));
     }

@@ -26,7 +26,7 @@ import com.arcbees.website.client.application.developers.jukito.JukitoModule;
 import com.arcbees.website.client.application.docs.DocsModule;
 import com.arcbees.website.client.application.expertise.ExpertiseModule;
 import com.arcbees.website.client.application.home.HomeModule;
-import com.arcbees.website.client.application.license.LicenseModule;
+import com.arcbees.website.client.application.support.SupportModule;
 import com.arcbees.website.client.application.products.ProductsModule;
 import com.arcbees.website.client.application.services.ServicesModule;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
@@ -39,7 +39,7 @@ public class ApplicationModule extends AbstractPresenterModule {
         install(new CareersModule());
         install(new ContactModule());
         install(new ExpertiseModule());
-        install(new LicenseModule());
+        install(new SupportModule());
         install(new ServicesModule());
         install(new DocsModule());
         install(new ProductsModule());

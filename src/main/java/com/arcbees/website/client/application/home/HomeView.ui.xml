@@ -114,7 +114,7 @@
                         </p>
                     </div>
                     <div class="{res.grid.col} {res.grid.col_full} {res.style.centered}">
-                        <a class="{res.style.btn} {res.style.collapsable} {res.style.closer}" href="javascript:;" ui:field="successStoryCloser"></a>
+                        <a class="{res.style.btn} {res.style.collapsible} {res.style.closer}" href="javascript:;" ui:field="successStoryCloser"></a>
                     </div>
                 </div>
             </div>
@@ -192,7 +192,7 @@
                                 </p>
                             </div>
                             <div class="{res.grid.col} {res.grid.col_full} {res.style.centered}">
-                                <a class="{res.style.btn} {res.style.collapsable} {res.style.closer}" href="javascript:;" ui:field="beesCloser"></a>
+                                <a class="{res.style.btn} {res.style.collapsible} {res.style.closer}" href="javascript:;" ui:field="beesCloser"></a>
                             </div>
                         </div>
                     </div>

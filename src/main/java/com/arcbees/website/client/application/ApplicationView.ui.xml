@@ -27,7 +27,7 @@
                         <a href="#{EXPERTISE}">Expertise</a>
                     </li>
                     <li>
-                        <a href="#{WORK}">Work</a>
+                        <a href="#{SERVICES}">Services</a>
                     </li>
                     <li>
                         <a href="#{PRODUCTS}">Products</a>

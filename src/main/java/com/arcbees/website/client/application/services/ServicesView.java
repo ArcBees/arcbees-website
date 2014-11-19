@@ -14,19 +14,19 @@
  * the License.
  */
 
-package com.arcbees.website.client.application.work;
+package com.arcbees.website.client.application.services;
 
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
 
-public class WorkView extends ViewImpl implements WorkPresenter.MyView {
-    interface Binder extends UiBinder<Widget, WorkView> {
+public class ServicesView extends ViewImpl implements ServicesPresenter.MyView {
+    interface Binder extends UiBinder<Widget, ServicesView> {
     }
 
     @Inject
-    WorkView(
+    ServicesView(
             Binder binder) {
         initWidget(binder.createAndBindUi(this));
     }

@@ -14,14 +14,14 @@
  * the License.
  */
 
-package com.arcbees.website.client.application.work;
+package com.arcbees.website.client.application.services;
 
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
-public class WorkModule extends AbstractPresenterModule {
+public class ServicesModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
-        bindPresenter(WorkPresenter.class, WorkPresenter.MyView.class,
-                WorkView.class, WorkPresenter.MyProxy.class);
+        bindPresenter(ServicesPresenter.class, ServicesPresenter.MyView.class,
+                ServicesView.class, ServicesPresenter.MyProxy.class);
     }
 }

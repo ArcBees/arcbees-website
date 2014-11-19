@@ -112,7 +112,7 @@ public interface PageExpertisesResources extends FontResources {
     @Source("img/pages/expertisesBanner.png")
     ImageResource expertisesBanner();
 
-    @Source("img/pages/expertisesLightBulb.png")
+    @Source("img/pages/servicesLightBulb.png")
     ImageResource expertisesLightBulb();
 
     @Source({"com/arcbees/gsss/animation/client/animationsettings.gss",

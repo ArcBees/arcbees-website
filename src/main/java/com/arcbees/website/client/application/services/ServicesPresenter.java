@@ -14,7 +14,7 @@
  * the License.
  */
 
-package com.arcbees.website.client.application.work;
+package com.arcbees.website.client.application.services;
 
 import com.arcbees.website.client.NameTokens;
 import com.arcbees.website.client.application.ApplicationPresenter;
@@ -26,17 +26,17 @@ import com.gwtplatform.mvp.client.annotations.NameToken;
 import com.gwtplatform.mvp.client.annotations.ProxyStandard;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 
-public class WorkPresenter extends Presenter<WorkPresenter.MyView, WorkPresenter.MyProxy> {
+public class ServicesPresenter extends Presenter<ServicesPresenter.MyView, ServicesPresenter.MyProxy> {
     interface MyView extends View {
     }
 
     @ProxyStandard
-    @NameToken(NameTokens.WORK)
-    interface MyProxy extends ProxyPlace<WorkPresenter> {
+    @NameToken(NameTokens.SERVICES)
+    interface MyProxy extends ProxyPlace<ServicesPresenter> {
     }
 
     @Inject
-    WorkPresenter(
+    ServicesPresenter(
             EventBus eventBus,
             MyView view,
             MyProxy proxy) {

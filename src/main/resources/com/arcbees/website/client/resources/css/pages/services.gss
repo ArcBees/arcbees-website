@@ -1,0 +1,1175 @@
+@require "colors";
+@require "geometria";
+
+@def WORK_BANNER resourceUrl("workBanner");
+
+/* -- Page : services ---------------------------------------- */
+
+.services {
+    background: C_STRIPE_LIGHT;
+}
+
+/* Header animations */
+/* ------------------------------ */
+
+.services .header > div {
+    margin: -227px 0 0 -267px;
+    height: 455px;
+    width: 534px;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
+
+.header i.iconPyramid {
+    color: #fff;
+    font-size: 21rem;
+
+    right: 50%;
+    position: absolute;
+}
+
+.pyramidAnim1,
+.pyramidAnim2,
+.pyramidAnim3 {
+    bottom: -20px;
+
+    @mixin animation_delay_speed(.2s);
+    @mixin animation_speed(.5s);
+    @mixin animation_name(pyramid1);
+}
+
+.pyramidAnim1 {
+    margin-right: 105px;
+}
+
+.pyramidAnim2 {
+    margin-right: -95px;
+}
+
+.pyramidAnim3 {
+    margin-right: -295px;
+}
+
+.pyramidAnim4,
+.pyramidAnim5 {
+    bottom: 155px;
+
+    @mixin animation_delay_speed(.6s);
+    @mixin animation_speed(.5s);
+    @mixin animation_name(pyramid2);
+}
+
+.pyramidAnim4 {
+    margin-right: 5px;
+}
+
+.pyramidAnim5 {
+    margin-right: -195px;
+}
+
+.pyramidAnim6 {
+    margin-right: -95px;
+
+    bottom: 330px;
+
+    @mixin animation_delay_speed(1s);
+    @mixin animation_speed(.5s);
+    @mixin animation_name(pyramid3);
+}
+
+@-webkit-keyframes pyramid1 {
+    0% {transform: translate(0px, 240px); opacity: 0;}
+    100% {transform: translate(0px, 0px); opacity: 1;}
+}
+
+@-webkit-keyframes pyramid2 {
+    0% {transform: translate(0px, 320px); opacity: 0;}
+    100% {transform: translate(0px, 0px); opacity: 1;}
+}
+
+@-webkit-keyframes pyramid3 {
+    0% {transform: translate(0px, 500px); opacity: 0;}
+    100% {transform: translate(0px, 0px); opacity: 1;}
+}
+
+@media (max-width: 649px) {
+    .header {
+        -webkit-background-size: 90% auto;
+        background-size: 90% auto;
+
+        min-height: 250px;
+    }
+}
+
+/* advantages */
+/* ------------------------------ */
+
+.advantages h2 {
+    font-size: 2.5rem;
+
+    margin: 0 0 3em;
+}
+
+.advantages h3 {
+    line-height: 1em;
+
+    margin: .25em 0 .4em;
+}
+
+.advantages p {
+    margin: 0 0 65px;
+}
+
+.advantages i {
+    font-size: 7em;
+}
+
+/* -- knowledge -- */
+.knowledge .icons {
+    height: 124px;
+    padding-top: 35px;
+}
+
+.knowledge i {
+    font-size: 5rem;
+
+    vertical-align: middle;
+}
+
+.knowledge .dots {
+    display: inline-block;
+    margin-top: 5px;
+
+    vertical-align: middle;
+}
+
+.knowledge .dot {
+    background-color: #000;
+
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+
+    border-radius: 3px;
+}
+
+.knowledge i.icon1:before {
+    @mixin rotate(90deg);
+}
+
+.knowledge i.icon2:before {
+    @mixin rotate(-90deg);
+}
+
+@media (max-width: 649px) {
+    .advantages h2 {
+        margin: 0 0 2em;
+    }
+
+    .advantages h3 {
+        margin-top: 16px;
+    }
+
+    .advantages p {
+        margin: 0 0 35px;
+    }
+}
+
+/* -- Works everywhere --*/
+.worksEverywhere {
+    position: relative;
+}
+
+.worksEverywhere .icons {
+    height: 124px;
+}
+
+.worksEverywhere i {
+    font-size: 3rem;
+
+    margin-left: -15px;
+
+    position: absolute;
+    left: 50%;
+}
+
+.worksEverywhere .icon2 {
+    margin-left: 20px;
+
+    top: 21px;
+}
+
+.worksEverywhere .icon2:before {
+    @mixin rotate(60deg);
+}
+
+.worksEverywhere .icon3 {
+    margin-left: 20px;
+
+    top: 60px;
+}
+
+.worksEverywhere .icon3:before {
+    @mixin rotate(120deg);
+}
+
+.worksEverywhere .icon4 {
+    margin-left: -15px;
+
+    top: 80px;
+}
+
+.worksEverywhere .icon4:before {
+    @mixin rotate(180deg);
+}
+
+.worksEverywhere .icon5 {
+    margin-left: -50px;
+
+    top: 60px;
+}
+
+.worksEverywhere .icon5:before {
+    @mixin rotate(-120deg);
+}
+
+.worksEverywhere .icon6 {
+    margin-left: -50px;
+
+    top: 20px;
+}
+
+.worksEverywhere .icon6:before {
+    @mixin rotate(-60deg);
+}
+
+/* -- Beauty and function --*/
+.beauty {
+    position: relative;
+}
+
+.beauty .icon2 {
+    color: C_PRIMARY;
+    font-size: 6.78rem;
+
+    margin-left: -34px;
+
+    position: absolute;
+    top: 38px;
+    left: 50%;
+}
+
+/* Trusted by */
+/* ------------------------------ */
+
+.trusted h2 {
+    font-size: 2.5rem;
+
+    margin: 0 0 3em;
+}
+
+.trusted ul {
+    font-size: 0;
+
+    padding-left: 0;
+}
+
+.trusted li {
+    font-size: 0;
+
+    display: inline-block;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    width: 25%;
+    border-bottom: 5px solid C_STRIPE_MEDIUM1;
+}
+
+.trusted li.last {
+    margin-bottom: 25px;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+@media (max-width: 649px) {
+    .trusted li {
+        width: 50%;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+
+    .trusted li.last {
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        border-bottom: 5px solid C_STRIPE_MEDIUM1;
+    }
+
+    .trusted li.lastMobile {
+        border-bottom: none;
+    }
+}
+
+/* The bee way */
+/* ------------------------------ */
+
+.beeWay {
+    padding-bottom: 0;
+}
+
+.howWeWork h3 {
+    font-size: 1.5rem;
+}
+
+/* -- lightbulb -- */
+.lightbulb .diagram {
+    margin-top: 60px;
+    padding-top: 40px;
+
+    position: relative;
+}
+
+.lightbulb .light {
+    background-color: #000;
+
+    position: absolute;
+    left: 50%;
+
+    @mixin rounded(5px);
+    @mixin animation_delay_speed(.2s);
+    @mixin animation_name(deliver);
+    @mixin animation_speed(1s);
+}
+
+.lightbulb [class*="bar"] {
+    width: 10px;
+    height: 4px;
+}
+
+.lightbulb .bar1 {
+    margin-left: -2px;
+    width: 4px;
+    height: 10px;
+
+    top: 12px;
+}
+
+.lightbulb .bar2 {
+    margin-left: -42px;
+
+    top: 50px;
+}
+
+.lightbulb .bar3 {
+    margin-left: -29px;
+
+    top: 25px;
+
+    @mixin rotate(45deg);
+}
+
+.lightbulb .bar4 {
+    margin-left: 21px;
+
+    top: 25px;
+
+    @mixin rotate(-45deg);
+}
+
+.lightbulb .bar5 {
+    margin-left: 36px;
+
+    top: 50px;
+}
+
+/* -- partner -- */
+.partner {
+    margin-bottom: 180px;
+}
+
+.partner .diagram {
+    height: 333px;
+    margin-top: 75px;
+
+    position: relative;
+}
+
+.partner .diagram::before,
+.partner .diagram::after {
+    content: "";
+    background-color: #000;
+
+    display: block;
+    height: 57px;
+    width: 5px;
+    margin-top: -51px;
+    margin-left: -2.5px;
+
+    position: absolute;
+    left: 50%;
+
+    @mixin rounded(5px);
+}
+
+.partner .diagram::before {
+    top: 0px;
+}
+
+.partner .diagram::after {
+    height: 108px;
+    margin-bottom: -115px;
+
+    bottom: 0;
+}
+
+.partner i {
+    font-size: 15.5rem;
+    color: C_TEXT_LIGHT;
+
+    position: absolute;
+}
+
+.partner i.icon1 {
+    margin-right: -39px;
+
+    top: 133px;
+    right: 50%;
+
+    @mixin animation_delay_speed(1s);
+    @mixin animation_speed(5s);
+}
+
+.partner i.icon1::before {
+    @mixin rotate(30deg);
+}
+
+.partner i.icon2 {
+    top: 67px;
+    right: 50%;
+
+    @mixin animation_delay_speed(1.3s);
+    @mixin animation_speed(5s);
+}
+
+.partner i.icon2::before {
+@mixin rotate(90deg);
+}
+
+.partner i.icon3 {
+    margin-right: -38px;
+
+    top: 0px;
+    right: 50%;
+
+    @mixin animation_delay_speed(1.4s);
+    @mixin animation_speed(5s);
+}
+
+.partner i.icon3::before {
+    @mixin rotate(150deg);
+}
+
+.partner i.icon4 {
+    margin-left: -39px;
+
+    top: -1px;
+    left: 50%;
+
+    @mixin animation_delay_speed(1.5s);
+    @mixin animation_speed(5s);
+}
+
+.partner i.icon4::before {
+    @mixin rotate(-150deg);
+}
+
+.partner i.icon5 {
+    top: 66px;
+    left: 50%;
+
+    @mixin animation_delay_speed(1.6s);
+    @mixin animation_speed(5s);
+}
+
+.partner i.icon5::before {
+    @mixin rotate(-90deg);
+}
+
+.partner i.icon5.iconDark {
+    color: #000;
+
+    top: 66px;
+    left: 50%;
+
+    @mixin animation_name(partner);
+}
+
+.partner i.icon6 {
+    margin-left: -38px;
+
+    top: 133px;
+    left: 50%;
+
+    @mixin animation_delay_speed(1.7s);
+    @mixin animation_speed(5s);
+}
+
+.partner i.icon6::before {
+    @mixin rotate(-30deg);
+}
+
+.partner i.iconHexa {
+    color: #000;
+    font-size: 3rem;
+
+    margin-left: -15px;
+
+    left: 50%;
+    top: 152px;
+}
+
+@-webkit-keyframes partner {
+    from {-ms-transform: translate(100px,0px);opacity:0;
+        -webkit-transform: translate(100px,0px);opacity:0;
+        transform: translate(100px,0px);opacity:0;}
+    to {-ms-transform: translate(0px,0px);opacity: 1;
+        -webkit-transform: translate(0px,0px);opacity: 1;
+        transform: translate(0px,0px);opacity: 1;}
+}
+
+/* -- iterative process -- */
+.iterative {
+    margin-bottom: 80px;
+}
+
+.iterative .diagram {
+    height: 313px;
+    margin-top: 30px;
+
+    position: relative;
+}
+
+.iterative .diagram::before {
+    content: "";
+    background-color: #000;
+
+    display: block;
+    margin-left: -2px;
+    height: 313px;
+    width: 5px;
+
+    position: absolute;
+    left: 50%;
+
+    @mixin rounded(5px);
+}
+
+.iterative .launch {
+    margin-left: -171px;
+
+    position: absolute;
+    left: 50%;
+    top: 48px;
+}
+
+.iterative .iteration1 {
+    margin-left: 55px;
+
+    position: absolute;
+    left: 50%;
+    top: 131px;
+}
+
+.iterative .iconHexa {
+    width: 167px;
+    height: 167px;
+    margin-left: -155px;
+
+    position: absolute;
+    left: 50%;
+    top: 53px;
+}
+
+.iterative .iconHexa i {
+    color: #000;
+    font-size: 1.6rem;
+
+    display: block;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.partner i.icon6::before {
+    @mixin rotate(-30deg);
+}
+
+.circleQuarter {
+    margin-left: -161px;
+    width: 164px;
+    height: 164px;
+    border: 5px solid transparent;
+    border-top-color: #000;
+
+    position: absolute;
+    top: 54px;
+    left: 50%;
+
+    border-radius: 50%;
+    @mixin rotate(50deg);
+}
+
+.circleQuarter::before {
+    content: "";
+    background-color: #000;
+
+    display: block;
+    margin-left: 19px;
+    height: 5px;
+    width: 5px;
+
+    position: absolute;
+    top: 18px;
+    left: 0;
+
+    @mixin rounded(5px);
+}
+
+.circle {
+    margin-left: -2px;
+    width: 167px;
+    height: 167px;
+    border: 5px solid #000;
+
+    position: absolute;
+    top: 58px;
+    left: 50%;
+
+    border-radius: 50%;
+}
+
+.iterative [class*="bar"] {
+    background-color: #000;
+
+    position: absolute;
+    right: 50%;
+
+    @mixin rounded(5px);
+}
+
+.iterative .bar1 {
+    margin-right: -2px;
+    width: 5px;
+    height: 16px;
+
+    top: -11px;
+}
+
+.iterative .bar2 {
+    margin-right: -88px;
+    width: 16px;
+    height: 5px;
+
+    top: 50%;
+}
+
+.iterative .bar3 {
+    margin-right: -2px;
+    width: 5px;
+    height: 16px;
+
+    bottom: -11px;
+}
+
+.iterative .bar4 {
+    width: 16px;
+    height: 5px;
+
+    top: 50%;
+    left: -11px;
+}
+
+/* -- code review -- */
+.codeReview {
+    position: relative;
+}
+
+.codeReview .diagram {
+    height: 135px;
+    margin-top: 30px;
+    margin-bottom: 80px;
+
+    position: relative;
+}
+
+.codeReview .bar1 {
+    background-color: #000;
+
+    margin-right: -2px;
+    width: 5px;
+    height: 40px;
+
+    position: absolute;
+    right: 50%;
+
+    @mixin rounded(5px);
+}
+
+.codeReview i.iconHexa {
+    color: #000;
+    font-size: 1.6rem;
+
+    display: block;
+    margin-left: -8px;
+
+    position: absolute;
+    left: 50%;
+}
+
+.codeReview i.iconHexa.hexaMove {
+    -webkit-animation-name: hexaMoveCR;
+    animation-name: hexaMoveCR;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+}
+
+@keyframes hexaMoveCR {
+    0% {transform:translate(0px, 0px); opacity: 0;}
+    100% {transform: translate(0px, 40px); opacity: 1;}
+}
+
+@-webkit-keyframes hexaMoveCR {
+    0% {transform:translate(0px, 0px); opacity: 0;}
+    100% {transform: translate(0px, 40px); opacity: 1;}
+}
+
+.bracket1,
+.bracket2 {
+    font-size: 9rem;
+    font-family: "geometriaBold";
+
+    margin-left: -95px;
+
+    position: absolute;
+    top: 49px;
+    left: 50%;
+}
+
+.bracket2 {
+    margin-left: 30px;
+}
+
+.codeReview i {
+    position: absolute;
+}
+
+.codeReview .gear1 {
+    width: 19px;
+    height: 20px;
+    margin-left: -7px;
+
+    top: 73px;
+    left: 50%;
+    position: absolute;
+}
+
+.codeReview .gear1 i {
+    font-size: 2rem;
+
+    margin-left: 0;
+
+    top: -4px;
+    left: 0;
+}
+
+.codeReview .gear2 {
+    width: 27px;
+    height: 28px;
+    margin-left: -31px;
+
+    top: 82px;
+    left: 50%;
+    position: absolute;
+}
+
+.codeReview .gear2 i {
+    font-size: 2.75rem;
+
+    margin-left: 0;
+
+    top: -4px;
+    left: 0;
+}
+
+.codeReview .gear3 {
+    width: 34px;
+    height: 35px;
+    margin-left: -12px;
+
+    top: 100px;
+    left: 50%;
+    position: absolute;
+}
+
+.codeReview .gear3 i {
+    font-size: 3.5rem;
+
+    margin-left: 0;
+
+    top: -6px;
+    left: 0;
+}
+
+/* -- cost risk -- */
+.costRisk {
+    margin-bottom: 80px;
+}
+
+.costRisk .diagram {
+    height: 160px;
+    margin-top: 30px;
+
+    position: relative;
+}
+
+.costRisk [class*="bar"] {
+    background-color: #000;
+
+    margin-left: -2px;
+    width: 5px;
+    height: 13px;
+
+    position: absolute;
+    left: 50%;
+
+    @mixin rounded(5px);
+}
+
+.costRisk .bar1 {
+    top: 0;
+
+    @mixin animation_delay_speed(.2s);
+}
+
+.costRisk .bar2 {
+    top: 17px;
+
+    @mixin animation_delay_speed(.5s);
+}
+
+.costRisk .bar3 {
+    top: 34px;
+
+    @mixin animation_delay_speed(.8s);
+}
+
+.costRisk .bar4 {
+    top: 100px;
+
+    @mixin animation_delay_speed(1.2s);
+}
+
+.costRisk .bar5 {
+    top: 117px;
+
+    @mixin animation_delay_speed(1.5s);
+}
+
+.costRisk .bar6 {
+    top: 134px;
+
+    @mixin animation_delay_speed(1.8s);
+}
+
+.costRisk .bar7 {
+    top: 151px;
+
+    @mixin animation_delay_speed(2.1s);
+}
+
+.costRisk i {
+    font-size: 1.5rem;
+
+    position: absolute;
+}
+
+.costRisk i.icon1 {
+    margin-left: -7px;
+
+    top: 50px;
+    left: 50%;
+
+    @mixin animation_delay_speed(.2s);
+}
+
+.costRisk i.icon2 {
+    margin-left: -15px;
+
+    top: 63px;
+    left: 50%;
+
+    @mixin animation_delay_speed(.4s);
+}
+
+.costRisk i.icon3 {
+    margin-left: 0px;
+
+    top: 63px;
+    left: 50%;
+
+    @mixin animation_delay_speed(.6s);
+}
+
+.costRisk i.icon4 {
+    margin-left: -23px;
+
+    top: 75px;
+    left: 50%;
+
+    @mixin animation_delay_speed(.8s);
+}
+
+.costRisk i.icon5 {
+    margin-left: -7px;
+
+    top: 75px;
+    left: 50%;
+
+    @mixin animation_delay_speed(1s);
+}
+
+.costRisk i.icon6 {
+    margin-left: 8px;
+
+    top: 75px;
+    left: 50%;
+
+    @mixin animation_delay_speed(1.2s);
+}
+
+/* -- learn adapt -- */
+.learnAdapt .diagram {
+    height: 361px;
+    margin-top: 30px;
+
+    position: relative;
+}
+
+.learnAdapt .bar1 {
+    background-color: #000;
+
+    margin-left: -2px;
+    width: 5px;
+    height: 170px;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    @mixin rounded(5px);
+    @mixin animation_name(bar1);
+    @mixin animation_speed(5s);
+}
+
+@-webkit-keyframes bar1 {
+    from {height: 0;}
+    to {height: 170px;}
+}
+
+.learnAdapt i.iconHexa {
+    color: #000;
+    font-size: 5.25rem;
+
+    margin-left: -26px;
+
+    left: 50%;
+    top: 152px;
+
+    @mixin animation_delay_speed(3s);
+    @mixin animation_speed(5s);
+}
+
+.learnAdapt i {
+    font-size: 15.5rem;
+    color: C_TEXT_LIGHT;
+
+    position: absolute;
+}
+
+.learnAdapt i.icon1 {
+    margin-right: -29px;
+
+    top: 162px;
+    right: 50%;
+
+    @mixin animation_delay_speed(1s);
+    @mixin animation_speed(8s);
+}
+
+.learnAdapt i.icon1::before {
+    @mixin rotate(30deg);
+}
+
+.learnAdapt i.icon2 {
+    margin-right: 12px;
+
+    top: 82px;
+    right: 50%;
+
+    @mixin animation_delay_speed(1.3s);
+    @mixin animation_speed(8s);
+}
+
+.learnAdapt i.icon2::before {
+    @mixin rotate(90deg);
+}
+
+.learnAdapt i.icon3 {
+    margin-right: -29px;
+
+    top: 0px;
+    right: 50%;
+
+    @mixin animation_delay_speed(1.4s);
+    @mixin animation_speed(8s);
+}
+
+.learnAdapt i.icon3::before {
+    @mixin rotate(150deg);
+}
+
+.learnAdapt i.icon4 {
+    margin-left: -29px;
+
+    top: -1px;
+    left: 50%;
+
+    @mixin animation_delay_speed(1.5s);
+    @mixin animation_speed(8s);
+}
+
+.learnAdapt i.icon4::before {
+    @mixin rotate(-150deg);
+}
+
+.learnAdapt i.icon5 {
+    margin-left: 12px;
+
+    top: 81px;
+    left: 50%;
+
+    @mixin animation_delay_speed(1.6s);
+    @mixin animation_speed(8s);
+}
+
+.learnAdapt i.icon5::before {
+    @mixin rotate(-90deg);
+}
+
+.learnAdapt i.icon6 {
+    margin-left: -29px;
+
+    top: 162px;
+    left: 50%;
+
+    @mixin animation_delay_speed(1.7s);
+    @mixin animation_speed(8s);
+}
+
+.learnAdapt i.icon6::before {
+    @mixin rotate(-30deg);
+}
+
+/* -- deliver -- */
+.deliver {
+    margin-bottom: 40px;
+}
+
+.deliver .diagram {
+    margin: 30px 0 80px;
+    height: 80px;
+
+    position: relative;
+}
+
+.deliver i.iconHexa {
+    color: #000;
+    font-size: 5.25rem;
+
+    margin-left: -26px;
+
+    position: absolute;
+    left: 50%;
+    top: 20px;
+
+    @mixin animation_speed(5s);
+}
+
+.deliver [class*="bar"] {
+    background-color: #000;
+
+    left: 50%;
+    position: absolute;
+
+    @mixin rounded(5px);
+    @mixin animation_name(deliver);
+    @mixin animation_speed(5s);
+}
+
+.deliver .bar1 {
+    margin-left: -2px;
+    height: 17px;
+    width: 4px;
+
+    top: 0;
+
+    @mixin animation_delay_speed(.6s);
+}
+
+.deliver .bar2 {
+    margin-left: -52px;
+    width: 17px;
+    height: 4px;
+
+    top: 40px;
+
+    @mixin animation_delay_speed(.2s);
+}
+
+.deliver .bar3 {
+    margin-left: -37px;
+    width: 17px;
+    height: 4px;
+
+    top: 15px;
+
+    @mixin rotate(45deg);
+    @mixin animation_delay_speed(.4s);
+}
+
+.deliver .bar4 {
+    margin-left: 19px;
+    width: 17px;
+    height: 4px;
+
+    top: 15px;
+
+    @mixin rotate(-45deg);
+    @mixin animation_delay_speed(.8s);
+}
+
+.deliver .bar5 {
+    margin-left: 34px;
+    width: 17px;
+    height: 4px;
+
+    top: 40px;
+
+    @mixin animation_delay_speed(1s);
+}
+
+@-webkit-keyframes deliver {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

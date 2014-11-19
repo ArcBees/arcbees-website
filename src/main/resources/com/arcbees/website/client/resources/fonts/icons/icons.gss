@@ -48,6 +48,7 @@ iconCode iconHeart iconClose iconFb iconFbSquare iconGae iconGitHub iconGPlus ic
 iconHero iconHive iconInfinite iconInfo iconJukito iconLike iconLkd iconMapPin iconPyramid iconRadar iconRubic
 iconSearch iconShare iconSkull iconTrophe iconTwitter iconWordpress iconChat iconEmail iconPhone iconUser iconhexaEmpty;
 
+.iconGearing:before {content: "\e61d";}
 .iconhexaEmpty:before {content: "\e619";}
 .iconhexagon:before {content: "\e618";}
 .iconChat:before {content: "\e614";}

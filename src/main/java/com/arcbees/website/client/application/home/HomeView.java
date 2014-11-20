@@ -77,7 +77,7 @@ public class HomeView extends ViewImpl implements HomePresenter.MyView {
         $(beesBtn).click(new Function() {
             public void f(Element e) {
                 $(beesMore).slideToggle(SLIDE_DELAY);
-                $(beesBtn).toggleClass(appResources.style().collapsable());
+                $(beesBtn).toggleClass(appResources.style().collapsible());
                 $(bees).toggleClass(pageResources.style().opened());
             }
         });
@@ -85,7 +85,7 @@ public class HomeView extends ViewImpl implements HomePresenter.MyView {
         $(beesCloser).click(new Function() {
             public void f(Element e) {
                 $(beesMore).slideUp(SLIDE_DELAY);
-                $(beesBtn).removeClass(appResources.style().collapsable());
+                $(beesBtn).removeClass(appResources.style().collapsible());
                 $(bees).removeClass(pageResources.style().opened());
             }
         });
@@ -96,14 +96,14 @@ public class HomeView extends ViewImpl implements HomePresenter.MyView {
         $(successStoryBtn).click(new Function() {
             public void f(Element e) {
                 $(successStoryMore).slideToggle(SLIDE_DELAY);
-                $(successStoryBtn).toggleClass(appResources.style().collapsable());
+                $(successStoryBtn).toggleClass(appResources.style().collapsible());
             }
         });
 
         $(successStoryCloser).click(new Function() {
             public void f(Element e) {
                 $(successStoryMore).slideUp(SLIDE_DELAY);
-                $(successStoryBtn).removeClass(appResources.style().collapsable());
+                $(successStoryBtn).removeClass(appResources.style().collapsible());
             }
         });
     }

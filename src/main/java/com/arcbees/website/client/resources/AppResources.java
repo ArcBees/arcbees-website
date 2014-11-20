@@ -100,7 +100,7 @@ public interface AppResources extends FontResources {
 
         String lonely();
 
-        String collapsable();
+        String collapsible();
 
         String closer();
     }

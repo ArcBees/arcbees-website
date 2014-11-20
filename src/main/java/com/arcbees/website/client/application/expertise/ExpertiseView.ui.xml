@@ -23,233 +23,74 @@
             </div>
         </section>
 
-        <section class="{res.style.stripe} {res.style.colored}">
-            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full}">
-                    <h2 class="{res.style.slogan}">Bee
-                        <span>the
-                            <strong>code</strong>
-                        </span>
-                    </h2>
-                </div>
-            </div>
-            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_push_1_2} {res.grid.col_m_full} {res.grid.col_m_push_0}">
-                    <p>ArcBees offers consulting and development services that can help you improve the quality of your
-                        web applications and the performance of your development team during your project.
+        <section class="{res.style.stripe} {res.style.dark} {res.style.triangleBottom} {res.style.nextLight}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.focusBlock}">
+                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+
+                    <h2 class="{res.style.stripeTitle}">Expertises</h2>
+                    <p>Create and build products
+                        that optimise process, habits and thinking,
+                        demonstrate value and simplicity,
+                        and transform the way developers work around the world.
                     </p>
-                    <p>
-                        <strong>A qualified member of ArcBees will join your team</strong>
-                        to help you with your specific need, be it web
-                        development, application design, tooling, or process and methodology. Our consultant will be
-                        easily accessible either physically or by telecommunication.
-                    </p>
+
                 </div>
             </div>
         </section>
 
-        <section class="{page.style.whatWeDo}">
-            <div class="{res.style.stripe} {res.style.colored} {res.style.centered}">
-                <h2>what we do</h2>
+        <section class="{res.style.stripe} {res.style.centered} {page.style.services}">
+            <div class="{res.style.wrapper} {res.grid.row} {res.style.clearfix}">
+                <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1_3}">
+                    <h3 class="{res.style.stripeTitle}">Professional
+                        <span>services</span>
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        Aenean
+                        massa.
+                    </p>
+                    <a href="#" class="{res.style.btn}">Learn more</a>
+                </div>
             </div>
             <div class="{res.style.stripe} {res.style.centered}">
                 <div class="{res.style.wrapper} {res.grid.row} {res.style.clearfix}">
-                    <div class="{res.grid.col} {res.grid.col_full}">
-                        <h3 class="{res.style.stripeTitle}">Consulting</h3>
-                        <a href="#" class="{res.style.btn}">How we help you improve your performance</a>
+                    <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1_12}">
+                        <h3 class="{res.style.stripeTitle}">Support</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                            Aenean massa.</p>
+                        <a href="#" class="{res.style.btn}">Learn more</a>
                     </div>
-                </div>
-            </div>
-            <div class="{res.style.stripe} {res.style.dark} {page.style.developping}">
-                <div class="{res.style.wrapper} {res.grid.row} {res.style.clearfix}">
-                    <div class="{res.grid.col} {res.grid.col_full} {res.style.centered}">
-                        <h3 class="{res.style.stripeTitle}">Developping</h3>
-                        <a href="#" class="{res.style.btn}">How we provide you a key-in-hand development team</a>
-                    </div>
-                    <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full}">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse explicabo placeat repellat,
-                            sapiente tempora temporibus totam voluptatibus. Accusamus eligendi, exercitationem facere
-                            ipsa itaque minima nisi odit officia omnis reiciendis, sed.
-                        </p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A asperiores beatae cumque, dolorem
-                            ea ex fuga iure magnam maxime necessitatibus nemo omnis placeat, quisquam repellendus
-                            similique sit tempore voluptas voluptatibus.
-                        </p>
-                    </div>
-                    <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full}">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse explicabo placeat repellat,
-                            sapiente tempora temporibus totam voluptatibus. Accusamus eligendi, exercitationem facere
-                            ipsa itaque minima nisi odit officia omnis reiciendis, sed.
-                        </p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A asperiores beatae cumque, dolorem
-                            ea ex fuga iure magnam maxime necessitatibus nemo omnis placeat, quisquam repellendus
-                            similique sit tempore voluptas voluptatibus.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="{res.style.stripe} {res.style.colored} {res.style.centered}">
-                <div class="{res.style.wrapper} {res.grid.row} {res.style.clearfix}">
-                    <div class="{res.grid.col} {res.grid.col_full}">
-                        <h3 class="{res.style.stripeTitle}">personalized training
-                            <span>and support</span>
-                        </h3>
-                        <a href="#" class="{res.style.btn}">How we provide tools and processes to ensure that
-                            <span>your development team reach their full potential</span>
-                        </a>
+                    <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1_6}">
+                        <h3 class="{res.style.stripeTitle}">Training</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                            Aenean massa.</p>
+                        <a href="#" class="{res.style.btn}">Learn more</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="{res.style.stripe} {res.style.centered} {page.style.products}">
-            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
-                    <p class="{page.style.title}">AND</p>
-                    <h2>We create
-                        <span>our products</span>
-                    </h2>
-                    <p>Designed by top shelf geeks, ArcBees' open source software speed up and sharpen your projects</p>
-                    <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_t_full}">
-                        <h3 class="{page.style.gae}">
-                            <i class="{fonts.icons.iconGae}"></i>
-                        </h3>
-                        <a href="#" class="{res.style.btn}">GAE STUDIO</a>
-                    </div>
-
-                    <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_t_full}">
-                        <h3 class="{page.style.gwtp}">
-                            <i class="{fonts.icons.iconGwtp}"></i>
-                        </h3>
-                        <a href="#" class="{res.style.btn}">GWTP</a>
-                    </div>
-
-                    <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_t_full}">
-                        <h3 class="{page.style.jukito}">
-                            <i class="{fonts.icons.iconJukito}"></i>
-                        </h3>
-                        <a href="#" class="{res.style.btn}">JUKITO</a>
-                    </div>
+        <section class="{res.style.stripe} {res.style.colored} {res.style.centered} {page.style.tools}">
+            <div class="{res.style.wrapper} {res.grid.row} {res.style.clearfix}">
+                <div class="{page.style.plus}">+</div>
+                <div class="{res.grid.col} {res.grid.col_1_3}">
+                    <i class="{fonts.icons.iconHtml5}"></i>
                 </div>
+                <div class="{res.grid.col} {res.grid.col_1_3}">
+                    <i class="{fonts.icons.iconGwt}"></i>
+                </div>
+                <div class="{res.grid.col} {res.grid.col_1_3}">
+                    <i class="{fonts.icons.iconGCloudPlatform}"></i>
+                </div>
+                <div class="{page.style.equal}">=</div>
             </div>
         </section>
 
-        <section class="{res.style.stripe} {res.style.colored} {res.style.centered} {page.style.howWeWork}">
-            <div class="{page.style.triangleTop}"></div>
-            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col_1_2} {res.grid.col_push_1_4}">
-                    <div class="{page.style.lightbulb}">
-                        <h2>How we work</h2>
-                        <p>Agile is embedded in the ArcBees way of life. It drives our culture and productivity.</p>
-                        <div class="{page.style.diagram}">
-                            <div class="{page.style.light} {page.style.bar1} {animations.style.animation} {animations.style.infinite}"></div>
-                            <div class="{page.style.light} {page.style.bar2} {animations.style.animation} {animations.style.infinite}"></div>
-                            <div class="{page.style.light} {page.style.bar3} {animations.style.animation} {animations.style.infinite}"></div>
-                            <div class="{page.style.light} {page.style.bar4} {animations.style.animation} {animations.style.infinite}"></div>
-                            <div class="{page.style.light} {page.style.bar5} {animations.style.animation} {animations.style.infinite}"></div>
-                            <g:Image resource="{page.expertisesLightBulb}"/>
-                        </div>
-                    </div>
-                    <div class="{page.style.partner}">
-                        <h3>we work as partner</h3>
-                        <p>Small teams working on big challenges in total partnership with our clients.</p>
-                        <div class="{page.style.diagram}">
-                            <i class="{fonts.icons.iconArcbees} {page.style.icon1} {animations.style.animation} {animations.style.infinite} {animations.style.bounceIn}"></i>
-                            <i class="{fonts.icons.iconArcbees} {page.style.icon2} {animations.style.animation} {animations.style.infinite} {animations.style.bounceIn}"></i>
-                            <i class="{fonts.icons.iconArcbees} {page.style.icon3} {animations.style.animation} {animations.style.infinite} {animations.style.bounceIn}"></i>
-                            <i class="{fonts.icons.iconArcbees} {page.style.icon4} {animations.style.animation} {animations.style.infinite} {animations.style.bounceIn}"></i>
-                            <i class="{fonts.icons.iconArcbees} {page.style.icon6} {animations.style.animation} {animations.style.infinite} {animations.style.bounceIn}"></i>
-                            <i class="{fonts.icons.iconArcbees} {page.style.icon5} {page.style.iconDark} {animations.style.animation} {animations.style.infinite} {animations.style.bounceIn}"></i>
-                            <i class="{fonts.icons.iconhexagon} {page.style.iconHexa}"></i>
-                        </div>
-                    </div>
-                    <div class="{page.style.iterative}">
-                        <h3>A simple, iterative process</h3>
-                        <p>The Agile remedy is to build a small product with just a few features and give it to real
-                            users.
-                        </p>
-                        <div class="{page.style.diagram}">
-                            <div class="{page.style.launch}">
-                                <strong>Launch 1</strong>
-                            </div>
-                            <div class="{page.style.iteration1}">
-                                <strong>Sprint 1</strong>
-                            </div>
-                            <div class="{page.style.iconHexa} {animations.style.animation} {animations.style.infinite} {animations.style.hexaMove}">
-                                <i class="{fonts.icons.iconhexagon}"></i>
-                            </div>
-
-                            <div class="{page.style.circleQuarter}"></div>
-                            <div class="{page.style.circle} {animations.style.animation} {animations.style.infinite} {animations.style.spin}">
-                                <div class="{page.style.bar1}"></div>
-                                <div class="{page.style.bar2}"></div>
-                                <div class="{page.style.bar3}"></div>
-                                <div class="{page.style.bar4}"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="{page.style.costRisk}">
-                        <h3>Manage cost and limit risk</h3>
-                        <p>You build that as quickly and cheaply as possible, and watch people use it.</p>
-                        <div class="{page.style.diagram}">
-                            <i class="{fonts.icons.iconhexagon} {page.style.icon1} {animations.style.animation} {animations.style.line}"></i>
-                            <i class="{fonts.icons.iconhexagon} {page.style.icon2} {animations.style.animation} {animations.style.line}"></i>
-                            <i class="{fonts.icons.iconhexagon} {page.style.icon3} {animations.style.animation} {animations.style.line}"></i>
-                            <i class="{fonts.icons.iconhexagon} {page.style.icon4} {animations.style.animation} {animations.style.line}"></i>
-                            <i class="{fonts.icons.iconhexagon} {page.style.icon5} {animations.style.animation} {animations.style.line}"></i>
-                            <i class="{fonts.icons.iconhexagon} {page.style.icon6} {animations.style.animation} {animations.style.line}"></i>
-                            <div class="{page.style.bar1} {animations.style.animation} {animations.style.line}"></div>
-                            <div class="{page.style.bar2} {animations.style.animation} {animations.style.line}"></div>
-                            <div class="{page.style.bar3} {animations.style.animation} {animations.style.line}"></div>
-                            <div class="{page.style.bar4} {animations.style.animation} {animations.style.line}"></div>
-                            <div class="{page.style.bar5} {animations.style.animation} {animations.style.line}"></div>
-                            <div class="{page.style.bar6} {animations.style.animation} {animations.style.line}"></div>
-                            <div class="{page.style.bar7} {animations.style.animation} {animations.style.line}"></div>
-                        </div>
-                    </div>
-                    <div class="{page.style.learnAdapt}">
-                        <h3>Learn and adapt</h3>
-                        <p>Then you improve the product based on what you learn.</p>
-                        <div class="{page.style.diagram}">
-                            <div class="{page.style.bar1} {animations.style.animation}"></div>
-                            <i class="{fonts.icons.iconArcbees} {page.style.icon1} {animations.style.animation} {animations.style.infinite} {animations.style.leave}"></i>
-                            <i class="{fonts.icons.iconArcbees} {page.style.icon2} {animations.style.animation} {animations.style.infinite} {animations.style.leave2}"></i>
-                            <i class="{fonts.icons.iconArcbees} {page.style.icon3} {animations.style.animation} {animations.style.infinite} {animations.style.leave3}"></i>
-                            <i class="{fonts.icons.iconArcbees} {page.style.icon4} {animations.style.animation} {animations.style.infinite} {animations.style.leave4}"></i>
-                            <i class="{fonts.icons.iconArcbees} {page.style.icon5} {animations.style.animation} {animations.style.infinite} {animations.style.leave5}"></i>
-                            <i class="{fonts.icons.iconArcbees} {page.style.icon6} {animations.style.animation} {animations.style.infinite} {animations.style.leave6}"></i>
-                            <i class="{fonts.icons.iconhexagon} {page.style.iconHexa} {animations.style.animation} {animations.style.bounceIn}"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="{res.style.centered}">
-            <div class="{page.style.triangleBottom}"></div>
-            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col_1_2} {res.grid.col_push_1_4}">
-                    <section class="{page.style.deliver}">
-                        <h3>deliver the best product ever</h3>
-                        <p>After many cycles of real-time feedback, the end product is well-tested and useful.</p>
-                        <div class="{page.style.diagram}">
-                            <div class="{page.style.bar1} {animations.style.animation} {animations.style.infinite}"></div>
-                            <div class="{page.style.bar2} {animations.style.animation} {animations.style.infinite}"></div>
-                            <div class="{page.style.bar3} {animations.style.animation} {animations.style.infinite}"></div>
-                            <div class="{page.style.bar4} {animations.style.animation} {animations.style.infinite}"></div>
-                            <div class="{page.style.bar5} {animations.style.animation} {animations.style.infinite}"></div>
-                            <i class="{fonts.icons.iconhexagon} {page.style.iconHexa} {animations.style.animation} {animations.style.infinite} {animations.style.bounceIn}"></i>
-                        </div>
-                    </section>
-
-                </div>
-            </div>
-        </div>
-
-        <section class="{res.style.stripe} {res.style.stripeLast} {res.style.centered}">
+        <section class="{res.style.stripe} {res.style.centered}">
             <div class="{res.grid.row} {res.style.clearfix}">
-                <h2>Our awesomeness at work</h2>
-                <a href="#" class="{res.style.btn}">See your projects and products</a>
-                <a href="#" data-icon="&#xe602;" class="{res.style.backTop}"></a>
+                <h2>gwtp</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                    Aenean massa.</p>
+                <a href="#" class="{res.style.btn}">Learn more</a>
             </div>
         </section>
 

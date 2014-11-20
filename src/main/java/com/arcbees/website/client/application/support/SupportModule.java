@@ -14,16 +14,14 @@
  * the License.
  */
 
-package com.arcbees.website.client.application.license;
+package com.arcbees.website.client.application.support;
 
-import com.arcbees.website.client.application.expertise.ExpertisePresenter;
-import com.arcbees.website.client.application.expertise.ExpertiseView;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
-public class LicenseModule extends AbstractPresenterModule {
+public class SupportModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
-        bindPresenter(LicensePresenter.class, LicensePresenter.MyView.class,
-                LicenseView.class, LicensePresenter.MyProxy.class);
+        bindPresenter(SupportPresenter.class, SupportPresenter.MyView.class,
+                SupportView.class, SupportPresenter.MyProxy.class);
     }
 }

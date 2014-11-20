@@ -14,7 +14,7 @@
         <g:SimplePanel ui:field="docs"/>
         <section class="{doc.style.support}">
             <h2>Need support?</h2>
-            <a href="#{LICENSE}" class="{doc.style.btn}">Arcbees offer a variety of supports options</a>
+            <a href="#{SUPPORT}" class="{doc.style.btn}">Arcbees offer a variety of supports options</a>
             <div class="{doc.style.backTop}">
                 <span data-icon="&#xe602;"></span>
             </div>

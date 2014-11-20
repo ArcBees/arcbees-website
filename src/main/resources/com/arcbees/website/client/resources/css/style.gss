@@ -269,13 +269,13 @@ img {
     height: 100%;
 }
 
-.btn.collapsable {
+.btn.collapsible {
     color: C_TEXT;
     background-color: C_TEXT;
 }
 
-.btn.collapsable::before,
-.btn.collapsable::after {
+.btn.collapsible::before,
+.btn.collapsible::after {
     content: "\e602";
     font-family: "icons";
     color: C_TEXT_LIGHT;
@@ -296,34 +296,34 @@ img {
     transition: top 0.2s, bottom 0.2s, height 0;
 }
 
-.btn.collapsable::before {
+.btn.collapsible::before {
     top: auto;
     bottom: 5px;
 
     @mixin rotate_180_cw();
 }
 
-.btn.collapsable:hover::before {
+.btn.collapsible:hover::before {
     height: auto;
 
     bottom: 7px;
 }
 
-.btn.collapsable:hover::after {
+.btn.collapsible:hover::after {
     height: auto;
 
     top: 7px;
 }
 
-.btn.collapsable.closer {
+.btn.collapsible.closer {
     background-color: transparent;
 
     height: 43px;
     border: 0;
 }
 
-.btn.collapsable.closer::before,
-.btn.collapsable.closer::after {
+.btn.collapsible.closer::before,
+.btn.collapsible.closer::after {
     background-color: transparent;
     color: C_TEXT;
 }
@@ -692,7 +692,7 @@ img {
 .focusBlock {
     text-align: center;
 
-    padding: 70px 0;
+    padding: 30px 0 70px;
 }
 
 .focusBlock p {

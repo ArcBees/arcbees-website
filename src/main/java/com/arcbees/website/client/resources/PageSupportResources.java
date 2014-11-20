@@ -18,35 +18,15 @@ package com.arcbees.website.client.resources;
 
 import com.arcbees.gsss.animation.client.AnimationResources;
 
-public interface PageLicenseResources extends FontResources {
+public interface PageSupportResources extends FontResources {
     interface Style extends AnimationResources.Animation {
-        String license();
-
         String plan();
 
-        String point();
-
-        String billed();
-
         String price();
-
-        String last();
 
         String featuredIcons();
 
         String bestbuy();
-
-        String gwtp();
-
-        String jukito();
-
-        String chosen();
-
-        String productSupport();
-
-        String moreSupport();
-
-        String product();
 
         String header();
 
@@ -61,11 +41,27 @@ public interface PageLicenseResources extends FontResources {
         String iconJukito();
 
         String iconChosen();
+
+        String features();
+
+        String support();
+
+        String popChoice();
+
+        String hours();
+
+        String developers();
+
+        String advisory();
+
+        String includes();
+
+        String offers();
     }
 
     @Source({"com/arcbees/gsss/animation/client/animationsettings.gss",
             "com/arcbees/gsss/animation/client/animations.gss",
             "com/arcbees/gsss/mixin/client/mixins.gss",
-            "css/colors.gss", "fonts/geometria/geometria.gss", "css/pages/license.gss"})
+            "css/colors.gss", "fonts/geometria/geometria.gss", "css/pages/support.gss"})
     Style style();
 }

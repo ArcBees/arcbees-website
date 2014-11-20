@@ -1,12 +1,11 @@
 @require "colors";
 @require "geometria";
 
-/* -- Page : license ------------------------------------- */
-
+/* -- Page : support ------------------------------------- */
 
 /* -- Header-- */
 
-.license .header > div {
+.support .header > div {
     margin: -133px 0 0 -377px;
     height: 200px;
     width: 755px;
@@ -16,16 +15,16 @@
     left: 50%;
 }
 
-.license .header .iconhexa1,
-.license .header .iconhexa2,
-.license .header .iconhexa3 {
+.support .header .iconhexa1,
+.support .header .iconhexa2,
+.support .header .iconhexa3 {
     margin-left: -113px;
 
     position: absolute;
     left: 50%;
 }
 
-.license .header .iconhexa1 {
+.support .header .iconhexa1 {
     @mixin animation_name(iconhexa1);
     @mixin animation_speed(.6s);
 }
@@ -35,7 +34,7 @@
     100% {transform: translate(-250px, 0px);}
 }
 
-.license .header .iconhexa3 {
+.support .header .iconhexa3 {
     @mixin animation_name(iconhexa3);
     @mixin animation_speed(.6s);
 }
@@ -45,9 +44,9 @@
     100% {transform: translate(250px, 0px);}
 }
 
-.license .header .iconGwtp,
-.license .header .iconChosen,
-.license .header .iconJukito {
+.support .header .iconGwtp,
+.support .header .iconChosen,
+.support .header .iconJukito {
     position: absolute;
     left: 50%;
 
@@ -60,19 +59,19 @@
     100% {opacity: 1;}
 }
 
-.license .header .iconGwtp {
+.support .header .iconGwtp {
     margin-left: -363px;
 
     @mixin animation_delay_speed(.8s);
 }
 
-.license .header .iconJukito {
+.support .header .iconJukito {
     margin-left: -113px;
 
     @mixin animation_delay_speed(1.2s);
 }
 
-.license .header .iconChosen {
+.support .header .iconChosen {
     margin-left: 137px;
 
     @mixin animation_delay_speed(1.6s);
@@ -80,18 +79,18 @@
 
 /* -- Main-- */
 
-.license ul {
+.support ul {
     padding-left: 0;
 
     list-style-type: none;
 }
 
-.license ul li::before {
+.support ul li::before {
     content: "+ ";
     font-family: "geometriaBold", Arial, sans-serif;
 }
 
-.license .featuredIcons i {
+.support .featuredIcons i {
     color: #fff;
     font-size: 22.5rem;
     line-height: 1;
@@ -100,32 +99,49 @@
 }
 
 @media (max-width: 979px) {
-    .license .featuredIcons {
+    .support .featuredIcons {
         font-size: 17rem;
     }
 }
 
 @media (max-width: 649px) {
-    .license .featuredIcons {
+    .support .featuredIcons {
         font-size: 8rem;
     }
 }
 
+.offers {
+    margin-bottom: -173px;
+}
+
 .plan {
-    padding-top: 1.4em;
+    padding-top: 4.5em;
+}
+
+.plan .popChoice {
+    background-color: #dcc804;
+    color: C_TEXT_LIGHT;
+    text-align: center;
+    text-transform: uppercase;
+
+    margin-bottom: 3px;
+    padding: 4px 0;
+}
+
+.plan .popChoice h4 {
+    font-family: "geometria";
+
+    margin: 0;
 }
 
 .plan header {
-    background-color: C_STRIPE_DARK;
-    color: C_STRIPE_LIGHT;
+    background-color: C_STRIPE_LIGHT;
 
-    padding: 8px 23px 2px;
+    padding: 8px 23px 40px;
 }
 
 .plan header h3 {
     font-size: 1.5rem;
-    font-family: "geometriaLight", Arial, sans-serif;
-    font-weight: normal;
     text-align: left;
 
     margin-top: 0.5em;
@@ -150,67 +166,67 @@
     display: block;
 }
 
-.plan header .billed {
-    color: #525252;
-    font-style: normal;
+.plan section {
+    background-color: C_STRIPE_DARK;
+    color: C_TEXT_LIGHT;
+}
+
+.plan .includes {
+    padding: 2em 0;
+}
+
+.plan .hours {
+    border-top: 1px solid C_TEXT_LIGHT;
+}
+
+.plan .hours p {
+    font-family: "geometriaBold";
+    font-size: 2.5rem;
+    line-height: 1em;
+
+    padding: .5em;
+    margin-top: 0;
+}
+
+.plan .hours p span {
     font-size: 1.5rem;
-}
-
-.plan ul {
-    background-color: #fdf382;
-
-    padding: 0 0 1em;
-    margin-top: 0.4em;
-}
-
-.plan li {
-    margin-bottom: 0;
-    padding: 0.1em 1em 0.5em;
-}
-
-.plan li::before {
-    display: none;
-}
-
-.plan li strong {
     display: block;
 }
 
-.plan li span {
+.plan .developers {
+    border-right: 1px solid #727272;
+}
+
+.plan .developers,
+.plan .advisory {
+    display: inline-block;
+    width: 48%;
+}
+
+.plan .developers p,
+.plan .advisory p {
+    font-size: 2.5rem;
+    line-height: 1;
+
+    margin: 0;
+}
+
+.plan .developers span,
+.plan .advisory span {
+    font-size: 1.5rem;
+
     display: block;
 }
 
-.plan li.point {
-    background-color: #fff;
-    font-size: 2rem;
-    font-family: "geometriaBold", Arial, sans-serif;
-}
-
-.plan li.point:first-child {
-    padding-top: 1em;
-}
-
-.plan li.point.last {
-    padding-bottom: 1em;
-    margin-bottom: 1em;
-}
-
-.plan i {
-    font-size: 2.8rem;
-}
 
 @media (max-width: 979px) and (min-width: 650px) {
     .plan {
         width: 33%;
-        padding-top: 1.4em;
+        padding-top: 4.5em;
     }
 
     .plan .price strong {
         font-size: 3rem;
-    }
-
-    .plan li.point {
-        font-size: 1.8rem;
     }
 }
 
@@ -235,64 +251,22 @@
     padding-bottom: 1.5em;
 }
 
-/* -> Products -- */
+/* -> Features -- */
 
-.productSupport h3,
-.moreSupport h3 {
-    font-family: 'geometria';
+.features {
+    padding-top: 155px;
 }
 
-.license .gwtp,
-.license .jukito,
-.license .chosen {
-    font-size: 5rem;
-    line-height: 0.75em;
-
-    margin-top: 0.8em;
-    min-height: 220px;
+.features h2 {
+    margin: 1.4em 0 1.15em;
 }
 
-.license .gwtp i,
-.license .jukito i,
-.license .chosen i {
-    font-size: 13rem;
-
-    display: block;
-    margin-bottom: 0.1em;
+.features i {
+    font-size: 9.5rem;
 }
 
-.license .gwtp i {
-    color: C_PRODUCT_GWTP;
-}
+.features h3 {
+    line-height: 1em;
 
-.license .jukito i {
-    color: C_PRODUCT_JUKITO;
-}
-
-.license .chosen i {
-    color: C_PRODUCT_CHOSEN;
-}
-
-.license .chosen span {
-    font-size: 3rem;
-
-    display: block;
-}
-
-.productSupport a {
-    margin-top: 20px;
-}
-
-@media (max-width: 979px) and (min-width: 650px) {
-    .productSupport .product {
-        width: 33%;
-    }
-}
-
-@media (max-width: 649px) {
-    .license .gwtp,
-    .license .jukito,
-    .license .chosen {
-        min-height: 0;
-    }
+    margin-top: .75em;
 }

@@ -62,6 +62,22 @@ public interface FontResources extends ClientBundle {
         String iconPyramid();
 
         String iconGearing();
+
+        String iconHtml5();
+
+        String iconGCloudPlatform();
+
+        String iconGwt();
+
+        String iconPhoneSuppport();
+
+        String iconWebSupport();
+
+        String iconSupportCases();
+
+        String iconRespTime();
+
+        String iconCommRes();
     }
 
     @ClientBundle.Source("fonts/icons/icons.gss")

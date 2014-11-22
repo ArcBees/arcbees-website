@@ -17,4 +17,10 @@
     <set-configuration-property name="CssResource.style" value="pretty"/>
 
     <set-configuration-property name="gwtp.bootstrapper" value="com.arcbees.website.client.BootstrapperImpl"/>
+
+    <!-- French language, independent of country -->
+    <extend-property name="locale" values="fr" />
+    <!-- English language, independent of country -->
+    <extend-property name="locale" values="en" />
+    <set-property-fallback name="locale" value="en" />
 </module>

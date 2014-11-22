@@ -1,6 +1,9 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-        xmlns:g="urn:import:com.google.gwt.user.client.ui">
+        xmlns:g="urn:import:com.google.gwt.user.client.ui"
+        ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+        ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
+        ui:generateLocales="default">
 
     <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
     <ui:with field="page" type="com.arcbees.website.client.resources.PageHomeResources"/>
@@ -18,18 +21,32 @@
         <section class="{res.style.stripe} {res.style.header} {page.style.header} {res.style.colored}">
                 <div class="{page.style.txtBanner}">
                     <p>
-                        <strong>we<span class="{page.style.txtAre} {animations.style.animation}">are</span><span class="{page.style.txtBuild} {animations.style.animation}">build</span>
+                        <strong>
+                            <ui:msg description="we">we</ui:msg>
+                            <span class="{page.style.txtAre} {animations.style.animation}">
+                                <ui:msg description="are">are</ui:msg>
+                            </span><span class="{page.style.txtBuild} {animations.style.animation}">
+                            <ui:msg description="build">build</ui:msg>
+                        </span>
                         </strong>
                         <span class="{page.style.txtArch} {animations.style.animation}">
-                            arc<span class="{page.style.txtArchitects} {animations.style.animation}">hitect</span><span class="{page.style.txtBees} {animations.style.animation}">bees</span>
+                            arc<span class="{page.style.txtArchitects} {animations.style.animation}">
+                            <ui:msg description="hitect">hitect</ui:msg>
+                        </span><span class="{page.style.txtBees} {animations.style.animation}">
+                            <ui:msg description="bees">bees</ui:msg>
                         </span>
-                        <span class="{page.style.txtWeb} {animations.style.animation}">web applications</span>
+                        </span>
+                        <span class="{page.style.txtWeb} {animations.style.animation}">
+                            <ui:msg description="web applications">web applications</ui:msg>
+                        </span>
                     </p>
                 </div>
                 <div class="{res.grid.row} {res.style.clearfix} {page.style.btns} {res.style.centered}">
                     <div class="{res.grid.col} {res.grid.col_full}">
                         <a href="#{EXPERTISE}" class="{res.style.btn}">Expertise</a>
-                        <a href="#{PRODUCTS}" class="{res.style.btn}">Products</a>
+                        <a href="#{PRODUCTS}" class="{res.style.btn}">
+                            <ui:msg description="products">Products</ui:msg>
+                        </a>
                         <a href="#{SERVICES}" class="{res.style.btn}">Services</a>
                     </div>
                 </div>

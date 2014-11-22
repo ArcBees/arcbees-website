@@ -123,6 +123,9 @@
 
                     <copyWebapp>true</copyWebapp>
                     <hostedWebapp>${webappDirectory}</hostedWebapp>
+
+                    <extraParam>true</extraParam>
+                    <extra>extras</extra>
                 </configuration>
                 <executions>
                     <execution>

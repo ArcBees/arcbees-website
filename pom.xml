@@ -100,11 +100,13 @@
                 <groupId>com.google.gwt</groupId>
                 <artifactId>gwt-user</artifactId>
                 <version>${gwt.version}</version>
+                <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>com.google.gwt</groupId>
                 <artifactId>gwt-dev</artifactId>
                 <version>${gwt.version}</version>
+                <scope>provided</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -126,7 +128,8 @@
                     <mode>htmlunit</mode>
                     <gen>gen</gen>
 
-                    <extraJvmArgs>-Xss1024K -Xmx1024M -XX:MaxPermSize=512M</extraJvmArgs>
+                    <extraJvmArgs>-Xss1024K -Xmx1024M -XX:MaxPermSize=512M -Duser.language=en
+                        -Duser.country=US</extraJvmArgs>
                     <logLevel>INFO</logLevel>
 
                     <copyWebapp>true</copyWebapp>

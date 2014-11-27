@@ -1,4 +1,4 @@
-@provide 'gridsettings';
+@provide 'gsss-grid-settings';
 
 /* -- Settings --------------------------------------------- */
 

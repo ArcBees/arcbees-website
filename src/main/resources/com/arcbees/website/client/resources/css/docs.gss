@@ -1,3 +1,5 @@
+@require "gsss-mixins";
+
 @def BG_CODE resourceUrl("bgCode");
 
 /* -- Init ----------------------------------------------- */

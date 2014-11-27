@@ -1,8 +1,8 @@
 package com.arcbees.website.client.resources;
 
 import com.google.gwt.resources.client.ClientBundle;
+import com.google.gwt.resources.client.CssResource;
 import com.google.gwt.resources.client.DataResource;
-import com.google.gwt.resources.client.GssResource;
 
 public interface FontResources extends ClientBundle {
     String MIME_TYPE_TTF = "application/font-sfnt";
@@ -10,7 +10,7 @@ public interface FontResources extends ClientBundle {
     String MIME_TYPE_WOFF = "application/font-woff";
     String MIME_TYPE_SVG = "image/svg+xml";
 
-    public interface Icons extends GssResource {
+    public interface Icons extends CssResource {
         String iconArcbees();
 
         String iconGae();

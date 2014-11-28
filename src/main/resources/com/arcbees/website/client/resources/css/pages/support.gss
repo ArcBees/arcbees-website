@@ -1,5 +1,7 @@
 @require "colors";
 @require "geometria";
+@require "gsss-mixins";
+@require "gsss-animation";
 
 /* -- Page : support ------------------------------------- */
 

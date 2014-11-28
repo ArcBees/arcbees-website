@@ -16,11 +16,11 @@
 
 package com.arcbees.website.client.resources;
 
-import com.google.gwt.resources.client.GssResource;
+import com.google.gwt.resources.client.CssResource;
 import com.google.gwt.resources.client.ImageResource;
 
 public interface PageProductResources extends FontResources {
-    interface Style extends GssResource {
+    interface Style extends CssResource {
         String social();
 
         String menuHeader();

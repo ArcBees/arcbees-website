@@ -17,13 +17,13 @@
 package com.arcbees.website.client.resources;
 
 import com.arcbees.gsss.grid.client.GridResources;
-import com.google.gwt.resources.client.GssResource;
+import com.google.gwt.resources.client.CssResource;
 
 public interface AppResources extends FontResources {
-    interface Normalize extends GssResource {
+    interface Normalize extends CssResource {
     }
 
-    interface Style extends GssResource {
+    interface Style extends CssResource {
         String hidden();
 
         String clearfix();

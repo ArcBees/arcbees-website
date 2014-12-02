@@ -39,9 +39,15 @@ public class HomeView extends ViewImpl implements HomePresenter.MyView {
     @UiField
     AnchorElement successStoryBtn;
     @UiField
+    AnchorElement successStoryCloser;
+    @UiField
     DivElement successStoryMore;
     @UiField
-    AnchorElement successStoryCloser;
+    AnchorElement architectBtn;
+    @UiField
+    DivElement architectMore;
+    @UiField
+    DivElement architect;
     @UiField
     AnchorElement beesBtn;
     @UiField
@@ -70,23 +76,15 @@ public class HomeView extends ViewImpl implements HomePresenter.MyView {
     private void bind() {
         bindSuccessStory();
         bindBees();
+        bindArchitect();
     }
 
-    private void bindBees() {
-        $(beesMore).hide();
-        $(beesBtn).click(new Function() {
+    private void bindArchitect() {
+        $(architectMore).hide();
+        $(architectBtn).click(new Function() {
             public void f(Element e) {
-                $(beesMore).slideToggle(SLIDE_DELAY);
-                $(beesBtn).toggleClass(appResources.style().collapsible());
-                $(bees).toggleClass(pageResources.style().opened());
-            }
-        });
-
-        $(beesCloser).click(new Function() {
-            public void f(Element e) {
-                $(beesMore).slideUp(SLIDE_DELAY);
-                $(beesBtn).removeClass(appResources.style().collapsible());
-                $(bees).removeClass(pageResources.style().opened());
+                $(architectMore).slideToggle(SLIDE_DELAY);
+                $(architectBtn).toggleClass(appResources.style().collapsible());
             }
         });
     }
@@ -104,6 +102,23 @@ public class HomeView extends ViewImpl implements HomePresenter.MyView {
             public void f(Element e) {
                 $(successStoryMore).slideUp(SLIDE_DELAY);
                 $(successStoryBtn).removeClass(appResources.style().collapsible());
+            }
+        });
+    }
+
+    private void bindBees() {
+        $(beesMore).hide();
+        $(beesBtn).click(new Function() {
+            public void f(Element e) {
+                $(beesMore).slideToggle(SLIDE_DELAY);
+                $(bees).toggleClass(pageResources.style().collapsible());
+            }
+        });
+
+        $(beesCloser).click(new Function() {
+            public void f(Element e) {
+                $(beesMore).slideUp(SLIDE_DELAY);
+                $(bees).removeClass(pageResources.style().collapsible());
             }
         });
     }

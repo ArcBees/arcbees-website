@@ -35,7 +35,7 @@ public interface PageHomeResources extends FontResources {
 
         String txtArch();
 
-        String txtBuild();
+        String txtCreate();
 
         String txtBees();
 
@@ -43,7 +43,7 @@ public interface PageHomeResources extends FontResources {
 
         String txtArchitects();
 
-        String txtWeb();
+        String txtProducts();
 
         String txtBanner();
 
@@ -51,13 +51,35 @@ public interface PageHomeResources extends FontResources {
 
         String successStoryMore();
 
-        String opened();
+        String collapsible();
 
         String ssicons();
 
         String successStoryHolder();
 
         String btns();
+
+        String path3();
+
+        String path2();
+
+        String ssiconsHexa();
+
+        String logoConstruct();
+
+        String border();
+
+        String logo();
+
+        String horizontal();
+
+        String vertical();
+
+        String diagonal();
+
+        String path1();
+
+        String architect();
     }
 
     @Source("img/pages/homeBeesBg.png")

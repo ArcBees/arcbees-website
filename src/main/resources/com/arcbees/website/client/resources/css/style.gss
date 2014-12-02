@@ -239,7 +239,7 @@ img {
     text-decoration: none;
 
     display: inline-block;
-    padding: 1em;
+    padding: .6em 1em;
     border: 2px solid C_TEXT;
 
     position: relative;
@@ -283,10 +283,10 @@ img {
 
     height: auto;
     width: auto;
-    margin-left: -5px;
+    margin-left: -7px;
 
     position: absolute;
-    top: 5px;
+    top: 0;
     left: 50%;
     z-index: 500;
 
@@ -299,7 +299,7 @@ img {
 
 .btn.collapsible::before {
     top: auto;
-    bottom: 5px;
+    bottom: 0;
 
     @mixin rotate_180_cw();
 }
@@ -307,16 +307,17 @@ img {
 .btn.collapsible:hover::before {
     height: auto;
 
-    bottom: 7px;
+    bottom: 2px;
 }
 
 .btn.collapsible:hover::after {
     height: auto;
 
-    top: 7px;
+    top: 2px;
 }
 
-.btn.collapsible.closer {
+.btn.collapsible.closer,
+.dark .btn.collapsible.closer {
     background-color: transparent;
 
     height: 43px;
@@ -343,6 +344,22 @@ img {
 
 .dark .btn:hover {
     color: C_TEXT;
+}
+
+.dark .btn.collapsible {
+    color: C_TEXT_LIGHT;
+    background-color: C_TEXT_LIGHT;
+}
+
+.dark .btn.collapsible::before,
+.dark .btn.collapsible::after {
+    color: C_TEXT;
+}
+
+.dark .btn.collapsible.closer::before,
+.dark .btn.collapsible.closer::after {
+    background-color: transparent;
+    color: C_TEXT_LIGHT;
 }
 
 /* -- Classes ------------------------------------------- */

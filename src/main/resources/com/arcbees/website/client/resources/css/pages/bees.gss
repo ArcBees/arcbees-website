@@ -34,7 +34,7 @@
     top: 174px;
     right: 50%;
 
-    @mixin animation_delay_speed(0.2sec);
+    @mixin animation_delay(0.2sec);
 }
 
 .bees .intro i.icon1::before {
@@ -45,7 +45,7 @@
     top: 87px;
     right: 50%;
 
-    @mixin animation_delay_speed(0.3sec);
+    @mixin animation_delay(0.3sec);
 }
 
 .bees .intro i.icon2::before {
@@ -58,7 +58,7 @@
     top: 0;
     right: 50%;
 
-    @mixin animation_delay_speed(0.4sec);
+    @mixin animation_delay(0.4sec);
 }
 
 .bees .intro i.icon3::before {
@@ -71,7 +71,7 @@
     top: 0;
     left: 50%;
 
-    @mixin animation_delay_speed(0.5sec);
+    @mixin animation_delay(0.5sec);
 }
 
 .bees .intro i.icon4::before {
@@ -82,7 +82,7 @@
     top: 87px;
     left: 50%;
 
-    @mixin animation_delay_speed(0.6sec);
+    @mixin animation_delay(0.6sec);
 }
 
 .bees .intro i.icon5::before {
@@ -95,7 +95,7 @@
     top: 174px;
     left: 50%;
 
-    @mixin animation_delay_speed(0.7sec);
+    @mixin animation_delay(0.7sec);
 }
 
 .bees .intro i.icon6::before {

@@ -53,8 +53,8 @@
     position: absolute;
 
     @mixin animation_name(disappear);
-    @mixin animation_speed(.5s);
-    @mixin animation_delay_speed(3s);
+    @mixin animation_duration(.5s);
+    @mixin animation_delay(3s);
 }
 
 /* -- animation on the "bee" word -- */
@@ -65,8 +65,8 @@
     left: 145px;
 
     @mixin animation_name(bees);
-    @mixin animation_speed(.5s);
-    @mixin animation_delay_speed(.75s);
+    @mixin animation_duration(.5s);
+    @mixin animation_delay(.75s);
 }
 
 @-webkit-keyframes bees {
@@ -83,8 +83,8 @@
     left: 145px;
 
     @mixin animation_name(appear);
-    @mixin animation_speed(.5s);
-    @mixin animation_delay_speed(1.5s);
+    @mixin animation_duration(.5s);
+    @mixin animation_delay(1.5s);
 }
 
 /* -- animation on the "architects bees" words -- */
@@ -93,8 +93,8 @@
     position: absolute;
 
     @mixin animation_name(disappear);
-    @mixin animation_speed(.5s);
-    @mixin animation_delay_speed(3s);
+    @mixin animation_duration(.5s);
+    @mixin animation_delay(3s);
 }
 
 /* -- animation on the "create" word -- */
@@ -112,8 +112,8 @@
     position: absolute;
 
     @mixin animation_name(appear);
-    @mixin animation_speed(1s);
-    @mixin animation_delay_speed(3s);
+    @mixin animation_duration(1s);
+    @mixin animation_delay(3s);
 }
 
 /* -- END OF ANIMATIONS -- */
@@ -244,17 +244,17 @@
 }
 
 .home .ssiconsHexa .path1 {
-    @mixin animation_delay_speed(1s);
+    @mixin animation_delay(1s);
     -webkit-animation-fill-mode:forwards;
 }
 
 .home .ssiconsHexa .path2 {
-    @mixin animation_delay_speed(1.5s);
+    @mixin animation_delay(1.5s);
     -webkit-animation-fill-mode:forwards;
 }
 
 .home .ssiconsHexa .path3 {
-    @mixin animation_delay_speed(2s);
+    @mixin animation_delay(2s);
     -webkit-animation-fill-mode:forwards;
 }
 
@@ -278,7 +278,7 @@
 
 .logoConstruct path.logo {
     -webkit-animation: logo 2s;
-    @mixin animation_delay_speed(3s);
+    @mixin animation_delay(3s);
     -webkit-animation-fill-mode:forwards;
 
     fill: #c9b804;

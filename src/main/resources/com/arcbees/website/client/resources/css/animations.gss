@@ -36,13 +36,13 @@
 /* -> spin -- */
 
 .spin {
-    @mixin animation_speed(5s);
-    @mixin animation_ease(linear);
+    @mixin animation_duration(5s);
+    @mixin animation_timing_function(linear);
 }
 
 .spinCCW {
-    @mixin animation_speed(5s);
-    @mixin animation_ease(linear);
+    @mixin animation_duration(5s);
+    @mixin animation_timing_function(linear);
 }
 
 /* -> leave -- */

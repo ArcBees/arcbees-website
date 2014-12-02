@@ -28,7 +28,7 @@
 
 .support .header .iconhexa1 {
     @mixin animation_name(iconhexa1);
-    @mixin animation_speed(.6s);
+    @mixin animation_duration(.6s);
 }
 
 @-webkit-keyframes iconhexa1 {
@@ -38,7 +38,7 @@
 
 .support .header .iconhexa3 {
     @mixin animation_name(iconhexa3);
-    @mixin animation_speed(.6s);
+    @mixin animation_duration(.6s);
 }
 
 @-webkit-keyframes iconhexa3 {
@@ -53,7 +53,7 @@
     left: 50%;
 
     @mixin animation_name(iconhexaProduct);
-    @mixin animation_speed(.2s);
+    @mixin animation_duration(.2s);
 }
 
 @-webkit-keyframes iconhexaProduct {
@@ -64,19 +64,19 @@
 .support .header .iconGwtp {
     margin-left: -363px;
 
-    @mixin animation_delay_speed(.8s);
+    @mixin animation_delay(.8s);
 }
 
 .support .header .iconJukito {
     margin-left: -113px;
 
-    @mixin animation_delay_speed(1.2s);
+    @mixin animation_delay(1.2s);
 }
 
 .support .header .iconChosen {
     margin-left: 137px;
 
-    @mixin animation_delay_speed(1.6s);
+    @mixin animation_delay(1.6s);
 }
 
 /* -- Main-- */

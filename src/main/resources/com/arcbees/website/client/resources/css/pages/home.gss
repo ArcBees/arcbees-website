@@ -24,11 +24,12 @@
 .txtBanner {
     height: 110px;
     width: 680px;
-    margin: -52px 0 0 -325px;
+    margin: -40px 0 0 -325px;
 
     position: absolute;
     top: 50%;
     left: 50%;
+    z-index: 9;
 }
 
 @-webkit-keyframes disappear {
@@ -52,22 +53,20 @@
     position: absolute;
 
     @mixin animation_name(disappear);
-    @mixin animation_speed(.5s);
-    @mixin animation_delay_speed(3s);
+    @mixin animation_duration(.5s);
+    @mixin animation_delay(3s);
 }
 
 /* -- animation on the "bee" word -- */
 
 .home .header .txtBees {
-    background: none;
-
-    display: inline;
-
     position: absolute;
+    top: 0;
+    left: 145px;
 
     @mixin animation_name(bees);
-    @mixin animation_speed(.5s);
-    @mixin animation_delay_speed(.75s);
+    @mixin animation_duration(.5s);
+    @mixin animation_delay(.75s);
 }
 
 @-webkit-keyframes bees {
@@ -78,44 +77,43 @@
 /* -- animation on the "architects" word -- */
 
 .home .header .txtArchitects {
-    display: inline;
 
     position: absolute;
+    top: 0;
+    left: 145px;
 
     @mixin animation_name(appear);
-    @mixin animation_speed(.5s);
-    @mixin animation_delay_speed(1.5s);
+    @mixin animation_duration(.5s);
+    @mixin animation_delay(1.5s);
 }
 
 /* -- animation on the "architects bees" words -- */
 
 .home .header .txtArch {
-    display: inline;
-
     position: absolute;
 
     @mixin animation_name(disappear);
-    @mixin animation_speed(.5s);
-    @mixin animation_delay_speed(3s);
+    @mixin animation_duration(.5s);
+    @mixin animation_delay(3s);
 }
 
-/* -- animation on the "build" word -- */
+/* -- animation on the "create" word -- */
 
-.home .header .txtBuild {
+.home .header .txtCreate {
     font-family: "geometriaBold";
 
     margin-left: 17px;
 }
 
-.home .header .txtBuild,
-.home .header .txtWeb {
+.home .header .txtCreate,
+.home .header .txtProducts {
     display: inline;
 
     position: absolute;
 
     @mixin animation_name(appear);
-    @mixin animation_speed(1s);
-    @mixin animation_delay_speed(3s);
+    @mixin animation_duration(1s);
+    @mixin animation_delay(3s);
 }
 
 /* -- END OF ANIMATIONS -- */
@@ -148,22 +146,52 @@
     z-index: 100;
 }
 
-.home .bees {
-    background: C_PRIMARY;
+.btns a {
+    margin: 0 10em;
 }
 
-.home .bees.opened {
-    background: C_PRIMARY BEES_BG repeat-x center top;
+.btns a:first-of-type {
+    margin-left: 0;
+}
+
+.btns a:last-child {
+    margin-right: 0;
+}
+
+.home .architect p {
+    margin-top: 6rem;
+}
+
+.home .bees {
+    background: C_PRIMARY;
+
+    position: relative;
+}
+
+.home .bees.collapsible {
     background-size: auto 100%;
+
+    position: relative;
+}
+
+.home .bees .logoConstruct {
+    display: none;
+}
+
+.home .bees.collapsible .logoConstruct {
+    display: block;
+    margin-left: -1426px;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
 }
 
 .home .bees h3 {
-    margin: 0.2em 0 0.1em;
+    margin: 0 0 0.1em;
 }
 
 .home .beesContent {
-    text-align: left;
-
     padding-top: 190px;
 }
 
@@ -196,6 +224,179 @@
 
 .home .ssicons {
     margin-left: -0.8em;
+}
+
+.home .ssiconsHexa {
+    margin-left: -257px;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.home .ssiconsHexa .path1,
+.home .ssiconsHexa .path2,
+.home .ssiconsHexa .path3 {
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 1500;
+    -webkit-animation: path 1.5s linear;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.home .ssiconsHexa .path1 {
+    @mixin animation_delay(1s);
+    -webkit-animation-fill-mode:forwards;
+}
+
+.home .ssiconsHexa .path2 {
+    @mixin animation_delay(1.5s);
+    -webkit-animation-fill-mode:forwards;
+}
+
+.home .ssiconsHexa .path3 {
+    @mixin animation_delay(2s);
+    -webkit-animation-fill-mode:forwards;
+}
+
+@keyframes path {
+    from {
+        stroke-dashoffset: 1500;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-webkit-keyframes path {
+    from {
+        stroke-dashoffset: 1500;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.logoConstruct path.logo {
+    -webkit-animation: logo 2s;
+    @mixin animation_delay(3s);
+    -webkit-animation-fill-mode:forwards;
+
+    fill: #c9b804;
+    opacity: 0;
+}
+
+@-webkit-keyframes logo {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: .95;
+    }
+}
+
+.logoConstruct .diagonal {
+    stroke-dasharray: 1240;
+    stroke-dashoffset: 1240;
+    -webkit-animation: diag .75s linear;
+    -webkit-animation-delay: .5s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.logoConstruct .vertical {
+    stroke-dasharray: 808;
+    stroke-dashoffset: 808;
+    -webkit-animation: vert .75s linear;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.logoConstruct .horizontal {
+    stroke-dasharray: 2640;
+    stroke-dashoffset: 2640;
+    -webkit-animation: hor .5s linear;
+    -webkit-animation-delay: 1.5s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.logoConstruct .border {
+    fill: transparent;
+    stroke-dasharray: 1440;
+    stroke-dashoffset: 1440;
+    -webkit-animation: border 2s linear;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes border {
+    from {
+        stroke-dashoffset: 1440;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-webkit-keyframes border {
+    from {
+        stroke-dashoffset: 1440;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes diag {
+    from {
+        stroke-dashoffset: 1240;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-webkit-keyframes diag {
+    from {
+        stroke-dashoffset: 1240;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes hor {
+    from {
+        stroke-dashoffset: 2640;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-webkit-keyframes hor {
+    from {
+        stroke-dashoffset: 2640;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes vert {
+    from {
+        stroke-dashoffset: 750;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-webkit-keyframes vert {
+    from {
+        stroke-dashoffset: 750;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
 }
 
 .home .successStoryMore a {
@@ -254,8 +455,4 @@
     .equal {
         top: -10px;
     }
-}
-
-.btns a {
-    margin: 0 4em;
 }

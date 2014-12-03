@@ -37,8 +37,8 @@
 .pyramidAnim3 {
     bottom: -20px;
 
-    @mixin animation_delay_speed(.2s);
-    @mixin animation_speed(.5s);
+    @mixin animation_delay(.2s);
+    @mixin animation_duration(.5s);
     @mixin animation_name(pyramid1);
 }
 
@@ -58,8 +58,8 @@
 .pyramidAnim5 {
     bottom: 155px;
 
-    @mixin animation_delay_speed(.6s);
-    @mixin animation_speed(.5s);
+    @mixin animation_delay(.6s);
+    @mixin animation_duration(.5s);
     @mixin animation_name(pyramid2);
 }
 
@@ -76,8 +76,8 @@
 
     bottom: 330px;
 
-    @mixin animation_delay_speed(1s);
-    @mixin animation_speed(.5s);
+    @mixin animation_delay(1s);
+    @mixin animation_duration(.5s);
     @mixin animation_name(pyramid3);
 }
 
@@ -338,9 +338,9 @@
     left: 50%;
 
     @mixin rounded(5px);
-    @mixin animation_delay_speed(.2s);
+    @mixin animation_delay(.2s);
     @mixin animation_name(deliver);
-    @mixin animation_speed(1s);
+    @mixin animation_duration(1s);
 }
 
 .lightbulb [class*="bar"] {
@@ -437,8 +437,8 @@
     top: 133px;
     right: 50%;
 
-    @mixin animation_delay_speed(1s);
-    @mixin animation_speed(5s);
+    @mixin animation_delay(1s);
+    @mixin animation_duration(5s);
 }
 
 .partner i.icon1::before {
@@ -449,8 +449,8 @@
     top: 67px;
     right: 50%;
 
-    @mixin animation_delay_speed(1.3s);
-    @mixin animation_speed(5s);
+    @mixin animation_delay(1.3s);
+    @mixin animation_duration(5s);
 }
 
 .partner i.icon2::before {
@@ -463,8 +463,8 @@
     top: 0px;
     right: 50%;
 
-    @mixin animation_delay_speed(1.4s);
-    @mixin animation_speed(5s);
+    @mixin animation_delay(1.4s);
+    @mixin animation_duration(5s);
 }
 
 .partner i.icon3::before {
@@ -477,8 +477,8 @@
     top: -1px;
     left: 50%;
 
-    @mixin animation_delay_speed(1.5s);
-    @mixin animation_speed(5s);
+    @mixin animation_delay(1.5s);
+    @mixin animation_duration(5s);
 }
 
 .partner i.icon4::before {
@@ -489,8 +489,8 @@
     top: 66px;
     left: 50%;
 
-    @mixin animation_delay_speed(1.6s);
-    @mixin animation_speed(5s);
+    @mixin animation_delay(1.6s);
+    @mixin animation_duration(5s);
 }
 
 .partner i.icon5::before {
@@ -512,8 +512,8 @@
     top: 133px;
     left: 50%;
 
-    @mixin animation_delay_speed(1.7s);
-    @mixin animation_speed(5s);
+    @mixin animation_delay(1.7s);
+    @mixin animation_duration(5s);
 }
 
 .partner i.icon6::before {
@@ -851,43 +851,43 @@
 .costRisk .bar1 {
     top: 0;
 
-    @mixin animation_delay_speed(.2s);
+    @mixin animation_delay(.2s);
 }
 
 .costRisk .bar2 {
     top: 17px;
 
-    @mixin animation_delay_speed(.5s);
+    @mixin animation_delay(.5s);
 }
 
 .costRisk .bar3 {
     top: 34px;
 
-    @mixin animation_delay_speed(.8s);
+    @mixin animation_delay(.8s);
 }
 
 .costRisk .bar4 {
     top: 100px;
 
-    @mixin animation_delay_speed(1.2s);
+    @mixin animation_delay(1.2s);
 }
 
 .costRisk .bar5 {
     top: 117px;
 
-    @mixin animation_delay_speed(1.5s);
+    @mixin animation_delay(1.5s);
 }
 
 .costRisk .bar6 {
     top: 134px;
 
-    @mixin animation_delay_speed(1.8s);
+    @mixin animation_delay(1.8s);
 }
 
 .costRisk .bar7 {
     top: 151px;
 
-    @mixin animation_delay_speed(2.1s);
+    @mixin animation_delay(2.1s);
 }
 
 .costRisk i {
@@ -902,7 +902,7 @@
     top: 50px;
     left: 50%;
 
-    @mixin animation_delay_speed(.2s);
+    @mixin animation_delay(.2s);
 }
 
 .costRisk i.icon2 {
@@ -911,7 +911,7 @@
     top: 63px;
     left: 50%;
 
-    @mixin animation_delay_speed(.4s);
+    @mixin animation_delay(.4s);
 }
 
 .costRisk i.icon3 {
@@ -920,7 +920,7 @@
     top: 63px;
     left: 50%;
 
-    @mixin animation_delay_speed(.6s);
+    @mixin animation_delay(.6s);
 }
 
 .costRisk i.icon4 {
@@ -929,7 +929,7 @@
     top: 75px;
     left: 50%;
 
-    @mixin animation_delay_speed(.8s);
+    @mixin animation_delay(.8s);
 }
 
 .costRisk i.icon5 {
@@ -938,7 +938,7 @@
     top: 75px;
     left: 50%;
 
-    @mixin animation_delay_speed(1s);
+    @mixin animation_delay(1s);
 }
 
 .costRisk i.icon6 {
@@ -947,7 +947,7 @@
     top: 75px;
     left: 50%;
 
-    @mixin animation_delay_speed(1.2s);
+    @mixin animation_delay(1.2s);
 }
 
 /* -- learn adapt -- */
@@ -971,7 +971,7 @@
 
     @mixin rounded(5px);
     @mixin animation_name(bar1);
-    @mixin animation_speed(5s);
+    @mixin animation_duration(5s);
 }
 
 @-webkit-keyframes bar1 {
@@ -988,8 +988,8 @@
     left: 50%;
     top: 152px;
 
-    @mixin animation_delay_speed(3s);
-    @mixin animation_speed(5s);
+    @mixin animation_delay(3s);
+    @mixin animation_duration(5s);
 }
 
 .learnAdapt i {
@@ -1005,8 +1005,8 @@
     top: 162px;
     right: 50%;
 
-    @mixin animation_delay_speed(1s);
-    @mixin animation_speed(8s);
+    @mixin animation_delay(1s);
+    @mixin animation_duration(8s);
 }
 
 .learnAdapt i.icon1::before {
@@ -1019,8 +1019,8 @@
     top: 82px;
     right: 50%;
 
-    @mixin animation_delay_speed(1.3s);
-    @mixin animation_speed(8s);
+    @mixin animation_delay(1.3s);
+    @mixin animation_duration(8s);
 }
 
 .learnAdapt i.icon2::before {
@@ -1033,8 +1033,8 @@
     top: 0px;
     right: 50%;
 
-    @mixin animation_delay_speed(1.4s);
-    @mixin animation_speed(8s);
+    @mixin animation_delay(1.4s);
+    @mixin animation_duration(8s);
 }
 
 .learnAdapt i.icon3::before {
@@ -1047,8 +1047,8 @@
     top: -1px;
     left: 50%;
 
-    @mixin animation_delay_speed(1.5s);
-    @mixin animation_speed(8s);
+    @mixin animation_delay(1.5s);
+    @mixin animation_duration(8s);
 }
 
 .learnAdapt i.icon4::before {
@@ -1061,8 +1061,8 @@
     top: 81px;
     left: 50%;
 
-    @mixin animation_delay_speed(1.6s);
-    @mixin animation_speed(8s);
+    @mixin animation_delay(1.6s);
+    @mixin animation_duration(8s);
 }
 
 .learnAdapt i.icon5::before {
@@ -1075,8 +1075,8 @@
     top: 162px;
     left: 50%;
 
-    @mixin animation_delay_speed(1.7s);
-    @mixin animation_speed(8s);
+    @mixin animation_delay(1.7s);
+    @mixin animation_duration(8s);
 }
 
 .learnAdapt i.icon6::before {
@@ -1105,7 +1105,7 @@
     left: 50%;
     top: 20px;
 
-    @mixin animation_speed(5s);
+    @mixin animation_duration(5s);
 }
 
 .deliver [class*="bar"] {
@@ -1116,7 +1116,7 @@
 
     @mixin rounded(5px);
     @mixin animation_name(deliver);
-    @mixin animation_speed(5s);
+    @mixin animation_duration(5s);
 }
 
 .deliver .bar1 {
@@ -1126,7 +1126,7 @@
 
     top: 0;
 
-    @mixin animation_delay_speed(.6s);
+    @mixin animation_delay(.6s);
 }
 
 .deliver .bar2 {
@@ -1136,7 +1136,7 @@
 
     top: 40px;
 
-    @mixin animation_delay_speed(.2s);
+    @mixin animation_delay(.2s);
 }
 
 .deliver .bar3 {
@@ -1147,7 +1147,7 @@
     top: 15px;
 
     @mixin rotate(45deg);
-    @mixin animation_delay_speed(.4s);
+    @mixin animation_delay(.4s);
 }
 
 .deliver .bar4 {
@@ -1158,7 +1158,7 @@
     top: 15px;
 
     @mixin rotate(-45deg);
-    @mixin animation_delay_speed(.8s);
+    @mixin animation_delay(.8s);
 }
 
 .deliver .bar5 {
@@ -1168,7 +1168,7 @@
 
     top: 40px;
 
-    @mixin animation_delay_speed(1s);
+    @mixin animation_delay(1s);
 }
 
 @-webkit-keyframes deliver {

@@ -28,8 +28,8 @@
     right: 50%;
     position: absolute;
 
-    @mixin animation_delay_speed(1s);
-    @mixin animation_speed(1s);
+    @mixin animation_delay(1s);
+    @mixin animation_duration(1s);
 }
 
 .expertises .header div.icon3 {
@@ -38,8 +38,8 @@
     right: 50%;
     position: absolute;
 
-    @mixin animation_delay_speed(2s);
-    @mixin animation_speed(4s);
+    @mixin animation_delay(2s);
+    @mixin animation_duration(4s);
 }
 
 .codeAnim1 {

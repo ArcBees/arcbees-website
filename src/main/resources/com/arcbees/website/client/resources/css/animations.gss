@@ -1,10 +1,8 @@
 /* -> hexaMove -- */
 
 .hexaMove {
-    -webkit-animation-name: hexaMove;
-    animation-name: hexaMove;
-    -webkit-animation-duration: 5s;
-    animation-duration: 5s;
+    @mixin animation_name(hexaMove);
+    @mixin animation_duration(5s);
 }
 
 @keyframes hexaMove {
@@ -24,8 +22,7 @@
 /* -> line -- */
 
 .line {
-    -webkit-animation-name: line;
-    animation-name: line;
+    @mixin animation_name(line);
 }
 
 @-webkit-keyframes line {
@@ -48,33 +45,27 @@
 /* -> leave -- */
 
 .leave {
-    -webkit-animation-name: leave;
-    animation-name: leave;
+    @mixin animation_name(leave);
 }
 
 .leave2 {
-    -webkit-animation-name: leave2;
-    animation-name: leave2;
+    @mixin animation_name(leave2);
 }
 
 .leave3 {
-    -webkit-animation-name: leave3;
-    animation-name: leave3;
+    @mixin animation_name(leave3);
 }
 
 .leave4 {
-    -webkit-animation-name: leave4;
-    animation-name: leave4;
+    @mixin animation_name(leave4);
 }
 
 .leave5 {
-    -webkit-animation-name: leave5;
-    animation-name: leave5;
+    @mixin animation_name(leave5);
 }
 
 .leave6 {
-    -webkit-animation-name: leave6;
-    animation-name: leav6e;
+    @mixin animation_name(leave6);
 }
 
 @-webkit-keyframes leave {

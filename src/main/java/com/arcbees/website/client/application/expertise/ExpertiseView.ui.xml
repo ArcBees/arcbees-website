@@ -1,6 +1,9 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-        xmlns:g="urn:import:com.google.gwt.user.client.ui">
+        xmlns:g="urn:import:com.google.gwt.user.client.ui"
+        ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+        ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
+        ui:generateLocales="default">
 
     <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
     <ui:with field="page" type="com.arcbees.website.client.resources.PageExpertisesResources"/>
@@ -27,11 +30,14 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.focusBlock}">
                 <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
 
-                    <h2 class="{res.style.stripeTitle}">Expertises</h2>
-                    <p>Create and build products
-                        that optimise process, habits and thinking,
-                        demonstrate value and simplicity,
-                        and transform the way developers work around the world.
+                    <h2 class="{res.style.stripeTitle}">
+                        <ui:msg description="Expertises">Expertises</ui:msg>
+                    </h2>
+                    <p>
+                        <ui:msg description="Expertises - Paragraphe -">Let our experts boost your productivity and
+                            improve your applications with our cutting edge
+                            services, customized support and training.
+                        </ui:msg>
                     </p>
 
                 </div>
@@ -39,32 +45,51 @@
         </section>
 
         <section class="{res.style.stripe} {res.style.centered} {page.style.services}">
-            <div class="{res.style.wrapper} {res.grid.row} {res.style.clearfix}">
-                <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1_3}">
-                    <h3 class="{res.style.stripeTitle}">Professional
-                        <span>services</span>
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                        Aenean
-                        massa.
-                    </p>
-                    <a href="#" class="{res.style.btn}">Learn more</a>
-                </div>
-            </div>
             <div class="{res.style.stripe} {res.style.centered}">
                 <div class="{res.style.wrapper} {res.grid.row} {res.style.clearfix}">
                     <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1_12}">
-                        <h3 class="{res.style.stripeTitle}">Support</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                            Aenean massa.</p>
-                        <a href="#" class="{res.style.btn}">Learn more</a>
+                        <h3 class="{res.style.stripeTitle}">
+                            <ui:msg description="Professional Services">Professional
+                                <span>Services</span>
+                            </ui:msg>
+
+                        </h3>
+                        <p>
+                            <ui:msg description="Professional Services - Paragraph -">We can help transform your
+                                business applications and improve your development practices.
+                            </ui:msg>
+                        </p>
+                        <a href="#" class="{res.style.btn}">
+                            <ui:msg description="Learn more">Learn more</ui:msg>
+                        </a>
                     </div>
                     <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1_6}">
-                        <h3 class="{res.style.stripeTitle}">Training</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                            Aenean massa.</p>
-                        <a href="#" class="{res.style.btn}">Learn more</a>
+                        <h3 class="{res.style.stripeTitle}">
+                            <ui:msg description="Support">Support</ui:msg>
+                        </h3>
+                        <p>
+                            <ui:msg description="Support - Paragraph -">Any time you have a concern to technical
+                                challenge using our products, you can rely on
+                                our experts to you find solutions.
+                            </ui:msg>
+                        </p>
+                        <a href="#" class="{res.style.btn}">
+                            <ui:msg description="Learn more">Learn more</ui:msg>
+                        </a>
                     </div>
+                </div>
+            </div>
+            <div class="{res.style.wrapper} {res.grid.row} {res.style.clearfix}">
+                <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1_3}">
+                    <h3 class="{res.style.stripeTitle}">
+                        <ui:msg description="Training">Training</ui:msg>
+                    </h3>
+                    <p>
+                        <ui:msg description="Training - Paragraph -">Want to learn how to use our products faster and
+                            better? Let our experts compile and deliver customized training just for you.
+                        </ui:msg>
+                    </p>
+                    <a href="#" class="{res.style.btn}"><ui:msg description="Learn more">Learn more</ui:msg></a>
                 </div>
             </div>
         </section>
@@ -88,9 +113,7 @@
         <section class="{res.style.stripe} {res.style.centered}">
             <div class="{res.grid.row} {res.style.clearfix}">
                 <h2>gwtp</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                    Aenean massa.</p>
-                <a href="#" class="{res.style.btn}">Learn more</a>
+                <a href="#" class="{res.style.btn}"><ui:msg description="Learn more">Learn more</ui:msg></a>
             </div>
         </section>
 

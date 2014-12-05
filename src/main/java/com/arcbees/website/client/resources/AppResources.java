@@ -103,6 +103,10 @@ public interface AppResources extends FontResources {
         String collapsible();
 
         String closer();
+
+        String btns();
+
+        String language();
     }
 
     @Source("css/normalize.gss")

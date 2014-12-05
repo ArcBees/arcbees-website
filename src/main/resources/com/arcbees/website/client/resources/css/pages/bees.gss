@@ -456,3 +456,26 @@
 .bees .popup li a span {
     display: none;
 }
+
+/* -- offers ------------------------------------------- */
+
+.offers h2 {
+    font-size: 2.5rem;
+
+    margin-bottom: 0;
+}
+
+.offers h3 {
+    font-size: 4rem;
+
+    margin: 0 0 .3em;
+}
+
+.offers > div {
+    border-bottom: 2px solid #000;
+}
+
+.offers > div:first-child,
+.offers > div:last-child {
+    border-bottom: none
+}

@@ -57,8 +57,6 @@ public interface PageHomeResources extends FontResources {
 
         String successStoryHolder();
 
-        String btns();
-
         String path3();
 
         String path2();
@@ -80,6 +78,8 @@ public interface PageHomeResources extends FontResources {
         String path1();
 
         String architect();
+
+        String btns();
     }
 
     @Source("img/pages/homeBeesBg.png")

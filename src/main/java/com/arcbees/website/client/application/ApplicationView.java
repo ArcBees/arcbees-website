@@ -18,11 +18,8 @@ package com.arcbees.website.client.application;
 
 import com.arcbees.website.client.resources.AppResources;
 import com.google.gwt.dom.client.DivElement;
-import com.google.gwt.event.logical.shared.ResizeEvent;
-import com.google.gwt.event.logical.shared.ResizeHandler;
 import com.google.gwt.i18n.client.LocaleInfo;
 import com.google.gwt.query.client.Function;
-import com.google.gwt.query.client.GQuery;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.Event;
@@ -108,14 +105,14 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
                 switchLang();
             }
         });
+
+        $("#monId").toggleClass("myClass", isFrench());
     }
 
     private void switchLang() {
-        LocaleInfo currentLocale = LocaleInfo.getCurrentLocale();
-
         String newLocale;
 
-        if (currentLocale.getLocaleName().equals("fr")) {
+        if (isFrench()) {
             newLocale = "en";
         } else {
             newLocale = "fr";
@@ -129,5 +126,10 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     private void removeActiveStyle() {
         $(sidebar).removeClass(appResources.style().active());
         $(menuToggle).removeClass(appResources.style().active());
+    }
+
+    private boolean isFrench() {
+        LocaleInfo currentLocale = LocaleInfo.getCurrentLocale();
+        return currentLocale.getLocaleName().equals("fr");
     }
 }

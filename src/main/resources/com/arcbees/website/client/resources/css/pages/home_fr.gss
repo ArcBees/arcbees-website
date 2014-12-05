@@ -22,7 +22,7 @@
 }
 
 .txtBanner {
-    height: 110px;
+    height: 1010px;
     width: 680px;
     margin: -40px 0 0 -325px;
 

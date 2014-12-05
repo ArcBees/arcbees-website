@@ -1,6 +1,9 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-        xmlns:g="urn:import:com.google.gwt.user.client.ui">
+        xmlns:g="urn:import:com.google.gwt.user.client.ui"
+        ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+        ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
+        ui:generateLocales="default">
 
     <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
     <ui:with field="page" type="com.arcbees.website.client.resources.PageProductResources"/>
@@ -18,7 +21,7 @@
 
         <section class="{res.style.stripe}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_1_2}">
+                <div class="{res.grid.col} {res.grid.col_full}">
                     <h1>jukito
                         <a href="#" class="{res.style.anchor}">#</a>
                     </h1>
@@ -40,18 +43,31 @@
                         </ul>
                     </div>
                 </div>
+            </div>
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_push_1_2} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                     <p>
-                        <strong>Jukito lets you use the power of dependency injection in all your tests.
+                        <strong>
+                            <ui:msg description="Jukito empowers...">Jukito empowers you to use dependency injection in
+                                all your tests.
+                            </ui:msg>
                         </strong>
                     </p>
-                    <p>You will quickly grow addicted to its ease of use and all the boilerplate economy! Jukito combine
-                        power of JUnit, Guice and Mockito
+                    <p>
+                        <ui:msg description="Jukito empowers... - Paragraphe -">Unite the forces of JUnit, DI and
+                            Mockito, and crush your tests with lightning speed and unstoppable boilerplate efficiency!
+                        </ui:msg>
                     </p>
                     <ul class="{page.style.frameworkList}">
-                        <li><g:Image resource="{page.jukitoMockito}"/></li>
-                        <li><g:Image resource="{page.jukitoGuice}"/></li>
-                        <li><g:Image resource="{page.jukitoJUnit}"/></li>
+                        <li>
+                            <g:Image resource="{page.jukitoMockito}"/>
+                        </li>
+                        <li>
+                            <g:Image resource="{page.jukitoGuice}"/>
+                        </li>
+                        <li>
+                            <g:Image resource="{page.jukitoJUnit}"/>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -82,20 +98,27 @@
         </section>
 
         <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.centered}">
-            <h2>in details</h2>
+            <h2>
+                <ui:msg description="In details">in details</ui:msg>
+            </h2>
         </section>
 
         <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium1}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
 
                 <div class="{res.grid.col} {res.grid.col_1_3}">
-                    <h3>Automocking</h3>
+                    <h3>
+                        <ui:msg description="Automocking">Automocking</ui:msg>
+                    </h3>
                     <a href="#" class="{res.style.anchor}">#</a>
                 </div>
 
                 <div class="{res.grid.col} {res.grid.col_2_3}">
-                    <p>Jukito lets you inject objects in your tests everywhere! Constructor, method and field injection
-                        are supported.
+                    <p>
+                        <ui:msg description="Automocking - Paragraph -">Create your mocks with exactly zero lines of
+                            code! Using the standard @Inject annotation, Jukito automatically identifies what objects
+                            should be mocked. Banish worries about transitive dependencies from your testing forever!
+                        </ui:msg>
                     </p>
                 </div>
             </div>
@@ -105,13 +128,17 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
 
                 <div class="{res.grid.col} {res.grid.col_1_3}">
-                    <h3>Inject wherever you want!</h3>
+                    <h3>
+                        <ui:msg description="Inject Anywhere">Inject Anywhere</ui:msg>
+                    </h3>
                     <a href="#" class="{res.style.anchor}">#</a>
                 </div>
 
                 <div class="{res.grid.col} {res.grid.col_2_3}">
-                    <p>GWTP was engineered with dependency injection in mind. Leveraging the full power of Google Gin
-                        and Guice, GWTP makes your web apps more modular and testable.
+                    <p>
+                        <ui:msg description="Inject Anywhere - Paragraph -">Jukito lets you inject objects in your tests
+                            anywhere! Injection in constructors, methods and fields are all supported.
+                        </ui:msg>
                     </p>
                 </div>
             </div>
@@ -121,13 +148,17 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
 
                 <div class="{res.grid.col} {res.grid.col_1_3}">
-                    <h3>@All annotation</h3>
+                    <h3>
+                        <ui:msg description="@All Annotation">@All Annotation</ui:msg>
+                    </h3>
                     <a href="#" class="{res.style.anchor}">#</a>
                 </div>
 
                 <div class="{res.grid.col} {res.grid.col_2_3}">
-                    <p>Need to run your test using a wide set of data? Jukito allows you to concisely write a single
-                        test that runs on a whole suite of test cases.
+                    <p>
+                        <ui:msg description="@All Annotation - Paragraph -">Need to run your test using a wide set of
+                            data? Jukito lets you write a single concise test that runs on a whole suite of test cases.
+                        </ui:msg>
                     </p>
                 </div>
             </div>
@@ -137,13 +168,18 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
 
                 <div class="{res.grid.col} {res.grid.col_1_3}">
-                    <h3>Lightweight</h3>
+                    <h3>
+                        <ui:msg description="Lightweight">Lightweight</ui:msg>
+                    </h3>
                     <a href="#" class="{res.style.anchor}">#</a>
                 </div>
 
                 <div class="{res.grid.col} {res.grid.col_2_3}">
-                    <p>The last thing you want is your tests slowing you down. Jukito is fast and will not impact your
-                        suite’s run time. And, your tests will be easier to read, write and maintain.
+                    <p>
+                        <ui:msg description="Lightweight -Paragraph -">The last thing you want is your tests slowing you
+                            down. Jukito is fast and will not impact your test suite’s run time. And, your tests will be
+                            easier to read, write and maintain.
+                        </ui:msg>
                     </p>
                 </div>
             </div>
@@ -153,12 +189,17 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
 
                 <div class="{res.grid.col} {res.grid.col_1_3}">
-                    <h3>Scales to all size of test</h3>
+                    <h3>
+                        <ui:msg description="Scales To Any Size Of Test">Scales To Any Size Of Test</ui:msg>
+                    </h3>
                     <a href="#" class="{res.style.anchor}">#</a>
                 </div>
 
                 <div class="{res.grid.col} {res.grid.col_2_3}">
-                    <p>Jukito can be used within unit, integration and end-to-end tests, all with one framework!
+                    <p>
+                        <ui:msg description="Scales To Any Size Of Test - Paragraph -">Jukito can be used within unit,
+                            integration and end-to-end tests, all in one framework!
+                        </ui:msg>
                     </p>
                 </div>
             </div>
@@ -168,12 +209,18 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
 
                 <div class="{res.grid.col} {res.grid.col_1_3}">
-                    <h3>Easy installation</h3>
+                    <h3>
+                        <ui:msg description="Easy installation">Easy installation</ui:msg>
+                    </h3>
                     <a href="#" class="{res.style.anchor}">#</a>
                 </div>
 
                 <div class="{res.grid.col} {res.grid.col_2_3}">
-                    <p>Simply add a Maven dependency to your POM, and Jukito will be downloaded from Maven Central.</p>
+                    <p>
+                        <ui:msg description="Easy installation - Paragraph -">Simply add a Maven dependency to your POM,
+                            and Jukito will be downloaded from Maven Central.
+                        </ui:msg>
+                    </p>
                 </div>
             </div>
         </section>
@@ -182,10 +229,15 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_full}">
 
-                    <h3>ALL THE DOCUMENTATIONS
-                        <span>YOU NEED</span>
+                    <h3>
+                        <ui:msg description="All the documentations you need">All the documentations
+                            <span>you need</span>
+                        </ui:msg>
+
                     </h3>
-                    <a href="#" class="{res.style.btn}">Go to Arcbees Developers</a>
+                    <a href="#" class="{res.style.btn}">
+                        <ui:msg description="- BTN - Go to Arcbees Developers">Go to Arcbees Developers</ui:msg>
+                    </a>
 
                 </div>
             </div>

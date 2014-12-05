@@ -1,6 +1,9 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-        xmlns:g="urn:import:com.google.gwt.user.client.ui">
+        xmlns:g="urn:import:com.google.gwt.user.client.ui"
+        ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+        ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
+        ui:generateLocales="default">
 
     <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
     <ui:with field="page" type="com.arcbees.website.client.resources.PageSupportResources"/>
@@ -15,7 +18,7 @@
             <span>Support</span>
         </h1>
 
-        <section class="{res.style.stripe} {res.style.header} {page.style.header} {res.style.colored}">
+        <section class="{res.style.stripe} {res.style.header} {page.style.header} {res.style.light}">
             <div class="{page.style.featuredIcons}">
 
                 <i class="{fonts.icons.iconGwtp} {page.style.iconGwtp} {animations.style.animation}"></i>
@@ -33,169 +36,252 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.focusBlock}">
                 <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
 
-                    <h2 class="{res.style.stripeTitle}">Support
-                        <span>packages</span>
+                    <h2 class="{res.style.stripeTitle}">
+                        <ui:msg description="Support Packages">Support
+                            <span>Packages</span>
+                        </ui:msg>
+
                     </h2>
-                    <p>ArcBees is pleased to offer a variety of supports options to its clients. Pick the one that
-                        fits you best. You can also contact us for a custom made kit just for you.
+                    <p>
+                        <ui:msg description="Support Packages - Paragraph -">We know there are risks in using open
+                            source software, and we want to give clients the power to ensure that Arcbees will continue
+                            to support the open source libraries they need.
+                        </ui:msg>
                     </p>
+
                 </div>
             </div>
         </section>
 
         <section>
             <div class="{res.style.stripe} {res.style.colored}">
-                <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.centered} {page.style.offers}">
-
-                    <article class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_t_full} {page.style.plan}">
-                        <header>
-                            <h3>Basic</h3>
-                            <p class="{page.style.price}">
-                                <strong>199.95</strong>
-                                $/year
+                <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.centered}">
+                    <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+                        <ui:msg description="Purchasing support packages...">
+                            <p>Purchasing support packages not only allows us to help your team become optimally
+                                productive with our tools.
+                                <strong>It also helps you sleep!</strong>
                             </p>
-                        </header>
-                        <section>
-                            <div class="{page.style.includes}">
-                                <div class="{page.style.developers}">
-                                    <p>1
-                                        <span>Developers</span>
-                                    </p>
-                                </div>
-                                <div class="{page.style.advisory}">
-                                    <p>1
-                                        <span>Advisory Hours</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="{page.style.hours}">
-                                <p>
-                                    48 hours
-                                    <span>Response time</span>
-                                </p>
-                            </div>
-                        </section>
-                    </article>
-
-                    <article
-                            class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_t_full} {page.style.plan} {page.style.bestbuy}">
-                        <div class="{page.style.popChoice}">
-                            <h4>popular choice</h4>
-                        </div>
-                        <header>
-                            <h3>Professional</h3>
-                            <p class="{page.style.price}">
-                                <strong>499.95</strong>
-                                $/year
+                            <p>You can rest easy, knowing that even if we release new versions
+                                of our software, we will support the version you use and love for two years.
                             </p>
-                        </header>
-                        <section>
-                            <div class="{page.style.includes}">
-                                <div class="{page.style.developers}">
-                                    <p>5
-                                        <span>Developers</span>
-                                    </p>
-
-                                </div>
-                                <div class="{page.style.advisory}">
-                                    <p>3
-                                        <span>Advisory Hours</span>
-                                    </p>
-
-                                </div>
-                            </div>
-                            <div class="{page.style.hours}">
-                                <p>
-                                    24 hours
-                                    <span>Response time</span>
-                                </p>
-                            </div>
-                        </section>
-                    </article>
-
-                    <article class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_t_full} {page.style.plan}">
-                        <header>
-                            <h3>Business</h3>
-                            <p class="{page.style.price}">
-                                <strong>2 999.95</strong>
-                                $/year
+                            <p>Most of our open source tools are covered by a single support plan, so your Arcbees
+                                development stack will remain stable as you deploy code into production and enjoy real
+                                business results.
                             </p>
-                        </header>
-                        <section>
-                            <div class="{page.style.includes}">
-                                <div class="{page.style.developers}">
-                                    <p>25
-                                        <span>Developers</span>
-                                    </p>
-                                </div>
-                                <div class="{page.style.advisory}">
-                                    <p>16
-                                        <span>Advisory Hours</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="{page.style.hours}">
-                                <p>
-                                    2 hours
-                                    <span>Response time</span>
-                                </p>
-                            </div>
-                        </section>
-                    </article>
+                        </ui:msg>
+
+                    </div>
                 </div>
-            </div>
+                    <section class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.centered} {page.style.offers}">
+                        <article class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_t_full} {page.style.plan}">
+                            <header>
+                                <h3>
+                                    <ui:msg description="Basic">Basic</ui:msg>
+                                </h3>
+                                <p class="{page.style.price}">
+                                    <strong>$199.95</strong>
+                                    <ui:msg description="per year">per year</ui:msg>
+
+                                </p>
+                            </header>
+                            <section>
+                                <div class="{page.style.includes}">
+                                    <div class="{page.style.developers}">
+                                        <p>1
+                                            <span>
+                                                <ui:msg description="developer">developer</ui:msg>
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="{page.style.advisory}">
+                                        <p>2
+                                            <span>
+                                                <ui:msg description="advisory Hours">advisory Hours</ui:msg>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="{page.style.hours}">
+                                    <p>
+                                        <ui:msg description="48 hours Response Time">48 hours
+                                            <span>Response Time</span>
+                                        </ui:msg>
+                                    </p>
+                                </div>
+                            </section>
+                        </article>
+
+                        <article
+                                class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_t_full} {page.style.plan} {page.style.bestbuy}">
+                            <div class="{page.style.popChoice}">
+                                <h4>
+                                    <ui:msg description="Popular choice">Popular choice</ui:msg>
+                                </h4>
+                            </div>
+                            <header>
+                                <h3>
+                                    <ui:msg description="Professional">Professional</ui:msg>
+                                </h3>
+                                <p class="{page.style.price}">
+                                    <strong>$499.95</strong>
+                                    <ui:msg description="per year">per year</ui:msg>
+
+                                </p>
+                            </header>
+                            <section>
+                                <div class="{page.style.includes}">
+                                    <div class="{page.style.developers}">
+                                        <p>5
+                                            <span>
+                                                <ui:msg description="developer">developers</ui:msg>
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="{page.style.advisory}">
+                                        <p>5
+                                            <span>
+                                                <ui:msg description="advisory Hours">advisory Hours</ui:msg>
+                                            </span>
+                                        </p>
+
+                                    </div>
+                                </div>
+                                <div class="{page.style.hours}">
+                                    <p>
+                                        <ui:msg description="24 hours Response Time">
+                                            24 hours
+                                            <span>Response Time</span>
+                                        </ui:msg>
+                                    </p>
+                                </div>
+                            </section>
+                        </article>
+
+                        <article class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_t_full} {page.style.plan}">
+                            <header>
+                                <h3>
+                                    <ui:msg description="Entreprise">Entreprise</ui:msg>
+                                </h3>
+                                <p class="{page.style.price}">
+                                    <strong>$2 999.95</strong>
+                                    <ui:msg description="per year">per year</ui:msg>
+
+                                </p>
+                            </header>
+                            <section>
+                                <div class="{page.style.includes}">
+                                    <div class="{page.style.developers}">
+                                        <p>25
+                                            <span>
+                                                <ui:msg description="developer">developers</ui:msg>
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="{page.style.advisory}">
+                                        <p>30
+                                            <span>
+                                                <ui:msg description="advisory Hours">advisory Hours</ui:msg>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="{page.style.hours}">
+                                    <p>
+                                        <ui:msg description="24 hours Response Time">
+                                            4 hours
+                                            <span>Response Time</span>
+                                        </ui:msg>
+                                    </p>
+                                </div>
+                            </section>
+                        </article>
+                    </section>
+
+                </div>
         </section>
 
-        <section>
-            <div class="{res.style.stripe} {res.style.light} {res.style.centered} {page.style.features}">
-                <a href="#" class="{res.style.btn}">Contact us</a>
-                <h2>Features</h2>
+        <section class="{page.style.features} {res.style.light}">
+            <div class="{res.style.stripe} {res.style.light} {res.style.centered}">
+                <a href="#" class="{res.style.btn}">
+                    <ui:msg description="- BTN - Contact us">Contact us</ui:msg>
+                </a>
+                <h2>
+                    <ui:msg description="Features">Features</ui:msg>
+                </h2>
                 <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                     <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                         <i class="{fonts.icons.iconCommRes}"></i>
-                        <h3>Community
-                            <span>Resources</span>
+                        <h3>
+                            <ui:msg description="Community Resources">Community
+                                <span>Resources</span>
+                            </ui:msg>
+
                         </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                            Aenean massa.
+                        <p>
+                            <ui:msg description="Community Resources - Paragraph -">Get answers promptly from Stack
+                                Overflow, our Google Groups and our Google+ Communities, with or without a package!
+                            </ui:msg>
                         </p>
                     </div>
                     <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                         <i class="{fonts.icons.iconRespTime}"></i>
-                        <h3>Response
-                            <span>Time</span>
+                        <h3>
+                            <ui:msg description="Response Time">Response
+                                <span>Time</span>
+                            </ui:msg>
                         </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                            Aenean massa.
+                        <p>
+                            <ui:msg description="Response Time - Paragraph -">Sometimes you can’t wait for a question in
+                                the forums to be answered. We guarantee that our team will answer your question within a
+                                specific response time.
+                            </ui:msg>
                         </p>
                     </div>
                     <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                         <i class="{fonts.icons.iconSupportCases}"></i>
-                        <h3>Support
-                            <span>Cases</span>
+                        <h3>
+                            <ui:msg description="Legacy Support">Legacy
+                                <span>Support</span>
+                            </ui:msg>
+
                         </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                            Aenean massa.
+                        <p>
+                            <ui:msg description="Legacy Support - Paragraph -">One of the biggest advantage is that we
+                                will support older version of the framework for you for another 2 years after the
+                                release of a newer version.
+                            </ui:msg>
                         </p>
                     </div>
                 </div>
                 <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                     <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1_6} {res.grid.col_m_full}">
                         <i class="{fonts.icons.iconWebSupport}"></i>
-                        <h3>Web
-                            <span>Support</span>
+                        <h3>
+                            <ui:msg description="Internet Support">Internet
+                                <span>Support</span>
+                            </ui:msg>
+
                         </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                            Aenean massa.
+                        <p>
+                            <ui:msg description="Internet Support - Paragraph -">Purchase support packages for direct
+                                online access to our experts. We are happy to set up videoconferences, private groups,
+                                email exchanges, chat channels and more.
+                            </ui:msg>
                         </p>
                     </div>
                     <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                         <i class="{fonts.icons.iconPhoneSuppport}"></i>
-                        <h3>Phone
-                            <span>Support</span>
+                        <h3>
+                            <ui:msg description="Phone Support">Phone
+                                <span>Support</span>
+                            </ui:msg>
                         </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                            Aenean massa.
+                        <p>
+                            <ui:msg description="Phone Support - Paragraph -">Enjoy the convenience of a direct line to
+                                someone at Arcbees you can call with questions. Available to purchasers of Enterprise
+                                support packages.
+                            </ui:msg>
                         </p>
                     </div>
                 </div>

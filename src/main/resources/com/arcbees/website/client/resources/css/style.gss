@@ -30,6 +30,32 @@ body {
     font-size: 1.5rem;
 }
 
+/* avoid top margins on first content element */
+
+p:first-child,
+ul:first-child,
+ol:first-child,
+dl:first-child,
+blockquote:first-child,
+pre:first-child,
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+    margin-top: 0;
+}
+
+/* avoid margins on nested elements */
+
+li p,
+li ul,
+li ol {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 /* -- Wrapper -------------------------------------------- */
 
 .wrapper {
@@ -217,11 +243,10 @@ em {
 
 a.anchor {
     color: #afafaf;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     font-family: "geometria";
 
     display: inline-block;
-    margin-top: -7px;
 
     vertical-align: middle;
 }
@@ -232,6 +257,18 @@ img {
 }
 
 /* -- Components ---------------------------------------- */
+
+.btns a {
+    margin: 0 10em;
+}
+
+.btns a:first-of-type {
+    margin-left: 0;
+}
+
+.btns a:last-child {
+    margin-right: 0;
+}
 
 .btn,
 .btn:visited {
@@ -264,6 +301,8 @@ img {
 
 .btn:hover {
     color: C_TEXT_LIGHT;
+
+    cursor: pointer;
 }
 
 .btn:hover::after {
@@ -707,15 +746,24 @@ img {
     @mixin transition(margin, 0.4s);
 }
 
+.content .language {
+    font-family: "geometriaBold", Arial, sans-serif;
+
+    position: absolute;
+    top: 50px;
+    right: 0;
+    z-index: 99999;
+}
+
 .focusBlock {
     text-align: center;
 
-    padding: 30px 0 70px;
+    padding: 3rem 0 6rem;
 }
 
 .focusBlock p {
     font-family: "geometriaLight", Arial, sans-serif;
-    font-size: 2.5rem;
+    font-size: 1.9rem;
 }
 
 @media (max-width: 649px) {
@@ -777,7 +825,7 @@ img {
     height: 0;
     margin-left: -1500px;
     border: 0 solid transparent;
-    border-top-width: 311px;
+    border-top-width: 305px;
     border-right-width: 1500px;
     border-left-width: 1500px;
 

@@ -29,7 +29,9 @@
                         <a href="#{SERVICES}">Services</a>
                     </li>
                     <li>
-                        <a href="#{PRODUCTS}">Products</a>
+                        <a href="#{PRODUCTS}">
+                            <ui:msg description="Products">Products</ui:msg>
+                        </a>
                         <ul>
                             <li>
                                 <a href="#{GAE}" class="{fonts.icons.iconGae}">GAE Studio</a>
@@ -46,16 +48,22 @@
                         <a href="#{SUPPORT}">Support</a>
                     </li>
                     <li>
-                        <a href="#{BEES}">Our bees</a>
+                        <a href="#{BEES}">
+                            <ui:msg description="Our bees">Our bees</ui:msg>
+                        </a>
                     </li>
                     <li>
-                        <a href="#{CAREERS}">Careers</a>
+                        <a href="#{CAREERS}">
+                            <ui:msg description="Careers">Careers</ui:msg>
+                        </a>
                     </li>
                     <li>
                         <a href="#{CONTACT}" class="{res.style.menuContact}">Contact</a>
                     </li>
                     <li>
-                        <a href="#{DEVELOPERS}">Developers</a>
+                        <a href="#{DEVELOPERS}">
+                            <ui:msg description="Developers">Developers</ui:msg>
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -104,8 +112,12 @@
         </div>
 
         <div class="{res.style.content}" ui:field="content">
-            <div style="position: absolute;right: 0;cursor:pointer;z-index:1000" ui:field="langToggle">
-                <ui:msg description="Français">Français</ui:msg>
+            <div ui:field="langToggle" class="{res.style.wrapper}">
+                <div class="{res.style.language}">
+                    <span><ui:msg description="FR">FR</ui:msg></span>
+                    <span class="{fonts.icons.iconGitHub}"></span>
+                </div>
+
             </div>
             <!-- Main content -->
             <g:SimplePanel ui:field="main" styleName="{res.style.main}"/>

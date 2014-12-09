@@ -115,7 +115,7 @@
             <div ui:field="langToggle" class="{res.style.wrapper}">
                 <div class="{res.style.language}">
                     <span><ui:msg description="FR">FR</ui:msg></span>
-                    <span class="{fonts.icons.iconGitHub}"></span>
+                    <span class="{fonts.icons.iconGitHub} {res.style.github}"></span>
                 </div>
 
             </div>
@@ -123,6 +123,9 @@
             <g:SimplePanel ui:field="main" styleName="{res.style.main}"/>
 
             <footer class="{res.style.footer}">
+                <div class="{res.style.backTop}">
+                    <i ui:field="backTop" class="{fonts.icons.iconArrowDown}"></i>
+                </div>
                 <p>
                     <i class="{fonts.icons.iconArcbees}">
                         <span class="{res.style.hidden}">Arcbees</span>

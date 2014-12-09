@@ -47,12 +47,11 @@
         <section class="{res.style.stripe} {res.style.centered} {page.style.services}">
             <div class="{res.style.stripe} {res.style.centered}">
                 <div class="{res.style.wrapper} {res.grid.row} {res.style.clearfix}">
-                    <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1_12}">
+                    <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1_12} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                         <h3 class="{res.style.stripeTitle}">
                             <ui:msg description="Professional Services">Professional
                                 <span>Services</span>
                             </ui:msg>
-
                         </h3>
                         <p>
                             <ui:msg description="Professional Services - Paragraph -">We can help transform your
@@ -63,14 +62,13 @@
                             <ui:msg description="Learn more">Learn more</ui:msg>
                         </a>
                     </div>
-                    <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1_6}">
-                        <h3 class="{res.style.stripeTitle}">
+                    <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1_6} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+                        <h3 class="{res.style.stripeTitle} {res.style.twoLineTitle}">
                             <ui:msg description="Support">Support</ui:msg>
                         </h3>
                         <p>
                             <ui:msg description="Support - Paragraph -">Any time you have a concern to technical
-                                challenge using our products, you can rely on
-                                our experts to you find solutions.
+                                challenge using our products, you can rely on our experts to you find solutions.
                             </ui:msg>
                         </p>
                         <a href="#" class="{res.style.btn}">
@@ -80,7 +78,7 @@
                 </div>
             </div>
             <div class="{res.style.wrapper} {res.grid.row} {res.style.clearfix}">
-                <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1_3}">
+                <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1_3} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                     <h3 class="{res.style.stripeTitle}">
                         <ui:msg description="Training">Training</ui:msg>
                     </h3>
@@ -89,7 +87,6 @@
                             better? Let our experts compile and deliver customized training just for you.
                         </ui:msg>
                     </p>
-                    <a href="#" class="{res.style.btn}"><ui:msg description="Learn more">Learn more</ui:msg></a>
                 </div>
             </div>
         </section>

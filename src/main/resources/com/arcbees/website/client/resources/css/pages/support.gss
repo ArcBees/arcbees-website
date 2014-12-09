@@ -258,7 +258,7 @@
 /* -> Features -- */
 
 .features {
-    padding-top: 155px;
+    padding-top: 95px;
 }
 
 .features h2 {

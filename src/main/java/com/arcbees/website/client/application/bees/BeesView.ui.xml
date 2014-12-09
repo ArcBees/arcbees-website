@@ -42,16 +42,17 @@
         <section
                 class="{res.style.stripe} {res.style.colored} {res.style.triangleBottom} {res.style.nextLight}  {res.style.centered}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
-                <div class="{page.style.slides}">
-                    <div class="{page.style.slide}">
-                        <h3>Bee Dedicated</h3>
-                        <p>When we agree to take on a client’s project, it’s not just their project anymore. It’s ours
-                            too, and there’s nothing we won't do to make it a success.
-                        </p>
+                <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1_3} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+                    <div class="{page.style.slides}">
+                        <div class="{page.style.slide}">
+                            <h2>Bee Dedicated</h2>
+                            <p>When we agree to take on a client’s project, it’s not just their project anymore. It’s
+                                ours
+                                too, and there’s nothing we won't do to make it a success.
+                            </p>
+                        </div>
                     </div>
                 </div>
-
                 <a href="#" class="{page.style.prev}">
                     <span class="{res.style.hidden}">Prev</span>
                 </a>

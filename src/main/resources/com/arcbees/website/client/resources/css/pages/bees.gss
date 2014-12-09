@@ -164,12 +164,6 @@
     }
 }
 
-.bees .slides h3 {
-    font-family: 'geometriaLight';
-    font-size: 5rem;
-    line-height: 1em;
-}
-
 .bees .slides h3 strong {
     font-family: 'geometriaBold';
 

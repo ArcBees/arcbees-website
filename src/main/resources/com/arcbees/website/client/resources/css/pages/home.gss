@@ -77,7 +77,6 @@
 /* -- animation on the "architects" word -- */
 
 .home .header .txtArchitects {
-
     position: absolute;
     top: 0;
     left: 145px;
@@ -136,6 +135,45 @@
     display: block;
 }
 
+@media (max-width: 649px) {
+    .txtBanner {
+        height: 110px;
+        width: 90%;
+        margin: -40px 0 0 -45%;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 9;
+    }
+
+    .home .header:before {
+        font-size: 25rem;
+
+        margin: -142px 0 0 -112px;
+    }
+
+    .home .header .txtBees {
+        left: -60px;
+    }
+
+    .home .header .txtArchitects {
+        left: 69px;
+    }
+
+    .home .header .txtCreate {
+        margin-left: 7px;
+    }
+
+    .home .header p {
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        line-height: .9em;
+
+        margin: 0;
+    }
+}
+
 .home .header .btns {
     width: 100%;
 
@@ -175,10 +213,6 @@
     left: 50%;
 }
 
-.home .bees h3 {
-    margin: 0 0 0.1em;
-}
-
 .home .beesContent {
     padding-top: 190px;
 }
@@ -192,9 +226,9 @@
 }
 
 .home .successStory i {
-    font-size: 8em;
+    font-size: 9.25em;
 
-    margin-bottom: 0.15em;
+    margin: -3rem 0 2rem;
     display: block;
 }
 
@@ -211,7 +245,7 @@
 }
 
 .home .ssicons {
-    margin-left: -0.8em;
+    margin: 0 0 4em -0.8em;
 }
 
 .home .ssiconsHexa {
@@ -408,7 +442,7 @@
     margin-left: -14px;
 
     position: absolute;
-    bottom: -76px;
+    bottom: -79px;
     left: 50%;
 
     @mixin rotate(45deg);
@@ -437,10 +471,19 @@
 
 @media (max-width: 649px) {
     .iconPlus {
-        bottom: -44px;
+        font-size: 2.7rem;
+
+        margin-left: -10px;
+
+        bottom: -40px;
     }
 
-    .equal {
-        top: -10px;
+    .equal,
+    .equal::after {
+        height: 7px;
+        width: 28px;
+        margin-left: -14px;
+
+        top: -7px;
     }
 }

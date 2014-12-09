@@ -53,8 +53,8 @@
         <section class="{page.style.advantages}">
             <div class="{res.style.stripe} {res.style.centered}">
                 <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                    <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full} {page.style.knowledge}">
-                        <div class="{page.style.icons}">
+                    <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_m_full} {page.style.knowledge}">
+                        <div class="{page.style.topIcons}">
                             <i class="{fonts.icons.iconArcbees} {page.style.icon1}"></i>
                             <div class="{page.style.dots}">
                                 <span class="{page.style.dot}"></span>
@@ -68,7 +68,6 @@
                             <ui:msg description="Knowledge Transfer">Knowledge
                                 <span>Transfer</span>
                             </ui:msg>
-
                         </h3>
                         <p>
                             <ui:msg description="Knowledge Transfer - Paragraph -">We teach as we work, sharing
@@ -76,13 +75,14 @@
                             </ui:msg>
                         </p>
                     </div>
-                    <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
-                        <i class="{fonts.icons.iconHive}"></i>
+                    <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_push_1_12} {res.grid.col_m_push_0} {res.grid.col_m_full}">
+                        <div class="{page.style.topIcons}">
+                            <i class="{fonts.icons.iconHive}"></i>
+                        </div>
                         <h3>
                             <ui:msg description="The Way Of The Bee">The Way
                                 <span>Of The Bee</span>
                             </ui:msg>
-
                         </h3>
                         <p>
                             <ui:msg description="The Way Of The Bee - Paragraph -">We are productivity fanatics,
@@ -90,23 +90,26 @@
                             </ui:msg>
                         </p>
                     </div>
-                    <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
-                        <i class="{fonts.icons.iconPyramid}"></i>
+                    <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_push_1_12} {res.grid.col_m_full} {res.grid.col_m_push_0} {page.style.beauty}">
+                        <div class="{page.style.topIcons}">
+                            <i class="{fonts.icons.iconArcbees}"></i>
+                            <i class="{fonts.icons.iconhexaEmpty} {page.style.icon2}"></i>
+                        </div>
                         <h3>
-                            <ui:msg description="Work With The Best">Work With
-                                <span>The Best</span>
+                            <ui:msg description="Beauty and Function">Beauty
+                                <span>and Function</span>
                             </ui:msg>
                         </h3>
                         <p>
-                            <ui:msg description="Work With The Best -Paragraph -">As builders of developer tools, we
-                                attract power programmers. That power is yours when you work with us.
+                            <ui:msg description="Beauty and Function - Paragraph -">Great products need more than
+                                engineering. We excel at integrating function, beauty and user experience.
                             </ui:msg>
                         </p>
                     </div>
                 </div>
                 <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                    <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full} {page.style.worksEverywhere}">
-                        <div class="{page.style.icons}">
+                    <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_push_1_6} {res.grid.col_m_full} {res.grid.col_m_push_0} {page.style.worksEverywhere}">
+                        <div class="{page.style.topIcons}">
                             <i class="{fonts.icons.iconArcbees} {page.style.icon1}"></i>
                             <i class="{fonts.icons.iconArcbees} {page.style.icon2}"></i>
                             <i class="{fonts.icons.iconArcbees} {page.style.icon3}"></i>
@@ -125,18 +128,18 @@
                             </ui:msg>
                         </p>
                     </div>
-                    <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full} {page.style.beauty}">
-                        <i class="{fonts.icons.iconArcbees}"></i>
-                        <i class="{fonts.icons.iconhexaEmpty} {page.style.icon2}"></i>
+                    <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_push_1_12} {res.grid.col_m_full} {res.grid.col_m_push_0} {page.style.workBest}">
+                        <div class="{page.style.topIcons}">
+                            <i class="{fonts.icons.iconPyramid}"></i>
+                        </div>
                         <h3>
-                            <ui:msg description="Beauty and Function">Beauty
-                                <span>and Function</span>
+                            <ui:msg description="Work With The Best">Work With
+                                <span>The Best</span>
                             </ui:msg>
-
                         </h3>
                         <p>
-                            <ui:msg description="Beauty and Function - Paragraph -">Great products need more than
-                                engineering. We excel at integrating function, beauty and user experience.
+                            <ui:msg description="Work With The Best -Paragraph -">As builders of developer tools, we
+                                attract power programmers. That power is yours when you work with us.
                             </ui:msg>
                         </p>
                     </div>

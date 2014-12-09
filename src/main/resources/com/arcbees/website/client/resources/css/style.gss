@@ -74,7 +74,7 @@ li ol {
 
 @media (max-width: 649px) {
     .wrapper {
-        width: 320px;
+        width: 90%;
     }
 }
 
@@ -181,6 +181,10 @@ h3.stripeTitle {
     margin: 0 0 .5em;
 }
 
+h3.stripeTitle.twoLineTitle {
+    min-height: 8rem;
+}
+
 @media (max-width: 979px) {
     h2 {
         font-size: 2.3rem;
@@ -200,8 +204,16 @@ h3.stripeTitle {
         border-bottom: 0;
     }
 
+    h3 {
+        font-size: 1.5rem;
+    }
+
     h3.stripeTitle {
         font-size: 2.5rem;
+    }
+
+    h3.stripeTitle.twoLineTitle {
+        min-height: inherit;
     }
 }
 
@@ -262,6 +274,12 @@ img {
     margin: 0 10em;
 }
 
+@media (max-width: 649px) {
+    .btns a {
+        margin: 0em;
+    }
+}
+
 .btns a:first-of-type {
     margin-left: 0;
 }
@@ -317,12 +335,14 @@ img {
 .btn.collapsible::before,
 .btn.collapsible::after {
     content: "\e602";
+    font-size: 2rem;
     font-family: "icons";
     color: C_TEXT_LIGHT;
+    line-height: 1;
 
-    height: auto;
+    height: 17px;
     width: auto;
-    margin-left: -7px;
+    margin-left: -9px;
 
     position: absolute;
     top: 0;
@@ -336,6 +356,15 @@ img {
     transition: top 0.2s, bottom 0.2s, height 0;
 }
 
+@media (max-width: 649px) {
+    .btn.collapsible::before,
+    .btn.collapsible::after {
+        font-size: 1.5rem;
+
+        margin-left: -6px;
+    }
+}
+
 .btn.collapsible::before {
     top: auto;
     bottom: 0;
@@ -346,13 +375,13 @@ img {
 .btn.collapsible:hover::before {
     height: auto;
 
-    bottom: 2px;
+    bottom: -2px;
 }
 
 .btn.collapsible:hover::after {
     height: auto;
 
-    top: 2px;
+    top: -2px;
 }
 
 .btn.collapsible.closer,
@@ -733,6 +762,10 @@ img {
 }
 
 @media (max-width: 649px) {
+    .header{
+        height: 350px;
+    }
+
     .content {
         width: 100%;
 
@@ -750,15 +783,25 @@ img {
     font-family: "geometriaBold", Arial, sans-serif;
 
     position: absolute;
-    top: 50px;
+    top: 41px;
     right: 0;
     z-index: 99999;
+}
+
+.content .github {
+    font-size: 2.2rem;
+}
+
+@media (max-width: 649px) {
+    .content .language {
+        top: 20px;
+    }
 }
 
 .focusBlock {
     text-align: center;
 
-    padding: 3rem 0 6rem;
+    padding: 4rem 0 6rem;
 }
 
 .focusBlock p {
@@ -810,7 +853,7 @@ img {
 }
 
 .stripeLast {
-    padding: 60px 0 10px;
+    padding-top: 0;
 }
 
 .sloganSide {
@@ -867,6 +910,10 @@ img {
     .sloganSide {
         margin-top: 2em;
     }
+
+    .triangleBottom::after {
+        border-top-width: inherit;
+    }
 }
 
 /* -> Footer -- */
@@ -891,6 +938,23 @@ a.backTop {
     text-transform: uppercase;
 
     padding: 2em;
+
+    position: relative;
+}
+
+.footer .backTop i {
+    font-size: 2.5rem;
+    color: C_TEXT;
+
+    margin-left: -12px;
+
+    position: absolute;
+    top: -22px;
+    left: 50%;
+
+    cursor: pointer;
+
+    @mixin rotate_180_cw();
 }
 
 .footer p {

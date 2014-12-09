@@ -118,7 +118,7 @@ public class HomeView extends ViewImpl implements HomePresenter.MyView {
         $(beesCloser).click(new Function() {
             public void f(Element e) {
                 $(beesMore).slideUp(SLIDE_DELAY);
-                $(bees).removeClass(pageResources.style().collapsible());
+                $(beesBtn).removeClass(pageResources.style().collapsible());
             }
         });
     }

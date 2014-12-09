@@ -104,16 +104,13 @@
                         </ui:msg>
                     </h2>
                     <p>
-                        <ui:msg description="A success story - Paragraphe -">It all began with two passionate technologists,
-                            Christian Goudreau and Philippe Beaudoin, a
-                            framework with endless possibilities named GWTP and… Google.
+                        <ui:msg description="A success story - Paragraphe -">It all began with two passionate
+                            technologists, Christian Goudreau and Philippe Beaudoin, a framework with endless possibilities named GWTP and… Google.
                         </ui:msg>
                     </p>
-                    <p>
-                        <a class="{res.style.btn}" ui:field="successStoryBtn" href="javascript:;">
-                            <ui:msg description="btn learn more">Learn more</ui:msg>
-                        </a>
-                    </p>
+                    <a class="{res.style.btn}" ui:field="successStoryBtn" href="javascript:;">
+                        <ui:msg description="btn learn more">Learn more</ui:msg>
+                    </a>
 
                 </div>
             </div>
@@ -147,7 +144,8 @@
                             <ui:msg description="The Genesis Of GWTP">The Genesis Of GWTP</ui:msg>
                         </h3>
                         <p>
-                            <ui:msg description="The Genesis Of GWTP - Paragraphe -">The two co-founders collaborated on ways
+                            <ui:msg description="The Genesis Of GWTP - Paragraphe -">The two co-founders collaborated on
+                                ways
                                 of applying best practices in software engineer to GWT, which resulted in the invention
                                 of GWT-Platform, a powerful and flexible open source tool for rapidly creating robust
                                 web applications.
@@ -159,7 +157,8 @@
                             <ui:msg description="Immediate Growth">Immediate Growth</ui:msg>
                         </h3>
                         <p>
-                            <ui:msg description="Immediate Growth - Paragraphe -">The time was ripe for GWT-Platform. It grew
+                            <ui:msg description="Immediate Growth - Paragraphe -">The time was ripe for GWT-Platform. It
+                                grew
                                 so quickly that the co-founders had to officially establish Arcbees as a company in July
                                 2010, to give community and commercial developers the support they deserved, and to
                                 evolve the platform.
@@ -171,7 +170,8 @@
                             <ui:msg description="Google-Recognized">Google-Recognized</ui:msg>
                         </h3>
                         <p>
-                            <ui:msg description="Google-Recognized - Paragraphe -">Within less than a year, Google invited
+                            <ui:msg description="Google-Recognized - Paragraphe -">Within less than a year, Google
+                                invited
                                 the two men to speak at Google I/O. In 2012, Christian was appointed to the GWT Steering
                                 Committee, the body dedicated to advancing the ongoing evolution of this framework.
                             </ui:msg>
@@ -179,7 +179,7 @@
                     </div>
                 </div>
                 <div class="{res.grid.row} {res.style.clearfix}">
-                    <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1_3} {res.grid.col_m_full}">
+                    <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1_3} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                         <h2>
                             <ui:msg description="The Way Of The Bee">The Way Of The Bee</ui:msg>
                         </h2>
@@ -200,16 +200,15 @@
 
         <section class="{res.style.stripe} {res.style.light} {res.style.centered}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_full}">
+                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                     <h2 class="{res.style.lonely}">
                         <ui:msg description="Why The Name Arcbees?">Why The Name
                             <span>Arcbees?</span>
                         </ui:msg>
-
                     </h2>
                     <p>
-                        <ui:msg description="Why The Name Arcbees? - Paragraphe -">“Arc” stands for “Architects”. Bees are
-                            bees. We think of ourselves as Architects Bees. Here's why.
+                        <ui:msg description="Why The Name Arcbees? - Paragraphe -">“Arc” stands for “Architects”. Bees
+                            are bees. We think of ourselves as Architects Bees. Here's why.
                         </ui:msg>
                     </p>
                 </div>
@@ -220,15 +219,16 @@
             <div class="{res.style.stripe} {res.style.dark} {page.style.architect}">
                 <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}"
                         ui:field="architect">
-                    <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_full}">
+                    <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                         <h3 class="{res.style.stripeTitle}">
                             <ui:msg description="Architects">Architects</ui:msg>
                         </h3>
                         <a href="javascript:;" class="{res.style.btn}" ui:field="architectBtn">Learn more</a>
                         <div ui:field="architectMore">
                             <p>
-                                <ui:msg description="Architects - Paragraphe -">Architecture matters. Great products require
-                                    a clear and extensible underlying structure. This is especially important for
+                                <ui:msg description="Architects - Paragraphe -">Architecture matters. Great products
+                                    require a clear and extensible underlying structure. This is especially important
+                                    for
                                     products to stand the test of time. We look around, and we see well-architected
                                     buildings all around us that remain useful for decades if not centuries. That
                                     inspires us to pursue great design principles right down to their
@@ -306,20 +306,21 @@
                             <h3 class="{res.style.stripeTitle}">
                                 <ui:msg description="Bees">Bees</ui:msg>
                             </h3>
-                            <p>
-                                <a href="javascript:;" class="{res.style.btn}" ui:field="beesBtn">
-                                    <ui:msg description="btn You can't...">You can’t beat bees for efficiency.</ui:msg>
-                                </a>
-                            </p>
+                            <a href="javascript:;" class="{res.style.btn}" ui:field="beesBtn">
+                                <ui:msg description="btn You can't...">You can’t beat bees for efficiency.</ui:msg>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="{res.style.stripe}" ui:field="beesMore">
                     <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                         <div>
-                            <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_full} {page.style.beesContent}">
+                            <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0} {page.style.beesContent}">
                                 <ui:msg description="Bees - Paragraphe -">
-                                    <p>You can’t beat bees for efficiency. Their hexagonal honeycombs are the most
+                                    <p>
+                                        <strong>You can’t beat bees for efficiency.</strong>
+                                    </p>
+                                    <p>Their hexagonal honeycombs are the most
                                         economical structure for packing a surface. It gives them the most storage for
                                         the lowest resource cost mathematically possible.
                                     </p>
@@ -348,7 +349,7 @@
         <section class="{res.style.stripe} {res.style.light} {res.style.centered}">
             <div class="{page.style.equal}"></div>
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4}">
+                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                     <h2>
                         <ui:msg description="Architects of simplicity">Architects
                             <span>of simplicity</span>
@@ -356,13 +357,16 @@
 
                     </h2>
                     <p>
-                        <ui:msg description="Architects of simplicity - Paragraphe -">Inspired by the best architects of all
+                        <ui:msg description="Architects of simplicity - Paragraphe -">Inspired by the best architects of
+                            all
                             time, we want to help you create optimal code, by helping you keep your code simple.
                         </ui:msg>
                     </p>
                 </div>
             </div>
+        </section>
 
+        <section class="{res.style.stripe} {res.style.stripeLast} {res.style.light} {res.style.centered}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.btns} {res.style.centered}">
                 <div class="{res.grid.col} {res.grid.col_full}">
                     <h3>

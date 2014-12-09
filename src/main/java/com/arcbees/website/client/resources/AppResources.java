@@ -107,6 +107,10 @@ public interface AppResources extends FontResources {
         String btns();
 
         String language();
+
+        String github();
+
+        String twoLineTitle();
     }
 
     @Source("css/normalize.gss")

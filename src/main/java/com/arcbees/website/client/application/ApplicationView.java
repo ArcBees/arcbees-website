@@ -18,6 +18,7 @@ package com.arcbees.website.client.application;
 
 import com.arcbees.website.client.resources.AppResources;
 import com.google.gwt.dom.client.DivElement;
+import com.google.gwt.dom.client.Element;
 import com.google.gwt.i18n.client.LocaleInfo;
 import com.google.gwt.query.client.Function;
 import com.google.gwt.uibinder.client.UiBinder;
@@ -37,6 +38,8 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     interface Binder extends UiBinder<Widget, ApplicationView> {
     }
 
+    private static final int ANIMATION_DURATION = 400;
+
     @UiField
     SimplePanel main;
     @UiField
@@ -47,6 +50,8 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     DivElement content;
     @UiField
     DivElement langToggle;
+    @UiField
+    Object backTop;
 
     private final AppResources appResources;
 
@@ -75,7 +80,7 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
                 $(sidebar).toggleClass(appResources.style().active());
 
                 $(menuToggle).removeClass(appResources.style().active());
-                if($(sidebar).hasClass(appResources.style().active())){
+                if ($(sidebar).hasClass(appResources.style().active())) {
                     $(menuToggle).toggleClass(appResources.style().active());
                 }
 
@@ -107,6 +112,18 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
         });
 
         $("#monId").toggleClass("myClass", isFrench());
+
+        $(backTop).click(new Function() {
+            @Override
+            public void f() {
+                $("html, body").each(new Function() {
+                    @Override
+                    public void f(Element element) {
+                        new ScrollTopAnimation(element).run(ANIMATION_DURATION);
+                    }
+                });
+            }
+        });
     }
 
     private void switchLang() {

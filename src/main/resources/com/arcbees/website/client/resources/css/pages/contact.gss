@@ -12,16 +12,17 @@
     min-width: 100%;
 }
 
-/* -- social ------------------------------------------- */
+/* -- work with us ------------------------------------------- */
 
-.social h2 {
-    font-size: 2.5rem;
-
-    margin: 0;
+.workWithUs a {
+    color: C_PRIMARY;
 }
 
-.social ul{
+/* -- social ------------------------------------------- */
+
+ul.social {
     padding-left: 0;
+    margin: 3rem 0 8rem;
 }
 
 .social li {
@@ -51,8 +52,6 @@
 /* -- quebec ------------------------------------------- */
 
 .quebec h3 {
-    font-size: 1.7rem;
-
     margin-top: 0;
 }
 

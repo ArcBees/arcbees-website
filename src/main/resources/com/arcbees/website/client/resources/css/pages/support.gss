@@ -93,7 +93,7 @@
 }
 
 .support .featuredIcons i {
-    color: #fff;
+    color: #000;
     font-size: 22.5rem;
     line-height: 1;
 
@@ -113,6 +113,7 @@
 }
 
 .offers {
+    margin-top: 5rem;
     margin-bottom: -173px;
 }
 
@@ -151,7 +152,7 @@
 
 .plan .price {
     text-align: right;
-    font-family: "geometriaBold", Arial, sans-serif;
+    font-family: "geometria", Arial, sans-serif;
     text-transform: uppercase;
 
     display: table;
@@ -161,7 +162,6 @@
 
 .plan .price strong {
     font-size: 4rem;
-    font-family: "geometriaLight", Arial, sans-serif;
     text-align: center;
     line-height: 1;
 
@@ -195,14 +195,16 @@
     display: block;
 }
 
-.plan .developers {
-    border-right: 1px solid #727272;
+.plan .advisory {
+    border-left: 1px solid #727272;
 }
 
 .plan .developers,
 .plan .advisory {
     display: inline-block;
     width: 48%;
+
+    vertical-align: top;
 }
 
 .plan .developers p,
@@ -256,11 +258,11 @@
 /* -> Features -- */
 
 .features {
-    padding-top: 155px;
+    padding-top: 95px;
 }
 
 .features h2 {
-    margin: 1.4em 0 1.15em;
+    margin: 7.5rem 0 2rem;
 }
 
 .features i {

@@ -8,46 +8,40 @@
 
     <g:HTMLPanel styleName="{page.style.contact}">
 
-        <h1 class="{fonts.icons.iconArcbees} {res.style.withLogo}"><span>Contact</span></h1>
+        <h1 class="{fonts.icons.iconArcbees} {res.style.withLogo}">
+            <span>Contact</span>
+        </h1>
 
         <section class="{page.style.headerBg}">
             <g:SimplePanel ui:field="container"/>
         </section>
 
-        <section class="{res.style.stripe} {res.style.colored}">
-            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_1_2}">
-                    <h2 class="{res.style.slogan}">Work with
-                        <span>the
-                            <strong>bees</strong>
-                        </span>
-                    </h2>
-                </div>
+        <section class="{page.style.workWithUs} {res.style.stripe} {res.style.dark} {res.style.triangleBottom} {res.style.nextColored}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.focusBlock}">
+                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
 
-                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full} {res.style.sloganSide}">
-                    <p>
-                        <strong>You want to have awesomes bees by your side, to build your apps, you know what to do:
-                        </strong>
+                    <h2>Work with us</h2>
+                    <p>250-2299 boul. Versant nord<br/>Québec, Québec G1N 4G2
                     </p>
-                    <p>250-2299 boul. Versant nord<br/>Québec, Québec G1N 4G2</p>
                     <p>
-                        <strong>E:</strong>
-                        QUEENBEE@ARCBEES.COM
+                        <a href="mailto:queenbee@arcbees.com">QUEENBEE@ARCBEES.COM</a>
                         <br/>
                         <strong>Toll-free:</strong>
                         1.877.635.1585
                     </p>
-                    <a href="#" class="{res.style.btn}">Get directions</a>
+                        <a class="{res.style.btn}">Get directions</a>
+
                 </div>
             </div>
         </section>
 
-        <section class="{page.style.social} {res.style.centered}">
-            <div class="{res.style.stripe} {res.style.colored}">
-                <h2>Let's be friends</h2>
-            </div>
-            <div class="{res.style.stripe}">
-                <ul>
+        <section
+                class="{res.style.stripe} {res.style.colored} {res.style.triangleBottom} {res.style.nextLight} {res.style.centered}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <h2>Let's bee
+                    <span>friends</span>
+                </h2>
+                <ul class="{page.style.social}">
                     <li>
                         <a href="#" data-icon="&#xe622;"></a>
                     </li>
@@ -70,7 +64,7 @@
             </div>
         </section>
 
-        <section class="{page.style.quebec} {res.style.stripe} {res.style.dark} {res.style.centered}">
+        <section class="{page.style.quebec} {res.style.stripe} {res.style.light} {res.style.centered}">
             <h3>We have fun in
                 <span>beautiful quebec city</span>
             </h3>
@@ -79,13 +73,14 @@
             </div>
         </section>
 
-        <section class="{res.style.stripe} {res.style.stripeLast} {res.style.centered}">
-            <div class="{res.grid.row} {res.style.clearfix}">
-                <h2>our awesomeness
-                    <span>at work</span>
-                </h2>
-                <a href="#" class="{res.style.btn}">See your projects and products</a>
-                <a href="#" data-icon="&#xe602;" class="{res.style.backTop}"></a>
+        <section class="{res.style.stripe} {res.style.light}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.btns} {res.style.centered}">
+                <div class="{res.grid.col} {res.grid.col_full}">
+                    <h3>Learn more about</h3>
+                    <a class="{res.style.btn}">Expertise</a>
+                    <a class="{res.style.btn}">Products</a>
+                    <a class="{res.style.btn}">Services</a>
+                </div>
             </div>
         </section>
 

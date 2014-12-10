@@ -128,10 +128,13 @@
     font-size: 7em;
 }
 
+.advantages .topIcons {
+    min-height: 125px;
+}
+
 /* -- knowledge -- */
-.knowledge .icons {
-    height: 124px;
-    padding-top: 35px;
+.knowledge .topIcons {
+    padding-top: 33px;
 }
 
 .knowledge i {
@@ -182,10 +185,6 @@
 /* -- Works everywhere --*/
 .worksEverywhere {
     position: relative;
-}
-
-.worksEverywhere .icons {
-    height: 124px;
 }
 
 .worksEverywhere i {
@@ -247,6 +246,13 @@
     @mixin rotate(-60deg);
 }
 
+/* -- Work with the best --*/
+
+.workBest i {
+    display: block;
+    min-height: 125px;
+}
+
 /* -- Beauty and function --*/
 .beauty {
     position: relative;
@@ -259,7 +265,7 @@
     margin-left: -34px;
 
     position: absolute;
-    top: 38px;
+    top: 35px;
     left: 50%;
 }
 

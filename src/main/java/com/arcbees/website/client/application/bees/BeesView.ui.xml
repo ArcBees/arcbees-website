@@ -11,7 +11,9 @@
 
     <g:HTMLPanel styleName="{page.style.bees}">
 
-        <h1 class="{fonts.icons.iconArcbees} {res.style.withLogo}"><span>Bees</span></h1>
+        <h1 class="{fonts.icons.iconArcbees} {res.style.withLogo}">
+            <span>Bees</span>
+        </h1>
 
         <section class="{res.style.stripe} {res.style.header} {page.style.header} {res.style.light} {page.style.intro}">
             <div>
@@ -24,69 +26,59 @@
             </div>
         </section>
 
-        <section class="{res.style.stripe} {res.style.colored}">
-            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_1_2}">
-                    <h2 class="{res.style.slogan}">Bee-ing
-                        <span>great</span>
-                        <span>
-                            <strong>together</strong>
-                        </span>
-                    </h2>
-                </div>
-                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_2} {res.grid.col_m_full} {res.grid.col_m_push_0}">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                    <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-                    <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+        <section class="{res.style.stripe} {res.style.dark} {res.style.triangleBottom} {res.style.nextColored}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.focusBlock}">
+                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+
+                    <h2 class="{res.style.stripeTitle}">Our Culture</h2>
+                    <p>Every Bee is entitled to their own opinion and to challenge the Queenbee, but we are a hive, a
+                        team, with shared values and purpose.
+                    </p>
+
                 </div>
             </div>
         </section>
 
-        <section>
-            <div class="{res.style.stripe} {res.style.colored} {res.style.centered}">
-                 <h2>Our culture</h2>
-            </div>
-            <div class="{res.style.stripe} {res.style.light} {res.style.centered}">
-                <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
+        <section
+                class="{res.style.stripe} {res.style.colored} {res.style.triangleBottom} {res.style.nextLight}  {res.style.centered}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1_3} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                     <div class="{page.style.slides}">
                         <div class="{page.style.slide}">
-                            <h3>Bee
-                                <strong>dedicated</strong>
-                            </h3>
-                            <p>Designed by top shelf geeks, ArcBees' open source software speed up and sharpen your
-                                projects
+                            <h2>Bee Dedicated</h2>
+                            <p>When we agree to take on a client’s project, it’s not just their project anymore. It’s
+                                ours
+                                too, and there’s nothing we won't do to make it a success.
                             </p>
                         </div>
                     </div>
-
-                    <a href="#" class="{page.style.prev}">
-                        <span class="{res.style.hidden}">Prev</span>
-                    </a>
-                    <a href="#" class="{page.style.next}">
-                        <span class="{res.style.hidden}">Next</span>
-                    </a>
-                    <nav class="{page.style.pager} {res.style.centered}">
-                        <ul>
-                            <li>
-                                <a href="#" class="{page.style.active}"></a>
-                            </li>
-                            <li>
-                                <a href="#"></a>
-                            </li>
-                            <li>
-                                <a href="#"></a>
-                            </li>
-                            <li>
-                                <a href="#"></a>
-                            </li>
-                            <li>
-                                <a href="#"></a>
-                            </li>
-                        </ul>
-                    </nav>
-
                 </div>
+                <a href="#" class="{page.style.prev}">
+                    <span class="{res.style.hidden}">Prev</span>
+                </a>
+                <a href="#" class="{page.style.next}">
+                    <span class="{res.style.hidden}">Next</span>
+                </a>
+                <nav class="{page.style.pager} {res.style.centered}">
+                    <ul>
+                        <li>
+                            <a href="#" class="{page.style.active}"></a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </nav>
+
             </div>
         </section>
 
@@ -94,7 +86,7 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_full}">
 
-                    <h2>Our bees</h2>
+                    <h2>Our Bees</h2>
 
                     <div class="{page.style.hive}">
                         <div class="{page.style.bee} {page.style.bee1}">
@@ -102,8 +94,8 @@
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeChristian}"></g:Image>
                                     <a href="#{BEE_CHRISTIAN}">
-                                        <h3>Croustillant Goudreau</h3>
-                                        <p>BE-E-O and founder</p>
+                                        <h3>Christian Goudreau</h3>
+                                        <p>BEE-EO and co-founder</p>
                                     </a>
                                 </div>
                             </div>
@@ -165,11 +157,51 @@
         <section class="{res.style.stripe} {res.style.light} {res.style.centered}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_full}">
-
                     <h2>Wanna bee?</h2>
+                </div>
+            </div>
+        </section>
 
-                    <p><a href="#" class="{res.style.btn}">Make something you love</a></p>
+        <section class="{res.style.stripe} {res.style.dark} {res.style.centered}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <div class="{res.grid.col} {res.grid.col_full}">
 
+                    <h2>calculate
+                        <span>your bee-attitude</span>
+                    </h2>
+
+                    <p>
+                        <a href="#" class="{res.style.btn}">Go, I'm ready to beeez</a>
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="{page.style.offers} {res.style.stripe} {res.style.light} {res.style.centered}">
+            <h2>Spontaneous applications</h2>
+            <div class="{res.style.stripe}">
+                <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                    <div class="{res.grid.col} {res.grid.col_full}">
+                        <h3>Software engineer</h3>
+                        <a href="#" class="{res.style.btn}">How can you be the best programmer you can be</a>
+                    </div>
+                </div>
+            </div>
+            <div class="{res.style.stripe}">
+                <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                    <div class="{res.grid.col} {res.grid.col_full}">
+                        <h3>Web developer</h3>
+                        <a href="#" class="{res.style.btn}">Awesome CSS Master</a>
+                    </div>
+                </div>
+            </div>
+            <div class="{res.style.stripe}">
+                <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                    <div class="{res.grid.col} {res.grid.col_full}">
+                        <h3>Designer slave</h3>
+                        <a href="#" class="{res.style.btn}">We hope you like to suffer</a>
+                    </div>
                 </div>
             </div>
         </section>

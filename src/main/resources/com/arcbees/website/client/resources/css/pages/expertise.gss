@@ -109,3 +109,14 @@
     top: auto;
     bottom: -119px;
 }
+
+@media (max-width: 649px) {
+    .equal,
+    .equal::after {
+        height: 7px;
+        width: 28px;
+        margin-left: -14px;
+
+        top: -7px;
+    }
+}

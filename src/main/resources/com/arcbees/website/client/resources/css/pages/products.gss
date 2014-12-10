@@ -41,11 +41,7 @@
     font-family: "geometriaBold";
     line-height: 1em;
 
-    margin: 0;
-}
-
-.products h3 {
-    margin-top: 0;
+    margin-bottom: 4.5rem;
 }
 
 @media (max-width: 649px) {
@@ -377,7 +373,13 @@ ul.social {
 /* --> In Details -- */
 
 .stripeDetails {
-    padding: 23px 0 30px;
+    padding: 4rem 0 4.5rem;
+}
+
+.stripeDetails h3 {
+    font-size: 2rem;
+
+    margin-bottom: 0;
 }
 
 .stripeDetails h4 {

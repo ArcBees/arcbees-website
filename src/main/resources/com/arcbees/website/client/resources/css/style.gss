@@ -30,6 +30,32 @@ body {
     font-size: 1.5rem;
 }
 
+/* avoid top margins on first content element */
+
+p:first-child,
+ul:first-child,
+ol:first-child,
+dl:first-child,
+blockquote:first-child,
+pre:first-child,
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+    margin-top: 0;
+}
+
+/* avoid margins on nested elements */
+
+li p,
+li ul,
+li ol {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 /* -- Wrapper -------------------------------------------- */
 
 .wrapper {
@@ -48,7 +74,7 @@ body {
 
 @media (max-width: 649px) {
     .wrapper {
-        width: 320px;
+        width: 90%;
     }
 }
 
@@ -155,6 +181,10 @@ h3.stripeTitle {
     margin: 0 0 .5em;
 }
 
+h3.stripeTitle.twoLineTitle {
+    min-height: 8rem;
+}
+
 @media (max-width: 979px) {
     h2 {
         font-size: 2.3rem;
@@ -174,8 +204,16 @@ h3.stripeTitle {
         border-bottom: 0;
     }
 
+    h3 {
+        font-size: 1.5rem;
+    }
+
     h3.stripeTitle {
         font-size: 2.5rem;
+    }
+
+    h3.stripeTitle.twoLineTitle {
+        min-height: inherit;
     }
 }
 
@@ -217,11 +255,10 @@ em {
 
 a.anchor {
     color: #afafaf;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     font-family: "geometria";
 
     display: inline-block;
-    margin-top: -7px;
 
     vertical-align: middle;
 }
@@ -232,6 +269,24 @@ img {
 }
 
 /* -- Components ---------------------------------------- */
+
+.btns a {
+    margin: 0 10em;
+}
+
+@media (max-width: 649px) {
+    .btns a {
+        margin: 0em;
+    }
+}
+
+.btns a:first-of-type {
+    margin-left: 0;
+}
+
+.btns a:last-child {
+    margin-right: 0;
+}
 
 .btn,
 .btn:visited {
@@ -264,6 +319,8 @@ img {
 
 .btn:hover {
     color: C_TEXT_LIGHT;
+
+    cursor: pointer;
 }
 
 .btn:hover::after {
@@ -278,12 +335,14 @@ img {
 .btn.collapsible::before,
 .btn.collapsible::after {
     content: "\e602";
+    font-size: 2rem;
     font-family: "icons";
     color: C_TEXT_LIGHT;
+    line-height: 1;
 
-    height: auto;
+    height: 17px;
     width: auto;
-    margin-left: -7px;
+    margin-left: -9px;
 
     position: absolute;
     top: 0;
@@ -297,6 +356,15 @@ img {
     transition: top 0.2s, bottom 0.2s, height 0;
 }
 
+@media (max-width: 649px) {
+    .btn.collapsible::before,
+    .btn.collapsible::after {
+        font-size: 1.5rem;
+
+        margin-left: -6px;
+    }
+}
+
 .btn.collapsible::before {
     top: auto;
     bottom: 0;
@@ -307,13 +375,13 @@ img {
 .btn.collapsible:hover::before {
     height: auto;
 
-    bottom: 2px;
+    bottom: -2px;
 }
 
 .btn.collapsible:hover::after {
     height: auto;
 
-    top: 2px;
+    top: -2px;
 }
 
 .btn.collapsible.closer,
@@ -694,6 +762,10 @@ img {
 }
 
 @media (max-width: 649px) {
+    .header{
+        height: 350px;
+    }
+
     .content {
         width: 100%;
 
@@ -707,15 +779,34 @@ img {
     @mixin transition(margin, 0.4s);
 }
 
+.content .language {
+    font-family: "geometriaBold", Arial, sans-serif;
+
+    position: absolute;
+    top: 41px;
+    right: 0;
+    z-index: 99999;
+}
+
+.content .github {
+    font-size: 2.2rem;
+}
+
+@media (max-width: 649px) {
+    .content .language {
+        top: 20px;
+    }
+}
+
 .focusBlock {
     text-align: center;
 
-    padding: 30px 0 70px;
+    padding: 4rem 0 6rem;
 }
 
 .focusBlock p {
     font-family: "geometriaLight", Arial, sans-serif;
-    font-size: 2.5rem;
+    font-size: 1.9rem;
 }
 
 @media (max-width: 649px) {
@@ -762,7 +853,7 @@ img {
 }
 
 .stripeLast {
-    padding: 60px 0 10px;
+    padding-top: 0;
 }
 
 .sloganSide {
@@ -777,7 +868,7 @@ img {
     height: 0;
     margin-left: -1500px;
     border: 0 solid transparent;
-    border-top-width: 311px;
+    border-top-width: 305px;
     border-right-width: 1500px;
     border-left-width: 1500px;
 
@@ -819,6 +910,10 @@ img {
     .sloganSide {
         margin-top: 2em;
     }
+
+    .triangleBottom::after {
+        border-top-width: inherit;
+    }
 }
 
 /* -> Footer -- */
@@ -843,6 +938,23 @@ a.backTop {
     text-transform: uppercase;
 
     padding: 2em;
+
+    position: relative;
+}
+
+.footer .backTop i {
+    font-size: 2.5rem;
+    color: C_TEXT;
+
+    margin-left: -12px;
+
+    position: absolute;
+    top: -22px;
+    left: 50%;
+
+    cursor: pointer;
+
+    @mixin rotate_180_cw();
 }
 
 .footer p {

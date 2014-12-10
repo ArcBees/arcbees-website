@@ -123,13 +123,15 @@ public interface PageServicesResources extends FontResources {
 
         String dots();
 
-        String icons();
-
         String beauty();
 
         String worksEverywhere();
 
         String advantages();
+
+        String workBest();
+
+        String topIcons();
     }
 
     @Source("img/pages/servicesBanner.png")

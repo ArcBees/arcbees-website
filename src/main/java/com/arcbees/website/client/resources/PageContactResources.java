@@ -28,6 +28,8 @@ public interface PageContactResources extends FontResources {
         String headerBg();
 
         String quebec();
+
+        String workWithUs();
     }
 
     @Source("img/pages/contactMapMarker.png")

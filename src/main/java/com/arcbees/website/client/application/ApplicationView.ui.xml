@@ -53,11 +53,6 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#{CAREERS}">
-                            <ui:msg description="Careers">Careers</ui:msg>
-                        </a>
-                    </li>
-                    <li>
                         <a href="#{CONTACT}" class="{res.style.menuContact}">Contact</a>
                     </li>
                     <li>
@@ -113,8 +108,8 @@
 
         <div class="{res.style.content}" ui:field="content">
             <div ui:field="langToggle" class="{res.style.wrapper}">
-                <div class="{res.style.language}">
-                    <span><ui:msg description="FR">FR</ui:msg></span>
+                <div class="{res.style.linkTopRight}">
+                    <span class="{res.style.language}"><ui:msg description="FR">FR</ui:msg></span>
                     <span class="{fonts.icons.iconGitHub} {res.style.github}"></span>
                 </div>
 

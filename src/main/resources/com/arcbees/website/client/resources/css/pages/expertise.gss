@@ -93,8 +93,8 @@
     font-size: 11rem;
 }
 
-.tools .plus,
-.tools .equal {
+.plus,
+.equal {
     font-size: 8rem;
     font-family: geometriaBold;
 
@@ -105,18 +105,30 @@
     left: 50%;
 }
 
-.tools .equal {
+.equal {
     top: auto;
     bottom: -119px;
 }
 
 @media (max-width: 649px) {
+    .tools i {
+        font-size: 6rem;
+    }
+
+    .plus {
+        font-size: 5rem;
+
+        margin-left: -13px;
+        top: -57px;
+
+    }
+
     .equal,
     .equal::after {
-        height: 7px;
-        width: 28px;
+        font-size: 5rem;
+
         margin-left: -14px;
 
-        top: -7px;
+        bottom: -60px;
     }
 }

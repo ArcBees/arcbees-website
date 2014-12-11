@@ -49,9 +49,10 @@ iconCode iconHeart iconClose iconFb iconFbSquare iconGae iconGitHub iconGPlus ic
 iconHero iconHive iconInfinite iconInfo iconJukito iconLike iconLkd iconMapPin iconPyramid iconRadar iconRubic
 iconSearch iconShare iconSkull iconTrophe iconTwitter iconWordpress iconChat iconEmail iconPhone iconUser iconhexaEmpty;
 
+.iconInternetSupport:before {content: "\e62e";}
 .iconGCloudPlatform:before {content: "\e62d";}
 .iconCommRes:before {content: "\e625";}
-.iconPhoneSuppport:before {content: "\e626";}
+.iconPhoneSupport:before {content: "\e626";}
 .iconRespTime:before {content: "\e627";}
 .iconSupportCases:before {content: "\e628";}
 .iconWebSupport:before {content: "\e629";}

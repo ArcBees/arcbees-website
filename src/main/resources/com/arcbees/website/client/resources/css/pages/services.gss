@@ -182,6 +182,11 @@
     }
 }
 
+/* -- Way of the bee --*/
+.wayOfTheBee {
+    padding: 0 40px;
+}
+
 /* -- Works everywhere --*/
 .worksEverywhere {
     position: relative;
@@ -265,7 +270,7 @@
     margin-left: -34px;
 
     position: absolute;
-    top: 35px;
+    top: 37px;
     left: 50%;
 }
 

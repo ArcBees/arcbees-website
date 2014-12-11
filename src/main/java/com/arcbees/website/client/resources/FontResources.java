@@ -69,15 +69,17 @@ public interface FontResources extends ClientBundle {
 
         String iconGwt();
 
-        String iconPhoneSuppport();
-
-        String iconWebSupport();
-
         String iconSupportCases();
 
         String iconRespTime();
 
         String iconCommRes();
+
+        String iconPhoneSupport();
+
+        String iconInternetSupport();
+
+        String iconArrowOutside();
     }
 
     @ClientBundle.Source("fonts/icons/icons.gss")

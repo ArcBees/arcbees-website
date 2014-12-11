@@ -193,7 +193,7 @@ h3.stripeTitle.twoLineTitle {
 
 @media (max-width: 649px) {
     h2 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     h2.slogan {
@@ -205,7 +205,7 @@ h3.stripeTitle.twoLineTitle {
     }
 
     h3 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     h3.stripeTitle {
@@ -272,6 +272,14 @@ img {
 
 .btns a {
     margin: 0 10em;
+}
+
+.btn i:before {
+    font-size: 1.2rem;
+
+    margin-right: .5rem;
+
+    vertical-align: baseline;
 }
 
 @media (max-width: 649px) {
@@ -779,21 +787,31 @@ img {
     @mixin transition(margin, 0.4s);
 }
 
-.content .language {
-    font-family: "geometriaBold", Arial, sans-serif;
-
+.content .linkTopRight {
     position: absolute;
     top: 41px;
     right: 0;
     z-index: 99999;
 }
 
+.content .language {
+    font-family: "geometriaBold", Arial, sans-serif;
+
+    display: inline-block;
+
+    cursor: pointer;
+}
+
 .content .github {
     font-size: 2.2rem;
+
+    display: inline-block;
+
+    cursor: pointer;
 }
 
 @media (max-width: 649px) {
-    .content .language {
+    .content .linkTopRight {
         top: 20px;
     }
 }
@@ -801,7 +819,7 @@ img {
 .focusBlock {
     text-align: center;
 
-    padding: 4rem 0 6rem;
+    padding-top: 4rem;
 }
 
 .focusBlock p {
@@ -860,6 +878,10 @@ img {
     margin-top: 9.4em;
 }
 
+.triangleBottom {
+    padding-bottom: 0;
+}
+
 .triangleBottom::after {
     content: "";
 
@@ -867,12 +889,13 @@ img {
     width: 0;
     height: 0;
     margin-left: -1500px;
+    margin-top: -100px;
     border: 0 solid transparent;
-    border-top-width: 305px;
+    border-top-width: 200px;
     border-right-width: 1500px;
     border-left-width: 1500px;
 
-    position: absolute;
+    position: relative;
     right: 0;
     left: 50%;
     bottom: 0;
@@ -927,7 +950,7 @@ a.backTop {
     width: 25px;
     margin: 45px auto -6px;
 
-@mixin rotate_180_ccw();
+    @mixin rotate_180_ccw();
 }
 
 .footer {

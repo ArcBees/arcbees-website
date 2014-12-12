@@ -456,6 +456,20 @@ img {
     /* @alternate */ clip: rect(1px, 1px, 1px, 1px);
 }
 
+.visuallyhidden {
+    overflow: hidden;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    width: 1px;
+    border: 0;
+
+    position: absolute;
+
+    clip: rect(0 0 0 0);
+    /* @alternate */ clip: rect(1px, 1px, 1px, 1px);
+}
+
 .clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
@@ -792,6 +806,10 @@ img {
     top: 41px;
     right: 0;
     z-index: 99999;
+}
+
+.content .linkTopRight a {
+    color: C_TEXT;
 }
 
 .content .language {

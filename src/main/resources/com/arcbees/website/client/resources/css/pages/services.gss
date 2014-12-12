@@ -133,6 +133,7 @@
 }
 
 /* -- knowledge -- */
+
 .knowledge .topIcons {
     padding-top: 33px;
 }
@@ -183,11 +184,13 @@
 }
 
 /* -- Way of the bee --*/
+
 .wayOfTheBee {
     padding: 0 40px;
 }
 
 /* -- Works everywhere --*/
+
 .worksEverywhere {
     position: relative;
 }
@@ -259,6 +262,7 @@
 }
 
 /* -- Beauty and function --*/
+
 .beauty {
     position: relative;
 }
@@ -396,6 +400,7 @@
 }
 
 /* -- partner -- */
+
 .partner {
     margin-bottom: 180px;
 }
@@ -551,6 +556,7 @@
 }
 
 /* -- iterative process -- */
+
 .iterative {
     margin-bottom: 80px;
 }
@@ -704,6 +710,7 @@
 }
 
 /* -- code review -- */
+
 .codeReview {
     position: relative;
 }
@@ -835,6 +842,7 @@
 }
 
 /* -- cost risk -- */
+
 .costRisk {
     margin-bottom: 80px;
 }
@@ -962,6 +970,7 @@
 }
 
 /* -- learn adapt -- */
+
 .learnAdapt .diagram {
     height: 361px;
     margin-top: 30px;
@@ -1095,6 +1104,7 @@
 }
 
 /* -- deliver -- */
+
 .deliver {
     margin-bottom: 40px;
 }

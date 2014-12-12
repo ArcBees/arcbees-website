@@ -57,6 +57,8 @@ public interface PageSupportResources extends FontResources {
         String includes();
 
         String offers();
+
+        String responseTime();
     }
 
     @Source({"com/arcbees/gsss/animation/client/animationsettings.gss",

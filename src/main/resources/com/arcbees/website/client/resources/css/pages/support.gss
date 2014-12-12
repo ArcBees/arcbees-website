@@ -117,6 +117,12 @@
     margin-bottom: -173px;
 }
 
+@media (max-width: 649px) {
+    .offers {
+        margin-bottom: 0px;
+    }
+}
+
 .plan {
     padding-top: 4.5em;
 }
@@ -151,11 +157,10 @@
 }
 
 .plan .price {
-    text-align: right;
     font-family: "geometria", Arial, sans-serif;
     text-transform: uppercase;
+    text-align: center;
 
-    display: table;
     margin: 0 auto;
     padding: 1.5em 0 1em;
 }
@@ -273,4 +278,22 @@
     line-height: 1em;
 
     margin-top: .75em;
+}
+
+.features p {
+    margin-bottom: 65px;
+}
+
+.responseTime {
+    padding: 0 40px;
+}
+
+@media (max-width: 649px) {
+    .features {
+        padding-top: 0px;
+    }
+
+    .responseTime {
+        padding: 0;
+    }
 }

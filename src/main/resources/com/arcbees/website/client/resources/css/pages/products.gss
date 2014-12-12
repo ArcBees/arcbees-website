@@ -278,8 +278,6 @@ ul.social {
 /* --> Slideshow -- */
 
 .slideshow {
-    margin-top: 60px;
-
     position: relative;
 }
 
@@ -384,6 +382,15 @@ ul.social {
 
 .stripeDetails h4 {
     margin-top: .7em;
+}
+
+/* --> More on -- */
+
+.moreOn h3 {
+    display: inline-block;
+    margin: 0 1.8rem 0 0;
+
+    vertical-align: middle;
 }
 
 /* --> Need support -- */

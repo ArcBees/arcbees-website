@@ -1,6 +1,9 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-        xmlns:g="urn:import:com.google.gwt.user.client.ui">
+        xmlns:g="urn:import:com.google.gwt.user.client.ui"
+        ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+        ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
+        ui:generateLocales="default">
 
     <ui:import field="com.arcbees.website.client.NameTokens.*"/>
 
@@ -30,9 +33,13 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.focusBlock}">
                 <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
 
-                    <h2 class="{res.style.stripeTitle}">Our Culture</h2>
-                    <p>Every Bee is entitled to their own opinion and to challenge the Queenbee, but we are a hive, a
-                        team, with shared values and purpose.
+                    <h2 class="{res.style.stripeTitle}">
+                        <ui:msg description="Our Culture">Our Culture</ui:msg>
+                    </h2>
+                    <p>
+                        <ui:msg description="Our Culture - Paragraph -">Every Bee is entitled to their own opinion and
+                            to challenge the Queenbee, but we are a hive, a team, with shared values and purpose.
+                        </ui:msg>
                     </p>
 
                 </div>
@@ -45,10 +52,14 @@
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1_3} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                     <div class="{page.style.slides}">
                         <div class="{page.style.slide}">
-                            <h2>Bee Dedicated</h2>
-                            <p>When we agree to take on a client’s project, it’s not just their project anymore. It’s
-                                ours
-                                too, and there’s nothing we won't do to make it a success.
+                            <h2>
+                                <ui:msg description="Bee dedicated">Bee Dedicated</ui:msg>
+                            </h2>
+                            <p>
+                                <ui:msg description="Bee dedicated - Paragraph -">When we agree to take on a client’s
+                                    project, it’s not just their project anymore. It’s ours too, and there’s nothing we
+                                    won't do to make it a success.
+                                </ui:msg>
                             </p>
                         </div>
                     </div>
@@ -78,7 +89,6 @@
                         </li>
                     </ul>
                 </nav>
-
             </div>
         </section>
 
@@ -105,6 +115,10 @@
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeChristian}"></g:Image>
+                                    <a href="#{BEE_CHRISTIAN}">
+                                        <h3>François Dion</h3>
+                                        <p>BEE-EO and co-founder</p>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -113,6 +127,10 @@
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeChristian}"></g:Image>
+                                    <a href="#{BEE_CHRISTIAN}">
+                                        <h3>Philippe Araujo</h3>
+                                        <p>BEE-EO and co-founder</p>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -121,6 +139,10 @@
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeChristian}"></g:Image>
+                                    <a href="#{BEE_CHRISTIAN}">
+                                        <h3>Simon-Pierre Gingras</h3>
+                                        <p>BEE-EO and co-founder</p>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -129,6 +151,10 @@
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeChristian}"></g:Image>
+                                    <a href="#{BEE_CHRISTIAN}">
+                                        <h3>Maxime Mériouma-Caron</h3>
+                                        <p>BEE-EO and co-founder</p>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -137,6 +163,82 @@
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeChristian}"></g:Image>
+                                    <a href="#{BEE_CHRISTIAN}">
+                                        <h3>Christopher Viel</h3>
+                                        <p>BEE-EO and co-founder</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="{page.style.bee} {page.style.bee1}">
+                            <div class="{page.style.beeHolder1}">
+                                <div class="{page.style.beeHolder2}">
+                                    <g:Image resource="{page.beeChristian}"></g:Image>
+                                    <a href="#{BEE_CHRISTIAN}">
+                                        <h3>Joel Trottier-Hébert</h3>
+                                        <p>BEE-EO and co-founder</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="{page.style.bee} {page.style.bee2}">
+                            <div class="{page.style.beeHolder1}">
+                                <div class="{page.style.beeHolder2}">
+                                    <g:Image resource="{page.beeChristian}"></g:Image>
+                                    <a href="#{BEE_CHRISTIAN}">
+                                        <h3>Manon Gruaz</h3>
+                                        <p>BEE-EO and co-founder</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="{page.style.bee} {page.style.bee3}">
+                            <div class="{page.style.beeHolder1}">
+                                <div class="{page.style.beeHolder2}">
+                                    <g:Image resource="{page.beeChristian}"></g:Image>
+                                    <a href="#{BEE_CHRISTIAN}">
+                                        <h3>Larry Matte</h3>
+                                        <p>BEE-EO and co-founder</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="{page.style.bee} {page.style.bee1}">
+                            <div class="{page.style.beeHolder1}">
+                                <div class="{page.style.beeHolder2}">
+                                    <g:Image resource="{page.beeChristian}"></g:Image>
+                                    <a href="#{BEE_CHRISTIAN}">
+                                        <h3>Jason Lemay</h3>
+                                        <p>BEE-EO and co-founder</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="{page.style.bee} {page.style.bee2}">
+                            <div class="{page.style.beeHolder1}">
+                                <div class="{page.style.beeHolder2}">
+                                    <g:Image resource="{page.beeChristian}"></g:Image>
+                                    <a href="#{BEE_CHRISTIAN}">
+                                        <h3>Jean-Christophe Lariviere</h3>
+                                        <p>BEE-EO and co-founder</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="{page.style.bee} {page.style.bee3}">
+                            <div class="{page.style.beeHolder1}">
+                                <div class="{page.style.beeHolder2}">
+                                    <g:Image resource="{page.beeChristian}"></g:Image>
+                                    <a href="#{BEE_CHRISTIAN}">
+                                        <h3>Geneviève Doyle</h3>
+                                        <p>BEE-EO and co-founder</p>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -179,7 +281,9 @@
         </section>
 
         <section class="{page.style.offers} {res.style.stripe} {res.style.light} {res.style.centered}">
-            <h2>Spontaneous applications</h2>
+            <h2>
+                <ui:msg description="Spontaneous applications">Spontaneous applications</ui:msg>
+            </h2>
             <div class="{res.style.stripe}">
                 <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                     <div class="{res.grid.col} {res.grid.col_full}">

@@ -71,6 +71,20 @@
                     </ul>
                 </div>
             </div>
+        </section>
+
+        <section class="{res.style.stripe} {res.style.centered}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <div class="{res.grid.col} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+                    <a href="#" class="{res.style.btn}">Support</a>
+                    <a href="#" class="{res.style.btn}"><i class="{fonts.icons.iconArrowOutside}"></i>Developer's
+                        Platform
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="{res.style.stripe} {res.style.medium2}">
             <div class="{page.style.slideshow} {res.style.wrapper}">
                 <div class="{page.style.slides}">
                     <g:Image resource="{page.gwtpScreen1}"/>
@@ -225,20 +239,19 @@
             </div>
         </section>
 
-        <section class="{res.style.stripe} {res.style.dark} {res.style.centered}">
+        <section class="{res.style.stripe} {res.style.dark} {res.style.centered} {page.style.moreOn}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_full}">
-
                     <h3>
-                        <ui:msg description="All the documentations you need">All the documentations
-                            <span>you need</span>
+                        <ui:msg description="All the documentations you need">more on
                         </ui:msg>
 
                     </h3>
                     <a href="#" class="{res.style.btn}">
-                        <ui:msg description="- BTN - Go to Arcbees Developers">Go to Arcbees Developers</ui:msg>
+                        <i class="{fonts.icons.iconArrowOutside}"></i>
+                        <ui:msg description="- BTN - Go to Arcbees Developers">Developer's</ui:msg>
+                        Platform
                     </a>
-
                 </div>
             </div>
         </section>

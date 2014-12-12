@@ -132,6 +132,8 @@ public interface PageServicesResources extends FontResources {
         String workBest();
 
         String topIcons();
+
+        String wayOfTheBee();
     }
 
     @Source("img/pages/servicesBanner.png")

@@ -53,11 +53,6 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#{CAREERS}">
-                            <ui:msg description="Careers">Careers</ui:msg>
-                        </a>
-                    </li>
-                    <li>
                         <a href="#{CONTACT}" class="{res.style.menuContact}">Contact</a>
                     </li>
                     <li>
@@ -113,9 +108,19 @@
 
         <div class="{res.style.content}" ui:field="content">
             <div ui:field="langToggle" class="{res.style.wrapper}">
-                <div class="{res.style.language}">
-                    <span><ui:msg description="FR">FR</ui:msg></span>
-                    <span class="{fonts.icons.iconGitHub} {res.style.github}"></span>
+                <div class="{res.style.linkTopRight}">
+                    <span class="{res.style.language}">
+                        <a href="#" lang="fr" title="French version">
+                            <ui:attribute ui:name='title' ui:description='French version'/>
+                            <ui:attribute ui:name='lang' ui:description='fr'/>
+                            <ui:msg description="FR">FR
+                                <span class="{res.style.visuallyhidden}">ANÇAIS</span>
+                            </ui:msg>
+                        </a>
+                    </span>
+                    <a href="#" title="Arcbees github">
+                        <i class="{fonts.icons.iconGitHub} {res.style.github}"></i>
+                    </a>
                 </div>
 
             </div>

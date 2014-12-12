@@ -75,7 +75,7 @@
                             </ui:msg>
                         </p>
                     </div>
-                    <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_push_1_12} {res.grid.col_m_push_0} {res.grid.col_m_full}">
+                    <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1} {res.grid.col_m_push_0} {res.grid.col_m_full} {page.style.wayOfTheBee}">
                         <div class="{page.style.topIcons}">
                             <i class="{fonts.icons.iconHive}"></i>
                         </div>
@@ -128,7 +128,7 @@
                             </ui:msg>
                         </p>
                     </div>
-                    <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_push_1_12} {res.grid.col_m_full} {res.grid.col_m_push_0} {page.style.workBest}">
+                    <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_push_2} {res.grid.col_m_full} {res.grid.col_m_push_0} {page.style.workBest}">
                         <div class="{page.style.topIcons}">
                             <i class="{fonts.icons.iconPyramid}"></i>
                         </div>

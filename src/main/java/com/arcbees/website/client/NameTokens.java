@@ -28,15 +28,17 @@ public class NameTokens {
 
     public static final String PRODUCTS_BASE = "/products";
     public static final String GAE = PRODUCTS_BASE + "/gae-studio";
+    public static final String CHOSEN = PRODUCTS_BASE + "/chosen";
     public static final String JUKITO = PRODUCTS_BASE + "/jukito";
     public static final String GWTP = PRODUCTS_BASE + "/gwtp";
+    public static final String GQUERY = PRODUCTS_BASE + "/gquery";
     public static final String PRODUCTS = GAE;
 
     public static final String BEE_CHRISTIAN = BEES + "/christian-goudreau";
 
     public static final String DOCS = "/docs";
-    public static final String CHOSEN = DOCS + "/chosen";
-    public static final String ELASTIC = DOCS + "/elastic";
+    public static final String CHOSEN_DOCS = DOCS + "/chosen";
+    public static final String ELASTIC_DOCS = DOCS + "/elastic";
 
     public static final String DEVELOPERS = "/developers";
     public static final String JUKITO_DEVELOPERS = DEVELOPERS + "/jukito";

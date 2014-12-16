@@ -52,6 +52,12 @@
     100% {transform: rotate(-90deg) translate(0px, -240px);}
 }
 
+@-webkit-keyframes logo1Mobile {
+    0% {transform: rotate(0deg) translate(0px, 0px);}
+    50% {transform: rotate(-90deg) translate(0px, 0px);}
+    100% {transform: rotate(-90deg) translate(0px, -120px);}
+}
+
 .codeAnim2 {
     @mixin animation_name(logo2);
 }
@@ -60,6 +66,12 @@
     0% {transform: rotate(0deg) translate(0px, 0px);}
     50% {transform: rotate(90deg) translate(0px, 0px);}
     100% {transform: rotate(90deg) translate(0px, -240px);}
+}
+
+@-webkit-keyframes logo2Mobile {
+    0% {transform: rotate(0deg) translate(0px, 0px);}
+    50% {transform: rotate(90deg) translate(0px, 0px);}
+    100% {transform: rotate(90deg) translate(0px, -120px);}
 }
 
 .codeAnim3 {
@@ -78,6 +90,31 @@
 
         min-height: 200px;
     }
+
+    .expertises .header i.icon1,
+    .expertises .header i.icon2 {
+        font-size: 13rem;
+
+        margin: 40px -63px 0 0;
+    }
+
+    .expertises .header > div {
+        margin-top: -115px;
+    }
+
+    .expertises .header div.icon3 {
+        margin-top: 35px;
+
+        zoom: .55;
+    }
+
+    .codeAnim1 {
+    @mixin animation_name(logo1Mobile);
+    }
+
+    .codeAnim2 {
+    @mixin animation_name(logo2Mobile);
+    }
 }
 
 /* -- what we do -- */
@@ -87,10 +124,17 @@
     display: block;
 }
 
+.services a {
+    margin-bottom: 60px;
+}
+
 /* -- Tools -- */
 
 .tools i {
     font-size: 11rem;
+
+    display: block;
+    margin-bottom: 30px;
 }
 
 .plus,
@@ -112,7 +156,7 @@
 
 @media (max-width: 649px) {
     .tools i {
-        font-size: 6rem;
+        font-size: 8rem;
     }
 
     .plus {

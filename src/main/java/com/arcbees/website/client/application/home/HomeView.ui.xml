@@ -22,35 +22,44 @@
             <div class="{page.style.txtBanner}">
                 <p>
                     <strong>
-                        <ui:msg description="we">we</ui:msg>
+                        <ui:msg description="- Banner - we">we</ui:msg>
                         <span class="{page.style.txtAre} {animations.style.animation}">
-                            <ui:msg description="are">are</ui:msg>
+                            <ui:msg description="- Banner - are">are</ui:msg>
                         </span>
                         <span class="{page.style.txtCreate} {animations.style.animation}">
-                            <ui:msg description="build">create</ui:msg>
+                            <ui:msg description="- Banner - build">create</ui:msg>
                         </span>
                     </strong>
                     <span class="{page.style.txtArch} {animations.style.animation}">
                         arc
                         <span class="{page.style.txtArchitects} {animations.style.animation}">
-                            <ui:msg description="hitect">hitect</ui:msg>
+                            <ui:msg description="- Banner - hitect">hitect</ui:msg>
                         </span>
                         <span class="{page.style.txtBees} {animations.style.animation}">
-                            <ui:msg description="bees">bees</ui:msg>
+                            <ui:msg description="- Banner - bees">bees</ui:msg>
                         </span>
                     </span>
                     <span class="{page.style.txtProducts} {animations.style.animation}">
-                        <ui:msg description="web applications">Products</ui:msg>
+                        <ui:msg description="- Banner - product">products</ui:msg>
+                    </span>
+
+                    <span class="{page.style.txtProducts} {animations.style.animation}">
+                        <ui:msg description="- Banner - product">products</ui:msg>
                     </span>
                 </p>
             </div>
             <div class="{res.grid.row} {res.style.clearfix} {page.style.btns} {res.style.btns} {res.style.centered}">
                 <div class="{res.grid.col} {res.grid.col_full}">
-                    <a href="#{EXPERTISE}" class="{res.style.btn}">Expertise</a>
-                    <a href="#{PRODUCTS}" class="{res.style.btn}">
-                        <ui:msg description="btn products">Products</ui:msg>
+                    <a href="#{EXPERTISE}" title="expertise" class="{res.style.btn}">
+                        <ui:attribute ui:name='title' ui:description='expertise'/>
+                        Expertise</a>
+                    <a href="#{PRODUCTS}" title="products" class="{res.style.btn}">
+                        <ui:attribute ui:name='title' ui:description='products'/>
+                        <ui:msg description="- BTN - Products">Products</ui:msg>
                     </a>
-                    <a href="#{SERVICES}" class="{res.style.btn}">Services</a>
+                    <a href="#{SERVICES}" title="services" class="{res.style.btn}">
+                        <ui:attribute ui:name='title' ui:description='services'/>
+                        Services</a>
                 </div>
             </div>
         </section>
@@ -108,7 +117,8 @@
                             technologists, Christian Goudreau and Philippe Beaudoin, a framework with endless possibilities named GWTP and… Google.
                         </ui:msg>
                     </p>
-                    <a class="{res.style.btn}" ui:field="successStoryBtn" href="javascript:;">
+                    <a class="{res.style.btn}" title="learn more" ui:field="successStoryBtn" href="javascript:;">
+                        <ui:attribute ui:name='title' ui:description='learn more'/>
                         <ui:msg description="btn learn more">Learn more</ui:msg>
                     </a>
 
@@ -354,7 +364,6 @@
                         <ui:msg description="Architects of simplicity">Architects
                             <span>of simplicity</span>
                         </ui:msg>
-
                     </h2>
                     <p>
                         <ui:msg description="Architects of simplicity - Paragraphe -">Inspired by the best architects of
@@ -372,11 +381,16 @@
                     <h3>
                         <ui:msg description="Learn more about - Paragraphe -">Learn more about</ui:msg>
                     </h3>
-                    <a href="#{EXPERTISE}" class="{res.style.btn}">Expertise</a>
-                    <a href="#{PRODUCTS}" class="{res.style.btn}">
-                        <ui:msg description="products">Products</ui:msg>
+                    <a href="#{EXPERTISE}" title="Expertise" class="{res.style.btn}">
+                        <ui:attribute ui:name='title' ui:description='Expertise'/>
+                        Expertise</a>
+                    <a href="#{PRODUCTS}" title="Products" class="{res.style.btn}">
+                        <ui:attribute ui:name='title' ui:description='Products'/>
+                        <ui:msg description="- BTN - Products">Products</ui:msg>
                     </a>
-                    <a href="#{SERVICES}" class="{res.style.btn}">Services</a>
+                    <a href="#{SERVICES}" title="Services" class="{res.style.btn}">
+                        <ui:attribute ui:name='title' ui:description='Services'/>
+                        Services</a>
                 </div>
             </div>
         </section>

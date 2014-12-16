@@ -74,6 +74,18 @@
     100% {transform: translate(255px, 0px);}
 }
 
+@-webkit-keyframes beesMobile {
+    0% {transform: translate(0px, 0px);}
+    100% {transform: translate(130px, 0px);}
+}
+
+@if (!is("locale",  "en")) {
+    @-webkit-keyframes bees {
+        0% {transform: translate(0px, 0px);}
+        100% {transform: translate(355px, 0px);}
+    }
+}
+
 /* -- animation on the "architects" word -- */
 
 .home .header .txtArchitects {
@@ -154,7 +166,9 @@
     }
 
     .home .header .txtBees {
-        left: -60px;
+        left: 70px;
+
+        @mixin animation_name(beesMobile);
     }
 
     .home .header .txtArchitects {
@@ -182,6 +196,12 @@
     left: 0;
 
     z-index: 100;
+}
+
+@media (max-width: 649px) {
+    .home .header .btns {
+        bottom: 2em;
+    }
 }
 
 .home .architect p {
@@ -254,6 +274,20 @@
     position: absolute;
     top: 0;
     left: 50%;
+}
+
+@media (max-width: 649px) {
+    .home .ssiconsHexa {
+        margin-left: -265px;
+
+        top: 23px;
+
+        zoom: .55;
+    }
+
+    .home .successStory i {
+        font-size: 6.5em;
+    }
 }
 
 .home .ssiconsHexa .path1,
@@ -475,7 +509,7 @@
 
         margin-left: -10px;
 
-        bottom: -40px;
+        bottom: -41px;
     }
 
     .equal,

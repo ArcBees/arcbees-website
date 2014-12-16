@@ -31,7 +31,7 @@ public class ElasticPresenter extends Presenter<ElasticPresenter.MyView, Elastic
     }
 
     @ProxyStandard
-    @NameToken(NameTokens.ELASTIC)
+    @NameToken(NameTokens.ELASTIC_DOCS)
     interface MyProxy extends ProxyPlace<ElasticPresenter> {
     }
 

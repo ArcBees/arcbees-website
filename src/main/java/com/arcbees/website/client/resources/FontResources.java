@@ -80,6 +80,8 @@ public interface FontResources extends ClientBundle {
         String iconInternetSupport();
 
         String iconArrowOutside();
+
+        String iconGquery();
     }
 
     @ClientBundle.Source("fonts/icons/icons.gss")

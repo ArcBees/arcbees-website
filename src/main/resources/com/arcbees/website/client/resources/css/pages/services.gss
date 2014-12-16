@@ -103,6 +103,59 @@
 
         min-height: 250px;
     }
+
+    .header i.iconPyramid {
+        font-size: 14rem;
+    }
+
+    .pyramidAnim1,
+    .pyramidAnim2,
+    .pyramidAnim3 {
+        bottom: -14px;
+
+    @mixin animation_delay(.2s);
+    @mixin animation_duration(.5s);
+    @mixin animation_name(pyramid1);
+    }
+
+    .pyramidAnim1 {
+        margin-right: 66px;
+    }
+
+    .pyramidAnim2 {
+        margin-right: -70px;
+    }
+
+    .pyramidAnim3 {
+        margin-right: -206px;
+    }
+
+    .pyramidAnim4,
+    .pyramidAnim5 {
+        bottom: 102px;
+
+    @mixin animation_delay(.6s);
+    @mixin animation_duration(.5s);
+    @mixin animation_name(pyramid2);
+    }
+
+    .pyramidAnim4 {
+        margin-right: -2px;
+    }
+
+    .pyramidAnim5 {
+        margin-right: -138px;
+    }
+
+    .pyramidAnim6 {
+        margin-right: -70px;
+
+        bottom: 217px;
+
+    @mixin animation_delay(1s);
+    @mixin animation_duration(.5s);
+    @mixin animation_name(pyramid3);
+    }
 }
 
 /* advantages */
@@ -276,6 +329,12 @@
     position: absolute;
     top: 37px;
     left: 50%;
+}
+
+@media (max-width: 649px) {
+    .beauty .icon2 {
+        top: 35px;
+    }
 }
 
 /* Trusted by */
@@ -555,6 +614,21 @@
         transform: translate(0px,0px);opacity: 1;}
 }
 
+@media (max-width: 649px) {
+    .partner .diagram::before,
+    .partner .diagram::after {
+        margin-top: -65px;
+    }
+
+    .partner .diagram::after {
+        margin-bottom: -107px;
+    }
+
+    .partner i.iconHexa {
+        top: 143px;
+    }
+}
+
 /* -- iterative process -- */
 
 .iterative {
@@ -709,6 +783,12 @@
     left: -11px;
 }
 
+@media (max-width: 649px) {
+    .iterative .iconHexa {
+        margin-left: -157px;
+    }
+}
+
 /* -- code review -- */
 
 .codeReview {
@@ -798,8 +878,9 @@
     font-size: 2rem;
 
     margin-left: 0;
+    width: 19px;
+    height: 20px;
 
-    top: -4px;
     left: 0;
 }
 
@@ -817,8 +898,9 @@
     font-size: 2.75rem;
 
     margin-left: 0;
+    width: 27px;
+    height: 28px;
 
-    top: -4px;
     left: 0;
 }
 
@@ -836,8 +918,9 @@
     font-size: 3.5rem;
 
     margin-left: 0;
+    width: 34px;
+    height: 35px;
 
-    top: -6px;
     left: 0;
 }
 

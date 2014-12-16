@@ -42,6 +42,12 @@
                             <li>
                                 <a href="#{JUKITO}" class="{fonts.icons.iconJukito}">Jukito</a>
                             </li>
+                            <li>
+                                <a href="#{CHOSEN}" class="{fonts.icons.iconChosen}">Chosen</a>
+                            </li>
+                            <li>
+                                <a href="#{GQUERY}" class="{fonts.icons.iconGquery}">GQuery</a>
+                            </li>
                         </ul>
                     </li>
                     <li>

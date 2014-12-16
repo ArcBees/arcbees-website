@@ -200,8 +200,8 @@
             </div>
         </section>
 
-        <section class="{res.style.stripe} {res.style.light} {page.style.features}">
-            <div class="{res.style.stripe} {res.style.light} {res.style.centered}">
+        <section class="{res.style.stripe} {res.style.light} {page.style.features} {res.style.centered}">
+            <div class="{res.style.wrapper}">
                 <a href="#" class="{res.style.btn}">
                     <ui:msg description="- BTN - Contact us">Contact us</ui:msg>
                 </a>
@@ -258,7 +258,6 @@
                             <ui:msg description="Internet Support">Internet
                                 <span>Support</span>
                             </ui:msg>
-
                         </h3>
                         <p>
                             <ui:msg description="Internet Support - Paragraph -">Purchase support packages for direct

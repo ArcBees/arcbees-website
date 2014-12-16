@@ -16,7 +16,9 @@
 
 package com.arcbees.website.client.application.products;
 
+import com.arcbees.website.client.application.products.chosen.ChosenModule;
 import com.arcbees.website.client.application.products.gae.GaeModule;
+import com.arcbees.website.client.application.products.gquery.GqueryModule;
 import com.arcbees.website.client.application.products.gwtp.GwtpModule;
 import com.arcbees.website.client.application.products.jukito.JukitoModule;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
@@ -25,6 +27,8 @@ public class ProductsModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
         install(new JukitoModule());
+        install(new ChosenModule());
+        install(new GqueryModule());
         install(new GaeModule());
         install(new GwtpModule());
 

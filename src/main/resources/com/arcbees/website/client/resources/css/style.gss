@@ -282,12 +282,6 @@ img {
     vertical-align: baseline;
 }
 
-@media (max-width: 649px) {
-    .btns a {
-        margin: 0em;
-    }
-}
-
 .btns a:first-of-type {
     margin-left: 0;
 }
@@ -302,7 +296,7 @@ img {
     text-decoration: none;
 
     display: inline-block;
-    padding: .6em 1em;
+    padding: .9rem 2rem;
     border: 2px solid C_TEXT;
 
     position: relative;
@@ -365,6 +359,14 @@ img {
 }
 
 @media (max-width: 649px) {
+    .btns a {
+        margin: 0em 0 1rem 0;
+    }
+
+    .btn {
+        padding: .9rem 1rem;
+    }
+
     .btn.collapsible::before,
     .btn.collapsible::after {
         font-size: 1.5rem;
@@ -952,8 +954,12 @@ img {
         margin-top: 2em;
     }
 
+    .triangleBottom {
+        padding-bottom: 0;
+    }
+
     .triangleBottom::after {
-        border-top-width: inherit;
+        border-top-width: 150px;
     }
 }
 

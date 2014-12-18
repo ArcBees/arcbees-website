@@ -16,4 +16,5 @@
 @def C_PRODUCT_GAE                  eval("com.arcbees.website.client.resources.Colors.C_PRODUCT_GAE");
 @def C_PRODUCT_GWTP                 eval("com.arcbees.website.client.resources.Colors.C_PRODUCT_GWTP");
 @def C_PRODUCT_JUKITO               eval("com.arcbees.website.client.resources.Colors.C_PRODUCT_JUKITO");
+@def C_PRODUCT_GQUERY               eval("com.arcbees.website.client.resources.Colors.C_PRODUCT_GQUERY");
 @def C_PRODUCT_ELASTIC              eval("com.arcbees.website.client.resources.Colors.C_PRODUCT_ELASTIC");

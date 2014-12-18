@@ -21,6 +21,7 @@ import com.arcbees.website.client.resources.PageHomeResources;
 import com.google.gwt.dom.client.AnchorElement;
 import com.google.gwt.dom.client.DivElement;
 import com.google.gwt.dom.client.Element;
+import com.google.gwt.i18n.client.LocaleInfo;
 import com.google.gwt.query.client.Function;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
@@ -77,6 +78,11 @@ public class HomeView extends ViewImpl implements HomePresenter.MyView {
         bindSuccessStory();
         bindBees();
         bindArchitect();
+    }
+
+    private boolean isFrench() {
+        LocaleInfo currentLocale = LocaleInfo.getCurrentLocale();
+        return currentLocale.getLocaleName().equals("fr");
     }
 
     private void bindArchitect() {

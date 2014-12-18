@@ -9,24 +9,27 @@
     <ui:with field="page" type="com.arcbees.website.client.resources.PageProductResources"/>
     <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
 
-    <g:HTMLPanel styleName="{page.style.products} {page.style.jukito}">
+    <g:HTMLPanel styleName="{page.style.products} {page.style.chosen}">
 
         <nav class="{page.style.breadcrumb}">
             <span class="{fonts.icons.iconArcbees} {page.style.logo}"></span>
             <ul>
                 <li>PRODUCT</li>
-                <li>JUKITO</li>
+                <li>CHOSEN</li>
             </ul>
         </nav>
 
         <section class="{res.style.stripe}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_full}">
-                    <h1>jukito
+                    <h1>chosen
                         <a href="#" class="{res.style.anchor}">#</a>
                     </h1>
-                    <h2 class="{page.style.presentation}">The new martial
-                        <span>art for programmers</span>
+                    <h2 class="{page.style.presentation}">
+                        <ui:msg description="Making select boxes">Making select boxes
+                            <span>more user-friendly,</span>
+                            <span>the GWT way</span>
+                        </ui:msg>
                     </h2>
                     <div class="{page.style.socialTop}">
                         <ul class="{page.style.social}">
@@ -48,27 +51,16 @@
                 <div class="{res.grid.col} {res.grid.col_push_1_2} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                     <p>
                         <strong>
-                            <ui:msg description="Jukito empowers...">Jukito empowers you to use dependency injection in
-                                all your tests.
+                            <ui:msg description="GwtChosen is a port...">GwtChosen is a port of Chosen, made for GWT. It
+                                is not just a wrapper, but a complete rewrite using GWT standards.
                             </ui:msg>
                         </strong>
                     </p>
                     <p>
-                        <ui:msg description="Jukito empowers... - Paragraphe -">Unite the forces of JUnit, DI and
-                            Mockito, and crush your tests with lightning speed and unstoppable boilerplate efficiency!
+                        <ui:msg description="GwtChosen is a port... - Paragraphe -">GwtChosen lets you jazz up boring
+                            select boxes with tons of useful features, while leveraging GWT optimizations and type safety.
                         </ui:msg>
                     </p>
-                    <ul class="{page.style.frameworkList}">
-                        <li>
-                            <g:Image resource="{page.jukitoMockito}"/>
-                        </li>
-                        <li>
-                            <g:Image resource="{page.jukitoGuice}"/>
-                        </li>
-                        <li>
-                            <g:Image resource="{page.jukitoJUnit}"/>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </section>
@@ -85,35 +77,12 @@
         </section>
 
         <section class="{res.style.stripe} {res.style.medium2}">
-            <div class="{page.style.slideshow} {res.style.wrapper}">
-                <div class="{page.style.slides}">
-                    <g:Image resource="{page.gwtpScreen1}"/>
-                </div>
-                <a href="#" class="{page.style.prev}">
-                    <span class="{res.style.hidden}">Prev</span>
-                </a>
-                <a href="#" class="{page.style.next}">
-                    <span class="{res.style.hidden}">Next</span>
-                </a>
-                <nav class="{page.style.pager} {res.style.centered}">
-                    <ul>
-                        <li>
-                            <a href="#"></a>
-                        </li>
-                        <li>
-                            <a href="#"></a>
-                        </li>
-                        <li>
-                            <a href="#"></a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+            <!--TODO: ADD EXEMPLES OF CHOSEN-->
         </section>
 
         <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.centered}">
             <h2>
-                <ui:msg description="In details">in details</ui:msg>
+                <ui:msg description="Features">Features</ui:msg>
             </h2>
         </section>
 
@@ -122,16 +91,16 @@
 
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
-                        <ui:msg description="Automocking">Automocking</ui:msg>
+                        <ui:msg description="Fully Customizable">Fully Customizable</ui:msg>
                     </h3>
                     <a href="#" class="{res.style.anchor}">#</a>
                 </div>
 
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <p>
-                        <ui:msg description="Automocking - Paragraph -">Create your mocks with exactly zero lines of
-                            code! Using the standard @Inject annotation, Jukito automatically identifies what objects
-                            should be mocked. Banish worries about transitive dependencies from your testing forever!
+                        <ui:msg description="Fully Customizable - Paragraph -">GwtChosen gives you a host of options for
+                            customizing select boxes, from deep cosmetic changes to grouping selected items to default
+                            text support.
                         </ui:msg>
                     </p>
                 </div>
@@ -143,15 +112,15 @@
 
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
-                        <ui:msg description="Inject Anywhere">Inject Anywhere</ui:msg>
+                        <ui:msg description="Search Support">Search Support</ui:msg>
                     </h3>
                     <a href="#" class="{res.style.anchor}">#</a>
                 </div>
 
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <p>
-                        <ui:msg description="Inject Anywhere - Paragraph -">Jukito lets you inject objects in your tests
-                            anywhere! Injection in constructors, methods and fields are all supported.
+                        <ui:msg description="Search Support - Paragraph -">Using GwtChosen, you can dynamically update
+                            items displayed in your select boxes with data fetched from your server, as your users type.
                         </ui:msg>
                     </p>
                 </div>
@@ -163,15 +132,16 @@
 
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
-                        <ui:msg description="@All Annotation">@All Annotation</ui:msg>
+                        <ui:msg description="Use It Your Way">Use It Your Way</ui:msg>
                     </h3>
                     <a href="#" class="{res.style.anchor}">#</a>
                 </div>
 
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <p>
-                        <ui:msg description="@All Annotation - Paragraph -">Need to run your test using a wide set of
-                            data? Jukito lets you write a single concise test that runs on a whole suite of test cases.
+                        <ui:msg description="Use It Your Way - Paragraph -">If you prefer using GQuery plugins,
+                            GwtChosen can be used that way. If you like UiBinder and Widgets better, GwtChosen has you
+                            covered too.
                         </ui:msg>
                     </p>
                 </div>
@@ -183,16 +153,15 @@
 
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
-                        <ui:msg description="Lightweight">Lightweight</ui:msg>
+                        <ui:msg description="Bind To Events">Bind To Events</ui:msg>
                     </h3>
                     <a href="#" class="{res.style.anchor}">#</a>
                 </div>
 
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <p>
-                        <ui:msg description="Lightweight -Paragraph -">The last thing you want is your tests slowing you
-                            down. Jukito is fast and will not impact your test suite’s run time. And, your tests will be
-                            easier to read, write and maintain.
+                        <ui:msg description="Bind To Events - Paragraph -">You can hook into various lifecycle events of
+                            your GwtChosen listboxes to add custom behaviors.
                         </ui:msg>
                     </p>
                 </div>
@@ -204,35 +173,16 @@
 
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
-                        <ui:msg description="Scales To Any Size Of Test">Scales To Any Size Of Test</ui:msg>
+                        <ui:msg description="Easy Setup">Easy Setup</ui:msg>
                     </h3>
                     <a href="#" class="{res.style.anchor}">#</a>
                 </div>
 
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <p>
-                        <ui:msg description="Scales To Any Size Of Test - Paragraph -">Jukito can be used within unit,
-                            integration and end-to-end tests, all in one framework!
-                        </ui:msg>
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium2}">
-            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
-                <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
-                    <h3>
-                        <ui:msg description="Easy installation">Easy installation</ui:msg>
-                    </h3>
-                    <a href="#" class="{res.style.anchor}">#</a>
-                </div>
-
-                <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
-                    <p>
-                        <ui:msg description="Easy installation - Paragraph -">Simply add a Maven dependency to your POM,
-                            and Jukito will be downloaded from Maven Central.
+                        <ui:msg description="Easy Setup - Paragraph -">GwtChosen is already available in Maven
+                            repositories, and as a standalone jar file. All you need to do is add the GwtChosen GWT
+                            module, and you’re ready to go.
                         </ui:msg>
                     </p>
                 </div>
@@ -243,9 +193,8 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_full}">
                     <h3>
-                        <ui:msg description="All the documentations you need">more on
+                        <ui:msg description="more on">more on
                         </ui:msg>
-
                     </h3>
                     <a href="#" class="{res.style.btn}">
                         <i class="{fonts.icons.iconArrowOutside}"></i>

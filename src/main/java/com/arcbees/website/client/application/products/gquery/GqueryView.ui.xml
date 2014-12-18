@@ -9,24 +9,26 @@
     <ui:with field="page" type="com.arcbees.website.client.resources.PageProductResources"/>
     <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
 
-    <g:HTMLPanel styleName="{page.style.products} {page.style.jukito}">
+    <g:HTMLPanel styleName="{page.style.products} {page.style.gquery}">
 
         <nav class="{page.style.breadcrumb}">
             <span class="{fonts.icons.iconArcbees} {page.style.logo}"></span>
             <ul>
                 <li>PRODUCT</li>
-                <li>JUKITO</li>
+                <li>GQUERY</li>
             </ul>
         </nav>
 
         <section class="{res.style.stripe}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_full}">
-                    <h1>jukito
+                    <h1>GQUERY
                         <a href="#" class="{res.style.anchor}">#</a>
                     </h1>
-                    <h2 class="{page.style.presentation}">The new martial
-                        <span>art for programmers</span>
+                    <h2 class="{page.style.presentation}">
+                        <ui:msg description="A jQuery clone for GWT">A jQuery clone for GWT,
+                            <span>and much more</span>
+                        </ui:msg>
                     </h2>
                     <div class="{page.style.socialTop}">
                         <ul class="{page.style.social}">
@@ -48,38 +50,18 @@
                 <div class="{res.grid.col} {res.grid.col_push_1_2} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                     <p>
                         <strong>
-                            <ui:msg description="Jukito empowers...">Jukito empowers you to use dependency injection in
-                                all your tests.
+                            <ui:msg description="Write less. Do more!...">“Write less. Do more”! GwtQuery or GQuery is
+                                an entire GWT rewrite of the famous jQuery javascript library.
                             </ui:msg>
                         </strong>
                     </p>
                     <p>
-                        <ui:msg description="Jukito empowers... - Paragraphe -">Unite the forces of JUnit, DI and
-                            Mockito, and crush your tests with lightning speed and unstoppable boilerplate efficiency!
+                        <ui:msg description="Write less. Do more!... - Paragraphe -">It lets you use the jQuery API in
+                            GWT applications without including the jQuery source code, while leveraging the
+                            optimizations and type safety provided by GWT. Traversing and manipulating the dom, event
+                            handling, animations or doing Ajax requests are easy now thanks to GQuery.
                         </ui:msg>
                     </p>
-                    <ul class="{page.style.frameworkList}">
-                        <li>
-                            <g:Image resource="{page.jukitoMockito}"/>
-                        </li>
-                        <li>
-                            <g:Image resource="{page.jukitoGuice}"/>
-                        </li>
-                        <li>
-                            <g:Image resource="{page.jukitoJUnit}"/>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="{res.style.stripe} {res.style.centered}">
-            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_m_full} {res.grid.col_m_push_0}">
-                    <a href="#" class="{res.style.btn}">Support</a>
-                    <a href="#" class="{res.style.btn}"><i class="{fonts.icons.iconArrowOutside}"></i>Developer's
-                        Platform
-                    </a>
                 </div>
             </div>
         </section>
@@ -87,7 +69,7 @@
         <section class="{res.style.stripe} {res.style.medium2}">
             <div class="{page.style.slideshow} {res.style.wrapper}">
                 <div class="{page.style.slides}">
-                    <g:Image resource="{page.gwtpScreen1}"/>
+                    <!--TODO: ADD SCREENSHOTS IMG -->
                 </div>
                 <a href="#" class="{page.style.prev}">
                     <span class="{res.style.hidden}">Prev</span>
@@ -113,7 +95,7 @@
 
         <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.centered}">
             <h2>
-                <ui:msg description="In details">in details</ui:msg>
+                <ui:msg description="In details">In details</ui:msg>
             </h2>
         </section>
 
@@ -122,18 +104,21 @@
 
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
-                        <ui:msg description="Automocking">Automocking</ui:msg>
+                        <ui:msg description="It Looks Like jQuery">It Looks Like jQuery</ui:msg>
                     </h3>
                     <a href="#" class="{res.style.anchor}">#</a>
                 </div>
 
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
-                    <p>
-                        <ui:msg description="Automocking - Paragraph -">Create your mocks with exactly zero lines of
-                            code! Using the standard @Inject annotation, Jukito automatically identifies what objects
-                            should be mocked. Banish worries about transitive dependencies from your testing forever!
-                        </ui:msg>
-                    </p>
+                    <ui:msg description="It Looks Like jQuery - Paragraph -">
+                        <p>
+                            <strong>The syntax of GQuery is almost identical to jQuery.</strong>
+                        </p>
+                        <p>
+                            The API and syntax of GQuery strongly resembles jQuery. Existing jQuery code can be easily
+                            adapted into GQuery and used in your GWT applications.
+                        </p>
+                    </ui:msg>
                 </div>
             </div>
         </section>
@@ -143,17 +128,23 @@
 
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
-                        <ui:msg description="Inject Anywhere">Inject Anywhere</ui:msg>
+                        <ui:msg description="Easy DOM Manipulation">Easy DOM Manipulation</ui:msg>
                     </h3>
                     <a href="#" class="{res.style.anchor}">#</a>
                 </div>
 
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
-                    <p>
-                        <ui:msg description="Inject Anywhere - Paragraph -">Jukito lets you inject objects in your tests
-                            anywhere! Injection in constructors, methods and fields are all supported.
-                        </ui:msg>
-                    </p>
+                    <ui:msg description="Easy DOM Manipulation - Paragraph -">
+                        <p>
+                            <strong>GQuery eases traversal and manipulation of
+                                the DOM.
+                            </strong>
+                        </p>
+                        <p>
+                            With its chaining method syntax, you can select several elements and modify them in one line
+                            of code.
+                        </p>
+                    </ui:msg>
                 </div>
             </div>
         </section>
@@ -163,17 +154,19 @@
 
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
-                        <ui:msg description="@All Annotation">@All Annotation</ui:msg>
+                        <ui:msg description="Full GWT Widget Integration">Full GWT Widget Integration</ui:msg>
                     </h3>
                     <a href="#" class="{res.style.anchor}">#</a>
                 </div>
 
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
-                    <p>
-                        <ui:msg description="@All Annotation - Paragraph -">Need to run your test using a wide set of
-                            data? Jukito lets you write a single concise test that runs on a whole suite of test cases.
-                        </ui:msg>
-                    </p>
+                    <ui:msg description="Full GWT Widget Integration - Paragraph -">
+                        <p>
+                            <strong>Whatever you do with elements, you can now do with widgets
+                            </strong>
+                        </p>
+                        <p>GQuery lets you query-enhance, manipulate or modify GWT widgets present in the DOM.</p>
+                    </ui:msg>
                 </div>
             </div>
         </section>
@@ -183,16 +176,16 @@
 
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
-                        <ui:msg description="Lightweight">Lightweight</ui:msg>
+                        <ui:msg description="Promises">Promises</ui:msg>
                     </h3>
                     <a href="#" class="{res.style.anchor}">#</a>
                 </div>
 
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <p>
-                        <ui:msg description="Lightweight -Paragraph -">The last thing you want is your tests slowing you
-                            down. Jukito is fast and will not impact your test suite’s run time. And, your tests will be
-                            easier to read, write and maintain.
+                        <ui:msg description="Promises - Paragraph -">GQuery implements the promises API existing
+                            in jQuery. So that you can use it as an alternative to traditional callback-based
+                            approaches.
                         </ui:msg>
                     </p>
                 </div>
@@ -204,37 +197,47 @@
 
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
-                        <ui:msg description="Scales To Any Size Of Test">Scales To Any Size Of Test</ui:msg>
+                        <ui:msg description="Easy Ajax Syntax">Easy Ajax Syntax</ui:msg>
                     </h3>
                     <a href="#" class="{res.style.anchor}">#</a>
                 </div>
 
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
-                    <p>
-                        <ui:msg description="Scales To Any Size Of Test - Paragraph -">Jukito can be used within unit,
-                            integration and end-to-end tests, all in one framework!
-                        </ui:msg>
-                    </p>
+                    <ui:msg description="Easy Ajax Syntax - Paragraph -">
+                        <p>
+                            <strong>GQuery facilitates communication with servers via asynchronous HTTP requests
+                            </strong>
+                        </p>
+                        <p>GQuery provides a simple API for sending Ajax requests. It also ships an easy data
+                            binding
+                            system to and from JSON or XML.
+                        </p>
+                    </ui:msg>
                 </div>
             </div>
         </section>
 
-        <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium2}">
+        <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium1}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
 
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
-                        <ui:msg description="Easy installation">Easy installation</ui:msg>
+                        <ui:msg description="Event Handling">Event Handling</ui:msg>
                     </h3>
                     <a href="#" class="{res.style.anchor}">#</a>
                 </div>
 
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
-                    <p>
-                        <ui:msg description="Easy installation - Paragraph -">Simply add a Maven dependency to your POM,
-                            and Jukito will be downloaded from Maven Central.
-                        </ui:msg>
-                    </p>
+                    <ui:msg description="Event Handling - Paragraph -">
+                        <p>
+                            <strong>Handle all browser events and more</strong>
+                        </p>
+                        <p>
+                            With GQuery, you will be able to handle any event fired by browsers. In addition, you can
+                            fire and handle your own custom events. You will be able also to implement event delegation
+                            with one line of code!
+                        </p>
+                    </ui:msg>
                 </div>
             </div>
         </section>
@@ -243,9 +246,8 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_full}">
                     <h3>
-                        <ui:msg description="All the documentations you need">more on
+                        <ui:msg description="more on">more on
                         </ui:msg>
-
                     </h3>
                     <a href="#" class="{res.style.btn}">
                         <i class="{fonts.icons.iconArrowOutside}"></i>

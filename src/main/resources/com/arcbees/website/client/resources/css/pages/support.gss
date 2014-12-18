@@ -290,7 +290,7 @@
 
 @media (max-width: 649px) {
     .features {
-        padding-top: 0px;
+        padding-top: 30px;
     }
 
     .responseTime {

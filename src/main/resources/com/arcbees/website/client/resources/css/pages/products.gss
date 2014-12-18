@@ -18,6 +18,14 @@
     background-color: C_PRODUCT_JUKITO;
 }
 
+.productHead.chosen {
+    background-color: C_PRODUCT_CHOSEN;
+}
+
+.productHead.gquery {
+    background-color: C_PRODUCT_GQUERY;
+}
+
 /* -- Headings ------------------------------------------- */
 
 .products h1 {
@@ -275,6 +283,12 @@ ul.social {
     color: #ebebeb;
 }
 
+@media (max-width: 649px) {
+    .socialTop {
+        top: -20px;
+    }
+}
+
 /* --> Slideshow -- */
 
 .slideshow {
@@ -393,6 +407,11 @@ ul.social {
     vertical-align: middle;
 }
 
+@media (max-width: 649px) {
+    .moreOn h3 {
+        margin: 0;
+    }
+}
 /* --> Need support -- */
 
 .stripeSupport {
@@ -490,6 +509,12 @@ a.anchor {
     display: inline-block;
 }
 
+@media (max-width: 649px) {
+    .frameworkList li {
+        width: 28%;
+    }
+}
+
 /* -- Page : GWTP_PRODUCTS ---------------------------------------- */
 
 .gwtp h3 span {
@@ -517,6 +542,40 @@ a.anchor {
     font-size: 2rem;
 
     margin: 1.6em 0 .5em;
+}
+
+/* -- Page : CHOSEN_PRODUCTS ---------------------------------------- */
+
+.chosen {}
+
+.chosen .colored {
+    background-color: C_PRODUCT_CHOSEN;
+}
+
+.chosen .presentation {
+    color: C_PRODUCT_CHOSEN;
+}
+
+.chosen .slideshow .pager a,
+.chosen .slideshow .pager a:visited {
+    background-color: C_PRODUCT_CHOSEN;
+}
+
+/* -- Page : GQUERY_PRODUCTS ---------------------------------------- */
+
+.gquery {}
+
+.gquery .colored {
+    background-color: C_PRODUCT_GQUERY;
+}
+
+.gquery .presentation {
+    color: C_PRODUCT_GQUERY;
+}
+
+.gquery .slideshow .pager a,
+.gquery .slideshow .pager a:visited {
+    background-color: C_PRODUCT_GQUERY;
 }
 
 /* -- Overwrite ---------------------------------------- */

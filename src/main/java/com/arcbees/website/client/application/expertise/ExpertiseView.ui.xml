@@ -45,36 +45,34 @@
         </section>
 
         <section class="{res.style.stripe} {res.style.centered} {page.style.services}">
-            <div class="{res.style.stripe} {res.style.centered}">
-                <div class="{res.style.wrapper} {res.grid.row} {res.style.clearfix}">
-                    <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1_12} {res.grid.col_m_full} {res.grid.col_m_push_0}">
-                        <h3 class="{res.style.stripeTitle}">
-                            <ui:msg description="Professional Services">Professional
-                                <span>Services</span>
-                            </ui:msg>
-                        </h3>
-                        <p>
-                            <ui:msg description="Professional Services - Paragraph -">We can help transform your
-                                business applications and improve your development practices.
-                            </ui:msg>
-                        </p>
-                        <a href="#" class="{res.style.btn}">
-                            <ui:msg description="Learn more">Learn more</ui:msg>
-                        </a>
-                    </div>
-                    <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1_6} {res.grid.col_m_full} {res.grid.col_m_push_0}">
-                        <h3 class="{res.style.stripeTitle} {res.style.twoLineTitle}">
-                            <ui:msg description="Support">Support</ui:msg>
-                        </h3>
-                        <p>
-                            <ui:msg description="Support - Paragraph -">Any time you have a concern to technical
-                                challenge using our products, you can rely on our experts to you find solutions.
-                            </ui:msg>
-                        </p>
-                        <a href="#" class="{res.style.btn}">
-                            <ui:msg description="Learn more">Learn more</ui:msg>
-                        </a>
-                    </div>
+            <div class="{res.style.wrapper} {res.grid.row} {res.style.clearfix}">
+                <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1_12} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+                    <h3 class="{res.style.stripeTitle}">
+                        <ui:msg description="Professional Services">Professional
+                            <span>Services</span>
+                        </ui:msg>
+                    </h3>
+                    <p>
+                        <ui:msg description="Professional Services - Paragraph -">We can help transform your
+                            business applications and improve your development practices.
+                        </ui:msg>
+                    </p>
+                    <a href="#" class="{res.style.btn}">
+                        <ui:msg description="Learn more">Learn more</ui:msg>
+                    </a>
+                </div>
+                <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1_6} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+                    <h3 class="{res.style.stripeTitle} {res.style.twoLineTitle}">
+                        <ui:msg description="Support">Support</ui:msg>
+                    </h3>
+                    <p>
+                        <ui:msg description="Support - Paragraph -">Any time you have a concern to technical
+                            challenge using our products, you can rely on our experts to you find solutions.
+                        </ui:msg>
+                    </p>
+                    <a href="#" class="{res.style.btn}">
+                        <ui:msg description="Learn more">Learn more</ui:msg>
+                    </a>
                 </div>
             </div>
             <div class="{res.style.wrapper} {res.grid.row} {res.style.clearfix}">
@@ -94,13 +92,13 @@
         <section class="{res.style.stripe} {res.style.colored} {res.style.centered} {page.style.tools}">
             <div class="{res.style.wrapper} {res.grid.row} {res.style.clearfix}">
                 <div class="{page.style.plus}">+</div>
-                <div class="{res.grid.col} {res.grid.col_1_3}">
+                <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <i class="{fonts.icons.iconHtml5}"></i>
                 </div>
-                <div class="{res.grid.col} {res.grid.col_1_3}">
+                <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <i class="{fonts.icons.iconGwt}"></i>
                 </div>
-                <div class="{res.grid.col} {res.grid.col_1_3}">
+                <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <i class="{fonts.icons.iconGCloudPlatform}"></i>
                 </div>
                 <div class="{page.style.equal}">=</div>
@@ -108,9 +106,11 @@
         </section>
 
         <section class="{res.style.stripe} {res.style.centered}">
-            <div class="{res.grid.row} {res.style.clearfix}">
+            <div class="{res.style.wrapper} {res.style.clearfix}">
                 <h2>gwtp</h2>
-                <a href="#" class="{res.style.btn}"><ui:msg description="Learn more">Learn more</ui:msg></a>
+                <a href="#" class="{res.style.btn}">
+                    <ui:msg description="Learn more">Learn more</ui:msg>
+                </a>
             </div>
         </section>
 

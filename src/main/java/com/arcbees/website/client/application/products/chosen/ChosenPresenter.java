@@ -14,10 +14,10 @@
  * the License.
  */
 
-package com.arcbees.website.client.application.docs.chosen;
+package com.arcbees.website.client.application.products.chosen;
 
 import com.arcbees.website.client.NameTokens;
-import com.arcbees.website.client.application.docs.DocsPresenter;
+import com.arcbees.website.client.application.products.ProductsPresenter;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.Presenter;
@@ -31,7 +31,7 @@ public class ChosenPresenter extends Presenter<ChosenPresenter.MyView, ChosenPre
     }
 
     @ProxyStandard
-    @NameToken(NameTokens.CHOSEN_DOCS)
+    @NameToken(NameTokens.CHOSEN)
     interface MyProxy extends ProxyPlace<ChosenPresenter> {
     }
 
@@ -40,6 +40,6 @@ public class ChosenPresenter extends Presenter<ChosenPresenter.MyView, ChosenPre
             EventBus eventBus,
             MyView view,
             MyProxy proxy) {
-        super(eventBus, view, proxy, DocsPresenter.SLOT_DOCS);
+        super(eventBus, view, proxy, ProductsPresenter.SLOT_PRODUCTS);
     }
 }

@@ -103,12 +103,16 @@
 }
 
 @media (max-width: 649px) {
+    .bees .header > div {
+        margin: -135px 0 0 -180px;
+    }
+
     .bees .intro {
         height: 351px;
     }
 
     .bees .intro i {
-        font-size: 18rem;
+        font-size: 16rem;
     }
 
     .bees .intro i.icon1 {
@@ -461,6 +465,7 @@
 
 .offers h3 {
     font-size: 4rem;
+    line-height: 1;
 
     margin: 0 0 .3em;
 }

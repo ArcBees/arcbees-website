@@ -175,7 +175,7 @@
         <section
                 class="{res.style.stripe} {res.style.centered} {res.style.triangleBottom} {res.style.light} {res.style.nextColored} {page.style.beeWay}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col_1_2} {res.grid.col_push_1_4}">
+                <div class="{res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_12} {res.grid.col_m_push_0}">
                     <div class="{page.style.lightbulb}">
                         <h2>
                             <ui:msg description="The Way Of The Bee">The Way
@@ -202,7 +202,7 @@
         </section>
         <section class="{res.style.stripe} {res.style.colored} {res.style.centered} {page.style.howWeWork}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col_1_2} {res.grid.col_push_1_4}">
+                <div class="{res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_12} {res.grid.col_m_push_0}">
                     <div class="{page.style.partner}">
                         <h3>
                             <ui:msg description="A committed partner">A committed partner</ui:msg>

@@ -270,8 +270,13 @@ img {
 
 /* -- Components ---------------------------------------- */
 
+.btns {
+    width: 650px;
+    margin: 0 auto;
+}
+
 .btns a {
-    margin: 0 10em;
+    margin: 0 4.75em;
 }
 
 .btn i:before {
@@ -359,6 +364,10 @@ img {
 }
 
 @media (max-width: 649px) {
+    .btns {
+        width: auto;
+    }
+
     .btns a {
         margin: 0em 0 1rem 0;
     }
@@ -617,7 +626,7 @@ img {
 }
 
 .menuToggle {
-    position: absolute;
+    position: fixed;
     top: 46px;
     left: 15px;
     z-index: 9000;

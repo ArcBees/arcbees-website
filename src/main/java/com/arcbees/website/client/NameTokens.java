@@ -35,6 +35,19 @@ public class NameTokens {
     public static final String PRODUCTS = GAE;
 
     public static final String BEE_CHRISTIAN = BEES + "/christian-goudreau";
+    public static final String BEE_CHRISTOPHER = BEES + "/christopher-viel";
+    public static final String BEE_FRANCOIS = BEES + "/francois-dion";
+    public static final String BEE_GENEVIEVE = BEES + "/genevieve-doyle";
+    public static final String BEE_JASON = BEES + "/jason-lemay";
+    public static final String BEE_JEANCHRISTOPHE = BEES + "/jean-christophe-lariviere";
+    public static final String BEE_JOEL = BEES + "/joel-trottier-hebert";
+    public static final String BEE_JULIEN = BEES + "/julien-dramaix";
+    public static final String BEE_LARRY = BEES + "/larry-matte";
+    public static final String BEE_MANON = BEES + "/manon-gruaz";
+    public static final String BEE_MAXIME = BEES + "/maxime-meriouma-caron";
+    public static final String BEE_PHILIPPEA = BEES + "/philippe-araujo";
+    public static final String BEE_PHILIPPEB = BEES + "/philippe-beaudoin";
+    public static final String BEE_SIMONPIERRE = BEES + "/simon-pierre-gingras";
 
     public static final String DOCS = "/docs";
     public static final String CHOSEN_DOCS = DOCS + "/chosen";

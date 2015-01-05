@@ -15,27 +15,43 @@
             </div>
         </div>
 
-        <h1>Francois Dion <span>BE-E-O and founder</span></h1>
-
-        <p>hello Lorem ipsum dolor sit amet, consectetur adipisicing elit. At corporis culpa cum cumque, distinctio dolore
-            doloremque error, et illo molestias praesentium provident quasi qui quis quo saepe sunt totam, unde.
-        </p>
+        <h1>Geneviève Doyle
+            <span><ui:msg description="Geneviève's title">Attorney</ui:msg></span>
+        </h1>
 
         <p>
-            <a href="mailto:queenbee@arcbees.com">queenbee@arcbees.com</a>
+            <ui:msg description="Professional achievements:">Professional achievements:</ui:msg>
         </p>
-
         <ul>
+            <ui:msg description="Genevieve's prof achievements">
+                <li>Starting up the legal department at Arcbees.</li>
+                <li>Doing pro bono work with the Young bar association of Quebec.</li>
+                <li>Getting involved with many organizations (JCCQ, CCIQ, etc.), representing Arcbees.</li>
+            </ui:msg>
+        </ul>
+
+        <p>
+            <ui:msg description="Personal achievements:">Personal achievements:</ui:msg>
+        </p>
+        <ul>
+            <ui:msg description="Genevieve's pers achievements">
+                <li>Earning good grades in school and graduating with honours.</li>
+                <li>Being in charge of communications for the JCI Canada National Convention in 2013.</li>
+                <li>Being the only woman on the Organizing committee of Quebec JCI World Congress 2016 (Candidate for).</li>
+            </ui:msg>
+        </ul>
+
+        <ul class="{page.style.social}">
             <li>
                 <a href="#">
                     <i class="{fonts.icons.iconLkd}"></i>
-                    <span>Profil LinkedIn de Christian Goudreau</span>
+                    <span>Profil LinkedIn de Geneviève Doyle</span>
                 </a>
             </li>
             <li>
                 <a href="#">
                     <i class="{fonts.icons.iconGPlus}"></i>
-                    <span>Profil Google+ de Christian Goudreau</span>
+                    <span>Profil Google+ de Geneviève Doyle</span>
                 </a>
             </li>
         </ul>

@@ -117,7 +117,7 @@
                                     <g:Image resource="{page.beeChristian}"></g:Image>
                                     <a href="#{BEE_FRANCOIS}">
                                         <h3>François Dion</h3>
-                                        <p>BEE-EO and co-founder</p>
+                                        <p>Strategic advisor, associate and Board chairman</p>
                                     </a>
                                 </div>
                             </div>
@@ -129,7 +129,7 @@
                                     <g:Image resource="{page.beeChristian}"></g:Image>
                                     <a href="#{BEE_PHILIPPEA}">
                                         <h3>Philippe Araujo</h3>
-                                        <p>BEE-EO and co-founder</p>
+                                        <p>Business Knight</p>
                                     </a>
                                 </div>
                             </div>
@@ -141,7 +141,7 @@
                                     <g:Image resource="{page.beeChristian}"></g:Image>
                                     <a href="#{BEE_SIMONPIERRE}">
                                         <h3>Simon-Pierre Gingras</h3>
-                                        <p>BEE-EO and co-founder</p>
+                                        <p>Developer of things, Chief Bacon Evangelist</p>
                                     </a>
                                 </div>
                             </div>
@@ -153,7 +153,7 @@
                                     <g:Image resource="{page.beeChristian}"></g:Image>
                                     <a href="#{BEE_MAXIME}">
                                         <h3>Maxime Mériouma-Caron</h3>
-                                        <p>BEE-EO and co-founder</p>
+                                        <p>Night Shadow Developer</p>
                                     </a>
                                 </div>
                             </div>
@@ -165,7 +165,7 @@
                                     <g:Image resource="{page.beeChristian}"></g:Image>
                                     <a href="#{BEE_CHRISTOPHER}">
                                         <h3>Christopher Viel</h3>
-                                        <p>BEE-EO and co-founder</p>
+                                        <p>Crazy Code Mastermind</p>
                                     </a>
                                 </div>
                             </div>
@@ -177,7 +177,7 @@
                                     <g:Image resource="{page.beeChristian}"></g:Image>
                                     <a href="#{BEE_JOEL}">
                                         <h3>Joel Trottier-Hébert</h3>
-                                        <p>BEE-EO and co-founder</p>
+                                        <p>Bugs writer</p>
                                     </a>
                                 </div>
                             </div>
@@ -189,7 +189,7 @@
                                     <g:Image resource="{page.beeChristian}"></g:Image>
                                     <a href="#{BEE_MANON}">
                                         <h3>Manon Gruaz</h3>
-                                        <p>BEE-EO and co-founder</p>
+                                        <p>Lead Designer, Branding goddess and Loving Bee</p>
                                     </a>
                                 </div>
                             </div>
@@ -201,7 +201,7 @@
                                     <g:Image resource="{page.beeChristian}"></g:Image>
                                     <a href="#{BEE_LARRY}">
                                         <h3>Larry Matte</h3>
-                                        <p>BEE-EO and co-founder</p>
+                                        <p>Undercover Front-end Agent</p>
                                     </a>
                                 </div>
                             </div>
@@ -213,7 +213,7 @@
                                     <g:Image resource="{page.beeChristian}"></g:Image>
                                     <a href="#{BEE_JASON}">
                                         <h3>Jason Lemay</h3>
-                                        <p>BEE-EO and co-founder</p>
+                                        <p>Dual wielding Front-end Specialist</p>
                                     </a>
                                 </div>
                             </div>
@@ -225,7 +225,7 @@
                                     <g:Image resource="{page.beeChristian}"></g:Image>
                                     <a href="#{BEE_JEANCHRISTOPHE}">
                                         <h3>Jean-Christophe Lariviere</h3>
-                                        <p>BEE-EO and co-founder</p>
+                                        <p>Coder in the North</p>
                                     </a>
                                 </div>
                             </div>
@@ -237,7 +237,7 @@
                                     <g:Image resource="{page.beeChristian}"></g:Image>
                                     <a href="#{BEE_GENEVIEVE}">
                                         <h3>Geneviève Doyle</h3>
-                                        <p>BEE-EO and co-founder</p>
+                                        <p>Attorney</p>
                                     </a>
                                 </div>
                             </div>
@@ -247,6 +247,22 @@
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeChristian}"></g:Image>
+                                    <a href="#{BEE_JULIEN}">
+                                        <h3>Julien Dramaix</h3>
+                                        <p>Lead Software Engineer, Bee-r cool-er</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="{page.style.bee} {page.style.bee1}">
+                            <div class="{page.style.beeHolder1}">
+                                <div class="{page.style.beeHolder2}">
+                                    <g:Image resource="{page.beeChristian}"></g:Image>
+                                    <a href="#{BEE_PHILIPPEB}">
+                                        <h3>Philippe Beaudoin</h3>
+                                        <p>Advisor and co-founder</p>
+                                    </a>
                                 </div>
                             </div>
                         </div>

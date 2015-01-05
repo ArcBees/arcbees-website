@@ -15,27 +15,45 @@
             </div>
         </div>
 
-        <h1>Croustillant Goudreau <span>BE-E-O and founder</span></h1>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At corporis culpa cum cumque, distinctio dolore
-            doloremque error, et illo molestias praesentium provident quasi qui quis quo saepe sunt totam, unde.
-        </p>
+        <h1>Christopher Viel
+            <span><ui:msg description="Christopher title">Crazy Code Mastermind</ui:msg></span>
+        </h1>
 
         <p>
-            <a href="mailto:queenbee@arcbees.com">queenbee@arcbees.com</a>
+            <ui:msg description="Professional achievements:">Professional achievements:</ui:msg>
         </p>
-
         <ul>
+            <ui:msg description="Christopher's prof achievements">
+                <li>Created an actively used REST library.</li>
+                <li>Passionate about code architecture.</li>
+                <li>Wrote my first piece of software at age 11.</li>
+            </ui:msg>
+
+        </ul>
+
+        <p>
+            <ui:msg description="Personal achievements:">Personal achievements:</ui:msg>
+        </p>
+        <ul>
+            <ui:msg description="Christopher's pers achievements">
+                <li>Created the #joke hastag (kind of….).</li>
+                <li>Survived a Chinatown restaurant in Hawaii.</li>
+                <li>Doing the best in the world profiteroles (according to Manon).</li>
+            </ui:msg>
+
+        </ul>
+
+        <ul class="{page.style.social}">
             <li>
                 <a href="#">
                     <i class="{fonts.icons.iconLkd}"></i>
-                    <span>Profil LinkedIn de Christian Goudreau</span>
+                    <span>Profil LinkedIn de Christopher Viel</span>
                 </a>
             </li>
             <li>
                 <a href="#">
                     <i class="{fonts.icons.iconGPlus}"></i>
-                    <span>Profil Google+ de Christian Goudreau</span>
+                    <span>Profil Google+ de Christopher Viel</span>
                 </a>
             </li>
         </ul>

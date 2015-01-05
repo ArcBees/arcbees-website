@@ -15,27 +15,43 @@
             </div>
         </div>
 
-        <h1>Francois Dion <span>BE-E-O and founder</span></h1>
-
-        <p>hello Lorem ipsum dolor sit amet, consectetur adipisicing elit. At corporis culpa cum cumque, distinctio dolore
-            doloremque error, et illo molestias praesentium provident quasi qui quis quo saepe sunt totam, unde.
-        </p>
+        <h1>Jean-Christophe Larivière
+            <span><ui:msg description="Jean-Christophe's title">Coder in the North</ui:msg></span>
+        </h1>
 
         <p>
-            <a href="mailto:queenbee@arcbees.com">queenbee@arcbees.com</a>
+            <ui:msg description="Professional achievements:">Professional achievements:</ui:msg>
         </p>
-
         <ul>
+            <ui:msg description="Jean-Christophe's prof achievements">
+                <li>Offensive security certified professional.</li>
+                <li>Remote work : success.</li>
+                <li>Once scored against Christian at foosball.</li>
+            </ui:msg>
+        </ul>
+
+        <p>
+            <ui:msg description="Personal achievements:">Personal achievements:</ui:msg>
+        </p>
+        <ul>
+            <ui:msg description="Jean-Christophe's pers achievements">
+                <li>Proud dad of a little girl.</li>
+                <li>Can make an LED blink with an Arduino.</li>
+                <li>Swam and got towed by 2 dolphins.</li>
+            </ui:msg>
+        </ul>
+
+        <ul class="{page.style.social}">
             <li>
                 <a href="#">
                     <i class="{fonts.icons.iconLkd}"></i>
-                    <span>Profil LinkedIn de Christian Goudreau</span>
+                    <span>Profil LinkedIn de Jean Christophe Larivière</span>
                 </a>
             </li>
             <li>
                 <a href="#">
                     <i class="{fonts.icons.iconGPlus}"></i>
-                    <span>Profil Google+ de Christian Goudreau</span>
+                    <span>Profil Google+ de Jean Christophe Larivière</span>
                 </a>
             </li>
         </ul>

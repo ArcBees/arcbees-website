@@ -31,7 +31,7 @@ public class ChristianPresenter extends Presenter<ChristianPresenter.MyView, Chr
     }
 
     @ProxyStandard
-    @NameToken(NameTokens.BEE_CHRISTOPHER)
+    @NameToken(NameTokens.BEE_CHRISTIAN)
     public interface MyProxy extends ProxyPlace<ChristianPresenter> {
     }
 

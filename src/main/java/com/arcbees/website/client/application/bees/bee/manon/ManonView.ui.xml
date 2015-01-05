@@ -15,27 +15,44 @@
             </div>
         </div>
 
-        <h1>Francois Dion <span>BE-E-O and founder</span></h1>
-
-        <p>hello Lorem ipsum dolor sit amet, consectetur adipisicing elit. At corporis culpa cum cumque, distinctio dolore
-            doloremque error, et illo molestias praesentium provident quasi qui quis quo saepe sunt totam, unde.
-        </p>
+        <h1>Manon Gruaz
+            <span><ui:msg description="Manon's title">Lead Designer, Branding goddess and Loving Bee</ui:msg></span>
+        </h1>
 
         <p>
-            <a href="mailto:queenbee@arcbees.com">queenbee@arcbees.com</a>
+            <ui:msg description="Professional achievements:">Professional achievements:</ui:msg>
         </p>
-
         <ul>
+            <ui:msg description="Manon's prof achievements">
+                <li>Designed the new GWT branding at Google, Mountain View, in 2014.</li>
+                <li>Unveiled the brand new GWT web site at Google, Mountain View, in 2014.</li>
+                <li>Won 1st place at Startup Weekend Québec 2013.</li>
+                <li>Top of the «Brand Design Master» class, 2009.</li>
+            </ui:msg>
+        </ul>
+
+        <p>
+            <ui:msg description="Personal achievements:">Personal achievements:</ui:msg>
+        </p>
+        <ul>
+            <ui:msg description="Manon's prof achievements">
+                <li>Earned a science degree with honours while being a zero in science.</li>
+                <li>Diving into the rift between two tectonic plates, in very cold water!</li>
+                <li>Self-proclaimed biggest fan of Harley Quinn.</li>
+            </ui:msg>
+        </ul>
+
+        <ul class="{page.style.social}">
             <li>
                 <a href="#">
                     <i class="{fonts.icons.iconLkd}"></i>
-                    <span>Profil LinkedIn de Christian Goudreau</span>
+                    <span>Profil LinkedIn de Manon Gruaz</span>
                 </a>
             </li>
             <li>
                 <a href="#">
                     <i class="{fonts.icons.iconGPlus}"></i>
-                    <span>Profil Google+ de Christian Goudreau</span>
+                    <span>Profil Google+ de Manon Gruaz</span>
                 </a>
             </li>
         </ul>

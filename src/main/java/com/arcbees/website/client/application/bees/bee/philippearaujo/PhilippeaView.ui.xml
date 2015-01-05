@@ -15,27 +15,44 @@
             </div>
         </div>
 
-        <h1>Francois Dion <span>BE-E-O and founder</span></h1>
-
-        <p>hello Lorem ipsum dolor sit amet, consectetur adipisicing elit. At corporis culpa cum cumque, distinctio dolore
-            doloremque error, et illo molestias praesentium provident quasi qui quis quo saepe sunt totam, unde.
-        </p>
+        <h1>Philippe Araujo
+            <span><ui:msg description="Philippe Araujo's title">Business Knight</ui:msg></span>
+        </h1>
 
         <p>
-            <a href="mailto:queenbee@arcbees.com">queenbee@arcbees.com</a>
+            <ui:msg description="Professional achievements:">Professional achievements:</ui:msg>
         </p>
-
         <ul>
+            <ui:msg description="Philippe Araujo's prof achievements">
+                <li>Developed a framework for gamification.</li>
+                <li>Speaker for Entretien Jacques-Cartier in Lyon on smart cities.</li>
+                <li>MBA Games winner with the Laval University team.</li>
+                <li>My motto in life : Work hard, have fun, customers come first.</li>
+            </ui:msg>
+        </ul>
+
+        <p>
+            <ui:msg description="Personal achievements:">Personal achievements:</ui:msg>
+        </p>
+        <ul>
+            <ui:msg description="Philippe Araujo's pers achievements">
+                <li>I was the marriage officiant for my two best friends.</li>
+                <li>Avid TV show hunter.</li>
+                <li>I am my biggest fan!</li>
+            </ui:msg>
+        </ul>
+
+        <ul class="{page.style.social}">
             <li>
                 <a href="#">
                     <i class="{fonts.icons.iconLkd}"></i>
-                    <span>Profil LinkedIn de Christian Goudreau</span>
+                    <span>Profil LinkedIn de Philippe Araujo</span>
                 </a>
             </li>
             <li>
                 <a href="#">
                     <i class="{fonts.icons.iconGPlus}"></i>
-                    <span>Profil Google+ de Christian Goudreau</span>
+                    <span>Profil Google+ de Philippe Araujo</span>
                 </a>
             </li>
         </ul>

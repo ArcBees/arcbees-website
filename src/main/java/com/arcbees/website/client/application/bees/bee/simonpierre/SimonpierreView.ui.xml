@@ -15,17 +15,31 @@
             </div>
         </div>
 
-        <h1>Francois Dion <span>BE-E-O and founder</span></h1>
-
-        <p>hello Lorem ipsum dolor sit amet, consectetur adipisicing elit. At corporis culpa cum cumque, distinctio dolore
-            doloremque error, et illo molestias praesentium provident quasi qui quis quo saepe sunt totam, unde.
-        </p>
+        <h1>Simon-Pierre Gingras<span>Developer of things, Chief Bacon Evangelist</span></h1>
 
         <p>
-            <a href="mailto:queenbee@arcbees.com">queenbee@arcbees.com</a>
+            <ui:msg description="Professional achievements:">Professional achievements:</ui:msg>
         </p>
-
         <ul>
+            <ui:msg description="Simon-Pierre's prof achievements">
+                <li>Led development of the new Arcbees dev site.</li>
+                <li>Created gwt-stripe.</li>
+                <li>Once beat Christian at foosball.</li>
+            </ui:msg>
+        </ul>
+
+        <p>
+            <ui:msg description="Personal achievements:">Personal achievements:</ui:msg>
+        </p>
+        <ul>
+            <ui:msg description="Simon-Pierre's pers achievements">
+                <li>Skied the Terminator Peak at Kicking Horse.</li>
+                <li>Lived 3 days in the Sahara desert.</li>
+                <li>Can eat his yogourt before his spaghetti.</li>
+            </ui:msg>
+        </ul>
+
+        <ul class="{page.style.social}">
             <li>
                 <a href="#">
                     <i class="{fonts.icons.iconLkd}"></i>

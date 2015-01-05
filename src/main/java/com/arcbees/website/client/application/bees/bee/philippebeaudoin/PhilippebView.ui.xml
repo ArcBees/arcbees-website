@@ -15,27 +15,43 @@
             </div>
         </div>
 
-        <h1>Francois Dion <span>BE-E-O and founder</span></h1>
-
-        <p>hello Lorem ipsum dolor sit amet, consectetur adipisicing elit. At corporis culpa cum cumque, distinctio dolore
-            doloremque error, et illo molestias praesentium provident quasi qui quis quo saepe sunt totam, unde.
-        </p>
+        <h1>Philippe Beaudoin
+            <span><ui:msg description="Philippe Beaudoin's title">Advisor and co-founder</ui:msg></span>
+        </h1>
 
         <p>
-            <a href="mailto:queenbee@arcbees.com">queenbee@arcbees.com</a>
+            <ui:msg description="Professional achievements:">Professional achievements:</ui:msg>
         </p>
-
         <ul>
+            <ui:msg description="Philippe Beaudoin's prof achievements">
+                <li>Created GWTP to help his Software Engineering students at UBC. It kind of snowballed.</li>
+                <li>Was hired at Google in front of hundreds of people, after doing a talk at Google I/O.</li>
+                <li>Leads the team that brings you the most visited page in the Chrome Browser: the New Tab Page.</li>
+            </ui:msg>
+        </ul>
+
+        <p>
+            <ui:msg description="Personal achievements:">Personal achievements:</ui:msg>
+        </p>
+        <ul>
+            <ui:msg description="Philippe Beaudoin's pers achievements">
+                <li>Designed and published a boardgame in three languages over three continents.</li>
+                <li>Loves designing pencil &amp; paper puzzles.</li>
+                <li>Has been nerd sniped more often than he dares admit.</li>
+            </ui:msg>
+        </ul>
+
+        <ul class="{page.style.social}">
             <li>
                 <a href="#">
                     <i class="{fonts.icons.iconLkd}"></i>
-                    <span>Profil LinkedIn de Christian Goudreau</span>
+                    <span>Profil LinkedIn de Philippe Beaudoin</span>
                 </a>
             </li>
             <li>
                 <a href="#">
                     <i class="{fonts.icons.iconGPlus}"></i>
-                    <span>Profil Google+ de Christian Goudreau</span>
+                    <span>Profil Google+ de Philippe Beaudoin</span>
                 </a>
             </li>
         </ul>

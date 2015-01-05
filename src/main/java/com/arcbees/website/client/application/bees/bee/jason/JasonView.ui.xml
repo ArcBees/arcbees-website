@@ -15,27 +15,45 @@
             </div>
         </div>
 
-        <h1>Francois Dion <span>BE-E-O and founder</span></h1>
-
-        <p>hello Lorem ipsum dolor sit amet, consectetur adipisicing elit. At corporis culpa cum cumque, distinctio dolore
-            doloremque error, et illo molestias praesentium provident quasi qui quis quo saepe sunt totam, unde.
-        </p>
+        <h1>Jason Lemay
+            <span><ui:msg description="Jason's title">Dual wielding Front-end Specialist</ui:msg></span>
+        </h1>
 
         <p>
-            <a href="mailto:queenbee@arcbees.com">queenbee@arcbees.com</a>
+            <ui:msg description="Professional achievements:">Professional achievements:</ui:msg>
         </p>
-
         <ul>
+            <ui:msg description="Jason's prof achievements">
+                <li>GSSS aficionado.</li>
+                <li>Web Accessibility connoisseur.</li>
+                <li>Enthusiast of well made things.</li>
+            </ui:msg>
+
+        </ul>
+
+        <p>
+            <ui:msg description="Personal achievements:">Personal achievements:</ui:msg>
+        </p>
+        <ul>
+            <ui:msg description="Jason's pers achievements">
+                <li>Rubik’s cube expert.</li>
+                <li>Craft beer fanatic.</li>
+                <li>Pokemon master.</li>
+            </ui:msg>
+
+        </ul>
+
+        <ul class="{page.style.social}">
             <li>
                 <a href="#">
                     <i class="{fonts.icons.iconLkd}"></i>
-                    <span>Profil LinkedIn de Christian Goudreau</span>
+                    <span>Profil LinkedIn de Jason Lemay</span>
                 </a>
             </li>
             <li>
                 <a href="#">
                     <i class="{fonts.icons.iconGPlus}"></i>
-                    <span>Profil Google+ de Christian Goudreau</span>
+                    <span>Profil Google+ de Jason Lemay</span>
                 </a>
             </li>
         </ul>

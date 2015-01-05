@@ -190,11 +190,11 @@
 
 .home .header .btns {
     width: 650px;
+    margin-left: -325px;
 
     position: absolute;
     bottom: 4em;
     left: 50%;
-    margin-left: -325px;
 
     z-index: 100;
 }

@@ -55,8 +55,6 @@ public class HomeView extends ViewImpl implements HomePresenter.MyView {
     DivElement beesMore;
     @UiField
     DivElement bees;
-    @UiField
-    AnchorElement beesCloser;
 
     private final AppResources appResources;
     private final PageHomeResources pageResources;
@@ -90,7 +88,7 @@ public class HomeView extends ViewImpl implements HomePresenter.MyView {
         $(architectBtn).click(new Function() {
             public void f(Element e) {
                 $(architectMore).slideToggle(SLIDE_DELAY);
-                $(architectBtn).toggleClass(appResources.style().collapsible());
+                $(architectBtn).toggleClass(pageResources.style().collapsible());
             }
         });
     }
@@ -118,13 +116,6 @@ public class HomeView extends ViewImpl implements HomePresenter.MyView {
             public void f(Element e) {
                 $(beesMore).slideToggle(SLIDE_DELAY);
                 $(bees).toggleClass(pageResources.style().collapsible());
-            }
-        });
-
-        $(beesCloser).click(new Function() {
-            public void f(Element e) {
-                $(beesMore).slideUp(SLIDE_DELAY);
-                $(beesBtn).removeClass(pageResources.style().collapsible());
             }
         });
     }

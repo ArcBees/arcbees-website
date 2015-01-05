@@ -48,7 +48,7 @@
                     </span>
                 </p>
             </div>
-            <div class="{res.grid.row} {res.style.clearfix} {page.style.btns} {res.style.btns} {res.style.centered}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {page.style.btns} {res.style.centered}">
                 <div class="{res.grid.col} {res.grid.col_full}">
                     <a href="#{EXPERTISE}" title="expertise" class="{res.style.btn}">
                         <ui:attribute ui:name='title' ui:description='expertise'/>
@@ -73,10 +73,8 @@
                     </h2>
                     <p>
                         <ui:msg description="Our quest - Paragraphe -">To create tools that help developers optimize
-                            process,
-                            habits and thinking; to deliver
-                            value
-                            through simplicity; and transform the way developers work around the world.
+                            process, habits and thinking; to deliver value through simplicity; and transform the way
+                            developers work around the world.
                         </ui:msg>
                     </p>
 
@@ -114,7 +112,8 @@
                     </h2>
                     <p>
                         <ui:msg description="A success story - Paragraphe -">It all began with two passionate
-                            technologists, Christian Goudreau and Philippe Beaudoin, a framework with endless possibilities named GWTP and… Google.
+                            technologists, Christian Goudreau and Philippe Beaudoin, a framework with endless
+                            possibilities named GWTP and… Google.
                         </ui:msg>
                     </p>
                     <a class="{res.style.btn}" title="learn more" ui:field="successStoryBtn" href="javascript:;">
@@ -151,39 +150,43 @@
                     </div>
                     <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                         <h3>
-                            <ui:msg description="The Genesis Of GWTP">The Genesis Of GWTP</ui:msg>
+                            <ui:msg description="The Genesis Of GWTP">The Genesis
+                                <span>Of GWTP</span>
+                            </ui:msg>
                         </h3>
                         <p>
                             <ui:msg description="The Genesis Of GWTP - Paragraphe -">The two co-founders collaborated on
-                                ways
-                                of applying best practices in software engineer to GWT, which resulted in the invention
-                                of GWT-Platform, a powerful and flexible open source tool for rapidly creating robust
-                                web applications.
+                                ways of applying best practices in software engineer to GWT, which resulted in the
+                                invention of GWT-Platform, a powerful and flexible open source tool for rapidly creating
+                                robust web applications.
                             </ui:msg>
                         </p>
                     </div>
                     <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                         <h3>
-                            <ui:msg description="Immediate Growth">Immediate Growth</ui:msg>
+                            <ui:msg description="Immediate Growth">Immediate
+                                <span>Growth</span>
+                            </ui:msg>
                         </h3>
                         <p>
                             <ui:msg description="Immediate Growth - Paragraphe -">The time was ripe for GWT-Platform. It
-                                grew
-                                so quickly that the co-founders had to officially establish Arcbees as a company in July
-                                2010, to give community and commercial developers the support they deserved, and to
+                                grew so quickly that the co-founders had to officially establish Arcbees as a company in
+                                July 2010, to give community and commercial developers the support they deserved, and to
                                 evolve the platform.
                             </ui:msg>
                         </p>
                     </div>
                     <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                         <h3>
-                            <ui:msg description="Google-Recognized">Google-Recognized</ui:msg>
+                            <ui:msg description="Google-Recognized">Google-
+                                <span>Recognized</span>
+                            </ui:msg>
                         </h3>
                         <p>
                             <ui:msg description="Google-Recognized - Paragraphe -">Within less than a year, Google
-                                invited
-                                the two men to speak at Google I/O. In 2012, Christian was appointed to the GWT Steering
-                                Committee, the body dedicated to advancing the ongoing evolution of this framework.
+                                invited the two men to speak at Google I/O. In 2012, Christian was appointed to the GWT
+                                Steering Committee, the body dedicated to advancing the ongoing evolution of this
+                                framework.
                             </ui:msg>
                         </p>
                     </div>
@@ -238,8 +241,7 @@
                             <p>
                                 <ui:msg description="Architects - Paragraphe -">Architecture matters. Great products
                                     require a clear and extensible underlying structure. This is especially important
-                                    for
-                                    products to stand the test of time. We look around, and we see well-architected
+                                    for products to stand the test of time. We look around, and we see well-architected
                                     buildings all around us that remain useful for decades if not centuries. That
                                     inspires us to pursue great design principles right down to their
                                     foundations. A passion for great architecture drives everything we do.
@@ -344,11 +346,6 @@
                                         consistently enjoy the sweet, sweet honey of their own success.
                                     </p>
                                 </ui:msg>
-
-                            </div>
-                            <div class="{res.grid.col} {res.grid.col_full} {res.style.centered}">
-                                <a class="{res.style.btn} {res.style.collapsible} {res.style.closer}"
-                                        href="javascript:;" ui:field="beesCloser"></a>
                             </div>
                         </div>
                     </div>
@@ -367,8 +364,7 @@
                     </h2>
                     <p>
                         <ui:msg description="Architects of simplicity - Paragraphe -">Inspired by the best architects of
-                            all
-                            time, we want to help you create optimal code, by helping you keep your code simple.
+                            all time, we want to help you create optimal code, by helping you keep your code simple.
                         </ui:msg>
                     </p>
                 </div>
@@ -376,21 +372,26 @@
         </section>
 
         <section class="{res.style.stripe} {res.style.stripeLast} {res.style.light} {res.style.centered}">
-            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.btns} {res.style.centered}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.centered}">
                 <div class="{res.grid.col} {res.grid.col_full}">
                     <h3>
                         <ui:msg description="Learn more about - Paragraphe -">Learn more about</ui:msg>
                     </h3>
-                    <a href="#{EXPERTISE}" title="Expertise" class="{res.style.btn}">
-                        <ui:attribute ui:name='title' ui:description='Expertise'/>
-                        Expertise</a>
-                    <a href="#{PRODUCTS}" title="Products" class="{res.style.btn}">
-                        <ui:attribute ui:name='title' ui:description='Products'/>
-                        <ui:msg description="- BTN - Products">Products</ui:msg>
-                    </a>
-                    <a href="#{SERVICES}" title="Services" class="{res.style.btn}">
-                        <ui:attribute ui:name='title' ui:description='Services'/>
-                        Services</a>
+                    <div class="{res.style.btns}">
+                        <a href="#{EXPERTISE}" title="Expertise" class="{res.style.btn}">
+                            <ui:attribute ui:name='title' ui:description='Expertise'/>
+                            Expertise
+                        </a>
+                        <a href="#{PRODUCTS}" title="Products" class="{res.style.btn}">
+                            <ui:attribute ui:name='title' ui:description='Products'/>
+                            <ui:msg description="- BTN - Products">Products</ui:msg>
+                        </a>
+                        <a href="#{SERVICES}" title="Services" class="{res.style.btn}">
+                            <ui:attribute ui:name='title' ui:description='Services'/>
+                            Services
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </section>

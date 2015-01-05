@@ -11,10 +11,10 @@
 .home .header:before {
     content: "\e601";
     font-family: "icons";
-    font-size: 40rem;
+    font-size: 40.5rem;
     color: #fff;
 
-    margin: -217px 0 0 -200px;
+    margin: -195px 0 0 -200px;
 
     position: absolute;
     left: 50%;
@@ -24,7 +24,7 @@
 .txtBanner {
     height: 110px;
     width: 680px;
-    margin: -40px 0 0 -325px;
+    margin: -15px 0 0 -325px;
 
     position: absolute;
     top: 50%;
@@ -189,11 +189,12 @@
 }
 
 .home .header .btns {
-    width: 100%;
+    width: 650px;
+    margin-left: -325px;
 
     position: absolute;
-    bottom: 5em;
-    left: 0;
+    bottom: 4em;
+    left: 50%;
 
     z-index: 100;
 }
@@ -235,6 +236,7 @@
 
 .home .beesContent {
     padding-top: 190px;
+    margin-bottom: 55px;
 }
 
 .home .successStoryHolder {
@@ -318,6 +320,7 @@
     from {
         stroke-dashoffset: 1500;
     }
+
     to {
         stroke-dashoffset: 0;
     }
@@ -359,8 +362,8 @@
 }
 
 .logoConstruct .vertical {
-    stroke-dasharray: 808;
-    stroke-dashoffset: 808;
+    stroke-dasharray: 910;
+    stroke-dashoffset: 910;
     -webkit-animation: vert .75s linear;
     -webkit-animation-delay: 1s;
     -webkit-animation-fill-mode: forwards;
@@ -459,6 +462,18 @@
     margin: 14em 0 2em;
 }
 
+.home .header .btns a {
+    margin: 0px 4.75em;
+}
+
+.home .header .btns a:first-child {
+    margin-left: 0px;
+}
+
+.home .header .btns a:last-child {
+    margin-right: 0px;
+}
+
 @media (max-width: 649px) {
     .home .beesContent {
         padding-top: 300px;
@@ -466,6 +481,10 @@
 
     .home .beesContent:last-child {
         padding-top: 0;
+    }
+
+    .home .header .btns a {
+        margin: 0px;
     }
 }
 

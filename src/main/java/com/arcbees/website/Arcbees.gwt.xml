@@ -8,6 +8,7 @@
     <inherits name='com.google.gwt.maps.Maps' />
     <inherits name="com.google.gwt.query.Query"/>
     <inherits name="com.arcbees.gsss.animation.Animation"/>
+    <inherits name="com.arcbees.chosen.Chosen"/>
 
     <source path='client'/>
     <source path='shared'/>

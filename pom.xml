@@ -28,6 +28,8 @@
         <gsss.version>1.0-SNAPSHOT</gsss.version>
         <gwtquery.version>1.4.2</gwtquery.version>
         <gwt-maps-api.version>3.10.0-alpha-7</gwt-maps-api.version>
+        <gwtchosen.version>2.0.0-SNAPSHOT</gwtchosen.version>
+        <guava.version>17.0</guava.version>
 
         <webappDirectory>${project.build.directory}/${project.build.finalName}</webappDirectory>
         <gae.home>
@@ -41,6 +43,9 @@
             <id>sonatype.snapshots</id>
             <name>Sonatype snapshot repository</name>
             <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
         </repository>
     </repositories>
 
@@ -91,6 +96,24 @@
             <groupId>com.github.branflake2267</groupId>
             <artifactId>gwt-maps-api</artifactId>
             <version>${gwt-maps-api.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava-gwt</artifactId>
+            <version>${guava.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${guava.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.arcbees</groupId>
+            <artifactId>gwtchosen</artifactId>
+            <version>${gwtchosen.version}</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 

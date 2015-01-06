@@ -853,7 +853,7 @@ img {
 
 .focusBlock p {
     font-family: "geometriaLight", Arial, sans-serif;
-    font-size: 1.9rem;
+    font-size: 2.5rem;
 }
 
 @media (max-width: 649px) {
@@ -957,6 +957,10 @@ img {
 @media (max-width: 649px) {
     .stripe {
         padding: 30px 0;
+    }
+
+    .stripeLast {
+        padding-top: 0;
     }
 
     .sloganSide {

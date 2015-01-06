@@ -25,7 +25,7 @@
 }
 
 .header i.iconPyramid {
-    color: #fff;
+    color: C_TEXT;
     font-size: 21rem;
 
     right: 50%;
@@ -35,7 +35,7 @@
 .pyramidAnim1,
 .pyramidAnim2,
 .pyramidAnim3 {
-    bottom: -20px;
+    bottom: -21px;
 
     @mixin animation_delay(.2s);
     @mixin animation_duration(.5s);
@@ -56,7 +56,7 @@
 
 .pyramidAnim4,
 .pyramidAnim5 {
-    bottom: 155px;
+    bottom: 154px;
 
     @mixin animation_delay(.6s);
     @mixin animation_duration(.5s);
@@ -74,7 +74,7 @@
 .pyramidAnim6 {
     margin-right: -95px;
 
-    bottom: 330px;
+    bottom: 329px;
 
     @mixin animation_delay(1s);
     @mixin animation_duration(.5s);
@@ -105,7 +105,7 @@
     }
 
     .header i.iconPyramid {
-        font-size: 14rem;
+        font-size: 11.5rem;
     }
 
     .pyramidAnim1,
@@ -119,20 +119,20 @@
     }
 
     .pyramidAnim1 {
-        margin-right: 66px;
+        margin-right: 50px;
     }
 
     .pyramidAnim2 {
-        margin-right: -70px;
+        margin-right: -57px;
     }
 
     .pyramidAnim3 {
-        margin-right: -206px;
+        margin-right: -164px;
     }
 
     .pyramidAnim4,
     .pyramidAnim5 {
-        bottom: 102px;
+        bottom: 80px;
 
     @mixin animation_delay(.6s);
     @mixin animation_duration(.5s);
@@ -140,17 +140,17 @@
     }
 
     .pyramidAnim4 {
-        margin-right: -2px;
+        margin-right: -3px;
     }
 
     .pyramidAnim5 {
-        margin-right: -138px;
+        margin-right: -111px;
     }
 
     .pyramidAnim6 {
-        margin-right: -70px;
+        margin-right: -57px;
 
-        bottom: 217px;
+        bottom: 174px;
 
     @mixin animation_delay(1s);
     @mixin animation_duration(.5s);
@@ -398,8 +398,9 @@
 }
 
 /* -- lightbulb -- */
+
 .lightbulb .diagram {
-    margin-top: 60px;
+    margin: 60px 0 -105px;
     padding-top: 40px;
 
     position: relative;
@@ -456,6 +457,12 @@
     margin-left: 36px;
 
     top: 50px;
+}
+
+@media (max-width: 649px) {
+    .lightbulb .diagram {
+        margin: 60px 0 -54px;
+    }
 }
 
 /* -- partner -- */
@@ -617,14 +624,54 @@
 @media (max-width: 649px) {
     .partner .diagram::before,
     .partner .diagram::after {
-        margin-top: -65px;
+        margin-top: -50px;
     }
 
     .partner .diagram::after {
-        margin-bottom: -107px;
+        margin-bottom: -95px;
     }
 
     .partner i.iconHexa {
+        top: 143px;
+    }
+
+    .partner i {
+        font-size: 12.5rem;
+    }
+
+    .partner i.icon1 {
+        margin-right: -28px;
+
+        top: 143px;
+    }
+
+    .partner i.icon2 {
+        margin-right: 8px;
+
+        top: 84px;
+    }
+
+    .partner i.icon3 {
+        margin-right: -27px;
+
+        top: 25px;
+    }
+
+    .partner i.icon4 {
+        margin-left: -28px;
+
+        top: 25px;
+    }
+
+    .partner i.icon5.iconDark {
+        margin-left: 8px;
+
+        top: 84px;
+    }
+
+    .partner i.icon6 {
+        margin-left: -28px;
+
         top: 143px;
     }
 }
@@ -786,6 +833,24 @@
 @media (max-width: 649px) {
     .iterative .iconHexa {
         margin-left: -157px;
+    }
+
+    .iterative .launch {
+        margin-left: -136px;
+    }
+
+    .iterative .iteration1 {
+        margin-left: 45px;
+        top: 120px;
+    }
+
+    .circle {
+        width: 140px;
+        height: 140px;
+    }
+
+    .iterative .bar2 {
+        margin-right: -75px;
     }
 }
 
@@ -1186,6 +1251,14 @@
     @mixin rotate(-30deg);
 }
 
+@media (max-width: 649px) {
+    .learnAdapt i.iconHexa {
+        font-size: 4.25rem;
+
+        margin-left: -21px;
+    }
+}
+
 /* -- deliver -- */
 
 .deliver {
@@ -1278,4 +1351,14 @@
 @-webkit-keyframes deliver {
     from {opacity: 0;}
     to {opacity: 1;}
+}
+
+@media (max-width: 649px) {
+    .deliver i.iconHexa {
+        font-size: 4.25rem;
+
+        margin-left: -21px;
+
+        top: 27px;
+    }
 }

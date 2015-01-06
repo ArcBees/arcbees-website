@@ -18,7 +18,7 @@
 
         <section class="{res.style.stripe}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_1_2}">
+                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full}">
                     <h1>gae studio
                         <a href="#" class="{res.style.anchor}">#</a>
                     </h1>
@@ -41,8 +41,7 @@
                 </div>
                 <div class="{res.grid.col} {res.grid.col_push_1_2} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                     <p>
-                        <strong>GAE Studio helps you optimize applications hosted on Google App Engine.
-                        </strong>
+                        <strong>GAE Studio helps you optimize applications hosted on Google App Engine.</strong>
                     </p>
                     <p>Using real-time analysis of datastore requests, GAE Studio quickly highlights inefficient queries
                         and gathers metrics that will help developers improve application performance.
@@ -101,7 +100,6 @@
         <section class="{res.style.stripe} {page.style.colored} {res.style.centered}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_full}">
-
                     <h3 class="{res.style.stripeTitle}">Data
                         <span>Visualization
                             <a href="#" class="{res.style.anchor}">#</a>
@@ -176,7 +174,6 @@
         <section class="{res.style.stripe} {res.style.dark} {res.style.centered}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_full}">
-
                     <h3>Subscribe</h3>
                     <p>GAE studio is still in development, subscribe to get an early access!</p>
                     <form>
@@ -185,9 +182,7 @@
                         </label>
                         <input type="email" name="email"></input>
                     </form>
-
                     <a href="#" class="{res.style.btn}">Subscribe</a>
-
                 </div>
             </div>
         </section>

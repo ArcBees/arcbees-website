@@ -373,6 +373,14 @@
     .bees .bee:nth-child(odd) {
         margin: 0 0 7px;
     }
+
+    .bees .bee {
+        height: 225px;
+    }
+
+    .bees .beeHolder2 img {
+        margin-left: -133px;
+    }
 }
 
 /* -> Popup -- */

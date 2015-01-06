@@ -154,15 +154,25 @@
     line-height: 1em;
 
     display: inline-block;
-    margin: 0 11px;
+    margin: 0 2px;
+
+    vertical-align: middle;
 }
 
 .menuHeader a {
     color: #fff;
-    font-size: 22.7rem;
+    font-size: 11rem;
+    line-height: 29rem;
 
     @mixin opacity(.5);
     @mixin transition(opacity, .5s);
+}
+
+.menuHeader a.active {
+    font-size: 27rem;
+    line-height: 26rem;
+
+@mixin transition(all, 0.3s);
 }
 
 .menuHeader a.active,
@@ -190,15 +200,23 @@
 }
 
 .productHead.gae .arrow::after {
-    margin-left: -302px;
+    margin-left: -290px;
 }
 
 .productHead.gwtp .arrow::after {
-    margin-left: -50px;
+    margin-left: -172px;
 }
 
 .productHead.jukito .arrow::after {
-    margin-left: 205px;
+    margin-left: -50px;
+}
+
+.productHead.chosen .arrow::after {
+    margin-left: 63px;
+}
+
+.productHead.gquery .arrow::after {
+    margin-left: 183px;
 }
 
 @media (max-width: 979px) {
@@ -225,6 +243,10 @@
 
 @media (max-width: 649px) {
     .menuHeader a {
+        font-size: 6rem;
+    }
+
+    .menuHeader a.active {
         font-size: 8rem;
     }
 

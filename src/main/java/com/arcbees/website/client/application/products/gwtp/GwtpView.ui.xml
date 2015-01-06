@@ -202,67 +202,18 @@
             </div>
         </section>
 
-        <section class="{page.style.moreFeatures} {res.style.stripe}">
-            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_full} {res.style.centered}">
-                    <h2>more features
-                        <a href="#" class="{res.style.anchor}">#</a>
-                    </h2>
-                </div>
-
-                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full}">
-                    <h3>security</h3>
-                    <p>GWTP allows you to protect your server using Action validation. In addition, you can block
-                        specific pages using custom Gatekeepers. Also included: Automatic XSRF attack detection.
-                    </p>
-                    <h3>google analytics</h3>
-                    <p>With as little as 3 lines of code, your web application will be integrated with Google Analytics.
-                        Also, GWTP allows your website to be easily crawlable by search engines that follow Google's
-                        AJAX Crawling specification.
-                    </p>
-                    <h3>Tabbed Presenters</h3>
-                    <p>Often times you'll want to display a list of links that cause a child Presenter to appear. GWTP
-                        makes it easy to create loosely-coupled Tabbed Presenters that live within their parent
-                        Presenter.
-                    </p>
-                    <h3>maven</h3>
-                    <p>If your project uses Maven, you're all set for GWTP. All the dependencies that you need to
-                        migrate your project to GWTP are published to Maven Central. So, a couple lines in your POM, and
-                        GWTP is ready!
-                    </p>
-                </div>
-                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full}">
-                    <h3>Internationalization</h3>
-                    <p>GWTP makes i18n easy. Using a custom Python script, GWTP will store all your translations in
-                        separate properties files for all languages.
-                    </p>
-                    <h3>Crawlability</h3>
-                    <p>Wondering if it's possible to make crawlable applications with GWTP? Absolutely! GWTP includes a
-                        crawling engine that lets you make any of your asynchronous web sites crawlable - even if you're
-                        not building them in GWTP!
-                    </p>
-                    <h3>Testability</h3>
-                    <p>Because GWTP implements the Model View Presenter design pattern, most of your app logic will be
-                        found inside the Presenters, which can be easily tested using Junit, Mockito and Jukito.
-                    </p>
-                    <h3>Route-like NameTokens</h3>
-                    <p>Want human-readable URLs? With GWTP, your URLs can look like REST calls! Using Route-Like
-                        NameTokens, fussy web addresses like /#userprofile?id=999 can be replaced with
-                        /#/userprofile/999. It’s a format your users will be able to recognize, remember and share.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="{res.style.stripe} {res.style.dark} {res.style.centered}">
+        <section class="{res.style.stripe} {res.style.light} {res.style.centered} {page.style.moreOn}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_full}">
-
-                    <h3>ALL THE DOCUMENTATIONS
-                        <span>YOU NEED</span>
+                    <h3>
+                        <ui:msg description="more on">more on
+                        </ui:msg>
                     </h3>
-                    <a href="#" class="{res.style.btn}">Go to Arcbees Developers</a>
-
+                    <a href="#" class="{res.style.btn}">
+                        <i class="{fonts.icons.iconArrowOutside}"></i>
+                        <ui:msg description="- BTN - Go to Arcbees Developers">Developer's</ui:msg>
+                        Platform
+                    </a>
                 </div>
             </div>
         </section>

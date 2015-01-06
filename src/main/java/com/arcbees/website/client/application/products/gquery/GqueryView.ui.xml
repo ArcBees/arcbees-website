@@ -242,7 +242,7 @@
             </div>
         </section>
 
-        <section class="{res.style.stripe} {res.style.dark} {res.style.centered} {page.style.moreOn}">
+        <section class="{res.style.stripe} {res.style.light} {res.style.centered} {page.style.moreOn}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_full}">
                     <h3>

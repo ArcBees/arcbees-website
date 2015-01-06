@@ -1,6 +1,9 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-        xmlns:g="urn:import:com.google.gwt.user.client.ui">
+        xmlns:g="urn:import:com.google.gwt.user.client.ui"
+        ui:generateFormat="com.google.gwt.i18n.rebind.format.PropertiesFormat"
+        ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
+        ui:generateLocales="default">
 
     <ui:with field="page" type="com.arcbees.website.client.resources.PageBeesResources"/>
     <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
@@ -15,7 +18,7 @@
             </div>
         </div>
 
-        <h1>Simon-Pierre Gingras<span>Developer of things, Chief Bacon Evangelist</span></h1>
+        <h1>Simon-Pierre Gingras<span><ui:msg description="Simon-Pierre's title">Developer of things, Chief Bacon Evangelist</ui:msg></span></h1>
 
         <p>
             <ui:msg description="Professional achievements:">Professional achievements:</ui:msg>

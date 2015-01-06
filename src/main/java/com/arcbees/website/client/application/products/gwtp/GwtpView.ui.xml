@@ -18,7 +18,7 @@
 
         <section class="{res.style.stripe}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_1_2}">
+                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full}">
                     <h1>gwt platform
                         <a href="#" class="{res.style.anchor}">#</a>
                     </h1>
@@ -88,13 +88,12 @@
 
         <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium1}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
-                <div class="{res.grid.col} {res.grid.col_1_3}">
+                <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>Model View Presenter Framework</h3>
                     <a href="#" class="{res.style.anchor}">#</a>
                 </div>
 
-                <div class="{res.grid.col} {res.grid.col_2_3}">
+                <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <p>Web applications need a solid underlying architecture to build upon as they grow. GWTP’s MVP
                         framework helps you organize your code for scalability right from the start, with a clear
                         separation of concerns between your UI and your business logic.
@@ -105,13 +104,11 @@
 
         <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium2}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
-                <div class="{res.grid.col} {res.grid.col_1_3}">
+                <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>dependency injection</h3>
                     <a href="#" class="{res.style.anchor}">#</a>
                 </div>
-
-                <div class="{res.grid.col} {res.grid.col_2_3}">
+                <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <p>GWTP was engineered with dependency injection in mind. Leveraging the full power of Google Gin
                         and Guice, GWTP makes your web apps more modular and testable.
                     </p>
@@ -121,13 +118,11 @@
 
         <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium3}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
-                <div class="{res.grid.col} {res.grid.col_1_3}">
+                <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>history management</h3>
                     <a href="#" class="{res.style.anchor}">#</a>
                 </div>
-
-                <div class="{res.grid.col} {res.grid.col_2_3}">
+                <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <p>GWTP's PlaceManager makes it trivial to build a blazing fast modern web app that minimizes
                         client-server roundtrips while making sure the Back button works as users expect.
                     </p>
@@ -137,13 +132,11 @@
 
         <section class="{res.style.stripe} {page.style.stripeDetails}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
-                <div class="{res.grid.col} {res.grid.col_1_3}">
+                <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>command pattern</h3>
                     <a href="#" class="{res.style.anchor}">#</a>
                 </div>
-
-                <div class="{res.grid.col} {res.grid.col_2_3}">
+                <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <p>Client/Server communication is made easy using GWTP's integrated command pattern. With it, you
                         can easily create Actions that are managed by server-side Handlers. Also included: asynchronous
                         callbacks and server-side Handler protection.
@@ -154,13 +147,11 @@
 
         <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium1}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
-                <div class="{res.grid.col} {res.grid.col_1_3}">
+                <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>code splitting</h3>
                     <a href="#" class="{res.style.anchor}">#</a>
                 </div>
-
-                <div class="{res.grid.col} {res.grid.col_2_3}">
+                <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <p>Javascript-heavy web applications can take too long to download as your application grows in
                         size. Thankfully, GWTP comes with effortless and efficient code splitting that will cut through
                         your application's startup time.
@@ -171,13 +162,11 @@
 
         <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium2}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
-                <div class="{res.grid.col} {res.grid.col_1_3}">
+                <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>mobile ready</h3>
                     <a href="#" class="{res.style.anchor}">#</a>
                 </div>
-
-                <div class="{res.grid.col} {res.grid.col_2_3}">
+                <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <p>GWTP allows you to easily create multiple instances of a Presenter. This lets you reuse the same
                         widgets and logic throughout your application without duplicating your code.
                     </p>
@@ -187,13 +176,11 @@
 
         <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium3}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
-                <div class="{res.grid.col} {res.grid.col_1_3}">
+                <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>Nested Presenters</h3>
                     <a href="#" class="{res.style.anchor}">#</a>
                 </div>
-
-                <div class="{res.grid.col} {res.grid.col_2_3}">
+                <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <p>Web apps usually require a consistent layout across all your pages. The last thing you want to do
                         is replicate your website header code on every page! GWTP solves that problem using Nested
                         Presenters, which are loosely coupled and communicate via a shared Event Bus.
@@ -209,7 +196,6 @@
                         <a href="#" class="{res.style.anchor}">#</a>
                     </h2>
                 </div>
-
                 <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full}">
                     <h3>security</h3>
                     <p>GWTP allows you to protect your server using Action validation. In addition, you can block
@@ -257,12 +243,10 @@
         <section class="{res.style.stripe} {res.style.dark} {res.style.centered}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_full}">
-
                     <h3>ALL THE DOCUMENTATIONS
                         <span>YOU NEED</span>
                     </h3>
                     <a href="#" class="{res.style.btn}">Go to Arcbees Developers</a>
-
                 </div>
             </div>
         </section>
@@ -270,7 +254,6 @@
         <section class="{res.style.stripe} {page.style.colored} {res.style.centered}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_full}">
-
                     <h3>SHARE</h3>
                     <ul class="{page.style.social}">
                         <li>
@@ -289,7 +272,6 @@
                             </a>
                         </li>
                     </ul>
-
                 </div>
             </div>
         </section>

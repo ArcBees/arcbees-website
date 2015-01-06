@@ -31,7 +31,7 @@
 
         <section class="{res.style.stripe} {res.style.dark} {res.style.triangleBottom} {res.style.nextLight}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.focusBlock}">
-                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+                <div class="{res.grid.col} {res.grid.col_8} {res.grid.col_push_1_6} {res.grid.col_m_full} {res.grid.col_m_push_0}">
 
                     <h2 class="{res.style.stripeTitle}">
                         <ui:msg description="Professional Services">Professional
@@ -63,7 +63,6 @@
                             </div>
                             <i class="{fonts.icons.iconArcbees} {page.style.icon2}"></i>
                         </div>
-
                         <h3>
                             <ui:msg description="Knowledge Transfer">Knowledge
                                 <span>Transfer</span>

@@ -39,7 +39,7 @@ ul.social {
 }
 
 .social a:hover {
-    color: C_PRIMARY;
+    color: C_TEXT_LIGHT;
 }
 
 @media (max-width: 649px) {

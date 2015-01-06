@@ -101,14 +101,12 @@
 
         <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium1}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
                         <ui:msg description="It Looks Like jQuery">It Looks Like jQuery</ui:msg>
                     </h3>
                     <a href="#" class="{res.style.anchor}">#</a>
                 </div>
-
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <ui:msg description="It Looks Like jQuery - Paragraph -">
                         <p>
@@ -125,14 +123,12 @@
 
         <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium2}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
                         <ui:msg description="Easy DOM Manipulation">Easy DOM Manipulation</ui:msg>
                     </h3>
                     <a href="#" class="{res.style.anchor}">#</a>
                 </div>
-
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <ui:msg description="Easy DOM Manipulation - Paragraph -">
                         <p>
@@ -151,14 +147,12 @@
 
         <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium3}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
                         <ui:msg description="Full GWT Widget Integration">Full GWT Widget Integration</ui:msg>
                     </h3>
                     <a href="#" class="{res.style.anchor}">#</a>
                 </div>
-
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <ui:msg description="Full GWT Widget Integration - Paragraph -">
                         <p>
@@ -173,14 +167,12 @@
 
         <section class="{res.style.stripe} {page.style.stripeDetails}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
                         <ui:msg description="Promises">Promises</ui:msg>
                     </h3>
                     <a href="#" class="{res.style.anchor}">#</a>
                 </div>
-
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <p>
                         <ui:msg description="Promises - Paragraph -">GQuery implements the promises API existing
@@ -194,14 +186,12 @@
 
         <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium1}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
                         <ui:msg description="Easy Ajax Syntax">Easy Ajax Syntax</ui:msg>
                     </h3>
                     <a href="#" class="{res.style.anchor}">#</a>
                 </div>
-
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <ui:msg description="Easy Ajax Syntax - Paragraph -">
                         <p>
@@ -217,16 +207,14 @@
             </div>
         </section>
 
-        <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium1}">
+        <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium2}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
                         <ui:msg description="Event Handling">Event Handling</ui:msg>
                     </h3>
                     <a href="#" class="{res.style.anchor}">#</a>
                 </div>
-
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <ui:msg description="Event Handling - Paragraph -">
                         <p>

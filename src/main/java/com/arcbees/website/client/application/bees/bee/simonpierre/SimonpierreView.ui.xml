@@ -5,6 +5,7 @@
         ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
         ui:generateLocales="default">
 
+    <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
     <ui:with field="page" type="com.arcbees.website.client.resources.PageBeesResources"/>
     <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
 
@@ -20,27 +21,32 @@
 
         <h1>Simon-Pierre Gingras<span><ui:msg description="Simon-Pierre's title">Developer of things, Chief Bacon Evangelist</ui:msg></span></h1>
 
-        <p>
-            <ui:msg description="Professional achievements:">Professional achievements:</ui:msg>
-        </p>
-        <ul>
-            <ui:msg description="Simon-Pierre's prof achievements">
-                <li>Led development of the new Arcbees dev site.</li>
-                <li>Created gwt-stripe.</li>
-                <li>Once beat Christian at foosball.</li>
-            </ui:msg>
-        </ul>
-
-        <p>
-            <ui:msg description="Personal achievements:">Personal achievements:</ui:msg>
-        </p>
-        <ul>
-            <ui:msg description="Simon-Pierre's pers achievements">
-                <li>Skied the Terminator Peak at Kicking Horse.</li>
-                <li>Lived 3 days in the Sahara desert.</li>
-                <li>Can eat his yogourt before his spaghetti.</li>
-            </ui:msg>
-        </ul>
+        <div class="{res.grid.row} {res.style.clearfix}">
+            <div class="{res.grid.col} {res.grid.col_6} {page.style.colGauche}">
+                <h2>
+                    <ui:msg description="Professional achievements:">Professional achievements</ui:msg>
+                </h2>
+                <ul>
+                    <ui:msg description="Simon-Pierre's prof achievements">
+                        <li>Led development of the new Arcbees dev site.</li>
+                        <li>Created gwt-stripe.</li>
+                        <li>Once beat Christian at foosball.</li>
+                    </ui:msg>
+                </ul>
+            </div>
+            <div class="{res.grid.col} {res.grid.col_6} {page.style.colDroite}">
+                <h2>
+                    <ui:msg description="Personal achievements:">Personal achievements</ui:msg>
+                </h2>
+                <ul>
+                    <ui:msg description="Simon-Pierre's pers achievements">
+                        <li>Skied the Terminator Peak at Kicking Horse.</li>
+                        <li>Lived 3 days in the Sahara desert.</li>
+                        <li>Can eat his yogourt before his spaghetti.</li>
+                    </ui:msg>
+                </ul>
+            </div>
+        </div>
 
         <ul class="{page.style.social}">
             <li>

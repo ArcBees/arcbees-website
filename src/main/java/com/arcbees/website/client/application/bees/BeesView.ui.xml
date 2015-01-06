@@ -135,6 +135,18 @@
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeChristian}"></g:Image>
+                                    <a href="#{BEE_PHILIPPEB}">
+                                        <h3>Philippe Beaudoin</h3>
+                                        <p>Advisor and co-founder</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="{page.style.bee} {page.style.bee1}">
+                            <div class="{page.style.beeHolder1}">
+                                <div class="{page.style.beeHolder2}">
+                                    <g:Image resource="{page.beeChristian}"></g:Image>
                                     <a href="#{BEE_PHILIPPEA}">
                                         <h3>Philippe Araujo</h3>
                                         <p>Business Knight</p>
@@ -143,105 +155,7 @@
                             </div>
                         </div>
 
-                        <div class="{page.style.bee} {page.style.bee1}">
-                            <div class="{page.style.beeHolder1}">
-                                <div class="{page.style.beeHolder2}">
-                                    <g:Image resource="{page.beeChristian}"></g:Image>
-                                    <a href="#{BEE_SIMONPIERRE}">
-                                        <h3>Simon-Pierre Gingras</h3>
-                                        <p>
-                                            <ui:msg description="Simon-Pierre's title">Developer of things, Chief Bacon Evangelist</ui:msg>
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
                         <div class="{page.style.bee} {page.style.bee2}">
-                            <div class="{page.style.beeHolder1}">
-                                <div class="{page.style.beeHolder2}">
-                                    <g:Image resource="{page.beeChristian}"></g:Image>
-                                    <a href="#{BEE_MAXIME}">
-                                        <h3>Maxime Mériouma-Caron</h3>
-                                        <p>Night Shadow Developer</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="{page.style.bee} {page.style.bee3}">
-                            <div class="{page.style.beeHolder1}">
-                                <div class="{page.style.beeHolder2}">
-                                    <g:Image resource="{page.beeChristian}"></g:Image>
-                                    <a href="#{BEE_CHRISTOPHER}">
-                                        <h3>Christopher Viel</h3>
-                                        <p>Crazy Code Mastermind</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="{page.style.bee} {page.style.bee1}">
-                            <div class="{page.style.beeHolder1}">
-                                <div class="{page.style.beeHolder2}">
-                                    <g:Image resource="{page.beeChristian}"></g:Image>
-                                    <a href="#{BEE_JOEL}">
-                                        <h3>Joel Trottier-Hébert</h3>
-                                        <p>Bugs writer</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="{page.style.bee} {page.style.bee2}">
-                            <div class="{page.style.beeHolder1}">
-                                <div class="{page.style.beeHolder2}">
-                                    <g:Image resource="{page.beeChristian}"></g:Image>
-                                    <a href="#{BEE_MANON}">
-                                        <h3>Manon Gruaz</h3>
-                                        <p>Lead Designer, Branding goddess and Loving Bee</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="{page.style.bee} {page.style.bee3}">
-                            <div class="{page.style.beeHolder1}">
-                                <div class="{page.style.beeHolder2}">
-                                    <g:Image resource="{page.beeChristian}"></g:Image>
-                                    <a href="#{BEE_LARRY}">
-                                        <h3>Larry Matte</h3>
-                                        <p>Undercover Front-end Agent</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="{page.style.bee} {page.style.bee1}">
-                            <div class="{page.style.beeHolder1}">
-                                <div class="{page.style.beeHolder2}">
-                                    <g:Image resource="{page.beeChristian}"></g:Image>
-                                    <a href="#{BEE_JASON}">
-                                        <h3>Jason Lemay</h3>
-                                        <p>Dual wielding Front-end Specialist</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="{page.style.bee} {page.style.bee2}">
-                            <div class="{page.style.beeHolder1}">
-                                <div class="{page.style.beeHolder2}">
-                                    <g:Image resource="{page.beeChristian}"></g:Image>
-                                    <a href="#{BEE_JEANCHRISTOPHE}">
-                                        <h3>Jean-Christophe Lariviere</h3>
-                                        <p>Coder in the North</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="{page.style.bee} {page.style.bee3}">
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeChristian}"></g:Image>
@@ -253,7 +167,7 @@
                             </div>
                         </div>
 
-                        <div class="{page.style.bee} {page.style.bee1}">
+                        <div class="{page.style.bee} {page.style.bee3}">
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeChristian}"></g:Image>
@@ -269,9 +183,95 @@
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeChristian}"></g:Image>
-                                    <a href="#{BEE_PHILIPPEB}">
-                                        <h3>Philippe Beaudoin</h3>
-                                        <p>Advisor and co-founder</p>
+                                    <a href="#{BEE_MANON}">
+                                        <h3>Manon Gruaz</h3>
+                                        <p>Lead Designer, Branding goddess and Loving Bee</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="{page.style.bee} {page.style.bee2}">
+                            <div class="{page.style.beeHolder1}">
+                                <div class="{page.style.beeHolder2}">
+                                    <g:Image resource="{page.beeChristian}"></g:Image>
+                                    <a href="#{BEE_JASON}">
+                                        <h3>Jason Lemay</h3>
+                                        <p>Dual wielding Front-end Specialist</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="{page.style.bee} {page.style.bee3}">
+                            <div class="{page.style.beeHolder1}">
+                                <div class="{page.style.beeHolder2}">
+                                    <g:Image resource="{page.beeChristian}"></g:Image>
+                                    <a href="#{BEE_MAXIME}">
+                                        <h3>Maxime Mériouma-Caron</h3>
+                                        <p>Night Shadow Developer</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="{page.style.bee} {page.style.bee1}">
+                            <div class="{page.style.beeHolder1}">
+                                <div class="{page.style.beeHolder2}">
+                                    <g:Image resource="{page.beeChristian}"></g:Image>
+                                    <a href="#{BEE_CHRISTOPHER}">
+                                        <h3>Christopher Viel</h3>
+                                        <p>Crazy Code Mastermind</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="{page.style.bee} {page.style.bee2}">
+                            <div class="{page.style.beeHolder1}">
+                                <div class="{page.style.beeHolder2}">
+                                    <g:Image resource="{page.beeChristian}"></g:Image>
+                                    <a href="#{BEE_SIMONPIERRE}">
+                                        <h3>Simon-Pierre Gingras</h3>
+                                        <p>
+                                            <ui:msg description="Simon-Pierre's title">Developer of things, Chief Bacon Evangelist</ui:msg>
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="{page.style.bee} {page.style.bee3}">
+                            <div class="{page.style.beeHolder1}">
+                                <div class="{page.style.beeHolder2}">
+                                    <g:Image resource="{page.beeChristian}"></g:Image>
+                                    <a href="#{BEE_JOEL}">
+                                        <h3>Joel Trottier-Hébert</h3>
+                                        <p>Bugs writer</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="{page.style.bee} {page.style.bee1}">
+                            <div class="{page.style.beeHolder1}">
+                                <div class="{page.style.beeHolder2}">
+                                    <g:Image resource="{page.beeChristian}"></g:Image>
+                                    <a href="#{BEE_LARRY}">
+                                        <h3>Larry Matte</h3>
+                                        <p>Undercover Front-end Agent</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="{page.style.bee} {page.style.bee2}">
+                            <div class="{page.style.beeHolder1}">
+                                <div class="{page.style.beeHolder2}">
+                                    <g:Image resource="{page.beeChristian}"></g:Image>
+                                    <a href="#{BEE_JEANCHRISTOPHE}">
+                                        <h3>Jean-Christophe Lariviere</h3>
+                                        <p>Coder in the North</p>
                                     </a>
                                 </div>
                             </div>
@@ -339,6 +339,9 @@
         <div class="{page.style.popup}" ui:field="popup">
             <div class="{res.style.wrapper}">
                 <g:HTMLPanel tag="section" ui:field="bee" styleName="{page.style.popupContent}"/>
+                <a href="#" ui:field="popupClose" class="{page.style.popupClose}">
+                    <i class="{fonts.icons.iconClose}"></i>
+                </a>
             </div>
         </div>
 

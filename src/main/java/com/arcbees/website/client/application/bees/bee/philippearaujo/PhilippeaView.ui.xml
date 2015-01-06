@@ -5,6 +5,7 @@
         ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
         ui:generateLocales="default">
 
+    <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
     <ui:with field="page" type="com.arcbees.website.client.resources.PageBeesResources"/>
     <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
 
@@ -22,28 +23,33 @@
             <span><ui:msg description="Philippe Araujo's title">Business Knight</ui:msg></span>
         </h1>
 
-        <p>
-            <ui:msg description="Professional achievements:">Professional achievements:</ui:msg>
-        </p>
-        <ul>
-            <ui:msg description="Philippe Araujo's prof achievements">
-                <li>Developed a framework for gamification.</li>
-                <li>Speaker for Entretien Jacques-Cartier in Lyon on smart cities.</li>
-                <li>MBA Games winner with the Laval University team.</li>
-                <li>My motto in life : Work hard, have fun, customers come first.</li>
-            </ui:msg>
-        </ul>
-
-        <p>
-            <ui:msg description="Personal achievements:">Personal achievements:</ui:msg>
-        </p>
-        <ul>
-            <ui:msg description="Philippe Araujo's pers achievements">
-                <li>I was the marriage officiant for my two best friends.</li>
-                <li>Avid TV show hunter.</li>
-                <li>I am my biggest fan!</li>
-            </ui:msg>
-        </ul>
+        <div class="{res.grid.row} {res.style.clearfix}">
+            <div class="{res.grid.col} {res.grid.col_6} {page.style.colGauche}">
+                <h2>
+                    <ui:msg description="Professional achievements:">Professional achievements</ui:msg>
+                </h2>
+                <ul>
+                    <ui:msg description="Philippe Araujo's prof achievements">
+                        <li>Developed a framework for gamification.</li>
+                        <li>Speaker for Entretien Jacques-Cartier in Lyon on smart cities.</li>
+                        <li>MBA Games winner with the Laval University team.</li>
+                        <li>My motto in life : Work hard, have fun, customers come first.</li>
+                    </ui:msg>
+                </ul>
+            </div>
+            <div class="{res.grid.col} {res.grid.col_6} {page.style.colDroite}">
+                <h2>
+                    <ui:msg description="Personal achievements:">Personal achievements</ui:msg>
+                </h2>
+                <ul>
+                    <ui:msg description="Philippe Araujo's pers achievements">
+                        <li>I was the marriage officiant for my two best friends.</li>
+                        <li>Avid TV show hunter.</li>
+                        <li>I am my biggest fan!</li>
+                    </ui:msg>
+                </ul>
+            </div>
+        </div>
 
         <ul class="{page.style.social}">
             <li>

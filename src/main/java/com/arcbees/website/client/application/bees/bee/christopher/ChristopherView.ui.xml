@@ -5,6 +5,7 @@
         ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
         ui:generateLocales="default">
 
+    <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
     <ui:with field="page" type="com.arcbees.website.client.resources.PageBeesResources"/>
     <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
 
@@ -22,29 +23,33 @@
             <span><ui:msg description="Christopher title">Crazy Code Mastermind</ui:msg></span>
         </h1>
 
-        <p>
-            <ui:msg description="Professional achievements:">Professional achievements:</ui:msg>
-        </p>
-        <ul>
-            <ui:msg description="Christopher's prof achievements">
-                <li>Created an actively used REST library.</li>
-                <li>Passionate about code architecture.</li>
-                <li>Wrote my first piece of software at age 11.</li>
-            </ui:msg>
+        <div class="{res.grid.row} {res.style.clearfix}">
+            <div class="{res.grid.col} {res.grid.col_6} {page.style.colGauche}">
+                <h2>
+                    <ui:msg description="Professional achievements:">Professional achievements</ui:msg>
+                </h2>
+                <ul>
+                    <ui:msg description="Christopher's prof achievements">
+                        <li>Created an actively used REST library.</li>
+                        <li>Passionate about code architecture.</li>
+                        <li>Wrote my first piece of software at age 11.</li>
+                    </ui:msg>
 
-        </ul>
-
-        <p>
-            <ui:msg description="Personal achievements:">Personal achievements:</ui:msg>
-        </p>
-        <ul>
-            <ui:msg description="Christopher's pers achievements">
-                <li>Created the #joke hastag (kind of….).</li>
-                <li>Survived a Chinatown restaurant in Hawaii.</li>
-                <li>Doing the best in the world profiteroles (according to Manon).</li>
-            </ui:msg>
-
-        </ul>
+                </ul>
+            </div>
+            <div class="{res.grid.col} {res.grid.col_6} {page.style.colDroite}">
+                <h2>
+                    <ui:msg description="Personal achievements:">Personal achievements</ui:msg>
+                </h2>
+                <ul>
+                    <ui:msg description="Christopher's pers achievements">
+                        <li>Created the #joke hastag (kind of….).</li>
+                        <li>Survived a Chinatown restaurant in Hawaii.</li>
+                        <li>Doing the best in the world profiteroles (according to Manon).</li>
+                    </ui:msg>
+                </ul>
+            </div>
+        </div>
 
         <ul class="{page.style.social}">
             <li>

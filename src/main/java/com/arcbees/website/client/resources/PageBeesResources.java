@@ -70,6 +70,8 @@ public interface PageBeesResources extends FontResources {
         String header();
 
         String offers();
+
+        String social();
     }
 
     @Source("img/bees/christian.jpg")

@@ -1,0 +1,63 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+        xmlns:g="urn:import:com.google.gwt.user.client.ui"
+        ui:generateFormat="com.google.gwt.i18n.rebind.format.PropertiesFormat"
+        ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
+        ui:generateLocales="default">
+
+    <ui:with field="page" type="com.arcbees.website.client.resources.PageBeesResources"/>
+    <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
+
+    <g:HTMLPanel>
+
+        <div class="{page.style.bee} {page.style.bee1}">
+            <div class="{page.style.beeHolder1}">
+                <div class="{page.style.beeHolder2}">
+                    <g:Image resource="{page.beeChristian}"></g:Image>
+                </div>
+            </div>
+        </div>
+
+        <h1>Julien Dramaix
+            <span><ui:msg description="Julien's title">Lead Software Engineer, Bee-r cool-er</ui:msg></span>
+        </h1>
+
+        <p>
+            <ui:msg description="Professional achievements:">Professional achievements:</ui:msg>
+        </p>
+        <ul>
+            <ui:msg description="Julien's prof achievements">
+                <li>Official GWT maintainer and contributor.</li>
+                <li>Creator and maintainer of several open source projects.</li>
+                <li>I’m fortunate enough to speak at several conferences around the world.</li>
+            </ui:msg>
+        </ul>
+
+        <p>
+            <ui:msg description="Personal achievements:">Personal achievements:</ui:msg>
+        </p>
+        <ul>
+            <ui:msg description="Julien's pers achievements">
+                <li>Being ranked as a top 100 scoring participant in the Google code jam sprint at Google I/O 2012.</li>
+                <li>Judo black belt at 16.</li>
+                <li>Husband of a wonderful wife, and proud dad.</li>
+            </ui:msg>
+        </ul>
+
+        <ul class="{page.style.social}">
+            <li>
+                <a href="#">
+                    <i class="{fonts.icons.iconLkd}"></i>
+                    <span>Profil LinkedIn de Julien Dramaix</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="{fonts.icons.iconGPlus}"></i>
+                    <span>Profil Google+ de Julien Dramaix</span>
+                </a>
+            </li>
+        </ul>
+
+    </g:HTMLPanel>
+</ui:UiBinder>

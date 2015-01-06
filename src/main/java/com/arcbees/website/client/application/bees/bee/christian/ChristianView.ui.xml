@@ -1,0 +1,89 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+        xmlns:g="urn:import:com.google.gwt.user.client.ui"
+        ui:generateFormat="com.google.gwt.i18n.rebind.format.PropertiesFormat"
+        ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
+        ui:generateLocales="default">
+
+    <ui:with field="page" type="com.arcbees.website.client.resources.PageBeesResources"/>
+    <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
+
+    <g:HTMLPanel>
+
+        <div class="{page.style.bee} {page.style.bee1}">
+            <div class="{page.style.beeHolder1}">
+                <div class="{page.style.beeHolder2}">
+                    <g:Image resource="{page.beeChristian}"></g:Image>
+                </div>
+            </div>
+        </div>
+
+        <h1>Christian Goudreau
+            <span>
+                <ui:msg description="Christian's title">BEE-EO and co-founder</ui:msg>
+            </span>
+        </h1>
+
+        <ui:msg description="Christian's - Paragraph -">
+            <p>Christian Goudreau, ArcBees’ CEO, is a self-made entrepreneur with significant experience in project
+                management. Christian has been managing major software development projects since his early teens, and
+                therefore has quickly learned how to juggle heavy responsibilities and deliver.
+            </p>
+            <p>
+                A talented guest speaker, recognized expert in software architecture and developer tools, his services
+                are much sought-after, not only in Quebec but also in Europe and the United States, where he takes great
+                pleasure in sharing his technical knowledge and his passion for business.
+            </p>
+
+            <p>
+                Christian Goudreau was named Young Business Person of the Year, technology &amp; research division, at
+                the Jeune personnalité d’affaires Banque Nationale competition organized by the Jeune chambre de
+                commerce de Québec (JCCQ), in 2012. He was also awarded the Creativity and Innovation Prize, and the
+                Grand Prize at the 2013 Annual LOJIQ awards (the Quebec International Youth Offices).
+            </p>
+        </ui:msg>
+
+        <p>
+            <ui:msg description="Professional achievements:">Professional achievements:</ui:msg>
+        </p>
+        <ul>
+            <ui:msg description="Christian's prof achievements">
+                <li>Building the best team in the world.</li>
+                <li>Being part of the team that built GWTP.</li>
+                <li>Being part of the GWT steering committee.</li>
+            </ui:msg>
+        </ul>
+
+        <p>
+            <ui:msg description="Personal achievements:">Personal achievements:</ui:msg>
+        </p>
+        <ul>
+            <ui:msg description="Christian's pers achievements">
+                <li>Helping to bring my son into the world and raise him.</li>
+                <li>My past history as a CS gamer with ZuG.</li>
+                <li>In high school, I wrote code for an IRC server on paper that, once I coded it for real, worked
+                    without any changes!</li>
+            </ui:msg>
+        </ul>
+
+        <p>
+            <a href="mailto:queenbee@arcbees.com">queenbee@arcbees.com</a>
+        </p>
+
+        <ul class="{page.style.social}">
+            <li>
+                <a href="#">
+                    <i class="{fonts.icons.iconLkd}"></i>
+                    <span>Profil LinkedIn de Christian Goudreau</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="{fonts.icons.iconGPlus}"></i>
+                    <span>Profil Google+ de Christian Goudreau</span>
+                </a>
+            </li>
+        </ul>
+
+    </g:HTMLPanel>
+</ui:UiBinder>

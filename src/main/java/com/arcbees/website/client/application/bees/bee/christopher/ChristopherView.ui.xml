@@ -1,0 +1,65 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+        xmlns:g="urn:import:com.google.gwt.user.client.ui"
+        ui:generateFormat="com.google.gwt.i18n.rebind.format.PropertiesFormat"
+        ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
+        ui:generateLocales="default">
+
+    <ui:with field="page" type="com.arcbees.website.client.resources.PageBeesResources"/>
+    <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
+
+    <g:HTMLPanel>
+
+        <div class="{page.style.bee} {page.style.bee1}">
+            <div class="{page.style.beeHolder1}">
+                <div class="{page.style.beeHolder2}">
+                    <g:Image resource="{page.beeChristian}"></g:Image>
+                </div>
+            </div>
+        </div>
+
+        <h1>Christopher Viel
+            <span><ui:msg description="Christopher title">Crazy Code Mastermind</ui:msg></span>
+        </h1>
+
+        <p>
+            <ui:msg description="Professional achievements:">Professional achievements:</ui:msg>
+        </p>
+        <ul>
+            <ui:msg description="Christopher's prof achievements">
+                <li>Created an actively used REST library.</li>
+                <li>Passionate about code architecture.</li>
+                <li>Wrote my first piece of software at age 11.</li>
+            </ui:msg>
+
+        </ul>
+
+        <p>
+            <ui:msg description="Personal achievements:">Personal achievements:</ui:msg>
+        </p>
+        <ul>
+            <ui:msg description="Christopher's pers achievements">
+                <li>Created the #joke hastag (kind of….).</li>
+                <li>Survived a Chinatown restaurant in Hawaii.</li>
+                <li>Doing the best in the world profiteroles (according to Manon).</li>
+            </ui:msg>
+
+        </ul>
+
+        <ul class="{page.style.social}">
+            <li>
+                <a href="#">
+                    <i class="{fonts.icons.iconLkd}"></i>
+                    <span>Profil LinkedIn de Christopher Viel</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="{fonts.icons.iconGPlus}"></i>
+                    <span>Profil Google+ de Christopher Viel</span>
+                </a>
+            </li>
+        </ul>
+
+    </g:HTMLPanel>
+</ui:UiBinder>

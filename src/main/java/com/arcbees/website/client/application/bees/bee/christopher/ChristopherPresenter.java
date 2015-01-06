@@ -32,7 +32,7 @@ public class ChristopherPresenter extends Presenter<ChristopherPresenter.MyView,
 
     @ProxyStandard
     @NameToken(NameTokens.BEE_CHRISTOPHER)
-    public interface MyProxy extends ProxyPlace<ChristopherPresenter> {
+    interface MyProxy extends ProxyPlace<ChristopherPresenter> {
     }
 
     @Inject

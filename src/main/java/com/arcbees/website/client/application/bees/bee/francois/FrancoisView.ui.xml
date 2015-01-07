@@ -24,7 +24,7 @@
         </h1>
 
         <div class="{res.grid.row} {res.style.clearfix}">
-            <div class="{res.grid.col} {res.grid.col_6} {page.style.colGaucheLarge}">
+            <div class="{res.grid.col} {res.grid.col_6} {res.grid.col_t_12} {page.style.colGaucheLarge}">
                 <ui:msg description="Francois's - Paragraph -">
                     <p>François has twenty years of experience in the fields of information technology and management. His
                         success is due to his ability to deliver results on time and on budget, animated by the spirit of
@@ -47,7 +47,7 @@
                     </p>
                 </ui:msg>
             </div>
-            <div class="{res.grid.col} {res.grid.col_6} {page.style.colDroite}">
+            <div class="{res.grid.col} {res.grid.col_6} {res.grid.col_t_12} {page.style.colDroite}">
                 <h2>
                     <ui:msg description="Professional achievements:">Professional achievements</ui:msg>
                 </h2>

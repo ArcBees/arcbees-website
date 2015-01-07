@@ -513,6 +513,50 @@ a:visited.popupClose {
     border-left-width: 20px;
 }
 
+@media (max-width: 979px) {
+    .bees .popupContent .bee {
+        margin-left: 0;
+    }
+    
+    .bees .popup .colGauche,
+    .bees .popup .colGaucheLarge,
+    .bees .popup .colDroite {
+        text-align: center;
+
+        border-left-width: 40px;
+        border-right-width: 40px;
+    }
+
+    .bees .popup .colGaucheLarge {
+        margin-bottom: 2.5em;
+    }
+
+    .bees .popup .colGauche ul {
+        margin-bottom: 3em;
+    }
+}
+
+@media (max-width: 649px) {
+    .bees .popup .bee {
+        height: 161px;
+        width: 190px;
+        margin-left: -90px;
+
+        left: 50%;
+    }
+
+    .bees .popup .beeHolder2 img {
+        margin-left: -93px;
+    }
+
+    .bees .popup .colGauche,
+    .bees .popup .colGaucheLarge,
+    .bees .popup .colDroite {
+        border-left-width: 5px;
+        border-right-width: 5px;
+    }
+}
+
 /* -- offers ------------------------------------------- */
 
 .offers h2 {

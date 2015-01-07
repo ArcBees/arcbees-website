@@ -22,7 +22,7 @@
         <h1>Simon-Pierre Gingras<span><ui:msg description="Simon-Pierre's title">Developer of things, Chief Bacon Evangelist</ui:msg></span></h1>
 
         <div class="{res.grid.row} {res.style.clearfix}">
-            <div class="{res.grid.col} {res.grid.col_6} {page.style.colGauche}">
+            <div class="{res.grid.col} {res.grid.col_6} {res.grid.col_t_12} {page.style.colGauche}">
                 <h2>
                     <ui:msg description="Professional achievements:">Professional achievements</ui:msg>
                 </h2>
@@ -34,7 +34,7 @@
                     </ui:msg>
                 </ul>
             </div>
-            <div class="{res.grid.col} {res.grid.col_6} {page.style.colDroite}">
+            <div class="{res.grid.col} {res.grid.col_6} {res.grid.col_t_12} {page.style.colDroite}">
                 <h2>
                     <ui:msg description="Personal achievements:">Personal achievements</ui:msg>
                 </h2>

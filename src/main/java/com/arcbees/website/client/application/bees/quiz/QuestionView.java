@@ -73,11 +73,6 @@ public class QuestionView extends ViewWithUiHandlers<QuestionUiHandlers> impleme
         setQuestionsVisible(false);
     }
 
-    private void setQuestionsVisible(boolean questionsVisible) {
-        $(quizFinished).toggleClass(resources.style().hidden(), questionsVisible);
-        $(questions).toggleClass(resources.style().hidden(), !questionsVisible);
-    }
-
     @Override
     public void onAttachOrDetach(AttachEvent attachEvent) {
         if (attachEvent.isAttached()) {
@@ -85,18 +80,6 @@ public class QuestionView extends ViewWithUiHandlers<QuestionUiHandlers> impleme
         } else {
             destroyTooltips();
         }
-    }
-
-    private void destroyTooltips() {
-        $("[title]").as(Tooltip).destroy();
-    }
-
-    private void createTooltips() {
-        TooltipOptions options = new TooltipOptions()
-                .withDelayHide(100)
-                .withDelayShow(200)
-                .withPlacement(TooltipOptions.TooltipPlacement.RIGHT);
-        $("[title]").as(Tooltip).tooltip(options);
     }
 
     @UiHandler("nextButton")
@@ -112,5 +95,22 @@ public class QuestionView extends ViewWithUiHandlers<QuestionUiHandlers> impleme
     @UiHandler("share")
     void onShare(ClickEvent event) {
         getUiHandlers().share();
+    }
+
+    private void setQuestionsVisible(boolean questionsVisible) {
+        $(quizFinished).toggleClass(resources.style().hidden(), questionsVisible);
+        $(questions).toggleClass(resources.style().hidden(), !questionsVisible);
+    }
+
+    private void destroyTooltips() {
+        $("[title]", asWidget()).as(Tooltip).destroy();
+    }
+
+    private void createTooltips() {
+        TooltipOptions options = new TooltipOptions()
+                .withDelayHide(100)
+                .withDelayShow(200)
+                .withPlacement(TooltipOptions.TooltipPlacement.RIGHT);
+        $("[title]", asWidget()).as(Tooltip).tooltip(options);
     }
 }

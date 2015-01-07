@@ -18,6 +18,15 @@ public class QuestionPresenter extends PresenterWidget<MyView> implements Questi
 
     private int currentQuestion = 0;
 
+    @Inject
+    QuestionPresenter(
+            EventBus eventBus,
+            MyView view) {
+        super(eventBus, view);
+
+        getView().setUiHandlers(this);
+    }
+
     @Override
     public void onNextQuestion() {
         ++currentQuestion;
@@ -42,14 +51,5 @@ public class QuestionPresenter extends PresenterWidget<MyView> implements Questi
     @Override
     protected void onBind() {
         getView().setQuestion(1);
-    }
-
-    @Inject
-    QuestionPresenter(
-            EventBus eventBus,
-            MyView view) {
-        super(eventBus, view);
-
-        getView().setUiHandlers(this);
     }
 }

@@ -88,14 +88,11 @@
 
         <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium1}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
                         <ui:msg description="Fully Customizable">Fully Customizable</ui:msg>
                     </h3>
-                    <a href="#" class="{res.style.anchor}">#</a>
                 </div>
-
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <p>
                         <ui:msg description="Fully Customizable - Paragraph -">GwtChosen gives you a host of options for
@@ -109,14 +106,11 @@
 
         <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium2}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
                         <ui:msg description="Search Support">Search Support</ui:msg>
                     </h3>
-                    <a href="#" class="{res.style.anchor}">#</a>
                 </div>
-
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <p>
                         <ui:msg description="Search Support - Paragraph -">Using GwtChosen, you can dynamically update
@@ -129,14 +123,11 @@
 
         <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium3}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
                         <ui:msg description="Use It Your Way">Use It Your Way</ui:msg>
                     </h3>
-                    <a href="#" class="{res.style.anchor}">#</a>
                 </div>
-
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <p>
                         <ui:msg description="Use It Your Way - Paragraph -">If you prefer using GQuery plugins,
@@ -150,14 +141,11 @@
 
         <section class="{res.style.stripe} {page.style.stripeDetails}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
                         <ui:msg description="Bind To Events">Bind To Events</ui:msg>
                     </h3>
-                    <a href="#" class="{res.style.anchor}">#</a>
                 </div>
-
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <p>
                         <ui:msg description="Bind To Events - Paragraph -">You can hook into various lifecycle events of
@@ -170,14 +158,11 @@
 
         <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium1}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
                         <ui:msg description="Easy Setup">Easy Setup</ui:msg>
                     </h3>
-                    <a href="#" class="{res.style.anchor}">#</a>
                 </div>
-
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <p>
                         <ui:msg description="Easy Setup - Paragraph -">GwtChosen is already available in Maven

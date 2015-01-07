@@ -119,14 +119,11 @@
 
         <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium1}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
                         <ui:msg description="Automocking">Automocking</ui:msg>
                     </h3>
-                    <a href="#" class="{res.style.anchor}">#</a>
                 </div>
-
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <p>
                         <ui:msg description="Automocking - Paragraph -">Create your mocks with exactly zero lines of
@@ -140,14 +137,11 @@
 
         <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium2}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
                         <ui:msg description="Inject Anywhere">Inject Anywhere</ui:msg>
                     </h3>
-                    <a href="#" class="{res.style.anchor}">#</a>
                 </div>
-
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <p>
                         <ui:msg description="Inject Anywhere - Paragraph -">Jukito lets you inject objects in your tests
@@ -160,14 +154,11 @@
 
         <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium3}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
                         <ui:msg description="@All Annotation">@All Annotation</ui:msg>
                     </h3>
-                    <a href="#" class="{res.style.anchor}">#</a>
                 </div>
-
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <p>
                         <ui:msg description="@All Annotation - Paragraph -">Need to run your test using a wide set of
@@ -180,14 +171,11 @@
 
         <section class="{res.style.stripe} {page.style.stripeDetails}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
                         <ui:msg description="Lightweight">Lightweight</ui:msg>
                     </h3>
-                    <a href="#" class="{res.style.anchor}">#</a>
                 </div>
-
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <p>
                         <ui:msg description="Lightweight -Paragraph -">The last thing you want is your tests slowing you
@@ -201,14 +189,11 @@
 
         <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium1}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
                         <ui:msg description="Scales To Any Size Of Test">Scales To Any Size Of Test</ui:msg>
                     </h3>
-                    <a href="#" class="{res.style.anchor}">#</a>
                 </div>
-
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <p>
                         <ui:msg description="Scales To Any Size Of Test - Paragraph -">Jukito can be used within unit,
@@ -221,14 +206,11 @@
 
         <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium2}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
                         <ui:msg description="Easy installation">Easy installation</ui:msg>
                     </h3>
-                    <a href="#" class="{res.style.anchor}">#</a>
                 </div>
-
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <p>
                         <ui:msg description="Easy installation - Paragraph -">Simply add a Maven dependency to your POM,
@@ -245,7 +227,6 @@
                     <h3>
                         <ui:msg description="All the documentations you need">more on
                         </ui:msg>
-
                     </h3>
                     <a href="#" class="{res.style.btn}">
                         <i class="{fonts.icons.iconArrowOutside}"></i>

@@ -63,9 +63,11 @@
 /* --> Header -- */
 
 .products .header .container {
-    margin: -115px 0 0 -377px;
+    text-align: center;
+
+    margin: -170px 0 0 -490px;
     height: 200px;
-    width: 755px;
+    width: 980px;
 
     position: absolute;
     top: 50%;
@@ -154,23 +156,25 @@
     line-height: 1em;
 
     display: inline-block;
-    margin: 0 2px;
+    margin: 0 4px;
 
     vertical-align: middle;
 }
 
 .menuHeader a {
-    color: #fff;
-    font-size: 11rem;
-    line-height: 29rem;
+    color: C_TEXT_LIGHT;
+    font-size: 10.25rem;
+    line-height: 34rem;
+
+    min-height: 34rem;
 
     @mixin opacity(.5);
     @mixin transition(opacity, .5s);
 }
 
 .menuHeader a.active {
-    font-size: 27rem;
-    line-height: 26rem;
+    font-size: 34rem;
+    line-height: 31rem;
 
 @mixin transition(all, 0.3s);
 }
@@ -178,6 +182,18 @@
 .menuHeader a.active,
 .menuHeader a:hover {
     @mixin opacity(1);
+}
+
+.productHead.gae li:nth-child(2) a,
+.productHead.gwtp li:nth-child(1) a,
+.productHead.gwtp li:nth-child(3) a,
+.productHead.jukito li:nth-child(2) a,
+.productHead.jukito li:nth-child(4) a,
+.productHead.chosen li:nth-child(3) a,
+.productHead.chosen li:nth-child(5) a,
+.productHead.gquery li:nth-child(4) a {
+    font-size: 15.5rem;
+    line-height: 16.25rem;
 }
 
 .productHead .arrow::after {
@@ -200,11 +216,11 @@
 }
 
 .productHead.gae .arrow::after {
-    margin-left: -290px;
+    margin-left: -295px;
 }
 
 .productHead.gwtp .arrow::after {
-    margin-left: -172px;
+    margin-left: -160px;
 }
 
 .productHead.jukito .arrow::after {
@@ -212,11 +228,11 @@
 }
 
 .productHead.chosen .arrow::after {
-    margin-left: 63px;
+    margin-left: 60px;
 }
 
 .productHead.gquery .arrow::after {
-    margin-left: 183px;
+    margin-left: 200px;
 }
 
 @media (max-width: 979px) {
@@ -418,6 +434,12 @@ ul.social {
 
 .stripeDetails h4 {
     margin-top: .7em;
+}
+
+@media (max-width: 649px) {
+    .stripeDetails h3 {
+        margin-bottom: 2rem;
+    }
 }
 
 /* --> More on -- */

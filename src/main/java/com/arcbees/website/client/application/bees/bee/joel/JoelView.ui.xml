@@ -5,6 +5,7 @@
         ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
         ui:generateLocales="default">
 
+    <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
     <ui:with field="page" type="com.arcbees.website.client.resources.PageBeesResources"/>
     <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
 
@@ -22,27 +23,32 @@
             <span><ui:msg description="Joel's title">Bugs writer</ui:msg></span>
         </h1>
 
-        <p>
-            <ui:msg description="Professional achievements:">Professional achievements:</ui:msg>
-        </p>
-        <ul>
-            <ui:msg description="Joel's prof achievements">
-                <li>Likes testing as much as coding.</li>
-                <li>Passionate about Agile.</li>
-                <li>Being an active and effective remote team member.</li>
-            </ui:msg>
-        </ul>
-
-        <p>
-            <ui:msg description="Personal achievements:">Personal achievements:</ui:msg>
-        </p>
-        <ul>
-            <ui:msg description="Joel's prof achievements">
-                <li>Always willing to help others.</li>
-                <li>Eager to hike just about anywhere.</li>
-                <li>Master eater.</li>
-            </ui:msg>
-        </ul>
+        <div class="{res.grid.row} {res.style.clearfix}">
+            <div class="{res.grid.col} {res.grid.col_6} {page.style.colGauche}">
+                <h2>
+                    <ui:msg description="Professional achievements:">Professional achievements</ui:msg>
+                </h2>
+                <ul>
+                    <ui:msg description="Joel's prof achievements">
+                        <li>Likes testing as much as coding.</li>
+                        <li>Passionate about Agile.</li>
+                        <li>Being an active and effective remote team member.</li>
+                    </ui:msg>
+                </ul>
+            </div>
+            <div class="{res.grid.col} {res.grid.col_6} {page.style.colDroite}">
+                <h2>
+                    <ui:msg description="Personal achievements:">Personal achievements</ui:msg>
+                </h2>
+                <ul>
+                    <ui:msg description="Joel's prof achievements">
+                        <li>Always willing to help others.</li>
+                        <li>Eager to hike just about anywhere.</li>
+                        <li>Master eater.</li>
+                    </ui:msg>
+                </ul>
+            </div>
+        </div>
 
         <ul class="{page.style.social}">
             <li>

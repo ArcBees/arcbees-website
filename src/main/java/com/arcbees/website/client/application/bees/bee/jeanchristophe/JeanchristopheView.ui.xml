@@ -5,6 +5,7 @@
         ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
         ui:generateLocales="default">
 
+    <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
     <ui:with field="page" type="com.arcbees.website.client.resources.PageBeesResources"/>
     <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
 
@@ -22,27 +23,32 @@
             <span><ui:msg description="Jean-Christophe's title">Coder in the North</ui:msg></span>
         </h1>
 
-        <p>
-            <ui:msg description="Professional achievements:">Professional achievements:</ui:msg>
-        </p>
-        <ul>
-            <ui:msg description="Jean-Christophe's prof achievements">
-                <li>Offensive security certified professional.</li>
-                <li>Remote work : success.</li>
-                <li>Once scored against Christian at foosball.</li>
-            </ui:msg>
-        </ul>
-
-        <p>
-            <ui:msg description="Personal achievements:">Personal achievements:</ui:msg>
-        </p>
-        <ul>
-            <ui:msg description="Jean-Christophe's pers achievements">
-                <li>Proud dad of a little girl.</li>
-                <li>Can make an LED blink with an Arduino.</li>
-                <li>Swam and got towed by 2 dolphins.</li>
-            </ui:msg>
-        </ul>
+        <div class="{res.grid.row} {res.style.clearfix}">
+            <div class="{res.grid.col} {res.grid.col_6} {page.style.colGauche}">
+                <h2>
+                    <ui:msg description="Professional achievements:">Professional achievements</ui:msg>
+                </h2>
+                <ul>
+                    <ui:msg description="Jean-Christophe's prof achievements">
+                        <li>Offensive security certified professional.</li>
+                        <li>Remote work : success.</li>
+                        <li>Once scored against Christian at foosball.</li>
+                    </ui:msg>
+                </ul>
+            </div>
+            <div class="{res.grid.col} {res.grid.col_6} {page.style.colDroite}">
+                <h2>
+                    <ui:msg description="Personal achievements:">Personal achievements</ui:msg>
+                </h2>
+                <ul>
+                    <ui:msg description="Jean-Christophe's pers achievements">
+                        <li>Proud dad of a little girl.</li>
+                        <li>Can make an LED blink with an Arduino.</li>
+                        <li>Swam and got towed by 2 dolphins.</li>
+                    </ui:msg>
+                </ul>
+            </div>
+        </div>
 
         <ul class="{page.style.social}">
             <li>

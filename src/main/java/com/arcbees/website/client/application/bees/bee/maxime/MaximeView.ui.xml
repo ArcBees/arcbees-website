@@ -5,6 +5,7 @@
         ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
         ui:generateLocales="default">
 
+    <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
     <ui:with field="page" type="com.arcbees.website.client.resources.PageBeesResources"/>
     <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
 
@@ -22,26 +23,31 @@
             <span><ui:msg description="Maxime's title">Night Shadow Developer</ui:msg></span>
         </h1>
 
-        <p>
-            <ui:msg description="Professional achievements:">Professional achievements:</ui:msg>
-        </p>
-        <ul>
-            <ui:msg description="Maxime's prof achievements">
-                <li>ArcBees’ first employee.</li>
-                <li>Created JetBrains TeamCity plugins for GitHub / Stash / Bitbucket / Tomcat.</li>
-                <li>Ubisoft Scholarship awarded for the best game created in a <em>Video games programming</em> class.</li>
-            </ui:msg>
-        </ul>
-
-        <p>
-            <ui:msg description="Personal achievements:">Personal achievements:</ui:msg>
-        </p>
-        <ul>
-            <ui:msg description="Maxime's pers achievements">
-                <li>Participated in an instrumental music competition playing double-bass.</li>
-                <li>Finished second in an AI competition at the 2012 CS Games.</li>
-            </ui:msg>
-        </ul>
+        <div class="{res.grid.row} {res.style.clearfix}">
+            <div class="{res.grid.col} {res.grid.col_6} {page.style.colGauche}">
+                <h2>
+                    <ui:msg description="Professional achievements:">Professional achievements</ui:msg>
+                </h2>
+                <ul>
+                    <ui:msg description="Maxime's prof achievements">
+                        <li>ArcBees’ first employee.</li>
+                        <li>Created JetBrains TeamCity plugins for GitHub / Stash / Bitbucket / Tomcat.</li>
+                        <li>Ubisoft Scholarship awarded for the best game created in a <em>Video games programming</em> class.</li>
+                    </ui:msg>
+                </ul>
+            </div>
+            <div class="{res.grid.col} {res.grid.col_6} {page.style.colDroite}">
+                <h2>
+                    <ui:msg description="Personal achievements:">Personal achievements</ui:msg>
+                </h2>
+                <ul>
+                    <ui:msg description="Maxime's pers achievements">
+                        <li>Participated in an instrumental music competition playing double-bass.</li>
+                        <li>Finished second in an AI competition at the 2012 CS Games.</li>
+                    </ui:msg>
+                </ul>
+            </div>
+        </div>
 
         <ul class="{page.style.social}">
             <li>

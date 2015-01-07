@@ -17,6 +17,7 @@
 package com.arcbees.website.client.application.bees;
 
 import com.arcbees.website.client.resources.PageBeesResources;
+import com.google.gwt.dom.client.AnchorElement;
 import com.google.gwt.dom.client.BrowserEvents;
 import com.google.gwt.dom.client.DivElement;
 import com.google.gwt.dom.client.Element;
@@ -45,6 +46,8 @@ public class BeesView extends ViewWithUiHandlers<BeesUiHandlers> implements Bees
     Element bees;
     @UiField
     HTMLPanel bee;
+    @UiField
+    AnchorElement popupClose;
 
     @Inject
     BeesView(
@@ -77,10 +80,24 @@ public class BeesView extends ViewWithUiHandlers<BeesUiHandlers> implements Bees
                     getUiHandlers().hidePopup();
                 }
             });
+            $(popupClose).click(new Function() {
+                public boolean f(Event e) {
+                    getUiHandlers().hidePopup();
+                    return false;
+                }
+            });
             $(bee).click(new Function() {
                 @Override
                 public boolean f(Event e) {
                     return false;
+                }
+            });
+
+            $("." + pageBeesResources.style().beeHolder2() + " > a").click(new Function() {
+                @Override
+                public void f() {
+                    int offsetTop = $(this).offset().top;
+                    $(bee).css("margin-top", offsetTop+"px");
                 }
             });
         } else {

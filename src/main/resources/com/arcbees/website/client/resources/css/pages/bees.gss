@@ -394,7 +394,7 @@
     width: 100%;
     height: 100%;
 
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 9990;
@@ -406,7 +406,6 @@
 
 .bees .popupContent {
     margin: 10% auto 0;
-    padding-left: 50px;
     width: 75%;
 }
 
@@ -415,7 +414,7 @@
     font-family: "geometriaBold";
     line-height: 1.1em;
     text-align: center;
-    margin: 25px 0 35px;
+    margin: 35px 0;
 
     position: relative;
     top: 0;
@@ -429,7 +428,13 @@
     display: block;
 }
 
+.bees .popup h2 {
+    font-size: 1.4rem;
+}
+
 .bees .popup p {
+    line-height: 1.3em;
+
     margin-bottom: 2.8em;
 }
 
@@ -441,11 +446,15 @@
 
 .bees .popup ul {
     padding: 0;
+    margin-bottom: 4em;
 }
 
 .bees .popup ul li,
 .bees .popup ul li small {
+    line-height: 1.3em;
+
     display: block;
+    margin-bottom: 0.5em;
 }
 
 .bees .popup ul.social {
@@ -470,6 +479,38 @@
 
 .bees .popup ul.social li a span {
     display: none;
+}
+
+a:link.popupClose,
+a:visited.popupClose {
+    color: #fff;
+
+    position: fixed;
+    top: 10px;
+    right: 10px;
+
+    text-decoration: none;
+}
+
+.bees .popup .colGauche {
+    border-left-width: 80px;
+    border-right-width: 20px;
+}
+
+.bees .popup .colGaucheLarge {
+    text-align: left;
+
+    border-left-width: 20px;
+    border-right-width: 20px;
+}
+
+.bees .popup .colGaucheLarge p {
+    margin-bottom: 1.4em;
+}
+
+.bees .popup .colDroite {
+    border-right-width: 80px;
+    border-left-width: 20px;
 }
 
 /* -- offers ------------------------------------------- */

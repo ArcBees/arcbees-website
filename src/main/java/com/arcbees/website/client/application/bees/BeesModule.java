@@ -32,6 +32,8 @@ import com.arcbees.website.client.application.bees.bee.maxime.MaximeModule;
 import com.arcbees.website.client.application.bees.bee.philippearaujo.PhilippeaModule;
 import com.arcbees.website.client.application.bees.bee.simonpierre.SimonpierreModule;
 import com.arcbees.website.client.application.bees.bee.philippebeaudoin.PhilippebModule;
+import com.arcbees.website.client.application.bees.quiz.QuestionPresenter;
+import com.arcbees.website.client.application.bees.quiz.QuestionView;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
 public class BeesModule extends AbstractPresenterModule {
@@ -54,6 +56,8 @@ public class BeesModule extends AbstractPresenterModule {
 
         bindPresenter(BeesPresenter.class, BeesPresenter.MyView.class,
                 BeesView.class, BeesPresenter.MyProxy.class);
+
+        bindPresenterWidget(QuestionPresenter.class, QuestionPresenter.MyView.class, QuestionView.class);
 
         bind(Konami.class).asEagerSingleton();
     }

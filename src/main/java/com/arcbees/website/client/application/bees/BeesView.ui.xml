@@ -290,7 +290,7 @@
             </div>
         </section>
 
-        <section class="{res.style.stripe} {res.style.dark} {res.style.centered}">
+        <g:HTMLPanel tag="section" ui:field="quizSection" styleName="{res.style.stripe} {res.style.dark} {res.style.centered}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_full}">
 
@@ -299,12 +299,12 @@
                     </h2>
 
                     <p>
-                        <a href="#" class="{res.style.btn}">Go, I'm ready to beeez</a>
+                        <g:Button ui:field="initQuizButton" styleName="{res.style.btn}">Go, I'm ready to beeez</g:Button>
                     </p>
 
                 </div>
             </div>
-        </section>
+        </g:HTMLPanel>>
 
         <section class="{page.style.offers} {res.style.stripe} {res.style.light} {res.style.centered}">
             <h2>

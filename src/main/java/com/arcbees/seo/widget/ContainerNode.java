@@ -24,12 +24,10 @@ import com.google.gwt.user.client.ui.Widget;
 public class ContainerNode extends BaseNode implements HasWidgets {
     @Override
     public void add(Widget w) {
-        throw new UnsupportedOperationException();
     }
 
     @Override
     public void clear() {
-        throw new UnsupportedOperationException();
     }
 
     @Override
@@ -39,6 +37,6 @@ public class ContainerNode extends BaseNode implements HasWidgets {
 
     @Override
     public boolean remove(Widget w) {
-        throw new UnsupportedOperationException();
+        return false;
     }
 }

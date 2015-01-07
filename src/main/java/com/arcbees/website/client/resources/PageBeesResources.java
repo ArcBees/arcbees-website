@@ -71,6 +71,16 @@ public interface PageBeesResources extends FontResources {
         String header();
 
         String offers();
+
+        String social();
+
+        String popupClose();
+
+        String colGauche();
+
+        String colDroite();
+
+        String colGaucheLarge();
     }
 
     @Source("img/bees/christian.jpg")

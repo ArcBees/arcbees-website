@@ -1,6 +1,9 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-        xmlns:g="urn:import:com.google.gwt.user.client.ui">
+        xmlns:g="urn:import:com.google.gwt.user.client.ui"
+        ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+        ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
+        ui:generateLocales="default">
 
     <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
     <ui:with field="page" type="com.arcbees.website.client.resources.PageProductResources"/>
@@ -18,11 +21,15 @@
 
         <section class="{res.style.stripe}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_1_2}">
+                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full}">
                     <h1>gae studio
                         <a href="#" class="{res.style.anchor}">#</a>
                     </h1>
-                    <h2 class="{page.style.presentation}">Optimizing Google App Engine applications</h2>
+                    <h2 class="{page.style.presentation}">
+                        <ui:msg description="Optimizing Google App Engine applications">Optimizing Google App Engine
+                            applications
+                        </ui:msg>
+                    </h2>
                     <div class="{page.style.socialTop}">
                         <ul class="{page.style.social}">
                             <li>
@@ -41,14 +48,23 @@
                 </div>
                 <div class="{res.grid.col} {res.grid.col_push_1_2} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                     <p>
-                        <strong>GAE Studio helps you optimize applications hosted on Google App Engine.
+                        <strong>
+                            <ui:msg description="GAE Studio helps you optimize applications hosted on Google App Engine.">
+                                GAE Studio helps you optimize applications hosted on Google App Engine.
+                            </ui:msg>
                         </strong>
                     </p>
-                    <p>Using real-time analysis of datastore requests, GAE Studio quickly highlights inefficient queries
-                        and gathers metrics that will help developers improve application performance.
+                    <p>
+                        <ui:msg description="Using real-time analysis of datastore requests, GAE Studio...">Using
+                            real-time analysis of datastore requests, GAE Studio quickly highlights inefficient
+                            queries and gathers metrics that will help developers improve application performance.
+                        </ui:msg>
                     </p>
-                    <p>GAE Studio also allows datastore exploration, modification, deletion, import and export. Think of
-                        it as your swiss army knife for developing GAE applications!
+                    <p>
+                        <ui:msg description="GAE Studio also allows datastore exploration...">GAE Studio also allows
+                            datastore exploration, modification, deletion, import and export. Think of it as your swiss
+                            army knife for developing GAE applications!
+                        </ui:msg>
                     </p>
                 </div>
             </div>
@@ -85,14 +101,19 @@
 
         <section class="{res.style.stripe} {res.style.medium2} {res.style.centered}">
             <div class="{res.style.wrapper}">
-                <h3 class="{res.style.stripeTitle}">Multi-language
-                    <span>support
-                        <a href="#" class="{res.style.anchor}">#</a>
-                    </span>
+                <h3 class="{res.style.stripeTitle}">
+                    <ui:msg description="Multi-language support">Multi-language
+                        <span>support</span>
+                    </ui:msg>
                 </h3>
-                <a href="#" class="{res.style.btn}">Use your favorite language</a>
-                <p>With App Engine modules, there are no programming language restrictions. You can develop your
-                    application in any language supported by App Engine, and benefit from all the GAE Studio features.
+                <a href="#" class="{res.style.btn}">
+                    <ui:msg description="Use your favorite language">Use your favorite language</ui:msg>
+                </a>
+                <p>
+                    <ui:msg description="With App Engine modules">With App Engine modules, there are no programming
+                        language restrictions. You can develop your application in any language supported by App Engine,
+                        and benefit from all the GAE Studio features.
+                    </ui:msg>
                 </p>
                 <g:Image resource="{page.gaeScreen2}" styleName="{page.style.code}"/>
             </div>
@@ -101,17 +122,21 @@
         <section class="{res.style.stripe} {page.style.colored} {res.style.centered}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_full}">
-
-                    <h3 class="{res.style.stripeTitle}">Data
-                        <span>Visualization
-                            <a href="#" class="{res.style.anchor}">#</a>
-                        </span>
+                    <h3 class="{res.style.stripeTitle}">
+                        <ui:msg description="Data Visualization">Data
+                            <span>Visualization</span>
+                        </ui:msg>
                     </h3>
                     <p>
-                        <strong>Chose what you want to see</strong>
+                        <strong>
+                            <ui:msg description="Chose what you want to see">Chose what you want to see</ui:msg>
+                        </strong>
                     </p>
-                    <p>GAE Studio lets you browse your data by entity kinds, namespaces or even GQL queries. You can
-                        also select which fields you want to see so you’re only looking at relevant data.
+                    <p>
+                        <ui:msg description="GAE Studio lets you browse your data by entity kinds...">GAE Studio lets
+                            you browse your data by entity kinds, namespaces or even GQL queries. You can also select
+                            which fields you want to see so you’re only looking at relevant data.
+                        </ui:msg>
                     </p>
                 </div>
             </div>
@@ -120,17 +145,22 @@
         <section class="{res.style.stripe} {res.style.medium2} {res.style.centered}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_full}">
-                    <h3 class="{res.style.stripeTitle}">Data
-                        <span>Editing
-                            <a href="#" class="{res.style.anchor}">#</a>
-                        </span>
+                    <h3 class="{res.style.stripeTitle}">
+                        <ui:msg description="Data Editing">Data
+                            <span>Editing</span>
+                        </ui:msg>
                     </h3>
                     <p>
-                        <strong>Struggling with data editing?</strong>
+                        <strong>
+                            <ui:msg description="Struggling with data editing?">Struggling with data editing?</ui:msg>
+                        </strong>
                     </p>
-                    <p>GAE Studio makes data editing easier than ever by allowing you to edit entities in a WYSIWYG
-                        fashion. Need to make the same change to multiple entities? GAE Studio’s batch edit function has
-                        you covered there too!
+                    <p>
+                        <ui:msg description="GAE Studio makes data editing easier than ever...">GAE Studio makes data
+                            editing easier than ever by allowing you to edit entities in a WYSIWYG fashion. Need to make
+                            the same change to multiple entities? GAE Studio’s batch edit function has you covered there
+                            too!
+                        </ui:msg>
                     </p>
                 </div>
             </div>
@@ -139,17 +169,22 @@
         <section class="{res.style.stripe} {res.style.medium2} {res.style.centered}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_full}">
-                    <h3 class="{res.style.stripeTitle}">Data
-                        <span>Import/Export
-                            <a href="#" class="{res.style.anchor}">#</a>
-                        </span>
+                    <h3 class="{res.style.stripeTitle}">
+                        <ui:msg description="Data Import/Export">Data
+                            <span>Import/Export</span>
+                        </ui:msg>
                     </h3>
                     <p>
-                        <strong>Your metrics at work</strong>
+                        <strong>
+                            <ui:msg description="Your metrics at work">Your metrics at work</ui:msg>
+                        </strong>
                     </p>
-                    <p>GAE Studio lets you export the data you want, by letting you to choose fields you want to
-                        include, and letting you select the entities you specify. This is very useful for creating your
-                        own analytics, and analyzing or simply importing data from an existing application.
+                    <p>
+                        <ui:msg description="GAE Studio lets you export the data you want...">GAE Studio lets you export
+                            the data you want, by letting you to choose fields you want to include, and letting you
+                            select the entities you specify. This is very useful for creating your own analytics, and
+                            analyzing or simply importing data from an existing application.
+                        </ui:msg>
                     </p>
                 </div>
             </div>
@@ -158,36 +193,22 @@
         <section class="{res.style.stripe} {res.style.medium2} {res.style.centered}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_full}">
-                    <h3 class="{res.style.stripeTitle}">In-depth analysis
-                        <span>of requests
-                            <a href="#" class="{res.style.anchor}">#</a>
-                        </span>
+                    <h3 class="{res.style.stripeTitle}">
+                        <ui:msg description="In-depth analysis of requests">In-depth analysis
+                            <span>of requests</span>
+                        </ui:msg>
                     </h3>
                     <p>
-                        <strong>Take a look under the hood</strong>
+                        <strong>
+                            <ui:msg description="Take a look under the hood">Take a look under the hood</ui:msg>
+                        </strong>
                     </p>
-                    <p>GAE Studio lets you record and look at everything a single request triggers on App Engine. It
-                        will even detect heavy requests and suggest optimization options.
+                    <p>
+                        <ui:msg description="GAE Studio lets you record and look...">GAE Studio lets you record and look
+                            at everything a single request triggers on App Engine. It will even detect heavy requests
+                            and suggest optimization options.
+                        </ui:msg>
                     </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="{res.style.stripe} {res.style.dark} {res.style.centered}">
-            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_full}">
-
-                    <h3>Subscribe</h3>
-                    <p>GAE studio is still in development, subscribe to get an early access!</p>
-                    <form>
-                        <label>What's your email address?
-                            <span data-icon="&#xe60f;" class="{fonts.icons.valignSup}"></span>
-                        </label>
-                        <input type="email" name="email"></input>
-                    </form>
-
-                    <a href="#" class="{res.style.btn}">Subscribe</a>
-
                 </div>
             </div>
         </section>

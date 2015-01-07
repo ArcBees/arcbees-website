@@ -14,11 +14,10 @@
  * the License.
  */
 
-package com.arcbees.website.client.application.bees.bee;
+package com.arcbees.website.client.application.bees.bee.philippebeaudoin;
 
 import com.arcbees.website.client.NameTokens;
 import com.arcbees.website.client.application.bees.BeesPresenter;
-import com.arcbees.website.client.application.docs.DocsPresenter;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.Presenter;
@@ -27,17 +26,17 @@ import com.gwtplatform.mvp.client.annotations.NameToken;
 import com.gwtplatform.mvp.client.annotations.ProxyStandard;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 
-public class ChristianPresenter extends Presenter<ChristianPresenter.MyView, ChristianPresenter.MyProxy> {
+public class PhilippebPresenter extends Presenter<PhilippebPresenter.MyView, PhilippebPresenter.MyProxy> {
     interface MyView extends View {
     }
 
     @ProxyStandard
-    @NameToken(NameTokens.BEE_CHRISTIAN)
-    interface MyProxy extends ProxyPlace<ChristianPresenter> {
+    @NameToken(NameTokens.BEE_PHILIPPEB)
+    interface MyProxy extends ProxyPlace<PhilippebPresenter> {
     }
 
     @Inject
-    ChristianPresenter(
+    PhilippebPresenter(
             EventBus eventBus,
             MyView view,
             MyProxy proxy) {

@@ -53,14 +53,5 @@
         <!-- Docs content -->
         <g:SimplePanel ui:field="products"/>
 
-        <section class="{res.style.stripe} {page.style.stripeSupport} {res.style.centered}">
-            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_full}">
-
-                    <h3>Need support?</h3>
-                    <a href="#" class="{res.style.btn}">Arcbees offer a variety of supports options</a>
-                </div>
-            </div>
-        </section>
     </g:HTMLPanel>
 </ui:UiBinder>

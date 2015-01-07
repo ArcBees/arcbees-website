@@ -14,19 +14,19 @@
  * the License.
  */
 
-package com.arcbees.website.client.application.bees.bee;
+package com.arcbees.website.client.application.bees.bee.julien;
 
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
 
-public class ChristianView extends ViewImpl implements ChristianPresenter.MyView {
-    interface Binder extends UiBinder<Widget, ChristianView> {
+public class JulienView extends ViewImpl implements JulienPresenter.MyView {
+    interface Binder extends UiBinder<Widget, JulienView> {
     }
 
     @Inject
-    ChristianView(
+    JulienView(
             Binder binder) {
         initWidget(binder.createAndBindUi(this));
     }

@@ -176,7 +176,7 @@
     font-size: 34rem;
     line-height: 31rem;
 
-@mixin transition(all, 0.3s);
+    @mixin transition(all, 0.3s);
 }
 
 .menuHeader a.active,

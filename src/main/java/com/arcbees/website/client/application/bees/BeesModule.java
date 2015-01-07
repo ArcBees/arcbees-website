@@ -17,6 +17,8 @@
 package com.arcbees.website.client.application.bees;
 
 import com.arcbees.website.client.application.bees.bee.ChristianModule;
+import com.arcbees.website.client.application.bees.quiz.QuestionPresenter;
+import com.arcbees.website.client.application.bees.quiz.QuestionView;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
 public class BeesModule extends AbstractPresenterModule {
@@ -26,6 +28,8 @@ public class BeesModule extends AbstractPresenterModule {
 
         bindPresenter(BeesPresenter.class, BeesPresenter.MyView.class,
                 BeesView.class, BeesPresenter.MyProxy.class);
+
+        bindPresenterWidget(QuestionPresenter.class, QuestionPresenter.MyView.class, QuestionView.class);
 
         bind(Konami.class).asEagerSingleton();
     }

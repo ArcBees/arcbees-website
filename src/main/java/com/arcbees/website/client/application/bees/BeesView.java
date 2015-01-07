@@ -20,11 +20,14 @@ import com.arcbees.website.client.resources.PageBeesResources;
 import com.google.gwt.dom.client.BrowserEvents;
 import com.google.gwt.dom.client.DivElement;
 import com.google.gwt.dom.client.Element;
+import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.logical.shared.AttachEvent;
 import com.google.gwt.query.client.Function;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.Event;
+import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.HTMLPanel;
 import com.google.gwt.user.client.ui.IsWidget;
 import com.google.gwt.user.client.ui.Widget;
@@ -45,6 +48,10 @@ public class BeesView extends ViewWithUiHandlers<BeesUiHandlers> implements Bees
     Element bees;
     @UiField
     HTMLPanel bee;
+    @UiField
+    Button initQuizButton;
+    @UiField
+    HTMLPanel quizSection;
 
     @Inject
     BeesView(
@@ -66,6 +73,9 @@ public class BeesView extends ViewWithUiHandlers<BeesUiHandlers> implements Bees
             if (content != null) {
                 bee.add(content);
             }
+        } else if (slot == BeesPresenter.SLOT_QUIZ) {
+            quizSection.clear();
+            quizSection.add(content);
         }
     }
 
@@ -92,5 +102,16 @@ public class BeesView extends ViewWithUiHandlers<BeesUiHandlers> implements Bees
     @Override
     public void konami() {
         $("img", bees).attr("src", "http://placekitten.com/200/300");
+    }
+
+    @Override
+    public void initQuiz() {
+        $(initQuizButton).hide();
+
+    }
+
+    @UiHandler("initQuizButton")
+    void onInitQuizButton(ClickEvent event) {
+        getUiHandlers().onInitQuiz();
     }
 }

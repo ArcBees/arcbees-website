@@ -17,6 +17,7 @@
 package com.arcbees.website.client.resources;
 
 import com.arcbees.gsss.animation.client.AnimationResources;
+import com.google.gwt.i18n.client.Messages;
 import com.google.gwt.resources.client.ImageResource;
 
 public interface PageBeesResources extends FontResources {
@@ -79,4 +80,14 @@ public interface PageBeesResources extends FontResources {
             "com/arcbees/gsss/animation/client/animations.gss", "com/arcbees/gsss/mixin/client/mixins.gss",
             "css/colors.gss", "fonts/geometria/geometria.gss", "css/pages/bees.gss"})
     Style style();
+
+    interface QuizMessages extends Messages {
+        String question(@PluralCount int questionNumber);
+
+        String answer1(@PluralCount int questionNumber);
+
+        String answer2(@PluralCount int questionNumber);
+
+        String answer3(@PluralCount int questionNumber);
+    }
 }

@@ -124,7 +124,6 @@ public class BeesView extends ViewWithUiHandlers<BeesUiHandlers> implements Bees
     @Override
     public void initQuiz() {
         $(initQuizButton).hide();
-
     }
 
     @UiHandler("initQuizButton")

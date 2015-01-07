@@ -81,7 +81,9 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
 
                 $(menuToggle).removeClass(appResources.style().active());
                 if ($(sidebar).hasClass(appResources.style().active())) {
-                    $(menuToggle).toggleClass(appResources.style().active());
+                    $(menuToggle).addClass(appResources.style().active());
+                    $(menuToggle).addClass(appResources.style().clicked());
+                    $(sidebar).addClass(appResources.style().clicked());
                 }
 
                 return false;

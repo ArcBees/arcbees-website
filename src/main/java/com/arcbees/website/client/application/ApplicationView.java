@@ -69,6 +69,7 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     @Override
     public void setInSlot(Object slot, IsWidget content) {
         main.setWidget(content);
+        Window.scrollTo(0, 0);
     }
 
     private void bind() {

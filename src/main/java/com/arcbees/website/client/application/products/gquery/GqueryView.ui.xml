@@ -105,7 +105,6 @@
                     <h3>
                         <ui:msg description="It Looks Like jQuery">It Looks Like jQuery</ui:msg>
                     </h3>
-                    <a href="#" class="{res.style.anchor}">#</a>
                 </div>
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <ui:msg description="It Looks Like jQuery - Paragraph -">
@@ -127,7 +126,6 @@
                     <h3>
                         <ui:msg description="Easy DOM Manipulation">Easy DOM Manipulation</ui:msg>
                     </h3>
-                    <a href="#" class="{res.style.anchor}">#</a>
                 </div>
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <ui:msg description="Easy DOM Manipulation - Paragraph -">
@@ -151,7 +149,6 @@
                     <h3>
                         <ui:msg description="Full GWT Widget Integration">Full GWT Widget Integration</ui:msg>
                     </h3>
-                    <a href="#" class="{res.style.anchor}">#</a>
                 </div>
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <ui:msg description="Full GWT Widget Integration - Paragraph -">
@@ -171,7 +168,6 @@
                     <h3>
                         <ui:msg description="Promises">Promises</ui:msg>
                     </h3>
-                    <a href="#" class="{res.style.anchor}">#</a>
                 </div>
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <p>
@@ -190,7 +186,6 @@
                     <h3>
                         <ui:msg description="Easy Ajax Syntax">Easy Ajax Syntax</ui:msg>
                     </h3>
-                    <a href="#" class="{res.style.anchor}">#</a>
                 </div>
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <ui:msg description="Easy Ajax Syntax - Paragraph -">
@@ -213,7 +208,6 @@
                     <h3>
                         <ui:msg description="Event Handling">Event Handling</ui:msg>
                     </h3>
-                    <a href="#" class="{res.style.anchor}">#</a>
                 </div>
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <ui:msg description="Event Handling - Paragraph -">
@@ -230,7 +224,7 @@
             </div>
         </section>
 
-        <section class="{res.style.stripe} {res.style.dark} {res.style.centered} {page.style.moreOn}">
+        <section class="{res.style.stripe} {res.style.light} {res.style.centered} {page.style.moreOn}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_full}">
                     <h3>

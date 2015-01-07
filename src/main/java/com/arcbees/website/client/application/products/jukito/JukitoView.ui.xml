@@ -75,7 +75,7 @@
 
         <section class="{res.style.stripe} {res.style.centered}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+                <div class="{res.grid.col} {res.grid.col_6} {res.grid.col_push_3} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                     <a href="#" class="{res.style.btn}">Support</a>
                     <a href="#" class="{res.style.btn}"><i class="{fonts.icons.iconArrowOutside}"></i>Developer's
                         Platform
@@ -123,7 +123,6 @@
                     <h3>
                         <ui:msg description="Automocking">Automocking</ui:msg>
                     </h3>
-                    <a href="#" class="{res.style.anchor}">#</a>
                 </div>
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <p>
@@ -142,7 +141,6 @@
                     <h3>
                         <ui:msg description="Inject Anywhere">Inject Anywhere</ui:msg>
                     </h3>
-                    <a href="#" class="{res.style.anchor}">#</a>
                 </div>
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <p>
@@ -160,7 +158,6 @@
                     <h3>
                         <ui:msg description="@All Annotation">@All Annotation</ui:msg>
                     </h3>
-                    <a href="#" class="{res.style.anchor}">#</a>
                 </div>
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <p>
@@ -178,7 +175,6 @@
                     <h3>
                         <ui:msg description="Lightweight">Lightweight</ui:msg>
                     </h3>
-                    <a href="#" class="{res.style.anchor}">#</a>
                 </div>
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <p>
@@ -197,7 +193,6 @@
                     <h3>
                         <ui:msg description="Scales To Any Size Of Test">Scales To Any Size Of Test</ui:msg>
                     </h3>
-                    <a href="#" class="{res.style.anchor}">#</a>
                 </div>
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <p>
@@ -215,7 +210,6 @@
                     <h3>
                         <ui:msg description="Easy installation">Easy installation</ui:msg>
                     </h3>
-                    <a href="#" class="{res.style.anchor}">#</a>
                 </div>
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <p>
@@ -227,13 +221,12 @@
             </div>
         </section>
 
-        <section class="{res.style.stripe} {res.style.dark} {res.style.centered} {page.style.moreOn}">
+        <section class="{res.style.stripe} {res.style.light} {res.style.centered} {page.style.moreOn}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_full}">
                     <h3>
                         <ui:msg description="All the documentations you need">more on
                         </ui:msg>
-
                     </h3>
                     <a href="#" class="{res.style.btn}">
                         <i class="{fonts.icons.iconArrowOutside}"></i>

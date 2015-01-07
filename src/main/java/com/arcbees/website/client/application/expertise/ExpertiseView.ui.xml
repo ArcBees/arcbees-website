@@ -28,18 +28,15 @@
 
         <section class="{res.style.stripe} {res.style.dark} {res.style.triangleBottom} {res.style.nextLight}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.focusBlock}">
-                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
-
+                <div class="{res.grid.col} {res.grid.col_8} {res.grid.col_push_1_6} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                     <h2 class="{res.style.stripeTitle}">
                         <ui:msg description="Expertises">Expertises</ui:msg>
                     </h2>
                     <p>
                         <ui:msg description="Expertises - Paragraphe -">Let our experts boost your productivity and
-                            improve your applications with our cutting edge
-                            services, customized support and training.
+                            improve your applications with our cutting edge services, customized support and training.
                         </ui:msg>
                     </p>
-
                 </div>
             </div>
         </section>
@@ -48,9 +45,7 @@
             <div class="{res.style.wrapper} {res.grid.row} {res.style.clearfix}">
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1_12} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                     <h3 class="{res.style.stripeTitle}">
-                        <ui:msg description="Professional Services">Professional
-                            <span>Services</span>
-                        </ui:msg>
+                        <ui:msg description="Professional Services">Services</ui:msg>
                     </h3>
                     <p>
                         <ui:msg description="Professional Services - Paragraph -">We can help transform your
@@ -62,7 +57,7 @@
                     </a>
                 </div>
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1_6} {res.grid.col_m_full} {res.grid.col_m_push_0}">
-                    <h3 class="{res.style.stripeTitle} {res.style.twoLineTitle}">
+                    <h3 class="{res.style.stripeTitle}">
                         <ui:msg description="Support">Support</ui:msg>
                     </h3>
                     <p>
@@ -107,6 +102,7 @@
 
         <section class="{res.style.stripe} {res.style.centered}">
             <div class="{res.style.wrapper} {res.style.clearfix}">
+                <!-- TODO : add caroussel -->
                 <h2>gwtp</h2>
                 <a href="#" class="{res.style.btn}">
                     <ui:msg description="Learn more">Learn more</ui:msg>

@@ -92,6 +92,10 @@
     font-family: "geometriaBold", Arial, sans-serif;
 }
 
+.support .purchSupp {
+    padding: 0 35px;
+}
+
 .support .featuredIcons i {
     color: #000;
     font-size: 22.5rem;
@@ -263,7 +267,7 @@
 /* -> Features -- */
 
 .features {
-    padding-top: 95px;
+    padding-top: 155px;
 }
 
 .features h2 {

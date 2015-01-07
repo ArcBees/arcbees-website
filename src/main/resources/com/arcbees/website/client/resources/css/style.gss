@@ -502,32 +502,32 @@ img {
 }
 
 @media(min-width: 650px) {
-    .sidebar:hover ~ .content,
+    .sidebar:hover:not(.clicked) ~ .content,
     .sidebar.active ~ .content,
-    .menuToggle:hover ~ .content {
+    .menuToggle:hover:not(.clicked) ~ .content {
         width: calc(100% - 255px);
     }
 
-    .sidebar:hover ~ .content .withLogo,
+    .sidebar:hover:not(.clicked) ~ .content .withLogo,
     .sidebar.active ~ .content .withLogo,
-    .menuToggle:hover ~ .content .withLogo {
+    .menuToggle:hover:not(.clicked) ~ .content .withLogo {
         left: -156px;
     }
 
-    .sidebar:hover ~ .content .withLogo span,
+    .sidebar:hover:not(.clicked) ~ .content .withLogo span,
     .sidebar.active ~ .content .withLogo span,
-    .menuToggle:hover ~ .content .withLogo span {
+    .menuToggle:hover:not(.clicked) ~ .content .withLogo span {
     @mixin opacity(0);
     }
 
-    .sidebar:hover ~ .menu,
+    .sidebar:hover:not(.clicked) ~ .menu,
     .sidebar.active ~ .menu,
-    .menuToggle:hover ~ .menu {
+    .menuToggle:hover:not(.clicked) ~ .menu {
         color: #fff;
     }
 
-    .sidebar:hover ~ .menuToggle,
-    .sidebar.active ~ .menuToggle {
+    .sidebar:hover:not(.clicked) ~ .menuToggle,
+    .sidebar.active:not(.clicked) ~ .menuToggle {
         left: -40px;
     }
 }

@@ -27,6 +27,7 @@ import com.google.gwt.dom.client.Element;
 import com.google.gwt.dom.client.HeadElement;
 import com.google.gwt.dom.client.MetaElement;
 import com.google.gwt.dom.client.NodeList;
+import com.google.gwt.dom.client.Style;
 import com.google.gwt.event.logical.shared.AttachEvent;
 import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.Widget;
@@ -37,6 +38,7 @@ public class SeoWidget extends ContainerNode implements AttachEvent.Handler {
 
     public SeoWidget() {
         widget = new SimplePanel();
+        widget.getElement().getStyle().setDisplay(Style.Display.NONE);
         widget.addAttachHandler(this);
 
         seoBuilder = new SeoElements.Builder();

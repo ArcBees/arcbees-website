@@ -546,7 +546,23 @@ a.anchor {
 
 /* -- Page : CHOSEN_PRODUCTS ---------------------------------------- */
 
-.chosen {}
+.chosen select {
+    text-align: left;
+
+    width: 80%;
+    margin-bottom: 1em;
+}
+
+@media(max-width: 649px) {
+    .chosen select {
+        width: 100%;
+    }
+}
+
+.chosen .chosenHolder {
+    position: relative;
+    z-index: 200;
+}
 
 .chosen .colored {
     background-color: C_PRODUCT_CHOSEN;

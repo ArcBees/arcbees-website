@@ -65,97 +65,121 @@
             </div>
         </section>
 
-        <section class="{res.style.centered}">
-            <select multiple="multiple">
-                <!--AFC East-->
-                <option>New England Patriots</option>
-                <option>Buffalo Bills</option>
-                <option>Miami Dolphins</option>
-                <option>New York Jets</option>
-                <!--AFC North-->
-                <option>Pittsburgh Steelers</option>
-                <option>Cincinnatti Bengals</option>
-                <option>Baltimore Ravens</option>
-                <option>Cleveland Browns</option>
-                <!--AFC South-->
-                <option>Indianapolis Colts</option>
-                <option>Houston Texans</option>
-                <option>Jacksonville Jaguars</option>
-                <option>Tennessee Titans</option>
-                <!--AFC West-->
-                <option>Denver Broncos</option>
-                <option>Kansas City Chiefs</option>
-                <option>San Diego Chargers</option>
-                <option>Oakland Raiders</option>
-                <!--NFC East-->
-                <option>Dallas Cowboys</option>
-                <option>New York Giants</option>
-                <option>Philadelphia Eagles</option>
-                <option>Washington Redskins</option>
-                <!--NFC North-->
-                <option>Chicago Bears</option>
-                <option>Detroit Lions</option>
-                <option>Green Bay Packers</option>
-                <option>Minnesota Vikings</option>
-                <!--NFC South-->
-                <option>Carolina Pantherw</option>
-                <option>New Orleans Saints</option>
-                <option>Atlanta Falcons</option>
-                <option>Tampa Bay Buccaneers</option>
-                <!--NFC West-->
-                <option>Seattle Seahawks</option>
-                <option>Arizona Cardinals</option>
-                <option>San Francisco 49ers</option>
-                <option>St. Louis Rams</option>
-            </select>
+        <section>
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.centered} {page.style.chosenHolder}">
 
-            <select ui:field="selectToEnhance" multiple="multiple">
-                <!--AFC East-->
-                <option>New England Patriots</option>
-                <option>Buffalo Bills</option>
-                <option>Miami Dolphins</option>
-                <option>New York Jets</option>
-                <!--AFC North-->
-                <option>Pittsburgh Steelers</option>
-                <option>Cincinnatti Bengals</option>
-                <option>Baltimore Ravens</option>
-                <option>Cleveland Browns</option>
-                <!--AFC South-->
-                <option>Indianapolis Colts</option>
-                <option>Houston Texans</option>
-                <option>Jacksonville Jaguars</option>
-                <option>Tennessee Titans</option>
-                <!--AFC West-->
-                <option>Denver Broncos</option>
-                <option>Kansas City Chiefs</option>
-                <option>San Diego Chargers</option>
-                <option>Oakland Raiders</option>
-                <!--NFC East-->
-                <option>Dallas Cowboys</option>
-                <option>New York Giants</option>
-                <option>Philadelphia Eagles</option>
-                <option>Washington Redskins</option>
-                <!--NFC North-->
-                <option>Chicago Bears</option>
-                <option>Detroit Lions</option>
-                <option>Green Bay Packers</option>
-                <option>Minnesota Vikings</option>
-                <!--NFC South-->
-                <option>Carolina Pantherw</option>
-                <option>New Orleans Saints</option>
-                <option>Atlanta Falcons</option>
-                <option>Tampa Bay Buccaneers</option>
-                <!--NFC West-->
-                <option>Seattle Seahawks</option>
-                <option>Arizona Cardinals</option>
-                <option>San Francisco 49ers</option>
-                <option>St. Louis Rams</option>
-            </select>
+                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full}">
+                    <select multiple="multiple">
+                        <optgroup label="AFC East">
+                            <option>New England Patriots</option>
+                            <option>Buffalo Bills</option>
+                            <option>Miami Dolphins</option>
+                            <option>New York Jets</option>
+                        </optgroup>
+                        <optgroup label="AFC North">
+                            <option>Pittsburgh Steelers</option>
+                            <option>Cincinnatti Bengals</option>
+                            <option>Baltimore Ravens</option>
+                            <option>Cleveland Browns</option>
+                        </optgroup>
+                        <optgroup label="AFC South">
+                            <option>Indianapolis Colts</option>
+                            <option>Houston Texans</option>
+                            <option>Jacksonville Jaguars</option>
+                            <option>Tennessee Titans</option>
+                        </optgroup>
+                        <optgroup label="AFC West">
+                            <option>Denver Broncos</option>
+                            <option>Kansas City Chiefs</option>
+                            <option>San Diego Chargers</option>
+                            <option>Oakland Raiders</option>
+                        </optgroup>
+                        <optgroup label="NFC East">
+                            <option>Dallas Cowboys</option>
+                            <option>New York Giants</option>
+                            <option>Philadelphia Eagles</option>
+                            <option>Washington Redskins</option>
+                        </optgroup>
+                        <optgroup label="NFC North">
+                            <option>Chicago Bears</option>
+                            <option>Detroit Lions</option>
+                            <option>Green Bay Packers</option>
+                            <option>Minnesota Vikings</option>
+                        </optgroup>
+                        <optgroup label="NFC South">
+                            <option>Carolina Pantherw</option>
+                            <option>New Orleans Saints</option>
+                            <option>Atlanta Falcons</option>
+                            <option>Tampa Bay Buccaneers</option>
+                        </optgroup>
+                        <optgroup label="NFC West">
+                            <option>Seattle Seahawks</option>
+                            <option>Arizona Cardinals</option>
+                            <option>San Francisco 49ers</option>
+                            <option>St. Louis Rams</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full}">
+                    <select ui:field="selectToEnhance" multiple="multiple">
+                        <optgroup label="AFC East">
+                            <option>New England Patriots</option>
+                            <option>Buffalo Bills</option>
+                            <option>Miami Dolphins</option>
+                            <option>New York Jets</option>
+                        </optgroup>
+                        <optgroup label="AFC North">
+                            <option>Pittsburgh Steelers</option>
+                            <option>Cincinnatti Bengals</option>
+                            <option>Baltimore Ravens</option>
+                            <option>Cleveland Browns</option>
+                        </optgroup>
+                        <optgroup label="AFC South">
+                            <option>Indianapolis Colts</option>
+                            <option>Houston Texans</option>
+                            <option>Jacksonville Jaguars</option>
+                            <option>Tennessee Titans</option>
+                        </optgroup>
+                        <optgroup label="AFC West">
+                            <option>Denver Broncos</option>
+                            <option>Kansas City Chiefs</option>
+                            <option>San Diego Chargers</option>
+                            <option>Oakland Raiders</option>
+                        </optgroup>
+                        <optgroup label="NFC East">
+                            <option>Dallas Cowboys</option>
+                            <option>New York Giants</option>
+                            <option>Philadelphia Eagles</option>
+                            <option>Washington Redskins</option>
+                        </optgroup>
+                        <optgroup label="NFC North">
+                            <option>Chicago Bears</option>
+                            <option>Detroit Lions</option>
+                            <option>Green Bay Packers</option>
+                            <option>Minnesota Vikings</option>
+                        </optgroup>
+                        <optgroup label="NFC South">
+                            <option>Carolina Pantherw</option>
+                            <option>New Orleans Saints</option>
+                            <option>Atlanta Falcons</option>
+                            <option>Tampa Bay Buccaneers</option>
+                        </optgroup>
+                        <optgroup label="NFC West">
+                            <option>Seattle Seahawks</option>
+                            <option>Arizona Cardinals</option>
+                            <option>San Francisco 49ers</option>
+                            <option>St. Louis Rams</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+            </div>
         </section>
 
         <section class="{res.style.stripe} {res.style.centered}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+                <div class="{res.grid.col} {res.grid.col_full}">
                     <a href="#" class="{res.style.btn}">Support</a>
                     <a href="#" class="{res.style.btn}"><i class="{fonts.icons.iconArrowOutside}"></i>Developer's
                         Platform

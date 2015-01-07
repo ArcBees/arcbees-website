@@ -3,8 +3,11 @@ package com.arcbees.website.client.application.bees.quiz;
 import javax.inject.Inject;
 
 import com.arcbees.gquery.tooltip.client.TooltipOptions;
-import com.arcbees.website.client.resources.PageBeesResources;
+import com.arcbees.website.client.resources.AppResources;
+import com.arcbees.website.client.resources.PageBeesResources.QuizMessages;
+import com.google.gwt.dom.client.DivElement;
 import com.google.gwt.dom.client.ParagraphElement;
+import com.google.gwt.dom.client.SpanElement;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.logical.shared.AttachEvent;
 import com.google.gwt.uibinder.client.UiBinder;
@@ -29,14 +32,23 @@ public class QuestionView extends ViewWithUiHandlers<QuestionUiHandlers> impleme
     Image answer3Image;
     @UiField
     ParagraphElement question;
+    @UiField
+    DivElement quizFinished;
+    @UiField
+    DivElement questions;
+    @UiField
+    SpanElement questionNumber;
 
-    private final PageBeesResources.QuizMessages quizMessages;
+    private final QuizMessages quizMessages;
+    private final AppResources resources;
 
     @Inject
     QuestionView(
             Binder binder,
-            PageBeesResources.QuizMessages quizMessages) {
+            QuizMessages quizMessages,
+            AppResources resources) {
         this.quizMessages = quizMessages;
+        this.resources = resources;
 
         initWidget(binder.createAndBindUi(this));
 
@@ -45,7 +57,9 @@ public class QuestionView extends ViewWithUiHandlers<QuestionUiHandlers> impleme
 
     @Override
     public void setQuestion(int questionNumber) {
+        setQuestionsVisible(true);
         question.setInnerText(quizMessages.question(questionNumber));
+        this.questionNumber.setInnerText(String.valueOf(questionNumber));
 
         $(answer1Image).attr("title", quizMessages.answer1(questionNumber));
         $(answer2Image).attr("title", quizMessages.answer2(questionNumber));
@@ -56,7 +70,12 @@ public class QuestionView extends ViewWithUiHandlers<QuestionUiHandlers> impleme
 
     @Override
     public void setQuizFinished() {
-        // todo: show a different content div for the finished state
+        setQuestionsVisible(false);
+    }
+
+    private void setQuestionsVisible(boolean questionsVisible) {
+        $(quizFinished).toggleClass(resources.style().hidden(), questionsVisible);
+        $(questions).toggleClass(resources.style().hidden(), !questionsVisible);
     }
 
     @Override
@@ -83,5 +102,15 @@ public class QuestionView extends ViewWithUiHandlers<QuestionUiHandlers> impleme
     @UiHandler("nextButton")
     void onNext(ClickEvent event) {
         getUiHandlers().onNextQuestion();
+    }
+
+    @UiHandler("tryAgain")
+    void onTryAgain(ClickEvent event) {
+        getUiHandlers().resetQuiz();
+    }
+
+    @UiHandler("share")
+    void onShare(ClickEvent event) {
+        getUiHandlers().share();
     }
 }

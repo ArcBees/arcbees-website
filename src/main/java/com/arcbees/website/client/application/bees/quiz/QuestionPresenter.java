@@ -29,6 +29,17 @@ public class QuestionPresenter extends PresenterWidget<MyView> implements Questi
     }
 
     @Override
+    public void resetQuiz() {
+        currentQuestion = 0;
+        onNextQuestion();
+    }
+
+    @Override
+    public void share() {
+        // TODO: Implement share
+    }
+
+    @Override
     protected void onBind() {
         getView().setQuestion(1);
     }

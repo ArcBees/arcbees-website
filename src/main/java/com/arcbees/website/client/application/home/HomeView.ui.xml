@@ -42,32 +42,29 @@
                     <span class="{page.style.txtProducts} {animations.style.animation}">
                         <ui:msg description="- Banner - product">products</ui:msg>
                     </span>
-
-                    <span class="{page.style.txtProducts} {animations.style.animation}">
-                        <ui:msg description="- Banner - product">products</ui:msg>
-                    </span>
                 </p>
             </div>
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {page.style.btns} {res.style.centered}">
                 <div class="{res.grid.col} {res.grid.col_full}">
                     <a href="#{EXPERTISE}" title="expertise" class="{res.style.btn}">
                         <ui:attribute ui:name='title' ui:description='expertise'/>
-                        Expertise</a>
+                        Expertise
+                    </a>
                     <a href="#{PRODUCTS}" title="products" class="{res.style.btn}">
                         <ui:attribute ui:name='title' ui:description='products'/>
                         <ui:msg description="- BTN - Products">Products</ui:msg>
                     </a>
                     <a href="#{SERVICES}" title="services" class="{res.style.btn}">
                         <ui:attribute ui:name='title' ui:description='services'/>
-                        Services</a>
+                        Services
+                    </a>
                 </div>
             </div>
         </section>
 
         <section class="{res.style.stripe} {res.style.dark} {res.style.triangleBottom} {res.style.nextLight}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.focusBlock}">
-                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
-
+                <div class="{res.grid.col} {res.grid.col_8} {res.grid.col_push_1_6} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                     <h2 class="{res.style.stripeTitle}">
                         <ui:msg description="Our quest">Our Quest</ui:msg>
                     </h2>
@@ -77,15 +74,13 @@
                             developers work around the world.
                         </ui:msg>
                     </p>
-
                 </div>
             </div>
         </section>
 
         <section class="{res.style.stripe} {res.style.light} {res.style.triangleBottom} {res.style.nextColored}">
-            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.focusBlock}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.centered}">
                 <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
-
                     <h2 class="{res.style.stripeTitle}">
                         <ui:msg description="Bee the Best">Bee The Best</ui:msg>
                     </h2>
@@ -95,7 +90,6 @@
                             experience and optimizing your time.
                         </ui:msg>
                     </p>
-
                 </div>
             </div>
         </section>
@@ -103,7 +97,6 @@
         <section class="{res.style.stripe} {res.style.colored} {page.style.successStoryHolder}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.centered} {page.style.successStory}">
                 <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
-
                     <i class="{fonts.icons.iconGwtp}"></i>
                     <h2 class="{res.style.stripeTitle}">
                         <ui:msg description="A success story">A Success
@@ -120,7 +113,6 @@
                         <ui:attribute ui:name='title' ui:description='learn more'/>
                         <ui:msg description="btn learn more">Learn more</ui:msg>
                     </a>
-
                 </div>
             </div>
             <div class="{res.style.wrapper} {res.style.centered} {page.style.successStoryMore}"
@@ -146,7 +138,6 @@
                                 h-88.481c-0.43,0-0.828,0.23-1.042,0.603l-25.978,45.773"/>
                         </svg>
                         </div>
-
                     </div>
                     <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                         <h3>
@@ -236,7 +227,9 @@
                         <h3 class="{res.style.stripeTitle}">
                             <ui:msg description="Architects">Architects</ui:msg>
                         </h3>
-                        <a href="javascript:;" class="{res.style.btn}" ui:field="architectBtn">Learn more</a>
+                        <a href="javascript:;" class="{res.style.btn}" ui:field="architectBtn">
+                            <ui:msg description="btn learn more">Learn more</ui:msg>
+                        </a>
                         <div ui:field="architectMore">
                             <p>
                                 <ui:msg description="Architects - Paragraphe -">Architecture matters. Great products
@@ -372,26 +365,23 @@
         </section>
 
         <section class="{res.style.stripe} {res.style.stripeLast} {res.style.light} {res.style.centered}">
-            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.centered}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.btns} {res.style.centered}">
                 <div class="{res.grid.col} {res.grid.col_full}">
                     <h3>
-                        <ui:msg description="Learn more about - Paragraphe -">Learn more about</ui:msg>
+                        <ui:msg description="Learn more about">Learn more about</ui:msg>
                     </h3>
-                    <div class="{res.style.btns}">
-                        <a href="#{EXPERTISE}" title="Expertise" class="{res.style.btn}">
-                            <ui:attribute ui:name='title' ui:description='Expertise'/>
-                            Expertise
-                        </a>
-                        <a href="#{PRODUCTS}" title="Products" class="{res.style.btn}">
-                            <ui:attribute ui:name='title' ui:description='Products'/>
-                            <ui:msg description="- BTN - Products">Products</ui:msg>
-                        </a>
-                        <a href="#{SERVICES}" title="Services" class="{res.style.btn}">
-                            <ui:attribute ui:name='title' ui:description='Services'/>
-                            Services
-                        </a>
-                    </div>
-
+                    <a href="#{EXPERTISE}" title="Expertise" class="{res.style.btn}">
+                        <ui:attribute ui:name='title' ui:description='Expertise'/>
+                        Expertise
+                    </a>
+                    <a href="#{PRODUCTS}" title="Products" class="{res.style.btn}">
+                        <ui:attribute ui:name='title' ui:description='Products'/>
+                        <ui:msg description="- BTN - Products">Products</ui:msg>
+                    </a>
+                    <a href="#{SERVICES}" title="Services" class="{res.style.btn}">
+                        <ui:attribute ui:name='title' ui:description='Services'/>
+                        Services
+                    </a>
                 </div>
             </div>
         </section>

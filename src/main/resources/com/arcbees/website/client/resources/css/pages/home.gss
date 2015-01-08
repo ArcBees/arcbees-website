@@ -287,6 +287,10 @@
         zoom: .55;
     }
 
+    .home .successStory {
+        padding-bottom: 30px;
+    }
+
     .home .successStory i {
         font-size: 6.5em;
     }

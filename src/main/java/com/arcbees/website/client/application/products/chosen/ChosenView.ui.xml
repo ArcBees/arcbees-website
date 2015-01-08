@@ -9,6 +9,8 @@
     <ui:with field="page" type="com.arcbees.website.client.resources.PageProductResources"/>
     <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
 
+    <ui:import field="com.arcbees.website.client.NameTokens.*"/>
+
     <g:HTMLPanel styleName="{page.style.products} {page.style.chosen}">
 
         <nav class="{page.style.breadcrumb}">
@@ -58,9 +60,21 @@
                     </p>
                     <p>
                         <ui:msg description="GwtChosen is a port... - Paragraphe -">GwtChosen lets you jazz up boring
-                            select boxes with tons of useful features, while leveraging GWT optimizations and type safety.
+                            select boxes with tons of useful features, while leveraging GWT optimizations and type
+                            safety.
                         </ui:msg>
                     </p>
+                </div>
+            </div>
+            <div class="{page.style.btns} {res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.centered}">
+                <div class="{res.grid.col} {res.grid.col_12}">
+                    <a href="#{SUPPORT}" class="{res.style.btn}">
+                        <ui:msg description="Support">Support</ui:msg>
+                    </a>
+                    <a href="#" class="{res.style.btn}">
+                        <i class="{fonts.icons.iconArrowOutside}"></i>
+                        <ui:msg description="- BTN - Developers Platform">Developer's Platform</ui:msg>
+                    </a>
                 </div>
             </div>
         </section>
@@ -177,33 +191,19 @@
             </div>
         </section>
 
-        <section class="{res.style.stripe} {res.style.centered}">
-            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_full}">
-                    <a href="#" class="{res.style.btn}">Support</a>
-                    <a href="#" class="{res.style.btn}"><i class="{fonts.icons.iconArrowOutside}"></i>Developer's
-                        Platform
-                    </a>
-                </div>
-            </div>
-        </section>
-
         <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.centered}">
             <h2>
                 <ui:msg description="Features">Features</ui:msg>
             </h2>
         </section>
 
-        <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium1}">
+        <section class="{res.style.stripe} {page.style.stripeDetails}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
                         <ui:msg description="Fully Customizable">Fully Customizable</ui:msg>
                     </h3>
-                    <a href="#" class="{res.style.anchor}">#</a>
                 </div>
-
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <p>
                         <ui:msg description="Fully Customizable - Paragraph -">GwtChosen gives you a host of options for
@@ -215,16 +215,13 @@
             </div>
         </section>
 
-        <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium2}">
+        <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium1}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
                         <ui:msg description="Search Support">Search Support</ui:msg>
                     </h3>
-                    <a href="#" class="{res.style.anchor}">#</a>
                 </div>
-
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <p>
                         <ui:msg description="Search Support - Paragraph -">Using GwtChosen, you can dynamically update
@@ -235,16 +232,13 @@
             </div>
         </section>
 
-        <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium3}">
+        <section class="{res.style.stripe} {page.style.stripeDetails}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
                         <ui:msg description="Use It Your Way">Use It Your Way</ui:msg>
                     </h3>
-                    <a href="#" class="{res.style.anchor}">#</a>
                 </div>
-
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <p>
                         <ui:msg description="Use It Your Way - Paragraph -">If you prefer using GQuery plugins,
@@ -256,16 +250,13 @@
             </div>
         </section>
 
-        <section class="{res.style.stripe} {page.style.stripeDetails}">
+        <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium1}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
                         <ui:msg description="Bind To Events">Bind To Events</ui:msg>
                     </h3>
-                    <a href="#" class="{res.style.anchor}">#</a>
                 </div>
-
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <p>
                         <ui:msg description="Bind To Events - Paragraph -">You can hook into various lifecycle events of
@@ -276,16 +267,13 @@
             </div>
         </section>
 
-        <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium1}">
+        <section class="{res.style.stripe} {page.style.stripeDetails}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
                         <ui:msg description="Easy Setup">Easy Setup</ui:msg>
                     </h3>
-                    <a href="#" class="{res.style.anchor}">#</a>
                 </div>
-
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <p>
                         <ui:msg description="Easy Setup - Paragraph -">GwtChosen is already available in Maven
@@ -297,7 +285,7 @@
             </div>
         </section>
 
-        <section class="{res.style.stripe} {res.style.dark} {res.style.centered} {page.style.moreOn}">
+        <section class="{res.style.stripe} {res.style.light} {res.style.centered} {page.style.moreOn}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_full}">
                     <h3>
@@ -306,15 +294,16 @@
                     </h3>
                     <a href="#" class="{res.style.btn}">
                         <i class="{fonts.icons.iconArrowOutside}"></i>
-                        <ui:msg description="- BTN - Go to Arcbees Developers">Developer's</ui:msg>
-                        Platform
+                        <ui:msg description="- BTN - Developers Platform">Developer's Platform</ui:msg>
                     </a>
                 </div>
             </div>
         </section>
 
         <section class="{res.style.stripe} {page.style.colored} {res.style.centered}">
-            <h3>SHARE</h3>
+            <h3>
+                <ui:msg description="Share">SHARE</ui:msg>
+            </h3>
             <ul class="{page.style.social}">
                 <li>
                     <a href="#" class="{fonts.icons.iconFb}">

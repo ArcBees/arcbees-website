@@ -9,6 +9,8 @@
     <ui:with field="page" type="com.arcbees.website.client.resources.PageProductResources"/>
     <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
 
+    <ui:import field="com.arcbees.website.client.NameTokens.*"/>
+
     <g:HTMLPanel styleName="{page.style.products} {page.style.gquery}">
 
         <nav class="{page.style.breadcrumb}">
@@ -64,6 +66,17 @@
                     </p>
                 </div>
             </div>
+            <div class="{page.style.btns} {res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.centered}">
+                <div class="{res.grid.col} {res.grid.col_12}">
+                    <a href="#{SUPPORT}" class="{res.style.btn}">
+                        <ui:msg description="Support">Support</ui:msg>
+                    </a>
+                    <a href="#" class="{res.style.btn}">
+                        <i class="{fonts.icons.iconArrowOutside}"></i>
+                        <ui:msg description="- BTN - Developers Platform">Developer's Platform</ui:msg>
+                    </a>
+                </div>
+            </div>
         </section>
 
         <section class="{res.style.stripe} {res.style.medium2}">
@@ -95,20 +108,17 @@
 
         <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.centered}">
             <h2>
-                <ui:msg description="In details">In details</ui:msg>
+                <ui:msg description="Features">Features</ui:msg>
             </h2>
         </section>
 
-        <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium1}">
+        <section class="{res.style.stripe} {page.style.stripeDetails}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
                         <ui:msg description="It Looks Like jQuery">It Looks Like jQuery</ui:msg>
                     </h3>
-                    <a href="#" class="{res.style.anchor}">#</a>
                 </div>
-
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <ui:msg description="It Looks Like jQuery - Paragraph -">
                         <p>
@@ -123,16 +133,13 @@
             </div>
         </section>
 
-        <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium2}">
+        <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium1}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
                         <ui:msg description="Easy DOM Manipulation">Easy DOM Manipulation</ui:msg>
                     </h3>
-                    <a href="#" class="{res.style.anchor}">#</a>
                 </div>
-
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <ui:msg description="Easy DOM Manipulation - Paragraph -">
                         <p>
@@ -149,16 +156,13 @@
             </div>
         </section>
 
-        <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium3}">
+        <section class="{res.style.stripe} {page.style.stripeDetails}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
                         <ui:msg description="Full GWT Widget Integration">Full GWT Widget Integration</ui:msg>
                     </h3>
-                    <a href="#" class="{res.style.anchor}">#</a>
                 </div>
-
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <ui:msg description="Full GWT Widget Integration - Paragraph -">
                         <p>
@@ -171,16 +175,13 @@
             </div>
         </section>
 
-        <section class="{res.style.stripe} {page.style.stripeDetails}">
+        <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium1}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
                         <ui:msg description="Promises">Promises</ui:msg>
                     </h3>
-                    <a href="#" class="{res.style.anchor}">#</a>
                 </div>
-
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <p>
                         <ui:msg description="Promises - Paragraph -">GQuery implements the promises API existing
@@ -192,16 +193,13 @@
             </div>
         </section>
 
-        <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium1}">
+        <section class="{res.style.stripe} {page.style.stripeDetails}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
                         <ui:msg description="Easy Ajax Syntax">Easy Ajax Syntax</ui:msg>
                     </h3>
-                    <a href="#" class="{res.style.anchor}">#</a>
                 </div>
-
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <ui:msg description="Easy Ajax Syntax - Paragraph -">
                         <p>
@@ -219,14 +217,11 @@
 
         <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium1}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
                         <ui:msg description="Event Handling">Event Handling</ui:msg>
                     </h3>
-                    <a href="#" class="{res.style.anchor}">#</a>
                 </div>
-
                 <div class="{res.grid.col} {res.grid.col_2_3} {res.grid.col_m_full}">
                     <ui:msg description="Event Handling - Paragraph -">
                         <p>
@@ -242,7 +237,7 @@
             </div>
         </section>
 
-        <section class="{res.style.stripe} {res.style.dark} {res.style.centered} {page.style.moreOn}">
+        <section class="{res.style.stripe} {res.style.light} {res.style.centered} {page.style.moreOn}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_full}">
                     <h3>
@@ -251,15 +246,14 @@
                     </h3>
                     <a href="#" class="{res.style.btn}">
                         <i class="{fonts.icons.iconArrowOutside}"></i>
-                        <ui:msg description="- BTN - Go to Arcbees Developers">Developer's</ui:msg>
-                        Platform
+                        <ui:msg description="- BTN - Developers Platform">Developer's Platform</ui:msg>
                     </a>
                 </div>
             </div>
         </section>
 
         <section class="{res.style.stripe} {page.style.colored} {res.style.centered}">
-            <h3>SHARE</h3>
+            <h3><ui:msg description="Share">SHARE</ui:msg></h3>
             <ul class="{page.style.social}">
                 <li>
                     <a href="#" class="{fonts.icons.iconFb}">

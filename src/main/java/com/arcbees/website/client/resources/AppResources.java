@@ -115,6 +115,8 @@ public interface AppResources extends FontResources {
         String linkTopRight();
 
         String visuallyhidden();
+
+        String clicked();
     }
 
     @Source("css/normalize.gss")

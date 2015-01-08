@@ -38,7 +38,7 @@
 }
 
 .products h2 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
 
     margin: 0em 0 .25em;
 }
@@ -53,6 +53,10 @@
 }
 
 @media (max-width: 649px) {
+    .products h2 {
+        font-size: 2.5rem;
+    }
+
     .products h2.presentation {
         font-size: 3rem;
     }
@@ -63,9 +67,11 @@
 /* --> Header -- */
 
 .products .header .container {
-    margin: -115px 0 0 -377px;
+    text-align: center;
+
+    margin: -170px 0 0 -490px;
     height: 200px;
-    width: 755px;
+    width: 980px;
 
     position: absolute;
     top: 50%;
@@ -154,20 +160,44 @@
     line-height: 1em;
 
     display: inline-block;
-    margin: 0 11px;
+    margin: 0 4px;
+
+    vertical-align: middle;
 }
 
 .menuHeader a {
-    color: #fff;
-    font-size: 22.7rem;
+    color: C_TEXT_LIGHT;
+    font-size: 10.25rem;
+    line-height: 34rem;
+
+    min-height: 34rem;
 
     @mixin opacity(.5);
     @mixin transition(opacity, .5s);
 }
 
+.menuHeader a.active {
+    font-size: 34rem;
+    line-height: 31rem;
+
+    @mixin transition(all, 0.3s);
+}
+
 .menuHeader a.active,
 .menuHeader a:hover {
     @mixin opacity(1);
+}
+
+.productHead.gae li:nth-child(2) a,
+.productHead.gwtp li:nth-child(1) a,
+.productHead.gwtp li:nth-child(3) a,
+.productHead.jukito li:nth-child(2) a,
+.productHead.jukito li:nth-child(4) a,
+.productHead.chosen li:nth-child(3) a,
+.productHead.chosen li:nth-child(5) a,
+.productHead.gquery li:nth-child(4) a {
+    font-size: 15.5rem;
+    line-height: 16.25rem;
 }
 
 .productHead .arrow::after {
@@ -190,15 +220,23 @@
 }
 
 .productHead.gae .arrow::after {
-    margin-left: -302px;
+    margin-left: -295px;
 }
 
 .productHead.gwtp .arrow::after {
-    margin-left: -50px;
+    margin-left: -160px;
 }
 
 .productHead.jukito .arrow::after {
-    margin-left: 205px;
+    margin-left: -50px;
+}
+
+.productHead.chosen .arrow::after {
+    margin-left: 60px;
+}
+
+.productHead.gquery .arrow::after {
+    margin-left: 200px;
 }
 
 @media (max-width: 979px) {
@@ -225,6 +263,10 @@
 
 @media (max-width: 649px) {
     .menuHeader a {
+        font-size: 6rem;
+    }
+
+    .menuHeader a.active {
         font-size: 8rem;
     }
 
@@ -283,7 +325,15 @@ ul.social {
     color: #ebebeb;
 }
 
+.btns {
+    margin-top: 6.5rem;
+}
+
 @media (max-width: 649px) {
+    .btns a {
+        margin-bottom: 1rem;
+    }
+
     .socialTop {
         top: -20px;
     }
@@ -385,7 +435,7 @@ ul.social {
 /* --> In Details -- */
 
 .stripeDetails {
-    padding: 4rem 0 4.5rem;
+    padding: 4rem 0 3rem;
 }
 
 .stripeDetails h3 {
@@ -394,8 +444,22 @@ ul.social {
     margin-bottom: 0;
 }
 
+.stripeDetails span {
+    display: block;
+}
+
 .stripeDetails h4 {
     margin-top: .7em;
+}
+
+@media (max-width: 649px) {
+    .stripeDetails {
+        padding: 4rem 0 1rem;
+    }
+
+    .stripeDetails h3 {
+        margin-bottom: 2rem;
+    }
 }
 
 /* --> More on -- */
@@ -478,6 +542,25 @@ a.anchor {
     display: block;
     margin: 20px auto 0;
     width: 400px;
+}
+
+.languageLogo {
+    margin-top: 4rem;
+    padding: 0;
+}
+
+.languageLogo li {
+    display: inline-block;
+    margin: 1rem 2rem;
+
+    vertical-align: middle;
+}
+
+.collapsible {
+    color: C_TEXT_LIGHT;
+    background-color: C_TEXT;
+
+    margin-bottom: 2rem;
 }
 
 /* -- Page : Jukito ---------------------------------------- */

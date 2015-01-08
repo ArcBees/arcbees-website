@@ -34,8 +34,7 @@
 
         <section class="{res.style.stripe} {res.style.dark} {res.style.triangleBottom} {res.style.nextColored}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.focusBlock}">
-                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
-
+                <div class="{res.grid.col} {res.grid.col_8} {res.grid.col_push_1_6} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                     <h2 class="{res.style.stripeTitle}">
                         <ui:msg description="Support Packages">Support
                             <span>Packages</span>
@@ -52,152 +51,150 @@
         </section>
 
         <section class="{res.style.stripe} {res.style.colored}">
-            <div class="">
-                <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.centered}">
-                    <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1_3} {res.grid.col_m_full} {res.grid.col_m_push_0}">
-                        <ui:msg description="Purchasing support packages...">
-                            <p>Purchasing support packages not only allows us to help your team become optimally
-                                productive with our tools.
-                                <strong>It also helps you sleep!</strong>
-                            </p>
-                            <p>You can rest easy, knowing that even if we release new versions
-                                of our software, we will support the version you use and love for two years.
-                            </p>
-                            <p>Most of our open source tools are covered by a single support plan, so your Arcbees
-                                development stack will remain stable as you deploy code into production and enjoy real
-                                business results.
-                            </p>
-                        </ui:msg>
-                    </div>
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.centered}">
+                <div class="{page.style.purchSupp} {res.grid.col} {res.grid.col_6} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+                    <ui:msg description="Purchasing support packages...">
+                        <p>Purchasing support packages not only allows us to help your team become optimally
+                            productive with our tools.
+                            <strong>It also helps you sleep!</strong>
+                        </p>
+                        <p>You can rest easy, knowing that even if we release new versions
+                            of our software, we will support the version you use and love for two years.
+                        </p>
+                        <p>Most of our open source tools are covered by a single support plan, so your Arcbees
+                            development stack will remain stable as you deploy code into production and enjoy real
+                            business results.
+                        </p>
+                    </ui:msg>
                 </div>
-                <section
-                        class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.centered} {page.style.offers}">
-                    <article class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_t_full} {page.style.plan}">
-                        <header>
-                            <h3>
-                                <ui:msg description="Basic">Basic</ui:msg>
-                            </h3>
-                            <p class="{page.style.price}">
-                                <ui:msg description="$ 199.95 per year">
-                                    <strong>$ 199.95</strong>
-                                    per year
-                                </ui:msg>
-                            </p>
-                        </header>
-                        <section>
-                            <div class="{page.style.includes}">
-                                <div class="{page.style.developers}">
-                                    <p>1
-                                        <span>
-                                            <ui:msg description="developer">developer</ui:msg>
-                                        </span>
-                                    </p>
-                                </div>
-                                <div class="{page.style.advisory}">
-                                    <p>2
-                                        <span>
-                                            <ui:msg description="advisory Hours">advisory Hours</ui:msg>
-                                        </span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="{page.style.hours}">
-                                <p>
-                                    <ui:msg description="48 hours Response Time">48 hours
-                                        <span>Response Time</span>
-                                    </ui:msg>
-                                </p>
-                            </div>
-                        </section>
-                    </article>
-
-                    <article
-                            class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_t_full} {page.style.plan} {page.style.bestbuy}">
-                        <div class="{page.style.popChoice}">
-                            <h4>
-                                <ui:msg description="Popular choice">Popular choice</ui:msg>
-                            </h4>
-                        </div>
-                        <header>
-                            <h3>
-                                <ui:msg description="Professional">Professional</ui:msg>
-                            </h3>
-                            <p class="{page.style.price}">
-                                <ui:msg description="$ 499.95 per year">
-                                    <strong>$ 499.95</strong>
-                                    per year
-                                </ui:msg>
-                            </p>
-                        </header>
-                        <section>
-                            <div class="{page.style.includes}">
-                                <div class="{page.style.developers}">
-                                    <p>5
-                                        <span>
-                                            <ui:msg description="developer">developers</ui:msg>
-                                        </span>
-                                    </p>
-                                </div>
-                                <div class="{page.style.advisory}">
-                                    <p>5
-                                        <span>
-                                            <ui:msg description="advisory Hours">advisory Hours</ui:msg>
-                                        </span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="{page.style.hours}">
-                                <p>
-                                    <ui:msg description="24 hours Response Time">
-                                        24 hours
-                                        <span>Response Time</span>
-                                    </ui:msg>
-                                </p>
-                            </div>
-                        </section>
-                    </article>
-
-                    <article class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_t_full} {page.style.plan}">
-                        <header>
-                            <h3>
-                                <ui:msg description="Entreprise">Entreprise</ui:msg>
-                            </h3>
-                            <p class="{page.style.price}">
-                                <ui:msg description="$ 2 999.95 per year">
-                                    <strong>$ 2 999.95</strong>
-                                    per year
-                                </ui:msg>
-                            </p>
-                        </header>
-                        <section>
-                            <div class="{page.style.includes}">
-                                <div class="{page.style.developers}">
-                                    <p>25
-                                        <span>
-                                            <ui:msg description="developer">developers</ui:msg>
-                                        </span>
-                                    </p>
-                                </div>
-                                <div class="{page.style.advisory}">
-                                    <p>30
-                                        <span>
-                                            <ui:msg description="advisory Hours">advisory Hours</ui:msg>
-                                        </span>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="{page.style.hours}">
-                                <p>
-                                    <ui:msg description="24 hours Response Time">
-                                        4 hours
-                                        <span>Response Time</span>
-                                    </ui:msg>
-                                </p>
-                            </div>
-                        </section>
-                    </article>
-                </section>
             </div>
+            <section
+                    class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.centered} {page.style.offers}">
+                <article class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_t_full} {page.style.plan}">
+                    <header>
+                        <h3>
+                            <ui:msg description="Basic">Basic</ui:msg>
+                        </h3>
+                        <p class="{page.style.price}">
+                            <ui:msg description="$ 199.95 per year">
+                                <strong>$ 199.95</strong>
+                                per year
+                            </ui:msg>
+                        </p>
+                    </header>
+                    <section>
+                        <div class="{page.style.includes}">
+                            <div class="{page.style.developers}">
+                                <p>1
+                                    <span>
+                                        <ui:msg description="developer">developer</ui:msg>
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="{page.style.advisory}">
+                                <p>2
+                                    <span>
+                                        <ui:msg description="advisory Hours">advisory Hours</ui:msg>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="{page.style.hours}">
+                            <p>
+                                <ui:msg description="48 hours Response Time">48 hours
+                                    <span>Response Time</span>
+                                </ui:msg>
+                            </p>
+                        </div>
+                    </section>
+                </article>
+
+                <article
+                        class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_t_full} {page.style.plan} {page.style.bestbuy}">
+                    <div class="{page.style.popChoice}">
+                        <h4>
+                            <ui:msg description="Popular choice">Popular choice</ui:msg>
+                        </h4>
+                    </div>
+                    <header>
+                        <h3>
+                            <ui:msg description="Professional">Professional</ui:msg>
+                        </h3>
+                        <p class="{page.style.price}">
+                            <ui:msg description="$ 499.95 per year">
+                                <strong>$ 499.95</strong>
+                                per year
+                            </ui:msg>
+                        </p>
+                    </header>
+                    <section>
+                        <div class="{page.style.includes}">
+                            <div class="{page.style.developers}">
+                                <p>5
+                                    <span>
+                                        <ui:msg description="developer">developers</ui:msg>
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="{page.style.advisory}">
+                                <p>5
+                                    <span>
+                                        <ui:msg description="advisory Hours">advisory Hours</ui:msg>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="{page.style.hours}">
+                            <p>
+                                <ui:msg description="24 hours Response Time">
+                                    24 hours
+                                    <span>Response Time</span>
+                                </ui:msg>
+                            </p>
+                        </div>
+                    </section>
+                </article>
+
+                <article class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_t_full} {page.style.plan}">
+                    <header>
+                        <h3>
+                            <ui:msg description="Entreprise">Entreprise</ui:msg>
+                        </h3>
+                        <p class="{page.style.price}">
+                            <ui:msg description="$ 2 999.95 per year">
+                                <strong>$ 2 999.95</strong>
+                                per year
+                            </ui:msg>
+                        </p>
+                    </header>
+                    <section>
+                        <div class="{page.style.includes}">
+                            <div class="{page.style.developers}">
+                                <p>25
+                                    <span>
+                                        <ui:msg description="developer">developers</ui:msg>
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="{page.style.advisory}">
+                                <p>30
+                                    <span>
+                                        <ui:msg description="advisory Hours">advisory Hours</ui:msg>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="{page.style.hours}">
+                            <p>
+                                <ui:msg description="24 hours Response Time">
+                                    4 hours
+                                    <span>Response Time</span>
+                                </ui:msg>
+                            </p>
+                        </div>
+                    </section>
+                </article>
+            </section>
         </section>
 
         <section class="{res.style.stripe} {res.style.light} {page.style.features} {res.style.centered}">
@@ -281,6 +278,15 @@
                         </p>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="{res.style.stripe} {res.style.medium2} {res.style.centered}">
+            <div class="{res.style.wrapper}">
+                <h2>Products</h2>
+                <p>You can use one or several solutions to build your own hive!</p>
+                <!-- TODO : add caroussel -->
+                <a href="#" class="{res.style.btn}">Learn more</a>
             </div>
         </section>
 

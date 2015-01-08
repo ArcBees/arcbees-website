@@ -21,7 +21,7 @@
 
 .expertises .header i.icon1,
 .expertises .header i.icon2 {
-    font-size: 24rem;
+    font-size: 26rem;
 
     margin: 40px -120px 0 0;
 
@@ -33,7 +33,8 @@
 }
 
 .expertises .header div.icon3 {
-    margin: 15px -105px 0;
+    margin: 15px -115px 0;
+    width: 230px;
 
     right: 50%;
     position: absolute;
@@ -49,13 +50,13 @@
 @-webkit-keyframes logo1 {
     0% {transform: rotate(0deg) translate(0px, 0px);}
     50% {transform: rotate(-90deg) translate(0px, 0px);}
-    100% {transform: rotate(-90deg) translate(0px, -240px);}
+    100% {transform: rotate(-90deg) translate(0px, -262px);}
 }
 
 @-webkit-keyframes logo1Mobile {
     0% {transform: rotate(0deg) translate(0px, 0px);}
     50% {transform: rotate(-90deg) translate(0px, 0px);}
-    100% {transform: rotate(-90deg) translate(0px, -120px);}
+    100% {transform: rotate(-90deg) translate(0px, -110px);}
 }
 
 .codeAnim2 {
@@ -65,13 +66,13 @@
 @-webkit-keyframes logo2 {
     0% {transform: rotate(0deg) translate(0px, 0px);}
     50% {transform: rotate(90deg) translate(0px, 0px);}
-    100% {transform: rotate(90deg) translate(0px, -240px);}
+    100% {transform: rotate(90deg) translate(0px, -285px);}
 }
 
 @-webkit-keyframes logo2Mobile {
     0% {transform: rotate(0deg) translate(0px, 0px);}
     50% {transform: rotate(90deg) translate(0px, 0px);}
-    100% {transform: rotate(90deg) translate(0px, -120px);}
+    100% {transform: rotate(90deg) translate(0px, -108px);}
 }
 
 .codeAnim3 {
@@ -93,9 +94,9 @@
 
     .expertises .header i.icon1,
     .expertises .header i.icon2 {
-        font-size: 13rem;
+        font-size: 10rem;
 
-        margin: 40px -63px 0 0;
+        margin: 40px -50px 0 0;
     }
 
     .expertises .header > div {
@@ -103,9 +104,9 @@
     }
 
     .expertises .header div.icon3 {
-        margin-top: 35px;
+        margin-top: 38px;
 
-        zoom: .55;
+        zoom: .45;
     }
 
     .codeAnim1 {

@@ -502,26 +502,67 @@ img {
 }
 
 @media(min-width: 650px) {
+    .sidebar.active ~ .content {
+        width: calc(100% - 255px);
+    }
+
+    .sidebar.active ~ .content .withLogo {
+        left: -156px;
+    }
+
+    .sidebar.active ~ .content .withLogo span {
+        @mixin opacity(0);
+    }
+
+    .sidebar.active ~ .menu {
+        color: #fff;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 979px) {
+    .sidebar:hover:not(.clicked) ~ .content,
+    .menuToggle:hover:not(.clicked) ~ .content {
+        width: calc(100% - 255px);
+    }
+
+    .sidebar:hover:not(.clicked) ~ .content .withLogo,
+    .menuToggle:hover:not(.clicked) ~ .content .withLogo {
+        left: -156px;
+    }
+
+    .sidebar:hover:not(.clicked) ~ .content .withLogo span,
+    .menuToggle:hover:not(.clicked) ~ .content .withLogo span {
+    @mixin opacity(0);
+    }
+
+    .sidebar:hover:not(.clicked) ~ .menu,
+    .menuToggle:hover:not(.clicked) ~ .menu {
+        color: #fff;
+    }
+
+    .sidebar:hover:not(.clicked) ~ .menuToggle,
+    .sidebar.active:not(.clicked) ~ .menuToggle {
+        left: -40px;
+    }
+}
+
+@media (min-width: 980px) {
     .sidebar:hover ~ .content,
-    .sidebar.active ~ .content,
     .menuToggle:hover ~ .content {
         width: calc(100% - 255px);
     }
 
     .sidebar:hover ~ .content .withLogo,
-    .sidebar.active ~ .content .withLogo,
     .menuToggle:hover ~ .content .withLogo {
         left: -156px;
     }
 
     .sidebar:hover ~ .content .withLogo span,
-    .sidebar.active ~ .content .withLogo span,
     .menuToggle:hover ~ .content .withLogo span {
     @mixin opacity(0);
     }
 
     .sidebar:hover ~ .menu,
-    .sidebar.active ~ .menu,
     .menuToggle:hover ~ .menu {
         color: #fff;
     }
@@ -853,7 +894,7 @@ img {
 
 .focusBlock p {
     font-family: "geometriaLight", Arial, sans-serif;
-    font-size: 1.9rem;
+    font-size: 2.5rem;
 }
 
 @media (max-width: 649px) {
@@ -957,6 +998,10 @@ img {
 @media (max-width: 649px) {
     .stripe {
         padding: 30px 0;
+    }
+
+    .stripeLast {
+        padding-top: 0;
     }
 
     .sloganSide {

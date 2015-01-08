@@ -10,6 +10,8 @@
     <ui:with field="page" type="com.arcbees.website.client.resources.PageProductResources"/>
     <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
 
+    <ui:import field="com.arcbees.website.client.NameTokens.*"/>
+
     <g:HTMLPanel styleName="{page.style.products} {page.style.gae}">
         <seo:SeoWidget>
             <seo:Title>
@@ -42,8 +44,8 @@
                         <a href="#" class="{res.style.anchor}">#</a>
                     </h1>
                     <h2 class="{page.style.presentation}">
-                        <ui:msg description="Optimizing Google App Engine applications">Optimizing Google App Engine
-                            applications
+                        <ui:msg description="Optimizing Google App Engine applications">Optimizing
+                            <span>Google App Engine applications</span>
                         </ui:msg>
                     </h2>
                     <div class="{page.style.socialTop}">
@@ -84,10 +86,12 @@
                     </p>
                 </div>
             </div>
+        </section>
+
+        <section class="{res.style.stripe} {res.style.medium2}">
             <div class="{page.style.slideshow} {res.style.wrapper}">
                 <div class="{page.style.slides}">
-                    <!--TODO: ADD SCREENSHOTS-->
-                    <g:Image resource="{page.gwtpScreen1}"/>
+                    <!--TODO: ADD SCREENSHOTS IMG -->
                 </div>
                 <a href="#" class="{page.style.prev}">
                     <span class="{res.style.hidden}">Prev</span>
@@ -112,125 +116,161 @@
         </section>
 
         <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.centered}">
-            <h2>in details</h2>
+            <h2>
+                <ui:msg description="Features">Features</ui:msg>
+            </h2>
         </section>
 
         <section class="{res.style.stripe} {res.style.medium2} {res.style.centered}">
-            <div class="{res.style.wrapper}">
-                <h3 class="{res.style.stripeTitle}">
-                    <ui:msg description="Multi-language support">Multi-language
-                        <span>support</span>
-                    </ui:msg>
-                </h3>
-                <a href="#" class="{res.style.btn}">
-                    <ui:msg description="Use your favorite language">Use your favorite language</ui:msg>
-                </a>
-                <p>
-                    <ui:msg description="With App Engine modules">With App Engine modules, there are no programming
-                        language restrictions. You can develop your application in any language supported by App Engine,
-                        and benefit from all the GAE Studio features.
-                    </ui:msg>
-                </p>
-                <g:Image resource="{page.gaeScreen2}" styleName="{page.style.code}"/>
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <div class="{res.grid.col} {res.grid.col_8} {res.grid.col_push_2} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+                    <h3 class="{res.style.stripeTitle}">
+                        <ui:msg description="Multi-language support">Multi-language
+                            <span>support</span>
+                        </ui:msg>
+                    </h3>
+                    <a href="javascript:;" class="{res.style.btn}" ui:field="favLanguageBtn">
+                        <ui:msg description="Use your favorite language">Use your favorite language</ui:msg>
+                    </a>
+                    <div ui:field="favLanguageMore">
+                        <p>
+                            <ui:msg description="With App Engine modules">With App Engine modules, there are no
+                                programming
+                                language restrictions. You can develop your application in any language supported by App
+                                Engine,
+                                and benefit from all the GAE Studio features.
+                            </ui:msg>
+                        </p>
+                        <ul class="{page.style.languageLogo}">
+                            <li>
+                                <g:Image resource="{page.javaLogo}"/>
+                            </li>
+                            <li>
+                                <g:Image resource="{page.phpLogo}"/>
+                            </li>
+                            <li>
+                                <g:Image resource="{page.goLogo}"/>
+                            </li>
+                            <li>
+                                <g:Image resource="{page.pythonLogo}"/>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="{res.style.stripe} {page.style.colored} {res.style.centered}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_full}">
+                <div class="{res.grid.col} {res.grid.col_8} {res.grid.col_push_2} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                     <h3 class="{res.style.stripeTitle}">
                         <ui:msg description="Data Visualization">Data
                             <span>Visualization</span>
                         </ui:msg>
                     </h3>
-                    <p>
-                        <strong>
-                            <ui:msg description="Chose what you want to see">Chose what you want to see</ui:msg>
-                        </strong>
-                    </p>
-                    <p>
-                        <ui:msg description="GAE Studio lets you browse your data by entity kinds...">GAE Studio lets
-                            you browse your data by entity kinds, namespaces or even GQL queries. You can also select
-                            which fields you want to see so you’re only looking at relevant data.
-                        </ui:msg>
-                    </p>
+                    <a href="javascript:;" class="{res.style.btn}" ui:field="chooseWantSeeBtn">
+                        <ui:msg description="Chose what you want to see">Chose what you want to see</ui:msg>
+                    </a>
+                    <div ui:field="chooseWantSeeMore">
+                        <p>
+                            <ui:msg description="GAE Studio lets you browse your data by entity kinds...">GAE Studio
+                                lets
+                                you browse your data by entity kinds, namespaces or even GQL queries. You can also
+                                select
+                                which fields you want to see so you’re only looking at relevant data.
+                            </ui:msg>
+                        </p>
+                    </div>
+
                 </div>
             </div>
         </section>
 
-        <section class="{res.style.stripe} {res.style.medium2} {res.style.centered}">
+        <section class="{res.style.stripe} {res.style.centered}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_full}">
+                <div class="{res.grid.col} {res.grid.col_8} {res.grid.col_push_2} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                     <h3 class="{res.style.stripeTitle}">
                         <ui:msg description="Data Editing">Data
                             <span>Editing</span>
                         </ui:msg>
                     </h3>
-                    <p>
-                        <strong>
-                            <ui:msg description="Struggling with data editing?">Struggling with data editing?</ui:msg>
-                        </strong>
-                    </p>
-                    <p>
-                        <ui:msg description="GAE Studio makes data editing easier than ever...">GAE Studio makes data
-                            editing easier than ever by allowing you to edit entities in a WYSIWYG fashion. Need to make
-                            the same change to multiple entities? GAE Studio’s batch edit function has you covered there
-                            too!
-                        </ui:msg>
-                    </p>
+                    <a href="javascript:;" class="{res.style.btn}" ui:field="strugglingDataEditBtn">
+                        <ui:msg description="Struggling with data editing?">Struggling with data editing?</ui:msg>
+                    </a>
+                    <div ui:field="strugglingDataEditMore">
+                        <p>
+                            <ui:msg description="GAE Studio makes data editing easier than ever...">GAE Studio makes
+                                data
+                                editing easier than ever by allowing you to edit entities in a WYSIWYG fashion. Need to
+                                make
+                                the same change to multiple entities? GAE Studio’s batch edit function has you covered
+                                there
+                                too!
+                            </ui:msg>
+                        </p>
+                    </div>
+
                 </div>
             </div>
         </section>
 
-        <section class="{res.style.stripe} {res.style.medium2} {res.style.centered}">
+        <section class="{res.style.stripe} {res.style.medium1} {res.style.centered}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_full}">
+                <div class="{res.grid.col} {res.grid.col_8} {res.grid.col_push_2} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                     <h3 class="{res.style.stripeTitle}">
                         <ui:msg description="Data Import/Export">Data
                             <span>Import/Export</span>
                         </ui:msg>
                     </h3>
-                    <p>
-                        <strong>
-                            <ui:msg description="Your metrics at work">Your metrics at work</ui:msg>
-                        </strong>
-                    </p>
-                    <p>
-                        <ui:msg description="GAE Studio lets you export the data you want...">GAE Studio lets you export
-                            the data you want, by letting you to choose fields you want to include, and letting you
-                            select the entities you specify. This is very useful for creating your own analytics, and
-                            analyzing or simply importing data from an existing application.
-                        </ui:msg>
-                    </p>
+                    <a href="javascript:;" class="{res.style.btn}" ui:field="yourMetricAtWorkBtn">
+                        <ui:msg description="Your metrics at work">Your metrics at work</ui:msg>
+                    </a>
+                    <div ui:field="yourMetricAtWorkMore">
+                        <p>
+                            <ui:msg description="GAE Studio lets you export the data you want...">GAE Studio lets you
+                                export
+                                the data you want, by letting you to choose fields you want to include, and letting you
+                                select the entities you specify. This is very useful for creating your own analytics,
+                                and
+                                analyzing or simply importing data from an existing application.
+                            </ui:msg>
+                        </p>
+                    </div>
+
                 </div>
             </div>
         </section>
 
         <section class="{res.style.stripe} {res.style.medium2} {res.style.centered}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_full}">
+                <div class="{res.grid.col} {res.grid.col_8} {res.grid.col_push_2} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                     <h3 class="{res.style.stripeTitle}">
                         <ui:msg description="In-depth analysis of requests">In-depth analysis
                             <span>of requests</span>
                         </ui:msg>
                     </h3>
-                    <p>
-                        <strong>
-                            <ui:msg description="Take a look under the hood">Take a look under the hood</ui:msg>
-                        </strong>
-                    </p>
-                    <p>
-                        <ui:msg description="GAE Studio lets you record and look...">GAE Studio lets you record and look
-                            at everything a single request triggers on App Engine. It will even detect heavy requests
-                            and suggest optimization options.
-                        </ui:msg>
-                    </p>
+                    <a href="javascript:;" class="{res.style.btn}" ui:field="takeLookUnderHoodBtn">
+                        <ui:msg description="Take a look under the hood">Take a look under the hood</ui:msg>
+                    </a>
+                    <div ui:field="takeLookUnderHoodMore">
+                        <p>
+                            <ui:msg description="GAE Studio lets you record and look...">GAE Studio lets you record and
+                                look
+                                at everything a single request triggers on App Engine. It will even detect heavy
+                                requests
+                                and suggest optimization options.
+                            </ui:msg>
+                        </p>
+                    </div>
+
                 </div>
             </div>
         </section>
 
         <section class="{res.style.stripe} {page.style.colored} {res.style.centered}">
-            <h3>SHARE</h3>
+            <h3>
+                <ui:msg description="Share">SHARE</ui:msg>
+            </h3>
             <ul class="{page.style.social}">
                 <li>
                     <a href="#" class="{fonts.icons.iconFb}">

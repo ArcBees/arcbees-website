@@ -48,14 +48,16 @@
                 <div class="{res.grid.col} {res.grid.col_full}">
                     <a href="#{EXPERTISE}" title="expertise" class="{res.style.btn}">
                         <ui:attribute ui:name='title' ui:description='expertise'/>
-                        Expertise</a>
+                        Expertise
+                    </a>
                     <a href="#{PRODUCTS}" title="products" class="{res.style.btn}">
                         <ui:attribute ui:name='title' ui:description='products'/>
                         <ui:msg description="- BTN - Products">Products</ui:msg>
                     </a>
                     <a href="#{SERVICES}" title="services" class="{res.style.btn}">
                         <ui:attribute ui:name='title' ui:description='services'/>
-                        Services</a>
+                        Services
+                    </a>
                 </div>
             </div>
         </section>
@@ -225,7 +227,9 @@
                         <h3 class="{res.style.stripeTitle}">
                             <ui:msg description="Architects">Architects</ui:msg>
                         </h3>
-                        <a href="javascript:;" class="{res.style.btn}" ui:field="architectBtn">Learn more</a>
+                        <a href="javascript:;" class="{res.style.btn}" ui:field="architectBtn">
+                            <ui:msg description="btn learn more">Learn more</ui:msg>
+                        </a>
                         <div ui:field="architectMore">
                             <p>
                                 <ui:msg description="Architects - Paragraphe -">Architecture matters. Great products
@@ -361,26 +365,23 @@
         </section>
 
         <section class="{res.style.stripe} {res.style.stripeLast} {res.style.light} {res.style.centered}">
-            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.centered}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.btns} {res.style.centered}">
                 <div class="{res.grid.col} {res.grid.col_full}">
                     <h3>
-                        <ui:msg description="Learn more about - Paragraphe -">Learn more about</ui:msg>
+                        <ui:msg description="Learn more about">Learn more about</ui:msg>
                     </h3>
-                    <div class="{res.style.btns}">
-                        <a href="#{EXPERTISE}" title="Expertise" class="{res.style.btn}">
-                            <ui:attribute ui:name='title' ui:description='Expertise'/>
-                            Expertise
-                        </a>
-                        <a href="#{PRODUCTS}" title="Products" class="{res.style.btn}">
-                            <ui:attribute ui:name='title' ui:description='Products'/>
-                            <ui:msg description="- BTN - Products">Products</ui:msg>
-                        </a>
-                        <a href="#{SERVICES}" title="Services" class="{res.style.btn}">
-                            <ui:attribute ui:name='title' ui:description='Services'/>
-                            Services
-                        </a>
-                    </div>
-
+                    <a href="#{EXPERTISE}" title="Expertise" class="{res.style.btn}">
+                        <ui:attribute ui:name='title' ui:description='Expertise'/>
+                        Expertise
+                    </a>
+                    <a href="#{PRODUCTS}" title="Products" class="{res.style.btn}">
+                        <ui:attribute ui:name='title' ui:description='Products'/>
+                        <ui:msg description="- BTN - Products">Products</ui:msg>
+                    </a>
+                    <a href="#{SERVICES}" title="Services" class="{res.style.btn}">
+                        <ui:attribute ui:name='title' ui:description='Services'/>
+                        Services
+                    </a>
                 </div>
             </div>
         </section>

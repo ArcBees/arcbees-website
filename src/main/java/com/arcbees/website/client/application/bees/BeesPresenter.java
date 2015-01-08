@@ -16,8 +16,11 @@
 
 package com.arcbees.website.client.application.bees;
 
+import javax.inject.Provider;
+
 import com.arcbees.website.client.NameTokens;
 import com.arcbees.website.client.application.ApplicationPresenter;
+import com.arcbees.website.client.application.bees.quiz.QuestionPresenter;
 import com.google.gwt.event.shared.GwtEvent;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
@@ -36,10 +39,13 @@ public class BeesPresenter extends Presenter<BeesPresenter.MyView, BeesPresenter
         implements KonamiEvent.KonamiHandler, BeesUiHandlers {
     interface MyView extends View, HasUiHandlers<BeesUiHandlers> {
         void konami();
+
+        void initQuiz();
     }
 
     @ContentSlot
     public static final GwtEvent.Type<RevealContentHandler<?>> SLOT_BEE = new GwtEvent.Type<>();
+    public static final Object SLOT_QUIZ = new Object();
 
     @ProxyStandard
     @NameToken(NameTokens.BEES)
@@ -47,16 +53,19 @@ public class BeesPresenter extends Presenter<BeesPresenter.MyView, BeesPresenter
     }
 
     private final PlaceManager placeManager;
+    private final Provider<QuestionPresenter> questionPresenterProvider;
 
     @Inject
     BeesPresenter(
             EventBus eventBus,
             MyView view,
             PlaceManager placeManager,
-            MyProxy proxy) {
+            MyProxy proxy,
+            Provider<QuestionPresenter> questionPresenterProvider) {
         super(eventBus, view, proxy, ApplicationPresenter.SLOT_MAIN);
 
         this.placeManager = placeManager;
+        this.questionPresenterProvider = questionPresenterProvider;
 
         getView().setUiHandlers(this);
     }
@@ -70,6 +79,11 @@ public class BeesPresenter extends Presenter<BeesPresenter.MyView, BeesPresenter
     public void hidePopup() {
         clearSlot(SLOT_BEE);
         placeManager.revealPlace(new PlaceRequest.Builder().nameToken(NameTokens.BEES).build());
+    }
+
+    @Override
+    public void onInitQuiz() {
+        setInSlot(SLOT_QUIZ, questionPresenterProvider.get());
     }
 
     @Override

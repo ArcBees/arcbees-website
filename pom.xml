@@ -28,6 +28,7 @@
         <gsss.version>1.0-SNAPSHOT</gsss.version>
         <gwtquery.version>1.4.2</gwtquery.version>
         <gwt-maps-api.version>3.10.0-alpha-7</gwt-maps-api.version>
+        <tooltip.version>1.1</tooltip.version>
 
         <webappDirectory>${project.build.directory}/${project.build.finalName}</webappDirectory>
         <gae.home>
@@ -91,6 +92,11 @@
             <groupId>com.github.branflake2267</groupId>
             <artifactId>gwt-maps-api</artifactId>
             <version>${gwt-maps-api.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.arcbees.gquery</groupId>
+            <artifactId>tooltip</artifactId>
+            <version>${tooltip.version}</version>
         </dependency>
     </dependencies>
 

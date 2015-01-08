@@ -38,7 +38,7 @@
 }
 
 .products h2 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
 
     margin: 0em 0 .25em;
 }
@@ -53,6 +53,10 @@
 }
 
 @media (max-width: 649px) {
+    .products h2 {
+        font-size: 2.5rem;
+    }
+
     .products h2.presentation {
         font-size: 3rem;
     }
@@ -321,7 +325,15 @@ ul.social {
     color: #ebebeb;
 }
 
+.btns {
+    margin-top: 6.5rem;
+}
+
 @media (max-width: 649px) {
+    .btns a {
+        margin-bottom: 1rem;
+    }
+
     .socialTop {
         top: -20px;
     }
@@ -423,7 +435,7 @@ ul.social {
 /* --> In Details -- */
 
 .stripeDetails {
-    padding: 4rem 0 4.5rem;
+    padding: 4rem 0 3rem;
 }
 
 .stripeDetails h3 {
@@ -432,11 +444,19 @@ ul.social {
     margin-bottom: 0;
 }
 
+.stripeDetails span {
+    display: block;
+}
+
 .stripeDetails h4 {
     margin-top: .7em;
 }
 
 @media (max-width: 649px) {
+    .stripeDetails {
+        padding: 4rem 0 1rem;
+    }
+
     .stripeDetails h3 {
         margin-bottom: 2rem;
     }
@@ -522,6 +542,25 @@ a.anchor {
     display: block;
     margin: 20px auto 0;
     width: 400px;
+}
+
+.languageLogo {
+    margin-top: 4rem;
+    padding: 0;
+}
+
+.languageLogo li {
+    display: inline-block;
+    margin: 1rem 2rem;
+
+    vertical-align: middle;
+}
+
+.collapsible {
+    color: C_TEXT_LIGHT;
+    background-color: C_TEXT;
+
+    margin-bottom: 2rem;
 }
 
 /* -- Page : Jukito ---------------------------------------- */

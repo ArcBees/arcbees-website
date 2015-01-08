@@ -20,7 +20,9 @@
                         </a>
                     </li>
                     <li class="{res.style.menuStart}">
-                        <a href="#{HOME}">About</a>
+                        <a href="#{HOME}">
+                            <ui:msg description="About">About</ui:msg>
+                        </a>
                     </li>
                     <li>
                         <a href="#{EXPERTISE}">Expertise</a>
@@ -141,7 +143,7 @@
                     <i class="{fonts.icons.iconArcbees}">
                         <span class="{res.style.hidden}">Arcbees</span>
                     </i>
-                    Architects of simplicity
+                    <ui:msg description="Architects of simplicity">Architects of simplicity</ui:msg>
                 </p>
             </footer>
 

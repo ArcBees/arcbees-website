@@ -41,7 +41,7 @@
                     <ui:msg description="Personal achievements:">Personal achievements</ui:msg>
                 </h2>
                 <ul>
-                    <ui:msg description="Joel's prof achievements">
+                    <ui:msg description="Joel's pers achievements">
                         <li>Always willing to help others.</li>
                         <li>Eager to hike just about anywhere.</li>
                         <li>Master eater.</li>

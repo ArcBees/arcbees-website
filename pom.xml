@@ -29,7 +29,7 @@
         <gwtquery.version>1.4.2</gwtquery.version>
         <gwt-maps-api.version>3.10.0-alpha-7</gwt-maps-api.version>
         <gwtchosen.version>2.0.0-SNAPSHOT</gwtchosen.version>
-        <guava.version>17.0</guava.version>
+        <guava.version>18.0</guava.version>
 
         <webappDirectory>${project.build.directory}/${project.build.finalName}</webappDirectory>
         <gae.home>
@@ -101,7 +101,7 @@
             <groupId>com.google.guava</groupId>
             <artifactId>guava-gwt</artifactId>
             <version>${guava.version}</version>
-            <scope>compile</scope>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.google.guava</groupId>

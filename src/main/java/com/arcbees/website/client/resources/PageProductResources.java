@@ -80,6 +80,12 @@ public interface PageProductResources extends FontResources {
         String chosen();
 
         String gquery();
+
+        String btns();
+
+        String languageLogo();
+
+        String collapsible();
     }
 
     @Source("img/products/jukitoGuice.png")
@@ -96,6 +102,18 @@ public interface PageProductResources extends FontResources {
 
     @Source("img/products/gaeScreen2.png")
     ImageResource gaeScreen2();
+
+    @Source("img/products/javaLogo.png")
+    ImageResource javaLogo();
+
+    @Source("img/products/goLogo.png")
+    ImageResource goLogo();
+
+    @Source("img/products/phpLogo.png")
+    ImageResource phpLogo();
+
+    @Source("img/products/pythonLogo.png")
+    ImageResource pythonLogo();
 
     @Source({"com/arcbees/gsss/mixin/client/mixins.gss", "css/colors.gss", "fonts/geometria/geometria.gss", "css/pages/products.gss"})
     Style style();

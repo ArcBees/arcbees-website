@@ -9,6 +9,8 @@
     <ui:with field="page" type="com.arcbees.website.client.resources.PageProductResources"/>
     <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
 
+    <ui:import field="com.arcbees.website.client.NameTokens.*"/>
+
     <g:HTMLPanel styleName="{page.style.products} {page.style.chosen}">
 
         <nav class="{page.style.breadcrumb}">
@@ -58,26 +60,23 @@
                     </p>
                     <p>
                         <ui:msg description="GwtChosen is a port... - Paragraphe -">GwtChosen lets you jazz up boring
-                            select boxes with tons of useful features, while leveraging GWT optimizations and type safety.
+                            select boxes with tons of useful features, while leveraging GWT optimizations and type
+                            safety.
                         </ui:msg>
                     </p>
                 </div>
             </div>
-        </section>
-
-        <section class="{res.style.stripe} {res.style.centered}">
-            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_6} {res.grid.col_push_3} {res.grid.col_m_full} {res.grid.col_m_push_0}">
-                    <a href="#" class="{res.style.btn}">Support</a>
-                    <a href="#" class="{res.style.btn}"><i class="{fonts.icons.iconArrowOutside}"></i>Developer's
-                        Platform
+            <div class="{page.style.btns} {res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.centered}">
+                <div class="{res.grid.col} {res.grid.col_12}">
+                    <a href="#{SUPPORT}" class="{res.style.btn}">
+                        <ui:msg description="Support">Support</ui:msg>
+                    </a>
+                    <a href="#" class="{res.style.btn}">
+                        <i class="{fonts.icons.iconArrowOutside}"></i>
+                        <ui:msg description="- BTN - Developers Platform">Developer's Platform</ui:msg>
                     </a>
                 </div>
             </div>
-        </section>
-
-        <section class="{res.style.stripe} {res.style.medium2}">
-            <!--TODO: ADD EXEMPLES OF CHOSEN-->
         </section>
 
         <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.centered}">
@@ -86,7 +85,7 @@
             </h2>
         </section>
 
-        <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium1}">
+        <section class="{res.style.stripe} {page.style.stripeDetails}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
@@ -104,7 +103,7 @@
             </div>
         </section>
 
-        <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium2}">
+        <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium1}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
@@ -121,7 +120,7 @@
             </div>
         </section>
 
-        <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium3}">
+        <section class="{res.style.stripe} {page.style.stripeDetails}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
@@ -139,7 +138,7 @@
             </div>
         </section>
 
-        <section class="{res.style.stripe} {page.style.stripeDetails}">
+        <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium1}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
@@ -156,7 +155,7 @@
             </div>
         </section>
 
-        <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.medium1}">
+        <section class="{res.style.stripe} {page.style.stripeDetails}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <h3>
@@ -183,15 +182,16 @@
                     </h3>
                     <a href="#" class="{res.style.btn}">
                         <i class="{fonts.icons.iconArrowOutside}"></i>
-                        <ui:msg description="- BTN - Go to Arcbees Developers">Developer's</ui:msg>
-                        Platform
+                        <ui:msg description="- BTN - Developers Platform">Developer's Platform</ui:msg>
                     </a>
                 </div>
             </div>
         </section>
 
         <section class="{res.style.stripe} {page.style.colored} {res.style.centered}">
-            <h3>SHARE</h3>
+            <h3>
+                <ui:msg description="Share">SHARE</ui:msg>
+            </h3>
             <ul class="{page.style.social}">
                 <li>
                     <a href="#" class="{fonts.icons.iconFb}">

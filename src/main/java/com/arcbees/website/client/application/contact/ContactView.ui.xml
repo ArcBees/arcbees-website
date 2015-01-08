@@ -1,10 +1,15 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-        xmlns:g="urn:import:com.google.gwt.user.client.ui">
+        xmlns:g="urn:import:com.google.gwt.user.client.ui"
+        ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+        ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
+        ui:generateLocales="default">
 
     <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
     <ui:with field="page" type="com.arcbees.website.client.resources.PageContactResources"/>
     <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
+
+    <ui:import field="com.arcbees.website.client.NameTokens.*"/>
 
     <g:HTMLPanel styleName="{page.style.contact}">
 
@@ -16,21 +21,29 @@
             <g:SimplePanel ui:field="container"/>
         </section>
 
-        <section class="{page.style.workWithUs} {res.style.stripe} {res.style.dark} {res.style.triangleBottom} {res.style.nextColored}">
+        <section
+                class="{page.style.workWithUs} {res.style.stripe} {res.style.dark} {res.style.triangleBottom} {res.style.nextColored}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.focusBlock}">
                 <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
-
-                    <h2>Work with us</h2>
-                    <p>250-2299 boul. Versant nord<br/>Québec, Québec G1N 4G2
+                    <h2>
+                        <ui:msg description="Work with us">Work with us</ui:msg>
+                    </h2>
+                    <p>
+                        <ui:msg description="250-2299 boul. Versant nord...">250-2299 boul. Versant nord<br/>Québec,
+                            Québec G1N 4G2
+                        </ui:msg>
                     </p>
                     <p>
                         <a href="mailto:queenbee@arcbees.com">QUEENBEE@ARCBEES.COM</a>
                         <br/>
-                        <strong>Toll-free:</strong>
+                        <strong>
+                            <ui:msg description="Toll-free:">Toll-free:</ui:msg>
+                        </strong>
                         1.877.635.1585
                     </p>
-                        <a class="{res.style.btn}">Get directions</a>
-
+                    <a class="{res.style.btn}">
+                        <ui:msg description="Get directions">Get directions</ui:msg>
+                    </a>
                 </div>
             </div>
         </section>
@@ -38,8 +51,10 @@
         <section
                 class="{res.style.stripe} {res.style.colored} {res.style.triangleBottom} {res.style.nextLight} {res.style.centered}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <h2>Let's bee
-                    <span>friends</span>
+                <h2>
+                    <ui:msg description="Let's bee friends">Let's bee
+                        <span>friends</span>
+                    </ui:msg>
                 </h2>
                 <ul class="{page.style.social}">
                     <li>
@@ -65,8 +80,10 @@
         </section>
 
         <section class="{page.style.quebec} {res.style.stripe} {res.style.light} {res.style.centered}">
-            <h3>We have fun in
-                <span>beautiful quebec city</span>
+            <h3>
+                <ui:msg description="We have fun in beautiful quebec city">We have fun in
+                    <span>beautiful quebec city</span>
+                </ui:msg>
             </h3>
             <div>
                 une pelleter d'image
@@ -76,10 +93,21 @@
         <section class="{res.style.stripe} {res.style.light}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.btns} {res.style.centered}">
                 <div class="{res.grid.col} {res.grid.col_full}">
-                    <h3>Learn more about</h3>
-                    <a class="{res.style.btn}">Expertise</a>
-                    <a class="{res.style.btn}">Products</a>
-                    <a class="{res.style.btn}">Services</a>
+                    <h3>
+                        <ui:msg description="Learn more about">Learn more about</ui:msg>
+                    </h3>
+                    <a href="#{EXPERTISE}" title="Expertise" class="{res.style.btn}">
+                        <ui:attribute ui:name='title' ui:description='Expertise'/>
+                        Expertise
+                    </a>
+                    <a href="#{PRODUCTS}" title="Products" class="{res.style.btn}">
+                        <ui:attribute ui:name='title' ui:description='Products'/>
+                        <ui:msg description="- BTN - Products">Products</ui:msg>
+                    </a>
+                    <a href="#{SERVICES}" title="Services" class="{res.style.btn}">
+                        <ui:attribute ui:name='title' ui:description='Services'/>
+                        Services
+                    </a>
                 </div>
             </div>
         </section>

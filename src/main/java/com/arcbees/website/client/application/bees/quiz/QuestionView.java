@@ -20,7 +20,8 @@ import com.gwtplatform.mvp.client.ViewWithUiHandlers;
 import static com.arcbees.gquery.tooltip.client.Tooltip.Tooltip;
 import static com.google.gwt.query.client.GQuery.$;
 
-public class QuestionView extends ViewWithUiHandlers<QuestionUiHandlers> implements QuestionPresenter.MyView, AttachEvent.Handler {
+public class QuestionView extends ViewWithUiHandlers<QuestionUiHandlers>
+        implements QuestionPresenter.MyView, AttachEvent.Handler {
     interface Binder extends UiBinder<Widget, QuestionView> {
     }
 
@@ -58,12 +59,14 @@ public class QuestionView extends ViewWithUiHandlers<QuestionUiHandlers> impleme
     @Override
     public void setQuestion(int questionNumber) {
         setQuestionsVisible(true);
+
         question.setInnerText(quizMessages.question(questionNumber));
         this.questionNumber.setInnerText(String.valueOf(questionNumber));
 
         $(answer1Image).attr("title", quizMessages.answer1(questionNumber));
         $(answer2Image).attr("title", quizMessages.answer2(questionNumber));
         $(answer3Image).attr("title", quizMessages.answer3(questionNumber));
+
         destroyTooltips();
         createTooltips();
     }

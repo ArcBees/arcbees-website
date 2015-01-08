@@ -30,13 +30,19 @@
                 <g:Image ui:field="answer3Image" resource="{page.beeChristian}"/>
             </label>
             <input type="radio" name="quiz" id="answer3" value="answer3"/>
-            <g:Button ui:field="nextButton" styleName="{res.style.btn}">Next</g:Button>
+            <g:Button ui:field="nextButton" styleName="{res.style.btn}">
+                <ui:msg description="next">Next</ui:msg>
+            </g:Button>
         </div>
         <div ui:field="quizFinished" class="{res.style.hidden}">
             <!--TODO: Add quiz finished content -->
             Quiz finished!
-            <g:Button ui:field="share" styleName="{res.style.btn}">Share</g:Button>
-            <g:Button ui:field="tryAgain" styleName="{res.style.btn}">Try again</g:Button>
+            <g:Button ui:field="share" styleName="{res.style.btn}">
+                <ui:msg description="share">Share</ui:msg>
+            </g:Button>
+            <g:Button ui:field="tryAgain" styleName="{res.style.btn}">
+                <ui:msg description="tryAgain">Try again</ui:msg>
+            </g:Button>
         </div>
     </g:HTMLPanel>
 </ui:UiBinder>

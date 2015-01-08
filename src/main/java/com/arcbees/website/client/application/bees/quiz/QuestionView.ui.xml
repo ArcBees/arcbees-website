@@ -1,9 +1,9 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-        xmlns:g="urn:import:com.google.gwt.user.client.ui"
-        ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
-        ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
-        ui:generateLocales="default">
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+             ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
+             ui:generateLocales="default">
 
     <ui:import field="com.arcbees.website.client.NameTokens.*"/>
 
@@ -13,26 +13,26 @@
     <ui:with field="animations" type="com.arcbees.website.client.resources.AnimationsResources"/>
 
     <g:HTMLPanel>
-        <div ui:field="questions">
-            <label>Q.
-                <span ui:field="questionNumber"/>
-            </label>
-            <p ui:field="question"/>
-            <label for="answer1">
-                <g:Image ui:field="answer1Image" resource="{page.beeChristian}"/>
-            </label>
-            <input type="radio" name="quiz" id="answer1" value="answer1"/>
-            <label for="answer2">
-                <g:Image ui:field="answer2Image" resource="{page.beeChristian}"/>
-            </label>
-            <input type="radio" name="quiz" id="answer2" value="answer2"/>
-            <label for="answer3">
-                <g:Image ui:field="answer3Image" resource="{page.beeChristian}"/>
-            </label>
-            <input type="radio" name="quiz" id="answer3" value="answer3"/>
-            <g:Button ui:field="nextButton" styleName="{res.style.btn}">
-                <ui:msg description="next">Next</ui:msg>
-            </g:Button>
+        <div ui:field="questions" data-question="0" class="{page.style.quiz} {res.grid.row} {res.style.clearfix} {res.style.centered}">
+            <div class="{res.grid.col} {res.grid.col_full}">
+                <label>Q. <span ui:field="questionNumber"/></label>
+                <p ui:field="question"/>
+            </div>
+            <div class="{res.grid.col} {res.grid.col_full}">
+                <input type="radio" name="quiz" id="answer1" value="answer1"/>
+                <label for="answer1"></label>
+
+                <input type="radio" name="quiz" id="answer2" value="answer2"/>
+                <label for="answer2"></label>
+
+                <input type="radio" name="quiz" id="answer3" value="answer3"/>
+                <label for="answer3"></label>
+            </div>
+            <div class="{res.grid.col} {res.grid.col_full}">
+                <g:Button ui:field="nextButton" styleName="{res.style.btn}">
+                    <ui:msg description="next">Next</ui:msg>
+                </g:Button>
+            </div>
         </div>
         <div ui:field="quizFinished" class="{res.style.hidden}">
             <!--TODO: Add quiz finished content -->

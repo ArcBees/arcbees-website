@@ -1,18 +1,19 @@
 package com.arcbees.website.client.application.maps;
 
 import java.util.ArrayList;
-import java.util.Stack;
+import java.util.LinkedList;
+import java.util.Queue;
 
 import com.google.gwt.maps.client.LoadApi;
 
 public class GwtMapsLoaderImpl implements GwtMapsLoader {
-    private final Stack<Runnable> loadedCallbacks;
+    private final Queue<Runnable> loadedCallbacks;
 
     private boolean loaded;
     private boolean pending;
 
     GwtMapsLoaderImpl() {
-        loadedCallbacks = new Stack<>();
+        loadedCallbacks = new LinkedList<>();
     }
 
     @Override
@@ -52,7 +53,7 @@ public class GwtMapsLoaderImpl implements GwtMapsLoader {
 
     private void purgeCallbacks() {
         while (loadedCallbacks.iterator().hasNext()) {
-            loadedCallbacks.pop().run();
+            loadedCallbacks.remove().run();
         }
     }
 }

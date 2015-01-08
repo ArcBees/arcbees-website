@@ -16,7 +16,6 @@
 
 package com.arcbees.website.client.application.contact;
 
-import com.arcbees.website.client.GwtMapsLoadedEvent;
 import com.arcbees.website.client.NameTokens;
 import com.arcbees.website.client.application.ApplicationPresenter;
 import com.google.inject.Inject;
@@ -27,7 +26,7 @@ import com.gwtplatform.mvp.client.annotations.NameToken;
 import com.gwtplatform.mvp.client.annotations.ProxyStandard;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 
-public class ContactPresenter extends Presenter<ContactPresenter.MyView, ContactPresenter.MyProxy> implements GwtMapsLoadedEvent.GwtMapsLoadedHandler {
+public class ContactPresenter extends Presenter<ContactPresenter.MyView, ContactPresenter.MyProxy> {
     interface MyView extends View {
         void drawMap();
     }
@@ -46,14 +45,9 @@ public class ContactPresenter extends Presenter<ContactPresenter.MyView, Contact
     }
 
     @Override
-    public void onGwtMaps(GwtMapsLoadedEvent event) {
+    protected void onReveal() {
+        super.onReveal();
+
         getView().drawMap();
-    }
-
-    @Override
-    protected void onBind() {
-        super.onBind();
-
-        addRegisteredHandler(GwtMapsLoadedEvent.TYPE, this);
     }
 }

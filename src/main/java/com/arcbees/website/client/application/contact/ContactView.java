@@ -16,11 +16,11 @@
 
 package com.arcbees.website.client.application.contact;
 
+import com.arcbees.website.client.application.maps.GwtMapsLoader;
 import com.arcbees.website.client.resources.PageContactResources;
 import com.google.gwt.ajaxloader.client.ArrayHelper;
 import com.google.gwt.core.client.JsArray;
 import com.google.gwt.maps.client.MapOptions;
-import com.google.gwt.maps.client.MapTypeId;
 import com.google.gwt.maps.client.MapWidget;
 import com.google.gwt.maps.client.base.LatLng;
 import com.google.gwt.maps.client.controls.ControlPosition;
@@ -51,24 +51,40 @@ public class ContactView extends ViewImpl implements ContactPresenter.MyView {
     SimplePanel container;
 
     private final PageContactResources pageContactResources;
+    private final GwtMapsLoader gwtMapsLoader;
 
     @Inject
     ContactView(
             Binder binder,
-            PageContactResources pageContactResources) {
+            PageContactResources pageContactResources,
+            GwtMapsLoader gwtMapsLoader) {
         this.pageContactResources = pageContactResources;
+        this.gwtMapsLoader = gwtMapsLoader;
 
         initWidget(binder.createAndBindUi(this));
     }
 
     @Override
     public void drawMap() {
+        if (container.getWidget() != null) {
+            return;
+        }
+
+        gwtMapsLoader.loadGwtMaps(new Runnable() {
+            @Override
+            public void run() {
+                onMapsLoaded();
+            }
+        });
+    }
+
+    private void onMapsLoaded() {
         // -- HOW TO STYLE A GOOGLE MAP
         // -> First, we create the style. To help : http://software.stadtwerk.org/google_maps_colorizr/
         MapTypeStyle style1 = MapTypeStyle.newInstance();
         style1.setElementType(MapTypeStyleElementType.GEOMETRY);
         style1.setFeatureType(MapTypeStyleFeatureType.ROAD);
-        style1.setStylers(new MapTypeStyler[] {
+        style1.setStylers(new MapTypeStyler[]{
                 MapTypeStyler.newHueStyler("#FFF"),
                 MapTypeStyler.newSaturationStyler(-100),
                 MapTypeStyler.newLightnessStyler(100)
@@ -77,7 +93,7 @@ public class ContactView extends ViewImpl implements ContactPresenter.MyView {
         MapTypeStyle style2 = MapTypeStyle.newInstance();
         style2.setElementType(MapTypeStyleElementType.ALL);
         style2.setFeatureType(MapTypeStyleFeatureType.LANDSCAPE);
-        style2.setStylers(new MapTypeStyler[] {
+        style2.setStylers(new MapTypeStyler[]{
                 MapTypeStyler.newHueStyler("#cccccc"),
                 MapTypeStyler.newSaturationStyler(-100),
                 MapTypeStyler.newLightnessStyler(-10)
@@ -86,7 +102,7 @@ public class ContactView extends ViewImpl implements ContactPresenter.MyView {
         MapTypeStyle style3 = MapTypeStyle.newInstance();
         style3.setElementType(MapTypeStyleElementType.ALL);
         style3.setFeatureType(MapTypeStyleFeatureType.POI);
-        style3.setStylers(new MapTypeStyler[] {
+        style3.setStylers(new MapTypeStyler[]{
                 MapTypeStyler.newHueStyler("#f00"),
                 MapTypeStyler.newSaturationStyler(-100),
                 MapTypeStyler.newLightnessStyler(9),
@@ -95,19 +111,19 @@ public class ContactView extends ViewImpl implements ContactPresenter.MyView {
         MapTypeStyle style4 = MapTypeStyle.newInstance();
         style4.setElementType(MapTypeStyleElementType.ALL);
         style4.setFeatureType(MapTypeStyleFeatureType.WATER);
-        style4.setStylers(new MapTypeStyler[] {
+        style4.setStylers(new MapTypeStyler[]{
                 MapTypeStyler.newHueStyler("#1c1c1c"),
                 MapTypeStyler.newSaturationStyler(-100),
                 MapTypeStyler.newLightnessStyler(86),
         });
 
-        MapTypeStyle[] array = { style1, style2, style3, style4 };
+        MapTypeStyle[] array = {style1, style2, style3, style4};
 
         JsArray<MapTypeStyle> styles = ArrayHelper.toJsArray(array);
 
         // -> Then we tell the map to use our new style by default
         MapTypeControlOptions controlOptions = MapTypeControlOptions.newInstance();
-        controlOptions.setMapTypeIds(new String[] {});
+        controlOptions.setMapTypeIds(new String[]{});
         controlOptions.setPosition(ControlPosition.TOP_RIGHT);
 
         // -> And tell the map what our custom style is

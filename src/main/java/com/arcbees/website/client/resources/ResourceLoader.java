@@ -27,6 +27,7 @@ public class ResourceLoader {
             DevelopersResources developersResources,
             AnimationsResources animationsResources,
             PageProductResources pageProductResources,
+            PageProductChosenResources pageProductChosenResources,
             PageServicesResources pageServicesResources,
             PageContactResources pageContactResources,
             PageCareersResources pageCareersResources,
@@ -43,6 +44,7 @@ public class ResourceLoader {
         fontResources.icons().ensureInjected();
         pageHomeResources.style().ensureInjected();
         pageProductResources.style().ensureInjected();
+        pageProductChosenResources.css().ensureInjected();
         pageContactResources.style().ensureInjected();
         pageCareersResources.style().ensureInjected();
         pageServicesResources.style().ensureInjected();

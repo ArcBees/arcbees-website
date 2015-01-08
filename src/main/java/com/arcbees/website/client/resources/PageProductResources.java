@@ -86,6 +86,8 @@ public interface PageProductResources extends FontResources {
         String languageLogo();
 
         String collapsible();
+
+        String chosenHolder();
     }
 
     @Source("img/products/jukitoGuice.png")

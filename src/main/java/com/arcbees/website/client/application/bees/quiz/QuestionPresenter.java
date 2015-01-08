@@ -50,6 +50,6 @@ public class QuestionPresenter extends PresenterWidget<MyView> implements Questi
 
     @Override
     protected void onBind() {
-        getView().setQuestion(1);
+        onNextQuestion();
     }
 }

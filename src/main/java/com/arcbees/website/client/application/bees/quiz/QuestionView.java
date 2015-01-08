@@ -79,6 +79,7 @@ public class QuestionView extends ViewWithUiHandlers<QuestionUiHandlers>
     @Override
     public void onAttachOrDetach(AttachEvent attachEvent) {
         if (attachEvent.isAttached()) {
+            setQuestion(Integer.valueOf($(questions).attr("data-question")));
             createTooltips();
         } else {
             destroyTooltips();

@@ -17,6 +17,8 @@
 package com.arcbees.website.client.application.products.chosen;
 
 import com.arcbees.chosen.client.Chosen;
+import com.arcbees.chosen.client.ChosenOptions;
+import com.arcbees.website.client.resources.PageProductChosenResources;
 import com.google.gwt.dom.client.SelectElement;
 import com.google.gwt.event.logical.shared.AttachEvent;
 import com.google.gwt.uibinder.client.UiBinder;
@@ -34,9 +36,13 @@ public class ChosenView extends ViewImpl implements ChosenPresenter.MyView, Atta
     @UiField
     SelectElement selectToEnhance;
 
+    private final PageProductChosenResources pageProductChosenResources;
+
     @Inject
     ChosenView(
+            PageProductChosenResources pageProductChosenResources,
             Binder binder) {
+        this.pageProductChosenResources = pageProductChosenResources;
         initWidget(binder.createAndBindUi(this));
 
         asWidget().addAttachHandler(this);
@@ -45,7 +51,8 @@ public class ChosenView extends ViewImpl implements ChosenPresenter.MyView, Atta
     @Override
     public void onAttachOrDetach(AttachEvent event) {
         if (event.isAttached()) {
-            $(selectToEnhance).as(Chosen.Chosen).chosen();
+            ChosenOptions options = new ChosenOptions().setResources(pageProductChosenResources);
+            $(selectToEnhance).as(Chosen.Chosen).chosen(options);
         }
     }
 }

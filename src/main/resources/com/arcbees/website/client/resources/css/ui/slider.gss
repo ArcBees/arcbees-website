@@ -1,0 +1,97 @@
+@require "gsss-mixins";
+
+@def ARROW resourceUrl("sliderArrow");
+@def DOT resourceUrl("sliderDot");
+
+.slider {
+    position: relative;
+    z-index: 2000;
+    margin: 0 auto;
+    width: 980px;
+}
+
+/* todo: the slider will not scale well on Mobile. Seek with Jason a solution to fix this */
+.slider .container {
+    width: 631px;
+    height: 371px;
+
+    line-height: 371px;
+    text-align: center;
+
+    overflow: hidden;
+}
+
+.slider .container img {
+    /*margin: -100%;*/
+}
+
+.slider .prev,
+.slider .next {
+    background-image: ARROW;
+    background-position: center top;
+    text-indent: -9999px;
+
+    display: block;
+    width: 21px;
+    height: 33px;
+    margin-top: -16px;
+
+    position: absolute;
+    top: 50%;
+    z-index: 3000;
+}
+
+.slider .prev:hover,
+.slider .next:hover {
+    background-position: center bottom;
+}
+
+.slider .prev.disabled,
+.slider .next.disabled,
+.slider .prev.disabled:hover,
+.slider .next.disabled:hover {
+    background-position: center top;
+
+    cursor: default;
+
+@mixin opacity(0.2);
+}
+
+.slider .prev {
+    left: 20px;
+
+@mixin flip_horizontal();
+}
+
+.slider .next {
+    right: 20px;
+}
+
+.slider .pager {
+    text-align: right;
+
+    position: absolute;
+    bottom: 2px;
+    right: 7px;
+    z-index: 2500;
+}
+
+.slider .pager a {
+    background-image: DOT;
+    background-position: center top;
+
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin-left: 7px;
+
+    cursor: default;
+}
+
+.slider .pager a.actif {
+    background-position: center bottom;
+}
+
+.slider .pager a span {
+    display: none;
+}

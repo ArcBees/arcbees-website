@@ -34,7 +34,8 @@ public class ResourceLoader {
             PageHomeResources pageHomeResources,
             PageBeesResources pageBeesResources,
             PageExpertisesResources pageExpertisesResources,
-            PageSupportResources pageSupportResources) {
+            PageSupportResources pageSupportResources,
+            SliderResources sliderResources) {
         appResources.normalize().ensureInjected();
         appResources.style().ensureInjected();
         appResources.grid().ensureInjected();
@@ -51,5 +52,6 @@ public class ResourceLoader {
         pageExpertisesResources.style().ensureInjected();
         pageSupportResources.style().ensureInjected();
         pageBeesResources.style().ensureInjected();
+        sliderResources.style().ensureInjected();
     }
 }

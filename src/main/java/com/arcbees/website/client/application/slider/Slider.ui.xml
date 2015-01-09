@@ -1,0 +1,17 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+        xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+    <ui:with field="carouselRes" type="com.arcbees.website.client.resources.SliderResources"/>
+
+    <g:HTMLPanel styleName="{carouselRes.style.slider}">
+        <div ui:field="contents" class="{carouselRes.style.container}"></div>
+        <nav>
+            <g:Anchor ui:field="prev" href="javascript:;" styleName="{carouselRes.style.prev} {carouselRes.style.disabled}">
+                <ui:msg description="TabDetailsView Prev">Prev</ui:msg>
+            </g:Anchor>
+            <g:Anchor ui:field="next" href="javascript:;" styleName="{carouselRes.style.next}">
+                <ui:msg description="TabDetailsView Next">Next</ui:msg>
+            </g:Anchor>
+        </nav>
+        <div ui:field="pager" class="{carouselRes.style.pager}"></div>
+    </g:HTMLPanel>
+</ui:UiBinder>

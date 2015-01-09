@@ -104,15 +104,19 @@ public class SeoWidget extends ContainerNode implements AttachEvent.Handler {
         setMetaTag(metaElementsMap, "fb:app_id", seoElements.getFbAppId());
 
         OpenGraph openGraph = seoElements.getOpenGraph();
-        setMetaTag(metaElementsMap, "og:title", seoElements.getTitle());
-        setMetaTag(metaElementsMap, "og:description", seoElements.getDescription());
-        setMetaTag(metaElementsMap, "og:type", openGraph.getType());
+        if (openGraph != null) {
+            setMetaTag(metaElementsMap, "og:title", seoElements.getTitle());
+            setMetaTag(metaElementsMap, "og:description", seoElements.getDescription());
+            setMetaTag(metaElementsMap, "og:type", openGraph.getType());
 
-        Image image = openGraph.getImage();
-        setMetaTag(metaElementsMap, "og:image", image.getUrl());
-        setMetaTag(metaElementsMap, "og:image:type", image.getMimeType());
-        setMetaTag(metaElementsMap, "og:image:height", toString(image.getHeight()));
-        setMetaTag(metaElementsMap, "og:image:width", toString(image.getWidth()));
+            Image image = openGraph.getImage();
+            if (image != null) {
+                setMetaTag(metaElementsMap, "og:image", image.getUrl());
+                setMetaTag(metaElementsMap, "og:image:type", image.getMimeType());
+                setMetaTag(metaElementsMap, "og:image:height", toString(image.getHeight()));
+                setMetaTag(metaElementsMap, "og:image:width", toString(image.getWidth()));
+            }
+        }
     }
 
     private void setMetaTag(

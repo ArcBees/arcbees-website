@@ -8,6 +8,7 @@
     <inherits name='com.google.gwt.maps.Maps' />
     <inherits name="com.google.gwt.query.Query"/>
     <inherits name="com.arcbees.gsss.animation.Animation"/>
+    <inherits name="com.arcbees.seo.Seo"/>
     <inherits name="com.arcbees.gquery.tooltip.Tooltip"/>
     <inherits name="com.arcbees.chosen.Chosen"/>
 

@@ -67,11 +67,11 @@
 .iconEmail:before {content: "\e615";}
 .iconPhone:before {content: "\e616";}
 .iconUser:before {content: "\e617";}
-.iconArcbees:before { content: "\e601";}
-.iconSignCode:before { content: "\e600";}
+.iconArcbees:before { content: "\e630";}
+.iconSignCode:before { content: "\e632";}
 .iconArcbeesName:before { content: "\e613";}
 .iconArrowOutside:before { content: "\e603";}
-.iconArrowDown:before { content: "\e602";}
+.iconArrowDown:before { content: "\e631";}
 .iconBeer:before { content: "\e61b";}
 .iconChosen:before { content: "\e607";}
 .iconDevTime:before { content: "\e609";}

@@ -83,7 +83,9 @@ a {
  */
 
 a:active,
-a:hover {
+a:hover,
+button:active,
+button:hover {
     outline: 0;
 }
 

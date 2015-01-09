@@ -3,6 +3,12 @@
 @require "gsss-mixins";
 @require "gsss-animation";
 
+@def QUIZ_QUESTIONS_1 resourceUrl("questions1");
+@def QUIZ_QUESTIONS_2 resourceUrl("questions2");
+@def QUIZ_QUESTIONS_3 resourceUrl("questions3");
+@def QUIZ_QUESTIONS_4 resourceUrl("questions4");
+@def QUIZ_QUESTIONS_5 resourceUrl("questions5");
+
 /* -- Page : bees ----------------------------------------- */
 
 .bees .header > div {
@@ -555,6 +561,97 @@ a:visited.popupClose {
         border-left-width: 5px;
         border-right-width: 5px;
     }
+}
+
+/* -- Quiz --------------------------------------------- */
+
+.quiz p {
+    margin-bottom: 2em;
+}
+
+.quiz button {
+    margin-top: 3em;
+}
+
+.quiz input[type=radio]:not(old) {
+    display: none;
+}
+
+.quiz input[type=radio]:not(old) + label::before {
+    content: "";
+    background-image: QUIZ_QUESTIONS_1;
+    background-position: left top;
+    background-repeat: no-repeat;
+
+    display: inline-block;
+    width: 164px;
+    height: 185px;
+    padding: 0;
+
+    cursor: pointer;
+}
+
+.quiz input[type=radio]:not(old)#answer2 + label::before {
+    background-position: center top;
+}
+
+.quiz input[type=radio]:not(old)#answer3 + label::before {
+    background-position: right top;
+}
+
+.quiz input[type=radio]:checked:not(old) + label::before {
+    background-position: left bottom;
+}
+
+.quiz input[type=radio]:checked:not(old)#answer2 + label::before {
+    background-position: center bottom;
+}
+
+.quiz input[type=radio]:checked:not(old)#answer3 + label::before {
+    background-position: right bottom;
+}
+
+.quiz[data-question="2"] input[type=radio]:not(old) + label::before {
+    background-image: QUIZ_QUESTIONS_2;
+}
+
+.quiz[data-question="3"] input[type=radio]:not(old) + label::before {
+    background-image: QUIZ_QUESTIONS_3;
+}
+
+.quiz[data-question="4"] input[type=radio]:not(old) + label::before {
+    background-image: QUIZ_QUESTIONS_4;
+}
+
+.quiz[data-question="5"] input[type=radio]:not(old) + label::before {
+    background-image: QUIZ_QUESTIONS_5;
+}
+
+.quizEnd h2 i {
+    font-size: 300%;
+
+    display: block;
+    margin-bottom: 3rem;
+}
+
+.quizEnd h2 em {
+    color: C_PRIMARY;
+}
+
+.quizEnd p {
+    font-size: 2rem;
+}
+
+.quizEnd p em {
+    font-size: 60%;
+    color: C_PRIMARY;
+
+    display: block;
+    margin-top: 5rem;
+}
+
+.quizEnd button {
+    display: none;
 }
 
 /* -- offers ------------------------------------------- */

@@ -81,14 +81,36 @@ public interface PageBeesResources extends FontResources {
         String colDroite();
 
         String colGaucheLarge();
+
+        String quiz();
+
+        String quizEnd();
     }
 
     @Source("img/bees/christian.jpg")
     ImageResource beeChristian();
 
+    @Source("img/bees/quiz/questions1.png")
+    ImageResource questions1();
+
+    @Source("img/bees/quiz/questions2.png")
+    ImageResource questions2();
+
+    @Source("img/bees/quiz/questions3.png")
+    ImageResource questions3();
+
+    @Source("img/bees/quiz/questions4.png")
+    ImageResource questions4();
+
+    @Source("img/bees/quiz/questions5.png")
+    ImageResource questions5();
+
     @Source({"com/arcbees/gsss/animation/client/animationsettings.gss",
-            "com/arcbees/gsss/animation/client/animations.gss", "com/arcbees/gsss/mixin/client/mixins.gss",
-            "css/colors.gss", "fonts/geometria/geometria.gss", "css/pages/bees.gss"})
+            "com/arcbees/gsss/animation/client/animations.gss",
+            "com/arcbees/gsss/mixin/client/mixins.gss",
+            "fonts/geometria/geometria.gss",
+            "css/colors.gss",
+            "css/pages/bees.gss"})
     Style style();
 
     interface QuizMessages extends Messages {

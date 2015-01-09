@@ -422,6 +422,7 @@ img {
 .dark .btn,
 .dark .btn:visited {
     color: C_TEXT_LIGHT;
+    background-color: transparent;
     border: 2px solid C_TEXT_LIGHT;
 }
 
@@ -431,6 +432,11 @@ img {
 
 .dark .btn:hover {
     color: C_TEXT;
+    background-color: transparent;
+}
+
+.dark button.btn:hover {
+    background-color: C_TEXT_LIGHT;
 }
 
 .dark .btn.collapsible {

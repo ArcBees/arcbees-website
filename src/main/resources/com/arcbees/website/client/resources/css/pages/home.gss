@@ -9,7 +9,7 @@
 /* -- Page : home ---------------------------------------- */
 
 .home .header:before {
-    content: "\e601";
+    content: "\e630";
     font-family: "icons";
     font-size: 40.5rem;
     color: #fff;

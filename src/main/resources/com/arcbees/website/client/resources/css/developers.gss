@@ -157,7 +157,7 @@ ul.social {
 
 .slideshow a.prev::before,
 .slideshow a.next::before {
-    content: "\e602";
+    content: "\e631";
     font-family: "icons";
 }
 

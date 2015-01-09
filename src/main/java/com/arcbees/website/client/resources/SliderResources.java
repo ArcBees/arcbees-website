@@ -37,10 +37,10 @@ public interface SliderResources extends ClientBundle {
         String container();
     }
 
-    @Source("img/carousel/sliderArrow.png")
+    @Source("img/slider/sliderArrow.png")
     ImageResource sliderArrow();
 
-    @Source("img/carousel/sliderDot.png")
+    @Source("img/slider/sliderDot.png")
     ImageResource sliderDot();
 
     @Source({"com/arcbees/gsss/mixin/client/mixins.gss", "css/colors.gss", "css/ui/slider.gss"})

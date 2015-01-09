@@ -45,7 +45,7 @@ public class Slider implements IsWidget {
 
     interface HtmlTemplate extends SafeHtmlTemplates {
         @Template("<a href=\"javascript:;\" " + DATA_INDEX + "=\"{0}\"><span>{0}</span></a>")
-        SafeHtml pagerDot(String index);
+        SafeHtml pagerDot(int index);
     }
 
     private static Binder BINDER = GWT.create(Binder.class);
@@ -119,7 +119,7 @@ public class Slider implements IsWidget {
 
     private void drawDots() {
         for (int i = 0; i < itemCount; i++) {
-            SafeHtml dot = TEMPLATE.pagerDot(i + "");
+            SafeHtml dot = TEMPLATE.pagerDot(i);
             $(pager).append(dot.asString());
         }
 

@@ -16,44 +16,28 @@
 
 package com.arcbees.website.client;
 
-import java.util.ArrayList;
-
 import javax.inject.Inject;
 
-import com.google.gwt.event.shared.GwtEvent;
-import com.google.gwt.event.shared.HasHandlers;
-import com.google.gwt.maps.client.LoadApi;
-import com.google.web.bindery.event.shared.EventBus;
+import com.arcbees.website.client.application.maps.GwtMapsLoader;
 import com.gwtplatform.mvp.client.Bootstrapper;
 import com.gwtplatform.mvp.client.proxy.PlaceManager;
 
-public class BootstrapperImpl implements Bootstrapper, HasHandlers {
+public class BootstrapperImpl implements Bootstrapper {
     private final PlaceManager placeManager;
-    private final EventBus eventBus;
+    private final GwtMapsLoader gwtMapsLoader;
 
     @Inject
-    BootstrapperImpl(PlaceManager placeManager,
-                     EventBus eventBus) {
+    BootstrapperImpl(
+            PlaceManager placeManager,
+            GwtMapsLoader gwtMapsLoader) {
         this.placeManager = placeManager;
-        this.eventBus = eventBus;
+        this.gwtMapsLoader = gwtMapsLoader;
     }
 
     @Override
     public void onBootstrap() {
-        ArrayList<LoadApi.LoadLibrary> libraries = new ArrayList<>();
-
-        LoadApi.go(new Runnable() {
-            @Override
-            public void run() {
-                GwtMapsLoadedEvent.fire(BootstrapperImpl.this);
-            }
-        }, libraries, true);
+        gwtMapsLoader.loadGwtMaps();
 
         placeManager.revealCurrentPlace();
-    }
-
-    @Override
-    public void fireEvent(GwtEvent<?> event) {
-        eventBus.fireEvent(event);
     }
 }

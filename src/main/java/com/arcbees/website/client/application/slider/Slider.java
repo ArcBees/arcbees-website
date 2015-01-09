@@ -60,7 +60,7 @@ public class Slider implements IsWidget {
     @UiField
     Anchor next;
     @UiField
-    SliderResources carouselRes;
+    SliderResources sliderResources;
     @UiField
     DivElement pager;
 
@@ -140,17 +140,17 @@ public class Slider implements IsWidget {
         $(contents).append(item);
 
         if (index == 0) {
-            $(prev).addClass(carouselRes.style().disabled());
-            $(next).removeClass(carouselRes.style().disabled());
+            $(prev).addClass(sliderResources.style().disabled());
+            $(next).removeClass(sliderResources.style().disabled());
         } else if (index == maxIndex) {
-            $(prev).removeClass(carouselRes.style().disabled());
-            $(next).addClass(carouselRes.style().disabled());
+            $(prev).removeClass(sliderResources.style().disabled());
+            $(next).addClass(sliderResources.style().disabled());
         } else {
-            $(prev).removeClass(carouselRes.style().disabled());
-            $(next).removeClass(carouselRes.style().disabled());
+            $(prev).removeClass(sliderResources.style().disabled());
+            $(next).removeClass(sliderResources.style().disabled());
         }
 
-        $("." + carouselRes.style().actif(), pager).removeClass(carouselRes.style().actif());
-        $(pager).children().eq(index).addClass(carouselRes.style().actif());
+        $("." + sliderResources.style().actif(), pager).removeClass(sliderResources.style().actif());
+        $(pager).children().eq(index).addClass(sliderResources.style().actif());
     }
 }

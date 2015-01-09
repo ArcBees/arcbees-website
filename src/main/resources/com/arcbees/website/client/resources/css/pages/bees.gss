@@ -198,7 +198,7 @@
 
 .bees a.prev::before,
 .bees a.next::before {
-    content: "\e602";
+    content: "\e631";
     font-family: "icons";
 }
 

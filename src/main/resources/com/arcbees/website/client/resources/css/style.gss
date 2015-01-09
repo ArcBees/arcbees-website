@@ -341,7 +341,7 @@ img {
 
 .btn.collapsible::before,
 .btn.collapsible::after {
-    content: "\e602";
+    content: "\e631";
     font-size: 2rem;
     font-family: "icons";
     color: C_TEXT_LIGHT;

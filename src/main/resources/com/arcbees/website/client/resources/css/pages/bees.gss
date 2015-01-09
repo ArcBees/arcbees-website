@@ -565,6 +565,14 @@ a:visited.popupClose {
 
 /* -- Quiz --------------------------------------------- */
 
+.quiz p {
+    margin-bottom: 2em;
+}
+
+.quiz button {
+    margin-top: 3em;
+}
+
 .quiz input[type=radio]:not(old) {
     display: none;
 }
@@ -617,6 +625,33 @@ a:visited.popupClose {
 
 .quiz[data-question="5"] input[type=radio]:not(old) + label::before {
     background-image: QUIZ_QUESTIONS_5;
+}
+
+.quizEnd h2 i {
+    font-size: 300%;
+
+    display: block;
+    margin-bottom: 3rem;
+}
+
+.quizEnd h2 em {
+    color: C_PRIMARY;
+}
+
+.quizEnd p {
+    font-size: 2rem;
+}
+
+.quizEnd p em {
+    font-size: 60%;
+    color: C_PRIMARY;
+
+    display: block;
+    margin-top: 5rem;
+}
+
+.quizEnd button {
+    display: none;
 }
 
 /* -- offers ------------------------------------------- */

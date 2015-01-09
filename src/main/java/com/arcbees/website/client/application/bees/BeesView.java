@@ -21,6 +21,7 @@ import com.google.gwt.dom.client.AnchorElement;
 import com.google.gwt.dom.client.BrowserEvents;
 import com.google.gwt.dom.client.DivElement;
 import com.google.gwt.dom.client.Element;
+import com.google.gwt.dom.client.HeadingElement;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.logical.shared.AttachEvent;
 import com.google.gwt.query.client.Function;
@@ -55,6 +56,8 @@ public class BeesView extends ViewWithUiHandlers<BeesUiHandlers> implements Bees
     Button initQuizButton;
     @UiField
     HTMLPanel quizSection;
+    @UiField
+    HeadingElement quizTitle;
 
     @Inject
     BeesView(
@@ -128,6 +131,7 @@ public class BeesView extends ViewWithUiHandlers<BeesUiHandlers> implements Bees
 
     @UiHandler("initQuizButton")
     void onInitQuizButton(ClickEvent event) {
+        $(quizTitle).hide();
         getUiHandlers().onInitQuiz();
     }
 }

@@ -7,6 +7,7 @@ import com.arcbees.website.client.resources.AppResources;
 import com.arcbees.website.client.resources.PageBeesResources.QuizMessages;
 import com.arcbees.website.client.resources.PageBeesTooltipResources;
 import com.google.gwt.dom.client.DivElement;
+import com.google.gwt.dom.client.HeadingElement;
 import com.google.gwt.dom.client.ParagraphElement;
 import com.google.gwt.dom.client.SpanElement;
 import com.google.gwt.event.dom.client.ClickEvent;
@@ -88,7 +89,9 @@ public class QuestionView extends ViewWithUiHandlers<QuestionUiHandlers>
 
     @UiHandler("nextButton")
     void onNext(ClickEvent event) {
-        getUiHandlers().onNextQuestion();
+        if ($("input[name='quiz']").is(":checked")) {
+            getUiHandlers().onNextQuestion();
+        }
     }
 
     @UiHandler("tryAgain")

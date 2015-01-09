@@ -34,15 +34,23 @@
                 </g:Button>
             </div>
         </div>
-        <div ui:field="quizFinished" class="{res.style.hidden}">
-            <!--TODO: Add quiz finished content -->
-            Quiz finished!
-            <g:Button ui:field="share" styleName="{res.style.btn}">
-                <ui:msg description="share">Share</ui:msg>
-            </g:Button>
-            <g:Button ui:field="tryAgain" styleName="{res.style.btn}">
-                <ui:msg description="tryAgain">Try again</ui:msg>
-            </g:Button>
+        <div ui:field="quizFinished" class="{res.style.hidden} {page.style.quizEnd} {res.style.wrapper} {res.style.clearfix} {res.style.centered}">
+            <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1_3}">
+                <h2>
+                    <i class="{fonts.icons.iconArcbees}"></i>
+                    Everybody can be a bee<em>*</em>
+                </h2>
+                <p>Be the best at what you do</p>
+                <p>
+                    <em>*but you must know how to play BabyFoot table</em>
+                </p>
+                <g:Button ui:field="share" styleName="{res.style.btn}">
+                    <ui:msg description="share">Share</ui:msg>
+                </g:Button>
+                <g:Button ui:field="tryAgain" styleName="{res.style.btn}">
+                    <ui:msg description="tryAgain">Try again</ui:msg>
+                </g:Button>
+            </div>
         </div>
     </g:HTMLPanel>
 </ui:UiBinder>

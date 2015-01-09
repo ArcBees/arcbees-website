@@ -294,7 +294,7 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_full}">
 
-                    <h2>
+                    <h2 ui:field="quizTitle">
                         <ui:msg description="Bee-attitude">Bee-attitude</ui:msg>
                     </h2>
 

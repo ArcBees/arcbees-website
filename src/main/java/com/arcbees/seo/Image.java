@@ -24,7 +24,11 @@ public class Image {
     private final Integer height;
     private final String mimeType;
 
-    public Image(String url, Integer height, Integer width, OgImage.MimeType type) {
+    public Image(
+            String url,
+            Integer height,
+            Integer width,
+            OgImage.MimeType type) {
         this.url = url;
         this.height = height;
         this.width = width;

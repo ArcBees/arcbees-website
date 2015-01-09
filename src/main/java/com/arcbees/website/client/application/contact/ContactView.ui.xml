@@ -1,6 +1,7 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
         xmlns:g="urn:import:com.google.gwt.user.client.ui"
+        xmlns:seo="urn:import:com.arcbees.seo.widget"
         ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
         ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
         ui:generateLocales="default">
@@ -12,6 +13,17 @@
     <ui:import field="com.arcbees.website.client.NameTokens.*"/>
 
     <g:HTMLPanel styleName="{page.style.contact}">
+
+        <seo:SeoWidget>
+            <seo:Title>
+                <ui:msg description="SEO - Contact - title">Contact - Arcbees</ui:msg>
+            </seo:Title>
+            <seo:Description>
+                <ui:msg description="SEO - Contact - description">
+                    250-2299 boul. Versant nord - Québec, Québec - G1N 4G2 | 1.877.635.1585
+                </ui:msg>
+            </seo:Description>
+        </seo:SeoWidget>
 
         <h1 class="{fonts.icons.iconArcbees} {res.style.withLogo}">
             <span>Contact</span>

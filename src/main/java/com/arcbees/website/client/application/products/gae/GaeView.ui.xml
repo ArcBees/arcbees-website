@@ -13,20 +13,16 @@
     <ui:import field="com.arcbees.website.client.NameTokens.*"/>
 
     <g:HTMLPanel styleName="{page.style.products} {page.style.gae}">
+
         <seo:SeoWidget>
             <seo:Title>
-                <ui:msg description="titleGaeView">GAE STUDIO - ArcBees</ui:msg>
+                <ui:msg description="SEO - Products - GAE - title">GAE - Products - Arcbees</ui:msg>
             </seo:Title>
             <seo:Description>
-                <ui:msg description="descGaeView">Description</ui:msg>
+                <ui:msg description="SEO - Products - GAE - description">
+                    GAE Studio helps you optimize applications hosted on Google App Engine.
+                </ui:msg>
             </seo:Description>
-            <seo:Keywords>
-                <ui:msg description="keywordsGaeView">kw1,kw2,kw3</ui:msg>
-            </seo:Keywords>
-            <seo:Og>
-                <seo:OgImage height="480" width="480">image url</seo:OgImage>
-                <seo:OgType typeValue="WEBSITE"/>
-            </seo:Og>
         </seo:SeoWidget>
 
         <nav class="{page.style.breadcrumb}">

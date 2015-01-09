@@ -48,8 +48,8 @@ public class Slider implements IsWidget {
         SafeHtml pagerDot(String index);
     }
 
-    private static Binder ourUiBinder = GWT.create(Binder.class);
-    private static HtmlTemplate template = GWT.create(HtmlTemplate.class);
+    private static Binder BINDER = GWT.create(Binder.class);
+    private static HtmlTemplate TEMPLATE = GWT.create(HtmlTemplate.class);
 
     private final HTMLPanel root;
 
@@ -70,7 +70,7 @@ public class Slider implements IsWidget {
     private int index;
 
     public Slider() {
-        root = ourUiBinder.createAndBindUi(this);
+        root = BINDER.createAndBindUi(this);
     }
 
     @Override
@@ -119,7 +119,7 @@ public class Slider implements IsWidget {
 
     private void drawDots() {
         for (int i = 0; i < itemCount; i++) {
-            SafeHtml dot = template.pagerDot(i + "");
+            SafeHtml dot = TEMPLATE.pagerDot(i + "");
             $(pager).append(dot.asString());
         }
 

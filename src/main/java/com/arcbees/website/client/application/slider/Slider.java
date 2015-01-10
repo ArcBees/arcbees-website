@@ -23,7 +23,6 @@ import com.google.gwt.dom.client.Element;
 import com.google.gwt.dom.client.NodeList;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.query.client.Function;
-import com.google.gwt.query.client.GQuery;
 import com.google.gwt.safehtml.client.SafeHtmlTemplates;
 import com.google.gwt.safehtml.shared.SafeHtml;
 import com.google.gwt.uibinder.client.UiBinder;
@@ -91,13 +90,11 @@ public class Slider implements IsWidget {
 
     @UiHandler("prev")
     void onPrev(ClickEvent event) {
-        GQuery.console.info("prev");
         prev();
     }
 
     @UiHandler("next")
     void onNext(ClickEvent event) {
-        GQuery.console.info("next");
         next();
     }
 
@@ -139,18 +136,20 @@ public class Slider implements IsWidget {
         $(contents).children().remove();
         $(contents).append(item);
 
+        String disabled = sliderResources.style().disabled();
         if (index == 0) {
-            $(prev).addClass(sliderResources.style().disabled());
-            $(next).removeClass(sliderResources.style().disabled());
+            $(prev).addClass(disabled);
+            $(next).removeClass(disabled);
         } else if (index == maxIndex) {
-            $(prev).removeClass(sliderResources.style().disabled());
-            $(next).addClass(sliderResources.style().disabled());
+            $(prev).removeClass(disabled);
+            $(next).addClass(disabled);
         } else {
-            $(prev).removeClass(sliderResources.style().disabled());
-            $(next).removeClass(sliderResources.style().disabled());
+            $(prev).removeClass(disabled);
+            $(next).removeClass(disabled);
         }
 
-        $("." + sliderResources.style().actif(), pager).removeClass(sliderResources.style().actif());
-        $(pager).children().eq(index).addClass(sliderResources.style().actif());
+        String active = sliderResources.style().active();
+        $("." + active, pager).removeClass(active);
+        $(pager).children().eq(index).addClass(active);
     }
 }

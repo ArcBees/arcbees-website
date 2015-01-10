@@ -88,7 +88,7 @@
     cursor: default;
 }
 
-.slider .pager a.actif {
+.slider .pager a.active {
     background-position: center bottom;
 }
 

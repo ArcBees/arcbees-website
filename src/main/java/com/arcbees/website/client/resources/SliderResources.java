@@ -30,7 +30,7 @@ public interface SliderResources extends ClientBundle {
 
         String pager();
 
-        String actif();
+        String active();
 
         String disabled();
 

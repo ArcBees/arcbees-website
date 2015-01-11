@@ -14,11 +14,11 @@
 
         <seo:SeoWidget>
             <seo:Title>
-                <ui:msg description="SEO - Bees - SPG - title">Simon-Pierre Gingras - Arcbees</ui:msg>
+                <ui:msg description="SEO - Bees - Maxime - title">Maxime Mériouma Caron - Arcbees</ui:msg>
             </seo:Title>
             <seo:Description>
-                <ui:msg description="SEO - Bees - SPG - description">
-                    Developer of things, Chief Bacon Evangelist
+                <ui:msg description="SEO - Bees - Maxime - description">
+                    Night Shadow Developer
                 </ui:msg>
             </seo:Description>
         </seo:SeoWidget>

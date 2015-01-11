@@ -4,7 +4,7 @@
 @def ICONS_SVG resourceUrl("iconsSvg");
 
 @font-face {
-    font-family: 'icons';
+    font-family: 'icomoonregular';
     src: ICONS_EOT;
     src: ICONS_WOFF format('woff'), ICONS_TTF format('truetype'), ICONS_SVG format('svg');
 }
@@ -12,7 +12,7 @@
 *[data-icon]:before,
 [class^="icon"]:before,
 [class*="icon"]:before {
-    font-family: "icons";
+    font-family: "icomoonregular";
     font-style: normal;
     font-weight: normal;
     font-variant: normal;

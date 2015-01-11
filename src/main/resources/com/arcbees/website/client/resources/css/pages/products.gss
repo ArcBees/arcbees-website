@@ -220,11 +220,11 @@
 }
 
 .productHead.gae .arrow::after {
-    margin-left: -295px;
+    margin-left: -306px;
 }
 
 .productHead.gwtp .arrow::after {
-    margin-left: -160px;
+    margin-left: -165px;
 }
 
 .productHead.jukito .arrow::after {
@@ -232,11 +232,11 @@
 }
 
 .productHead.chosen .arrow::after {
-    margin-left: 60px;
+    margin-left: 63px;
 }
 
 .productHead.gquery .arrow::after {
-    margin-left: 200px;
+    margin-left: 205px;
 }
 
 @media (max-width: 979px) {

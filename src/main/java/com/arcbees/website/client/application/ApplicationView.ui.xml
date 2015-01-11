@@ -74,7 +74,7 @@
             <nav class="{res.style.socialmedias}">
                 <ul>
                     <li>
-                        <a href="https://www.facebook.com/arcbees?fref=ts" class="{fonts.icons.iconFb}" target="_blank">
+                        <a href="https://www.facebook.com/arcbees" class="{fonts.icons.iconFb}" target="_blank">
                             <span class="{res.style.hidden}">Facebook</span>
                         </a>
                     </li>

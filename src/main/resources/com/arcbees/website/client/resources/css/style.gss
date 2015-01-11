@@ -864,16 +864,13 @@ img {
     font-size: 5rem;
 
     margin: 0;
+
     position: absolute;
     top: 25px;
     left: 49px;
     z-index: 1;
 
-    -webkit-transition: all .4s;
-    -moz-transition: all .4s;
-    -ms-transition: all .4s;
-    -o-transition: all .4s;
-    transition: all .4s;
+    @mixin transition(all, 0.4s);
 }
 
 .content .breadcrumb {
@@ -881,16 +878,13 @@ img {
     font-size: 1.3rem;
 
     margin: 0;
+
     position: absolute;
     top: 48px;
     left: 108px;
     z-index: 1;
 
-    -webkit-transition: all .4s;
-    -moz-transition: all .4s;
-    -ms-transition: all .4s;
-    -o-transition: all .4s;
-    transition: all .4s;
+    @mixin transition(all, 0.4s);
 }
 
 .breadcrumb ul {

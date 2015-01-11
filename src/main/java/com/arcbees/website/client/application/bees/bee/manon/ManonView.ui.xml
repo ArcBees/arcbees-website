@@ -53,13 +53,13 @@
 
         <ul class="{page.style.social}">
             <li>
-                <a href="#">
+                <a href="ca.linkedin.com/pub/manon-gruaz-dga/19/58b/4b5/" target="_blank">
                     <i class="{fonts.icons.iconLkd}"></i>
                     <span>Profil LinkedIn de Manon Gruaz</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="https://plus.google.com/111449294896479317277/posts" target="_blank">
                     <i class="{fonts.icons.iconGPlus}"></i>
                     <span>Profil Google+ de Manon Gruaz</span>
                 </a>

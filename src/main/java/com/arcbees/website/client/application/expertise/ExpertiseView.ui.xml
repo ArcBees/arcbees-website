@@ -1,9 +1,11 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-        xmlns:g="urn:import:com.google.gwt.user.client.ui"
-        ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
-        ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
-        ui:generateLocales="default">
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+             ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
+             ui:generateLocales="default">
+
+    <ui:import field="com.arcbees.website.client.NameTokens.*"/>
 
     <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
     <ui:with field="page" type="com.arcbees.website.client.resources.PageExpertisesResources"/>
@@ -12,8 +14,8 @@
 
     <g:HTMLPanel styleName="{page.style.expertises}">
 
-        <h1 class="{fonts.icons.iconArcbees} {res.style.withLogo}">
-            <span>Expertises</span>
+        <h1 class="{res.style.breadcrumb} {res.style.withLogo}">
+            <ui:msg description="Expertise - page heading">Expertise</ui:msg>
         </h1>
 
         <section class="{res.style.stripe} {res.style.header} {page.style.header}">
@@ -30,10 +32,10 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.focusBlock}">
                 <div class="{res.grid.col} {res.grid.col_8} {res.grid.col_push_1_6} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                     <h2 class="{res.style.stripeTitle}">
-                        <ui:msg description="Expertises">Expertises</ui:msg>
+                        <ui:msg description="Expertise - main - title">Expertise</ui:msg>
                     </h2>
                     <p>
-                        <ui:msg description="Expertises - Paragraphe -">Let our experts boost your productivity and
+                        <ui:msg description="Expertise - main - text">Let our experts boost your productivity and
                             improve your applications with our cutting edge services, customized support and training.
                         </ui:msg>
                     </p>
@@ -45,38 +47,38 @@
             <div class="{res.style.wrapper} {res.grid.row} {res.style.clearfix}">
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1_12} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                     <h3 class="{res.style.stripeTitle}">
-                        <ui:msg description="Professional Services">Services</ui:msg>
+                        <ui:msg description="Expertise - Services - title">Services</ui:msg>
                     </h3>
                     <p>
-                        <ui:msg description="Professional Services - Paragraph -">We can help transform your
+                        <ui:msg description="Expertise - Services - text">We can help transform your
                             business applications and improve your development practices.
                         </ui:msg>
                     </p>
-                    <a href="#" class="{res.style.btn}">
-                        <ui:msg description="Learn more">Learn more</ui:msg>
+                    <a href="#{SERVICES}" class="{res.style.btn}">
+                        <ui:msg description="Btn - Learn more">Learn more</ui:msg>
                     </a>
                 </div>
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1_6} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                     <h3 class="{res.style.stripeTitle}">
-                        <ui:msg description="Support">Support</ui:msg>
+                        <ui:msg description="Expertise - Support - title">Support</ui:msg>
                     </h3>
                     <p>
-                        <ui:msg description="Support - Paragraph -">Any time you have a concern to technical
+                        <ui:msg description="Expertise - Support - text">Any time you have a concern to technical
                             challenge using our products, you can rely on our experts to you find solutions.
                         </ui:msg>
                     </p>
-                    <a href="#" class="{res.style.btn}">
-                        <ui:msg description="Learn more">Learn more</ui:msg>
+                    <a href="#{SUPPORT}" class="{res.style.btn}">
+                        <ui:msg description="Btn - Learn more">Learn more</ui:msg>
                     </a>
                 </div>
             </div>
             <div class="{res.style.wrapper} {res.grid.row} {res.style.clearfix}">
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1_3} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                     <h3 class="{res.style.stripeTitle}">
-                        <ui:msg description="Training">Training</ui:msg>
+                        <ui:msg description="Expertise - Training - title">Training</ui:msg>
                     </h3>
                     <p>
-                        <ui:msg description="Training - Paragraph -">Want to learn how to use our products faster and
+                        <ui:msg description="Expertise - Training - text">Want to learn how to use our products faster and
                             better? Let our experts compile and deliver customized training just for you.
                         </ui:msg>
                     </p>
@@ -105,7 +107,7 @@
                 <!-- TODO : add caroussel -->
                 <h2>gwtp</h2>
                 <a href="#" class="{res.style.btn}">
-                    <ui:msg description="Learn more">Learn more</ui:msg>
+                    <ui:msg description="Btn - Learn more">Learn more</ui:msg>
                 </a>
             </div>
         </section>

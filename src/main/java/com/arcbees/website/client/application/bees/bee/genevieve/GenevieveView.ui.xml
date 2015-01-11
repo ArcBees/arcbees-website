@@ -52,13 +52,13 @@
 
         <ul class="{page.style.social}">
             <li>
-                <a href="#">
+                <a href="http://ca.linkedin.com/pub/genevi%C3%A8ve-doyle/79/192/73a" target="_blank">
                     <i class="{fonts.icons.iconLkd}"></i>
                     <span>Profil LinkedIn de Geneviève Doyle</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="https://plus.google.com/100746018497887310266/posts" target="_blank">
                     <i class="{fonts.icons.iconGPlus}"></i>
                     <span>Profil Google+ de Geneviève Doyle</span>
                 </a>

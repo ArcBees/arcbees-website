@@ -53,13 +53,13 @@
 
         <ul class="{page.style.social}">
             <li>
-                <a href="#">
+                <a href="http://ca.linkedin.com/in/christopherviel" target="_blank">
                     <i class="{fonts.icons.iconLkd}"></i>
                     <span>Profil LinkedIn de Christopher Viel</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="https://plus.google.com/113788989941339424577/posts" target="_blank">
                     <i class="{fonts.icons.iconGPlus}"></i>
                     <span>Profil Google+ de Christopher Viel</span>
                 </a>

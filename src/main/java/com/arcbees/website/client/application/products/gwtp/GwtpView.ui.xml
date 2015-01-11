@@ -13,8 +13,7 @@
 
     <g:HTMLPanel styleName="{page.style.products} {page.style.gwtp}">
 
-        <nav class="{page.style.breadcrumb}">
-            <span class="{fonts.icons.iconArcbees} {page.style.logo}"></span>
+        <nav class="{res.style.breadcrumb} {res.style.withLogo}">
             <ul>
                 <li>PRODUCT</li>
                 <li>GWTP</li>
@@ -35,12 +34,14 @@
                     <div class="{page.style.socialTop}">
                         <ul class="{page.style.social}">
                             <li>
-                                <a href="#" class="{fonts.icons.iconGPlus}">
+                                <a href="https://plus.google.com/u/0/communities/113139554133824081251
+" target="_blank" class="{fonts.icons.iconGPlus}">
                                     <span class="{res.style.hidden}">Google plus</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="{fonts.icons.iconGitHub}">
+                                <a href="https://github.com/ArcBees/GWTP
+" target="_blank" class="{fonts.icons.iconGitHub}">
                                     <span class="{res.style.hidden}">Github</span>
                                 </a>
                             </li>
@@ -83,33 +84,6 @@
                         <ui:msg description="- BTN - Developers Platform">Developer's Platform</ui:msg>
                     </a>
                 </div>
-            </div>
-        </section>
-
-        <section class="{res.style.stripe} {res.style.medium2}">
-            <div class="{page.style.slideshow} {res.style.wrapper}">
-                <div class="{page.style.slides}">
-                    <g:Image resource="{page.gwtpScreen1}"/>
-                </div>
-                <a href="#" class="{page.style.prev}">
-                    <span class="{res.style.hidden}">Prev</span>
-                </a>
-                <a href="#" class="{page.style.next}">
-                    <span class="{res.style.hidden}">Next</span>
-                </a>
-                <nav class="{page.style.pager} {res.style.centered}">
-                    <ul>
-                        <li>
-                            <a href="#"></a>
-                        </li>
-                        <li>
-                            <a href="#"></a>
-                        </li>
-                        <li>
-                            <a href="#"></a>
-                        </li>
-                    </ul>
-                </nav>
             </div>
         </section>
 

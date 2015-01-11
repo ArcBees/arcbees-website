@@ -1,21 +1,21 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-        xmlns:g="urn:import:com.google.gwt.user.client.ui"
-        ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
-        ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
-        ui:generateLocales="default">
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+             ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
+             ui:generateLocales="default">
+
+    <ui:import field="com.arcbees.website.client.NameTokens.*"/>
 
     <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
     <ui:with field="page" type="com.arcbees.website.client.resources.PageServicesResources"/>
     <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
     <ui:with field="animations" type="com.arcbees.website.client.resources.AnimationsResources"/>
 
-    <ui:import field="com.arcbees.website.client.NameTokens.*"/>
-
     <g:HTMLPanel styleName="{page.style.services}">
 
-        <h1 class="{fonts.icons.iconArcbees} {res.style.withLogo}">
-            <span>Professional services</span>
+        <h1 class="{res.style.breadcrumb} {res.style.withLogo}">
+            <ui:msg description="Professional services - page heading">Professional services</ui:msg>
         </h1>
 
         <section class="{res.style.stripe} {res.style.header} {page.style.header} {res.style.colored}">
@@ -34,13 +34,13 @@
                 <div class="{res.grid.col} {res.grid.col_8} {res.grid.col_push_1_6} {res.grid.col_m_full} {res.grid.col_m_push_0}">
 
                     <h2 class="{res.style.stripeTitle}">
-                        <ui:msg description="Professional Services">Professional
+                        <ui:msg description="Professional Services - main - title">Professional
                             <span>Services</span>
                         </ui:msg>
 
                     </h2>
                     <p>
-                        <ui:msg description="Professional Services - Paragraph -">We are devoted to helping you succeed.
+                        <ui:msg description="Professional Services - main - text">We are devoted to helping you succeed.
                             Our experience building business applications and the deep technical skills we acquired
                             creating development tools lets us offer you world class support services.
                         </ui:msg>
@@ -64,13 +64,13 @@
                             <i class="{fonts.icons.iconArcbees} {page.style.icon2}"></i>
                         </div>
                         <h3>
-                            <ui:msg description="Knowledge Transfer">Knowledge
+                            <ui:msg description="Professional Services - Knowledge Transfer - title">Knowledge
                                 <span>Transfer</span>
                             </ui:msg>
                         </h3>
                         <p>
-                            <ui:msg description="Knowledge Transfer - Paragraph -">We teach as we work, sharing
-                                technical and best practice knowledge to make your team independent ASAP.
+                            <ui:msg description="Professional Services - Knowledge Transfer - text">We teach as we
+                                work, sharing technical and best practice knowledge to make your team independent ASAP.
                             </ui:msg>
                         </p>
                     </div>
@@ -79,13 +79,14 @@
                             <i class="{fonts.icons.iconHive}"></i>
                         </div>
                         <h3>
-                            <ui:msg description="The Way Of The Bee">The Way
+                            <ui:msg description="Professional Services - The Way Of The Bee - title">The Way
                                 <span>Of The Bee</span>
                             </ui:msg>
                         </h3>
                         <p>
-                            <ui:msg description="The Way Of The Bee - Paragraph -">We are productivity fanatics,
-                                learning from web giants and winning startups. Let us share that learning with you.
+                            <ui:msg description="Professional Services - The Way Of The Bee - text">We are productivity
+                                fanatics, learning from web giants and winning startups. Let us share that learning with
+                                you.
                             </ui:msg>
                         </p>
                     </div>
@@ -95,13 +96,14 @@
                             <i class="{fonts.icons.iconhexaEmpty} {page.style.icon2}"></i>
                         </div>
                         <h3>
-                            <ui:msg description="Beauty and Function">Beauty
+                            <ui:msg description="Professional Services - Beauty and Function - title">Beauty
                                 <span>and Function</span>
                             </ui:msg>
                         </h3>
                         <p>
-                            <ui:msg description="Beauty and Function - Paragraph -">Great products need more than
-                                engineering. We excel at integrating function, beauty and user experience.
+                            <ui:msg description="Professional Services - Beauty and Function - text">Great products
+                                need more than engineering. We excel at integrating function, beauty and user
+                                experience.
                             </ui:msg>
                         </p>
                     </div>
@@ -117,13 +119,13 @@
                             <i class="{fonts.icons.iconArcbees} {page.style.icon6}"></i>
                         </div>
                         <h3>
-                            <ui:msg description="WORKs Everywhere">WORKs
+                            <ui:msg description="Professional Services - Works Everywhere - title">Works
                                 <span>Everywhere</span>
                             </ui:msg>
                         </h3>
                         <p>
-                            <ui:msg description="WORKs Everywhere - Paragraph -">Our reach has been global from day one.
-                                We are experts at getting results through remote collaboration.
+                            <ui:msg description="Professional Services - Works Everywhere - text">Our reach has been
+                                global from day one. We are experts at getting results through remote collaboration.
                             </ui:msg>
                         </p>
                     </div>
@@ -132,13 +134,14 @@
                             <i class="{fonts.icons.iconPyramid}"></i>
                         </div>
                         <h3>
-                            <ui:msg description="Work With The Best">Work With
+                            <ui:msg description="Professional Services - Work With The Best - title">Work With
                                 <span>The Best</span>
                             </ui:msg>
                         </h3>
                         <p>
-                            <ui:msg description="Work With The Best -Paragraph -">As builders of developer tools, we
-                                attract power programmers. That power is yours when you work with us.
+                            <ui:msg description="Professional Services - Work With The Best - text">As builders of
+                                developer tools, we attract power programmers. That power is yours when you work with
+                                us.
                             </ui:msg>
                         </p>
                     </div>
@@ -149,7 +152,7 @@
         <section class="{page.style.trusted} {res.style.stripe} {res.style.medium2} {res.style.centered}">
             <div class="{res.style.wrapper}">
                 <h2>
-                    <ui:msg description="Trusted By">Trusted By</ui:msg>
+                    <ui:msg description="Professional Services - Trusted By">Trusted By</ui:msg>
                 </h2>
                 <ul>
                     <li>
@@ -171,20 +174,19 @@
             </div>
         </section>
 
-        <section
-                class="{res.style.stripe} {res.style.centered} {res.style.triangleBottom} {res.style.light} {res.style.nextColored} {page.style.beeWay}">
+        <section class="{res.style.stripe} {res.style.centered} {res.style.triangleBottom}
+        {res.style.light} {res.style.nextColored} {page.style.beeWay}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_12} {res.grid.col_m_push_0}">
                     <div class="{page.style.lightbulb}">
                         <h2>
-                            <ui:msg description="The Way Of The Bee">The Way
+                            <ui:msg description="Professional Services - The Way Of The Bee - title">The Way
                                 <span>Of The Bee</span>
                             </ui:msg>
-
                         </h2>
                         <p>
-                            <ui:msg description="The Way Of The Bee - Paragraph -">Agile is embedded in the Arcbees way
-                                of life. It drives our culture and productivity.
+                            <ui:msg description="Professional Services - The Way Of The Bee - text">Agile is embedded
+                                in the Arcbees way of life. It drives our culture and productivity.
                             </ui:msg>
                         </p>
                         <div class="{page.style.diagram}">
@@ -204,11 +206,13 @@
                 <div class="{res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_12} {res.grid.col_m_push_0}">
                     <div class="{page.style.partner}">
                         <h3>
-                            <ui:msg description="A committed partner">A committed partner</ui:msg>
+                            <ui:msg description="Professional Services - A committed partner - title">A committed
+                                partner
+                            </ui:msg>
                         </h3>
                         <p>
-                            <ui:msg description="A committed partner - Paragraph -">We dedicate teams to clients for the
-                                focus it takes to conquer big challenges.
+                            <ui:msg description="Professional Services - A committed partner - text">We dedicate teams
+                                to clients for the focus it takes to conquer big challenges.
                             </ui:msg>
                         </p>
                         <div class="{page.style.diagram}">
@@ -223,19 +227,29 @@
                     </div>
                     <div class="{page.style.iterative}">
                         <h3>
-                            <ui:msg description="A simple, iterative process">A simple, iterative process</ui:msg>
+                            <ui:msg description="Professional Services - iterative process - title">A simple,
+                                iterative process
+                            </ui:msg>
                         </h3>
                         <p>
-                            <ui:msg description="A simple, iterative process - Paragraph -">We deliver incremental
-                                product versions frequently to invite feedback and review.
+                            <ui:msg description="Professional Services - iterative process - text">We deliver
+                                incremental product versions frequently to invite feedback and review.
                             </ui:msg>
                         </p>
                         <div class="{page.style.diagram}">
                             <div class="{page.style.launch}">
-                                <strong>Launch 1</strong>
+                                <strong>
+                                    <ui:msg description="Professional Services - iterative process - Launch 1">
+                                        Launch 1
+                                    </ui:msg>
+                                </strong>
                             </div>
                             <div class="{page.style.iteration1}">
-                                <strong>Sprint 1</strong>
+                                <strong>
+                                    <ui:msg description="Professional Services - iterative process - Sprint1">
+                                        Sprint 1
+                                    </ui:msg>
+                                </strong>
                             </div>
                             <div class="{page.style.iconHexa} {animations.style.animation} {animations.style.infinite} {animations.style.hexaMove}">
                                 <i class="{fonts.icons.iconhexagon}"></i>
@@ -252,11 +266,13 @@
                     </div>
                     <div class="{page.style.codeReview}">
                         <h3>
-                            <ui:msg description="Code review...">Code review for every line</ui:msg>
+                            <ui:msg description="Professional Services - Code review - title">Code review for every
+                                line
+                            </ui:msg>
                         </h3>
                         <p>
-                            <ui:msg description="Code review... - Paragraph -">We reduce development risk and technical
-                                debt by sharing knowledge across the whole team.
+                            <ui:msg description="Professional Services - Code review - text">We reduce development risk
+                                and technical debt by sharing knowledge across the whole team.
                             </ui:msg>
                         </p>
                         <div class="{page.style.diagram}">
@@ -280,11 +296,13 @@
                     </div>
                     <div class="{page.style.costRisk}">
                         <h3>
-                            <ui:msg description="Manage cost...">Manage cost and limit risk</ui:msg>
+                            <ui:msg description="Professional Services - Manage cost - title">Manage cost and limit
+                                risk
+                            </ui:msg>
                         </h3>
                         <p>
-                            <ui:msg description="Manage cost... - Paragraph">We de-risk projects by testing
-                                small products with real users to validate assumptions.
+                            <ui:msg description="Professional Services - Manage cost - text">We de-risk projects by
+                                testing small products with real users to validate assumptions.
                             </ui:msg>
                         </p>
                         <div class="{page.style.diagram}">
@@ -305,11 +323,12 @@
                     </div>
                     <div class="{page.style.learnAdapt}">
                         <h3>
-                            <ui:msg description="Learn and adapt">Learn and adapt</ui:msg>
+                            <ui:msg description="Professional Services - Learn and adapt - title">Learn and adapt
+                            </ui:msg>
                         </h3>
                         <p>
-                            <ui:msg description="Learn and adapt - Paragraph -">We improve products incrementally based
-                                on real-world learning.
+                            <ui:msg description="Professional Services - Learn and adapt - text">We improve products
+                                incrementally based on real-world learning.
                             </ui:msg>
                         </p>
                         <div class="{page.style.diagram}">
@@ -325,11 +344,13 @@
                     </div>
                     <section class="{page.style.deliver}">
                         <h3>
-                            <ui:msg description="Deliver the best...">Deliver the best product ever</ui:msg>
+                            <ui:msg description="Professional Services - Deliver the best - title">Deliver the best
+                                product ever
+                            </ui:msg>
                         </h3>
                         <p>
-                            <ui:msg description="Deliver the best... - Paragraph -">After many feedback cycles, the
-                                product is useful, robust and efficient.
+                            <ui:msg description="Professional Services - Deliver the best - text">After many feedback
+                                cycles, the product is useful, robust and efficient.
                             </ui:msg>
                         </p>
                         <div class="{page.style.diagram}">

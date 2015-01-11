@@ -258,6 +258,15 @@
     @mixin rotate(120deg);
 }
 
+.bees .bee h3 {
+    font-size: 2.2rem;
+    line-height: 1em;
+}
+
+.bees .bee h3 span {
+    display: block;
+}
+
 .bees .bee1 {
     margin-left: -200px;
     margin-top: 10px;
@@ -324,7 +333,7 @@
     display: none;
     width: 100%;
     height: 101%;
-    padding: 40px 100px;
+    padding: 45px 100px;
 
     position: absolute;
     z-index: 3000;
@@ -450,6 +459,10 @@
     font-size: 2rem;
 }
 
+.bees .popup p a:hover {
+    text-decoration: underline;
+}
+
 .bees .popup ul {
     padding: 0;
     margin-bottom: 4em;
@@ -481,6 +494,10 @@
 .bees .popup ul.social li a {
     color: #fff;
     font-size: 4rem;
+}
+
+.bees .popup ul.social li a:hover {
+    color: C_PRIMARY;
 }
 
 .bees .popup ul.social li a span {

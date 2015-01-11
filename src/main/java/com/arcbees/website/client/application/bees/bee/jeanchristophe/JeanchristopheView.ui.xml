@@ -52,13 +52,13 @@
 
         <ul class="{page.style.social}">
             <li>
-                <a href="#">
+                <a href="ca.linkedin.com/in/jclariviere" target="_blank">
                     <i class="{fonts.icons.iconLkd}"></i>
                     <span>Profil LinkedIn de Jean Christophe Larivière</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="https://plus.google.com/106356483503589219450/posts" target="_blank">
                     <i class="{fonts.icons.iconGPlus}"></i>
                     <span>Profil Google+ de Jean Christophe Larivière</span>
                 </a>

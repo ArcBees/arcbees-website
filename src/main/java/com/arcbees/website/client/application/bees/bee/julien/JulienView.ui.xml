@@ -52,13 +52,13 @@
 
         <ul class="{page.style.social}">
             <li>
-                <a href="#">
+                <a href="http://be.linkedin.com/in/juliendramaix" target="_blank">
                     <i class="{fonts.icons.iconLkd}"></i>
                     <span>Profil LinkedIn de Julien Dramaix</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="https://plus.google.com/+JulienDramaix/posts" target="_blank">
                     <i class="{fonts.icons.iconGPlus}"></i>
                     <span>Profil Google+ de Julien Dramaix</span>
                 </a>

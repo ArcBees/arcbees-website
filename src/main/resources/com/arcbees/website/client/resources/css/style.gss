@@ -226,7 +226,7 @@ a:visited {
 
 p,
 li {
-    line-height: 1.25em;
+    line-height: 1.4em;
     font-size: 1.5rem;
 
     margin-bottom: 0.8em;
@@ -513,10 +513,7 @@ img {
     }
 
     .sidebar.active ~ .content .withLogo {
-        left: -156px;
-    }
-
-    .sidebar.active ~ .content .withLogo span {
+        left: -200px;
         @mixin opacity(0);
     }
 
@@ -536,8 +533,8 @@ img {
         left: -156px;
     }
 
-    .sidebar:hover:not(.clicked) ~ .content .withLogo span,
-    .menuToggle:hover:not(.clicked) ~ .content .withLogo span {
+    .sidebar:hover:not(.clicked) ~ .content .withLogo,
+    .menuToggle:hover:not(.clicked) ~ .content .withLogo {
     @mixin opacity(0);
     }
 
@@ -560,12 +557,8 @@ img {
 
     .sidebar:hover ~ .content .withLogo,
     .menuToggle:hover ~ .content .withLogo {
-        left: -156px;
-    }
-
-    .sidebar:hover ~ .content .withLogo span,
-    .menuToggle:hover ~ .content .withLogo span {
-    @mixin opacity(0);
+        left: -200px;
+        @mixin opacity(0);
     }
 
     .sidebar:hover ~ .menu,
@@ -608,6 +601,12 @@ img {
     @mixin transition(color, .2s);
 }
 
+.menu li a i:before {
+    font-size: 1rem;
+
+    vertical-align: top;
+}
+
 .menu ul ul {
     margin-bottom: 4px;
 }
@@ -632,7 +631,8 @@ img {
     color: #fff;
 
     margin-left: 62px;
-    margin-bottom: 1em;
+    margin-bottom: .75em;
+    margin-top: 1.5rem;
 }
 
 .menu li a.menuContact {
@@ -857,6 +857,64 @@ img {
 .content .main,
 .content footer {
     @mixin transition(margin, 0.4s);
+}
+
+.content .homeLogo {
+    color: #000;
+    font-size: 5rem;
+
+    margin: 0;
+    position: absolute;
+    top: 25px;
+    left: 49px;
+    z-index: 1;
+
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+}
+
+.content .breadcrumb {
+    color: #000;
+    font-size: 1.3rem;
+
+    margin: 0;
+    position: absolute;
+    top: 48px;
+    left: 108px;
+    z-index: 1;
+
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+}
+
+.breadcrumb ul {
+    font-family: "geometriaBold";
+
+    display: inline-block;
+    padding: 0;
+    vertical-align: super;
+}
+
+.breadcrumb li {
+    font-size: 1.3rem;
+
+    display: inline;
+}
+
+.breadcrumb li::before {
+    content: ">";
+    padding-right: 3px;
+}
+
+.breadcrumb li:first-child::before {
+    content: "";
+    padding-right: 0;
 }
 
 .content .linkTopRight {

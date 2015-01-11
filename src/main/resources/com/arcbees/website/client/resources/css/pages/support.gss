@@ -271,7 +271,7 @@
 }
 
 .features h2 {
-    margin: 7.5rem 0 2rem;
+    margin: 7.5rem 0 2.5rem;
 }
 
 .features i {

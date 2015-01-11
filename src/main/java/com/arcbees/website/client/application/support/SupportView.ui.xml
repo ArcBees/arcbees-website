@@ -14,8 +14,8 @@
 
     <g:HTMLPanel styleName="{page.style.support}">
 
-        <h1 class="{fonts.icons.iconArcbees} {res.style.withLogo}">
-            <span>Support</span>
+        <h1 class="{res.style.breadcrumb} {res.style.withLogo}">
+            Support
         </h1>
 
         <section class="{res.style.stripe} {res.style.header} {page.style.header} {res.style.light}">

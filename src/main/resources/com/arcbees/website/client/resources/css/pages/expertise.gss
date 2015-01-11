@@ -28,7 +28,7 @@
     right: 50%;
     position: absolute;
 
-    @mixin animation_delay(1s);
+    @mixin animation_delay(.5s);
     @mixin animation_duration(1s);
 }
 
@@ -39,7 +39,7 @@
     right: 50%;
     position: absolute;
 
-    @mixin animation_delay(2s);
+    @mixin animation_delay(1.5s);
     @mixin animation_duration(4s);
 }
 
@@ -123,6 +123,10 @@
 .services h3 span,
 .services a span {
     display: block;
+}
+
+.services h3 {
+    margin-top: 10px;
 }
 
 .services a {

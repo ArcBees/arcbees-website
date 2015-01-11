@@ -53,13 +53,13 @@
 
         <ul class="{page.style.social}">
             <li>
-                <a href="#">
+                <a href="http://ca.linkedin.com/in/philippearaujo" target="_blank">
                     <i class="{fonts.icons.iconLkd}"></i>
                     <span>Profil LinkedIn de Philippe Araujo</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="https://plus.google.com/106730157230512780320/posts" target="_blank">
                     <i class="{fonts.icons.iconGPlus}"></i>
                     <span>Profil Google+ de Philippe Araujo</span>
                 </a>

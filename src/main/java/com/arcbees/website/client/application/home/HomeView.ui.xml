@@ -14,33 +14,35 @@
 
     <g:HTMLPanel styleName="{page.style.home}">
 
-        <h1 class="{fonts.icons.iconArcbees} {res.style.withLogo}">
-            <span>Arcbees</span>
-        </h1>
+        <a href="/">
+            <h1 class="{res.style.breadcrumb} {res.style.withLogo}">
+                Arcbees
+            </h1>
+        </a>
 
         <section class="{res.style.stripe} {res.style.header} {page.style.header} {res.style.colored}">
             <div class="{page.style.txtBanner}">
                 <p>
                     <strong>
-                        <ui:msg description="- Banner - we">we</ui:msg>
+                        <ui:msg description="Home - animation - we">we</ui:msg>
                         <span class="{page.style.txtAre} {animations.style.animation}">
-                            <ui:msg description="- Banner - are">are</ui:msg>
+                            <ui:msg description="Home - animation - are">are</ui:msg>
                         </span>
                         <span class="{page.style.txtCreate} {animations.style.animation}">
-                            <ui:msg description="- Banner - build">create</ui:msg>
+                            <ui:msg description="Home - animation - build">create</ui:msg>
                         </span>
                     </strong>
                     <span class="{page.style.txtArch} {animations.style.animation}">
                         arc
                         <span class="{page.style.txtArchitects} {animations.style.animation}">
-                            <ui:msg description="- Banner - hitect">hitect</ui:msg>
+                            <ui:msg description="Home - animation - hitect">hitect</ui:msg>
                         </span>
                         <span class="{page.style.txtBees} {animations.style.animation}">
-                            <ui:msg description="- Banner - bees">bees</ui:msg>
+                            <ui:msg description="Home - animation - bees">bees</ui:msg>
                         </span>
                     </span>
                     <span class="{page.style.txtProducts} {animations.style.animation}">
-                        <ui:msg description="- Banner - product">products</ui:msg>
+                        <ui:msg description="Home - animation - product">products</ui:msg>
                     </span>
                 </p>
             </div>
@@ -52,7 +54,7 @@
                     </a>
                     <a href="#{PRODUCTS}" title="products" class="{res.style.btn}">
                         <ui:attribute ui:name='title' ui:description='products'/>
-                        <ui:msg description="- BTN - Products">Products</ui:msg>
+                        <ui:msg description="BTN - Products">Products</ui:msg>
                     </a>
                     <a href="#{SERVICES}" title="services" class="{res.style.btn}">
                         <ui:attribute ui:name='title' ui:description='services'/>
@@ -66,10 +68,10 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.focusBlock}">
                 <div class="{res.grid.col} {res.grid.col_8} {res.grid.col_push_1_6} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                     <h2 class="{res.style.stripeTitle}">
-                        <ui:msg description="Our quest">Our Quest</ui:msg>
+                        <ui:msg description="Home - Our quest - title">Our Quest</ui:msg>
                     </h2>
                     <p>
-                        <ui:msg description="Our quest - Paragraphe -">To create tools that help developers optimize
+                        <ui:msg description="Home - Our quest - text">To create products that help developers optimize
                             process, habits and thinking; to deliver value through simplicity; and transform the way
                             developers work around the world.
                         </ui:msg>
@@ -78,14 +80,14 @@
             </div>
         </section>
 
-        <section class="{res.style.stripe} {res.style.light} {res.style.triangleBottom} {res.style.nextColored}">
+        <section class="{page.style.beeTheBest} {res.style.stripe} {res.style.light} {res.style.triangleBottom} {res.style.nextColored}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.centered}">
                 <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                     <h2 class="{res.style.stripeTitle}">
-                        <ui:msg description="Bee the Best">Bee The Best</ui:msg>
+                        <ui:msg description="Home - Bee the Best - title">Bee The Best</ui:msg>
                     </h2>
                     <p>
-                        <ui:msg description="bee the best - Paragraphe -">Our products help you excel as a developer by
+                        <ui:msg description="Home - Bee the Best - text">Our products help you excel as a developer by
                             simplifying your code, enhancing your user
                             experience and optimizing your time.
                         </ui:msg>
@@ -99,19 +101,19 @@
                 <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                     <i class="{fonts.icons.iconGwtp}"></i>
                     <h2 class="{res.style.stripeTitle}">
-                        <ui:msg description="A success story">A Success
+                        <ui:msg description="Home - A success story - title">A Success
                             <span>Story</span>
                         </ui:msg>
                     </h2>
                     <p>
-                        <ui:msg description="A success story - Paragraphe -">It all began with two passionate
+                        <ui:msg description="Home - A success story - text">It all began with two passionate
                             technologists, Christian Goudreau and Philippe Beaudoin, a framework with endless
                             possibilities named GWTP and… Google.
                         </ui:msg>
                     </p>
                     <a class="{res.style.btn}" title="learn more" ui:field="successStoryBtn" href="javascript:;">
                         <ui:attribute ui:name='title' ui:description='learn more'/>
-                        <ui:msg description="btn learn more">Learn more</ui:msg>
+                        <ui:msg description="Btn - learn more">Learn more</ui:msg>
                     </a>
                 </div>
             </div>
@@ -141,12 +143,12 @@
                     </div>
                     <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                         <h3>
-                            <ui:msg description="The Genesis Of GWTP">The Genesis
+                            <ui:msg description="Home - The Genesis Of GWTP - title">The Genesis
                                 <span>Of GWTP</span>
                             </ui:msg>
                         </h3>
                         <p>
-                            <ui:msg description="The Genesis Of GWTP - Paragraphe -">The two co-founders collaborated on
+                            <ui:msg description="Home - The Genesis Of GWTP - text">The two co-founders collaborated on
                                 ways of applying best practices in software engineer to GWT, which resulted in the
                                 invention of GWT-Platform, a powerful and flexible open source tool for rapidly creating
                                 robust web applications.
@@ -155,12 +157,12 @@
                     </div>
                     <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                         <h3>
-                            <ui:msg description="Immediate Growth">Immediate
+                            <ui:msg description="Home - Immediate Growth - title">Immediate
                                 <span>Growth</span>
                             </ui:msg>
                         </h3>
                         <p>
-                            <ui:msg description="Immediate Growth - Paragraphe -">The time was ripe for GWT-Platform. It
+                            <ui:msg description="Home - Immediate Growth - text">The time was ripe for GWT-Platform. It
                                 grew so quickly that the co-founders had to officially establish Arcbees as a company in
                                 July 2010, to give community and commercial developers the support they deserved, and to
                                 evolve the platform.
@@ -169,12 +171,12 @@
                     </div>
                     <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                         <h3>
-                            <ui:msg description="Google-Recognized">Google-
+                            <ui:msg description="Home - Google-Recognized - title">Google-
                                 <span>Recognized</span>
                             </ui:msg>
                         </h3>
                         <p>
-                            <ui:msg description="Google-Recognized - Paragraphe -">Within less than a year, Google
+                            <ui:msg description="Home - Google-Recognized - text">Within less than a year, Google
                                 invited the two men to speak at Google I/O. In 2012, Christian was appointed to the GWT
                                 Steering Committee, the body dedicated to advancing the ongoing evolution of this
                                 framework.
@@ -185,10 +187,10 @@
                 <div class="{res.grid.row} {res.style.clearfix}">
                     <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1_3} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                         <h2>
-                            <ui:msg description="The Way Of The Bee">The Way Of The Bee</ui:msg>
+                            <ui:msg description="Home - The Bee Way - title">The Bee Way</ui:msg>
                         </h2>
                         <p>
-                            <ui:msg description="The Way Of The Bee - Paragraphe -">Our passion is architectural and
+                            <ui:msg description="Home - The Bee Way - text">Our passion is architectural and
                                 programming excellence. Our products, coaching and support activities are all driven by
                                 our desire to make it as easy as possible for you to deliver great code.
                             </ui:msg>
@@ -206,12 +208,12 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                     <h2 class="{res.style.lonely}">
-                        <ui:msg description="Why The Name Arcbees?">Why The Name
+                        <ui:msg description="Home - Why The Name Arcbees? - title">Why The Name
                             <span>Arcbees?</span>
                         </ui:msg>
                     </h2>
                     <p>
-                        <ui:msg description="Why The Name Arcbees? - Paragraphe -">“Arc” stands for “Architects”. Bees
+                        <ui:msg description="Home - Why The Name Arcbees? - text">“Arc” stands for “Architects”. Bees
                             are bees. We think of ourselves as Architects Bees. Here's why.
                         </ui:msg>
                     </p>
@@ -225,14 +227,14 @@
                         ui:field="architect">
                     <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                         <h3 class="{res.style.stripeTitle}">
-                            <ui:msg description="Architects">Architects</ui:msg>
+                            <ui:msg description="Home - Architects">Architects</ui:msg>
                         </h3>
                         <a href="javascript:;" class="{res.style.btn}" ui:field="architectBtn">
-                            <ui:msg description="btn learn more">Learn more</ui:msg>
+                            <ui:msg description="Btn - learn more">Learn more</ui:msg>
                         </a>
                         <div ui:field="architectMore">
                             <p>
-                                <ui:msg description="Architects - Paragraphe -">Architecture matters. Great products
+                                <ui:msg description="Home - Architects - text">Architecture matters. Great products
                                     require a clear and extensible underlying structure. This is especially important
                                     for products to stand the test of time. We look around, and we see well-architected
                                     buildings all around us that remain useful for decades if not centuries. That
@@ -309,10 +311,10 @@
                     <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                         <div class="{res.grid.col} {res.grid.col_full}">
                             <h3 class="{res.style.stripeTitle}">
-                                <ui:msg description="Bees">Bees</ui:msg>
+                                <ui:msg description="Home - Bees - title">Bees</ui:msg>
                             </h3>
                             <a href="javascript:;" class="{res.style.btn}" ui:field="beesBtn">
-                                <ui:msg description="btn You can't...">You can’t beat bees for efficiency.</ui:msg>
+                                <ui:msg description="Home - Bees - btn">You can’t beat bees for efficiency.</ui:msg>
                             </a>
                         </div>
                     </div>
@@ -321,7 +323,7 @@
                     <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                         <div>
                             <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0} {page.style.beesContent}">
-                                <ui:msg description="Bees - Paragraphe -">
+                                <ui:msg description="Home - Bees - text">
                                     <p>
                                         <strong>You can’t beat bees for efficiency.</strong>
                                     </p>
@@ -351,12 +353,12 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                     <h2>
-                        <ui:msg description="Architects of simplicity">Architects
+                        <ui:msg description="Home - Architects of simplicity - title">Architects
                             <span>of simplicity</span>
                         </ui:msg>
                     </h2>
                     <p>
-                        <ui:msg description="Architects of simplicity - Paragraphe -">Inspired by the best architects of
+                        <ui:msg description="Home - Architects of simplicity - text">Inspired by the best architects of
                             all time, we want to help you create optimal code, by helping you keep your code simple.
                         </ui:msg>
                     </p>
@@ -368,7 +370,7 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.btns} {res.style.centered}">
                 <div class="{res.grid.col} {res.grid.col_full}">
                     <h3>
-                        <ui:msg description="Learn more about">Learn more about</ui:msg>
+                        <ui:msg description="Home - Learn more about - title">Learn more about</ui:msg>
                     </h3>
                     <a href="#{EXPERTISE}" title="Expertise" class="{res.style.btn}">
                         <ui:attribute ui:name='title' ui:description='Expertise'/>

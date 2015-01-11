@@ -15,7 +15,7 @@
 
         <nav class="{res.style.breadcrumb} {res.style.withLogo}">
             <ul>
-                <li>PRODUCT</li>
+                <li><ui:msg description="product">PRODUCT</ui:msg></li>
                 <li>GWTP</li>
             </ul>
         </nav>

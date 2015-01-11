@@ -15,7 +15,9 @@
 
         <nav class="{res.style.breadcrumb} {res.style.withLogo}">
             <ul>
-                <li>PRODUCT</li>
+                <li>
+                    <ui:msg description="product">PRODUCT</ui:msg>
+                </li>
                 <li>GWT CHOSEN</li>
             </ul>
         </nav>
@@ -82,6 +84,9 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.centered} {page.style.chosenHolder}">
 
                 <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full}">
+                    <p>
+                        <strong><ui:msg description="Chosen - Demo without GWT Chosen">Demo without GWT Chosen</ui:msg></strong>
+                    </p>
                     <select multiple="multiple">
                         <optgroup label="AFC East">
                             <option>New England Patriots</option>
@@ -135,7 +140,11 @@
                 </div>
 
                 <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full}">
-                    <h4>demo</h4>
+                    <p>
+                        <strong>
+                            <ui:msg description="Chosen - Demo with GWT Chosen">Demo with GWT Chosen</ui:msg>
+                        </strong>
+                    </p>
                     <select ui:field="selectToEnhance" multiple="multiple">
                         <optgroup label="AFC East">
                             <option>New England Patriots</option>

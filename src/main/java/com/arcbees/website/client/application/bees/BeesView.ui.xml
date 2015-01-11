@@ -15,9 +15,8 @@
     <g:HTMLPanel styleName="{page.style.bees}">
 
         <h1 class="{res.style.breadcrumb} {res.style.withLogo}">
-            Bees
+            <ui:msg description="Our bees">Our bees</ui:msg>
         </h1>
-
 
         <section class="{res.style.stripe} {res.style.header} {page.style.header} {res.style.light} {page.style.intro}">
             <div>
@@ -343,7 +342,9 @@
                         <h3>
                             <ui:msg description="Job applications - Software engineer">Software engineer</ui:msg>
                         </h3>
-                        <a href="mailto:candidates@arcbees.com" class="{res.style.btn}">How can you be the best programmer you can be</a>
+                        <a href="mailto:candidates@arcbees.com" class="{res.style.btn}">
+                            <ui:msg description="Job applications - Software engineer - Btn">How can you be the best programmer you can be</ui:msg>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -353,7 +354,9 @@
                         <h3>
                             <ui:msg description="Job applications - Web developer">Web developer</ui:msg>
                         </h3>
-                        <a href="mailto:candidates@arcbees.com" class="{res.style.btn}">Awesome CSS Master</a>
+                        <a href="mailto:candidates@arcbees.com" class="{res.style.btn}">
+                            <ui:msg description="Job applications - Web developer - Btn">Awesome CSS Master</ui:msg>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -363,7 +366,9 @@
                         <h3>
                             <ui:msg description="Job applications - Graphic designer">Graphic designer</ui:msg>
                         </h3>
-                        <a href="mailto:candidates@arcbees.com" class="{res.style.btn}">We hope you like to suffer</a>
+                        <a href="mailto:candidates@arcbees.com" class="{res.style.btn}">
+                            <ui:msg description="Job applications - Web developer - Btn">We hope you like to suffer</ui:msg>
+                        </a>
                     </div>
                 </div>
             </div>

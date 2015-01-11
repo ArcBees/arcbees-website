@@ -132,7 +132,7 @@
                             <div class="{page.style.developers}">
                                 <p>5
                                     <span>
-                                        <ui:msg description="developer">developers</ui:msg>
+                                        <ui:msg description="developers">developers</ui:msg>
                                     </span>
                                 </p>
                             </div>
@@ -172,7 +172,7 @@
                             <div class="{page.style.developers}">
                                 <p>25
                                     <span>
-                                        <ui:msg description="developer">developers</ui:msg>
+                                        <ui:msg description="developers">developers</ui:msg>
                                     </span>
                                 </p>
                             </div>

@@ -898,7 +898,6 @@ img {
 
     display: inline-block;
     padding: 0;
-    vertical-align: super;
 }
 
 .breadcrumb li {
@@ -913,7 +912,7 @@ img {
 }
 
 .breadcrumb li:first-child::before {
-    content: "";
+    content: normal;
     padding-right: 0;
 }
 

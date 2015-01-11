@@ -83,15 +83,11 @@
 
 @keyframes pyramid1 {
     0% {
-        -moz-transform: translate(0px, 240px);
-        -ms-transform: translate(0px, 240px);
-        transform: translate(0px, 240px);
+        @mixin translate(0px, 240px);
         opacity: 0;
     }
     100% {
-        -moz-transform: translate(0px, 0px);
-        -ms-transform: translate(0px, 0px);
-        transform: translate(0px, 0px);
+        @mixin translate(0px, 0px);
         opacity: 1;
     }
 }
@@ -109,15 +105,11 @@
 
 @keyframes pyramid2 {
     0% {
-        -moz-transform: translate(0px, 320px);
-        -ms-transform: translate(0px, 320px);
-        transform: translate(0px, 320px);
+        @mixin translate(0px, 320px);
         opacity: 0;
     }
     100% {
-        -moz-transform: translate(0px, 0px);
-        -ms-transform: translate(0px, 0px);
-        transform: translate(0px, 0px);
+        @mixin translate(0px, 0px);
         opacity: 1;
     }
 }
@@ -135,15 +127,11 @@
 
 @keyframes pyramid3 {
     0% {
-        -moz-transform: translate(0px, 500px);
-        -ms-transform: translate(0px, 500px);
-        transform: translate(0px, 500px);
+        @mixin translate(0px, 500px);
         opacity: 0;
     }
     100% {
-        -moz-transform: translate(0px, 0px);
-        -ms-transform: translate(0px, 0px);
-        transform: translate(0px, 0px);
+        @mixin translate(0px, 0px);
         opacity: 1;
     }
 }
@@ -677,15 +665,11 @@
 
 @keyframes partner {
     from {
-        -moz-transform: translate(100px,0px);
-        -ms-transform: translate(100px,0px);
-        transform: translate(100px,0px);
+        @mixin translate(100px, 0px);
         opacity:0;
     }
     to {
-        -moz-transform: translate(0px,0px);
-        -ms-transform: translate(0px,0px);
-        transform: translate(0px,0px);
+        @mixin translate(0px, 0px);
         opacity: 1;
     }
 }
@@ -979,15 +963,11 @@
 
 @keyframes hexaMoveCR {
     0% {
-        -moz-transform:translate(0px, 0px);
-        -ms-transform:translate(0px, 0px);
-        transform:translate(0px, 0px);
+        @mixin translate(0px, 0px);
         opacity: 0;
     }
     100% {
-        -moz-transform: translate(0px, 40px);
-        -ms-transform: translate(0px, 40px);
-        transform: translate(0px, 40px);
+        @mixin translate(0px, 40px);
         opacity: 1;
     }
 }

@@ -9,24 +9,28 @@
     0% {
         -moz-transform:rotate(0deg);
         -ms-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
         transform:rotate(0deg);
         opacity: 1;
     }
     25% {
         -moz-transform:rotate(90deg);
         -ms-transform:rotate(90deg);
+        -o-transform:rotate(90deg);
         transform:rotate(90deg);
         opacity: 1;
     }
     50% {
         -moz-transform:rotate(90deg) translate(0px, 0px);
         -ms-transform:rotate(90deg) translate(0px, 0px);
+        -o-transform:rotate(90deg) translate(0px, 0px);
         transform:rotate(90deg) translate(0px, 0px);
         opacity: 1;
     }
     100% {
         -moz-transform:rotate(90deg) translate(160px, 0px);
         -ms-transform:rotate(90deg) translate(160px, 0px);
+        -o-transform:rotate(90deg) translate(160px, 0px);
         transform:rotate(90deg) translate(160px, 0px);
         opacity: 0;
     }
@@ -75,6 +79,7 @@
     -webkit-transform-origin: 50% 50%;
     -moz-transform-origin: 50% 50%;
     -ms-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
 }
 
@@ -84,6 +89,7 @@
     -webkit-transform-origin: 50% 50%;
     -moz-transform-origin: 50% 50%;
     -ms-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
 }
 
@@ -117,6 +123,7 @@
     0% {
         -moz-transform:rotate(0deg) translate(0px, 0px);
         -ms-transform:rotate(0deg) translate(0px, 0px);
+        -o-transform:rotate(0deg) translate(0px, 0px);
         transform:rotate(0deg) translate(0px, 0px);
         opacity: 1;
         zoom: 1;
@@ -124,6 +131,7 @@
     25% {
         -moz-transform:rotate(0deg) translate(-50px, 50px);
         -ms-transform:rotate(0deg) translate(-50px, 50px);
+        -o-transform:rotate(0deg) translate(-50px, 50px);
         transform:rotate(0deg) translate(-50px, 50px);
         opacity: 1;
         zoom: 1;
@@ -131,6 +139,7 @@
     50% {
         -moz-transform:rotate(180deg) translate(80px, -20px);
         -ms-transform:rotate(180deg) translate(80px, -20px);
+        -o-transform:rotate(180deg) translate(80px, -20px);
         transform:rotate(180deg) translate(80px, -20px);
         opacity: 1;
         zoom: .5;
@@ -138,6 +147,7 @@
     100% {
         -moz-transform:rotate(180deg) translate(1000px, -2000px);
         -ms-transform:rotate(180deg) translate(1000px, -2000px);
+        -o-transform:rotate(180deg) translate(1000px, -2000px);
         transform:rotate(180deg) translate(1000px, -2000px);
         opacity: 0;
         zoom: .25;
@@ -171,6 +181,7 @@
     0% {
         -moz-transform:rotate(0deg) translate(0px, 0px);
         -ms-transform:rotate(0deg) translate(0px, 0px);
+        -o-transform:rotate(0deg) translate(0px, 0px);
         transform:rotate(0deg) translate(0px, 0px);
         opacity: 1;
         zoom: 1;
@@ -178,6 +189,7 @@
     25% {
         -moz-transform:rotate(0deg) translate(-50px, 0px);
         -ms-transform:rotate(0deg) translate(-50px, 0px);
+        -o-transform:rotate(0deg) translate(-50px, 0px);
         transform:rotate(0deg) translate(-50px, 0px);
         opacity: 1;
         zoom: 1;
@@ -185,6 +197,7 @@
     50% {
         -moz-transform:rotate(-180deg) translate(50px, -55px);
         -ms-transform:rotate(-180deg) translate(50px, -55px);
+        -o-transform:rotate(-180deg) translate(50px, -55px);
         transform:rotate(-180deg) translate(50px, -55px);
         opacity: 1;
         zoom: .5;
@@ -192,6 +205,7 @@
     100% {
         -moz-transform:rotate(-180deg) translate(2000px, 0px);
         -ms-transform:rotate(-180deg) translate(2000px, 0px);
+        -o-transform:rotate(-180deg) translate(2000px, 0px);
         transform:rotate(-180deg) translate(2000px, 0px);
         opacity: 0;
         zoom: .25;
@@ -225,6 +239,7 @@
     0% {
         -moz-transform:rotate(0deg) translate(0px, 0px);
         -ms-transform:rotate(0deg) translate(0px, 0px);
+        -o-transform:rotate(0deg) translate(0px, 0px);
         transform:rotate(0deg) translate(0px, 0px);
         opacity: 1;
         zoom: 1;
@@ -232,6 +247,7 @@
     25% {
         -moz-transform:rotate(0deg) translate(-50px, -50px);
         -ms-transform:rotate(0deg) translate(-50px, -50px);
+        -o-transform:rotate(0deg) translate(-50px, -50px);
         transform:rotate(0deg) translate(-50px, -50px);
         opacity: 1;
         zoom: 1;
@@ -239,6 +255,7 @@
     50% {
         -moz-transform:rotate(180deg) translate(80px, -80px);
         -ms-transform:rotate(180deg) translate(80px, -80px);
+        -o-transform:rotate(180deg) translate(80px, -80px);
         transform:rotate(180deg) translate(80px, -80px);
         opacity: 1;
         zoom: .5;
@@ -246,6 +263,7 @@
     100% {
         -moz-transform:rotate(180deg) translate(1000px, 2000px);
         -ms-transform:rotate(180deg) translate(1000px, 2000px);
+        -o-transform:rotate(180deg) translate(1000px, 2000px);
         transform:rotate(180deg) translate(1000px, 2000px);
         opacity: 0;
         zoom: .25;
@@ -279,6 +297,7 @@
     0% {
         -moz-transform:rotate(0deg) translate(0px, 0px);
         -ms-transform:rotate(0deg) translate(0px, 0px);
+        -o-transform:rotate(0deg) translate(0px, 0px);
         transform:rotate(0deg) translate(0px, 0px);
         opacity: 1;
         zoom: 1;
@@ -286,6 +305,7 @@
     25% {
         -moz-transform:rotate(0deg) translate(50px, -50px);
         -ms-transform:rotate(0deg) translate(50px, -50px);
+        -o-transform:rotate(0deg) translate(50px, -50px);
         transform:rotate(0deg) translate(50px, -50px);
         opacity: 1;
         zoom: 1;
@@ -293,6 +313,7 @@
     50% {
         -moz-transform:rotate(-180deg) translate(-75px, -80px);
         -ms-transform:rotate(-180deg) translate(-75px, -80px);
+        -o-transform:rotate(-180deg) translate(-75px, -80px);
         transform:rotate(-180deg) translate(-75px, -80px);
         opacity: 1;
         zoom: .5;
@@ -300,6 +321,7 @@
     100% {
         -moz-transform:rotate(-180deg) translate(-1000px, 2000px);
         -ms-transform:rotate(-180deg) translate(-1000px, 2000px);
+        -o-transform:rotate(-180deg) translate(-1000px, 2000px);
         transform:rotate(-180deg) translate(-1000px, 2000px);
         opacity: 0;
         zoom: .25;
@@ -333,6 +355,7 @@
     0% {
         -moz-transform:rotate(0deg) translate(0px, 0px);
         -ms-transform:rotate(0deg) translate(0px, 0px);
+        -o-transform:rotate(0deg) translate(0px, 0px);
         transform:rotate(0deg) translate(0px, 0px);
         opacity: 1;
         zoom: 1;
@@ -340,6 +363,7 @@
     25% {
         -moz-transform:rotate(0deg) translate(50px, 0px);
         -ms-transform:rotate(0deg) translate(50px, 0px);
+        -o-transform:rotate(0deg) translate(50px, 0px);
         transform:rotate(0deg) translate(50px, 0px);
         opacity: 1;
         zoom: 1;
@@ -347,6 +371,7 @@
     50% {
         -moz-transform:rotate(-180deg) translate(-50px, -55px);
         -ms-transform:rotate(-180deg) translate(-50px, -55px);
+        -o-transform:rotate(-180deg) translate(-50px, -55px);
         transform:rotate(-180deg) translate(-50px, -55px);
         opacity: 1;
         zoom: .5;
@@ -354,6 +379,7 @@
     100% {
         -moz-transform:rotate(-180deg) translate(-2000px, 0px);
         -ms-transform:rotate(-180deg) translate(-2000px, 0px);
+        -o-transform:rotate(-180deg) translate(-2000px, 0px);
         transform:rotate(-180deg) translate(-2000px, 0px);
         opacity: 0;
         zoom: .25;
@@ -387,6 +413,7 @@
     0% {
         -moz-transform:rotate(0deg) translate(0px, 0px);
         -ms-transform:rotate(0deg) translate(0px, 0px);
+        -o-transform:rotate(0deg) translate(0px, 0px);
         transform:rotate(0deg) translate(0px, 0px);
         opacity: 1;
         zoom: 1;
@@ -394,6 +421,7 @@
     25% {
         -moz-transform:rotate(0deg) translate(50px, 50px);
         -ms-transform:rotate(0deg) translate(50px, 50px);
+        -o-transform:rotate(0deg) translate(50px, 50px);
         transform:rotate(0deg) translate(50px, 50px);
         opacity: 1;
         zoom: 1;
@@ -401,6 +429,7 @@
     50% {
         -moz-transform:rotate(-180deg) translate(-80px, -25px);
         -ms-transform:rotate(-180deg) translate(-80px, -25px);
+        -o-transform:rotate(-180deg) translate(-80px, -25px);
         transform:rotate(-180deg) translate(-80px, -25px);
         opacity: 1;
         zoom: .5;
@@ -408,6 +437,7 @@
     100% {
         -moz-transform:rotate(-180deg) translate(-1000px, -2000px);
         -ms-transform:rotate(-180deg) translate(-1000px, -2000px);
+        -o-transform:rotate(-180deg) translate(-1000px, -2000px);
         transform:rotate(-180deg) translate(-1000px, -2000px);
         opacity: 0;
         zoom: .25;

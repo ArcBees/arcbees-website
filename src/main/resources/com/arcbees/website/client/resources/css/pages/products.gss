@@ -90,11 +90,7 @@
     left: 49px;
 
     z-index: 1;
-    -webkit-transition: all .4s;
-    -moz-transition: all .4s;
-    -ms-transition: all .4s;
-    -o-transition: all .4s;
-    transition: all .4s;
+    @mixin transition(all, .4s);
 }
 
 .breadcrumb ul {

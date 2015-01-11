@@ -80,16 +80,8 @@
 }
 
 @keyframes bees {
-    0% {
-        -moz-transform: translate(0px, 0px);
-        -ms-transform: translate(0px, 0px);
-        transform: translate(0px, 0px);
-    }
-    100% {
-        -moz-transform: translate(255px, 0px);
-        -ms-transform: translate(255px, 0px);
-        transform: translate(255px, 0px);
-    }
+    0% {@mixin translate(0px, 0px);}
+    100% {@mixin translate(255px, 0px);}
 }
 
 @-webkit-keyframes bees {
@@ -98,16 +90,8 @@
 }
 
 @keyframes beesMobile {
-    0% {
-        -moz-transform: translate(0px, 0px);
-        -ms-transform: translate(0px, 0px);
-        transform: translate(0px, 0px);
-    }
-    100% {
-        -moz-transform: translate(130px, 0px);
-        -ms-transform: translate(130px, 0px);
-        transform: translate(130px, 0px);
-    }
+    0% {@mixin translate(0px, 0px);}
+    100% {@mixin translate(130px, 0px);}
 }
 
 @-webkit-keyframes beesMobile {
@@ -117,16 +101,8 @@
 
 @if (!is("locale",  "en")) {
     @keyframes bees {
-        0% {
-            -moz-transform: translate(0px, 0px);
-            -ms-transform: translate(0px, 0px);
-            transform: translate(0px, 0px);
-        }
-        100% {
-            -moz-transform: translate(355px, 0px);
-            -ms-transform: translate(355px, 0px);
-            transform: translate(355px, 0px);
-        }
+        0% {@mixin translate(0px, 0px);}
+        100% {@mixin translate(355px, 0px);}
     }
 
     @-webkit-keyframes bees {
@@ -352,9 +328,11 @@
     stroke-dashoffset: 1500;
     -webkit-animation: path 1.5s linear;
     -moz-animation: path 1.5s linear;
+    -o-animation: path 1.5s linear;
     animation: path 1.5s linear;
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 
@@ -383,10 +361,12 @@
 .logoConstruct path.logo {
     -webkit-animation: logo 2s;
     -moz-animation: logo 2s;
+    -o-animation: logo 2s;
     animation: logo 2s;
     @mixin animation_delay(3s);
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 
     fill: #c9b804;
@@ -408,10 +388,12 @@
     stroke-dashoffset: 1240;
     -webkit-animation: diag .75s linear;
     -moz-animation: diag .75s linear;
+    -o-animation: diag .75s linear;
     animation: diag .75s linear;
     @mixin animation_delay(.5s);
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 
@@ -420,9 +402,12 @@
     stroke-dashoffset: 910;
     -webkit-animation: vert .75s linear;
     -moz-animation: vert .75s linear;
+    -o-animation: vert .75s linear;
     animation: vert .75s linear;
     @mixin animation_delay(1s);
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 
@@ -431,9 +416,12 @@
     stroke-dashoffset: 2640;
     -webkit-animation: hor .5s linear;
     -moz-animation: hor .5s linear;
+    -o-animation: hor .5s linear;
     animation: hor .5s linear;
     @mixin animation_delay(1.5s);
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 
@@ -443,9 +431,12 @@
     stroke-dashoffset: 1440;
     -webkit-animation: border 2s linear;
     -moz-animation: border 2s linear;
+    -o-animation: border 2s linear;
     animation: border 2s linear;
     @mixin animation_delay(2s);
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 

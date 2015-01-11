@@ -28,7 +28,7 @@
     right: 50%;
     position: absolute;
 
-    @mixin animation_delay(1s);
+    @mixin animation_delay(.5s);
     @mixin animation_duration(1s);
 }
 
@@ -39,8 +39,8 @@
     right: 50%;
     position: absolute;
 
-    @mixin animation_delay(2s);
-    @mixin animation_duration(4s);
+    @mixin animation_delay(1.5s);
+    @mixin animation_duration(3.5s);
 }
 
 .codeAnim1 {
@@ -51,16 +51,19 @@
     0% {
         -moz-transform: rotate(0deg) translate(0px, 0px);
         -ms-transform: rotate(0deg) translate(0px, 0px);
+        -o-transform: rotate(0deg) translate(0px, 0px);
         transform: rotate(0deg) translate(0px, 0px);
     }
     50% {
         -moz-transform: rotate(-90deg) translate(0px, 0px);
         -ms-transform: rotate(-90deg) translate(0px, 0px);
+        -o-transform: rotate(-90deg) translate(0px, 0px);
         transform: rotate(-90deg) translate(0px, 0px);
     }
     100% {
         -moz-transform: rotate(-90deg) translate(0px, -262px);
         -ms-transform: rotate(-90deg) translate(0px, -262px);
+        -o-transform: rotate(-90deg) translate(0px, -262px);
         transform: rotate(-90deg) translate(0px, -262px);
     }
 }
@@ -75,16 +78,19 @@
     0% {
         -moz-transform: rotate(0deg) translate(0px, 0px);
         -ms-transform: rotate(0deg) translate(0px, 0px);
+        -o-transform: rotate(0deg) translate(0px, 0px);
         transform: rotate(0deg) translate(0px, 0px);
     }
     50% {
         -moz-transform: rotate(-90deg) translate(0px, 0px);
         -ms-transform: rotate(-90deg) translate(0px, 0px);
+        -o-transform: rotate(-90deg) translate(0px, 0px);
         transform: rotate(-90deg) translate(0px, 0px);
     }
     100% {
         -moz-transform: rotate(-90deg) translate(0px, -110px);
         -ms-transform: rotate(-90deg) translate(0px, -110px);
+        -o-transform: rotate(-90deg) translate(0px, -110px);
         transform: rotate(-90deg) translate(0px, -110px);
     }
 }
@@ -103,16 +109,19 @@
     0% {
         -moz-transform: rotate(0deg) translate(0px, 0px);
         -ms-transform: rotate(0deg) translate(0px, 0px);
+        -o-transform: rotate(0deg) translate(0px, 0px);
         transform: rotate(0deg) translate(0px, 0px);
     }
     50% {
         -moz-transform: rotate(90deg) translate(0px, 0px);
         -ms-transform: rotate(90deg) translate(0px, 0px);
+        -o-transform: rotate(90deg) translate(0px, 0px);
         transform: rotate(90deg) translate(0px, 0px);
     }
     100% {
         -moz-transform: rotate(90deg) translate(0px, -285px);
         -ms-transform: rotate(90deg) translate(0px, -285px);
+        -o-transform: rotate(90deg) translate(0px, -285px);
         transform: rotate(90deg) translate(0px, -285px);
     }
 }
@@ -127,16 +136,19 @@
     0% {
         -moz-transform: rotate(0deg) translate(0px, 0px);
         -ms-transform: rotate(0deg) translate(0px, 0px);
+        -o-transform: rotate(0deg) translate(0px, 0px);
         transform: rotate(0deg) translate(0px, 0px);
     }
     50% {
         -moz-transform: rotate(90deg) translate(0px, 0px);
         -ms-transform: rotate(90deg) translate(0px, 0px);
+        -o-transform: rotate(90deg) translate(0px, 0px);
         transform: rotate(90deg) translate(0px, 0px);
     }
     100% {
         -moz-transform: rotate(90deg) translate(0px, -108px);
         -ms-transform: rotate(90deg) translate(0px, -108px);
+        -o-transform: rotate(90deg) translate(0px, -108px);
         transform: rotate(90deg) translate(0px, -108px);
     }
 }

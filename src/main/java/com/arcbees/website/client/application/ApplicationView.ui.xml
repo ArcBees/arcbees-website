@@ -1,6 +1,7 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
         xmlns:g="urn:import:com.google.gwt.user.client.ui"
+        xmlns:seo="urn:import:com.arcbees.seo.widget"
         ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
         ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
         ui:generateLocales="default">
@@ -11,6 +12,17 @@
     <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
 
     <g:HTMLPanel>
+
+        <seo:SeoWidget>
+            <seo:Keywords>
+                <ui:msg description="SEO - Home - keywords">Arcbees, Web, development, GWT, GWTP, Jukito, GAE, GQuery, GSSS, Chosen, Java, Quebec, Canada</ui:msg>
+            </seo:Keywords>
+            <seo:Og>
+                <seo:OgImage height="480" width="480">lien/vers/logo/arcbees.png</seo:OgImage>
+                <seo:OgType typeValue="WEBSITE"/>
+            </seo:Og>
+        </seo:SeoWidget>
+
         <div class="{res.style.sidebar}" ui:field="sidebar">
             <nav role="navigation" class="{res.style.menu}">
                 <ul>

@@ -1,6 +1,7 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:seo="urn:import:com.arcbees.seo.widget"
              ui:generateFormat="com.google.gwt.i18n.rebind.format.PropertiesFormat"
              ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
              ui:generateLocales="default">
@@ -10,6 +11,17 @@
     <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
 
     <g:HTMLPanel>
+
+        <seo:SeoWidget>
+            <seo:Title>
+                <ui:msg description="SEO - Bees - Francois - title">Francois Dion - Arcbees</ui:msg>
+            </seo:Title>
+            <seo:Description>
+                <ui:msg description="SEO - Bees - Francois - description">
+                    BE-E-O and founder
+                </ui:msg>
+            </seo:Description>
+        </seo:SeoWidget>
 
         <div class="{page.style.bee} {page.style.bee1}">
             <div class="{page.style.beeHolder1}">

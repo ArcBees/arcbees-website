@@ -343,7 +343,7 @@ img {
 .btn.collapsible::after {
     content: "\e631";
     font-size: 2rem;
-    font-family: "icons";
+    font-family: "icomoonregular";
     color: C_TEXT_LIGHT;
     line-height: 1;
 

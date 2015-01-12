@@ -32,8 +32,8 @@
 }
 
 @-webkit-keyframes iconhexa1 {
-    0% {transform: translate(0px, 0px);}
-    100% {transform: translate(-250px, 0px);}
+    0% {@mixin translate(0px, 0px);}
+    100% {@mixin translate(-250px, 0px);}
 }
 
 .support .header .iconhexa3 {
@@ -42,8 +42,8 @@
 }
 
 @-webkit-keyframes iconhexa3 {
-    0% {transform: translate(0px, 0px);}
-    100% {transform: translate(250px, 0px);}
+    0% {@mixin translate(0px, 0px);}
+    100% {@mixin translate(250px, 0px);}
 }
 
 .support .header .iconGwtp,

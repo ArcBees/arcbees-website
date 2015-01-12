@@ -205,7 +205,7 @@
 .bees a.prev::before,
 .bees a.next::before {
     content: "\e631";
-    font-family: "icons";
+    font-family: "icomoonregular";
 }
 
 .bees a.prev:hover,

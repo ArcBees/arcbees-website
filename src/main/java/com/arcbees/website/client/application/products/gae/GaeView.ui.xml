@@ -25,10 +25,9 @@
             </seo:Description>
         </seo:SeoWidget>
 
-        <nav class="{page.style.breadcrumb}">
-            <span class="{fonts.icons.iconArcbees} {page.style.logo}"></span>
+        <nav class="{res.style.breadcrumb} {res.style.withLogo}">
             <ul>
-                <li>PRODUCT</li>
+                <li><ui:msg description="product">PRODUCT</ui:msg></li>
                 <li>GAE STUDIO</li>
             </ul>
         </nav>
@@ -47,12 +46,13 @@
                     <div class="{page.style.socialTop}">
                         <ul class="{page.style.social}">
                             <li>
-                                <a href="#" class="{fonts.icons.iconGPlus}">
+                                <a href="https://plus.google.com/u/0/communities/115376454177922421933
+" target="_blank" class="{fonts.icons.iconGPlus}">
                                     <span class="{res.style.hidden}">Google plus</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="{fonts.icons.iconGitHub}">
+                                <a href="https://github.com/ArcBees/gaestudiowebsite" target="_blank" class="{fonts.icons.iconGitHub}">
                                     <span class="{res.style.hidden}">Github</span>
                                 </a>
                             </li>

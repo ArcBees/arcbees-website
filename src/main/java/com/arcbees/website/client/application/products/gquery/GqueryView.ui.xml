@@ -25,17 +25,16 @@
             </seo:Description>
         </seo:SeoWidget>
 
-        <nav class="{page.style.breadcrumb}">
-            <span class="{fonts.icons.iconArcbees} {page.style.logo}"></span>
+        <nav class="{res.style.breadcrumb} {res.style.withLogo}">
             <ul>
-                <li>PRODUCT</li>
+                <li><ui:msg description="product">PRODUCT</ui:msg></li>
                 <li>GQUERY</li>
             </ul>
         </nav>
 
         <section class="{res.style.stripe}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_full}">
+                <div class="{res.grid.col} {res.grid.col_10} {res.grid.col_m_full}">
                     <h1>GQUERY
                         <a href="#" class="{res.style.anchor}">#</a>
                     </h1>
@@ -47,12 +46,12 @@
                     <div class="{page.style.socialTop}">
                         <ul class="{page.style.social}">
                             <li>
-                                <a href="#" class="{fonts.icons.iconGPlus}">
+                                <a href="https://plus.google.com/108775699626209449984/posts" title="google plus" target="_blank" class="{fonts.icons.iconGPlus}">
                                     <span class="{res.style.hidden}">Google plus</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="{fonts.icons.iconGitHub}">
+                                <a href="https://github.com/gwtquery" title="github" target="_blank" class="{fonts.icons.iconGitHub}">
                                     <span class="{res.style.hidden}">Github</span>
                                 </a>
                             </li>
@@ -256,7 +255,8 @@
                         <ui:msg description="more on">more on
                         </ui:msg>
                     </h3>
-                    <a href="#" class="{res.style.btn}">
+                    <a href="#" title="Developer's Platform" class="{res.style.btn}">
+                        <ui:attribute ui:name='title' ui:description='Developer Platform'/>
                         <i class="{fonts.icons.iconArrowOutside}"></i>
                         <ui:msg description="- BTN - Developers Platform">Developer's Platform</ui:msg>
                     </a>
@@ -268,17 +268,17 @@
             <h3><ui:msg description="Share">SHARE</ui:msg></h3>
             <ul class="{page.style.social}">
                 <li>
-                    <a href="#" class="{fonts.icons.iconFb}">
+                    <a href="#" title="facebook" class="{fonts.icons.iconFb}">
                         <span class="{res.style.hidden}">Facebook</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="{fonts.icons.iconTwitter}">
+                    <a href="#" title="twitter" class="{fonts.icons.iconTwitter}">
                         <span class="{res.style.hidden}">Twitter</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="{fonts.icons.iconGPlus}">
+                    <a href="#" title="google plus" class="{fonts.icons.iconGPlus}">
                         <span class="{res.style.hidden}">Google</span>
                     </a>
                 </li>

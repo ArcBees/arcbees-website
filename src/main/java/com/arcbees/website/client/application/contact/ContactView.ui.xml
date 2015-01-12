@@ -25,8 +25,8 @@
             </seo:Description>
         </seo:SeoWidget>
 
-        <h1 class="{fonts.icons.iconArcbees} {res.style.withLogo}">
-            <span>Contact</span>
+        <h1 class="{res.style.breadcrumb} {res.style.withLogo}">
+            Contact
         </h1>
 
         <section class="{page.style.headerBg}">
@@ -38,22 +38,24 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.focusBlock}">
                 <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                     <h2>
-                        <ui:msg description="Work with us">Work with us</ui:msg>
+                        <ui:msg description="Contact - Work with us">Work with us</ui:msg>
                     </h2>
                     <p>
-                        <ui:msg description="250-2299 boul. Versant nord...">250-2299 boul. Versant nord<br/>Québec,
+                        <ui:msg description="Contact - address">250-2299 boul. Versant nord<br/>Québec,
                             Québec G1N 4G2
                         </ui:msg>
                     </p>
                     <p>
-                        <a href="mailto:queenbee@arcbees.com">QUEENBEE@ARCBEES.COM</a>
+                        <a href="mailto:queenbee@arcbees.com">queenbee@arcbees.com</a>
                         <br/>
                         <strong>
-                            <ui:msg description="Toll-free:">Toll-free:</ui:msg>
+                            <ui:msg description="Contact - Toll-free:">Toll-free:</ui:msg>
                         </strong>
                         1.877.635.1585
                     </p>
-                    <a class="{res.style.btn}">
+                    <a href="https://www.google.ca/maps/dir/''/arcbees/@46.7918145,-71.3551763,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x4cb8971fd358c99b:0xd5dc164e651a11d7!2m2!1d-71.28651!2d46.791835"
+                       title="get directions" target="_blank" class="{res.style.btn}">
+                        <ui:attribute ui:name='title' ui:description='get directions'/>
                         <ui:msg description="Get directions">Get directions</ui:msg>
                     </a>
                 </div>
@@ -64,28 +66,37 @@
                 class="{res.style.stripe} {res.style.colored} {res.style.triangleBottom} {res.style.nextLight} {res.style.centered}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <h2>
-                    <ui:msg description="Let's bee friends">Let's bee
+                    <ui:msg description="Contact - Let's bee friends">Let's bee
                         <span>friends</span>
                     </ui:msg>
                 </h2>
                 <ul class="{page.style.social}">
                     <li>
-                        <a href="#" data-icon="&#xe622;"></a>
+                        <a href="https://twitter.com/arcbees" title="Arcbees's twitter" target="_blank" data-icon="&#xe622;">
+                        </a>
                     </li>
                     <li>
-                        <a href="#" data-icon="&#xe60d;"></a>
+                        <a href="https://plus.google.com/+Arcbees/posts" title="Arcbees's google plus" target="_blank"
+                           data-icon="&#xe60d;">
+                        </a>
                     </li>
                     <li>
-                        <a href="#" data-icon="&#xe611;"></a>
+                        <a href="https://www.linkedin.com/company/arcbees" title="Arcbees's linked in" target="_blank"
+                           data-icon="&#xe611;">
+                        </a>
                     </li>
                     <li>
-                        <a href="#" data-icon="&#xe623;"></a>
+                        <a href="https://arcbees.wordpress.com/" title="Arcbees's wordpress" target="_blank" data-icon="&#xe623;">
+                        </a>
                     </li>
                     <li>
-                        <a href="#" data-icon="&#xe60a;"></a>
+                        <a href="https://www.facebook.com/arcbees" title="Arcbees's facebook" target="_blank"
+                           data-icon="&#xe60a;">
+                        </a>
                     </li>
                     <li>
-                        <a href="#" data-icon="&#xe60c;"></a>
+                        <a href="https://github.com/ArcBees" title="Arcbees's github" target="_blank" data-icon="&#xe60c;">
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -93,7 +104,7 @@
 
         <section class="{page.style.quebec} {res.style.stripe} {res.style.light} {res.style.centered}">
             <h3>
-                <ui:msg description="We have fun in beautiful quebec city">We have fun in
+                <ui:msg description="Contact - We have fun in beautiful quebec city">We have fun in
                     <span>beautiful quebec city</span>
                 </ui:msg>
             </h3>
@@ -106,7 +117,7 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.btns} {res.style.centered}">
                 <div class="{res.grid.col} {res.grid.col_full}">
                     <h3>
-                        <ui:msg description="Learn more about">Learn more about</ui:msg>
+                        <ui:msg description="Contact - Learn more about">Learn more about</ui:msg>
                     </h3>
                     <a href="#{EXPERTISE}" title="Expertise" class="{res.style.btn}">
                         <ui:attribute ui:name='title' ui:description='Expertise'/>

@@ -26,8 +26,8 @@
             </seo:Description>
         </seo:SeoWidget>
 
-        <h1 class="{fonts.icons.iconArcbees} {res.style.withLogo}">
-            <span>Support</span>
+        <h1 class="{res.style.breadcrumb} {res.style.withLogo}">
+            Support
         </h1>
 
         <section class="{res.style.stripe} {res.style.header} {page.style.header} {res.style.light}">
@@ -144,7 +144,7 @@
                             <div class="{page.style.developers}">
                                 <p>5
                                     <span>
-                                        <ui:msg description="developer">developers</ui:msg>
+                                        <ui:msg description="developers">developers</ui:msg>
                                     </span>
                                 </p>
                             </div>
@@ -184,7 +184,7 @@
                             <div class="{page.style.developers}">
                                 <p>25
                                     <span>
-                                        <ui:msg description="developer">developers</ui:msg>
+                                        <ui:msg description="developers">developers</ui:msg>
                                     </span>
                                 </p>
                             </div>
@@ -211,7 +211,7 @@
 
         <section class="{res.style.stripe} {res.style.light} {page.style.features} {res.style.centered}">
             <div class="{res.style.wrapper}">
-                <a href="#" class="{res.style.btn}">
+                <a href="mailto:queenbee@arcbees.com" class="{res.style.btn}">
                     <ui:msg description="- BTN - Contact us">Contact us</ui:msg>
                 </a>
                 <h2>

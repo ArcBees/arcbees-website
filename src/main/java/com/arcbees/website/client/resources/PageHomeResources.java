@@ -80,6 +80,8 @@ public interface PageHomeResources extends FontResources {
         String architect();
 
         String btns();
+
+        String beeTheBest();
     }
 
     @Source("img/pages/homeBeesBg.png")

@@ -40,7 +40,7 @@
     position: absolute;
 
     @mixin animation_delay(1.5s);
-    @mixin animation_duration(3.5s);
+    @mixin animation_duration(4s);
 }
 
 .codeAnim1 {
@@ -212,6 +212,10 @@
 .services h3 span,
 .services a span {
     display: block;
+}
+
+.services h3 {
+    margin-top: 10px;
 }
 
 .services a {

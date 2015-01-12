@@ -32,7 +32,9 @@
         </div>
 
         <h1>Francois Dion
-            <span>BE-E-O and founder</span>
+            <span><ui:msg description="Francois's title">Strategic advisor, associate and
+                Board chairman
+            </ui:msg></span>
         </h1>
 
         <div class="{res.grid.row} {res.style.clearfix}">
@@ -86,20 +88,14 @@
         </div>
 
         <p>
-            <a href="mailto:queenbee@arcbees.com">queenbee@arcbees.com</a>
+            <a href="mailto:fdion@arcbees.com">fdion@arcbees.com</a>
         </p>
 
         <ul class="{page.style.social}">
             <li>
-                <a href="#">
+                <a href="ca.linkedin.com/pub/francois-dion/14/889/383" target="_blank">
                     <i class="{fonts.icons.iconLkd}"></i>
                     <span>Profil LinkedIn de Christian Goudreau</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="{fonts.icons.iconGPlus}"></i>
-                    <span>Profil Google+ de Christian Goudreau</span>
                 </a>
             </li>
         </ul>

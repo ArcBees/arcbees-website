@@ -216,11 +216,11 @@
 }
 
 .productHead.gae .arrow::after {
-    margin-left: -295px;
+    margin-left: -306px;
 }
 
 .productHead.gwtp .arrow::after {
-    margin-left: -160px;
+    margin-left: -165px;
 }
 
 .productHead.jukito .arrow::after {
@@ -228,11 +228,11 @@
 }
 
 .productHead.chosen .arrow::after {
-    margin-left: 60px;
+    margin-left: 63px;
 }
 
 .productHead.gquery .arrow::after {
-    margin-left: 200px;
+    margin-left: 205px;
 }
 
 @media (max-width: 979px) {
@@ -289,6 +289,8 @@
     position: absolute;
     top: 0;
     right: 0;
+
+    z-index: 999;
 }
 
 ul.social {
@@ -555,8 +557,10 @@ a.anchor {
 .collapsible {
     color: C_TEXT_LIGHT;
     background-color: C_TEXT;
+}
 
-    margin-bottom: 2rem;
+.collapsible ~ div {
+    margin-top: 2rem;
 }
 
 /* -- Page : Jukito ---------------------------------------- */

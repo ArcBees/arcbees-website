@@ -230,6 +230,11 @@
     }
 }
 
+.home .beeTheBest p {
+    font-size: 2.5rem;
+    line-height: 1.25em;
+}
+
 .home .architect p {
     margin-top: 6rem;
 }
@@ -292,11 +297,15 @@
 }
 
 .home .ssicons {
-    margin: 0 0 4em -0.8em;
+    margin: 0 0 4em 0em;
+}
+
+.home .ssicons img {
+    margin-left: -2rem;
 }
 
 .home .ssiconsHexa {
-    margin-left: -257px;
+    margin-left: -267px;
 
     position: absolute;
     top: 0;

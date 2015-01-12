@@ -14,8 +14,6 @@
     <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
     <ui:with field="slider" type="com.arcbees.website.client.resources.SliderResources"/>
 
-    <ui:import field="com.arcbees.website.client.NameTokens.*"/>
-
     <g:HTMLPanel styleName="{page.style.products} {page.style.gwtp}">
 
         <seo:SeoWidget>
@@ -29,10 +27,9 @@
             </seo:Description>
         </seo:SeoWidget>
 
-        <nav class="{page.style.breadcrumb}">
-            <span class="{fonts.icons.iconArcbees} {page.style.logo}"></span>
+        <nav class="{res.style.breadcrumb} {res.style.withLogo}">
             <ul>
-                <li>PRODUCT</li>
+                <li><ui:msg description="product">PRODUCT</ui:msg></li>
                 <li>GWTP</li>
             </ul>
         </nav>
@@ -51,12 +48,14 @@
                     <div class="{page.style.socialTop}">
                         <ul class="{page.style.social}">
                             <li>
-                                <a href="#" class="{fonts.icons.iconGPlus}">
+                                <a href="https://plus.google.com/u/0/communities/113139554133824081251
+" target="_blank" class="{fonts.icons.iconGPlus}">
                                     <span class="{res.style.hidden}">Google plus</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="{fonts.icons.iconGitHub}">
+                                <a href="https://github.com/ArcBees/GWTP
+" target="_blank" class="{fonts.icons.iconGitHub}">
                                     <span class="{res.style.hidden}">Github</span>
                                 </a>
                             </li>
@@ -113,31 +112,6 @@
                     </g:HTMLPanel>
                 </slider:content>
             </slider:Slider>
-
-            <div class="{page.style.slideshow} {res.style.wrapper}">
-                <div class="{page.style.slides}">
-                    <g:Image resource="{page.gwtpScreen1}"/>
-                </div>
-                <a href="#" class="{page.style.prev}">
-                    <span class="{res.style.hidden}">Prev</span>
-                </a>
-                <a href="#" class="{page.style.next}">
-                    <span class="{res.style.hidden}">Next</span>
-                </a>
-                <nav class="{page.style.pager} {res.style.centered}">
-                    <ul>
-                        <li>
-                            <a href="#"></a>
-                        </li>
-                        <li>
-                            <a href="#"></a>
-                        </li>
-                        <li>
-                            <a href="#"></a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
         </section>
 
         <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.centered}">

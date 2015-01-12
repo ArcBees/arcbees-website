@@ -67,13 +67,13 @@
 
         <ul class="{page.style.social}">
             <li>
-                <a href="#">
+                <a href="ca.linkedin.com/pub/larry-matte/23/852/512" target="_blank">
                     <i class="{fonts.icons.iconLkd}"></i>
                     <span>Profil LinkedIn de Larry Matte</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="https://plus.google.com/118053902574596456436/posts" target="_blank">
                     <i class="{fonts.icons.iconGPlus}"></i>
                     <span>Profil Google+ de Larry Matte</span>
                 </a>

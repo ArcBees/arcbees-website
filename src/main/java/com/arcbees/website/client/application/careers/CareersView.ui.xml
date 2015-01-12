@@ -1,5 +1,6 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+        xmlns:seo="urn:import:com.arcbees.seo.widget"
         xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
     <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
@@ -8,6 +9,17 @@
     <ui:with field="animations" type="com.arcbees.website.client.resources.AnimationsResources"/>
 
     <g:HTMLPanel styleName="{page.style.careers}">
+
+        <seo:SeoWidget>
+            <seo:Title>
+                <ui:msg description="SEO - Careers - title">Careers - Arcbees</ui:msg>
+            </seo:Title>
+            <seo:Description>
+                <ui:msg description="SEO - Careers - description">
+                    Software Engineer, Web Developer, Designer ... Be a part of the hive!
+                </ui:msg>
+            </seo:Description>
+        </seo:SeoWidget>
 
         <h1 class="{fonts.icons.iconArcbees} {res.style.withLogo}"><span>Careers</span></h1>
 
@@ -71,7 +83,7 @@
             <div class="{res.style.stripe}">
                 <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                     <div class="{res.grid.col} {res.grid.col_full}">
-                        <h3>Designer slave</h3>
+                        <h3>Designer</h3>
                         <a href="#" class="{res.style.btn}">We hope you like to suffer</a>
                     </div>
                 </div>

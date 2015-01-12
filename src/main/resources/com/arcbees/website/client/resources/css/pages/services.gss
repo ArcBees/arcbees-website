@@ -393,6 +393,10 @@
     padding-bottom: 0;
 }
 
+.beeWay h2 {
+    margin-top: 10px;
+}
+
 .howWeWork h3 {
     font-size: 1.5rem;
 }

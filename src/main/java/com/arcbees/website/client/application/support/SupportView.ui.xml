@@ -199,7 +199,7 @@
 
         <section class="{res.style.stripe} {res.style.light} {page.style.features} {res.style.centered}">
             <div class="{res.style.wrapper}">
-                <a href="#" class="{res.style.btn}">
+                <a href="mailto:queenbee@arcbees.com" class="{res.style.btn}">
                     <ui:msg description="- BTN - Contact us">Contact us</ui:msg>
                 </a>
                 <h2>

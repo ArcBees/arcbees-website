@@ -90,6 +90,84 @@ public interface PageBeesResources extends FontResources {
     @Source("img/bees/christian.jpg")
     ImageResource beeChristian();
 
+    @Source("img/bees/christian1.jpg")
+    ImageResource beeChristian1();
+
+    @Source("img/bees/christian2.jpg")
+    ImageResource beeChristian2();
+
+    @Source("img/bees/christopher1.jpg")
+    ImageResource beeChristopher1();
+
+    @Source("img/bees/christopher2.jpg")
+    ImageResource beeChristopher2();
+
+    @Source("img/bees/francois1.jpg")
+    ImageResource beeFrancois1();
+
+    @Source("img/bees/francois2.jpg")
+    ImageResource beeFrancois2();
+
+    @Source("img/bees/ge1.jpg")
+    ImageResource beeGenevieve1();
+
+    @Source("img/bees/ge2.jpg")
+    ImageResource beeGenevieve2();
+
+    @Source("img/bees/jason1.jpg")
+    ImageResource beeJason1();
+
+    @Source("img/bees/jason2.jpg")
+    ImageResource beeJason2();
+
+    @Source("img/bees/jc1.jpg")
+    ImageResource beeJeanChristophe1();
+
+    @Source("img/bees/jc2.jpg")
+    ImageResource beeJeanChristophe2();
+
+    @Source("img/bees/joel1.jpg")
+    ImageResource beeJoel1();
+
+    @Source("img/bees/joel2.jpg")
+    ImageResource beeJoel2();
+
+    @Source("img/bees/julien1.jpg")
+    ImageResource beeJulien1();
+
+    @Source("img/bees/julien2.jpg")
+    ImageResource beeJulien2();
+
+    @Source("img/bees/larry1.jpg")
+    ImageResource beeLarry1();
+
+    @Source("img/bees/larry2.jpg")
+    ImageResource beeLarry2();
+
+    @Source("img/bees/manon1.jpg")
+    ImageResource beeManon1();
+
+    @Source("img/bees/manon2.jpg")
+    ImageResource beeManon2();
+
+    @Source("img/bees/maxime1.jpg")
+    ImageResource beeMaxime1();
+
+    @Source("img/bees/maxime2.jpg")
+    ImageResource beeMaxime2();
+
+    @Source("img/bees/philippea1.jpg")
+    ImageResource beePhilippeA1();
+
+    @Source("img/bees/philippea2.jpg")
+    ImageResource beePhilippeA2();
+
+    @Source("img/bees/sp1.jpg")
+    ImageResource beeSimonPierre1();
+
+    @Source("img/bees/sp2.jpg")
+    ImageResource beeSimonPierre2();
+
     @Source("img/bees/quiz/questions1.png")
     ImageResource questions1();
 

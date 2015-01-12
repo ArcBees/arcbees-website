@@ -38,11 +38,11 @@
             <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1_3}">
                 <h2>
                     <i class="{fonts.icons.iconArcbees}"></i>
-                    Everybody can be a bee<em>*</em>
+                    <ui:msg description="everybody can be a bee">Everybody can be a bee</ui:msg><em>*</em>
                 </h2>
-                <p>Be the best at what you do</p>
+                <p><ui:msg description="Be the best">Be the best at what you do</ui:msg></p>
                 <p>
-                    <em>*but you must know how to play BabyFoot table</em>
+                    <em>*<ui:msg description="but you must know">but you must know how to play Foosball</ui:msg></em>
                 </p>
                 <g:Button ui:field="share" styleName="{res.style.btn}">
                     <ui:msg description="share">Share</ui:msg>

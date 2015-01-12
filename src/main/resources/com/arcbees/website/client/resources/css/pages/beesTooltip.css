@@ -1,0 +1,32 @@
+.tooltip.in {
+    opacity: 1;
+    filter: literal("alpha(opacity=100)");
+}
+
+.tooltip.right {
+    margin-top: -113px;
+}
+
+.tooltip.right .tooltip-arrow {
+    margin-top: -15px;
+    border-right-color: #ffe400;
+    border-width: 15px 15px 15px 0;
+
+    left: -8px;
+}
+
+.tooltip-inner {
+    background-color: #ffe400;
+    color: #000;
+    text-align: left;
+    font-size: 1.6rem;
+
+    min-width: 10px;
+    max-width: 190px;
+    padding: 1.25rem;
+    border: 0;
+
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}

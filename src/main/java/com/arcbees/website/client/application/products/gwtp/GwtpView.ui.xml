@@ -1,14 +1,18 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-             xmlns:g="urn:import:com.google.gwt.user.client.ui"
-             xmlns:seo="urn:import:com.arcbees.seo.widget"
-             ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
-             ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
-             ui:generateLocales="default">
+        xmlns:g="urn:import:com.google.gwt.user.client.ui"
+        xmlns:slider="urn:import:com.arcbees.website.client.application.slider"
+        xmlns:seo="urn:import:com.arcbees.seo.widget"
+        ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+        ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
+        ui:generateLocales="default">
+
+    <ui:import field="com.arcbees.website.client.NameTokens.*"/>
 
     <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
     <ui:with field="page" type="com.arcbees.website.client.resources.PageProductResources"/>
     <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
+    <ui:with field="slider" type="com.arcbees.website.client.resources.SliderResources"/>
 
     <ui:import field="com.arcbees.website.client.NameTokens.*"/>
 
@@ -99,6 +103,17 @@
         </section>
 
         <section class="{res.style.stripe} {res.style.medium2}">
+            <!--TODO: JASON-->
+            <slider:Slider>
+                <slider:content>
+                    <g:HTMLPanel>
+                        <g:Image resource="{page.gaeScreen2}"/>
+                        <g:Image resource="{page.gwtpScreen1}"/>
+                        <g:Image resource="{page.goLogo}"/>
+                    </g:HTMLPanel>
+                </slider:content>
+            </slider:Slider>
+
             <div class="{page.style.slideshow} {res.style.wrapper}">
                 <div class="{page.style.slides}">
                     <g:Image resource="{page.gwtpScreen1}"/>
@@ -262,7 +277,9 @@
         <section class="{res.style.stripe} {page.style.colored} {res.style.centered}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_full}">
-                    <h3><ui:msg description="Share">SHARE</ui:msg></h3>
+                    <h3>
+                        <ui:msg description="Share">SHARE</ui:msg>
+                    </h3>
                     <ul class="{page.style.social}">
                         <li>
                             <a href="#" class="{fonts.icons.iconFb}">

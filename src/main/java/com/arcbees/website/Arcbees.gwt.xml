@@ -10,7 +10,9 @@
     <inherits name="com.arcbees.gsss.animation.Animation"/>
     <inherits name="com.arcbees.seo.Seo"/>
     <inherits name="com.arcbees.gquery.tooltip.Tooltip"/>
+    <inherits name="com.arcbees.gquery.appear.Appear"/>
     <inherits name="com.arcbees.chosen.Chosen"/>
+    <inherits name="com.arcbees.analytics.Analytics"/>
 
     <source path='client'/>
     <source path='shared'/>

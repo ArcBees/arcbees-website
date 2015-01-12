@@ -343,7 +343,7 @@ img {
 .btn.collapsible::after {
     content: "\e631";
     font-size: 2rem;
-    font-family: "icons";
+    font-family: "icomoonregular";
     color: C_TEXT_LIGHT;
     line-height: 1;
 
@@ -422,6 +422,7 @@ img {
 .dark .btn,
 .dark .btn:visited {
     color: C_TEXT_LIGHT;
+    background-color: transparent;
     border: 2px solid C_TEXT_LIGHT;
 }
 
@@ -431,6 +432,11 @@ img {
 
 .dark .btn:hover {
     color: C_TEXT;
+    background-color: transparent;
+}
+
+.dark button.btn:hover {
+    background-color: C_TEXT_LIGHT;
 }
 
 .dark .btn.collapsible {

@@ -1,5 +1,5 @@
-/*
- * Copyright 2014 ArcBees Inc.
+/**
+ * Copyright 2015 ArcBees Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -34,7 +34,8 @@ public class ResourceLoader {
             PageHomeResources pageHomeResources,
             PageBeesResources pageBeesResources,
             PageExpertisesResources pageExpertisesResources,
-            PageSupportResources pageSupportResources) {
+            PageSupportResources pageSupportResources,
+            SliderResources sliderResources) {
         appResources.normalize().ensureInjected();
         appResources.style().ensureInjected();
         appResources.grid().ensureInjected();
@@ -51,5 +52,6 @@ public class ResourceLoader {
         pageExpertisesResources.style().ensureInjected();
         pageSupportResources.style().ensureInjected();
         pageBeesResources.style().ensureInjected();
+        sliderResources.style().ensureInjected();
     }
 }

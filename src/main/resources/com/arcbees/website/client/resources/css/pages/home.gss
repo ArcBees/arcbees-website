@@ -10,7 +10,7 @@
 
 .home .header:before {
     content: "\e630";
-    font-family: "icons";
+    font-family: "icomoonregular";
     font-size: 40.5rem;
     color: #fff;
 
@@ -32,9 +32,19 @@
     z-index: 9;
 }
 
+@keyframes disappear {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
 @-webkit-keyframes disappear {
     0% {opacity: 1;}
     100% {opacity: 0;}
+}
+
+@keyframes appear {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 @-webkit-keyframes appear {
@@ -69,20 +79,35 @@
     @mixin animation_delay(.75s);
 }
 
+@keyframes bees {
+    0% {@mixin translate(0px, 0px);}
+    100% {@mixin translate(255px, 0px);}
+}
+
 @-webkit-keyframes bees {
-    0% {transform: translate(0px, 0px);}
-    100% {transform: translate(255px, 0px);}
+    0% {-webkit-transform: translate(0px,0px);}
+    100% {-webkit-transform: translate(255px, 0px);}
+}
+
+@keyframes beesMobile {
+    0% {@mixin translate(0px, 0px);}
+    100% {@mixin translate(130px, 0px);}
 }
 
 @-webkit-keyframes beesMobile {
-    0% {transform: translate(0px, 0px);}
-    100% {transform: translate(130px, 0px);}
+    0% {-webkit-transform: translate(0px,0px);}
+    100% {-webkit-transform: translate(255px, 0px);}
 }
 
 @if (!is("locale",  "en")) {
+    @keyframes bees {
+        0% {@mixin translate(0px, 0px);}
+        100% {@mixin translate(355px, 0px);}
+    }
+
     @-webkit-keyframes bees {
-        0% {transform: translate(0px, 0px);}
-        100% {transform: translate(355px, 0px);}
+        0% {-webkit-transform: translate(0px, 0px);}
+        100% {-webkit-transform: translate(355px, 0px);}
     }
 }
 
@@ -302,83 +327,102 @@
     stroke-dasharray: 1500;
     stroke-dashoffset: 1500;
     -webkit-animation: path 1.5s linear;
+    -moz-animation: path 1.5s linear;
+    -o-animation: path 1.5s linear;
+    animation: path 1.5s linear;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
 }
 
 .home .ssiconsHexa .path1 {
     @mixin animation_delay(1s);
-    -webkit-animation-fill-mode:forwards;
 }
 
 .home .ssiconsHexa .path2 {
     @mixin animation_delay(1.5s);
-    -webkit-animation-fill-mode:forwards;
 }
 
 .home .ssiconsHexa .path3 {
     @mixin animation_delay(2s);
-    -webkit-animation-fill-mode:forwards;
 }
 
 @keyframes path {
-    from {
-        stroke-dashoffset: 1500;
-    }
-
-    to {
-        stroke-dashoffset: 0;
-    }
+    from {stroke-dashoffset: 1500;}
+    to {stroke-dashoffset: 0;}
 }
 
 @-webkit-keyframes path {
-    from {
-        stroke-dashoffset: 1500;
-    }
-    to {
-        stroke-dashoffset: 0;
-    }
+    from {stroke-dashoffset: 1500;}
+    to {stroke-dashoffset: 0;}
 }
 
 .logoConstruct path.logo {
     -webkit-animation: logo 2s;
+    -moz-animation: logo 2s;
+    -o-animation: logo 2s;
+    animation: logo 2s;
     @mixin animation_delay(3s);
-    -webkit-animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
 
     fill: #c9b804;
     opacity: 0;
 }
 
+@keyframes logo {
+    0% {opacity: 0;}
+    100% {opacity: .95;}
+}
+
 @-webkit-keyframes logo {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: .95;
-    }
+    0% {opacity: 0;}
+    100% {opacity: .95;}
 }
 
 .logoConstruct .diagonal {
     stroke-dasharray: 1240;
     stroke-dashoffset: 1240;
     -webkit-animation: diag .75s linear;
-    -webkit-animation-delay: .5s;
+    -moz-animation: diag .75s linear;
+    -o-animation: diag .75s linear;
+    animation: diag .75s linear;
+    @mixin animation_delay(.5s);
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
 }
 
 .logoConstruct .vertical {
     stroke-dasharray: 910;
     stroke-dashoffset: 910;
     -webkit-animation: vert .75s linear;
-    -webkit-animation-delay: 1s;
+    -moz-animation: vert .75s linear;
+    -o-animation: vert .75s linear;
+    animation: vert .75s linear;
+    @mixin animation_delay(1s);
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
 }
 
 .logoConstruct .horizontal {
     stroke-dasharray: 2640;
     stroke-dashoffset: 2640;
     -webkit-animation: hor .5s linear;
-    -webkit-animation-delay: 1.5s;
+    -moz-animation: hor .5s linear;
+    -o-animation: hor .5s linear;
+    animation: hor .5s linear;
+    @mixin animation_delay(1.5s);
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
 }
 
 .logoConstruct .border {
@@ -386,80 +430,54 @@
     stroke-dasharray: 1440;
     stroke-dashoffset: 1440;
     -webkit-animation: border 2s linear;
-    -webkit-animation-delay: 2s;
+    -moz-animation: border 2s linear;
+    -o-animation: border 2s linear;
+    animation: border 2s linear;
+    @mixin animation_delay(2s);
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
 }
 
 @keyframes border {
-    from {
-        stroke-dashoffset: 1440;
-    }
-    to {
-        stroke-dashoffset: 0;
-    }
+    from {stroke-dashoffset: 1440;}
+    to {stroke-dashoffset: 0;}
 }
 
 @-webkit-keyframes border {
-    from {
-        stroke-dashoffset: 1440;
-    }
-    to {
-        stroke-dashoffset: 0;
-    }
+    from {stroke-dashoffset: 1440;}
+    to {stroke-dashoffset: 0;}
 }
 
 @keyframes diag {
-    from {
-        stroke-dashoffset: 1240;
-    }
-    to {
-        stroke-dashoffset: 0;
-    }
+    from {stroke-dashoffset: 1240;}
+    to {stroke-dashoffset: 0;}
 }
 
 @-webkit-keyframes diag {
-    from {
-        stroke-dashoffset: 1240;
-    }
-    to {
-        stroke-dashoffset: 0;
-    }
+    from {stroke-dashoffset: 1240;}
+    to {stroke-dashoffset: 0;}
 }
 
 @keyframes hor {
-    from {
-        stroke-dashoffset: 2640;
-    }
-    to {
-        stroke-dashoffset: 0;
-    }
+    from {stroke-dashoffset: 2640;}
+    to {stroke-dashoffset: 0;}
 }
 
 @-webkit-keyframes hor {
-    from {
-        stroke-dashoffset: 2640;
-    }
-    to {
-        stroke-dashoffset: 0;
-    }
+    from {stroke-dashoffset: 2640;}
+    to {stroke-dashoffset: 0;}
 }
 
 @keyframes vert {
-    from {
-        stroke-dashoffset: 750;
-    }
-    to {
-        stroke-dashoffset: 0;
-    }
+    from {stroke-dashoffset: 750;}
+    to {stroke-dashoffset: 0;}
 }
 
 @-webkit-keyframes vert {
-    from {
-        stroke-dashoffset: 750;
-    }
-    to {
-        stroke-dashoffset: 0;
-    }
+    from {stroke-dashoffset: 750;}
+    to {stroke-dashoffset: 0;}
 }
 
 .home .successStoryMore a {

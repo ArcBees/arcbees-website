@@ -1,3 +1,19 @@
+/**
+ * Copyright 2015 ArcBees Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ * use this file except in compliance with the License. You may obtain a copy of
+ * the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
+ */
+
 package com.arcbees.website.client.application.bees.quiz;
 
 import javax.inject.Inject;
@@ -5,7 +21,9 @@ import javax.inject.Inject;
 import com.arcbees.gquery.tooltip.client.TooltipOptions;
 import com.arcbees.website.client.resources.AppResources;
 import com.arcbees.website.client.resources.PageBeesResources.QuizMessages;
+import com.arcbees.website.client.resources.PageBeesTooltipResources;
 import com.google.gwt.dom.client.DivElement;
+import com.google.gwt.dom.client.HeadingElement;
 import com.google.gwt.dom.client.ParagraphElement;
 import com.google.gwt.dom.client.SpanElement;
 import com.google.gwt.event.dom.client.ClickEvent;
@@ -13,7 +31,6 @@ import com.google.gwt.event.logical.shared.AttachEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
-import com.google.gwt.user.client.ui.Image;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewWithUiHandlers;
 
@@ -26,12 +43,6 @@ public class QuestionView extends ViewWithUiHandlers<QuestionUiHandlers>
     }
 
     @UiField
-    Image answer1Image;
-    @UiField
-    Image answer2Image;
-    @UiField
-    Image answer3Image;
-    @UiField
     ParagraphElement question;
     @UiField
     DivElement quizFinished;
@@ -42,14 +53,17 @@ public class QuestionView extends ViewWithUiHandlers<QuestionUiHandlers>
 
     private final QuizMessages quizMessages;
     private final AppResources resources;
+    private final PageBeesTooltipResources pageBeesTooltipResources;
 
     @Inject
     QuestionView(
             Binder binder,
             QuizMessages quizMessages,
-            AppResources resources) {
+            AppResources resources,
+            PageBeesTooltipResources pageBeesTooltipResources) {
         this.quizMessages = quizMessages;
         this.resources = resources;
+        this.pageBeesTooltipResources = pageBeesTooltipResources;
 
         initWidget(binder.createAndBindUi(this));
 
@@ -63,9 +77,12 @@ public class QuestionView extends ViewWithUiHandlers<QuestionUiHandlers>
         question.setInnerText(quizMessages.question(questionNumber));
         this.questionNumber.setInnerText(String.valueOf(questionNumber));
 
-        $(answer1Image).attr("title", quizMessages.answer1(questionNumber));
-        $(answer2Image).attr("title", quizMessages.answer2(questionNumber));
-        $(answer3Image).attr("title", quizMessages.answer3(questionNumber));
+        $(questions).attr("data-question", questionNumber);
+        $("input", questions).removeAttr("checked");
+
+        $("#answer1 + label").attr("title", quizMessages.answer1(questionNumber));
+        $("#answer2 + label").attr("title", quizMessages.answer2(questionNumber));
+        $("#answer3 + label").attr("title", quizMessages.answer3(questionNumber));
 
         destroyTooltips();
         createTooltips();
@@ -79,6 +96,7 @@ public class QuestionView extends ViewWithUiHandlers<QuestionUiHandlers>
     @Override
     public void onAttachOrDetach(AttachEvent attachEvent) {
         if (attachEvent.isAttached()) {
+            setQuestion(Integer.valueOf($(questions).attr("data-question")));
             createTooltips();
         } else {
             destroyTooltips();
@@ -87,7 +105,9 @@ public class QuestionView extends ViewWithUiHandlers<QuestionUiHandlers>
 
     @UiHandler("nextButton")
     void onNext(ClickEvent event) {
-        getUiHandlers().onNextQuestion();
+        if ($("input[name='quiz']").is(":checked")) {
+            getUiHandlers().onNextQuestion();
+        }
     }
 
     @UiHandler("tryAgain")
@@ -113,7 +133,8 @@ public class QuestionView extends ViewWithUiHandlers<QuestionUiHandlers>
         TooltipOptions options = new TooltipOptions()
                 .withDelayHide(100)
                 .withDelayShow(200)
-                .withPlacement(TooltipOptions.TooltipPlacement.RIGHT);
+                .withPlacement(TooltipOptions.TooltipPlacement.RIGHT)
+                .withResources(pageBeesTooltipResources);
         $("[title]", asWidget()).as(Tooltip).tooltip(options);
     }
 }

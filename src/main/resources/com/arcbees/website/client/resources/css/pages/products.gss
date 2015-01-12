@@ -185,10 +185,10 @@
 }
 
 .productHead.gae li:nth-child(2) a,
-.productHead.gwtp li:nth-child(1) a,
-.productHead.gwtp li:nth-child(3) a,
-.productHead.jukito li:nth-child(2) a,
-.productHead.jukito li:nth-child(4) a,
+.productHead.jukito li:nth-child(1) a,
+.productHead.jukito li:nth-child(3) a,
+.productHead.gwtp li:nth-child(2) a,
+.productHead.gwtp li:nth-child(4) a,
 .productHead.chosen li:nth-child(3) a,
 .productHead.chosen li:nth-child(5) a,
 .productHead.gquery li:nth-child(4) a {
@@ -220,11 +220,11 @@
 }
 
 .productHead.gwtp .arrow::after {
-    margin-left: -165px;
+    margin-left: -50px;
 }
 
 .productHead.jukito .arrow::after {
-    margin-left: -50px;
+    margin-left: -165px;
 }
 
 .productHead.chosen .arrow::after {

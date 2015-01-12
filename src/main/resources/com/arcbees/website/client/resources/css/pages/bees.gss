@@ -245,6 +245,10 @@
     padding-top: 50px;
 }
 
+.bees .hive div:first-child {
+    margin-bottom: 50px;
+}
+
 .bees .bee {
     background-color: #000;
 

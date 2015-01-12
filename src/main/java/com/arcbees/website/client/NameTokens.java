@@ -32,7 +32,7 @@ public class NameTokens {
     public static final String JUKITO = PRODUCTS_BASE + "/jukito";
     public static final String GWTP = PRODUCTS_BASE + "/gwtp";
     public static final String GQUERY = PRODUCTS_BASE + "/gquery";
-    public static final String PRODUCTS = JUKITO;
+    public static final String PRODUCTS = GWTP;
 
     public static final String BEE_CHRISTIAN = BEES + "/christian-goudreau";
     public static final String BEE_CHRISTOPHER = BEES + "/christopher-viel";

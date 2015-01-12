@@ -18,6 +18,8 @@ package com.arcbees.website.client;
 
 import javax.inject.Inject;
 
+import com.arcbees.analytics.shared.Analytics;
+import com.arcbees.analytics.shared.AnalyticsPlugin;
 import com.arcbees.website.client.application.maps.GwtMapsLoader;
 import com.gwtplatform.mvp.client.Bootstrapper;
 import com.gwtplatform.mvp.client.proxy.PlaceManager;
@@ -25,13 +27,16 @@ import com.gwtplatform.mvp.client.proxy.PlaceManager;
 public class BootstrapperImpl implements Bootstrapper {
     private final PlaceManager placeManager;
     private final GwtMapsLoader gwtMapsLoader;
+    private final Analytics analytics;
 
     @Inject
     BootstrapperImpl(
             PlaceManager placeManager,
-            GwtMapsLoader gwtMapsLoader) {
+            GwtMapsLoader gwtMapsLoader,
+            Analytics analytics) {
         this.placeManager = placeManager;
         this.gwtMapsLoader = gwtMapsLoader;
+        this.analytics = analytics;
     }
 
     @Override
@@ -39,5 +44,9 @@ public class BootstrapperImpl implements Bootstrapper {
         gwtMapsLoader.loadGwtMaps();
 
         placeManager.revealCurrentPlace();
+
+        analytics.create().cookieDomain("arcbees.com").go();
+        analytics.enablePlugin(AnalyticsPlugin.DISPLAY);
+        analytics.enablePlugin(AnalyticsPlugin.ENHANCED_LINK_ATTRIBUTION);
     }
 }

@@ -16,6 +16,7 @@
 
 package com.arcbees.website.client;
 
+import com.arcbees.analytics.client.AnalyticsModule;
 import com.arcbees.website.client.application.ApplicationModule;
 import com.arcbees.website.client.resources.ResourceLoader;
 import com.google.gwt.inject.client.AbstractGinModule;
@@ -31,6 +32,7 @@ public class ClientModule extends AbstractGinModule {
         install(new Builder().tokenFormatter(RouteTokenFormatter.class).build());
 
         install(new ApplicationModule());
+        install(new AnalyticsModule.Builder("UA-41550930-11").autoCreate(false).build());
 
         bind(ResourceLoader.class).asEagerSingleton();
 

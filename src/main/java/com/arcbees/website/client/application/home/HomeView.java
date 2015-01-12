@@ -16,6 +16,7 @@
 
 package com.arcbees.website.client.application.home;
 
+import com.arcbees.analytics.shared.Analytics;
 import com.arcbees.website.client.resources.AppResources;
 import com.arcbees.website.client.resources.PageHomeResources;
 import com.google.gwt.dom.client.AnchorElement;
@@ -58,14 +59,17 @@ public class HomeView extends ViewImpl implements HomePresenter.MyView {
 
     private final AppResources appResources;
     private final PageHomeResources pageResources;
+    private final Analytics analytics;
 
     @Inject
     HomeView(
             AppResources appResources,
             PageHomeResources pageResources,
+            Analytics analytics,
             Binder binder) {
         initWidget(binder.createAndBindUi(this));
 
+        this.analytics = analytics;
         this.appResources = appResources;
         this.pageResources = pageResources;
 
@@ -99,6 +103,8 @@ public class HomeView extends ViewImpl implements HomePresenter.MyView {
             public void f(Element e) {
                 $(successStoryMore).slideToggle(SLIDE_DELAY);
                 $(successStoryBtn).toggleClass(pageResources.style().collapsible());
+
+                analytics.sendEvent("Home", "Click").eventLabel("Success Story - Learn More").go();
             }
         });
 

@@ -81,19 +81,70 @@
     @mixin animation_name(pyramid3);
 }
 
+@keyframes pyramid1 {
+    0% {
+        @mixin translate(0px, 240px);
+        opacity: 0;
+    }
+    100% {
+        @mixin translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
 @-webkit-keyframes pyramid1 {
-    0% {transform: translate(0px, 240px); opacity: 0;}
-    100% {transform: translate(0px, 0px); opacity: 1;}
+    0% {
+        -webkit-transform: translate(0px, 240px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+@keyframes pyramid2 {
+    0% {
+        @mixin translate(0px, 320px);
+        opacity: 0;
+    }
+    100% {
+        @mixin translate(0px, 0px);
+        opacity: 1;
+    }
 }
 
 @-webkit-keyframes pyramid2 {
-    0% {transform: translate(0px, 320px); opacity: 0;}
-    100% {transform: translate(0px, 0px); opacity: 1;}
+    0% {
+        -webkit-transform: translate(0px, 320px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
+@keyframes pyramid3 {
+    0% {
+        @mixin translate(0px, 500px);
+        opacity: 0;
+    }
+    100% {
+        @mixin translate(0px, 0px);
+        opacity: 1;
+    }
 }
 
 @-webkit-keyframes pyramid3 {
-    0% {transform: translate(0px, 500px); opacity: 0;}
-    100% {transform: translate(0px, 0px); opacity: 1;}
+    0% {
+        -webkit-transform: translate(0px, 500px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translate(0px, 0px);
+        opacity: 1;
+    }
 }
 
 @media (max-width: 649px) {
@@ -536,7 +587,7 @@
 }
 
 .partner i.icon2::before {
-@mixin rotate(90deg);
+    @mixin rotate(90deg);
 }
 
 .partner i.icon3 {
@@ -612,13 +663,26 @@
     top: 152px;
 }
 
+@keyframes partner {
+    from {
+        @mixin translate(100px, 0px);
+        opacity:0;
+    }
+    to {
+        @mixin translate(0px, 0px);
+        opacity: 1;
+    }
+}
+
 @-webkit-keyframes partner {
-    from {-ms-transform: translate(100px,0px);opacity:0;
-        -webkit-transform: translate(100px,0px);opacity:0;
-        transform: translate(100px,0px);opacity:0;}
-    to {-ms-transform: translate(0px,0px);opacity: 1;
-        -webkit-transform: translate(0px,0px);opacity: 1;
-        transform: translate(0px,0px);opacity: 1;}
+    from {
+        -webkit-transform: translate(100px,0px);
+        opacity:0;
+    }
+    to {
+        -webkit-transform: translate(0px,0px);
+        opacity: 1;
+    }
 }
 
 @media (max-width: 649px) {
@@ -893,20 +957,30 @@
 }
 
 .codeReview i.iconHexa.hexaMove {
-    -webkit-animation-name: hexaMoveCR;
-    animation-name: hexaMoveCR;
-    -webkit-animation-duration: 5s;
-    animation-duration: 5s;
+    @mixin animation_name(hexaMoveCR);
+    @mixin animation_duration(5s);
 }
 
 @keyframes hexaMoveCR {
-    0% {transform:translate(0px, 0px); opacity: 0;}
-    100% {transform: translate(0px, 40px); opacity: 1;}
+    0% {
+        @mixin translate(0px, 0px);
+        opacity: 0;
+    }
+    100% {
+        @mixin translate(0px, 40px);
+        opacity: 1;
+    }
 }
 
 @-webkit-keyframes hexaMoveCR {
-    0% {transform:translate(0px, 0px); opacity: 0;}
-    100% {transform: translate(0px, 40px); opacity: 1;}
+    0% {
+        -webkit-transform:translate(0px, 0px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translate(0px, 40px);
+        opacity: 1;
+    }
 }
 
 .bracket1,

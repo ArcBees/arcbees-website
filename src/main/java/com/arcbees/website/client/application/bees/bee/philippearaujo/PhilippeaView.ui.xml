@@ -26,7 +26,7 @@
         <div class="{page.style.bee} {page.style.bee1}">
             <div class="{page.style.beeHolder1}">
                 <div class="{page.style.beeHolder2}">
-                    <g:Image resource="{page.beeChristian}"></g:Image>
+                    <g:Image resource="{page.beePhilippeA2}"></g:Image>
                 </div>
             </div>
         </div>

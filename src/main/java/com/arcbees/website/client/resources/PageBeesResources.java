@@ -24,16 +24,6 @@ public interface PageBeesResources extends FontResources {
     interface Style extends AnimationResources.Animation {
         String bees();
 
-        String slide();
-
-        String slides();
-
-        String prev();
-
-        String next();
-
-        String pager();
-
         String active();
 
         String bee();

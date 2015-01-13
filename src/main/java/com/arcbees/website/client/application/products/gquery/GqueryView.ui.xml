@@ -91,18 +91,21 @@
             </div>
         </section>
 
-        <section class="{res.style.stripe} {res.style.medium2}">
-            <slider:Slider>
-                <slider:content>
-                    <g:HTMLPanel>
-                        <g:Image resource="{page.gaeScreen1}"/>
-                        <g:Image resource="{page.gaeScreen2}"/>
-                        <g:Image resource="{page.gaeScreen3}"/>
-                        <g:Image resource="{page.gaeScreen4}"/>
-                        <g:Image resource="{page.gaeScreen5}"/>
-                    </g:HTMLPanel>
-                </slider:content>
-            </slider:Slider>
+        <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.centered}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full}">
+                    <p><strong>
+                        <ui:msg description="Jquery's code">Jquery's code</ui:msg>
+                    </strong></p>
+                    <g:Image resource="{page.jqueryScreen}"/>
+                </div>
+                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full}">
+                    <p><strong>
+                        <ui:msg description="Gquery's code">Gquery's code</ui:msg>
+                    </strong></p>
+                    <g:Image resource="{page.gqueryScreen}"/>
+                </div>
+            </div>
         </section>
 
         <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.centered}">

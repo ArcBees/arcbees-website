@@ -154,85 +154,8 @@
     }
 }
 
-.valuesSlider {
+.valuesSlider > div > div:first-child{
     min-height: 155px;
-}
-
-@media (max-width: 649px) {
-    .bees .slide{
-        padding: 0 20px;
-    }
-
-    .bees .slide h3 {
-        font-size: 3rem;
-
-        margin-top: 1em;
-    }
-}
-
-.bees .slides h3 strong {
-    font-family: 'geometriaBold';
-
-    display: block;
-}
-
-.bees a.next,
-.bees a.prev {
-    color: #000;
-    font-size: 2.5rem;
-
-    margin-top: -12px;
-
-    top: 50%;
-    left: 0;
-    position: absolute;
-
-    @mixin rotate(90deg);
-    @mixin transition(color, .2s);
-}
-
-.bees a.next {
-    right: 0;
-    left: auto;
-
-    @mixin rotate(-90deg);
-}
-
-.bees a.prev::before,
-.bees a.next::before {
-    content: "\e631";
-    font-family: "icomoonregular";
-}
-
-.bees a.prev:hover,
-.bees a.next:hover {
-    color: #f2f2f2;
-}
-
-.bees .pager ul {
-    padding: 0;
-    margin: 25px 0 0;
-}
-
-.bees .pager li {
-    display: inline-block;
-    margin: 0 7px;
-}
-
-.bees .pager a,
-.bees .pager a:visited {
-    background-color: C_PRIMARY;
-
-    display: block;
-    height: 14px;
-    width: 14px;
-
-    @mixin rounded(7px);
-}
-
-.bees .pager a.active,
-.bees .pager a:hover {
-    background-color: C_STRIPE_DARK;
 }
 
 /* -> Bee -- */

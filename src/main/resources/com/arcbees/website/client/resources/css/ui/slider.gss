@@ -43,6 +43,7 @@
 .slider .prev i:before,
 .slider .next i:before {
     color: #000;
+    font-size: 25px;
 
     @mixin rotate(-90deg);
 }
@@ -81,28 +82,30 @@
 }
 
 .slider .pager {
-    text-align: right;
+    text-align: center;
+
+    height: 20px;
+    width: 100%;
 
     position: absolute;
-    bottom: 2px;
-    right: 7px;
-    z-index: 2500;
 }
 
 .slider .pager a {
-    background-image: DOT;
-    background-position: center top;
+    color: #fff;
 
     display: inline-block;
-    width: 7px;
-    height: 7px;
     margin-left: 7px;
 
-    cursor: default;
+    cursor: pointer;
 }
 
-.slider .pager a.active {
-    background-position: center bottom;
+.slider .pager a:before {
+    content: "\2022";
+    font-size: 60px;
+}
+
+.slider .pager a.active:before {
+    color: #000;
 }
 
 .slider .pager a span {

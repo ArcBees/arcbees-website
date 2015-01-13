@@ -517,9 +517,8 @@ a.anchor {
     color: C_PRODUCT_GAE;
 }
 
-.gae .slideshow .pager a,
-.gae .slideshow .pager a:visited {
-    background-color: C_PRODUCT_GAE;
+.gae .slideshow a:before {
+    color: C_PRODUCT_GAE;
 }
 
 .gae .code {
@@ -672,9 +671,8 @@ a.anchor {
     color: C_PRODUCT_GQUERY;
 }
 
-.gquery .slideshow .pager a,
-.gquery .slideshow .pager a:visited {
-    background-color: C_PRODUCT_GQUERY;
+.gquery .slideshow a:before {
+    color: C_PRODUCT_GQUERY;
 }
 
 /* -- Overwrite ---------------------------------------- */

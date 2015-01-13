@@ -86,20 +86,18 @@
             </div>
         </section>
 
-        <section class="{res.style.stripe}">
-            <div class="{page.style.slideshow} {res.style.wrapper}">
-                <slider:Slider>
-                    <slider:content>
-                        <g:HTMLPanel>
-                            <g:Image resource="{page.gaeScreen1}"/>
-                            <g:Image resource="{page.gaeScreen2}"/>
-                            <g:Image resource="{page.gaeScreen3}"/>
-                            <g:Image resource="{page.gaeScreen4}"/>
-                            <g:Image resource="{page.gaeScreen5}"/>
-                        </g:HTMLPanel>
-                    </slider:content>
-                </slider:Slider>
-            </div>
+        <section class="{res.style.stripe} {page.style.slideshow}">
+            <slider:Slider>
+                <slider:content>
+                    <g:HTMLPanel>
+                        <g:Image resource="{page.gaeScreen1}"/>
+                        <g:Image resource="{page.gaeScreen2}"/>
+                        <g:Image resource="{page.gaeScreen3}"/>
+                        <g:Image resource="{page.gaeScreen4}"/>
+                        <g:Image resource="{page.gaeScreen5}"/>
+                    </g:HTMLPanel>
+                </slider:content>
+            </slider:Slider>
         </section>
 
         <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.centered}">

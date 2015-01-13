@@ -1,6 +1,7 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
         xmlns:g="urn:import:com.google.gwt.user.client.ui"
+        xmlns:slider="urn:import:com.arcbees.website.client.application.slider"
         xmlns:seo="urn:import:com.arcbees.seo.widget"
         ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
         ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
@@ -162,28 +163,51 @@
             </div>
         </section>
 
-        <section class="{page.style.trusted} {res.style.stripe} {res.style.medium2} {res.style.centered}">
-            <div class="{res.style.wrapper}">
+        <section class="{res.style.stripe} {res.style.medium2} {res.style.centered}">
+            <div class="{page.style.trusted} {res.style.wrapper}">
                 <h2>
                     <ui:msg description="Professional Services - Trusted By">Trusted By</ui:msg>
                 </h2>
-                <ul>
-                    <li>
-                        <a href="#">
-                            <g:Image resource="{page.workTrustedRoler}"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://zafin.com/" target="_blank">
-                            <g:Image resource="{page.workTrustedZafin}"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://www.lillegroup.com/" target="_blank">
-                            <g:Image resource="{page.workTrustedLille}"/>
-                        </a>
-                    </li>
-                </ul>
+                <slider:Slider>
+                    <slider:content>
+                        <g:HTMLPanel>
+                            <ul>
+                                <li>
+                                    <a href="http://zafin.com/" target="_blank">
+                                        <g:Image resource="{page.protorisk}"/>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <g:Image resource="{page.kaam}"/>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.lillegroup.com/" target="_blank">
+                                        <g:Image resource="{page.swiftIQ}"/>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <g:Image resource="{page.easyData}"/>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://zafin.com/" target="_blank">
+                                        <g:Image resource="{page.bookedIn}"/>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.lillegroup.com/" target="_blank">
+                                        <g:Image resource="{page.trackR}"/>
+                                    </a>
+                                </li>
+                            </ul>
+                        </g:HTMLPanel>
+                    </slider:content>
+                </slider:Slider>
             </div>
         </section>
 

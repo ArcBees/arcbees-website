@@ -151,29 +151,23 @@ public interface PageServicesResources extends FontResources {
     @Source("img/pages/servicesRoller.png")
     ImageResource workRoller();
 
-    @Source("img/pages/servicesTrustedTrackR.png")
-    ImageResource workTrustedTrackR();
+    @Source("img/pages/trackR.png")
+    ImageResource trackR();
 
-    @Source("img/pages/servicesTrustedBooked.png")
-    ImageResource workTrustedBooked();
+    @Source("img/pages/bookedIn.png")
+    ImageResource bookedIn();
 
-    @Source("img/pages/servicesTrustedProtorisk.png")
-    ImageResource workTrustedProtorisk();
+    @Source("img/pages/protorisk.png")
+    ImageResource protorisk();
 
-    @Source("img/pages/servicesTrustedSceneverse.png")
-    ImageResource workTrustedSceneverse();
+    @Source("img/pages/kaam.png")
+    ImageResource kaam();
 
-    @Source("img/pages/servicesTrustedSwiftIQ.png")
-    ImageResource workTrustedSwiftIQ();
+    @Source("img/pages/swiftIq.png")
+    ImageResource swiftIQ();
 
-    @Source("img/pages/servicesTrustedZafin.png")
-    ImageResource workTrustedZafin();
-
-    @Source("img/pages/servicesTrustedRoler.png")
-    ImageResource workTrustedRoler();
-
-    @Source("img/pages/servicesTrustedLille.png")
-    ImageResource workTrustedLille();
+    @Source("img/pages/easyData.png")
+    ImageResource easyData();
 
     @Source("img/pages/servicesLightBulb.png")
     ImageResource servicesLightBulb();

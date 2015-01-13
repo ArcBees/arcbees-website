@@ -1,6 +1,7 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
         xmlns:g="urn:import:com.google.gwt.user.client.ui"
+        xmlns:slider="urn:import:com.arcbees.website.client.application.slider"
         xmlns:seo="urn:import:com.arcbees.seo.widget"
         ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
         ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
@@ -90,30 +91,20 @@
             </div>
         </section>
 
-        <section class="{res.style.stripe} {res.style.medium2}">
-            <div class="{page.style.slideshow} {res.style.wrapper}">
-                <div class="{page.style.slides}">
-                    <!--TODO: ADD SCREENSHOTS IMG -->
+        <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.centered}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full}">
+                    <p><strong>
+                        <ui:msg description="Jquery's code">Jquery's code</ui:msg>
+                    </strong></p>
+                    <g:Image resource="{page.jqueryScreen}"/>
                 </div>
-                <a href="#" class="{page.style.prev}">
-                    <span class="{res.style.hidden}">Prev</span>
-                </a>
-                <a href="#" class="{page.style.next}">
-                    <span class="{res.style.hidden}">Next</span>
-                </a>
-                <nav class="{page.style.pager} {res.style.centered}">
-                    <ul>
-                        <li>
-                            <a href="#"></a>
-                        </li>
-                        <li>
-                            <a href="#"></a>
-                        </li>
-                        <li>
-                            <a href="#"></a>
-                        </li>
-                    </ul>
-                </nav>
+                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full}">
+                    <p><strong>
+                        <ui:msg description="Gquery's code">Gquery's code</ui:msg>
+                    </strong></p>
+                    <g:Image resource="{page.gqueryScreen}"/>
+                </div>
             </div>
         </section>
 

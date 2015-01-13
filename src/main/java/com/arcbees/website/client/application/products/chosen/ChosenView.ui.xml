@@ -93,7 +93,7 @@
             </div>
         </section>
 
-        <section>
+        <section class="{res.style.stripe} {page.style.stripeDetails}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.centered} {page.style.chosenHolder}">
 
                 <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full}">

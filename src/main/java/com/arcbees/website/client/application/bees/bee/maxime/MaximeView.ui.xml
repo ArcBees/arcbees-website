@@ -1,6 +1,7 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
         xmlns:g="urn:import:com.google.gwt.user.client.ui"
+        xmlns:seo="urn:import:com.arcbees.seo.widget"
         ui:generateFormat="com.google.gwt.i18n.rebind.format.PropertiesFormat"
         ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
         ui:generateLocales="default">
@@ -11,10 +12,21 @@
 
     <g:HTMLPanel>
 
+        <seo:SeoWidget>
+            <seo:Title>
+                <ui:msg description="SEO - Bees - Maxime - title">Maxime Mériouma Caron - Arcbees</ui:msg>
+            </seo:Title>
+            <seo:Description>
+                <ui:msg description="SEO - Bees - Maxime - description">
+                    Night Shadow Developer
+                </ui:msg>
+            </seo:Description>
+        </seo:SeoWidget>
+
         <div class="{page.style.bee} {page.style.bee1}">
             <div class="{page.style.beeHolder1}">
                 <div class="{page.style.beeHolder2}">
-                    <g:Image resource="{page.beeChristian}"></g:Image>
+                    <g:Image resource="{page.beeMaxime2}"></g:Image>
                 </div>
             </div>
         </div>
@@ -51,13 +63,13 @@
 
         <ul class="{page.style.social}">
             <li>
-                <a href="#">
+                <a href="ca.linkedin.com/pub/maxime-mériouma-caron/2a/40b/599" target="_blank">
                     <i class="{fonts.icons.iconLkd}"></i>
                     <span>Profil LinkedIn de Maxime Mériouma Caron</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="https://plus.google.com/113742878333600737353/posts" target="_blank">
                     <i class="{fonts.icons.iconGPlus}"></i>
                     <span>Profil Google+ de Maxime Mériouma Caron</span>
                 </a>

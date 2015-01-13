@@ -102,7 +102,7 @@ public class HomeView extends ViewImpl implements HomePresenter.MyView {
         $(successStoryBtn).click(new Function() {
             public void f(Element e) {
                 $(successStoryMore).slideToggle(SLIDE_DELAY);
-                $(successStoryBtn).toggleClass(appResources.style().collapsible());
+                $(successStoryBtn).toggleClass(pageResources.style().collapsible());
 
                 analytics.sendEvent("Home", "Click").eventLabel("Success Story - Learn More").go();
             }

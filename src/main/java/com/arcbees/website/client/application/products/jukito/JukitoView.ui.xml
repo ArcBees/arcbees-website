@@ -1,6 +1,7 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
         xmlns:g="urn:import:com.google.gwt.user.client.ui"
+        xmlns:seo="urn:import:com.arcbees.seo.widget"
         ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
         ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
         ui:generateLocales="default">
@@ -12,10 +13,20 @@
 
     <g:HTMLPanel styleName="{page.style.products} {page.style.jukito}">
 
-        <nav class="{page.style.breadcrumb}">
-            <span class="{fonts.icons.iconArcbees} {page.style.logo}"></span>
+        <seo:SeoWidget>
+            <seo:Title>
+                <ui:msg description="SEO - Products - Jukito - title">Jukito - Products - Arcbees</ui:msg>
+            </seo:Title>
+            <seo:Description>
+                <ui:msg description="SEO - Products - Jukito - description">
+                    Jukito empowers you to use dependency injection in all your tests.
+                </ui:msg>
+            </seo:Description>
+        </seo:SeoWidget>
+
+        <nav class="{res.style.breadcrumb} {res.style.withLogo}">
             <ul>
-                <li>PRODUCT</li>
+                <li><ui:msg description="product">PRODUCT</ui:msg></li>
                 <li>JUKITO</li>
             </ul>
         </nav>
@@ -26,18 +37,16 @@
                     <h1>jukito
                         <a href="#" class="{res.style.anchor}">#</a>
                     </h1>
-                    <h2 class="{page.style.presentation}">The new martial
-                        <span>art for programmers</span>
+                    <h2 class="{page.style.presentation}">
+                        <ui:msg description="Jukito - slogan">Use the power
+                            <span>of dependency injection</span>
+                            in all your tests
+                        </ui:msg>
                     </h2>
                     <div class="{page.style.socialTop}">
                         <ul class="{page.style.social}">
                             <li>
-                                <a href="#" class="{fonts.icons.iconGPlus}">
-                                    <span class="{res.style.hidden}">Google plus</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="{fonts.icons.iconGitHub}">
+                                <a href="https://github.com/ArcBees/Jukito" target="_blank" class="{fonts.icons.iconGitHub}">
                                     <span class="{res.style.hidden}">Github</span>
                                 </a>
                             </li>
@@ -82,33 +91,6 @@
                         <ui:msg description="- BTN - Developers Platform">Developer's Platform</ui:msg>
                     </a>
                 </div>
-            </div>
-        </section>
-
-        <section class="{res.style.stripe} {res.style.medium2}">
-            <div class="{page.style.slideshow} {res.style.wrapper}">
-                <div class="{page.style.slides}">
-                    <g:Image resource="{page.gwtpScreen1}"/>
-                </div>
-                <a href="#" class="{page.style.prev}">
-                    <span class="{res.style.hidden}">Prev</span>
-                </a>
-                <a href="#" class="{page.style.next}">
-                    <span class="{res.style.hidden}">Next</span>
-                </a>
-                <nav class="{page.style.pager} {res.style.centered}">
-                    <ul>
-                        <li>
-                            <a href="#"></a>
-                        </li>
-                        <li>
-                            <a href="#"></a>
-                        </li>
-                        <li>
-                            <a href="#"></a>
-                        </li>
-                    </ul>
-                </nav>
             </div>
         </section>
 

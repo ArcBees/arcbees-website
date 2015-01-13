@@ -1,6 +1,7 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
         xmlns:g="urn:import:com.google.gwt.user.client.ui"
+        xmlns:seo="urn:import:com.arcbees.seo.widget"
         ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
         ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
         ui:generateLocales="default">
@@ -13,8 +14,19 @@
 
     <g:HTMLPanel styleName="{page.style.support}">
 
-        <h1 class="{fonts.icons.iconArcbees} {res.style.withLogo}">
-            <span>Support</span>
+        <seo:SeoWidget>
+            <seo:Title>
+                <ui:msg description="SEO - Support - title">Support - Arcbees</ui:msg>
+            </seo:Title>
+            <seo:Description>
+                <ui:msg description="SEO - Support - description">
+                    Support packages to allows us to help your team become optimally productive with our tools.
+                </ui:msg>
+            </seo:Description>
+        </seo:SeoWidget>
+
+        <h1 class="{res.style.breadcrumb} {res.style.withLogo}">
+            Support
         </h1>
 
         <section class="{res.style.stripe} {res.style.header} {page.style.header} {res.style.light}">
@@ -131,7 +143,7 @@
                             <div class="{page.style.developers}">
                                 <p>5
                                     <span>
-                                        <ui:msg description="developer">developers</ui:msg>
+                                        <ui:msg description="developers">developers</ui:msg>
                                     </span>
                                 </p>
                             </div>
@@ -171,7 +183,7 @@
                             <div class="{page.style.developers}">
                                 <p>25
                                     <span>
-                                        <ui:msg description="developer">developers</ui:msg>
+                                        <ui:msg description="developers">developers</ui:msg>
                                     </span>
                                 </p>
                             </div>
@@ -198,7 +210,7 @@
 
         <section class="{res.style.stripe} {res.style.light} {page.style.features} {res.style.centered}">
             <div class="{res.style.wrapper}">
-                <a href="#" class="{res.style.btn}">
+                <a href="mailto:queenbee@arcbees.com" class="{res.style.btn}">
                     <ui:msg description="- BTN - Contact us">Contact us</ui:msg>
                 </a>
                 <h2>

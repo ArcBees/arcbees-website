@@ -18,11 +18,15 @@
     color: C_PRIMARY;
 }
 
+.workWithUs a:hover {
+    text-decoration: underline;
+}
+
 /* -- social ------------------------------------------- */
 
 ul.social {
     padding-left: 0;
-    margin: 3rem 0 8rem;
+    margin: 3rem 0;
 }
 
 .social li {

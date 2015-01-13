@@ -1,5 +1,6 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+        xmlns:seo="urn:import:com.arcbees.seo.widget"
         xmlns:g="urn:import:com.google.gwt.user.client.ui">
 
     <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
@@ -7,6 +8,18 @@
     <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
 
     <g:HTMLPanel styleName="{page.style.developers} {page.style.chosen}">
+
+        <seo:SeoWidget>
+            <seo:Title>
+                <ui:msg description="SEO - Developers - Chosen - title">Chosen - Developers - Arcbees</ui:msg>
+            </seo:Title>
+            <seo:Description>
+                <ui:msg description="SEO - Developers - Chosen - description">
+                    Chosen is a javascript plugin (for jQuery and Prototype) that makes long, unwieldy select boxes much
+                    more user-friendly.
+                </ui:msg>
+            </seo:Description>
+        </seo:SeoWidget>
 
         <nav class="{page.style.breadcrumb}">
             <span class="{fonts.icons.iconArcbees} {page.style.logo}"></span>

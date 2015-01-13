@@ -1,6 +1,7 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
         xmlns:g="urn:import:com.google.gwt.user.client.ui"
+        xmlns:seo="urn:import:com.arcbees.seo.widget"
         ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
         ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
         ui:generateLocales="default">
@@ -10,6 +11,17 @@
     <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
 
     <g:HTMLPanel>
+
+        <seo:SeoWidget>
+            <seo:Keywords>
+                <ui:msg description="SEO - Home - keywords">Arcbees, Web, development, GWT, GWTP, Jukito, GAE, GQuery, GSSS, Chosen, Java, Quebec, Canada</ui:msg>
+            </seo:Keywords>
+            <seo:Og>
+                <seo:OgImage height="480" width="480">lien/vers/logo/arcbees.png</seo:OgImage>
+                <seo:OgType typeValue="WEBSITE"/>
+            </seo:Og>
+        </seo:SeoWidget>
+
         <div class="{res.style.sidebar}" ui:field="sidebar">
             <nav role="navigation" class="{res.style.menu}">
                 <ul>
@@ -65,6 +77,7 @@
                     <li>
                         <a href="#{nameTokens.DEVELOPERS}">
                             <ui:msg description="Developers">Developers</ui:msg>
+                            <i class="{fonts.icons.iconArrowOutside}"></i>
                         </a>
                     </li>
                 </ul>
@@ -72,32 +85,32 @@
             <nav class="{res.style.socialmedias}">
                 <ul>
                     <li>
-                        <a href="#" class="{fonts.icons.iconFb}">
+                        <a href="https://www.facebook.com/arcbees" class="{fonts.icons.iconFb}" target="_blank">
                             <span class="{res.style.hidden}">Facebook</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="{fonts.icons.iconTwitter}">
+                        <a href="https://twitter.com/ArcBees" class="{fonts.icons.iconTwitter}" target="_blank">
                             <span class="{res.style.hidden}">Twitter</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="{fonts.icons.iconGPlus}">
+                        <a href="https://plus.google.com/+Arcbees/posts" class="{fonts.icons.iconGPlus}" target="_blank">
                             <span class="{res.style.hidden}">Google</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="{fonts.icons.iconLkd}">
+                        <a href="https://www.linkedin.com/company/arcbees" class="{fonts.icons.iconLkd}" target="_blank">
                             <span class="{res.style.hidden}">LinkedIn</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="{fonts.icons.iconGitHub}">
+                        <a href="https://github.com/ArcBees" class="{fonts.icons.iconGitHub}" target="_blank">
                             <span class="{res.style.hidden}">GitHub</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="{fonts.icons.iconWordpress}">
+                        <a href="https://arcbees.wordpress.com/" class="{fonts.icons.iconWordpress}" target="_blank">
                             <span class="{res.style.hidden}">Wordpress</span>
                         </a>
                     </li>
@@ -114,6 +127,7 @@
         </div>
 
         <div class="{res.style.content}" ui:field="content">
+            <a href="#{HOME}" class="{fonts.icons.iconArcbees} {res.style.homeLogo} {res.style.withLogo}"></a>
             <div ui:field="langToggle" class="{res.style.wrapper}">
                 <div class="{res.style.linkTopRight}">
                     <span class="{res.style.language}">
@@ -125,7 +139,7 @@
                             </ui:msg>
                         </a>
                     </span>
-                    <a href="#" title="Arcbees github">
+                    <a href="https://github.com/ArcBees" title="Arcbees github" target="_blank">
                         <i class="{fonts.icons.iconGitHub} {res.style.github}"></i>
                     </a>
                 </div>

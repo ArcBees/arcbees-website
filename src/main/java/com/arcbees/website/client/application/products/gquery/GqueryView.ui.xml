@@ -1,6 +1,7 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
         xmlns:g="urn:import:com.google.gwt.user.client.ui"
+        xmlns:seo="urn:import:com.arcbees.seo.widget"
         ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
         ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
         ui:generateLocales="default">
@@ -12,17 +13,27 @@
 
     <g:HTMLPanel styleName="{page.style.products} {page.style.gquery}">
 
-        <nav class="{page.style.breadcrumb}">
-            <span class="{fonts.icons.iconArcbees} {page.style.logo}"></span>
+        <seo:SeoWidget>
+            <seo:Title>
+                <ui:msg description="SEO - Products - GQuery - title">GQuery - Products - Arcbees</ui:msg>
+            </seo:Title>
+            <seo:Description>
+                <ui:msg description="SEO - Products - GQuery - description">
+                    GwtQuery or GQuery is an entire GWT rewrite of the famous jQuery javascript library.
+                </ui:msg>
+            </seo:Description>
+        </seo:SeoWidget>
+
+        <nav class="{res.style.breadcrumb} {res.style.withLogo}">
             <ul>
-                <li>PRODUCT</li>
+                <li><ui:msg description="product">PRODUCT</ui:msg></li>
                 <li>GQUERY</li>
             </ul>
         </nav>
 
         <section class="{res.style.stripe}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_full}">
+                <div class="{res.grid.col} {res.grid.col_10} {res.grid.col_m_full}">
                     <h1>GQUERY
                         <a href="#" class="{res.style.anchor}">#</a>
                     </h1>
@@ -34,12 +45,12 @@
                     <div class="{page.style.socialTop}">
                         <ul class="{page.style.social}">
                             <li>
-                                <a href="#" class="{fonts.icons.iconGPlus}">
+                                <a href="https://plus.google.com/108775699626209449984/posts" title="google plus" target="_blank" class="{fonts.icons.iconGPlus}">
                                     <span class="{res.style.hidden}">Google plus</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="{fonts.icons.iconGitHub}">
+                                <a href="https://github.com/gwtquery" title="github" target="_blank" class="{fonts.icons.iconGitHub}">
                                     <span class="{res.style.hidden}">Github</span>
                                 </a>
                             </li>
@@ -243,7 +254,8 @@
                         <ui:msg description="more on">more on
                         </ui:msg>
                     </h3>
-                    <a href="#" class="{res.style.btn}">
+                    <a href="#" title="Developer's Platform" class="{res.style.btn}">
+                        <ui:attribute ui:name='title' ui:description='Developer Platform'/>
                         <i class="{fonts.icons.iconArrowOutside}"></i>
                         <ui:msg description="- BTN - Developers Platform">Developer's Platform</ui:msg>
                     </a>
@@ -255,17 +267,17 @@
             <h3><ui:msg description="Share">SHARE</ui:msg></h3>
             <ul class="{page.style.social}">
                 <li>
-                    <a href="#" class="{fonts.icons.iconFb}">
+                    <a href="#" title="facebook" class="{fonts.icons.iconFb}">
                         <span class="{res.style.hidden}">Facebook</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="{fonts.icons.iconTwitter}">
+                    <a href="#" title="twitter" class="{fonts.icons.iconTwitter}">
                         <span class="{res.style.hidden}">Twitter</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="{fonts.icons.iconGPlus}">
+                    <a href="#" title="google plus" class="{fonts.icons.iconGPlus}">
                         <span class="{res.style.hidden}">Google</span>
                     </a>
                 </li>

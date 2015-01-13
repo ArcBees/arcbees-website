@@ -90,11 +90,7 @@
     left: 49px;
 
     z-index: 1;
-    -webkit-transition: all .4s;
-    -moz-transition: all .4s;
-    -ms-transition: all .4s;
-    -o-transition: all .4s;
-    transition: all .4s;
+    @mixin transition(all, .4s);
 }
 
 .breadcrumb ul {
@@ -189,10 +185,10 @@
 }
 
 .productHead.gae li:nth-child(2) a,
-.productHead.gwtp li:nth-child(1) a,
-.productHead.gwtp li:nth-child(3) a,
-.productHead.jukito li:nth-child(2) a,
-.productHead.jukito li:nth-child(4) a,
+.productHead.jukito li:nth-child(1) a,
+.productHead.jukito li:nth-child(3) a,
+.productHead.gwtp li:nth-child(2) a,
+.productHead.gwtp li:nth-child(4) a,
 .productHead.chosen li:nth-child(3) a,
 .productHead.chosen li:nth-child(5) a,
 .productHead.gquery li:nth-child(4) a {
@@ -220,23 +216,23 @@
 }
 
 .productHead.gae .arrow::after {
-    margin-left: -295px;
+    margin-left: -306px;
 }
 
 .productHead.gwtp .arrow::after {
-    margin-left: -160px;
-}
-
-.productHead.jukito .arrow::after {
     margin-left: -50px;
 }
 
+.productHead.jukito .arrow::after {
+    margin-left: -165px;
+}
+
 .productHead.chosen .arrow::after {
-    margin-left: 60px;
+    margin-left: 63px;
 }
 
 .productHead.gquery .arrow::after {
-    margin-left: 200px;
+    margin-left: 205px;
 }
 
 @media (max-width: 979px) {
@@ -293,6 +289,8 @@
     position: absolute;
     top: 0;
     right: 0;
+
+    z-index: 999;
 }
 
 ul.social {
@@ -389,7 +387,7 @@ ul.social {
 .slideshow a.prev::before,
 .slideshow a.next::before {
     content: "\e631";
-    font-family: "icons";
+    font-family: "icomoonregular";
 }
 
 .slideshow a.prev:hover,
@@ -559,8 +557,10 @@ a.anchor {
 .collapsible {
     color: C_TEXT_LIGHT;
     background-color: C_TEXT;
+}
 
-    margin-bottom: 2rem;
+.collapsible ~ div {
+    margin-top: 2rem;
 }
 
 /* -- Page : Jukito ---------------------------------------- */

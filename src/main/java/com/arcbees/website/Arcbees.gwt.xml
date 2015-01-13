@@ -30,5 +30,4 @@
     <!-- English language, independent of country -->
     <extend-property name="locale" values="en" />
     <set-property-fallback name="locale" value="en" />
-
 </module>

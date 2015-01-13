@@ -24,7 +24,6 @@ import com.arcbees.website.client.application.maps.GwtMapsLoader;
 import com.arcbees.website.shared.NameTokens;
 import com.google.common.base.Strings;
 import com.google.gwt.i18n.client.LocaleInfo;
-import com.google.gwt.query.client.GQuery;
 import com.gwtplatform.mvp.client.Bootstrapper;
 import com.gwtplatform.mvp.client.proxy.PlaceManager;
 import com.gwtplatform.mvp.shared.proxy.PlaceRequest;
@@ -66,21 +65,21 @@ public class BootstrapperImpl implements Bootstrapper {
         String nameToken = Strings.nullToEmpty(currentPlaceRequest.getNameToken());
         String currentLocale = LocaleInfo.getCurrentLocale().getLocaleName();
 
-        GQuery.console.log(LocaleInfo.getCurrentLocale().getLocaleName());
         if ("en".compareToIgnoreCase(currentLocale) == 0) {
             if (!NameTokens.isEn(nameToken)) {
-                PlaceRequest placeRequest = new PlaceRequest.Builder(currentPlaceRequest)
-                        .nameToken(NameTokens.translate(nameToken))
-                        .build();
-                placeManager.revealPlace(placeRequest);
+                revealTranslatedNameToken(currentPlaceRequest, nameToken);
             }
         } else if ("fr".compareToIgnoreCase(currentLocale) == 0) {
             if (NameTokens.isEn(nameToken)) {
-                PlaceRequest placeRequest = new PlaceRequest.Builder(currentPlaceRequest)
-                        .nameToken(NameTokens.translate(nameToken))
-                        .build();
-                placeManager.revealPlace(placeRequest);
+                revealTranslatedNameToken(currentPlaceRequest, nameToken);
             }
         }
+    }
+
+    private void revealTranslatedNameToken(PlaceRequest currentPlaceRequest, String nameToken) {
+        PlaceRequest placeRequest = new PlaceRequest.Builder(currentPlaceRequest)
+                .nameToken(NameTokens.translate(nameToken))
+                .build();
+        placeManager.revealPlace(placeRequest);
     }
 }

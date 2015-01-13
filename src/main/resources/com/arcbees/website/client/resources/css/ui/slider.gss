@@ -68,13 +68,13 @@
 
     cursor: default;
 
-@mixin opacity(0.2);
+    @mixin opacity(0.2);
 }
 
 .slider .prev {
     left: 0px;
 
-@mixin flip_horizontal();
+    @mixin flip_horizontal();
 }
 
 .slider .next {

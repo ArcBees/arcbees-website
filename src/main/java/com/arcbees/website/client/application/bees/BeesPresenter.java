@@ -18,7 +18,7 @@ package com.arcbees.website.client.application.bees;
 
 import javax.inject.Provider;
 
-import com.arcbees.website.client.NameTokens;
+import com.arcbees.website.shared.NameTokens;
 import com.arcbees.website.client.application.ApplicationPresenter;
 import com.arcbees.website.client.application.bees.quiz.QuestionPresenter;
 import com.google.gwt.event.shared.GwtEvent;
@@ -48,7 +48,7 @@ public class BeesPresenter extends Presenter<BeesPresenter.MyView, BeesPresenter
     public static final Object SLOT_QUIZ = new Object();
 
     @ProxyStandard
-    @NameToken(NameTokens.BEES)
+    @NameToken({NameTokens.BEES, NameTokens.BEES_FR})
     interface MyProxy extends ProxyPlace<BeesPresenter> {
     }
 
@@ -78,7 +78,7 @@ public class BeesPresenter extends Presenter<BeesPresenter.MyView, BeesPresenter
     @Override
     public void hidePopup() {
         clearSlot(SLOT_BEE);
-        placeManager.revealPlace(new PlaceRequest.Builder().nameToken(NameTokens.BEES).build());
+        placeManager.revealPlace(new PlaceRequest.Builder().nameToken(NameTokens.getBees()).build());
     }
 
     @Override

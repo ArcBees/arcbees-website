@@ -16,7 +16,7 @@
 
 package com.arcbees.website.client.application.bees.bee.joel;
 
-import com.arcbees.website.client.NameTokens;
+import com.arcbees.website.shared.NameTokens;
 import com.arcbees.website.client.application.bees.BeesPresenter;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
@@ -31,7 +31,7 @@ public class JoelPresenter extends Presenter<JoelPresenter.MyView, JoelPresenter
     }
 
     @ProxyStandard
-    @NameToken(NameTokens.BEE_JOEL)
+    @NameToken({NameTokens.BEE_JOEL, NameTokens.BEE_JOEL_FR})
     interface MyProxy extends ProxyPlace<JoelPresenter> {
     }
 

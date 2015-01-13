@@ -16,8 +16,8 @@
 
 package com.arcbees.website.client.application.docs.elastic;
 
-import com.arcbees.website.client.NameTokens;
 import com.arcbees.website.client.application.docs.DocsPresenter;
+import com.arcbees.website.shared.NameTokens;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.Presenter;

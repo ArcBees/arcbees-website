@@ -16,7 +16,7 @@
 
 package com.arcbees.website.client.application.bees.bee.maxime;
 
-import com.arcbees.website.client.NameTokens;
+import com.arcbees.website.shared.NameTokens;
 import com.arcbees.website.client.application.bees.BeesPresenter;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
@@ -31,7 +31,7 @@ public class MaximePresenter extends Presenter<MaximePresenter.MyView, MaximePre
     }
 
     @ProxyStandard
-    @NameToken(NameTokens.BEE_MAXIME)
+    @NameToken({NameTokens.BEE_MAXIME, NameTokens.BEE_MAXIME_FR})
     interface MyProxy extends ProxyPlace<MaximePresenter> {
     }
 

@@ -16,7 +16,7 @@
 
 package com.arcbees.website.client.application.bees.bee.philippebeaudoin;
 
-import com.arcbees.website.client.NameTokens;
+import com.arcbees.website.shared.NameTokens;
 import com.arcbees.website.client.application.bees.BeesPresenter;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
@@ -31,7 +31,7 @@ public class PhilippebPresenter extends Presenter<PhilippebPresenter.MyView, Phi
     }
 
     @ProxyStandard
-    @NameToken(NameTokens.BEE_PHILIPPEB)
+    @NameToken({NameTokens.BEE_PHILIPPEB, NameTokens.BEE_PHILIPPEB_FR})
     interface MyProxy extends ProxyPlace<PhilippebPresenter> {
     }
 

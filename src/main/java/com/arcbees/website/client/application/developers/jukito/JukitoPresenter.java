@@ -16,7 +16,7 @@
 
 package com.arcbees.website.client.application.developers.jukito;
 
-import com.arcbees.website.client.NameTokens;
+import com.arcbees.website.shared.NameTokens;
 import com.arcbees.website.client.application.ApplicationPresenter;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
@@ -31,7 +31,7 @@ public class JukitoPresenter extends Presenter<JukitoPresenter.MyView, JukitoPre
     }
 
     @ProxyStandard
-    @NameToken(NameTokens.JUKITO_DEVELOPERS)
+    @NameToken({NameTokens.JUKITO_DEVELOPERS, NameTokens.JUKITO_DEVELOPERS_FR})
     interface MyProxy extends ProxyPlace<JukitoPresenter> {
     }
 

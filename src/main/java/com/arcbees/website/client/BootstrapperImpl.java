@@ -21,8 +21,13 @@ import javax.inject.Inject;
 import com.arcbees.analytics.shared.Analytics;
 import com.arcbees.analytics.shared.AnalyticsPlugin;
 import com.arcbees.website.client.application.maps.GwtMapsLoader;
+import com.arcbees.website.shared.NameTokens;
+import com.google.common.base.Strings;
+import com.google.gwt.i18n.client.LocaleInfo;
+import com.google.gwt.user.client.History;
 import com.gwtplatform.mvp.client.Bootstrapper;
 import com.gwtplatform.mvp.client.proxy.PlaceManager;
+import com.gwtplatform.mvp.shared.proxy.PlaceRequest;
 
 public class BootstrapperImpl implements Bootstrapper {
     private final PlaceManager placeManager;
@@ -43,10 +48,37 @@ public class BootstrapperImpl implements Bootstrapper {
     public void onBootstrap() {
         gwtMapsLoader.loadGwtMaps();
 
-        placeManager.revealCurrentPlace();
-
         analytics.create().cookieDomain("arcbees.com").go();
         analytics.enablePlugin(AnalyticsPlugin.DISPLAY);
         analytics.enablePlugin(AnalyticsPlugin.ENHANCED_LINK_ATTRIBUTION);
+
+        validateNameTokenLanguageAndRevealPlace();
+    }
+
+    private void validateNameTokenLanguageAndRevealPlace() {
+        PlaceRequest currentPlaceRequest = placeManager.getCurrentPlaceRequest();
+        String nameToken = Strings.nullToEmpty(History.getToken());
+        String currentLocale = LocaleInfo.getCurrentLocale().getLocaleName();
+
+        if ("en".compareToIgnoreCase(currentLocale) == 0) {
+            if (!NameTokens.isEn(nameToken)) {
+                revealTranslatedNameToken(currentPlaceRequest, nameToken);
+                return;
+            }
+        } else if ("fr".compareToIgnoreCase(currentLocale) == 0) {
+            if (NameTokens.isEn(nameToken)) {
+                revealTranslatedNameToken(currentPlaceRequest, nameToken);
+                return;
+            }
+        }
+
+        placeManager.revealCurrentPlace();
+    }
+
+    private void revealTranslatedNameToken(PlaceRequest currentPlaceRequest, String nameToken) {
+        PlaceRequest placeRequest = new PlaceRequest.Builder(currentPlaceRequest)
+                .nameToken(NameTokens.translate(nameToken))
+                .build();
+        placeManager.revealPlace(placeRequest);
     }
 }

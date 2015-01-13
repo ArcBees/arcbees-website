@@ -7,8 +7,7 @@
              ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
              ui:generateLocales="default">
 
-    <ui:import field="com.arcbees.website.client.NameTokens.*"/>
-
+    <ui:with field="nameTokens" type="com.arcbees.website.client.NameTokensConstants"/>
     <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
     <ui:with field="page" type="com.arcbees.website.client.resources.PageBeesResources"/>
     <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
@@ -139,7 +138,7 @@
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeChristian1}"></g:Image>
-                                    <a href="#{BEE_CHRISTIAN}">
+                                    <a href="#{nameTokens.BEE_CHRISTIAN}">
                                         <h3>Christian
                                             <span>Goudreau</span>
                                         </h3>
@@ -155,7 +154,7 @@
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeFrancois1}"></g:Image>
-                                    <a href="#{BEE_FRANCOIS}">
+                                    <a href="#{nameTokens.BEE_FRANCOIS}">
                                         <h3>François <span>Dion</span></h3>
                                         <p>
                                             <ui:msg description="Francois's title">Strategic advisor, associate and
@@ -171,7 +170,7 @@
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeChristian1}"></g:Image>
-                                    <a href="#{BEE_PHILIPPEB}">
+                                    <a href="#{nameTokens.BEE_PHILIPPEB}">
                                         <h3>Philippe
                                             <span>Beaudoin</span>
                                         </h3>
@@ -185,7 +184,7 @@
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beePhilippeA1}"></g:Image>
-                                    <a href="#{BEE_PHILIPPEA}">
+                                    <a href="#{nameTokens.BEE_PHILIPPEA}">
                                         <h3>Philippe
                                             <span>Araujo</span>
                                         </h3>
@@ -199,7 +198,7 @@
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeGenevieve1}"></g:Image>
-                                    <a href="#{BEE_GENEVIEVE}">
+                                    <a href="#{nameTokens.BEE_GENEVIEVE}">
                                         <h3>Geneviève
                                             <span>Doyle</span>
                                         </h3>
@@ -213,7 +212,7 @@
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeJulien1}"></g:Image>
-                                    <a href="#{BEE_JULIEN}">
+                                    <a href="#{nameTokens.BEE_JULIEN}">
                                         <h3>Julien
                                             <span>Dramaix</span>
                                         </h3>
@@ -227,7 +226,7 @@
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeManon1}"></g:Image>
-                                    <a href="#{BEE_MANON}">
+                                    <a href="#{nameTokens.BEE_MANON}">
                                         <h3>Manon
                                             <span>Gruaz</span>
                                         </h3>
@@ -241,7 +240,7 @@
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeJason1}"></g:Image>
-                                    <a href="#{BEE_JASON}">
+                                    <a href="#{nameTokens.BEE_JASON}">
                                         <h3>Jason
                                             <span>Lemay</span>
                                         </h3>
@@ -255,7 +254,7 @@
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeMaxime1}"></g:Image>
-                                    <a href="#{BEE_MAXIME}">
+                                    <a href="#{nameTokens.BEE_MAXIME}">
                                         <h3>Maxime
                                             <span>Mériouma-Caron</span>
                                         </h3>
@@ -269,7 +268,7 @@
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeChristopher1}"></g:Image>
-                                    <a href="#{BEE_CHRISTOPHER}">
+                                    <a href="#{nameTokens.BEE_CHRISTOPHER}">
                                         <h3>Christopher
                                             <span>Viel</span>
                                         </h3>
@@ -283,7 +282,7 @@
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeSimonPierre1}"></g:Image>
-                                    <a href="#{BEE_SIMONPIERRE}">
+                                    <a href="#{nameTokens.BEE_SIMONPIERRE}">
                                         <h3>Simon-Pierre
                                             <span>Gingras</span>
                                         </h3>
@@ -299,7 +298,7 @@
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeJoel1}"></g:Image>
-                                    <a href="#{BEE_JOEL}">
+                                    <a href="#{nameTokens.BEE_JOEL}">
                                         <h3>Joel
                                             <span>Trottier-Hébert</span>
                                         </h3>
@@ -313,7 +312,7 @@
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeLarry1}"></g:Image>
-                                    <a href="#{BEE_LARRY}">
+                                    <a href="#{nameTokens.BEE_LARRY}">
                                         <h3>Larry
                                             <span>Matte</span>
                                         </h3>
@@ -327,7 +326,7 @@
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeJeanChristophe1}"></g:Image>
-                                    <a href="#{BEE_JEANCHRISTOPHE}">
+                                    <a href="#{nameTokens.BEE_JEANCHRISTOPHE}">
                                         <h3>Jean-Christophe
                                             <span>Lariviere</span>
                                         </h3>

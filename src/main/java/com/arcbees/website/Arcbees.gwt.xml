@@ -23,6 +23,8 @@
     <set-configuration-property name="gwtp.bootstrapper" value="com.arcbees.website.client.BootstrapperImpl"/>
     <set-configuration-property name="CssResource.legacy" value="true" />
 
+    <set-configuration-property name="locale.useragent" value="Y"/>
+
     <!-- French language, independent of country -->
     <extend-property name="locale" values="fr" />
     <!-- English language, independent of country -->

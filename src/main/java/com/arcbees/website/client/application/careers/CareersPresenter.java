@@ -16,7 +16,7 @@
 
 package com.arcbees.website.client.application.careers;
 
-import com.arcbees.website.client.NameTokens;
+import com.arcbees.website.shared.NameTokens;
 import com.arcbees.website.client.application.ApplicationPresenter;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
@@ -31,7 +31,7 @@ public class CareersPresenter extends Presenter<CareersPresenter.MyView, Careers
     }
 
     @ProxyStandard
-    @NameToken(NameTokens.CAREERS)
+    @NameToken({NameTokens.CAREERS, NameTokens.CAREERS_FR})
     interface MyProxy extends ProxyPlace<CareersPresenter> {
     }
 

@@ -16,7 +16,7 @@
 
 package com.arcbees.website.client.application.products.gquery;
 
-import com.arcbees.website.client.NameTokens;
+import com.arcbees.website.shared.NameTokens;
 import com.arcbees.website.client.application.products.ProductsPresenter;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
@@ -31,7 +31,7 @@ public class GqueryPresenter extends Presenter<GqueryPresenter.MyView, GqueryPre
     }
 
     @ProxyStandard
-    @NameToken(NameTokens.GQUERY)
+    @NameToken({NameTokens.GQUERY, NameTokens.GQUERY_FR})
     interface MyProxy extends ProxyPlace<GqueryPresenter> {
     }
 

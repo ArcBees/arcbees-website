@@ -6,8 +6,7 @@
         ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
         ui:generateLocales="default">
 
-    <ui:import field="com.arcbees.website.client.NameTokens.*"/>
-
+    <ui:with field="nameTokens" type="com.arcbees.website.client.NameTokensConstants"/>
     <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
     <ui:with field="page" type="com.arcbees.website.client.resources.PageProductResources"/>
     <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
@@ -89,7 +88,7 @@
             </div>
             <div class="{page.style.btns} {res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.centered}">
                 <div class="{res.grid.col} {res.grid.col_12}">
-                    <a href="#{SUPPORT}" class="{res.style.btn}">
+                    <a href="#{nameTokens.SUPPORT}" class="{res.style.btn}">
                         <ui:msg description="Support">Support</ui:msg>
                     </a>
                     <a href="#" class="{res.style.btn}">

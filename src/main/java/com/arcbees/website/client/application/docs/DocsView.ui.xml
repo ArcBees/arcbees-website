@@ -5,8 +5,7 @@
         ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator"
         ui:generateLocales="en">
 
-    <ui:import field="com.arcbees.website.client.NameTokens.*"/>
-
+    <ui:with field="nameTokens" type="com.arcbees.website.client.NameTokensConstants"/>
     <ui:with field="doc" type="com.arcbees.website.client.resources.DocsResources"/>
 
     <g:HTMLPanel styleName="{doc.style.doc}">
@@ -14,7 +13,7 @@
         <g:SimplePanel ui:field="docs"/>
         <section class="{doc.style.support}">
             <h2>Need support?</h2>
-            <a href="#{SUPPORT}" class="{doc.style.btn}">Arcbees offer a variety of supports options</a>
+            <a href="#{nameTokens.SUPPORT}" class="{doc.style.btn}">Arcbees offer a variety of supports options</a>
             <div class="{doc.style.backTop}">
                 <span data-icon="&#xe602;"></span>
             </div>

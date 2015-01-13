@@ -16,7 +16,7 @@
 
 package com.arcbees.website.client.application.products.gwtp;
 
-import com.arcbees.website.client.NameTokens;
+import com.arcbees.website.shared.NameTokens;
 import com.arcbees.website.client.application.products.ProductsPresenter;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
@@ -31,7 +31,7 @@ public class GwtpPresenter extends Presenter<GwtpPresenter.MyView, GwtpPresenter
     }
 
     @ProxyStandard
-    @NameToken(NameTokens.GWTP)
+    @NameToken({NameTokens.GWTP, NameTokens.GWTP_FR})
     interface MyProxy extends ProxyPlace<GwtpPresenter> {
     }
 

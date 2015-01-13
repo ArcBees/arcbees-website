@@ -259,27 +259,21 @@
 
 @media (max-width: 649px) {
     .menuHeader a {
-        font-size: 6rem;
+        display: none;
     }
 
     .menuHeader a.active {
-        font-size: 8rem;
+        font-size: 20rem;
+
+        display: block;
+        margin-left: -100px;
+
+        position: absolute;
+        left: 50%;
     }
 
-    .productHead .arrow::after {
-        border-width: 0 20px 20px 20px;
-    }
-
-    .productHead.gae .arrow::after {
-        margin-left: -118px;
-    }
-
-    .productHead.gwtp .arrow::after {
-        margin-left: -20px;
-    }
-
-    .productHead.jukito .arrow::after {
-        margin-left: 78px;
+    .productHead .arrow {
+        display: none;
     }
 }
 

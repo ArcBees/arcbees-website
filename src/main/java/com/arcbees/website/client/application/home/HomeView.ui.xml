@@ -134,7 +134,8 @@
                     ui:field="successStoryMore">
                 <div class="{res.grid.row} {res.style.clearfix}">
                     <div class="{res.grid.col} {res.grid.col_full} {res.style.centered} {page.style.ssicons}">
-                        <g:Image resource="{page.ssicons}"></g:Image>
+                        <g:Image styleName="{res.style.mobileHidden}" resource="{page.ssicons}"/>
+                        <g:Image styleName="{res.style.mobileVisible}" resource="{page.ssiconsMobile}"/>
                         <div class="{page.style.ssiconsHexa}">
                             <svg version="1.1" id="Layer_1" x="0px" y="0px"
                              width="495.746px" height="163.688px" viewBox="0 0 495.746 163.688" enable-background="new 0 0 495.746 163.688"

@@ -96,18 +96,18 @@
 
 @-webkit-keyframes beesMobile {
     0% {-webkit-transform: translate(0px,0px);}
-    100% {-webkit-transform: translate(255px, 0px);}
+    100% {-webkit-transform: translate(125px, 0px);}
 }
 
 @if (!is("locale",  "en")) {
     @keyframes bees {
         0% {@mixin translate(0px, 0px);}
-        100% {@mixin translate(355px, 0px);}
+        100% {@mixin translate(0px, 70px);}
     }
 
     @-webkit-keyframes bees {
         0% {-webkit-transform: translate(0px, 0px);}
-        100% {-webkit-transform: translate(355px, 0px);}
+        100% {-webkit-transform: translate(0px, 70px);}
     }
 }
 
@@ -188,6 +188,10 @@
         font-size: 25rem;
 
         margin: -142px 0 0 -112px;
+    }
+
+    .home .header .txtAre {
+        margin-left: 10px;
     }
 
     .home .header .txtBees {
@@ -314,11 +318,7 @@
 
 @media (max-width: 649px) {
     .home .ssiconsHexa {
-        margin-left: -265px;
-
-        top: 23px;
-
-        zoom: .55;
+        display: none;
     }
 
     .home .successStory {
@@ -327,6 +327,14 @@
 
     .home .successStory i {
         font-size: 6.5em;
+    }
+
+    .home .successStoryMore {
+        background: none;
+    }
+
+    .home .ssicons img {
+        margin-left: 0;
     }
 }
 
@@ -516,6 +524,10 @@
 
     .home .header .btns a {
         margin: 0px;
+    }
+
+    .home .successStoryMore a {
+        margin: 2em 0;
     }
 }
 

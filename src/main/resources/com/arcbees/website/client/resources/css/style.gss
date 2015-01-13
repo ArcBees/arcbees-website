@@ -473,6 +473,20 @@ img {
     /* @alternate */ clip: rect(1px, 1px, 1px, 1px);
 }
 
+.mobileVisible {
+    display: none;
+}
+
+@media (max-width: 649px) {
+    .mobileHidden {
+        display: none;
+    }
+
+    .mobileVisible {
+        display: block;
+    }
+}
+
 .visuallyhidden {
     overflow: hidden;
     height: 1px;

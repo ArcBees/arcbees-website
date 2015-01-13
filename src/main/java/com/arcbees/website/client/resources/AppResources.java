@@ -121,6 +121,10 @@ public interface AppResources extends FontResources {
         String homeLogo();
 
         String breadcrumb();
+
+        String mobileHidden();
+
+        String mobileVisible();
     }
 
     @Source("css/normalize.gss")

@@ -54,8 +54,8 @@ public class NameTokens {
     public static final String GWTP_FR = PRODUCTS_BASE_FR + "/gwtp";
     public static final String GQUERY = PRODUCTS_BASE + "/gquery";
     public static final String GQUERY_FR = PRODUCTS_BASE_FR + "/gquery";
-    public static final String PRODUCTS = GAE;
-    public static final String PRODUCTS_FR = GAE_FR;
+    public static final String PRODUCTS = GWTP;
+    public static final String PRODUCTS_FR = GWTP_FR;
 
     public static final String BEE_CHRISTIAN = BEES + "/christian-goudreau";
     public static final String BEE_CHRISTIAN_FR = BEES_FR + "/christian-goudreau";

@@ -231,6 +231,12 @@
     margin-bottom: 30px;
 }
 
+.tools .gwtOld {
+    font-size: 2.5rem;
+
+    margin: -45px 0 0;
+}
+
 .plus,
 .equal {
     font-size: 8rem;
@@ -251,6 +257,10 @@
 @media (max-width: 649px) {
     .tools i {
         font-size: 8rem;
+    }
+
+    .tools .gwtOld {
+        margin-bottom: 30px;
     }
 
     .plus {

@@ -154,12 +154,8 @@
     }
 }
 
-.bees .slides {
-
-}
-
-.bees .slide {
-
+.valuesSlider {
+    min-height: 155px;
 }
 
 @media (max-width: 649px) {

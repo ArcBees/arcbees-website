@@ -10,35 +10,48 @@
     width: 980px;
 }
 
-/* todo: the slider will not scale well on Mobile. Seek with Jason a solution to fix this */
 .slider .container {
-    width: 631px;
-    height: 371px;
+    width: 900px;
+    margin: 0 auto;
 
-    line-height: 371px;
     text-align: center;
 
     overflow: hidden;
 }
 
-.slider .container img {
-    /*margin: -100%;*/
+@media (max-width: 979px) {
+    .slider {
+        width: 100%;
+    }
+
+    .slider .container {
+        width: 75%;
+        height: auto;
+    }
 }
 
 .slider .prev,
 .slider .next {
-    background-image: ARROW;
-    background-position: center top;
-    text-indent: -9999px;
-
     display: block;
-    width: 21px;
-    height: 33px;
     margin-top: -16px;
 
     position: absolute;
     top: 50%;
     z-index: 3000;
+}
+
+.slider .prev i:before,
+.slider .next i:before {
+    color: #000;
+
+    @mixin rotate(-90deg);
+}
+
+.slider .prev span,
+.slider .next span {
+    text-indent: -9999px;
+
+    display: block;
 }
 
 .slider .prev:hover,
@@ -58,13 +71,13 @@
 }
 
 .slider .prev {
-    left: 20px;
+    left: 0px;
 
 @mixin flip_horizontal();
 }
 
 .slider .next {
-    right: 20px;
+    right: 0px;
 }
 
 .slider .pager {

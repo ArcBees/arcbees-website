@@ -1,7 +1,6 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
         xmlns:g="urn:import:com.google.gwt.user.client.ui"
-        xmlns:slider="urn:import:com.arcbees.website.client.application.slider"
         xmlns:seo="urn:import:com.arcbees.seo.widget"
         ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
         ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
@@ -99,19 +98,6 @@
                     </a>
                 </div>
             </div>
-        </section>
-
-        <section class="{res.style.stripe} {res.style.medium2}">
-            <!--TODO: JASON-->
-            <slider:Slider>
-                <slider:content>
-                    <g:HTMLPanel>
-                        <g:Image resource="{page.gaeScreen2}"/>
-                        <g:Image resource="{page.gwtpScreen1}"/>
-                        <g:Image resource="{page.goLogo}"/>
-                    </g:HTMLPanel>
-                </slider:content>
-            </slider:Slider>
         </section>
 
         <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.centered}">

@@ -102,8 +102,20 @@ public interface PageProductResources extends FontResources {
     @Source("img/products/gwtpScreen1.png")
     ImageResource gwtpScreen1();
 
-    @Source("img/products/gaeScreen2.png")
+    @Source("img/products/gaeBatchEdit.png")
+    ImageResource gaeScreen1();
+
+    @Source("img/products/gaeEdit.png")
     ImageResource gaeScreen2();
+
+    @Source("img/products/gaeGql.png")
+    ImageResource gaeScreen3();
+
+    @Source("img/products/gaeMain.png")
+    ImageResource gaeScreen4();
+
+    @Source("img/products/gaeProfiler.png")
+    ImageResource gaeScreen5();
 
     @Source("img/products/javaLogo.png")
     ImageResource javaLogo();

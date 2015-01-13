@@ -1,6 +1,7 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
         xmlns:g="urn:import:com.google.gwt.user.client.ui"
+        xmlns:slider="urn:import:com.arcbees.website.client.application.slider"
         xmlns:seo="urn:import:com.arcbees.seo.widget"
         ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
         ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
@@ -91,30 +92,17 @@
         </section>
 
         <section class="{res.style.stripe} {res.style.medium2}">
-            <div class="{page.style.slideshow} {res.style.wrapper}">
-                <div class="{page.style.slides}">
-                    <!--TODO: ADD SCREENSHOTS IMG -->
-                </div>
-                <a href="#" class="{page.style.prev}">
-                    <span class="{res.style.hidden}">Prev</span>
-                </a>
-                <a href="#" class="{page.style.next}">
-                    <span class="{res.style.hidden}">Next</span>
-                </a>
-                <nav class="{page.style.pager} {res.style.centered}">
-                    <ul>
-                        <li>
-                            <a href="#"></a>
-                        </li>
-                        <li>
-                            <a href="#"></a>
-                        </li>
-                        <li>
-                            <a href="#"></a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+            <slider:Slider>
+                <slider:content>
+                    <g:HTMLPanel>
+                        <g:Image resource="{page.gaeScreen1}"/>
+                        <g:Image resource="{page.gaeScreen2}"/>
+                        <g:Image resource="{page.gaeScreen3}"/>
+                        <g:Image resource="{page.gaeScreen4}"/>
+                        <g:Image resource="{page.gaeScreen5}"/>
+                    </g:HTMLPanel>
+                </slider:content>
+            </slider:Slider>
         </section>
 
         <section class="{res.style.stripe} {page.style.stripeDetails} {res.style.centered}">

@@ -85,6 +85,8 @@ public interface PageBeesResources extends FontResources {
         String quiz();
 
         String quizEnd();
+
+        String valuesSlider();
     }
 
     @Source("img/bees/christian.jpg")

@@ -1,6 +1,7 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:slider="urn:import:com.arcbees.website.client.application.slider"
              xmlns:seo="urn:import:com.arcbees.seo.widget"
              ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
              ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
@@ -60,47 +61,68 @@
 
         <section
                 class="{res.style.stripe} {res.style.colored} {res.style.triangleBottom} {res.style.nextLight}  {res.style.centered}">
-            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1_3} {res.grid.col_m_full} {res.grid.col_m_push_0}">
-                    <div class="{page.style.slides}">
-                        <div class="{page.style.slide}">
-                            <h2>
-                                <ui:msg description="Bee dedicated">Bee Dedicated</ui:msg>
-                            </h2>
-                            <p>
-                                <ui:msg description="Bee dedicated - Paragraph -">When we agree to take on a client’s
-                                    project, it’s not just their project anymore. It’s ours too, and there’s nothing we
-                                    won't do to make it a success.
-                                </ui:msg>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <a href="#" class="{page.style.prev}">
-                    <span class="{res.style.hidden}">Prev</span>
-                </a>
-                <a href="#" class="{page.style.next}">
-                    <span class="{res.style.hidden}">Next</span>
-                </a>
-                <nav class="{page.style.pager} {res.style.centered}">
-                    <ul>
-                        <li>
-                            <a href="#" class="{page.style.active}"></a>
-                        </li>
-                        <li>
-                            <a href="#"></a>
-                        </li>
-                        <li>
-                            <a href="#"></a>
-                        </li>
-                        <li>
-                            <a href="#"></a>
-                        </li>
-                        <li>
-                            <a href="#"></a>
-                        </li>
-                    </ul>
-                </nav>
+            <div class="{page.style.valuesSlider} {res.grid.row} {res.style.wrapper}">
+                <slider:Slider>
+                    <slider:content>
+                        <g:HTMLPanel>
+                            <div class="{res.grid.col} {res.grid.col_6} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+                                <h2>
+                                    <ui:msg description="Bee dedicated - title">Bee Dedicated</ui:msg>
+                                </h2>
+                                <p>
+                                    <ui:msg description="Bee dedicated - text">When we agree to take on a
+                                        client’s project, it’s not just their project anymore. It’s ours too, and
+                                        there’s nothing we won't do to make it a success.
+                                    </ui:msg>
+                                </p>
+                            </div>
+                            <div class="{res.grid.col} {res.grid.col_6} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+                                <h2>
+                                    <ui:msg description="Bee United - title">Bee United</ui:msg>
+                                </h2>
+                                <p>
+                                    <ui:msg description="Bee United - text">There is no place for loners in the
+                                        Hive. We share our discoveries, knowledge and mistakes to make sure we don't
+                                        repeat errors, and to help us all grow as a team.
+                                    </ui:msg>
+                                </p>
+                            </div>
+                            <div class="{res.grid.col} {res.grid.col_6} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+                                <h2>
+                                    <ui:msg description="Bee Passionate - title">Bee Passionate</ui:msg>
+                                </h2>
+                                <p>
+                                    <ui:msg description="Bee Passionate - text">We love what we do and we can
+                                        never have enough. We are mission-driven and we feed off the passion and energy
+                                        of our fellow Bees.
+                                    </ui:msg>
+                                </p>
+                            </div>
+                            <div class="{res.grid.col} {res.grid.col_6} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+                                <h2>
+                                    <ui:msg description="Bee Ambitious - title">Bee Ambitious</ui:msg>
+                                </h2>
+                                <p>
+                                    <ui:msg description="Bee Ambitious - text">Bees are encouraged to have their
+                                        own goals and projects. The Hive and other Bees are more than happy to help and
+                                        to give them time, space and feedback.
+                                    </ui:msg>
+                                </p>
+                            </div>
+                            <div class="{res.grid.col} {res.grid.col_6} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+                                <h2>
+                                    <ui:msg description="Bee Inspired - title">Bee Inspired</ui:msg>
+                                </h2>
+                                <p>
+                                    <ui:msg description="Bee Inspired - text">Each client project is unique, and
+                                        we love it. We don't recreate the same things over and over again. We dig deep,
+                                        apply our learning, and propose innovative ideas and solutions.
+                                    </ui:msg>
+                                </p>
+                            </div>
+                        </g:HTMLPanel>
+                    </slider:content>
+                </slider:Slider>
             </div>
         </section>
 
@@ -328,7 +350,8 @@
             </div>
         </section>
 
-        <g:HTMLPanel tag="section" ui:field="quizSection" styleName="{res.style.stripe} {res.style.dark} {res.style.centered}">
+        <g:HTMLPanel tag="section" ui:field="quizSection"
+                     styleName="{res.style.stripe} {res.style.dark} {res.style.centered}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_full}">
 
@@ -337,7 +360,8 @@
                     </h2>
 
                     <p>
-                        <g:Button ui:field="initQuizButton" styleName="{res.style.btn}">Go, I'm ready to beeez</g:Button>
+                        <g:Button ui:field="initQuizButton" styleName="{res.style.btn}">Go, I'm ready to beeez
+                        </g:Button>
                     </p>
 
                 </div>
@@ -355,7 +379,9 @@
                             <ui:msg description="Job applications - Software engineer">Software engineer</ui:msg>
                         </h3>
                         <a href="mailto:candidates@arcbees.com" class="{res.style.btn}">
-                            <ui:msg description="Job applications - Software engineer - Btn">How can you be the best programmer you can be</ui:msg>
+                            <ui:msg description="Job applications - Software engineer - Btn">How can you be the best
+                                programmer you can be
+                            </ui:msg>
                         </a>
                     </div>
                 </div>
@@ -379,7 +405,8 @@
                             <ui:msg description="Job applications - Graphic designer">Graphic designer</ui:msg>
                         </h3>
                         <a href="mailto:candidates@arcbees.com" class="{res.style.btn}">
-                            <ui:msg description="Job applications - Web developer - Btn">We hope you like to suffer</ui:msg>
+                            <ui:msg description="Job applications - Web developer - Btn">We hope you like to suffer
+                            </ui:msg>
                         </a>
                     </div>
                 </div>

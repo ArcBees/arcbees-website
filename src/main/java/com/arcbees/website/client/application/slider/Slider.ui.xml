@@ -1,15 +1,23 @@
 <ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
         xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+
     <ui:with field="sliderResources" type="com.arcbees.website.client.resources.SliderResources"/>
+    <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
 
     <g:HTMLPanel styleName="{sliderResources.style.slider}">
         <div ui:field="contents" class="{sliderResources.style.container}"></div>
         <nav>
             <g:Anchor ui:field="prev" href="javascript:;" styleName="{sliderResources.style.prev} {sliderResources.style.disabled}">
-                <ui:msg description="TabDetailsView Prev">Prev</ui:msg>
+                <i class="{fonts.icons.iconArrowDown}"></i>
+                <ui:msg description="TabDetailsView Prev">
+                    <span>Prev</span>
+                </ui:msg>
             </g:Anchor>
             <g:Anchor ui:field="next" href="javascript:;" styleName="{sliderResources.style.next}">
-                <ui:msg description="TabDetailsView Next">Next</ui:msg>
+                <i class="{fonts.icons.iconArrowDown}"></i>
+                <ui:msg description="TabDetailsView Next">
+                    <span>Next</span>
+                </ui:msg>
             </g:Anchor>
         </nav>
         <div ui:field="pager" class="{sliderResources.style.pager}"></div>

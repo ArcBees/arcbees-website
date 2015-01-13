@@ -1,13 +1,13 @@
 package com.arcbees.website.client;
 
 import com.arcbees.website.shared.NameTokens;
-import com.google.gwt.i18n.client.ConstantsWithLookup;
+import com.google.gwt.i18n.client.Constants;
 import com.google.gwt.i18n.client.LocalizableResource;
 
 @LocalizableResource.Generate(fileName = "NameTokensConstants_fr",
         format = "com.arcbees.website.rebind.NameTokenFrGenerator",
         locales = "fr")
-public interface NameTokensConstants extends ConstantsWithLookup {
+public interface NameTokensConstants extends Constants {
     @DefaultStringValue(NameTokens.HOME)
     String HOME();
 

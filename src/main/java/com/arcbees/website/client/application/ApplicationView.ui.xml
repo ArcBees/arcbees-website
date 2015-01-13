@@ -127,7 +127,7 @@
         </div>
 
         <div class="{res.style.content}" ui:field="content">
-            <a href="#{HOME}" class="{fonts.icons.iconArcbees} {res.style.homeLogo} {res.style.withLogo}"></a>
+            <a href="#{nameTokens.HOME}" class="{fonts.icons.iconArcbees} {res.style.homeLogo} {res.style.withLogo}"></a>
             <div ui:field="langToggle" class="{res.style.wrapper}">
                 <div class="{res.style.linkTopRight}">
                     <span class="{res.style.language}">

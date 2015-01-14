@@ -22,6 +22,7 @@ import com.google.gwt.dom.client.DivElement;
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.dom.client.NodeList;
 import com.google.gwt.event.dom.client.ClickEvent;
+import com.google.gwt.event.logical.shared.AttachEvent;
 import com.google.gwt.query.client.Function;
 import com.google.gwt.safehtml.client.SafeHtmlTemplates;
 import com.google.gwt.safehtml.shared.SafeHtml;
@@ -36,21 +37,18 @@ import com.google.gwt.user.client.ui.Widget;
 
 import static com.google.gwt.query.client.GQuery.$;
 
-public class Slider implements IsWidget {
+public class Slider implements IsWidget, AttachEvent.Handler {
     interface Binder extends UiBinder<HTMLPanel, Slider> {
     }
-
-    private static final String DATA_INDEX = "data-index";
 
     interface HtmlTemplate extends SafeHtmlTemplates {
         @Template("<a href=\"javascript:;\" " + DATA_INDEX + "=\"{0}\"><span>{0}</span></a>")
         SafeHtml pagerDot(int index);
     }
 
+    private static final String DATA_INDEX = "data-index";
     private static Binder BINDER = GWT.create(Binder.class);
     private static HtmlTemplate TEMPLATE = GWT.create(HtmlTemplate.class);
-
-    private final HTMLPanel root;
 
     @UiField
     DivElement contents;
@@ -63,6 +61,7 @@ public class Slider implements IsWidget {
     @UiField
     DivElement pager;
 
+    private final HTMLPanel root;
     private NodeList<Element> items;
     private int itemCount;
     private int maxIndex;
@@ -86,6 +85,16 @@ public class Slider implements IsWidget {
         drawDots();
 
         displayCurrent();
+
+        asWidget().addAttachHandler(this);
+    }
+
+    @Override
+    public void onAttachOrDetach(AttachEvent event) {
+        if (event.isAttached()) {
+            index = 0;
+            displayCurrent();
+        }
     }
 
     public void setAddStyleNames(String style) {

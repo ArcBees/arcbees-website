@@ -17,7 +17,7 @@
                 <ui:msg description="SEO - Home - keywords">Arcbees, Web, development, GWT, GWTP, Jukito, GAE, GQuery, GSSS, Chosen, Java, Quebec, Canada</ui:msg>
             </seo:Keywords>
             <seo:Og>
-                <seo:OgImage height="630" width="1200">/img/facebook.png</seo:OgImage>
+                <seo:OgImage height="630" width="1200">http://www.arcbees.com/img/facebook.png</seo:OgImage>
                 <seo:OgType typeValue="WEBSITE"/>
             </seo:Og>
         </seo:SeoWidget>

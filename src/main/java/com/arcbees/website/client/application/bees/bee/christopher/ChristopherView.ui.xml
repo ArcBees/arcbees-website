@@ -22,7 +22,7 @@
                 </ui:msg>
             </seo:Description>
             <seo:Og>
-                <seo:OgImage height="241" width="285">/img/christopher-viel.jpg</seo:OgImage>
+                <seo:OgImage height="241" width="285">http://www.arcbees.com/img/christopher-viel.jpg</seo:OgImage>
             </seo:Og>
         </seo:SeoWidget>
 

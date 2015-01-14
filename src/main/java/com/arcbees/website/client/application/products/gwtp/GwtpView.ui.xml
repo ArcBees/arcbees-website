@@ -35,7 +35,7 @@
         <section class="{res.style.stripe}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_8} {res.grid.col_m_full}">
-                    <h1>gwt platform
+                    <h1>gwt-platform
                         <a href="#" class="{res.style.anchor}">#</a>
                     </h1>
                     <h2 class="{page.style.presentation}">

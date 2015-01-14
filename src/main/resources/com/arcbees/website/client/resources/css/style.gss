@@ -209,7 +209,7 @@ h3.stripeTitle.twoLineTitle {
     }
 
     h3.stripeTitle {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     h3.stripeTitle.twoLineTitle {
@@ -924,6 +924,16 @@ img {
     padding-right: 0;
 }
 
+@media (max-width: 649px) {
+    .content .homeLogo {
+        display: none;
+    }
+
+    .breadcrumb {
+        display: none;
+    }
+}
+
 .content .linkTopRight {
     position: absolute;
     top: 41px;
@@ -954,6 +964,10 @@ img {
 @media (max-width: 649px) {
     .content .linkTopRight {
         top: 20px;
+    }
+
+    .content .language {
+        margin-right: 10px;
     }
 }
 

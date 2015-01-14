@@ -91,23 +91,33 @@
 
 @keyframes beesMobile {
     0% {@mixin translate(0px, 0px);}
-    100% {@mixin translate(130px, 0px);}
+    100% {@mixin translate(120px, 0px);}
 }
 
 @-webkit-keyframes beesMobile {
     0% {-webkit-transform: translate(0px,0px);}
-    100% {-webkit-transform: translate(125px, 0px);}
+    100% {-webkit-transform: translate(120px, 0px);}
 }
 
 @if (!is("locale",  "en")) {
     @keyframes bees {
         0% {@mixin translate(0px, 0px);}
-        100% {@mixin translate(0px, 70px);}
+        100% {@mixin translate(350px, 0px);}
     }
 
     @-webkit-keyframes bees {
         0% {-webkit-transform: translate(0px, 0px);}
-        100% {-webkit-transform: translate(0px, 70px);}
+        100% {-webkit-transform: translate(350px, 0px);}
+    }
+
+    @keyframes beesMobile {
+        0% {@mixin translate(0px, 0px);}
+        100% {@mixin translate(150px, 0px);}
+    }
+
+    @-webkit-keyframes beesMobile {
+        0% {-webkit-transform: translate(0px, 0px);}
+        100% {-webkit-transform: translate(150px, 0px);}
     }
 }
 
@@ -195,13 +205,13 @@
     }
 
     .home .header .txtBees {
-        left: 70px;
+        left: 64px;
 
         @mixin animation_name(beesMobile);
     }
 
     .home .header .txtArchitects {
-        left: 69px;
+        left: 64px;
     }
 
     .home .header .txtCreate {
@@ -209,7 +219,7 @@
     }
 
     .home .header p {
-        font-size: 3.5rem;
+        font-size: 3.25rem;
         text-transform: uppercase;
         line-height: .9em;
 
@@ -317,6 +327,10 @@
 }
 
 @media (max-width: 649px) {
+    .home .beeTheBest p {
+        font-size: 1.8rem;
+    }
+
     .home .ssiconsHexa {
         display: none;
     }

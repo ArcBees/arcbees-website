@@ -404,7 +404,7 @@
                             <ui:msg description="Job applications - Graphic designer">Graphic designer</ui:msg>
                         </h3>
                         <a href="mailto:candidates@arcbees.com" class="{res.style.btn}">
-                            <ui:msg description="Job applications - Web developer - Btn">We hope you like to suffer
+                            <ui:msg description="Job applications - Graphic designer - Btn">You want to create beauty and passion
                             </ui:msg>
                         </a>
                     </div>

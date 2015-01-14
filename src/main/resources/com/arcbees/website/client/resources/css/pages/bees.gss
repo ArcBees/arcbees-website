@@ -617,3 +617,9 @@ a:visited.popupClose {
 .offers > div:last-child {
     border-bottom: none
 }
+
+@media (max-width: 649px) {
+    .offers h3 {
+        font-size: 2rem;
+    }
+}

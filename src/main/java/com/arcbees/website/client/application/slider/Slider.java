@@ -47,6 +47,7 @@ public class Slider implements IsWidget, AttachEvent.Handler {
     }
 
     private static final String DATA_INDEX = "data-index";
+
     private static Binder BINDER = GWT.create(Binder.class);
     private static HtmlTemplate TEMPLATE = GWT.create(HtmlTemplate.class);
 
@@ -62,6 +63,7 @@ public class Slider implements IsWidget, AttachEvent.Handler {
     DivElement pager;
 
     private final HTMLPanel root;
+
     private NodeList<Element> items;
     private int itemCount;
     private int maxIndex;

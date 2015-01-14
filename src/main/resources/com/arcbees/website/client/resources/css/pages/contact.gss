@@ -62,3 +62,28 @@ ul.social {
 .quebec h3 span {
     display: block;
 }
+
+.quebec .contactSlider,
+.quebec .contactSlider > div {
+    width: 100%;
+}
+
+.quebec .contactSlider > div:last-child {
+    display: none;
+}
+
+.quebec .contactSlider img {
+    width: 33%;
+}
+
+.quebec .contactSlider nav a:first-child {
+    left: 10px;
+}
+
+.quebec .contactSlider nav a:last-child {
+    right: 10px;
+}
+
+.quebec .contactSlider nav i:before {
+    color: C_PRIMARY;
+}

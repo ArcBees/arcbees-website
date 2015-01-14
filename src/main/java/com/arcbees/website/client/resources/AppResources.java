@@ -125,6 +125,18 @@ public interface AppResources extends FontResources {
         String mobileHidden();
 
         String mobileVisible();
+
+        String productsCarousel();
+
+        String gae();
+
+        String jukito();
+
+        String gwtp();
+
+        String chosen();
+
+        String gquery();
     }
 
     @Source("css/normalize.gss")

@@ -81,17 +81,6 @@
 
 /* -- Main-- */
 
-.support ul {
-    padding-left: 0;
-
-    list-style-type: none;
-}
-
-.support ul li::before {
-    content: "+ ";
-    font-family: "geometriaBold", Arial, sans-serif;
-}
-
 .support .purchSupp {
     padding: 0 35px;
 }
@@ -300,4 +289,8 @@
     .responseTime {
         padding: 0;
     }
+}
+
+.products h2 + p span {
+    display: block;
 }

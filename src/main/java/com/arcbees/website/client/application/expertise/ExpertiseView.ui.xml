@@ -117,13 +117,63 @@
             </div>
         </section>
 
-        <section class="{res.style.stripe} {res.style.centered}">
-            <div class="{res.style.wrapper} {res.style.clearfix}">
-                <!-- TODO : add caroussel -->
-                <h2>gwtp</h2>
-                <a href="#" class="{res.style.btn}">
-                    <ui:msg description="Btn - Learn more">Learn more</ui:msg>
-                </a>
+        <section class="{page.style.products} {res.style.stripe} {res.style.centered}">
+            <div class="{res.style.wrapper}">
+                <h2>
+                    <ui:msg description="Products">Products</ui:msg>
+                </h2>
+                <p>
+                    <ui:msg description="Our hive of products offers you different possibilities. Use the ones that fits you.">
+                        Our hive of products offers you different possibilities.
+                        <span>Use the ones that fits you.</span>
+                    </ui:msg>
+
+                </p>
+                <div class="{res.style.productsCarousel}">
+                    <ul>
+                        <li>
+                            <a href="#{nameTokens.GAE}" class="{fonts.icons.iconGae} {res.style.gae}">
+                                <h3>GAE</h3>
+                                <p>
+                                    <ui:msg description="Optimizing Google App Engine applications">Optimizing Google App Engine applications</ui:msg>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#{nameTokens.JUKITO}" class="{fonts.icons.iconJukito} {res.style.jukito}">
+                                <h3>JUKITO</h3>
+                                <p>
+                                    <ui:msg description="Jukito - slogan">Use the power of dependency injection in all your tests</ui:msg>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#{nameTokens.GWTP}" class="{fonts.icons.iconGwtp} {res.style.gwtp}">
+                                <h3>GWTP</h3>
+                                <p>
+                                    <ui:msg description="The best Model-View-Presenter framework for GWT">The best Model-View-Presenter framework for GWT</ui:msg>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#{nameTokens.CHOSEN}" class="{fonts.icons.iconChosen} {res.style.chosen}">
+                                <h3>CHOSEN</h3>
+                                <p>
+                                    <ui:msg description="Making select boxes">Making select boxes more user-friendly, the GWT way</ui:msg>
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#{nameTokens.GQUERY}" class="{fonts.icons.iconGquery} {res.style.gquery}">
+                                <h3>GQUERY</h3>
+                                <p>
+                                    <ui:msg description="A jQuery clone for GWT">A jQuery clone for GWT, and much more</ui:msg>
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#{nameTokens.PRODUCTS}" class="{res.style.btn}">Learn more</a>
             </div>
         </section>
 

@@ -88,6 +88,10 @@ public class Slider implements IsWidget {
         displayCurrent();
     }
 
+    public void setAddStyleNames(String style) {
+        asWidget().addStyleName(style);
+    }
+
     @UiHandler("prev")
     void onPrev(ClickEvent event) {
         prev();

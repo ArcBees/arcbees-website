@@ -1090,6 +1090,10 @@ img {
 
 /* -> Carousel -- */
 
+.products h2 + p span {
+    display: block;
+}
+
 .productsCarousel ul {
     padding: 0;
 }
@@ -1122,13 +1126,6 @@ img {
     margin-top: 2rem;
 }
 
-.productsCarousel a.active {
-    font-size: 34rem;
-    line-height: 31rem;
-
-    @mixin transition(all, 0.3s);
-}
-
 .productsCarousel a.active,
 .productsCarousel a:hover {
     font-size: 16rem;
@@ -1143,23 +1140,28 @@ img {
     color: #eaebeb;
 }
 
-.productsCarousel a.gae:hover:before {
+.productsCarousel a.gae:hover:before,
+.productsCarousel a.gae.active:before {
     color: C_PRODUCT_GAE;
 }
 
-.productsCarousel a.jukito:hover:before {
+.productsCarousel a.jukito:hover:before,
+.productsCarousel a.jukito.active:before {
     color: C_PRODUCT_JUKITO;
 }
 
-.productsCarousel a.gwtp:hover:before {
+.productsCarousel a.gwtp:hover:before,
+.productsCarousel a.gwtp.active:before {
     color: C_PRODUCT_GWTP;
 }
 
-.productsCarousel a.chosen:hover:before {
+.productsCarousel a.chosen:hover:before,
+.productsCarousel a.chosen.active:before {
     color: C_PRODUCT_CHOSEN;
 }
 
-.productsCarousel a.gquery:hover:before {
+.productsCarousel a.gquery:hover:before,
+.productsCarousel a.gquery.active:before {
     color: C_PRODUCT_GQUERY;
 }
 

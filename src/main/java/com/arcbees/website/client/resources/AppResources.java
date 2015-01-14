@@ -137,6 +137,8 @@ public interface AppResources extends FontResources {
         String chosen();
 
         String gquery();
+
+        String products();
     }
 
     @Source("css/normalize.gss")

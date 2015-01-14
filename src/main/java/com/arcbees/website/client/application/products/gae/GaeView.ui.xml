@@ -58,7 +58,6 @@
                                 </a>
                             </li>
                         </ul>
-                        <a href="#" class="{res.style.btn}">Subscribe</a>
                     </div>
                 </div>
                 <div class="{res.grid.col} {res.grid.col_push_1_2} {res.grid.col_m_full} {res.grid.col_m_push_0}">

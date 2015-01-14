@@ -280,3 +280,7 @@
         bottom: -60px;
     }
 }
+
+.products h2 + p span {
+    display: block;
+}

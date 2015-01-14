@@ -25,7 +25,7 @@
                 </ui:msg>
             </seo:Description>
             <seo:Og>
-                <seo:OgImage height="630" width="1200">/img/facebook-gae.png</seo:OgImage>
+                <seo:OgImage height="630" width="1200">http://www.arcbees.com/img/facebook-gae.png</seo:OgImage>
             </seo:Og>
         </seo:SeoWidget>
 

@@ -119,9 +119,15 @@
 
         <section class="{page.style.products} {res.style.stripe} {res.style.centered}">
             <div class="{res.style.wrapper}">
-                <h2>Products</h2>
-                <p>Our hive of products offers you different possibilities.
-                    <span>Use the ones that fits you.</span>
+                <h2>
+                    <ui:msg description="Products">Products</ui:msg>
+                </h2>
+                <p>
+                    <ui:msg description="Our hive of products offers you different possibilities. Use the ones that fits you.">
+                        Our hive of products offers you different possibilities.
+                        <span>Use the ones that fits you.</span>
+                    </ui:msg>
+
                 </p>
                 <div class="{res.style.productsCarousel}">
                     <ul>

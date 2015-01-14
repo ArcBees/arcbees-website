@@ -86,19 +86,6 @@ public class NameTokens {
     public static final String BEE_SIMONPIERRE = BEES + "/simon-pierre-gingras";
     public static final String BEE_SIMONPIERRE_FR = BEES_FR + "/simon-pierre-gingras";
 
-    public static final String DOCS = "!/docs";
-    public static final String CHOSEN_DOCS = DOCS + "/chosen";
-    public static final String ELASTIC_DOCS = DOCS + "/elastic";
-
-    public static final String DEVELOPERS = "!/developers";
-    public static final String DEVELOPERS_FR = "!/developpeurs";
-    public static final String JUKITO_DEVELOPERS = DEVELOPERS + "/jukito";
-    public static final String JUKITO_DEVELOPERS_FR = DEVELOPERS_FR + "/jukito";
-    public static final String CHOSEN_DEVELOPERS = DEVELOPERS + "/chosen";
-    public static final String CHOSEN_DEVELOPERS_FR = DEVELOPERS_FR + "/chosen";
-    public static final String GWTP_DEVELOPERS = DEVELOPERS + "/gwtp";
-    public static final String GWTP_DEVELOPERS_FR = DEVELOPERS_FR + "/gwtp";
-
     static {
         Map<String, String> keys = Maps.newHashMap();
         keys.put(HOME, HOME);
@@ -131,15 +118,6 @@ public class NameTokens {
         keys.put(BEE_PHILIPPEA, BEE_PHILIPPEA_FR);
         keys.put(BEE_PHILIPPEB, BEE_PHILIPPEB_FR);
         keys.put(BEE_SIMONPIERRE, BEE_SIMONPIERRE_FR);
-
-        keys.put(DOCS, DOCS);
-        keys.put(CHOSEN_DOCS, CHOSEN_DOCS);
-        keys.put(ELASTIC_DOCS, ELASTIC_DOCS);
-
-        keys.put(DEVELOPERS, DEVELOPERS_FR);
-        keys.put(JUKITO_DEVELOPERS, JUKITO_DEVELOPERS_FR);
-        keys.put(CHOSEN_DEVELOPERS, CHOSEN_DEVELOPERS_FR);
-        keys.put(GWTP_DEVELOPERS, GWTP_DEVELOPERS_FR);
 
         placeKeys = HashBiMap.create(keys);
     }

@@ -18,9 +18,9 @@ package com.arcbees.website.client.application.bees;
 
 import javax.inject.Provider;
 
-import com.arcbees.website.shared.NameTokens;
 import com.arcbees.website.client.application.ApplicationPresenter;
 import com.arcbees.website.client.application.bees.quiz.QuestionPresenter;
+import com.arcbees.website.shared.NameTokens;
 import com.google.gwt.event.shared.GwtEvent;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
@@ -73,6 +73,13 @@ public class BeesPresenter extends Presenter<BeesPresenter.MyView, BeesPresenter
     @Override
     public void onKonami(KonamiEvent event) {
         getView().konami();
+    }
+
+    @Override
+    public void prepareFromRequest(PlaceRequest request) {
+        super.prepareFromRequest(request);
+
+        clearSlot(SLOT_BEE);
     }
 
     @Override

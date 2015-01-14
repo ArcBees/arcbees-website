@@ -24,6 +24,9 @@
                     GAE Studio helps you optimize applications hosted on Google App Engine.
                 </ui:msg>
             </seo:Description>
+            <seo:Og>
+                <seo:OgImage height="630" width="1200">/img/facebook-gae.png</seo:OgImage>
+            </seo:Og>
         </seo:SeoWidget>
 
         <nav class="{res.style.breadcrumb} {res.style.withLogo}">

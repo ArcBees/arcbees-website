@@ -23,6 +23,9 @@
                     GWT standards.
                 </ui:msg>
             </seo:Description>
+            <seo:Og>
+                <seo:OgImage height="630" width="1200">/img/facebook-chosen.png</seo:OgImage>
+            </seo:Og>
         </seo:SeoWidget>
 
         <nav class="{res.style.breadcrumb} {res.style.withLogo}">

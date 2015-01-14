@@ -21,6 +21,9 @@
                     Developer of things, Chief Bacon Evangelist
                 </ui:msg>
             </seo:Description>
+            <seo:Og>
+                <seo:OgImage height="241" width="285">/img/simon-pierre-gingras.jpg</seo:OgImage>
+            </seo:Og>
         </seo:SeoWidget>
 
         <div class="{page.style.bee} {page.style.bee1}">

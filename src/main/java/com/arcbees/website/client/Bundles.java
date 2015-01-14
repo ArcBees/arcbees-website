@@ -17,7 +17,9 @@
 package com.arcbees.website.client;
 
 public interface Bundles {
-    String DEV = "Dev";
-    String DOCS = "Docs";
     String PRODUCTS = "Products";
+    String BEES1 = "Bees1";
+    String BEES2 = "Bees2";
+    String BEES3 = "Bees3";
+    String BEES4 = "Bees4";
 }

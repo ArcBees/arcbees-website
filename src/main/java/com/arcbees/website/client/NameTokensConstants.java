@@ -91,25 +91,4 @@ public interface NameTokensConstants extends Constants {
 
     @DefaultStringValue(NameTokens.BEE_SIMONPIERRE)
     String BEE_SIMONPIERRE();
-
-    @DefaultStringValue(NameTokens.DOCS)
-    String DOCS();
-
-    @DefaultStringValue(NameTokens.CHOSEN_DOCS)
-    String CHOSEN_DOCS();
-
-    @DefaultStringValue(NameTokens.ELASTIC_DOCS)
-    String ELASTIC_DOCS();
-
-    @DefaultStringValue(NameTokens.DEVELOPERS)
-    String DEVELOPERS();
-
-    @DefaultStringValue(NameTokens.JUKITO_DEVELOPERS)
-    String JUKITO_DEVELOPERS();
-
-    @DefaultStringValue(NameTokens.CHOSEN_DEVELOPERS)
-    String CHOSEN_DEVELOPERS();
-
-    @DefaultStringValue(NameTokens.GWTP_DEVELOPERS)
-    String GWTP_DEVELOPERS();
 }

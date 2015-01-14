@@ -16,21 +16,22 @@
 
 package com.arcbees.website.client.application.bees.bee.jason;
 
-import com.arcbees.website.shared.NameTokens;
+import com.arcbees.website.client.Bundles;
 import com.arcbees.website.client.application.bees.BeesPresenter;
+import com.arcbees.website.shared.NameTokens;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.annotations.NameToken;
-import com.gwtplatform.mvp.client.annotations.ProxyCodeSplit;
+import com.gwtplatform.mvp.client.annotations.ProxyCodeSplitBundle;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 
 public class JasonPresenter extends Presenter<JasonPresenter.MyView, JasonPresenter.MyProxy> {
     interface MyView extends View {
     }
 
-    @ProxyCodeSplit
+    @ProxyCodeSplitBundle(Bundles.BEES3)
     @NameToken({NameTokens.BEE_JASON, NameTokens.BEE_JASON_FR})
     interface MyProxy extends ProxyPlace<JasonPresenter> {
     }

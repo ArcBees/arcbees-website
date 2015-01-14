@@ -175,7 +175,6 @@
                     <testTimeOut>180</testTimeOut>
                     <includes>**/*GwtTest.java</includes>
                     <mode>htmlunit</mode>
-                    <gen>gen</gen>
 
                     <extraJvmArgs>-Xss1024K -Xmx1024M -XX:MaxPermSize=512M -Duser.language=en
                         -Duser.country=US</extraJvmArgs>
@@ -184,9 +183,8 @@
                     <copyWebapp>true</copyWebapp>
                     <hostedWebapp>${webappDirectory}</hostedWebapp>
 
-                    <extraParam>true</extraParam>
+                    <extraParam>false</extraParam>
                     <extra>extras</extra>
-                    <fragmentCount>10</fragmentCount>
                     <optimizationLevel>9</optimizationLevel>
                     <deploy>${project.build.directory}/gwtDeploy</deploy>
                 </configuration>

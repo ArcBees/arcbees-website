@@ -37,18 +37,18 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.focusBlock}">
                 <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                     <h2>
-                        <ui:msg description="Contact - Work with us">Work with us</ui:msg>
+                        <ui:msg description="Contact - Work with us">We are here to help you</ui:msg>
                     </h2>
                     <p>
-                        <ui:msg description="Contact - address">250-2299 boul. Versant nord<br/>Québec,
-                            Québec G1N 4G2
+                        <ui:msg description="Contact - address">250-2299 Blvd. Versant nord<br/>Quebec,
+                            Quebec G1N 4G2
                         </ui:msg>
                     </p>
                     <p>
                         <a href="mailto:queenbee@arcbees.com">queenbee@arcbees.com</a>
                         <br/>
                         <strong>
-                            <ui:msg description="Contact - Toll-free:">Toll-free:</ui:msg>
+                            <ui:msg description="Contact - Toll-free:">Toll-free number:</ui:msg>
                         </strong>
                         1.877.635.1585
                     </p>

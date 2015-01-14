@@ -37,6 +37,8 @@ public interface AnimationsResources extends ClientBundle {
         String leave3();
 
         String leave2();
+
+        String animationStop();
     }
 
     @Source({"com/arcbees/gsss/animation/client/animationsettings.gss",

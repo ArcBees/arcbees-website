@@ -2,6 +2,7 @@
 
 .hexaMove {
     @mixin animation_name(hexaMove);
+    @mixin animation_delay(1s);
     @mixin animation_duration(5s);
 }
 
@@ -11,7 +12,7 @@
         -ms-transform:rotate(0deg);
         -o-transform:rotate(0deg);
         transform:rotate(0deg);
-        opacity: 1;
+        opacity: 0;
     }
     25% {
         -moz-transform:rotate(90deg);
@@ -20,7 +21,7 @@
         transform:rotate(90deg);
         opacity: 1;
     }
-    50% {
+    55% {
         -moz-transform:rotate(90deg) translate(0px, 0px);
         -ms-transform:rotate(90deg) translate(0px, 0px);
         -o-transform:rotate(90deg) translate(0px, 0px);
@@ -39,13 +40,13 @@
 @-webkit-keyframes hexaMove {
     0% {
         -webkit-transform:rotate(0deg);
-        opacity: 1;
+        opacity: 0;
     }
     25% {
         -webkit-transform:rotate(90deg);
         opacity: 1;
     }
-    50% {
+    55% {
         -webkit-transform:rotate(90deg) translate(0px, 0px);
         opacity: 1;
     }
@@ -465,4 +466,12 @@
         opacity: 0;
         zoom: .25;
     }
+}
+
+.animationStop .animation {
+    -webkit-animation-play-state: paused;
+}
+
+.animation {
+    -webkit-animation-play-state: running;
 }

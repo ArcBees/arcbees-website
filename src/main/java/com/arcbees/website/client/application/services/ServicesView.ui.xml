@@ -1,11 +1,11 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-        xmlns:g="urn:import:com.google.gwt.user.client.ui"
-        xmlns:slider="urn:import:com.arcbees.website.client.application.slider"
-        xmlns:seo="urn:import:com.arcbees.seo.widget"
-        ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
-        ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
-        ui:generateLocales="default">
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:slider="urn:import:com.arcbees.website.client.application.slider"
+             xmlns:seo="urn:import:com.arcbees.seo.widget"
+             ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+             ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
+             ui:generateLocales="default">
 
     <ui:with field="nameTokens" type="com.arcbees.website.client.NameTokensConstants"/>
     <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
@@ -167,46 +167,88 @@
                 <h2>
                     <ui:msg description="Professional Services - Trusted By">Trusted By</ui:msg>
                 </h2>
-                <slider:Slider>
-                    <slider:content>
-                        <g:HTMLPanel>
-                            <ul>
-                                <li>
+                <div class="{res.style.mobileHidden}">
+                    <slider:Slider>
+                        <slider:content>
+                            <g:HTMLPanel>
+                                <ul>
+                                    <li>
+                                        <a href="http://zafin.com/" target="_blank">
+                                            <g:Image resource="{page.protorisk}"/>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <g:Image resource="{page.kaam}"/>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.lillegroup.com/" target="_blank">
+                                            <g:Image resource="{page.swiftIQ}"/>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <g:Image resource="{page.easyData}"/>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://zafin.com/" target="_blank">
+                                            <g:Image resource="{page.bookedIn}"/>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.lillegroup.com/" target="_blank">
+                                            <g:Image resource="{page.trackR}"/>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </g:HTMLPanel>
+                        </slider:content>
+                    </slider:Slider>
+                </div>
+
+                <div class="{res.style.mobileVisible}">
+                    <slider:Slider>
+                        <slider:content>
+                            <g:HTMLPanel>
+                                <div>
                                     <a href="http://zafin.com/" target="_blank">
                                         <g:Image resource="{page.protorisk}"/>
                                     </a>
-                                </li>
-                                <li>
+                                </div>
+                                <div>
                                     <a href="#">
                                         <g:Image resource="{page.kaam}"/>
                                     </a>
-                                </li>
-                                <li>
+                                </div>
+                                <div>
                                     <a href="http://www.lillegroup.com/" target="_blank">
                                         <g:Image resource="{page.swiftIQ}"/>
                                     </a>
-                                </li>
-                            </ul>
-                            <ul>
-                                <li>
+                                </div>
+                                <div>
                                     <a href="#">
                                         <g:Image resource="{page.easyData}"/>
                                     </a>
-                                </li>
-                                <li>
+                                </div>
+                                <div>
                                     <a href="http://zafin.com/" target="_blank">
                                         <g:Image resource="{page.bookedIn}"/>
                                     </a>
-                                </li>
-                                <li>
+                                </div>
+                                <div>
                                     <a href="http://www.lillegroup.com/" target="_blank">
                                         <g:Image resource="{page.trackR}"/>
                                     </a>
-                                </li>
-                            </ul>
-                        </g:HTMLPanel>
-                    </slider:content>
-                </slider:Slider>
+                                </div>
+                            </g:HTMLPanel>
+                        </slider:content>
+                    </slider:Slider>
+                </div>
+
             </div>
         </section>
 
@@ -251,7 +293,7 @@
                                 to clients for the focus it takes to conquer big challenges.
                             </ui:msg>
                         </p>
-                        <div class="{page.style.diagram}">
+                        <div ui:field="partner" class="{page.style.diagram} {animations.style.animationStop}">
                             <i class="{fonts.icons.iconArcbees} {page.style.icon1} {animations.style.animation} {animations.style.infinite} {animations.style.bounceIn}"></i>
                             <i class="{fonts.icons.iconArcbees} {page.style.icon2} {animations.style.animation} {animations.style.infinite} {animations.style.bounceIn}"></i>
                             <i class="{fonts.icons.iconArcbees} {page.style.icon3} {animations.style.animation} {animations.style.infinite} {animations.style.bounceIn}"></i>
@@ -272,7 +314,7 @@
                                 incremental product versions frequently to invite feedback and review.
                             </ui:msg>
                         </p>
-                        <div class="{page.style.diagram}">
+                        <div ui:field="iterative" class="{page.style.diagram} {animations.style.animationStop}">
                             <div class="{page.style.launch}">
                                 <strong>
                                     <ui:msg description="Professional Services - iterative process - Launch 1">
@@ -311,7 +353,7 @@
                                 and technical debt by sharing knowledge across the whole team.
                             </ui:msg>
                         </p>
-                        <div class="{page.style.diagram}">
+                        <div ui:field="codeReview" class="{page.style.diagram} {animations.style.animationStop}">
                             <div class="{page.style.bar1}"></div>
                             <div class="{page.style.bracket1}"> &lt; </div>
                             <div class="{page.style.bracket2}"> &gt; </div>
@@ -341,7 +383,7 @@
                                 testing small products with real users to validate assumptions.
                             </ui:msg>
                         </p>
-                        <div class="{page.style.diagram}">
+                        <div ui:field="costRisk" class="{page.style.diagram} {animations.style.animationStop}">
                             <i class="{fonts.icons.iconhexagon} {page.style.icon1} {animations.style.animation} {animations.style.line}"></i>
                             <i class="{fonts.icons.iconhexagon} {page.style.icon2} {animations.style.animation} {animations.style.line}"></i>
                             <i class="{fonts.icons.iconhexagon} {page.style.icon3} {animations.style.animation} {animations.style.line}"></i>
@@ -367,7 +409,7 @@
                                 incrementally based on real-world learning.
                             </ui:msg>
                         </p>
-                        <div class="{page.style.diagram}">
+                        <div ui:field="learnAdapt" class="{page.style.diagram} {animations.style.animationStop}">
                             <div class="{page.style.bar1} {animations.style.animation}"></div>
                             <i class="{fonts.icons.iconArcbees} {page.style.icon1} {animations.style.animation} {animations.style.infinite} {animations.style.leave}"></i>
                             <i class="{fonts.icons.iconArcbees} {page.style.icon2} {animations.style.animation} {animations.style.infinite} {animations.style.leave2}"></i>

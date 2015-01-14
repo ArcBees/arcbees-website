@@ -104,18 +104,22 @@ public class SeoWidget extends ContainerNode implements AttachEvent.Handler {
         setMetaTag(metaElementsMap, "fb:app_id", seoElements.getFbAppId());
 
         OpenGraph openGraph = seoElements.getOpenGraph();
-        if (openGraph != null) {
-            setMetaTag(metaElementsMap, "og:title", seoElements.getTitle());
-            setMetaTag(metaElementsMap, "og:description", seoElements.getDescription());
-            setMetaTag(metaElementsMap, "og:type", openGraph.getType());
+        if (openGraph == null) {
+            openGraph = new OpenGraph.Builder()
+                    .withType(OgType.TypeValue.WEBSITE.getValue())
+                    .build();
+        }
 
-            Image image = openGraph.getImage();
-            if (image != null) {
-                setMetaTag(metaElementsMap, "og:image", image.getUrl());
-                setMetaTag(metaElementsMap, "og:image:type", image.getMimeType());
-                setMetaTag(metaElementsMap, "og:image:height", toString(image.getHeight()));
-                setMetaTag(metaElementsMap, "og:image:width", toString(image.getWidth()));
-            }
+        setMetaTag(metaElementsMap, "og:title", seoElements.getTitle());
+        setMetaTag(metaElementsMap, "og:description", seoElements.getDescription());
+        setMetaTag(metaElementsMap, "og:type", openGraph.getType());
+
+        Image image = openGraph.getImage();
+        if (image != null) {
+            setMetaTag(metaElementsMap, "og:image", image.getUrl());
+            setMetaTag(metaElementsMap, "og:image:type", image.getMimeType());
+            setMetaTag(metaElementsMap, "og:image:height", toString(image.getHeight()));
+            setMetaTag(metaElementsMap, "og:image:width", toString(image.getWidth()));
         }
     }
 
@@ -132,7 +136,7 @@ public class SeoWidget extends ContainerNode implements AttachEvent.Handler {
                 metaElement = document.createMetaElement();
                 metaElement.setAttribute("property", property);
 
-                document.getHead().appendChild(metaElement);
+                document.getHead().insertFirst(metaElement);
             }
 
             metaElement.setContent(content);

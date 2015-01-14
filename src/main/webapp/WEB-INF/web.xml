@@ -6,6 +6,32 @@
 <web-app>
     <!-- Default page to serve -->
     <welcome-file-list>
-        <welcome-file>Arcbees.html</welcome-file>
+        <welcome-file>index.html</welcome-file>
     </welcome-file-list>
+
+    <listener>
+        <listener-class>com.arcbees.website.server.guice.GuiceServletConfig</listener-class>
+    </listener>
+
+    <filter>
+        <filter-name>guiceFilter</filter-name>
+        <filter-class>com.google.inject.servlet.GuiceFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>guiceFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+        <dispatcher>REQUEST</dispatcher>
+        <dispatcher>FORWARD</dispatcher>
+        <dispatcher>INCLUDE</dispatcher>
+    </filter-mapping>
+
+    <servlet>
+        <servlet-name>welcome</servlet-name>
+        <servlet-class>com.arcbees.website.server.HomeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>welcome</servlet-name>
+        <url-pattern>/index.html</url-pattern>
+    </servlet-mapping>
 </web-app>

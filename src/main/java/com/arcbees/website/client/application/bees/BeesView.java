@@ -64,6 +64,7 @@ public class BeesView extends ViewWithUiHandlers<BeesUiHandlers> implements Bees
             Binder binder,
             final PageBeesResources pageBeesResources) {
         this.pageBeesResources = pageBeesResources;
+        pageBeesResources.style().ensureInjected();
 
         initWidget(binder.createAndBindUi(this));
 

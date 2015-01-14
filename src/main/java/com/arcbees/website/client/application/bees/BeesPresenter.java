@@ -29,7 +29,7 @@ import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.annotations.ContentSlot;
 import com.gwtplatform.mvp.client.annotations.NameToken;
-import com.gwtplatform.mvp.client.annotations.ProxyStandard;
+import com.gwtplatform.mvp.client.annotations.ProxyCodeSplit;
 import com.gwtplatform.mvp.client.proxy.PlaceManager;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 import com.gwtplatform.mvp.client.proxy.RevealContentHandler;
@@ -47,7 +47,7 @@ public class BeesPresenter extends Presenter<BeesPresenter.MyView, BeesPresenter
     public static final GwtEvent.Type<RevealContentHandler<?>> SLOT_BEE = new GwtEvent.Type<>();
     public static final Object SLOT_QUIZ = new Object();
 
-    @ProxyStandard
+    @ProxyCodeSplit
     @NameToken({NameTokens.BEES, NameTokens.BEES_FR})
     interface MyProxy extends ProxyPlace<BeesPresenter> {
     }

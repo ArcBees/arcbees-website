@@ -16,21 +16,22 @@
 
 package com.arcbees.website.client.application.products.gquery;
 
-import com.arcbees.website.shared.NameTokens;
+import com.arcbees.website.client.Bundles;
 import com.arcbees.website.client.application.products.ProductsPresenter;
+import com.arcbees.website.shared.NameTokens;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.annotations.NameToken;
-import com.gwtplatform.mvp.client.annotations.ProxyStandard;
+import com.gwtplatform.mvp.client.annotations.ProxyCodeSplitBundle;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 
 public class GqueryPresenter extends Presenter<GqueryPresenter.MyView, GqueryPresenter.MyProxy> {
     interface MyView extends View {
     }
 
-    @ProxyStandard
+    @ProxyCodeSplitBundle(Bundles.PRODUCTS)
     @NameToken({NameTokens.GQUERY, NameTokens.GQUERY_FR})
     interface MyProxy extends ProxyPlace<GqueryPresenter> {
     }

@@ -23,14 +23,14 @@ import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.annotations.NameToken;
-import com.gwtplatform.mvp.client.annotations.ProxyStandard;
+import com.gwtplatform.mvp.client.annotations.ProxyCodeSplit;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 
 public class JeanchristophePresenter extends Presenter<JeanchristophePresenter.MyView, JeanchristophePresenter.MyProxy> {
     interface MyView extends View {
     }
 
-    @ProxyStandard
+    @ProxyCodeSplit
     @NameToken({NameTokens.BEE_JEANCHRISTOPHE, NameTokens.BEE_JEANCHRISTOPHE_FR})
     interface MyProxy extends ProxyPlace<JeanchristophePresenter> {
     }

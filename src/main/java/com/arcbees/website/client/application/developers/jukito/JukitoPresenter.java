@@ -16,21 +16,22 @@
 
 package com.arcbees.website.client.application.developers.jukito;
 
-import com.arcbees.website.shared.NameTokens;
+import com.arcbees.website.client.Bundles;
 import com.arcbees.website.client.application.ApplicationPresenter;
+import com.arcbees.website.shared.NameTokens;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.annotations.NameToken;
-import com.gwtplatform.mvp.client.annotations.ProxyStandard;
+import com.gwtplatform.mvp.client.annotations.ProxyCodeSplitBundle;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 
 public class JukitoPresenter extends Presenter<JukitoPresenter.MyView, JukitoPresenter.MyProxy> {
     interface MyView extends View {
     }
 
-    @ProxyStandard
+    @ProxyCodeSplitBundle(Bundles.DEV)
     @NameToken({NameTokens.JUKITO_DEVELOPERS, NameTokens.JUKITO_DEVELOPERS_FR})
     interface MyProxy extends ProxyPlace<JukitoPresenter> {
     }

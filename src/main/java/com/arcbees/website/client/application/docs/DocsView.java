@@ -16,6 +16,7 @@
 
 package com.arcbees.website.client.application.docs;
 
+import com.arcbees.website.client.resources.DocsResources;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.IsWidget;
@@ -33,7 +34,10 @@ public class DocsView extends ViewImpl implements DocsPresenter.MyView {
 
     @Inject
     DocsView(
-            Binder binder) {
+            Binder binder,
+            DocsResources docsResources) {
+        docsResources.style().ensureInjected();
+
         initWidget(binder.createAndBindUi(this));
     }
 

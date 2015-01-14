@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module rename-to='arcbees'>
-	<inherits name='com.google.gwt.user.User'/>
+    <inherits name='com.google.gwt.user.User'/>
     <inherits name='com.google.gwt.user.theme.standard.Standard'/>
 
     <inherits name='com.gwtplatform.mvp.MvpWithEntryPoint'/>
     <inherits name="com.arcbees.gsss.grid.Grid"/>
-    <inherits name='com.google.gwt.maps.Maps' />
+    <inherits name='com.google.gwt.maps.Maps'/>
     <inherits name="com.google.gwt.query.Query"/>
     <inherits name="com.arcbees.gsss.animation.Animation"/>
     <inherits name="com.arcbees.seo.Seo"/>
@@ -18,16 +18,20 @@
     <source path='shared'/>
 
     <extend-configuration-property name="gin.ginjector.modules" value="com.arcbees.website.client.ClientModule"/>
-    <set-configuration-property name="CssResource.style" value="pretty"/>
 
+    <set-configuration-property name="CssResource.obfuscationPrefix" value="empty"/>
     <set-configuration-property name="gwtp.bootstrapper" value="com.arcbees.website.client.BootstrapperImpl"/>
-    <set-configuration-property name="CssResource.legacy" value="true" />
+    <set-configuration-property name="CssResource.legacy" value="true"/>
 
     <set-configuration-property name="locale.useragent" value="Y"/>
 
     <!-- French language, independent of country -->
-    <extend-property name="locale" values="fr" />
+    <extend-property name="locale" values="fr"/>
     <!-- English language, independent of country -->
-    <extend-property name="locale" values="en" />
-    <set-property-fallback name="locale" value="en" />
+    <extend-property name="locale" values="en"/>
+
+    <!-- Set locale to english (removes 'default' permutation) -->
+    <set-property name="locale" value="en,fr"/>
+
+    <set-property-fallback name="locale" value="en"/>
 </module>

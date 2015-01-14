@@ -87,9 +87,9 @@
                             <ui:msg description="Basic">Basic</ui:msg>
                         </h3>
                         <p class="{page.style.price}">
-                            <ui:msg description="$ 199.95 per year">
+                            <ui:msg description="$ 199.95 per month">
                                 <strong>$ 199.95</strong>
-                                per year
+                                per month
                             </ui:msg>
                         </p>
                     </header>
@@ -132,9 +132,9 @@
                             <ui:msg description="Professional">Professional</ui:msg>
                         </h3>
                         <p class="{page.style.price}">
-                            <ui:msg description="$ 499.95 per year">
+                            <ui:msg description="$ 499.95 per month">
                                 <strong>$ 499.95</strong>
-                                per year
+                                per month
                             </ui:msg>
                         </p>
                     </header>
@@ -172,9 +172,9 @@
                             <ui:msg description="Entreprise">Entreprise</ui:msg>
                         </h3>
                         <p class="{page.style.price}">
-                            <ui:msg description="$ 2 999.95 per year">
+                            <ui:msg description="$ 2 999.95 per month">
                                 <strong>$ 2 999.95</strong>
-                                per year
+                                per month
                             </ui:msg>
                         </p>
                     </header>

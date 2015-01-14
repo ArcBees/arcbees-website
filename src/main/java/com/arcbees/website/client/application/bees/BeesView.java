@@ -29,6 +29,7 @@ import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.Event;
+import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.HTMLPanel;
 import com.google.gwt.user.client.ui.IsWidget;
@@ -103,15 +104,16 @@ public class BeesView extends ViewWithUiHandlers<BeesUiHandlers> implements Bees
             $(bee).click(new Function() {
                 @Override
                 public boolean f(Event e) {
-                    return false;
+                    e.stopPropagation();
+                    return true;
                 }
             });
 
             $("." + pageBeesResources.style().beeHolder2() + " > a").click(new Function() {
                 @Override
                 public void f() {
-                    int offsetTop = $(this).offset().top;
-                    $(bee).css("margin-top", offsetTop+"px");
+                    int offsetTop = Window.getScrollTop();
+                    $(bee).css("margin-top", (offsetTop + 30) + "px");
                 }
             });
         } else {

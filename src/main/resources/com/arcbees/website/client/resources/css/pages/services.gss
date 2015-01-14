@@ -397,6 +397,14 @@
     margin: 0 0 3em;
 }
 
+.trusted > div > div:first-child{
+    min-height: 80px;
+}
+
+.trusted > div > div:last-child{
+    display: none;
+}
+
 .trusted ul {
     font-size: 0;
 
@@ -407,16 +415,7 @@
     font-size: 0;
 
     display: inline-block;
-    margin-bottom: 50px;
-    padding-bottom: 50px;
-    width: 25%;
-    border-bottom: 5px solid C_STRIPE_MEDIUM1;
-}
-
-.trusted li.last {
-    margin-bottom: 25px;
-    padding-bottom: 0;
-    border-bottom: none;
+    width: 33%;
 }
 
 @media (max-width: 649px) {

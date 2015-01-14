@@ -105,7 +105,10 @@
                     <i class="{fonts.icons.iconHtml5}"></i>
                 </div>
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
-                    <i class="{fonts.icons.iconGwt}"></i>
+                    <i class="{fonts.icons.iconGwtOld}"></i>
+                    <p class="{page.style.gwtOld}">
+                        <strong>GWT</strong>
+                    </p>
                 </div>
                 <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                     <i class="{fonts.icons.iconGCloudPlatform}"></i>

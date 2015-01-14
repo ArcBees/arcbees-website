@@ -59,6 +59,7 @@
 .iconSupportCases:before {content: "\e628";}
 .iconWebSupport:before {content: "\e629";}
 .iconGwt:before {content: "\e61f";}
+.iconGwtOld:before {content: "\e633";}
 .iconHtml5:before {content: "\e624";}
 .iconGearing:before {content: "\e61d"; vertical-align: baseline;}
 .iconhexaEmpty:before {content: "\e619";}

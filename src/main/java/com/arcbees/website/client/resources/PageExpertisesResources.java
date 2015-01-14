@@ -44,6 +44,8 @@ public interface PageExpertisesResources extends FontResources {
         String equal();
 
         String services();
+
+        String gwtOld();
     }
 
     @Source("img/pages/expertisesSlash.png")

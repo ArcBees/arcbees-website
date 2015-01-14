@@ -455,6 +455,9 @@ ul.social {
 }
 
 /* --> More on -- */
+.moreOn {
+    padding: 100px 0;
+}
 
 .moreOn h3 {
     display: inline-block;

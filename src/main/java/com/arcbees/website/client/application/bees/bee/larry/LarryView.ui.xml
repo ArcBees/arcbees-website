@@ -21,6 +21,9 @@
                     Undercover Front-end Agent
                 </ui:msg>
             </seo:Description>
+            <seo:Og>
+                <seo:OgImage height="241" width="285">/img/larry-matte.jpg</seo:OgImage>
+            </seo:Og>
         </seo:SeoWidget>
 
         <div class="{page.style.bee} {page.style.bee1}">

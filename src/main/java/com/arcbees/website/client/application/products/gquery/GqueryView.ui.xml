@@ -23,6 +23,9 @@
                     GwtQuery or GQuery is an entire GWT rewrite of the famous jQuery javascript library.
                 </ui:msg>
             </seo:Description>
+            <seo:Og>
+                <seo:OgImage height="630" width="1200">/img/facebook-gquery.png</seo:OgImage>
+            </seo:Og>
         </seo:SeoWidget>
 
         <nav class="{res.style.breadcrumb} {res.style.withLogo}">

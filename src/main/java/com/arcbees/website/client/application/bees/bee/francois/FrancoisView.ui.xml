@@ -21,6 +21,9 @@
                     BE-E-O and founder
                 </ui:msg>
             </seo:Description>
+            <seo:Og>
+                <seo:OgImage height="241" width="285">/img/francois-dion.jpg</seo:OgImage>
+            </seo:Og>
         </seo:SeoWidget>
 
         <div class="{page.style.bee} {page.style.bee1}">

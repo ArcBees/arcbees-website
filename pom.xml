@@ -139,7 +139,7 @@
             <groupId>com.arcbees</groupId>
             <artifactId>gwtchosen</artifactId>
             <version>${gwtchosen.version}</version>
-            <scope>compile</scope>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
@@ -188,6 +188,7 @@
                     <extra>extras</extra>
                     <fragmentCount>10</fragmentCount>
                     <optimizationLevel>9</optimizationLevel>
+                    <deploy>${project.build.directory}/gwtDeploy</deploy>
                 </configuration>
                 <executions>
                     <execution>
@@ -271,43 +272,6 @@
                         <goals>
                             <goal>deploy</goal>
                         </goals>
-                    </execution>
-                </executions>
-            </plugin>
-
-            <plugin>
-                <artifactId>maven-clean-plugin</artifactId>
-                <version>${maven-clean-plugin.version}</version>
-                <executions>
-                    <execution>
-                        <id>default-clean</id>
-                        <phase>clean</phase>
-                        <goals>
-                            <goal>clean</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>remove-gwt-user-jar</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>clean</goal>
-                        </goals>
-                        <configuration>
-                            <excludeDefaultDirectories>true</excludeDefaultDirectories>
-                            <filesets>
-                                <fileset>
-                                    <directory>${project.build.directory}/${project.build.finalName}/WEB-INF/lib
-                                    </directory>
-                                    <includes>
-                                        <include>gwt-user*jar</include>
-                                        <include>gwt-dev*jar</include>
-                                        <include>facebook*jar</include>
-                                        <include>selenium*jar</include>
-                                        <include>guava-gwt*jar</include>
-                                    </includes>
-                                </fileset>
-                            </filesets>
-                        </configuration>
                     </execution>
                 </executions>
             </plugin>

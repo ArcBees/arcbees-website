@@ -23,8 +23,6 @@ public class ResourceLoader {
     ResourceLoader(
             AppResources appResources,
             FontResources fontResources,
-            DocsResources docsResources,
-            DevelopersResources developersResources,
             AnimationsResources animationsResources,
             PageProductResources pageProductResources,
             PageProductChosenResources pageProductChosenResources,
@@ -32,15 +30,12 @@ public class ResourceLoader {
             PageContactResources pageContactResources,
             PageCareersResources pageCareersResources,
             PageHomeResources pageHomeResources,
-            PageBeesResources pageBeesResources,
             PageExpertisesResources pageExpertisesResources,
             PageSupportResources pageSupportResources,
             SliderResources sliderResources) {
         appResources.normalize().ensureInjected();
         appResources.style().ensureInjected();
         appResources.grid().ensureInjected();
-        docsResources.style().ensureInjected();
-        developersResources.style().ensureInjected();
         animationsResources.style().ensureInjected();
         fontResources.icons().ensureInjected();
         pageHomeResources.style().ensureInjected();
@@ -51,7 +46,6 @@ public class ResourceLoader {
         pageServicesResources.style().ensureInjected();
         pageExpertisesResources.style().ensureInjected();
         pageSupportResources.style().ensureInjected();
-        pageBeesResources.style().ensureInjected();
         sliderResources.style().ensureInjected();
     }
 }

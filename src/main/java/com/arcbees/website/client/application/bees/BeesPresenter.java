@@ -18,9 +18,9 @@ package com.arcbees.website.client.application.bees;
 
 import javax.inject.Provider;
 
-import com.arcbees.website.shared.NameTokens;
 import com.arcbees.website.client.application.ApplicationPresenter;
 import com.arcbees.website.client.application.bees.quiz.QuestionPresenter;
+import com.arcbees.website.shared.NameTokens;
 import com.google.gwt.event.shared.GwtEvent;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
@@ -29,7 +29,7 @@ import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.annotations.ContentSlot;
 import com.gwtplatform.mvp.client.annotations.NameToken;
-import com.gwtplatform.mvp.client.annotations.ProxyStandard;
+import com.gwtplatform.mvp.client.annotations.ProxyCodeSplit;
 import com.gwtplatform.mvp.client.proxy.PlaceManager;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 import com.gwtplatform.mvp.client.proxy.RevealContentHandler;
@@ -47,7 +47,7 @@ public class BeesPresenter extends Presenter<BeesPresenter.MyView, BeesPresenter
     public static final GwtEvent.Type<RevealContentHandler<?>> SLOT_BEE = new GwtEvent.Type<>();
     public static final Object SLOT_QUIZ = new Object();
 
-    @ProxyStandard
+    @ProxyCodeSplit
     @NameToken({NameTokens.BEES, NameTokens.BEES_FR})
     interface MyProxy extends ProxyPlace<BeesPresenter> {
     }
@@ -73,6 +73,13 @@ public class BeesPresenter extends Presenter<BeesPresenter.MyView, BeesPresenter
     @Override
     public void onKonami(KonamiEvent event) {
         getView().konami();
+    }
+
+    @Override
+    public void prepareFromRequest(PlaceRequest request) {
+        super.prepareFromRequest(request);
+
+        clearSlot(SLOT_BEE);
     }
 
     @Override

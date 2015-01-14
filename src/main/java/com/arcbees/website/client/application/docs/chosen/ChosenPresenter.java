@@ -16,6 +16,7 @@
 
 package com.arcbees.website.client.application.docs.chosen;
 
+import com.arcbees.website.client.Bundles;
 import com.arcbees.website.client.application.docs.DocsPresenter;
 import com.arcbees.website.shared.NameTokens;
 import com.google.inject.Inject;
@@ -23,14 +24,14 @@ import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.Presenter;
 import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.annotations.NameToken;
-import com.gwtplatform.mvp.client.annotations.ProxyStandard;
+import com.gwtplatform.mvp.client.annotations.ProxyCodeSplitBundle;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 
 public class ChosenPresenter extends Presenter<ChosenPresenter.MyView, ChosenPresenter.MyProxy> {
     interface MyView extends View {
     }
 
-    @ProxyStandard
+    @ProxyCodeSplitBundle(Bundles.DOCS)
     @NameToken(NameTokens.CHOSEN_DOCS)
     interface MyProxy extends ProxyPlace<ChosenPresenter> {
     }

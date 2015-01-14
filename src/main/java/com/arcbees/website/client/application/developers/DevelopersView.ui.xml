@@ -7,7 +7,6 @@
         ui:generateLocales="en">
 
     <ui:with field="nameTokens" type="com.arcbees.website.client.NameTokensConstants"/>
-    <ui:with field="doc" type="com.arcbees.website.client.resources.DocsResources"/>
     <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
     <ui:with field="page" type="com.arcbees.website.client.resources.DevelopersResources"/>
     <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>

@@ -16,6 +16,7 @@
 
 package com.arcbees.website.client.application.developers.jukito;
 
+import com.arcbees.website.client.resources.DevelopersResources;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
@@ -27,7 +28,10 @@ public class JukitoView extends ViewImpl implements JukitoPresenter.MyView {
 
     @Inject
     JukitoView(
-            Binder binder) {
+            Binder binder,
+            DevelopersResources developersResources) {
+        developersResources.style().ensureInjected();
+
         initWidget(binder.createAndBindUi(this));
     }
 }

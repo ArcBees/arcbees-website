@@ -26,24 +26,24 @@ import com.google.common.collect.HashBiMap;
 import com.google.common.collect.Maps;
 
 public class NameTokens {
-    public static final String HOME = "/";
-    public static final String BEES = "/bees";
-    public static final String BEES_FR = "/abeilles";
-    public static final String CAREERS = "/careers";
-    public static final String CAREERS_FR = "/carrieres";
-    public static final String CONTACT = "/contact";
-    public static final String CONTACT_FR = "/contact";
-    public static final String EXPERTISE = "/expertise";
-    public static final String EXPERTISE_FR = "/expertise";
-    public static final String SUPPORT = "/support";
-    public static final String SUPPORT_FR = "/support";
-    public static final String SHOP = "/shop";
-    public static final String SHOP_FR = "/boutique";
-    public static final String SERVICES = "/services";
-    public static final String SERVICES_FR = "/services";
+    public static final String HOME = "!/";
+    public static final String BEES = "!/bees";
+    public static final String BEES_FR = "!/abeilles";
+    public static final String CAREERS = "!/careers";
+    public static final String CAREERS_FR = "!/carrieres";
+    public static final String CONTACT = "!/contact";
+    public static final String CONTACT_FR = "!/contact";
+    public static final String EXPERTISE = "!/expertise";
+    public static final String EXPERTISE_FR = "!/expertise";
+    public static final String SUPPORT = "!/support";
+    public static final String SUPPORT_FR = "!/support";
+    public static final String SHOP = "!/shop";
+    public static final String SHOP_FR = "!/boutique";
+    public static final String SERVICES = "!/services";
+    public static final String SERVICES_FR = "!/services";
 
-    public static final String PRODUCTS_BASE = "/products";
-    public static final String PRODUCTS_BASE_FR = "/produits";
+    public static final String PRODUCTS_BASE = "!/products";
+    public static final String PRODUCTS_BASE_FR = "!/produits";
     public static final String GAE = PRODUCTS_BASE + "/gae-studio";
     public static final String GAE_FR = PRODUCTS_BASE_FR + "/gae-studio";
     public static final String CHOSEN = PRODUCTS_BASE + "/chosen";
@@ -86,12 +86,12 @@ public class NameTokens {
     public static final String BEE_SIMONPIERRE = BEES + "/simon-pierre-gingras";
     public static final String BEE_SIMONPIERRE_FR = BEES_FR + "/simon-pierre-gingras";
 
-    public static final String DOCS = "/docs";
+    public static final String DOCS = "!/docs";
     public static final String CHOSEN_DOCS = DOCS + "/chosen";
     public static final String ELASTIC_DOCS = DOCS + "/elastic";
 
-    public static final String DEVELOPERS = "/developers";
-    public static final String DEVELOPERS_FR = "/developpeurs";
+    public static final String DEVELOPERS = "!/developers";
+    public static final String DEVELOPERS_FR = "!/developpeurs";
     public static final String JUKITO_DEVELOPERS = DEVELOPERS + "/jukito";
     public static final String JUKITO_DEVELOPERS_FR = DEVELOPERS_FR + "/jukito";
     public static final String CHOSEN_DEVELOPERS = DEVELOPERS + "/chosen";

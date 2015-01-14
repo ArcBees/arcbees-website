@@ -18,7 +18,6 @@ package com.arcbees.website.client.application.slider;
 
 import com.arcbees.website.client.resources.SliderResources;
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.dom.client.DivElement;
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.dom.client.NodeList;
 import com.google.gwt.event.dom.client.ClickEvent;
@@ -52,7 +51,7 @@ public class Slider implements IsWidget, AttachEvent.Handler {
     private static HtmlTemplate TEMPLATE = GWT.create(HtmlTemplate.class);
 
     @UiField
-    DivElement contents;
+    HTMLPanel contents;
     @UiField
     Anchor prev;
     @UiField
@@ -60,7 +59,9 @@ public class Slider implements IsWidget, AttachEvent.Handler {
     @UiField
     SliderResources sliderResources;
     @UiField
-    DivElement pager;
+    HTMLPanel pager;
+    @UiField
+    HTMLPanel nav;
 
     private final HTMLPanel root;
 
@@ -101,6 +102,18 @@ public class Slider implements IsWidget, AttachEvent.Handler {
 
     public void setAddStyleNames(String style) {
         asWidget().addStyleName(style);
+    }
+
+    public void setAddContentStyleName(String style) {
+        contents.addStyleName(style);
+    }
+
+    public void setAddPagerStyleName(String style) {
+        pager.addStyleName(style);
+    }
+
+    public void setAddNavStyleName(String style) {
+        nav.addStyleName(style);
     }
 
     @UiHandler("prev")

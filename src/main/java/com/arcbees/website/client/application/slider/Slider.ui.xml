@@ -5,8 +5,8 @@
     <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
 
     <g:HTMLPanel styleName="{sliderResources.style.slider}">
-        <div ui:field="contents" class="{sliderResources.style.container}"></div>
-        <nav>
+        <g:HTMLPanel ui:field="contents" styleName="{sliderResources.style.container}"></g:HTMLPanel>
+        <g:HTMLPanel ui:field="nav" tag="nav">
             <g:Anchor ui:field="prev" href="javascript:;" styleName="{sliderResources.style.prev} {sliderResources.style.disabled}">
                 <i class="{fonts.icons.iconArrowDown}"></i>
                 <ui:msg description="TabDetailsView Prev">
@@ -19,7 +19,7 @@
                     <span>Next</span>
                 </ui:msg>
             </g:Anchor>
-        </nav>
-        <div ui:field="pager" class="{sliderResources.style.pager}"></div>
+        </g:HTMLPanel>
+        <g:HTMLPanel ui:field="pager" styleName="{sliderResources.style.pager}"></g:HTMLPanel>
     </g:HTMLPanel>
 </ui:UiBinder>

@@ -251,28 +251,5 @@
             </div>
         </section>
 
-        <section class="{res.style.stripe} {page.style.colored} {res.style.centered}">
-            <h3>
-                <ui:msg description="Share">SHARE</ui:msg>
-            </h3>
-            <ul class="{page.style.social}">
-                <li>
-                    <a href="#" class="{fonts.icons.iconFb}">
-                        <span class="{res.style.hidden}">Facebook</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="{fonts.icons.iconTwitter}">
-                        <span class="{res.style.hidden}">Twitter</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="{fonts.icons.iconGPlus}">
-                        <span class="{res.style.hidden}">Google</span>
-                    </a>
-                </li>
-            </ul>
-        </section>
-
     </g:HTMLPanel>
 </ui:UiBinder>

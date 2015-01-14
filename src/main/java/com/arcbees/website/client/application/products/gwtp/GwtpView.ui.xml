@@ -34,7 +34,7 @@
 
         <section class="{res.style.stripe}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_8} {res.grid.col_m_full}">
+                <div class="{res.grid.col} {res.grid.col_10} {res.grid.col_m_full}">
                     <h1>gwt-platform
                         <a href="#" class="{res.style.anchor}">#</a>
                     </h1>
@@ -52,8 +52,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="https://github.com/ArcBees/GWTP
-" target="_blank" class="{fonts.icons.iconGitHub}">
+                                <a href="https://github.com/ArcBees/GWTP" target="_blank" class="{fonts.icons.iconGitHub}">
                                     <span class="{res.style.hidden}">Github</span>
                                 </a>
                             </li>
@@ -91,7 +90,7 @@
                     <a href="#{nameTokens.SUPPORT}" class="{res.style.btn}">
                         <ui:msg description="Support">Support</ui:msg>
                     </a>
-                    <a href="#" class="{res.style.btn}">
+                    <a href="https://github.com/ArcBees/GWTP" target="_blank" class="{res.style.btn}">
                         <i class="{fonts.icons.iconArrowOutside}"></i>
                         <ui:msg description="- BTN - Developers Platform">Developer's Platform</ui:msg>
                     </a>
@@ -225,37 +224,10 @@
                     <h3>
                         <ui:msg description="more on">more on</ui:msg>
                     </h3>
-                    <a href="#" class="{res.style.btn}">
+                    <a href="https://github.com/ArcBees/GWTP" target="_blank" class="{res.style.btn}">
                         <i class="{fonts.icons.iconArrowOutside}"></i>
                         <ui:msg description="- BTN - Developers Platform">Developer's Platform</ui:msg>
                     </a>
-                </div>
-            </div>
-        </section>
-
-        <section class="{res.style.stripe} {page.style.colored} {res.style.centered}">
-            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col} {res.grid.col_full}">
-                    <h3>
-                        <ui:msg description="Share">SHARE</ui:msg>
-                    </h3>
-                    <ul class="{page.style.social}">
-                        <li>
-                            <a href="#" class="{fonts.icons.iconFb}">
-                                <span class="{res.style.hidden}">Facebook</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="{fonts.icons.iconTwitter}">
-                                <span class="{res.style.hidden}">Twitter</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="{fonts.icons.iconGPlus}">
-                                <span class="{res.style.hidden}">Google</span>
-                            </a>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </section>

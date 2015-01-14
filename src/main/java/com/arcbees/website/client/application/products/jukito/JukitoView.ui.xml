@@ -86,7 +86,7 @@
                     <a href="#{nameTokens.SUPPORT}" class="{res.style.btn}">
                         <ui:msg description="Support">Support</ui:msg>
                     </a>
-                    <a href="#" class="{res.style.btn}">
+                    <a href="http://dev.arcbees.com/jukito/" target="_blank" class="{res.style.btn}">
                         <i class="{fonts.icons.iconArrowOutside}"></i>
                         <ui:msg description="- BTN - Developers Platform">Developer's Platform</ui:msg>
                     </a>
@@ -213,35 +213,12 @@
                         <ui:msg description="more on">more on
                         </ui:msg>
                     </h3>
-                    <a href="#" class="{res.style.btn}">
+                    <a href="http://dev.arcbees.com/jukito/" target="_blank" class="{res.style.btn}">
                         <i class="{fonts.icons.iconArrowOutside}"></i>
                         <ui:msg description="- BTN - Developers Platform">Developer's Platform</ui:msg>
                     </a>
                 </div>
             </div>
-        </section>
-
-        <section class="{res.style.stripe} {page.style.colored} {res.style.centered}">
-            <h3>
-                <ui:msg description="Share">SHARE</ui:msg>
-            </h3>
-            <ul class="{page.style.social}">
-                <li>
-                    <a href="#" class="{fonts.icons.iconFb}">
-                        <span class="{res.style.hidden}">Facebook</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="{fonts.icons.iconTwitter}">
-                        <span class="{res.style.hidden}">Twitter</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="{fonts.icons.iconGPlus}">
-                        <span class="{res.style.hidden}">Google</span>
-                    </a>
-                </li>
-            </ul>
         </section>
 
     </g:HTMLPanel>

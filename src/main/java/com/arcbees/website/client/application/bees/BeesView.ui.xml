@@ -344,7 +344,9 @@
         <section class="{res.style.stripe} {res.style.light} {res.style.centered}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_full}">
-                    <h2>Wanna bee?</h2>
+                    <h2>
+                        <ui:msg description="Wanna bee?">Wanna bee?</ui:msg>
+                    </h2>
                 </div>
             </div>
         </section>

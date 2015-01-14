@@ -167,87 +167,59 @@
                 <h2>
                     <ui:msg description="Professional Services - Trusted By">Trusted By</ui:msg>
                 </h2>
-                <div class="{res.grid.col_m_hide}">
-                    <slider:Slider>
-                        <slider:content>
-                            <g:HTMLPanel>
-                                <ul>
-                                    <li>
-                                        <a href="http://zafin.com/" target="_blank">
-                                            <g:Image resource="{page.protorisk}"/>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <g:Image resource="{page.kaam}"/>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="http://www.lillegroup.com/" target="_blank">
-                                            <g:Image resource="{page.swiftIQ}"/>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li>
-                                        <a href="#">
-                                            <g:Image resource="{page.easyData}"/>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="http://zafin.com/" target="_blank">
-                                            <g:Image resource="{page.bookedIn}"/>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="http://www.lillegroup.com/" target="_blank">
-                                            <g:Image resource="{page.trackR}"/>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </g:HTMLPanel>
-                        </slider:content>
-                    </slider:Slider>
-                </div>
+                <slider:Slider addStyleNames="{res.grid.col_m_hide}">
+                    <slider:content>
+                        <g:HTMLPanel>
+                            <ul>
+                                <li>
+                                    <g:Image resource="{page.protorisk}"/>
+                                </li>
+                                <li>
+                                    <g:Image resource="{page.kaam}"/>
+                                </li>
+                                <li>
+                                    <g:Image resource="{page.swiftIQ}"/>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <g:Image resource="{page.easyData}"/>
+                                </li>
+                                <li>
+                                    <g:Image resource="{page.bookedIn}"/>
+                                </li>
+                                <li>
+                                    <g:Image resource="{page.trackR}"/>
+                                </li>
+                            </ul>
+                        </g:HTMLPanel>
+                    </slider:content>
+                </slider:Slider>
 
-                <div class="{res.grid.col_m_show}">
-                    <slider:Slider>
-                        <slider:content>
-                            <g:HTMLPanel>
-                                <div>
-                                    <a href="http://zafin.com/" target="_blank">
-                                        <g:Image resource="{page.protorisk}"/>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="#">
-                                        <g:Image resource="{page.kaam}"/>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="http://www.lillegroup.com/" target="_blank">
-                                        <g:Image resource="{page.swiftIQ}"/>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="#">
-                                        <g:Image resource="{page.easyData}"/>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="http://zafin.com/" target="_blank">
-                                        <g:Image resource="{page.bookedIn}"/>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="http://www.lillegroup.com/" target="_blank">
-                                        <g:Image resource="{page.trackR}"/>
-                                    </a>
-                                </div>
-                            </g:HTMLPanel>
-                        </slider:content>
-                    </slider:Slider>
-                </div>
+                <slider:Slider addStyleNames="{res.grid.col_hide} {res.grid.col_m_show}">
+                    <slider:content>
+                        <g:HTMLPanel>
+                            <div>
+                                <g:Image resource="{page.protorisk}"/>
+                            </div>
+                            <div>
+                                <g:Image resource="{page.kaam}"/>
+                            </div>
+                            <div>
+                                <g:Image resource="{page.swiftIQ}"/>
+                            </div>
+                            <div>
+                                <g:Image resource="{page.easyData}"/>
+                            </div>
+                            <div>
+                                <g:Image resource="{page.bookedIn}"/>
+                            </div>
+                            <div>
+                                <g:Image resource="{page.trackR}"/>
+                            </div>
+                        </g:HTMLPanel>
+                    </slider:content>
+                </slider:Slider>
 
             </div>
         </section>

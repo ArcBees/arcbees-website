@@ -397,11 +397,11 @@
     margin: 0 0 3em;
 }
 
-.trusted > div > div > div:first-child{
+.trusted > div > div:first-child{
     min-height: 80px;
 }
 
-.trusted > div > div > div:last-child{
+.trusted > div > div:last-child{
     display: none;
 }
 

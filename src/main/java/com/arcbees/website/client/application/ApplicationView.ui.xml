@@ -75,7 +75,7 @@
                         <a href="#{nameTokens.CONTACT}" class="{res.style.menuContact}">Contact</a>
                     </li>
                     <li>
-                        <a href="#{nameTokens.DEVELOPERS}">
+                        <a href="http://dev.arcbees.com/" target="_blank">
                             <ui:msg description="Developers">Developers</ui:msg>
                             <i class="{fonts.icons.iconArrowOutside}"></i>
                         </a>

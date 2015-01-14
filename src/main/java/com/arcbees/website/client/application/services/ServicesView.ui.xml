@@ -1,11 +1,11 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-             xmlns:g="urn:import:com.google.gwt.user.client.ui"
-             xmlns:slider="urn:import:com.arcbees.website.client.application.slider"
-             xmlns:seo="urn:import:com.arcbees.seo.widget"
-             ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
-             ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
-             ui:generateLocales="default">
+        xmlns:g="urn:import:com.google.gwt.user.client.ui"
+        xmlns:slider="urn:import:com.arcbees.website.client.application.slider"
+        xmlns:seo="urn:import:com.arcbees.seo.widget"
+        ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+        ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
+        ui:generateLocales="default">
 
     <ui:with field="nameTokens" type="com.arcbees.website.client.NameTokensConstants"/>
     <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
@@ -167,7 +167,7 @@
                 <h2>
                     <ui:msg description="Professional Services - Trusted By">Trusted By</ui:msg>
                 </h2>
-                <div class="{res.style.mobileHidden}">
+                <div class="{res.grid.col_m_hide}">
                     <slider:Slider>
                         <slider:content>
                             <g:HTMLPanel>
@@ -210,7 +210,7 @@
                     </slider:Slider>
                 </div>
 
-                <div class="{res.style.mobileVisible}">
+                <div class="{res.grid.col_m_show}">
                     <slider:Slider>
                         <slider:content>
                             <g:HTMLPanel>

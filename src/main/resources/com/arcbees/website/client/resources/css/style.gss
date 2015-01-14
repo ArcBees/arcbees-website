@@ -514,7 +514,7 @@ img {
 
     height: 100%;
     width: 255px;
-    
+
     position: fixed;
     top: 0;
     left: 0;
@@ -796,11 +796,11 @@ img {
         margin-bottom: 10px;
         border-bottom: none;
     }
-    
+
     .menu li a:hover {
         background-color: #333;
     }
-    
+
     .menu li a.backHome:hover {
         background-color: C_STRIPE_DARK;
     }
@@ -1086,6 +1086,81 @@ img {
     .triangleBottom::after {
         border-top-width: 150px;
     }
+}
+
+/* -> Carousel -- */
+
+.productsCarousel ul {
+    padding: 0;
+}
+
+.productsCarousel li {
+    line-height: 1em;
+
+    display: inline-block;
+    width: 19%;
+
+    vertical-align: middle;
+}
+
+.productsCarousel a {
+    color: transparent;
+    font-size: 10.25rem;
+
+    display: block;
+    min-height: 30rem;
+    padding-top: 55px;
+
+    @mixin transition(all, 0.3s);
+}
+
+.productsCarousel a h3 {
+    font-family: "geometria";
+    font-size: 4rem;
+
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.productsCarousel a.active {
+    font-size: 34rem;
+    line-height: 31rem;
+
+    @mixin transition(all, 0.3s);
+}
+
+.productsCarousel a.active,
+.productsCarousel a:hover {
+    font-size: 16rem;
+    color: C_TEXT;
+
+    padding-top: 0;
+
+    @mixin transition(all, 0.3s);
+}
+
+.productsCarousel a:before {
+    color: #eaebeb;
+}
+
+.productsCarousel a.gae:hover:before {
+    color: C_PRODUCT_GAE;
+}
+
+.productsCarousel a.jukito:hover:before {
+    color: C_PRODUCT_JUKITO;
+}
+
+.productsCarousel a.gwtp:hover:before {
+    color: C_PRODUCT_GWTP;
+}
+
+.productsCarousel a.chosen:hover:before {
+    color: C_PRODUCT_CHOSEN;
+}
+
+.productsCarousel a.gquery:hover:before {
+    color: C_PRODUCT_GQUERY;
 }
 
 /* -> Footer -- */

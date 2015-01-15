@@ -32,6 +32,8 @@ public interface PageContactResources extends FontResources {
         String workWithUs();
 
         String contactSlider();
+
+        String map();
     }
 
     @Source("img/pages/contactMapMarker.png")

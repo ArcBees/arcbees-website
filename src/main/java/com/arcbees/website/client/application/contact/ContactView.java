@@ -36,6 +36,7 @@ import com.google.gwt.maps.client.overlays.Marker;
 import com.google.gwt.maps.client.overlays.MarkerOptions;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.user.client.Window;
 import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
@@ -49,6 +50,8 @@ public class ContactView extends ViewImpl implements ContactPresenter.MyView {
 
     @UiField
     SimplePanel container;
+    @UiField
+    PageContactResources page;
 
     private final PageContactResources pageContactResources;
     private final GwtMapsLoader gwtMapsLoader;
@@ -142,6 +145,7 @@ public class ContactView extends ViewImpl implements ContactPresenter.MyView {
         options.setMapTypeControlOptions(controlOptions);
         options.setMapTypeId(ARCBEES_MAPTYPE);
         options.setPanControl(false);
+        options.setDraggable(Window.getClientWidth() > 649);
 
         ZoomControlOptions zoomControlOptions = ZoomControlOptions.newInstance();
         zoomControlOptions.setPosition(ControlPosition.RIGHT_CENTER);
@@ -149,7 +153,7 @@ public class ContactView extends ViewImpl implements ContactPresenter.MyView {
 
         // -> We create the map with our options
         MapWidget mapWidget = new MapWidget(options);
-        mapWidget.setSize("100%", "700px");
+        mapWidget.addStyleName(page.style().map());
         mapWidget.setCustomMapType(ARCBEES_MAPTYPE, customMapType);
 
         // -> We define the marker

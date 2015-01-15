@@ -8,7 +8,7 @@
     <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
     <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
 
-    <g:HTMLPanel tag="section" addStyleNames="{res.style.stripe} {res.style.medium2} {res.style.centered}">
+    <g:HTMLPanel tag="section" addStyleNames="{res.style.stripe} {res.style.medium2} {res.style.centered} {res.grid.col_m_hide}">
         <div class="{res.style.wrapper}">
             <h2>
                 <ui:msg description="Products">Products</ui:msg>

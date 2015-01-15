@@ -187,7 +187,7 @@ h3.stripeTitle.twoLineTitle {
 
 @media (max-width: 979px) {
     h2 {
-        font-size: 2.3rem;
+        font-size: 3.5rem;
     }
 }
 
@@ -982,7 +982,7 @@ img {
     font-size: 2.5rem;
 }
 
-@media (max-width: 649px) {
+@media (max-width: 979px) {
     .focusBlock p {
         font-size: 1.8rem;
     }
@@ -1177,6 +1177,17 @@ img {
 .productsCarousel a.gquery:hover:before,
 .productsCarousel a.gquery.active:before {
     color: C_PRODUCT_GQUERY;
+}
+
+@media(max-width: 979px) {
+    .productsCarousel a {
+        font-size: 9rem;
+    }
+
+    .productsCarousel a.active,
+    .productsCarousel a:hover {
+        font-size: 12rem;
+    }
 }
 
 /* -> Footer -- */

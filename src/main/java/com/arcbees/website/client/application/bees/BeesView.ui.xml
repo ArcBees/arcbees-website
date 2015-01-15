@@ -64,7 +64,7 @@
                 <slider:Slider>
                     <slider:content>
                         <g:HTMLPanel>
-                            <div class="{res.grid.col} {res.grid.col_6} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+                            <div class="{res.grid.col} {res.grid.col_6} {res.grid.col_push_1_4} {res.grid.col_t_8} {res.grid.col_t_push_1_6} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                                 <h2>
                                     <ui:msg description="Bee dedicated - title">Bee Dedicated</ui:msg>
                                 </h2>

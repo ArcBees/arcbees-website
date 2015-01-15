@@ -66,7 +66,7 @@
         <section class="{page.style.advantages}">
             <div class="{res.style.stripe} {res.style.centered}">
                 <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                    <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_m_full} {page.style.knowledge}">
+                    <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_t_1_3} {res.grid.col_t_push_0} {res.grid.col_m_full} {res.grid.col_m_push_0} {page.style.knowledge}">
                         <div class="{page.style.topIcons}">
                             <i class="{fonts.icons.iconArcbees} {page.style.icon1}"></i>
                             <div class="{page.style.dots}">
@@ -87,7 +87,7 @@
                             </ui:msg>
                         </p>
                     </div>
-                    <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1} {res.grid.col_m_push_0} {res.grid.col_m_full} {page.style.wayOfTheBee}">
+                    <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1} {res.grid.col_t_1_3} {res.grid.col_t_push_0} {res.grid.col_m_full} {res.grid.col_m_push_0} {page.style.wayOfTheBee}">
                         <div class="{page.style.topIcons}">
                             <i class="{fonts.icons.iconHive}"></i>
                         </div>
@@ -103,7 +103,7 @@
                             </ui:msg>
                         </p>
                     </div>
-                    <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_push_1_12} {res.grid.col_m_full} {res.grid.col_m_push_0} {page.style.beauty}">
+                    <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_push_1_12} {res.grid.col_t_1_3} {res.grid.col_t_push_0} {res.grid.col_m_full} {res.grid.col_m_push_0} {page.style.beauty}">
                         <div class="{page.style.topIcons}">
                             <i class="{fonts.icons.iconArcbees}"></i>
                             <i class="{fonts.icons.iconhexaEmpty} {page.style.icon2}"></i>
@@ -122,7 +122,7 @@
                     </div>
                 </div>
                 <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                    <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_push_1_6} {res.grid.col_m_full} {res.grid.col_m_push_0} {page.style.worksEverywhere}">
+                    <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_push_1_6} {res.grid.col_t_1_3} {res.grid.col_t_push_2} {res.grid.col_m_full} {res.grid.col_m_push_0} {page.style.worksEverywhere}">
                         <div class="{page.style.topIcons}">
                             <i class="{fonts.icons.iconArcbees} {page.style.icon1}"></i>
                             <i class="{fonts.icons.iconArcbees} {page.style.icon2}"></i>
@@ -142,7 +142,7 @@
                             </ui:msg>
                         </p>
                     </div>
-                    <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_push_2} {res.grid.col_m_full} {res.grid.col_m_push_0} {page.style.workBest}">
+                    <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_push_2} {res.grid.col_t_1_3} {res.grid.col_t_push_0} {res.grid.col_m_full} {res.grid.col_m_push_0} {page.style.workBest}">
                         <div class="{page.style.topIcons}">
                             <i class="{fonts.icons.iconPyramid}"></i>
                         </div>
@@ -227,7 +227,7 @@
         <section class="{res.style.stripe} {res.style.centered} {res.style.triangleBottom}
         {res.style.light} {res.style.nextColored} {page.style.beeWay}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_12} {res.grid.col_m_push_0}">
+                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_12} {res.grid.col_m_push_0}">
                     <div class="{page.style.lightbulb}">
                         <h2>
                             <ui:msg description="Professional Services - The Way Of The Bee - title">The Way
@@ -253,7 +253,7 @@
         </section>
         <section class="{res.style.stripe} {res.style.colored} {res.style.centered} {page.style.howWeWork}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                <div class="{res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_12} {res.grid.col_m_push_0}">
+                <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_push_1_4} {res.grid.col_m_12} {res.grid.col_m_push_0}">
                     <div class="{page.style.partner}">
                         <h3>
                             <ui:msg description="Professional Services - A committed partner - title">A committed

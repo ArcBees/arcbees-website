@@ -326,11 +326,13 @@
     left: 50%;
 }
 
-@media (max-width: 649px) {
+@media (max-width: 979px) {
     .home .beeTheBest p {
         font-size: 1.8rem;
     }
+}
 
+@media (max-width: 649px) {
     .home .ssiconsHexa {
         display: none;
     }

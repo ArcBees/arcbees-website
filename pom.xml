@@ -34,6 +34,7 @@
         <gwtchosen.version>2.0.0-SNAPSHOT</gwtchosen.version>
         <guava.version>18.0</guava.version>
         <universal-analytics.version>2.1</universal-analytics.version>
+        <velocity.version>1.7</velocity.version>
 
         <webappDirectory>${project.build.directory}/${project.build.finalName}</webappDirectory>
         <gae.home>
@@ -141,6 +142,11 @@
             <version>${gwtchosen.version}</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>org.apache.velocity</groupId>
+            <artifactId>velocity</artifactId>
+            <version>${velocity.version}</version>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
@@ -176,8 +182,8 @@
                     <includes>**/*GwtTest.java</includes>
                     <mode>htmlunit</mode>
 
-                    <extraJvmArgs>-Xss1024K -Xmx1024M -XX:MaxPermSize=512M -Duser.language=en
-                        -Duser.country=US</extraJvmArgs>
+                    <extraJvmArgs>-Xss1024K -Xmx1024M -XX:MaxPermSize=512M -Duser.language=en -Duser.country=US
+                    </extraJvmArgs>
                     <logLevel>INFO</logLevel>
 
                     <copyWebapp>true</copyWebapp>

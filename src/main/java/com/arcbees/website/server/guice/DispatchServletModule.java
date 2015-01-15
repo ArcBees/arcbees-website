@@ -16,6 +16,8 @@
 
 package com.arcbees.website.server.guice;
 
+import com.arcbees.website.server.HomeServlet;
+import com.arcbees.website.server.LocaleExtractor;
 import com.google.inject.servlet.ServletModule;
 import com.gwtplatform.crawler.server.CrawlFilter;
 import com.gwtplatform.crawler.server.ServiceKey;
@@ -26,6 +28,13 @@ public class DispatchServletModule extends ServletModule {
     protected void configureServlets() {
         bindConstant().annotatedWith(ServiceKey.class).to("ab12cd34");
         bindConstant().annotatedWith(ServiceUrl.class).to("http://hivecrawl.appspot.com/");
+
         filter("/*").through(CrawlFilter.class);
+
+        serve("/").with(HomeServlet.class);
+
+        for (String locale : LocaleExtractor.SUPPORTED_LOCALES) {
+            serveRegex("/" + locale, "/" + locale + "/").with(HomeServlet.class);
+        }
     }
 }

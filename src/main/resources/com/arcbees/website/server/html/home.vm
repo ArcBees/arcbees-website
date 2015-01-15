@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="fragment" content="!">
     <meta name="msvalidate.01" content="4B7DB19A347AA1D8F022063F7AE6A8D4" />
+    <meta name="gwt:property" content="locale=$locale">
 
     <title>Arcbees - Architects of simplicity</title>
 
@@ -16,17 +17,36 @@
     <meta property="og:type" content="website">
     <meta property="keywords" content="Arcbees, Web, development, GWT, GWTP, Jukito, GAE, GQuery, GSSS, Chosen, Java, Quebec, Canada">
 
-    <script async="async" type="text/javascript" src="arcbees/arcbees.nocache.js"></script>
+    <style type="text/css">
+        #__gwt_historyFrame {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border: 0;
+        }
+
+        noscript > div {
+            width: 22em;
+            position: absolute;
+            left: 50%;
+            margin-left: -11em;
+            color: red;
+            background-color: white;
+            border: 1px solid red;
+            padding: 4px;
+            font-family: sans-serif;
+        }
+    </style>
+
+    <script async="async" type="text/javascript" src="/arcbees/arcbees.nocache.js"></script>
 </head>
 
 <body>
-<iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1'
-        style="position:absolute;width:0;height:0;border:0"></iframe>
+<iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1'></iframe>
 
 <noscript>
-    <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
-        Your web browser must have JavaScript enabled
-        in order for this application to display correctly.
+    <div>
+        Your web browser must have JavaScript enabled in order for this application to display correctly.
     </div>
 </noscript>
 </body>

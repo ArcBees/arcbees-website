@@ -361,7 +361,8 @@
                     </h2>
 
                     <p>
-                        <g:Button ui:field="initQuizButton" styleName="{res.style.btn}">Go, I'm ready to beeez
+                        <g:Button ui:field="initQuizButton" styleName="{res.style.btn}">
+                            <ui:msg description="Go, I'm ready to beeez">Go, I'm ready to beeez</ui:msg>
                         </g:Button>
                     </p>
 

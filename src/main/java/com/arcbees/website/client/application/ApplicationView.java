@@ -25,6 +25,7 @@ import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.Event;
 import com.google.gwt.user.client.Window;
+import com.google.gwt.user.client.Window.Location;
 import com.google.gwt.user.client.ui.IsWidget;
 import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.Widget;
@@ -130,17 +131,24 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     }
 
     private void switchLang() {
-        String newLocale;
+        Window.Location.assign(Location.createUrlBuilder()
+                .setPath(buildPath())
+                .removeParameter(LocaleInfo.getLocaleQueryParam())
+                .buildString());
+    }
 
+    private String buildPath() {
+        String newLocale;
         if (isFrench()) {
             newLocale = "en";
         } else {
             newLocale = "fr";
         }
 
-        Window.Location.assign(Window.Location.createUrlBuilder()
-                .setParameter(LocaleInfo.getLocaleQueryParam(), newLocale)
-                .buildString());
+        String path = Location.getPath().replaceFirst("/(en|fr)", "");
+        path = "/" + newLocale + path;
+
+        return path;
     }
 
     private void removeActiveStyle() {

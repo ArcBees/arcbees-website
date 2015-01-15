@@ -1242,7 +1242,7 @@
 
     margin-left: -2px;
     width: 5px;
-    height: 170px;
+    height: 165px;
 
     position: absolute;
     top: 0;
@@ -1253,9 +1253,14 @@
     @mixin animation_duration(1.5s);
 }
 
+@keyframes bar1 {
+    from {height: 0;}
+    to {height: 165px;}
+}
+
 @-webkit-keyframes bar1 {
     from {height: 0;}
-    to {height: 170px;}
+    to {height: 165px;}
 }
 
 .learnAdapt i.iconHexa {
@@ -1461,6 +1466,11 @@
     top: 40px;
 
     @mixin animation_delay(1s);
+}
+
+@keyframes deliver {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 @-webkit-keyframes deliver {

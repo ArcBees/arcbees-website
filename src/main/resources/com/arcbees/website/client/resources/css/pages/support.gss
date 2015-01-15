@@ -17,66 +17,139 @@
     left: 50%;
 }
 
-.support .header .iconhexa1,
-.support .header .iconhexa2,
-.support .header .iconhexa3 {
+.support .header .icon1,
+.support .header .icon2,
+.support .header .icon3,
+.support .header .icon4 {
     margin-left: -113px;
 
     position: absolute;
+    top: 75px;
     left: 50%;
 }
 
-.support .header .iconhexa1 {
-    @mixin animation_name(iconhexa1);
+.support .header .icon1 {
+    @mixin animation_name(icon1);
+    @mixin animation_delay(.5s);
     @mixin animation_duration(.6s);
 }
 
-@-webkit-keyframes iconhexa1 {
-    0% {@mixin translate(0px, 0px);}
-    100% {@mixin translate(-250px, 0px);}
+@keyframes icon1 {
+    0% {
+        -moz-transform: rotate(0deg) translate(0px, 0px);
+        -ms-transform: rotate(0deg) translate(0px, 0px);
+        -o-transform: rotate(0deg) translate(0px, 0px);
+        transform: rotate(0deg) translate(0px, 0px);
+    }
+    100% {
+        -moz-transform: rotate(-135deg) translate(50px, 170px);
+        -ms-transform: rotate(-135deg) translate(50px, 170px);
+        -o-transform: rotate(-135deg) translate(50px, 170px);
+        transform: rotate(-135deg) translate(50px, 170px);
+    }
 }
 
-.support .header .iconhexa3 {
-    @mixin animation_name(iconhexa3);
+@-webkit-keyframes icon1 {
+    0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
+    100% {-webkit-transform: rotate(-135deg) translate(50px, 170px);}
+}
+
+@-webkit-keyframes icon1Mobile {
+    0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
+    100% {-webkit-transform: rotate(-135deg) translate(25px, 85px);}
+}
+
+.support .header .icon2 {
+    @mixin animation_name(icon2);
+    @mixin animation_delay(.5s);
     @mixin animation_duration(.6s);
 }
 
-@-webkit-keyframes iconhexa3 {
-    0% {@mixin translate(0px, 0px);}
-    100% {@mixin translate(250px, 0px);}
+@keyframes icon2 {
+    0% {
+        -moz-transform: rotate(0deg) translate(0px, 0px);
+        -ms-transform: rotate(0deg) translate(0px, 0px);
+        -o-transform: rotate(0deg) translate(0px, 0px);
+        transform: rotate(0deg) translate(0px, 0px);
+    }
+    100% {
+        -moz-transform: rotate(135deg) translate(-50px, 170px);
+        -ms-transform: rotate(135deg) translate(-50px, 170px);
+        -o-transform: rotate(135deg) translate(-50px, 170px);
+        transform: rotate(135deg) translate(-50px, 170px);
+    }
 }
 
-.support .header .iconGwtp,
-.support .header .iconChosen,
-.support .header .iconJukito {
-    position: absolute;
-    left: 50%;
-
-    @mixin animation_name(iconhexaProduct);
-    @mixin animation_duration(.2s);
+@-webkit-keyframes icon2 {
+    0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
+    100% {-webkit-transform: rotate(135deg) translate(-50px, 170px);}
 }
 
-@-webkit-keyframes iconhexaProduct {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+@-webkit-keyframes icon2Mobile {
+    0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
+    100% {-webkit-transform: rotate(135deg) translate(-25px, 85px);}
 }
 
-.support .header .iconGwtp {
-    margin-left: -363px;
-
-    @mixin animation_delay(.8s);
+.support .header .icon3 {
+    @mixin animation_name(icon3);
+    @mixin animation_delay(.5s);
+    @mixin animation_duration(.6s);
 }
 
-.support .header .iconJukito {
-    margin-left: -113px;
-
-    @mixin animation_delay(1.2s);
+@keyframes icon3 {
+    0% {
+        -moz-transform: rotate(0deg) translate(0px, 0px);
+        -ms-transform: rotate(0deg) translate(0px, 0px);
+        -o-transform: rotate(0deg) translate(0px, 0px);
+        transform: rotate(0deg) translate(0px, 0px);
+    }
+    100% {
+        -moz-transform: rotate(-45deg) translate(50px, 70px);
+        -ms-transform: rotate(-45deg) translate(50px, 70px);
+        -o-transform: rotate(-45deg) translate(50px, 70px);
+        transform: rotate(-45deg) translate(50px, 70px);
+    }
 }
 
-.support .header .iconChosen {
-    margin-left: 137px;
+@-webkit-keyframes icon3 {
+    0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
+    100% {-webkit-transform: rotate(-45deg) translate(50px, 70px);}
+}
 
-    @mixin animation_delay(1.6s);
+@-webkit-keyframes icon3Mobile {
+    0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
+    100% {-webkit-transform: rotate(-45deg) translate(25px, 35px);}
+}
+
+.support .header .icon4 {
+    @mixin animation_name(icon4);
+    @mixin animation_delay(.5s);
+    @mixin animation_duration(.6s);
+}
+
+@keyframes icon4 {
+    0% {
+        -moz-transform: rotate(0deg) translate(0px, 0px);
+        -ms-transform: rotate(0deg) translate(0px, 0px);
+        -o-transform: rotate(0deg) translate(0px, 0px);
+        transform: rotate(0deg) translate(0px, 0px);
+    }
+    100% {
+        -moz-transform: rotate(45deg) translate(-50px, 70px);
+        -ms-transform: rotate(45deg) translate(-50px, 70px);
+        -o-transform: rotate(45deg) translate(-50px, 70px);
+        transform: rotate(45deg) translate(-50px, 70px);
+    }
+}
+
+@-webkit-keyframes icon4 {
+    0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
+    100% {-webkit-transform: rotate(45deg) translate(-50px, 70px);}
+}
+
+@-webkit-keyframes icon4Mobile {
+    0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
+    100% {-webkit-transform: rotate(45deg) translate(-25px, 35px);}
 }
 
 /* -- Main-- */
@@ -97,16 +170,6 @@
     .support .purchSupp {
         padding: 0;
     }
-
-    .support .featuredIcons {
-        font-size: 17rem;
-    }
-}
-
-@media (max-width: 649px) {
-    .support .featuredIcons {
-        font-size: 8rem;
-    }
 }
 
 .offers {
@@ -115,6 +178,35 @@
 }
 
 @media (max-width: 649px) {
+    .support .header .icon1,
+    .support .header .icon2,
+    .support .header .icon3,
+    .support .header .icon4 {
+        margin-left: -60px;
+
+        top: 100px;
+    }
+
+    .support .header .icon1 {
+        @mixin animation_name(icon1Mobile);
+    }
+
+    .support .header .icon2 {
+        @mixin animation_name(icon2Mobile);
+    }
+
+    .support .header .icon3 {
+        @mixin animation_name(icon3Mobile);
+    }
+
+    .support .header .icon4 {
+        @mixin animation_name(icon4Mobile);
+    }
+
+    .support .featuredIcons i {
+        font-size: 12rem;
+    }
+
     .offers {
         margin-bottom: 0px;
     }

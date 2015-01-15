@@ -30,18 +30,6 @@ public interface PageSupportResources extends FontResources {
 
         String header();
 
-        String iconhexa1();
-
-        String iconhexa2();
-
-        String iconhexa3();
-
-        String iconGwtp();
-
-        String iconJukito();
-
-        String iconChosen();
-
         String features();
 
         String support();
@@ -63,6 +51,14 @@ public interface PageSupportResources extends FontResources {
         String purchSupp();
 
         String products();
+
+        String icon1();
+
+        String icon2();
+
+        String icon4();
+
+        String icon3();
     }
 
     @Source({"com/arcbees/gsss/animation/client/animationsettings.gss",

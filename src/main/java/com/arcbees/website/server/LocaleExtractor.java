@@ -133,6 +133,9 @@ public class LocaleExtractor {
     }
 
     private void storeLocale(String locale) {
-        response.addCookie(new Cookie(LocaleExtractor.LOCALE_COOKIE_NAME, locale));
+        Cookie cookie = new Cookie(LocaleExtractor.LOCALE_COOKIE_NAME, locale);
+        cookie.setPath("/");
+
+        response.addCookie(cookie);
     }
 }

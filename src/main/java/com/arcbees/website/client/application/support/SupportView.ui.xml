@@ -33,13 +33,10 @@
         <section class="{res.style.stripe} {res.style.header} {page.style.header} {res.style.light}">
             <div class="{page.style.featuredIcons}">
 
-                <i class="{fonts.icons.iconGwtp} {page.style.iconGwtp} {animations.style.animation}"></i>
-                <i class="{fonts.icons.iconJukito} {page.style.iconJukito} {animations.style.animation}"></i>
-                <i class="{fonts.icons.iconChosen} {page.style.iconChosen} {animations.style.animation}"></i>
-
-                <i class="{fonts.icons.iconhexaEmpty} {page.style.iconhexa1} {animations.style.animation}"></i>
-                <i class="{fonts.icons.iconhexaEmpty} {page.style.iconhexa2} {animations.style.animation}"></i>
-                <i class="{fonts.icons.iconhexaEmpty} {page.style.iconhexa3} {animations.style.animation}"></i>
+                <i class="{fonts.icons.iconArcbees} {page.style.icon1} {animations.style.animation}"></i>
+                <i class="{fonts.icons.iconArcbees} {page.style.icon2} {animations.style.animation}"></i>
+                <i class="{fonts.icons.iconArcbees} {page.style.icon3} {animations.style.animation}"></i>
+                <i class="{fonts.icons.iconArcbees} {page.style.icon4} {animations.style.animation}"></i>
 
             </div>
         </section>

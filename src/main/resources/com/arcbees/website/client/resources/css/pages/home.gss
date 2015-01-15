@@ -310,6 +310,10 @@
     margin-bottom: 55px;
 }
 
+.home .beesContent p span {
+    display: block;
+}
+
 .home .successStoryHolder {
     padding-bottom: 0;
 }

@@ -183,7 +183,7 @@
                     <copyWebapp>true</copyWebapp>
                     <hostedWebapp>${webappDirectory}</hostedWebapp>
 
-                    <extraParam>false</extraParam>
+                    <extraParam>true</extraParam>
                     <extra>extras</extra>
                     <optimizationLevel>9</optimizationLevel>
                     <deploy>${project.build.directory}/gwtDeploy</deploy>

@@ -17,199 +17,233 @@
     left: 50%;
 }
 
-.support .header .icon1,
-.support .header .icon2,
-.support .header .icon3,
-.support .header .icon4 {
-    margin-left: -113px;
+    .support .header .icon1,
+    .support .header .icon2,
+    .support .header .icon3,
+    .support .header .icon4 {
+        margin-left: -113px;
 
-    position: absolute;
-    top: 75px;
-    left: 50%;
-}
-
-.support .header .icon1 {
-    @mixin animation_name(icon1);
-    @mixin animation_delay(.5s);
-    @mixin animation_duration(.6s);
-}
-
-@keyframes icon1 {
-    0% {
-        -moz-transform: rotate(0deg) translate(0px, 0px);
-        -ms-transform: rotate(0deg) translate(0px, 0px);
-        -o-transform: rotate(0deg) translate(0px, 0px);
-        transform: rotate(0deg) translate(0px, 0px);
+        position: absolute;
+        top: 75px;
+        left: 50%;
     }
-    100% {
-        -moz-transform: rotate(-135deg) translate(50px, 170px);
-        -ms-transform: rotate(-135deg) translate(50px, 170px);
-        -o-transform: rotate(-135deg) translate(50px, 170px);
-        transform: rotate(-135deg) translate(50px, 170px);
+
+@if (!is("ie8") && !is("ie9")) {
+    .support .header .icon1 {
+        @mixin animation_name(icon1);
+        @mixin animation_delay(.5 s);
+        @mixin animation_duration(.6 s);
     }
-}
 
-@-webkit-keyframes icon1 {
-    0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
-    100% {-webkit-transform: rotate(-135deg) translate(50px, 170px);}
-}
-
-@keyframes icon1Mobile {
-    0% {
-        -moz-transform: rotate(0deg) translate(0px, 0px);
-        -ms-transform: rotate(0deg) translate(0px, 0px);
-        -o-transform: rotate(0deg) translate(0px, 0px);
-        transform: rotate(0deg) translate(0px, 0px);
+    @keyframes icon1 {
+        0% {
+            -moz-transform: rotate(0deg) translate(0px, 0px);
+            -ms-transform: rotate(0deg) translate(0px, 0px);
+            -o-transform: rotate(0deg) translate(0px, 0px);
+            transform: rotate(0deg) translate(0px, 0px);
+        }
+        100% {
+            -moz-transform: rotate(-135deg) translate(50px, 170px);
+            -ms-transform: rotate(-135deg) translate(50px, 170px);
+            -o-transform: rotate(-135deg) translate(50px, 170px);
+            transform: rotate(-135deg) translate(50px, 170px);
+        }
     }
-    100% {
-        -moz-transform: rotate(-135deg) translate(25px, 85px);
-        -ms-transform: rotate(-135deg) translate(25px, 85px);
-        -o-transform: rotate(-135deg) translate(25px, 85px);
-        transform: rotate(-135deg) translate(25px, 85px);
+
+    @-webkit-keyframes icon1 {
+        0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
+        100% {-webkit-transform: rotate(-135deg) translate(50px, 170px);}
     }
-}
 
-@-webkit-keyframes icon1Mobile {
-    0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
-    100% {-webkit-transform: rotate(-135deg) translate(25px, 85px);}
-}
-
-.support .header .icon2 {
-    @mixin animation_name(icon2);
-    @mixin animation_delay(.5s);
-    @mixin animation_duration(.6s);
-}
-
-@keyframes icon2 {
-    0% {
-        -moz-transform: rotate(0deg) translate(0px, 0px);
-        -ms-transform: rotate(0deg) translate(0px, 0px);
-        -o-transform: rotate(0deg) translate(0px, 0px);
-        transform: rotate(0deg) translate(0px, 0px);
+    @keyframes icon1Mobile {
+        0% {
+            -moz-transform: rotate(0deg) translate(0px, 0px);
+            -ms-transform: rotate(0deg) translate(0px, 0px);
+            -o-transform: rotate(0deg) translate(0px, 0px);
+            transform: rotate(0deg) translate(0px, 0px);
+        }
+        100% {
+            -moz-transform: rotate(-135deg) translate(25px, 85px);
+            -ms-transform: rotate(-135deg) translate(25px, 85px);
+            -o-transform: rotate(-135deg) translate(25px, 85px);
+            transform: rotate(-135deg) translate(25px, 85px);
+        }
     }
-    100% {
-        -moz-transform: rotate(135deg) translate(-50px, 170px);
-        -ms-transform: rotate(135deg) translate(-50px, 170px);
-        -o-transform: rotate(135deg) translate(-50px, 170px);
-        transform: rotate(135deg) translate(-50px, 170px);
+
+    @-webkit-keyframes icon1Mobile {
+        0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
+        100% {-webkit-transform: rotate(-135deg) translate(25px, 85px);}
     }
-}
 
-@-webkit-keyframes icon2 {
-    0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
-    100% {-webkit-transform: rotate(135deg) translate(-50px, 170px);}
-}
-
-@keyframes icon2Mobile {
-    0% {
-        -moz-transform: rotate(0deg) translate(0px, 0px);
-        -ms-transform: rotate(0deg) translate(0px, 0px);
-        -o-transform: rotate(0deg) translate(0px, 0px);
-        transform: rotate(0deg) translate(0px, 0px);
+    .support .header .icon2 {
+        @mixin animation_name(icon2);
+        @mixin animation_delay(.5 s);
+        @mixin animation_duration(.6 s);
     }
-    100% {
-        -moz-transform: rotate(135deg) translate(-25px, 85px);
-        -ms-transform: rotate(135deg) translate(-25px, 85px);
-        -o-transform: rotate(135deg) translate(-25px, 85px);
-        transform: rotate(135deg) translate(-25px, 85px);
+
+    @keyframes icon2 {
+        0% {
+            -moz-transform: rotate(0deg) translate(0px, 0px);
+            -ms-transform: rotate(0deg) translate(0px, 0px);
+            -o-transform: rotate(0deg) translate(0px, 0px);
+            transform: rotate(0deg) translate(0px, 0px);
+        }
+        100% {
+            -moz-transform: rotate(135deg) translate(-50px, 170px);
+            -ms-transform: rotate(135deg) translate(-50px, 170px);
+            -o-transform: rotate(135deg) translate(-50px, 170px);
+            transform: rotate(135deg) translate(-50px, 170px);
+        }
     }
-}
 
-@-webkit-keyframes icon2Mobile {
-    0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
-    100% {-webkit-transform: rotate(135deg) translate(-25px, 85px);}
-}
-
-.support .header .icon3 {
-    @mixin animation_name(icon3);
-    @mixin animation_delay(.5s);
-    @mixin animation_duration(.6s);
-}
-
-@keyframes icon3 {
-    0% {
-        -moz-transform: rotate(0deg) translate(0px, 0px);
-        -ms-transform: rotate(0deg) translate(0px, 0px);
-        -o-transform: rotate(0deg) translate(0px, 0px);
-        transform: rotate(0deg) translate(0px, 0px);
+    @-webkit-keyframes icon2 {
+        0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
+        100% {-webkit-transform: rotate(135deg) translate(-50px, 170px);}
     }
-    100% {
-        -moz-transform: rotate(-45deg) translate(50px, 70px);
-        -ms-transform: rotate(-45deg) translate(50px, 70px);
-        -o-transform: rotate(-45deg) translate(50px, 70px);
-        transform: rotate(-45deg) translate(50px, 70px);
+
+    @keyframes icon2Mobile {
+        0% {
+            -moz-transform: rotate(0deg) translate(0px, 0px);
+            -ms-transform: rotate(0deg) translate(0px, 0px);
+            -o-transform: rotate(0deg) translate(0px, 0px);
+            transform: rotate(0deg) translate(0px, 0px);
+        }
+        100% {
+            -moz-transform: rotate(135deg) translate(-25px, 85px);
+            -ms-transform: rotate(135deg) translate(-25px, 85px);
+            -o-transform: rotate(135deg) translate(-25px, 85px);
+            transform: rotate(135deg) translate(-25px, 85px);
+        }
     }
-}
 
-@-webkit-keyframes icon3 {
-    0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
-    100% {-webkit-transform: rotate(-45deg) translate(50px, 70px);}
-}
-
-@keyframes icon3Mobile {
-    0% {
-        -moz-transform: rotate(0deg) translate(0px, 0px);
-        -ms-transform: rotate(0deg) translate(0px, 0px);
-        -o-transform: rotate(0deg) translate(0px, 0px);
-        transform: rotate(0deg) translate(0px, 0px);
+    @-webkit-keyframes icon2Mobile {
+        0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
+        100% {-webkit-transform: rotate(135deg) translate(-25px, 85px);}
     }
-    100% {
-        -moz-transform: rotate(135deg) translate(25px, 35px);
-        -ms-transform: rotate(135deg) translate(25px, 35px);
-        -o-transform: rotate(135deg) translate(25px, 35px);
-        transform: rotate(135deg) translate(25px, 35px);
+
+    .support .header .icon3 {
+        @mixin animation_name(icon3);
+        @mixin animation_delay(.5 s);
+        @mixin animation_duration(.6 s);
     }
-}
 
-@-webkit-keyframes icon3Mobile {
-    0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
-    100% {-webkit-transform: rotate(-45deg) translate(25px, 35px);}
-}
-
-.support .header .icon4 {
-    @mixin animation_name(icon4);
-    @mixin animation_delay(.5s);
-    @mixin animation_duration(.6s);
-}
-
-@keyframes icon4 {
-    0% {
-        -moz-transform: rotate(0deg) translate(0px, 0px);
-        -ms-transform: rotate(0deg) translate(0px, 0px);
-        -o-transform: rotate(0deg) translate(0px, 0px);
-        transform: rotate(0deg) translate(0px, 0px);
+    @keyframes icon3 {
+        0% {
+            -moz-transform: rotate(0deg) translate(0px, 0px);
+            -ms-transform: rotate(0deg) translate(0px, 0px);
+            -o-transform: rotate(0deg) translate(0px, 0px);
+            transform: rotate(0deg) translate(0px, 0px);
+        }
+        100% {
+            -moz-transform: rotate(-45deg) translate(50px, 70px);
+            -ms-transform: rotate(-45deg) translate(50px, 70px);
+            -o-transform: rotate(-45deg) translate(50px, 70px);
+            transform: rotate(-45deg) translate(50px, 70px);
+        }
     }
-    100% {
-        -moz-transform: rotate(45deg) translate(-50px, 70px);
-        -ms-transform: rotate(45deg) translate(-50px, 70px);
-        -o-transform: rotate(45deg) translate(-50px, 70px);
-        transform: rotate(45deg) translate(-50px, 70px);
-    }
-}
 
-@-webkit-keyframes icon4 {
-    0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
-    100% {-webkit-transform: rotate(45deg) translate(-50px, 70px);}
-}
-
-@keyframes icon4Mobile {
-    0% {
-        -moz-transform: rotate(0deg) translate(0px, 0px);
-        -ms-transform: rotate(0deg) translate(0px, 0px);
-        -o-transform: rotate(0deg) translate(0px, 0px);
-        transform: rotate(0deg) translate(0px, 0px);
+    @-webkit-keyframes icon3 {
+        0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
+        100% {-webkit-transform: rotate(-45deg) translate(50px, 70px);}
     }
-    100% {
-        -moz-transform: rotate(135deg) translate(-25px, 35px);
-        -ms-transform: rotate(135deg) translate(-25px, 35px);
-        -o-transform: rotate(135deg) translate(-25px, 35px);
-        transform: rotate(135deg) translate(-25px, 35px);
-    }
-}
 
-@-webkit-keyframes icon4Mobile {
-    0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
-    100% {-webkit-transform: rotate(45deg) translate(-25px, 35px);}
+    @keyframes icon3Mobile {
+        0% {
+            -moz-transform: rotate(0deg) translate(0px, 0px);
+            -ms-transform: rotate(0deg) translate(0px, 0px);
+            -o-transform: rotate(0deg) translate(0px, 0px);
+            transform: rotate(0deg) translate(0px, 0px);
+        }
+        100% {
+            -moz-transform: rotate(135deg) translate(25px, 35px);
+            -ms-transform: rotate(135deg) translate(25px, 35px);
+            -o-transform: rotate(135deg) translate(25px, 35px);
+            transform: rotate(135deg) translate(25px, 35px);
+        }
+    }
+
+    @-webkit-keyframes icon3Mobile {
+        0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
+        100% {-webkit-transform: rotate(-45deg) translate(25px, 35px);}
+    }
+
+    .support .header .icon4 {
+        @mixin animation_name(icon4);
+        @mixin animation_delay(.5 s);
+        @mixin animation_duration(.6 s);
+    }
+
+    @keyframes icon4 {
+        0% {
+            -moz-transform: rotate(0deg) translate(0px, 0px);
+            -ms-transform: rotate(0deg) translate(0px, 0px);
+            -o-transform: rotate(0deg) translate(0px, 0px);
+            transform: rotate(0deg) translate(0px, 0px);
+        }
+        100% {
+            -moz-transform: rotate(45deg) translate(-50px, 70px);
+            -ms-transform: rotate(45deg) translate(-50px, 70px);
+            -o-transform: rotate(45deg) translate(-50px, 70px);
+            transform: rotate(45deg) translate(-50px, 70px);
+        }
+    }
+
+    @-webkit-keyframes icon4 {
+        0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
+        100% {-webkit-transform: rotate(45deg) translate(-50px, 70px);}
+    }
+
+    @keyframes icon4Mobile {
+        0% {
+            -moz-transform: rotate(0deg) translate(0px, 0px);
+            -ms-transform: rotate(0deg) translate(0px, 0px);
+            -o-transform: rotate(0deg) translate(0px, 0px);
+            transform: rotate(0deg) translate(0px, 0px);
+        }
+        100% {
+            -moz-transform: rotate(135deg) translate(-25px, 35px);
+            -ms-transform: rotate(135deg) translate(-25px, 35px);
+            -o-transform: rotate(135deg) translate(-25px, 35px);
+            transform: rotate(135deg) translate(-25px, 35px);
+        }
+    }
+
+    @-webkit-keyframes icon4Mobile {
+        0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
+        100% {-webkit-transform: rotate(45deg) translate(-25px, 35px);}
+    }
+} @else {
+    .support .header .icon1 {
+        margin-left: -34px;
+        left: 50%;
+        top: -51px;
+
+        @mixin rotate(-135deg);
+    }
+
+    .support .header .icon2 {
+        margin-left: -192px;
+        left: 50%;
+        top: -50px;
+
+        @mixin rotate(135deg);
+    }
+
+    .support .header .icon3 {
+        margin-left: -33px;
+        left: 50%;
+        top: 109px;
+
+        @mixin rotate(-45deg);
+    }
+
+    .support .header .icon4 {
+        margin-left: -192px;
+        left: 50%;
+        top: 110px;
+
+        @mixin rotate(45deg);
+    }
 }
 
 /* -- Main-- */

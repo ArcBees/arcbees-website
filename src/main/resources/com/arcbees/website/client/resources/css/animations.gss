@@ -6,6 +6,12 @@
     @mixin animation_duration(5s);
 }
 
+@if (is("ie8") && is("ie9")) {
+    .hexaMove {
+        display: none;
+    }
+}
+
 @keyframes hexaMove {
     0% {
         -moz-transform:rotate(0deg);

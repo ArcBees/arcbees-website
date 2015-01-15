@@ -310,6 +310,12 @@
     margin-bottom: 55px;
 }
 
+@if (is("ie8") && is("ie9")) {
+    .home .beesContent {
+        padding-top: 0px;
+    }
+}
+
 .home .successStoryHolder {
     padding-bottom: 0;
 }
@@ -351,6 +357,12 @@
     position: absolute;
     top: 0;
     left: 50%;
+}
+
+@if (is("ie8") && is("ie9")) {
+    .home .ssiconsHexa {
+        display: none;
+    }
 }
 
 @media (max-width: 979px) {

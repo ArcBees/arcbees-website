@@ -6,7 +6,7 @@
     @mixin animation_duration(5s);
 }
 
-@if (is("ie8") && is("ie9")) {
+@if (is("ie8") || is("ie9")) {
     .hexaMove {
         display: none;
     }

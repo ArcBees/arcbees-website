@@ -124,7 +124,7 @@ public class BeesView extends ViewWithUiHandlers<BeesUiHandlers> implements Bees
 
     @Override
     public void konami() {
-        $("img", bees).attr("src", "http://placekitten.com/200/300");
+        $("img", bees).css("display", "none");
     }
 
     @Override

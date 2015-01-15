@@ -64,7 +64,7 @@
 
         <section class="{res.style.stripe} {res.style.colored}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.centered}">
-                <div class="{page.style.purchSupp} {res.grid.col} {res.grid.col_6} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+                <div class="{page.style.purchSupp} {res.grid.col} {res.grid.col_6} {res.grid.col_push_1_4} {res.grid.col_t_8} {res.grid.col_t_push_2} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                     <ui:msg description="Purchasing support packages...">
                         <p>Purchasing support packages not only allows us to help your team become optimally
                             productive with our tools.
@@ -218,7 +218,7 @@
                     <ui:msg description="Features">Features</ui:msg>
                 </h2>
                 <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                    <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+                    <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_t_1_3} {res.grid.col_t_push_0} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                         <i class="{fonts.icons.iconCommRes}"></i>
                         <h3>
                             <ui:msg description="Community Resources">Community
@@ -231,7 +231,7 @@
                             </ui:msg>
                         </p>
                     </div>
-                    <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1} {res.grid.col_m_full} {res.grid.col_m_push_0} {page.style.responseTime}">
+                    <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1} {res.grid.col_t_1_3} {res.grid.col_t_push_0} {res.grid.col_m_full} {res.grid.col_m_push_0} {page.style.responseTime}">
                         <i class="{fonts.icons.iconRespTime}"></i>
                         <h3>
                             <ui:msg description="Response Time">Response
@@ -245,7 +245,7 @@
                             </ui:msg>
                         </p>
                     </div>
-                    <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_push_1_12} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+                    <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_push_1_12} {res.grid.col_t_1_3} {res.grid.col_t_push_0} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                         <i class="{fonts.icons.iconSupportCases}"></i>
                         <h3>
                             <ui:msg description="Legacy Support">Legacy
@@ -261,7 +261,7 @@
                     </div>
                 </div>
                 <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                    <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_push_1_6} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+                    <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_push_1_6} {res.grid.col_t_1_3} {res.grid.col_t_push_2} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                         <i class="{fonts.icons.iconInternetSupport}"></i>
                         <h3>
                             <ui:msg description="Internet Support">Internet
@@ -275,7 +275,7 @@
                             </ui:msg>
                         </p>
                     </div>
-                    <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_push_2} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+                    <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_push_2} {res.grid.col_t_1_3} {res.grid.col_t_push_0} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                         <i class="{fonts.icons.iconPhoneSupport}"></i>
                         <h3>
                             <ui:msg description="Phone Support">Phone

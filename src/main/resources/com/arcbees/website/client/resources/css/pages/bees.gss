@@ -108,6 +108,32 @@
     @mixin rotate(-30deg);
 }
 
+@media (max-width: 979px) {
+    .bees .intro i.icon1 {
+        margin-right: -48px;
+
+        top: 168px;
+    }
+
+    .bees .intro i.icon3 {
+        margin-right: -48px;
+
+        top: 5px;
+    }
+
+    .bees .intro i.icon4 {
+        margin-left: -48px;
+
+        top: 5px;
+    }
+
+    .bees .intro i.icon6 {
+        margin-left: -48px;
+
+        top: 168px;
+    }
+}
+
 @media (max-width: 649px) {
     .bees .header > div {
         margin: -135px 0 0 -180px;
@@ -616,6 +642,12 @@ a:visited.popupClose {
 .offers > div:first-child,
 .offers > div:last-child {
     border-bottom: none
+}
+
+@media (max-width: 979px) {
+    .offers h3 {
+        font-size: 2.5rem;
+    }
 }
 
 @media (max-width: 649px) {

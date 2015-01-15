@@ -111,3 +111,9 @@
 .slider .pager a span {
     display: none;
 }
+
+@media (max-width: 649px) {
+    .slider .pager a:before {
+        font-size: 30px;
+    }
+}

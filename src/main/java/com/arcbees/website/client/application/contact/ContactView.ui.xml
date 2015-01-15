@@ -102,7 +102,7 @@
             </div>
         </section>
 
-        <section class="{page.style.quebec} {res.style.stripe} {res.style.light} {res.style.centered}">
+        <section class="{page.style.quebec} {res.style.stripe} {res.style.light} {res.style.centered} {res.grid.col_m_hide}">
             <h3>
                 <ui:msg description="Contact - We have fun in beautiful quebec city">We have fun in
                     <span>beautiful quebec city</span>

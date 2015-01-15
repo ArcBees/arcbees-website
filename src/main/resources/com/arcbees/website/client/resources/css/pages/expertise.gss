@@ -173,6 +173,17 @@
     100% {opacity: 1;}
 }
 
+@media (max-width: 979px) {
+    .expertises .header i.icon1,
+    .expertises .header i.icon2 {
+        margin: 80px -112px 0 0;
+    }
+
+    .expertises .header div.icon3 {
+        margin-top: 35px;
+    }
+}
+
 @media (max-width: 649px) {
     .header {
         -webkit-background-size: 90% auto;
@@ -185,7 +196,7 @@
     .expertises .header i.icon2 {
         font-size: 10rem;
 
-        margin: 40px -50px 0 0;
+        margin: 70px -50px 0 0;
     }
 
     .expertises .header > div {
@@ -193,7 +204,7 @@
     }
 
     .expertises .header div.icon3 {
-        margin-top: 38px;
+        margin-top: 85px;
 
         zoom: .45;
     }
@@ -215,11 +226,19 @@
 }
 
 .services h3 {
-    margin-top: 10px;
+    font-size: 4rem;
+
+    margin: 10px 0 .5em;
 }
 
 .services a {
     margin-bottom: 60px;
+}
+
+@media (max-width: 979px) {
+    .services h3 {
+        font-size: 2.5rem;
+    }
 }
 
 /* -- Tools -- */

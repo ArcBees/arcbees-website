@@ -87,3 +87,9 @@ ul.social {
 .quebec .contactSlider nav i:before {
     color: C_PRIMARY;
 }
+
+@media (max-width: 979px) {
+    .quebec .contactSlider img {
+        width: 32%;
+    }
+}

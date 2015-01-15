@@ -94,6 +94,10 @@
 }
 
 @media (max-width: 979px) {
+    .support .purchSupp {
+        padding: 0;
+    }
+
     .support .featuredIcons {
         font-size: 17rem;
     }
@@ -281,13 +285,27 @@
     padding: 0 40px;
 }
 
+@media (max-width: 979px) {
+    .features h3 {
+        font-size: 1.5rem;
+    }
+
+    .responseTime {
+        padding: 0;
+    }
+}
+
 @media (max-width: 649px) {
     .features {
         padding-top: 30px;
     }
 
-    .responseTime {
-        padding: 0;
+    .features h3 {
+        font-size: 2rem;
+    }
+
+    .features p {
+        margin-bottom: 60px;
     }
 }
 

@@ -58,8 +58,8 @@
 
         <section class="{res.style.stripe} {res.style.centered} {page.style.services}">
             <div class="{res.style.wrapper} {res.grid.row} {res.style.clearfix}">
-                <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1_12} {res.grid.col_m_full} {res.grid.col_m_push_0}">
-                    <h3 class="{res.style.stripeTitle}">
+                <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1_12} {res.grid.col_t_1_2} {res.grid.col_t_push_0} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+                    <h3>
                         <ui:msg description="Expertise - Services - title">Services</ui:msg>
                     </h3>
                     <p>
@@ -71,8 +71,8 @@
                         <ui:msg description="Btn - Learn more">Learn more</ui:msg>
                     </a>
                 </div>
-                <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1_6} {res.grid.col_m_full} {res.grid.col_m_push_0}">
-                    <h3 class="{res.style.stripeTitle}">
+                <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1_6} {res.grid.col_t_1_2} {res.grid.col_t_push_0} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+                    <h3>
                         <ui:msg description="Expertise - Support - title">Support</ui:msg>
                     </h3>
                     <p>
@@ -86,8 +86,8 @@
                 </div>
             </div>
             <div class="{res.style.wrapper} {res.grid.row} {res.style.clearfix}">
-                <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1_3} {res.grid.col_m_full} {res.grid.col_m_push_0}">
-                    <h3 class="{res.style.stripeTitle}">
+                <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1_3} {res.grid.col_t_1_2} {res.grid.col_t_push_3} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+                    <h3>
                         <ui:msg description="Expertise - Training - title">Training</ui:msg>
                     </h3>
                     <p>

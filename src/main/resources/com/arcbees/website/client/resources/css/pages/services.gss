@@ -236,6 +236,28 @@
     min-height: 125px;
 }
 
+@media (max-width: 979px) {
+    .advantages h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 649px) {
+    .advantages h2 {
+        margin: 0 0 2em;
+    }
+
+    .advantages h3 {
+        font-size: 2rem;
+
+        margin-top: 16px;
+    }
+
+    .advantages p {
+        margin: 0 0 60px;
+    }
+}
+
 /* -- knowledge -- */
 
 .knowledge .topIcons {
@@ -273,24 +295,16 @@
     @mixin rotate(-90deg);
 }
 
-@media (max-width: 649px) {
-    .advantages h2 {
-        margin: 0 0 2em;
-    }
-
-    .advantages h3 {
-        margin-top: 16px;
-    }
-
-    .advantages p {
-        margin: 0 0 35px;
-    }
-}
-
 /* -- Way of the bee --*/
 
 .wayOfTheBee {
     padding: 0 40px;
+}
+
+@media(max-width: 979px) {
+    .wayOfTheBee {
+        padding: 0;
+    }
 }
 
 /* -- Works everywhere --*/
@@ -382,8 +396,16 @@
     left: 50%;
 }
 
+@media (max-width: 979px) {
+    .beauty .icon2 {
+        margin-left: -32px;
+    }
+}
+
 @media (max-width: 649px) {
     .beauty .icon2 {
+        margin-left: -34px;
+
         top: 35px;
     }
 }
@@ -472,11 +494,6 @@
     @mixin animation_duration(1s);
 }
 
-.lightbulb [class*="bar"] {
-    width: 10px;
-    height: 4px;
-}
-
 .lightbulb .bar1 {
     margin-left: -2px;
     width: 4px;
@@ -487,12 +504,16 @@
 
 .lightbulb .bar2 {
     margin-left: -42px;
+    width: 10px;
+    height: 4px;
 
     top: 50px;
 }
 
 .lightbulb .bar3 {
     margin-left: -29px;
+    width: 10px;
+    height: 4px;
 
     top: 25px;
 
@@ -501,6 +522,8 @@
 
 .lightbulb .bar4 {
     margin-left: 21px;
+    width: 10px;
+    height: 4px;
 
     top: 25px;
 
@@ -509,6 +532,8 @@
 
 .lightbulb .bar5 {
     margin-left: 36px;
+    width: 10px;
+    height: 4px;
 
     top: 50px;
 }
@@ -856,7 +881,10 @@
     border-radius: 50%;
 }
 
-.iterative [class*="bar"] {
+.iterative .bar1,
+.iterative .bar2,
+.iterative .bar3,
+.iterative .bar4 {
     background-color: #000;
 
     position: absolute;
@@ -1079,7 +1107,13 @@
     position: relative;
 }
 
-.costRisk [class*="bar"] {
+.costRisk .bar1,
+.costRisk .bar2,
+.costRisk .bar3,
+.costRisk .bar4,
+.costRisk .bar5,
+.costRisk .bar6,
+.costRisk .bar7 {
     background-color: #000;
 
     margin-left: -2px;
@@ -1362,7 +1396,11 @@
     @mixin animation_duration(5s);
 }
 
-.deliver [class*="bar"] {
+.deliver .bar1,
+.deliver .bar2,
+.deliver .bar3,
+.deliver .bar4,
+.deliver .bar5 {
     background-color: #000;
 
     left: 50%;

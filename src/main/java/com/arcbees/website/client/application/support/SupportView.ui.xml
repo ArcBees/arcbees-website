@@ -250,8 +250,8 @@
                             </ui:msg>
                         </h3>
                         <p>
-                            <ui:msg description="Legacy Support - Paragraph -">One of the biggest advantage is that we
-                                will support older version of the framework for you for another 2 years after the
+                            <ui:msg description="Legacy Support - Paragraph -">One of the biggest advantages is that we
+                                will support older versions of the framework for you for another 2 years after the
                                 release of a newer version.
                             </ui:msg>
                         </p>

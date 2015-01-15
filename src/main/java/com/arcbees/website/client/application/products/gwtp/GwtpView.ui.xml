@@ -39,7 +39,7 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_10} {res.grid.col_m_full}">
                     <h1>gwt-platform
-                        <a href="#" class="{res.style.anchor}">#</a>
+                        <a href="https://github.com/ArcBees/GWTP" target="_blank" class="{res.style.anchor}">#</a>
                     </h1>
                     <h2 class="{page.style.presentation}">
                         <ui:msg description="The best Model-View-Presenter framework for GWT">

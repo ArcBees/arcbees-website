@@ -1,6 +1,7 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
         xmlns:g="urn:import:com.google.gwt.user.client.ui"
+        xmlns:slider="urn:import:com.arcbees.website.client.application.slider"
         xmlns:seo="urn:import:com.arcbees.seo.widget"
         ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
         ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
@@ -107,9 +108,41 @@
                     <span>beautiful quebec city</span>
                 </ui:msg>
             </h3>
-            <div>
-                une pelleter d'image
-            </div>
+            <slider:Slider addStyleNames="{page.style.contactSlider}">
+                <slider:content>
+                    <g:HTMLPanel>
+                        <div>
+                            <g:Image resource="{page.contact1}"/>
+                            <g:Image resource="{page.contact2}"/>
+                            <g:Image resource="{page.contact3}"/>
+                        </div>
+
+                        <div>
+                            <g:Image resource="{page.contact4}"/>
+                            <g:Image resource="{page.contact5}"/>
+                            <g:Image resource="{page.contact6}"/>
+                        </div>
+
+                        <div>
+                            <g:Image resource="{page.contact7}"/>
+                            <g:Image resource="{page.contact8}"/>
+                            <g:Image resource="{page.contact9}"/>
+                        </div>
+
+                        <div>
+                            <g:Image resource="{page.contact10}"/>
+                            <g:Image resource="{page.contact11}"/>
+                            <g:Image resource="{page.contact12}"/>
+                        </div>
+
+                        <div>
+                            <g:Image resource="{page.contact13}"/>
+                            <g:Image resource="{page.contact14}"/>
+                            <g:Image resource="{page.contact15}"/>
+                        </div>
+                    </g:HTMLPanel>
+                </slider:content>
+            </slider:Slider>
         </section>
 
         <section class="{res.style.stripe} {res.style.light}">

@@ -30,10 +30,63 @@ public interface PageContactResources extends FontResources {
         String quebec();
 
         String workWithUs();
+
+        String contactSlider();
     }
 
     @Source("img/pages/contactMapMarker.png")
     ImageResource marker();
+
+    @Source("img/pages/contact1.jpg")
+    ImageResource contact1();
+
+    @Source("img/pages/contact2.jpg")
+    ImageResource contact2();
+
+    @Source("img/pages/contact3.jpg")
+    ImageResource contact3();
+
+    @Source("img/pages/contact4.jpg")
+    ImageResource contact4();
+
+    @Source("img/pages/contact5.jpg")
+    ImageResource contact5();
+
+    @Source("img/pages/contact6.jpg")
+    ImageResource contact6();
+
+    @Source("img/pages/contact7.jpg")
+    ImageResource contact7();
+
+    @Source("img/pages/contact8.jpg")
+    ImageResource contact8();
+
+    @Source("img/pages/contact9.jpg")
+    ImageResource contact9();
+
+    @Source("img/pages/contact10.jpg")
+    ImageResource contact10();
+
+    @Source("img/pages/contact11.jpg")
+    ImageResource contact11();
+
+    @Source("img/pages/contact12.jpg")
+    ImageResource contact12();
+
+    @Source("img/pages/contact13.jpg")
+    ImageResource contact13();
+
+    @Source("img/pages/contact14.jpg")
+    ImageResource contact14();
+
+    @Source("img/pages/contact15.jpg")
+    ImageResource contact15();
+
+    @Source("img/pages/contact16.jpg")
+    ImageResource contact16();
+
+    @Source("img/pages/contact11.jpg")
+    ImageResource contact17();
 
     @Source({"com/arcbees/gsss/mixin/client/mixins.gss", "css/colors.gss", "fonts/geometria/geometria.gss", "css/pages/contact.gss"})
     Style style();

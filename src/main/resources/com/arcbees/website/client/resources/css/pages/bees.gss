@@ -329,6 +329,10 @@
     .bees .bee:nth-child(odd) {
         margin-left: 107px;
     }
+
+    .bees .beeHolder2 a {
+        padding: 45px 215px;
+    }
 }
 
 @media (max-width: 649px) {
@@ -344,6 +348,11 @@
 
     .bees .beeHolder2 img {
         margin-left: -133px;
+    }
+
+    .bees .beeHolder2 a {
+        padding: 45px 45px;
+        height: 105%;
     }
 }
 

@@ -38,7 +38,7 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_full}">
                     <h1>jukito
-                        <a href="#" class="{res.style.anchor}">#</a>
+                        <a href="http://dev.arcbees.com/jukito/" target="_blank" class="{res.style.anchor}">#</a>
                     </h1>
                     <h2 class="{page.style.presentation}">
                         <ui:msg description="Jukito - slogan">Use the power

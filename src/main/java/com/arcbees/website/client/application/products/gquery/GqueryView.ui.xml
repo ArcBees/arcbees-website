@@ -39,7 +39,7 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_10} {res.grid.col_m_full}">
                     <h1>GQUERY
-                        <a href="#" class="{res.style.anchor}">#</a>
+                        <a href="https://github.com/gwtquery" target="_blank" class="{res.style.anchor}">#</a>
                     </h1>
                     <h2 class="{page.style.presentation}">
                         <ui:msg description="A jQuery clone for GWT">A jQuery clone for GWT,

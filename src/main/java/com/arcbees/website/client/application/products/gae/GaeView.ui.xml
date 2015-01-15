@@ -40,7 +40,7 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_1_2} {res.grid.col_m_full}">
                     <h1>gae studio
-                        <a href="#" class="{res.style.anchor}">#</a>
+                        <a href="http://dev.arcbees.com/gaestudio/" target="_blank" class="{res.style.anchor}">#</a>
                     </h1>
                     <h2 class="{page.style.presentation}">
                         <ui:msg description="Optimizing Google App Engine applications">Optimizing
@@ -53,11 +53,6 @@
                                 <a href="https://plus.google.com/u/0/communities/115376454177922421933
 " target="_blank" class="{fonts.icons.iconGPlus}">
                                     <span class="{res.style.hidden}">Google plus</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/ArcBees/gaestudiowebsite" target="_blank" class="{fonts.icons.iconGitHub}">
-                                    <span class="{res.style.hidden}">Github</span>
                                 </a>
                             </li>
                         </ul>

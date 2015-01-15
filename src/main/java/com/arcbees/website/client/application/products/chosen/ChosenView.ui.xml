@@ -41,7 +41,7 @@
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                 <div class="{res.grid.col} {res.grid.col_10}">
                     <h1>gwt chosen
-                        <a href="#" class="{res.style.anchor}">#</a>
+                        <a href="https://github.com/ArcBees/gwtchosen" target="_blank" class="{res.style.anchor}">#</a>
                     </h1>
                     <h2 class="{page.style.presentation}">
                         <ui:msg description="Making select boxes">Making select boxes

@@ -64,7 +64,7 @@
 
         <ul class="{page.style.social}">
             <li>
-                <a href="ca.linkedin.com/in/beaudoin" class="{fonts.icons.iconLkd}" target="_blank">
+                <a href="http://ca.linkedin.com/in/beaudoin" class="{fonts.icons.iconLkd}" target="_blank">
                     <span>Profil LinkedIn de Philippe Beaudoin</span>
                 </a>
             </li>

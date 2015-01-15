@@ -20,18 +20,4 @@
         <dispatcher>FORWARD</dispatcher>
         <dispatcher>INCLUDE</dispatcher>
     </filter-mapping>
-
-    <servlet>
-        <servlet-name>welcome</servlet-name>
-        <servlet-class>com.arcbees.website.server.HomeServlet</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-        <servlet-name>welcome</servlet-name>
-        <url-pattern></url-pattern>
-        <url-pattern>/en</url-pattern>
-        <url-pattern>/en/</url-pattern>
-        <url-pattern>/fr</url-pattern>
-        <url-pattern>/fr/</url-pattern>
-    </servlet-mapping>
 </web-app>

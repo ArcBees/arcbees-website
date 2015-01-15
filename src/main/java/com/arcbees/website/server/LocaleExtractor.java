@@ -34,9 +34,9 @@ import com.google.common.net.HttpHeaders;
 
 public class LocaleExtractor {
     public static final String LOCALE_COOKIE_NAME = "locale";
+    public static final List<String> SUPPORTED_LOCALES = Lists.newArrayList("en", "fr");
 
     private static final String DEFAULT_LOCALE = "en";
-    private static final List<String> SUPPORTED_LOCALES = Lists.newArrayList("en", "fr");
     private static final Pattern EXTRACT_LOCALE_PATTERN;
 
     static {
@@ -84,7 +84,8 @@ public class LocaleExtractor {
     }
 
     private String getLocaleFromCookie() {
-        return FluentIterable.of(request.getCookies())
+        Cookie[] cookies = request.getCookies();
+        return cookies == null ? null : FluentIterable.of(cookies)
                 .firstMatch(new Predicate<Cookie>() {
                     @Override
                     public boolean apply(Cookie cookie) {

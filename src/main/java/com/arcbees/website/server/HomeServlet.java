@@ -20,6 +20,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.Properties;
 
+import javax.inject.Singleton;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -31,6 +32,7 @@ import org.apache.velocity.app.VelocityEngine;
 import com.google.common.io.ByteSource;
 import com.google.common.io.Resources;
 
+@Singleton
 public class HomeServlet extends HttpServlet {
     private static final String VELOCITY_PROPERTIES = "com/arcbees/website/server/velocity.properties";
     private static final String HOME_TEMPLATE = "com/arcbees/website/server/html/home.vm";

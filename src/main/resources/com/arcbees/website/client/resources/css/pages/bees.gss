@@ -187,11 +187,13 @@
 /* -> Bee -- */
 
 .bees .hive {
-    padding-top: 50px;
+    padding-top: 175px;
+    margin: 0 auto;
+    width: 650px;
 }
 
-.bees .hive div:first-child {
-    margin-bottom: 50px;
+.bees .bee:first-child {
+    margin-bottom: 175px;
 }
 
 .bees .bee {
@@ -201,6 +203,7 @@
     visibility: hidden;
     width: 400px;
     height: 240px;
+    margin-top: -114px;
 
     position: relative;
 
@@ -217,11 +220,10 @@
 }
 
 .bees .bee1 {
-    margin-left: -200px;
-    margin-top: 10px;
+    margin-left: 125px;
 
     position: relative;
-    left: 50%;
+    float: left;
 }
 
 .bees .bee2,
@@ -230,15 +232,14 @@
 }
 
 .bees .bee2 {
-    margin-left: -400px;
+    margin-left: -92px;
 
     float: left;
     position: relative;
-    left: 464px;
 }
 
 .bees .bee3 {
-    margin-right: 65px;
+    margin-right: -92px;
 
     float: right;
 }
@@ -304,6 +305,12 @@
 }
 
 @media (max-width: 979px) {
+    .bees .hive {
+        padding-top: 50px;
+        margin: 0 auto;
+        width: 90%;
+    }
+
     .bees .bee1,
     .bees .bee2,
     .bees .bee3 {
@@ -319,6 +326,7 @@
     }
 
     .bees .bee:first-child {
+        margin-bottom: 0;
         margin-top: 0;
     }
 
@@ -339,20 +347,20 @@
     .bees .bee,
     .bees .bee:nth-child(even),
     .bees .bee:nth-child(odd) {
-        margin: 0 0 7px;
+        margin: 0 0 0px;
     }
 
     .bees .bee {
-        height: 225px;
+        height: 204px;
     }
 
     .bees .beeHolder2 img {
-        margin-left: -133px;
+        margin-left: -50%;
+        width: 100%;
     }
 
     .bees .beeHolder2 a {
         padding: 45px 45px;
-        height: 105%;
     }
 }
 
@@ -380,6 +388,17 @@
 .bees .popupContent {
     margin: 10% auto 0;
     width: 75%;
+}
+
+.bees .popupContent .bee1,
+.bees .popupContent .bee2,
+.bees .popupContent .bee3 {
+    margin-left: -200px;
+    margin-top: 10px;
+
+    position: relative;
+    left: 50%;
+    float: none;
 }
 
 .bees .popup h1 {

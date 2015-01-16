@@ -343,7 +343,7 @@
     }
 }
 
-@media (max-width: 649px) {
+@media (max-width: 480px) {
     .bees .bee,
     .bees .bee:nth-child(even),
     .bees .bee:nth-child(odd) {
@@ -351,7 +351,7 @@
     }
 
     .bees .bee {
-        height: 204px;
+        height: 260px;
     }
 
     .bees .beeHolder2 img {
@@ -361,6 +361,18 @@
 
     .bees .beeHolder2 a {
         padding: 45px 45px;
+    }
+}
+
+@media (max-width: 405px) {
+    .bees .bee {
+        height: 225px;
+    }
+}
+
+@media (max-width: 350px) {
+    .bees .bee {
+        height: 204px;
     }
 }
 

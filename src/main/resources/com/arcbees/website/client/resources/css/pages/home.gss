@@ -167,7 +167,6 @@
         font-family: "geometriaBold";
 
         display: inline;
-        margin-left: 17px;
 
         position: absolute;
     }
@@ -313,6 +312,7 @@
 @if (is("ie8") || is("ie9")) {
     .home .beesContent {
         padding-top: 0px;
+        margin-top: -60px;
     }
 }
 

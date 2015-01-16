@@ -68,6 +68,9 @@
 
     cursor: default;
 
+    zoom: 1;
+    filter: literal("alpha(opacity=20)");
+
     @mixin opacity(0.2);
 }
 

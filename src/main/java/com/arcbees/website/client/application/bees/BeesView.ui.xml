@@ -1,11 +1,11 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-             xmlns:g="urn:import:com.google.gwt.user.client.ui"
-             xmlns:slider="urn:import:com.arcbees.website.client.application.slider"
-             xmlns:seo="urn:import:com.arcbees.seo.widget"
-             ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
-             ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
-             ui:generateLocales="default">
+        xmlns:g="urn:import:com.google.gwt.user.client.ui"
+        xmlns:slider="urn:import:com.arcbees.website.client.application.slider"
+        xmlns:seo="urn:import:com.arcbees.seo.widget"
+        ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+        ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
+        ui:generateLocales="default">
 
     <ui:with field="nameTokens" type="com.arcbees.website.client.NameTokensConstants"/>
     <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
@@ -171,9 +171,7 @@
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beePhilippeb1}"></g:Image>
                                     <a href="#{nameTokens.BEE_PHILIPPEB}">
-                                        <h3>Philippe
-                                            <span>Beaudoin</span>
-                                        </h3>
+                                        <h3>Philippe <span>Beaudoin</span></h3>
                                         <p><ui:msg description="Philippe Beaudoin's title">Advisor and co-founder</ui:msg></p>
                                     </a>
                                 </div>
@@ -185,9 +183,7 @@
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beePhilippeA1}"></g:Image>
                                     <a href="#{nameTokens.BEE_PHILIPPEA}">
-                                        <h3>Philippe
-                                            <span>Araujo</span>
-                                        </h3>
+                                        <h3>Philippe <span>Araujo</span></h3>
                                         <p><ui:msg description="Philippe Araujo's title">Business Knight</ui:msg></p>
                                     </a>
                                 </div>
@@ -199,9 +195,7 @@
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeGenevieve1}"></g:Image>
                                     <a href="#{nameTokens.BEE_GENEVIEVE}">
-                                        <h3>Geneviève
-                                            <span>Doyle</span>
-                                        </h3>
+                                        <h3>Geneviève <span>Doyle</span></h3>
                                         <p><ui:msg description="Geneviève's title">Attorney</ui:msg></p>
                                     </a>
                                 </div>
@@ -213,9 +207,7 @@
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeJulien1}"></g:Image>
                                     <a href="#{nameTokens.BEE_JULIEN}">
-                                        <h3>Julien
-                                            <span>Dramaix</span>
-                                        </h3>
+                                        <h3>Julien <span>Dramaix</span></h3>
                                         <p><ui:msg description="Julien's title">Lead Software Engineer, Bee-r cool-er</ui:msg></p>
                                     </a>
                                 </div>
@@ -227,9 +219,7 @@
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeManon1}"></g:Image>
                                     <a href="#{nameTokens.BEE_MANON}">
-                                        <h3>Manon
-                                            <span>Gruaz</span>
-                                        </h3>
+                                        <h3>Manon <span>Gruaz</span></h3>
                                         <p><ui:msg description="Manon's title">Lead Designer, Branding goddess and Loving Bee</ui:msg></p>
                                     </a>
                                 </div>
@@ -241,9 +231,7 @@
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeJason1}"></g:Image>
                                     <a href="#{nameTokens.BEE_JASON}">
-                                        <h3>Jason
-                                            <span>Lemay</span>
-                                        </h3>
+                                        <h3>Jason <span>Lemay</span></h3>
                                         <p><ui:msg description="Jason's title">Dual wielding Front-end Specialist</ui:msg></p>
                                     </a>
                                 </div>
@@ -255,9 +243,7 @@
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeMaxime1}"></g:Image>
                                     <a href="#{nameTokens.BEE_MAXIME}">
-                                        <h3>Maxime
-                                            <span>Mériouma-Caron</span>
-                                        </h3>
+                                        <h3>Maxime <span>Mériouma-</span><span>Caron</span></h3>
                                         <p><ui:msg description="Maxime's title">Night Shadow Developer</ui:msg></p>
                                     </a>
                                 </div>
@@ -269,9 +255,7 @@
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeChristopher1}"></g:Image>
                                     <a href="#{nameTokens.BEE_CHRISTOPHER}">
-                                        <h3>Christopher
-                                            <span>Viel</span>
-                                        </h3>
+                                        <h3>Christopher <span>Viel</span></h3>
                                         <p><ui:msg description="Christopher title">Crazy Code Mastermind</ui:msg></p>
                                     </a>
                                 </div>
@@ -283,9 +267,7 @@
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeSimonPierre1}"></g:Image>
                                     <a href="#{nameTokens.BEE_SIMONPIERRE}">
-                                        <h3>Simon-Pierre
-                                            <span>Gingras</span>
-                                        </h3>
+                                        <h3>Simon-Pierre <span>Gingras</span></h3>
                                         <p>
                                             <ui:msg description="Simon-Pierre's title">Developer of things, Chief Bacon Evangelist</ui:msg>
                                         </p>
@@ -299,9 +281,7 @@
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeJoel1}"></g:Image>
                                     <a href="#{nameTokens.BEE_JOEL}">
-                                        <h3>Joel
-                                            <span>Trottier-Hébert</span>
-                                        </h3>
+                                        <h3>Joel <span>Trottier-Hébert</span></h3>
                                         <p><ui:msg description="Joel's title">Bugs writer</ui:msg></p>
                                     </a>
                                 </div>
@@ -313,9 +293,7 @@
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeLarry1}"></g:Image>
                                     <a href="#{nameTokens.BEE_LARRY}">
-                                        <h3>Larry
-                                            <span>Matte</span>
-                                        </h3>
+                                        <h3>Larry <span>Matte</span></h3>
                                         <p><ui:msg description="Larry's title">Undercover Front-end Agent</ui:msg></p>
                                     </a>
                                 </div>
@@ -327,9 +305,7 @@
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeJeanChristophe1}"></g:Image>
                                     <a href="#{nameTokens.BEE_JEANCHRISTOPHE}">
-                                        <h3>Jean-Christophe
-                                            <span>Lariviere</span>
-                                        </h3>
+                                        <h3>Jean-<span>Christophe</span> <span>Lariviere</span></h3>
                                         <p><ui:msg description="Jean-Christophe's title">Coder in the North</ui:msg></p>
                                     </a>
                                 </div>

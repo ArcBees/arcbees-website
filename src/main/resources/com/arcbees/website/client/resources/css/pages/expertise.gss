@@ -19,202 +19,249 @@
     left: 50%;
 }
 
-.expertises .header i.icon1,
-.expertises .header i.icon2 {
-    font-size: 26rem;
-
-    margin: 40px -120px 0 0;
-
-    right: 50%;
-    position: absolute;
-
-    @mixin animation_delay(.5s);
-    @mixin animation_duration(1s);
-}
-
-.expertises .header div.icon3 {
-    margin: 15px -115px 0;
-    width: 230px;
-
-    right: 50%;
-    position: absolute;
-
-    @mixin animation_delay(1.5s);
-    @mixin animation_duration(4s);
-}
-
-.codeAnim1 {
-    @mixin animation_name(logo1);
-}
-
-@keyframes logo1 {
-    0% {
-        -moz-transform: rotate(0deg) translate(0px, 0px);
-        -ms-transform: rotate(0deg) translate(0px, 0px);
-        -o-transform: rotate(0deg) translate(0px, 0px);
-        transform: rotate(0deg) translate(0px, 0px);
-    }
-    50% {
-        -moz-transform: rotate(-90deg) translate(0px, 0px);
-        -ms-transform: rotate(-90deg) translate(0px, 0px);
-        -o-transform: rotate(-90deg) translate(0px, 0px);
-        transform: rotate(-90deg) translate(0px, 0px);
-    }
-    100% {
-        -moz-transform: rotate(-90deg) translate(0px, -262px);
-        -ms-transform: rotate(-90deg) translate(0px, -262px);
-        -o-transform: rotate(-90deg) translate(0px, -262px);
-        transform: rotate(-90deg) translate(0px, -262px);
-    }
-}
-
-@-webkit-keyframes logo1 {
-    0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
-    50% {-webkit-transform: rotate(-90deg) translate(0px, 0px);}
-    100% {-webkit-transform: rotate(-90deg) translate(0px, -262px);}
-}
-
-@keyframes logo1Mobile {
-    0% {
-        -moz-transform: rotate(0deg) translate(0px, 0px);
-        -ms-transform: rotate(0deg) translate(0px, 0px);
-        -o-transform: rotate(0deg) translate(0px, 0px);
-        transform: rotate(0deg) translate(0px, 0px);
-    }
-    50% {
-        -moz-transform: rotate(-90deg) translate(0px, 0px);
-        -ms-transform: rotate(-90deg) translate(0px, 0px);
-        -o-transform: rotate(-90deg) translate(0px, 0px);
-        transform: rotate(-90deg) translate(0px, 0px);
-    }
-    100% {
-        -moz-transform: rotate(-90deg) translate(0px, -110px);
-        -ms-transform: rotate(-90deg) translate(0px, -110px);
-        -o-transform: rotate(-90deg) translate(0px, -110px);
-        transform: rotate(-90deg) translate(0px, -110px);
-    }
-}
-
-@-webkit-keyframes logo1Mobile {
-    0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
-    50% {-webkit-transform: rotate(-90deg) translate(0px, 0px);}
-    100% {-webkit-transform: rotate(-90deg) translate(0px, -110px);}
-}
-
-.codeAnim2 {
-    @mixin animation_name(logo2);
-}
-
-@keyframes logo2 {
-    0% {
-        -moz-transform: rotate(0deg) translate(0px, 0px);
-        -ms-transform: rotate(0deg) translate(0px, 0px);
-        -o-transform: rotate(0deg) translate(0px, 0px);
-        transform: rotate(0deg) translate(0px, 0px);
-    }
-    50% {
-        -moz-transform: rotate(90deg) translate(0px, 0px);
-        -ms-transform: rotate(90deg) translate(0px, 0px);
-        -o-transform: rotate(90deg) translate(0px, 0px);
-        transform: rotate(90deg) translate(0px, 0px);
-    }
-    100% {
-        -moz-transform: rotate(90deg) translate(0px, -285px);
-        -ms-transform: rotate(90deg) translate(0px, -285px);
-        -o-transform: rotate(90deg) translate(0px, -285px);
-        transform: rotate(90deg) translate(0px, -285px);
-    }
-}
-
-@-webkit-keyframes logo2 {
-    0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
-    50% {-webkit-transform: rotate(90deg) translate(0px, 0px);}
-    100% {-webkit-transform: rotate(90deg) translate(0px, -285px);}
-}
-
-@keyframes logo2Mobile {
-    0% {
-        -moz-transform: rotate(0deg) translate(0px, 0px);
-        -ms-transform: rotate(0deg) translate(0px, 0px);
-        -o-transform: rotate(0deg) translate(0px, 0px);
-        transform: rotate(0deg) translate(0px, 0px);
-    }
-    50% {
-        -moz-transform: rotate(90deg) translate(0px, 0px);
-        -ms-transform: rotate(90deg) translate(0px, 0px);
-        -o-transform: rotate(90deg) translate(0px, 0px);
-        transform: rotate(90deg) translate(0px, 0px);
-    }
-    100% {
-        -moz-transform: rotate(90deg) translate(0px, -108px);
-        -ms-transform: rotate(90deg) translate(0px, -108px);
-        -o-transform: rotate(90deg) translate(0px, -108px);
-        transform: rotate(90deg) translate(0px, -108px);
-    }
-}
-
-@-webkit-keyframes logo2Mobile {
-    0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
-    50% {-webkit-transform: rotate(90deg) translate(0px, 0px);}
-    100% {-webkit-transform: rotate(90deg) translate(0px, -108px);}
-}
-
-.codeAnim3 {
-    @mixin animation_name(slash);
-}
-
-@keyframes slash {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-
-@-webkit-keyframes slash {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-
-@media (max-width: 979px) {
-    .expertises .header i.icon1,
-    .expertises .header i.icon2 {
-        margin: 80px -112px 0 0;
-    }
-
-    .expertises .header div.icon3 {
-        margin-top: 35px;
-    }
-}
-
-@media (max-width: 649px) {
-    .header {
-        -webkit-background-size: 90% auto;
-        background-size: 90% auto;
-
-        min-height: 200px;
-    }
+@if (!is("ie8") && !is("ie9")) {
 
     .expertises .header i.icon1,
     .expertises .header i.icon2 {
-        font-size: 10rem;
+        font-size: 26rem;
 
-        margin: 70px -50px 0 0;
-    }
+        margin: 40px -120px 0 0;
 
-    .expertises .header > div {
-        margin-top: -115px;
+        right: 50%;
+        position: absolute;
+
+    @mixin animation_delay(.5 s);
+    @mixin animation_duration(1 s);
     }
 
     .expertises .header div.icon3 {
-        margin-top: 85px;
+        margin: 15px -115px 0;
+        width: 230px;
 
-        zoom: .45;
+        right: 50%;
+        position: absolute;
+
+        @mixin animation_delay(1.5 s);
+        @mixin animation_duration(4 s);
     }
 
     .codeAnim1 {
-    @mixin animation_name(logo1Mobile);
+        @mixin animation_name(logo1);
+    }
+
+    @keyframes logo1 {
+        0% {
+            -moz-transform: rotate(0deg) translate(0px, 0px);
+            -ms-transform: rotate(0deg) translate(0px, 0px);
+            -o-transform: rotate(0deg) translate(0px, 0px);
+            transform: rotate(0deg) translate(0px, 0px);
+        }
+        50% {
+            -moz-transform: rotate(-90deg) translate(0px, 0px);
+            -ms-transform: rotate(-90deg) translate(0px, 0px);
+            -o-transform: rotate(-90deg) translate(0px, 0px);
+            transform: rotate(-90deg) translate(0px, 0px);
+        }
+        100% {
+            -moz-transform: rotate(-90deg) translate(0px, -262px);
+            -ms-transform: rotate(-90deg) translate(0px, -262px);
+            -o-transform: rotate(-90deg) translate(0px, -262px);
+            transform: rotate(-90deg) translate(0px, -262px);
+        }
+    }
+
+    @-webkit-keyframes logo1 {
+        0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
+        50% {-webkit-transform: rotate(-90deg) translate(0px, 0px);}
+        100% {-webkit-transform: rotate(-90deg) translate(0px, -262px);}
+    }
+
+    @keyframes logo1Mobile {
+        0% {
+            -moz-transform: rotate(0deg) translate(0px, 0px);
+            -ms-transform: rotate(0deg) translate(0px, 0px);
+            -o-transform: rotate(0deg) translate(0px, 0px);
+            transform: rotate(0deg) translate(0px, 0px);
+        }
+        50% {
+            -moz-transform: rotate(-90deg) translate(0px, 0px);
+            -ms-transform: rotate(-90deg) translate(0px, 0px);
+            -o-transform: rotate(-90deg) translate(0px, 0px);
+            transform: rotate(-90deg) translate(0px, 0px);
+        }
+        100% {
+            -moz-transform: rotate(-90deg) translate(0px, -110px);
+            -ms-transform: rotate(-90deg) translate(0px, -110px);
+            -o-transform: rotate(-90deg) translate(0px, -110px);
+            transform: rotate(-90deg) translate(0px, -110px);
+        }
+    }
+
+    @-webkit-keyframes logo1Mobile {
+        0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
+        50% {-webkit-transform: rotate(-90deg) translate(0px, 0px);}
+        100% {-webkit-transform: rotate(-90deg) translate(0px, -110px);}
+    }
+
+        .codeAnim2 {
+            @mixin animation_name(logo2);
+        }
+
+    @keyframes logo2 {
+        0% {
+            -moz-transform: rotate(0deg) translate(0px, 0px);
+            -ms-transform: rotate(0deg) translate(0px, 0px);
+            -o-transform: rotate(0deg) translate(0px, 0px);
+            transform: rotate(0deg) translate(0px, 0px);
+        }
+        50% {
+            -moz-transform: rotate(90deg) translate(0px, 0px);
+            -ms-transform: rotate(90deg) translate(0px, 0px);
+            -o-transform: rotate(90deg) translate(0px, 0px);
+            transform: rotate(90deg) translate(0px, 0px);
+        }
+        100% {
+            -moz-transform: rotate(90deg) translate(0px, -285px);
+            -ms-transform: rotate(90deg) translate(0px, -285px);
+            -o-transform: rotate(90deg) translate(0px, -285px);
+            transform: rotate(90deg) translate(0px, -285px);
+        }
+    }
+
+    @-webkit-keyframes logo2 {
+        0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
+        50% {-webkit-transform: rotate(90deg) translate(0px, 0px);}
+        100% {-webkit-transform: rotate(90deg) translate(0px, -285px);}
+    }
+
+    @keyframes logo2Mobile {
+        0% {
+            -moz-transform: rotate(0deg) translate(0px, 0px);
+            -ms-transform: rotate(0deg) translate(0px, 0px);
+            -o-transform: rotate(0deg) translate(0px, 0px);
+            transform: rotate(0deg) translate(0px, 0px);
+        }
+        50% {
+            -moz-transform: rotate(90deg) translate(0px, 0px);
+            -ms-transform: rotate(90deg) translate(0px, 0px);
+            -o-transform: rotate(90deg) translate(0px, 0px);
+            transform: rotate(90deg) translate(0px, 0px);
+        }
+        100% {
+            -moz-transform: rotate(90deg) translate(0px, -108px);
+            -ms-transform: rotate(90deg) translate(0px, -108px);
+            -o-transform: rotate(90deg) translate(0px, -108px);
+            transform: rotate(90deg) translate(0px, -108px);
+        }
+    }
+
+    @-webkit-keyframes logo2Mobile {
+        0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
+        50% {-webkit-transform: rotate(90deg) translate(0px, 0px);}
+        100% {-webkit-transform: rotate(90deg) translate(0px, -108px);}
+    }
+
+        .codeAnim3 {
+        @mixin animation_name(slash);
+        }
+
+    @keyframes slash {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+
+    @-webkit-keyframes slash {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+
+    @media (max-width: 979px) {
+        .expertises .header i.icon1,
+        .expertises .header i.icon2 {
+            margin: 80px -112px 0 0;
+        }
+
+        .expertises .header div.icon3 {
+            margin-top: 35px;
+        }
+    }
+
+    @media (max-width: 649px) {
+        .header {
+            -webkit-background-size: 90% auto;
+            background-size: 90% auto;
+
+            min-height: 200px;
+        }
+
+        .expertises .header i.icon1,
+        .expertises .header i.icon2 {
+            font-size: 10rem;
+
+            margin: 70px -50px 0 0;
+        }
+
+        .expertises .header > div {
+            margin-top: -115px;
+        }
+
+        .expertises .header div.icon3 {
+            margin-top: 85px;
+
+            zoom: .45;
+        }
+
+        .codeAnim1 {
+            @mixin animation_name(logo1Mobile);
+        }
+
+        .codeAnim2 {
+            @mixin animation_name(logo2Mobile);
+        }
+    }
+
+} @else {
+    .expertises .header i.icon1 {
+        font-size: 26rem;
+
+        margin: 40px 135px 0 0;
+
+        right: 50%;
+        position: absolute;
+
+        @mixin rotate(-90deg);
+    }
+
+    .expertises .header i.icon2 {
+        font-size: 26rem;
+
+        margin: 40px -400px 0 0;
+
+        right: 50%;
+        position: absolute;
+
+        @mixin rotate(90deg);
+    }
+
+    .expertises .header div.icon3 {
+        margin: 15px -115px 0;
+        width: 230px;
+
+        right: 50%;
+        position: absolute;
+
+    }
+
+    .codeAnim1 {
+        @mixin animation_name(logo1);
     }
 
     .codeAnim2 {
-    @mixin animation_name(logo2Mobile);
+        @mixin animation_name(logo2);
+    }
+
+    .codeAnim3 {
+        @mixin animation_name(slash);
     }
 }
 

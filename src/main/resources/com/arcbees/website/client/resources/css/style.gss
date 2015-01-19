@@ -1201,7 +1201,7 @@ a.backTop {
     width: 25px;
     margin: 45px auto -6px;
 
-    @mixin rotate_180_ccw();
+    @mixin rotate(180deg);
 }
 
 .footer {

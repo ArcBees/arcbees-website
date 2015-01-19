@@ -70,9 +70,11 @@
                 </h2>
                 <ul>
                     <ui:msg description="Francois's prof achievements">
-                        <li>Father of three fantastic kids.</li>
-                        <li>Has discovered how to manage the balance between family, work and friends.</li>
-                        <li>Runs half marathons and maintains a focus on the importance of health.</li>
+                        <li>Was smart enough to recognize Arcbees potential and to join them with the objective of propelling
+                            their growth.
+                        </li>
+                        <li>Proud founder and CEO of LEVIO Consulting. LEVIO … Focusing on essentials, driving results.</li>
+                        <li>Former Executive of “big blue” as COO of its most important affiliate in Québec, LGS.</li>
                     </ui:msg>
                 </ul>
                 <h2>
@@ -80,11 +82,9 @@
                 </h2>
                 <ul>
                     <ui:msg description="Francois's pers achievements">
-                        <li>Was smart enough to recognize Arcbees potential and to join them with the objective of propelling
-                            their growth.
-                        </li>
-                        <li>Proud founder and CEO of LEVIO Consulting. LEVIO … Focusing on essentials, driving results.</li>
-                        <li>Former Executive of “big blue” as COO of its most important affiliate in Québec, LGS.</li>
+                        <li>Father of three fantastic kids.</li>
+                        <li>Has discovered how to manage the balance between family, work and friends.</li>
+                        <li>Runs half marathons and maintains a focus on the importance of health.</li>
                     </ui:msg>
                 </ul>
             </div>

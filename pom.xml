@@ -35,6 +35,7 @@
         <guava.version>18.0</guava.version>
         <universal-analytics.version>2.1</universal-analytics.version>
         <velocity.version>1.7</velocity.version>
+        <gwt-seo.version>0.1-SNAPSHOT</gwt-seo.version>
 
         <webappDirectory>${project.build.directory}/${project.build.finalName}</webappDirectory>
         <gae.home>
@@ -84,6 +85,12 @@
         </dependency>
 
         <!-- Other -->
+        <dependency>
+            <groupId>com.arcbees.seo</groupId>
+            <artifactId>gwt-seo</artifactId>
+            <version>${gwt-seo.version}</version>
+            <scope>provided</scope>
+        </dependency>
         <dependency>
             <groupId>com.arcbees.gss</groupId>
             <artifactId>gsss</artifactId>

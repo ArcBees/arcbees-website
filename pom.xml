@@ -23,7 +23,7 @@
 
         <gwt.version>2.7.0</gwt.version>
         <gae.version>1.9.9</gae.version>
-        <gwtp.version>1.4</gwtp.version>
+        <gwtp.version>1.5-SNAPSHOT</gwtp.version>
         <guice.version>3.0</guice.version>
         <gin.version>2.1.2</gin.version>
         <gsss.version>1.0-SNAPSHOT</gsss.version>

@@ -704,11 +704,11 @@
 
 @-webkit-keyframes partner {
     from {
-        -webkit-transform: translate(100px,0px);
+        -webkit-transform: translate(100px, 0px);
         opacity:0;
     }
     to {
-        -webkit-transform: translate(0px,0px);
+        -webkit-transform: translate(0px, 0px);
         opacity: 1;
     }
 }

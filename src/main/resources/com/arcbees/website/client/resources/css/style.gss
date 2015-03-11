@@ -1151,7 +1151,7 @@ img {
 }
 
 .productsCarousel a:before {
-    color: #eaebeb;
+    color: #e3e3e3;
 }
 
 .productsCarousel a.gae:hover:before,

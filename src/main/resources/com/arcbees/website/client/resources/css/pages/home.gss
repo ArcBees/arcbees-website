@@ -348,14 +348,15 @@
 }
 
 .home .ssicons img {
-    margin-left: -2rem;
+    margin-left: -1.5rem;
 }
 
 .home .ssiconsHexa {
-    margin-left: -267px;
+    margin-left: -24.8rem;
+    width: 49.7rem;
 
     position: absolute;
-    top: 0;
+    top: -1.6rem;
     left: 50%;
 }
 
@@ -368,6 +369,16 @@
 @media (max-width: 979px) {
     .home .beeTheBest p {
         font-size: 1.8rem;
+    }
+
+    .home .ssicons img {
+        margin-left: 0;
+    }
+
+    .home .ssiconsHexa {
+        margin-left: -50%;
+        width: 100%;
+        top: 0;
     }
 }
 

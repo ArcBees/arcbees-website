@@ -217,7 +217,7 @@
                 <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                     <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_t_1_3} {res.grid.col_t_push_0} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                         <i class="{fonts.icons.iconCommRes}"></i>
-                        <h3>
+                        <h3 class="{page.style.ressCommunautaire}">
                             <ui:msg description="Community Resources">Community
                                 <span>Resources</span>
                             </ui:msg>

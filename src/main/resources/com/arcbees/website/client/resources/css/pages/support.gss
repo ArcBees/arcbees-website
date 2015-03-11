@@ -463,6 +463,24 @@
     margin-top: .75em;
 }
 
+@if (!is("locale",  "en")) {
+    .ressCommunautaire span {
+        text-indent: -13px;
+    }
+
+    @media (max-width: 979px) {
+        .ressCommunautaire span {
+            text-indent: 0;
+        }
+    }
+
+    @media (max-width: 649px) {
+        .ressCommunautaire span {
+            text-indent: 0;
+        }
+    }
+}
+
 .features p {
     margin-bottom: 65px;
 }

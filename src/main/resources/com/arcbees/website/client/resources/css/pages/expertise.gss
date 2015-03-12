@@ -51,56 +51,56 @@
 
     @keyframes logo1 {
         0% {
-            -moz-transform: rotate(0deg) translate(0px, 0px);
-            -ms-transform: rotate(0deg) translate(0px, 0px);
-            -o-transform: rotate(0deg) translate(0px, 0px);
-            transform: rotate(0deg) translate(0px, 0px);
+            -moz-transform: rotate(0deg) translate(0, 0);
+            -ms-transform: rotate(0deg) translate(0, 0);
+            -o-transform: rotate(0deg) translate(0, 0);
+            transform: rotate(0deg) translate(0, 0);
         }
         50% {
-            -moz-transform: rotate(-90deg) translate(0px, 0px);
-            -ms-transform: rotate(-90deg) translate(0px, 0px);
-            -o-transform: rotate(-90deg) translate(0px, 0px);
-            transform: rotate(-90deg) translate(0px, 0px);
+            -moz-transform: rotate(-90deg) translate(0, 0);
+            -ms-transform: rotate(-90deg) translate(0, 0);
+            -o-transform: rotate(-90deg) translate(0, 0);
+            transform: rotate(-90deg) translate(0, 0);
         }
         100% {
-            -moz-transform: rotate(-90deg) translate(0px, -262px);
-            -ms-transform: rotate(-90deg) translate(0px, -262px);
-            -o-transform: rotate(-90deg) translate(0px, -262px);
-            transform: rotate(-90deg) translate(0px, -262px);
+            -moz-transform: rotate(-90deg) translate(0, -262px);
+            -ms-transform: rotate(-90deg) translate(0, -262px);
+            -o-transform: rotate(-90deg) translate(0, -262px);
+            transform: rotate(-90deg) translate(0, -262px);
         }
     }
 
     @-webkit-keyframes logo1 {
-        0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
-        50% {-webkit-transform: rotate(-90deg) translate(0px, 0px);}
-        100% {-webkit-transform: rotate(-90deg) translate(0px, -262px);}
+        0% {-webkit-transform: rotate(0deg) translate(0, 0);}
+        50% {-webkit-transform: rotate(-90deg) translate(0, 0);}
+        100% {-webkit-transform: rotate(-90deg) translate(0, -262px);}
     }
 
     @keyframes logo1Mobile {
         0% {
-            -moz-transform: rotate(0deg) translate(0px, 0px);
-            -ms-transform: rotate(0deg) translate(0px, 0px);
-            -o-transform: rotate(0deg) translate(0px, 0px);
-            transform: rotate(0deg) translate(0px, 0px);
+            -moz-transform: rotate(0deg) translate(0, 0);
+            -ms-transform: rotate(0deg) translate(0, 0);
+            -o-transform: rotate(0deg) translate(0, 0);
+            transform: rotate(0deg) translate(0, 0);
         }
         50% {
-            -moz-transform: rotate(-90deg) translate(0px, 0px);
-            -ms-transform: rotate(-90deg) translate(0px, 0px);
-            -o-transform: rotate(-90deg) translate(0px, 0px);
-            transform: rotate(-90deg) translate(0px, 0px);
+            -moz-transform: rotate(-90deg) translate(0, 0);
+            -ms-transform: rotate(-90deg) translate(0, 0);
+            -o-transform: rotate(-90deg) translate(0, 0);
+            transform: rotate(-90deg) translate(0, 0);
         }
         100% {
-            -moz-transform: rotate(-90deg) translate(0px, -110px);
-            -ms-transform: rotate(-90deg) translate(0px, -110px);
-            -o-transform: rotate(-90deg) translate(0px, -110px);
-            transform: rotate(-90deg) translate(0px, -110px);
+            -moz-transform: rotate(-90deg) translate(0, -110px);
+            -ms-transform: rotate(-90deg) translate(0, -110px);
+            -o-transform: rotate(-90deg) translate(0, -110px);
+            transform: rotate(-90deg) translate(0, -110px);
         }
     }
 
     @-webkit-keyframes logo1Mobile {
-        0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
-        50% {-webkit-transform: rotate(-90deg) translate(0px, 0px);}
-        100% {-webkit-transform: rotate(-90deg) translate(0px, -110px);}
+        0% {-webkit-transform: rotate(0deg) translate(0, 0);}
+        50% {-webkit-transform: rotate(-90deg) translate(0, 0);}
+        100% {-webkit-transform: rotate(-90deg) translate(0, -110px);}
     }
 
         .codeAnim2 {
@@ -109,56 +109,56 @@
 
     @keyframes logo2 {
         0% {
-            -moz-transform: rotate(0deg) translate(0px, 0px);
-            -ms-transform: rotate(0deg) translate(0px, 0px);
-            -o-transform: rotate(0deg) translate(0px, 0px);
-            transform: rotate(0deg) translate(0px, 0px);
+            -moz-transform: rotate(0deg) translate(0, 0);
+            -ms-transform: rotate(0deg) translate(0, 0);
+            -o-transform: rotate(0deg) translate(0, 0);
+            transform: rotate(0deg) translate(0, 0);
         }
         50% {
-            -moz-transform: rotate(90deg) translate(0px, 0px);
-            -ms-transform: rotate(90deg) translate(0px, 0px);
-            -o-transform: rotate(90deg) translate(0px, 0px);
-            transform: rotate(90deg) translate(0px, 0px);
+            -moz-transform: rotate(90deg) translate(0, 0);
+            -ms-transform: rotate(90deg) translate(0, 0);
+            -o-transform: rotate(90deg) translate(0, 0);
+            transform: rotate(90deg) translate(0, 0);
         }
         100% {
-            -moz-transform: rotate(90deg) translate(0px, -285px);
-            -ms-transform: rotate(90deg) translate(0px, -285px);
-            -o-transform: rotate(90deg) translate(0px, -285px);
-            transform: rotate(90deg) translate(0px, -285px);
+            -moz-transform: rotate(90deg) translate(0, -285px);
+            -ms-transform: rotate(90deg) translate(0, -285px);
+            -o-transform: rotate(90deg) translate(0, -285px);
+            transform: rotate(90deg) translate(0, -285px);
         }
     }
 
     @-webkit-keyframes logo2 {
-        0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
-        50% {-webkit-transform: rotate(90deg) translate(0px, 0px);}
-        100% {-webkit-transform: rotate(90deg) translate(0px, -285px);}
+        0% {-webkit-transform: rotate(0deg) translate(0, 0);}
+        50% {-webkit-transform: rotate(90deg) translate(0, 0);}
+        100% {-webkit-transform: rotate(90deg) translate(0, -285px);}
     }
 
     @keyframes logo2Mobile {
         0% {
-            -moz-transform: rotate(0deg) translate(0px, 0px);
-            -ms-transform: rotate(0deg) translate(0px, 0px);
-            -o-transform: rotate(0deg) translate(0px, 0px);
-            transform: rotate(0deg) translate(0px, 0px);
+            -moz-transform: rotate(0deg) translate(0, 0);
+            -ms-transform: rotate(0deg) translate(0, 0);
+            -o-transform: rotate(0deg) translate(0, 0);
+            transform: rotate(0deg) translate(0, 0);
         }
         50% {
-            -moz-transform: rotate(90deg) translate(0px, 0px);
-            -ms-transform: rotate(90deg) translate(0px, 0px);
-            -o-transform: rotate(90deg) translate(0px, 0px);
-            transform: rotate(90deg) translate(0px, 0px);
+            -moz-transform: rotate(90deg) translate(0, 0);
+            -ms-transform: rotate(90deg) translate(0, 0);
+            -o-transform: rotate(90deg) translate(0, 0);
+            transform: rotate(90deg) translate(0, 0);
         }
         100% {
-            -moz-transform: rotate(90deg) translate(0px, -108px);
-            -ms-transform: rotate(90deg) translate(0px, -108px);
-            -o-transform: rotate(90deg) translate(0px, -108px);
-            transform: rotate(90deg) translate(0px, -108px);
+            -moz-transform: rotate(90deg) translate(0, -108px);
+            -ms-transform: rotate(90deg) translate(0, -108px);
+            -o-transform: rotate(90deg) translate(0, -108px);
+            transform: rotate(90deg) translate(0, -108px);
         }
     }
 
     @-webkit-keyframes logo2Mobile {
-        0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
-        50% {-webkit-transform: rotate(90deg) translate(0px, 0px);}
-        100% {-webkit-transform: rotate(90deg) translate(0px, -108px);}
+        0% {-webkit-transform: rotate(0deg) translate(0, 0);}
+        50% {-webkit-transform: rotate(90deg) translate(0, 0);}
+        100% {-webkit-transform: rotate(90deg) translate(0, -108px);}
     }
 
         .codeAnim3 {

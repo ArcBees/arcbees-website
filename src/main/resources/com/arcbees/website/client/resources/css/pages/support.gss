@@ -37,10 +37,10 @@
 
     @keyframes icon1 {
         0% {
-            -moz-transform: rotate(0deg) translate(0px, 0px);
-            -ms-transform: rotate(0deg) translate(0px, 0px);
-            -o-transform: rotate(0deg) translate(0px, 0px);
-            transform: rotate(0deg) translate(0px, 0px);
+            -moz-transform: rotate(0deg) translate(0, 0);
+            -ms-transform: rotate(0deg) translate(0, 0);
+            -o-transform: rotate(0deg) translate(0, 0);
+            transform: rotate(0deg) translate(0, 0);
         }
         100% {
             -moz-transform: rotate(-135deg) translate(50px, 170px);
@@ -51,16 +51,16 @@
     }
 
     @-webkit-keyframes icon1 {
-        0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
+        0% {-webkit-transform: rotate(0deg) translate(0, 0);}
         100% {-webkit-transform: rotate(-135deg) translate(50px, 170px);}
     }
 
     @keyframes icon1Mobile {
         0% {
-            -moz-transform: rotate(0deg) translate(0px, 0px);
-            -ms-transform: rotate(0deg) translate(0px, 0px);
-            -o-transform: rotate(0deg) translate(0px, 0px);
-            transform: rotate(0deg) translate(0px, 0px);
+            -moz-transform: rotate(0deg) translate(0, 0);
+            -ms-transform: rotate(0deg) translate(0, 0);
+            -o-transform: rotate(0deg) translate(0, 0);
+            transform: rotate(0deg) translate(0, 0);
         }
         100% {
             -moz-transform: rotate(-135deg) translate(25px, 85px);
@@ -71,7 +71,7 @@
     }
 
     @-webkit-keyframes icon1Mobile {
-        0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
+        0% {-webkit-transform: rotate(0deg) translate(0, 0);}
         100% {-webkit-transform: rotate(-135deg) translate(25px, 85px);}
     }
 
@@ -83,10 +83,10 @@
 
     @keyframes icon2 {
         0% {
-            -moz-transform: rotate(0deg) translate(0px, 0px);
-            -ms-transform: rotate(0deg) translate(0px, 0px);
-            -o-transform: rotate(0deg) translate(0px, 0px);
-            transform: rotate(0deg) translate(0px, 0px);
+            -moz-transform: rotate(0deg) translate(0, 0);
+            -ms-transform: rotate(0deg) translate(0, 0);
+            -o-transform: rotate(0deg) translate(0, 0);
+            transform: rotate(0deg) translate(0, 0);
         }
         100% {
             -moz-transform: rotate(135deg) translate(-50px, 170px);
@@ -97,16 +97,16 @@
     }
 
     @-webkit-keyframes icon2 {
-        0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
+        0% {-webkit-transform: rotate(0deg) translate(0, 0);}
         100% {-webkit-transform: rotate(135deg) translate(-50px, 170px);}
     }
 
     @keyframes icon2Mobile {
         0% {
-            -moz-transform: rotate(0deg) translate(0px, 0px);
-            -ms-transform: rotate(0deg) translate(0px, 0px);
-            -o-transform: rotate(0deg) translate(0px, 0px);
-            transform: rotate(0deg) translate(0px, 0px);
+            -moz-transform: rotate(0deg) translate(0, 0);
+            -ms-transform: rotate(0deg) translate(0, 0);
+            -o-transform: rotate(0deg) translate(0, 0);
+            transform: rotate(0deg) translate(0, 0);
         }
         100% {
             -moz-transform: rotate(135deg) translate(-25px, 85px);
@@ -117,7 +117,7 @@
     }
 
     @-webkit-keyframes icon2Mobile {
-        0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
+        0% {-webkit-transform: rotate(0deg) translate(0, 0);}
         100% {-webkit-transform: rotate(135deg) translate(-25px, 85px);}
     }
 
@@ -129,10 +129,10 @@
 
     @keyframes icon3 {
         0% {
-            -moz-transform: rotate(0deg) translate(0px, 0px);
-            -ms-transform: rotate(0deg) translate(0px, 0px);
-            -o-transform: rotate(0deg) translate(0px, 0px);
-            transform: rotate(0deg) translate(0px, 0px);
+            -moz-transform: rotate(0deg) translate(0, 0);
+            -ms-transform: rotate(0deg) translate(0, 0);
+            -o-transform: rotate(0deg) translate(0, 0);
+            transform: rotate(0deg) translate(0, 0);
         }
         100% {
             -moz-transform: rotate(-45deg) translate(50px, 70px);
@@ -143,16 +143,16 @@
     }
 
     @-webkit-keyframes icon3 {
-        0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
+        0% {-webkit-transform: rotate(0deg) translate(0, 0);}
         100% {-webkit-transform: rotate(-45deg) translate(50px, 70px);}
     }
 
     @keyframes icon3Mobile {
         0% {
-            -moz-transform: rotate(0deg) translate(0px, 0px);
-            -ms-transform: rotate(0deg) translate(0px, 0px);
-            -o-transform: rotate(0deg) translate(0px, 0px);
-            transform: rotate(0deg) translate(0px, 0px);
+            -moz-transform: rotate(0deg) translate(0, 0);
+            -ms-transform: rotate(0deg) translate(0, 0);
+            -o-transform: rotate(0deg) translate(0, 0);
+            transform: rotate(0deg) translate(0, 0);
         }
         100% {
             -moz-transform: rotate(135deg) translate(25px, 35px);
@@ -163,7 +163,7 @@
     }
 
     @-webkit-keyframes icon3Mobile {
-        0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
+        0% {-webkit-transform: rotate(0deg) translate(0, 0);}
         100% {-webkit-transform: rotate(-45deg) translate(25px, 35px);}
     }
 
@@ -175,10 +175,10 @@
 
     @keyframes icon4 {
         0% {
-            -moz-transform: rotate(0deg) translate(0px, 0px);
-            -ms-transform: rotate(0deg) translate(0px, 0px);
-            -o-transform: rotate(0deg) translate(0px, 0px);
-            transform: rotate(0deg) translate(0px, 0px);
+            -moz-transform: rotate(0deg) translate(0, 0);
+            -ms-transform: rotate(0deg) translate(0, 0);
+            -o-transform: rotate(0deg) translate(0, 0);
+            transform: rotate(0deg) translate(0, 0);
         }
         100% {
             -moz-transform: rotate(45deg) translate(-50px, 70px);
@@ -189,16 +189,16 @@
     }
 
     @-webkit-keyframes icon4 {
-        0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
+        0% {-webkit-transform: rotate(0deg) translate(0, 0);}
         100% {-webkit-transform: rotate(45deg) translate(-50px, 70px);}
     }
 
     @keyframes icon4Mobile {
         0% {
-            -moz-transform: rotate(0deg) translate(0px, 0px);
-            -ms-transform: rotate(0deg) translate(0px, 0px);
-            -o-transform: rotate(0deg) translate(0px, 0px);
-            transform: rotate(0deg) translate(0px, 0px);
+            -moz-transform: rotate(0deg) translate(0, 0);
+            -ms-transform: rotate(0deg) translate(0, 0);
+            -o-transform: rotate(0deg) translate(0, 0);
+            transform: rotate(0deg) translate(0, 0);
         }
         100% {
             -moz-transform: rotate(135deg) translate(-25px, 35px);
@@ -209,7 +209,7 @@
     }
 
     @-webkit-keyframes icon4Mobile {
-        0% {-webkit-transform: rotate(0deg) translate(0px, 0px);}
+        0% {-webkit-transform: rotate(0deg) translate(0, 0);}
         100% {-webkit-transform: rotate(45deg) translate(-25px, 35px);}
     }
 } @else {
@@ -302,7 +302,7 @@
     }
 
     .offers {
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
 }
 

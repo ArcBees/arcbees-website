@@ -347,7 +347,7 @@
     .bees .bee,
     .bees .bee:nth-child(even),
     .bees .bee:nth-child(odd) {
-        margin: 0 0 0px;
+        margin: 0 0 0;
     }
 
     .bees .bee {

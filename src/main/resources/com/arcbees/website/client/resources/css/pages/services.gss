@@ -83,66 +83,66 @@
 
 @keyframes pyramid1 {
     0% {
-        @mixin translate(0px, 240px);
+        @mixin translate(0, 240px);
         opacity: 0;
     }
     100% {
-        @mixin translate(0px, 0px);
+        @mixin translate(0, 0);
         opacity: 1;
     }
 }
 
 @-webkit-keyframes pyramid1 {
     0% {
-        -webkit-transform: translate(0px, 240px);
+        -webkit-transform: translate(0, 240px);
         opacity: 0;
     }
     100% {
-        -webkit-transform: translate(0px, 0px);
+        -webkit-transform: translate(0, 0);
         opacity: 1;
     }
 }
 
 @keyframes pyramid2 {
     0% {
-        @mixin translate(0px, 320px);
+        @mixin translate(0, 320px);
         opacity: 0;
     }
     100% {
-        @mixin translate(0px, 0px);
+        @mixin translate(0, 0);
         opacity: 1;
     }
 }
 
 @-webkit-keyframes pyramid2 {
     0% {
-        -webkit-transform: translate(0px, 320px);
+        -webkit-transform: translate(0, 320px);
         opacity: 0;
     }
     100% {
-        -webkit-transform: translate(0px, 0px);
+        -webkit-transform: translate(0, 0);
         opacity: 1;
     }
 }
 
 @keyframes pyramid3 {
     0% {
-        @mixin translate(0px, 500px);
+        @mixin translate(0, 500px);
         opacity: 0;
     }
     100% {
-        @mixin translate(0px, 0px);
+        @mixin translate(0, 0);
         opacity: 1;
     }
 }
 
 @-webkit-keyframes pyramid3 {
     0% {
-        -webkit-transform: translate(0px, 500px);
+        -webkit-transform: translate(0, 500px);
         opacity: 0;
     }
     100% {
-        -webkit-transform: translate(0px, 0px);
+        -webkit-transform: translate(0, 0);
         opacity: 1;
     }
 }
@@ -575,7 +575,7 @@
 }
 
 .partner .diagram::before {
-    top: 0px;
+    top: 0;
 }
 
 .partner .diagram::after {
@@ -621,7 +621,7 @@
 .partner i.icon3 {
     margin-right: -38px;
 
-    top: 0px;
+    top: 0;
     right: 50%;
 
     @mixin animation_delay(.9s);
@@ -693,22 +693,22 @@
 
 @keyframes partner {
     from {
-        @mixin translate(100px, 0px);
+        @mixin translate(100px, 0);
         opacity:0;
     }
     to {
-        @mixin translate(0px, 0px);
+        @mixin translate(0, 0);
         opacity: 1;
     }
 }
 
 @-webkit-keyframes partner {
     from {
-        -webkit-transform: translate(100px, 0px);
+        -webkit-transform: translate(100px, 0);
         opacity:0;
     }
     to {
-        -webkit-transform: translate(0px, 0px);
+        -webkit-transform: translate(0, 0);
         opacity: 1;
     }
 }
@@ -995,22 +995,22 @@
 
 @keyframes hexaMoveCR {
     0% {
-        @mixin translate(0px, 0px);
+        @mixin translate(0, 0);
         opacity: 0;
     }
     100% {
-        @mixin translate(0px, 40px);
+        @mixin translate(0, 40px);
         opacity: 1;
     }
 }
 
 @-webkit-keyframes hexaMoveCR {
     0% {
-        -webkit-transform:translate(0px, 0px);
+        -webkit-transform:translate(0, 0);
         opacity: 0;
     }
     100% {
-        -webkit-transform: translate(0px, 40px);
+        -webkit-transform: translate(0, 40px);
         opacity: 1;
     }
 }
@@ -1194,7 +1194,7 @@
 }
 
 .costRisk i.icon3 {
-    margin-left: 0px;
+    margin-left: 0;
 
     top: 63px;
     left: 50%;
@@ -1315,7 +1315,7 @@
 .learnAdapt i.icon3 {
     margin-right: -29px;
 
-    top: 0px;
+    top: 0;
     right: 50%;
 
     @mixin animation_delay(1.9s);

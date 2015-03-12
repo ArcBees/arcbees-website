@@ -53,23 +53,23 @@
 }
 
 @keyframes bees {
-    0% {@mixin translate(0px, 0px);}
-    100% {@mixin translate(255px, 0px);}
+    0% {@mixin translate(0, 0);}
+    100% {@mixin translate(255px, 0);}
 }
 
 @-webkit-keyframes bees {
-    0% {-webkit-transform: translate(0px,0px);}
-    100% {-webkit-transform: translate(255px, 0px);}
+    0% {-webkit-transform: translate(0, 0);}
+    100% {-webkit-transform: translate(255px, 0);}
 }
 
 @keyframes beesMobile {
-    0% {@mixin translate(0px, 0px);}
-    100% {@mixin translate(120px, 0px);}
+    0% {@mixin translate(0, 0);}
+    100% {@mixin translate(120px, 0);}
 }
 
 @-webkit-keyframes beesMobile {
-    0% {-webkit-transform: translate(0px,0px);}
-    100% {-webkit-transform: translate(120px, 0px);}
+    0% {-webkit-transform: translate(0, 0);}
+    100% {-webkit-transform: translate(120px, 0);}
 }
 
 @if (!is("ie8") && !is("ie9")) {
@@ -102,23 +102,23 @@
 
     @if (!is("locale",  "en")) {
         @keyframes bees {
-            0% {@mixin translate(0px, 0px);}
-            100% {@mixin translate(350px, 0px);}
+            0% {@mixin translate(0, 0);}
+            100% {@mixin translate(350px, 0);}
         }
 
         @-webkit-keyframes bees {
-            0% {-webkit-transform: translate(0px, 0px);}
-            100% {-webkit-transform: translate(350px, 0px);}
+            0% {-webkit-transform: translate(0, 0);}
+            100% {-webkit-transform: translate(350px, 0);}
         }
 
         @keyframes beesMobile {
-            0% {@mixin translate(0px, 0px);}
-            100% {@mixin translate(150px, 0px);}
+            0% {@mixin translate(0, 0);}
+            100% {@mixin translate(150px, 0);}
         }
 
         @-webkit-keyframes beesMobile {
-            0% {-webkit-transform: translate(0px, 0px);}
-            100% {-webkit-transform: translate(150px, 0px);}
+            0% {-webkit-transform: translate(0, 0);}
+            100% {-webkit-transform: translate(150px, 0);}
         }
     }
 
@@ -311,7 +311,7 @@
 
 @if (is("ie8") || is("ie9")) {
     .home .beesContent {
-        padding-top: 0px;
+        padding-top: 0;
         margin-top: -60px;
     }
 }
@@ -348,14 +348,15 @@
 }
 
 .home .ssicons img {
-    margin-left: -2rem;
+    margin-left: -1.5rem;
 }
 
 .home .ssiconsHexa {
-    margin-left: -267px;
+    margin-left: -24.8rem;
+    width: 49.7rem;
 
     position: absolute;
-    top: 0;
+    top: -1.6rem;
     left: 50%;
 }
 
@@ -368,6 +369,16 @@
 @media (max-width: 979px) {
     .home .beeTheBest p {
         font-size: 1.8rem;
+    }
+
+    .home .ssicons img {
+        margin-left: 0;
+    }
+
+    .home .ssiconsHexa {
+        margin-left: -50%;
+        width: 100%;
+        top: 0;
     }
 }
 
@@ -557,15 +568,15 @@
 }
 
 .home .header .btns a {
-    margin: 0px 4.75em;
+    margin: 0 4.75em;
 }
 
 .home .header .btns a:first-child {
-    margin-left: 0px;
+    margin-left: 0;
 }
 
 .home .header .btns a:last-child {
-    margin-right: 0px;
+    margin-right: 0;
 }
 
 @media (max-width: 649px) {
@@ -578,7 +589,7 @@
     }
 
     .home .header .btns a {
-        margin: 0px;
+        margin: 0;
     }
 
     .home .successStoryMore a {

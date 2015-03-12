@@ -75,13 +75,13 @@
 }
 
 .slider .prev {
-    left: 0px;
+    left: 0;
 
     @mixin flip_horizontal();
 }
 
 .slider .next {
-    right: 0px;
+    right: 0;
 }
 
 .slider .pager {

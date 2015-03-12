@@ -59,6 +59,8 @@ public interface PageSupportResources extends FontResources {
         String icon4();
 
         String icon3();
+
+        String ressCommunautaire();
     }
 
     @Source({"com/arcbees/gsss/animation/client/animationsettings.gss",

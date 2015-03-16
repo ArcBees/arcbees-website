@@ -265,12 +265,10 @@
                         <div class="{page.style.bee} {page.style.bee1}">
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
-                                    <g:Image resource="{page.beeSimonPierre1}"></g:Image>
-                                    <a href="#{nameTokens.BEE_SIMONPIERRE}">
-                                        <h3>Simon-Pierre <span>Gingras</span></h3>
-                                        <p>
-                                            <ui:msg description="Simon-Pierre's title">Developer of things, Chief Bacon Evangelist</ui:msg>
-                                        </p>
+                                    <g:Image resource="{page.beeJoel1}"></g:Image>
+                                    <a href="#{nameTokens.BEE_JOEL}">
+                                        <h3>Joel <span>Trottier-Hébert</span></h3>
+                                        <p><ui:msg description="Joel's title">Bugs writer</ui:msg></p>
                                     </a>
                                 </div>
                             </div>
@@ -279,10 +277,10 @@
                         <div class="{page.style.bee} {page.style.bee2}">
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
-                                    <g:Image resource="{page.beeJoel1}"></g:Image>
-                                    <a href="#{nameTokens.BEE_JOEL}">
-                                        <h3>Joel <span>Trottier-Hébert</span></h3>
-                                        <p><ui:msg description="Joel's title">Bugs writer</ui:msg></p>
+                                    <g:Image resource="{page.beeJeanChristophe1}"></g:Image>
+                                    <a href="#{nameTokens.BEE_JEANCHRISTOPHE}">
+                                        <h3>Jean-<span>Christophe</span> <span>Lariviere</span></h3>
+                                        <p><ui:msg description="Jean-Christophe's title">Coder in the North</ui:msg></p>
                                     </a>
                                 </div>
                             </div>
@@ -300,17 +298,6 @@
                             </div>
                         </div>
 
-                        <div class="{page.style.bee} {page.style.bee1}">
-                            <div class="{page.style.beeHolder1}">
-                                <div class="{page.style.beeHolder2}">
-                                    <g:Image resource="{page.beeJeanChristophe1}"></g:Image>
-                                    <a href="#{nameTokens.BEE_JEANCHRISTOPHE}">
-                                        <h3>Jean-<span>Christophe</span> <span>Lariviere</span></h3>
-                                        <p><ui:msg description="Jean-Christophe's title">Coder in the North</ui:msg></p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
                 </div>

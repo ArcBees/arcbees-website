@@ -14,7 +14,7 @@
  * the License.
  */
 
-package com.arcbees.website.client.application.notFound;
+package com.arcbees.website.client.application.notfound2;
 
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 

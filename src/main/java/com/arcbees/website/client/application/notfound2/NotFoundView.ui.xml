@@ -1,0 +1,40 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+        xmlns:seo="urn:import:com.arcbees.seo.widget"
+        xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+    <ui:with field="nameTokens" type="com.arcbees.website.client.NameTokensConstants"/>
+    <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
+    <ui:with field="page" type="com.arcbees.website.client.resources.PageNotFoundResources"/>
+    <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
+    <ui:with field="animations" type="com.arcbees.website.client.resources.AnimationsResources"/>
+
+    <g:HTMLPanel styleName="{page.style.notFound}">
+
+        <seo:SeoWidget>
+            <seo:Title>
+                <ui:msg description="SEO - 404 - title">404 - Arcbees</ui:msg>
+            </seo:Title>
+            <seo:Description>
+                <ui:msg description="SEO - 404 - description">
+                    404... Honey your lost.
+                </ui:msg>
+            </seo:Description>
+        </seo:SeoWidget>
+
+        <h1 class="{res.style.breadcrumb} {res.style.withLogo}"><span>404</span></h1>
+
+        <section class="{res.style.stripe} {res.style.colored} {page.style.header}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+                <div class="{res.grid.col} {res.grid.col_push_2} {res.grid.col_8} {res.style.centered}">
+                    <g:Image resource="{page.notFound}"></g:Image>
+                    <p class="{page.style.honeyLost}">Honey you're lost</p>
+                    <a href="#{nameTokens.HOME}" class="{res.style.btn}">
+                        <ui:msg description="home">Back to the hive</ui:msg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </g:HTMLPanel>
+</ui:UiBinder>

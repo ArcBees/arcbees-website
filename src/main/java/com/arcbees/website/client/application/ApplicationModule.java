@@ -22,6 +22,7 @@ import com.arcbees.website.client.application.contact.ContactModule;
 import com.arcbees.website.client.application.expertise.ExpertiseModule;
 import com.arcbees.website.client.application.home.HomeModule;
 import com.arcbees.website.client.application.maps.MapsModule;
+import com.arcbees.website.client.application.notFound.NotFoundModule;
 import com.arcbees.website.client.application.products.ProductsModule;
 import com.arcbees.website.client.application.services.ServicesModule;
 import com.arcbees.website.client.application.support.SupportModule;
@@ -38,6 +39,7 @@ public class ApplicationModule extends AbstractPresenterModule {
         install(new SupportModule());
         install(new ServicesModule());
         install(new ProductsModule());
+        install(new NotFoundModule());
         install(new MapsModule());
 
         bindPresenter(ApplicationPresenter.class, ApplicationPresenter.MyView.class, ApplicationView.class,

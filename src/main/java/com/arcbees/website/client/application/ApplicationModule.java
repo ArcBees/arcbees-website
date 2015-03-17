@@ -22,7 +22,7 @@ import com.arcbees.website.client.application.contact.ContactModule;
 import com.arcbees.website.client.application.expertise.ExpertiseModule;
 import com.arcbees.website.client.application.home.HomeModule;
 import com.arcbees.website.client.application.maps.MapsModule;
-import com.arcbees.website.client.application.notfound2.NotFoundModule;
+import com.arcbees.website.client.application.error.NotFoundModule;
 import com.arcbees.website.client.application.products.ProductsModule;
 import com.arcbees.website.client.application.services.ServicesModule;
 import com.arcbees.website.client.application.support.SupportModule;

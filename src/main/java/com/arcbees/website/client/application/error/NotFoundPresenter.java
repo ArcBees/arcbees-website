@@ -14,7 +14,7 @@
  * the License.
  */
 
-package com.arcbees.website.client.application.notfound2;
+package com.arcbees.website.client.application.error;
 
 import com.arcbees.website.client.application.ApplicationPresenter;
 import com.arcbees.website.shared.NameTokens;

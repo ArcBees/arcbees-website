@@ -14,7 +14,7 @@
  * the License.
  */
 
-package com.arcbees.website.client.application.notfound2;
+package com.arcbees.website.client.application.error;
 
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.user.client.ui.Widget;

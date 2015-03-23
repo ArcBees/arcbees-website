@@ -3,6 +3,10 @@
 @require "gsss-mixins";
 
 /* -- Page : 404 ---------------------------------------- */
+.notFound {
+    min-height: 640px;
+}
+
 .notFound .header {
     height: 100%;
     padding-top: 200px;

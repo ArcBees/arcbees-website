@@ -9,7 +9,7 @@
     <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
     <ui:with field="animations" type="com.arcbees.website.client.resources.AnimationsResources"/>
 
-    <g:HTMLPanel styleName="{page.style.notFound}">
+    <g:HTMLPanel ui:field="error" styleName="{page.style.notFound}">
 
         <seo:SeoWidget>
             <seo:Title>

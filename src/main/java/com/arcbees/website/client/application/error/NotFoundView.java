@@ -16,18 +16,53 @@
 
 package com.arcbees.website.client.application.error;
 
+import com.google.gwt.event.logical.shared.ResizeEvent;
+import com.google.gwt.event.logical.shared.ResizeHandler;
+import com.google.gwt.event.shared.HandlerRegistration;
+import com.google.gwt.query.client.GQuery;
 import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiField;
+import com.google.gwt.user.client.Window;
+import com.google.gwt.user.client.ui.HTMLPanel;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
 
-public class NotFoundView extends ViewImpl implements NotFoundPresenter.MyView {
+import static com.google.gwt.query.client.GQuery.$;
+
+public class NotFoundView extends ViewImpl implements NotFoundPresenter.MyView, ResizeHandler {
     interface Binder extends UiBinder<Widget, NotFoundView> {
     }
+
+    @UiField
+    HTMLPanel error;
+
+    private HandlerRegistration resizeHandler;
 
     @Inject
     NotFoundView(
             Binder binder) {
         initWidget(binder.createAndBindUi(this));
+    }
+
+    @Override
+    protected void onAttach() {
+        resizeHandler = Window.addResizeHandler(this);
+        updateHeight();
+    }
+
+    @Override
+    protected void onDetach() {
+        resizeHandler.removeHandler();
+        resizeHandler = null;
+    }
+
+    @Override
+    public void onResize(ResizeEvent event) {
+        updateHeight();
+    }
+
+    private GQuery updateHeight() {
+        return $(error).height(Window.getClientHeight() - 113);
     }
 }

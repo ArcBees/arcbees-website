@@ -6,6 +6,10 @@
     background-color: C_STRIPE_LIGHT;
 }
 
+.productHead {
+    @mixin transition(background-color, .7s);
+}
+
 .productHead.gae {
     background-color: C_PRODUCT_GAE;
 }

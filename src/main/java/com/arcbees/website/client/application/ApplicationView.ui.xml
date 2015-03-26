@@ -128,9 +128,9 @@
 
         <div class="{res.style.content}" ui:field="content">
             <a href="#{nameTokens.HOME}" class="{fonts.icons.iconArcbees} {res.style.homeLogo} {res.style.withLogo}"></a>
-            <div ui:field="langToggle" class="{res.style.wrapper}">
+            <div class="{res.style.wrapper}">
                 <div class="{res.style.linkTopRight}">
-                    <span class="{res.style.language}">
+                    <div ui:field="langToggle" class="{res.style.language}">
                         <a href="#" lang="fr" title="French version">
                             <ui:attribute ui:name='title' ui:description='French version'/>
                             <ui:attribute ui:name='lang' ui:description='fr'/>
@@ -138,7 +138,7 @@
                                 <span class="{res.style.visuallyhidden}">ANÇAIS</span>
                             </ui:msg>
                         </a>
-                    </span>
+                    </div>
                     <a href="https://github.com/ArcBees" title="Arcbees github" target="_blank">
                         <i class="{fonts.icons.iconGitHub} {res.style.github}"></i>
                     </a>

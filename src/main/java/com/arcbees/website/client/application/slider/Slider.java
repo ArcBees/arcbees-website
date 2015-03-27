@@ -18,6 +18,7 @@ package com.arcbees.website.client.application.slider;
 
 import com.arcbees.website.client.resources.SliderResources;
 import com.google.gwt.core.client.GWT;
+import com.google.gwt.core.client.Scheduler;
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.dom.client.NodeList;
 import com.google.gwt.event.dom.client.ClickEvent;
@@ -103,6 +104,7 @@ public class Slider implements IsWidget, AttachEvent.Handler {
             $(contents).on(TRANSITION_END, new Function() {
                 @Override
                 public void f() {
+                    GQuery.console.log("TRANSITION_END");
                     activeAnimation = false;
                     $("[data-remove]", contents).remove();
                 }
@@ -199,7 +201,7 @@ public class Slider implements IsWidget, AttachEvent.Handler {
             final GQuery element = $(contents).children().first();
             element.css("marginLeft", "-100%")
                     .addClass(sliderResources.style().contentTransition())
-                    .delay(1)
+                    .delay(100)
                     .promise()
                     .done(new Function() {
                         @Override

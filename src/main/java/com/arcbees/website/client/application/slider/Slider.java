@@ -23,6 +23,7 @@ import com.google.gwt.dom.client.NodeList;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.event.logical.shared.AttachEvent;
 import com.google.gwt.query.client.Function;
+import com.google.gwt.query.client.GQuery;
 import com.google.gwt.safehtml.client.SafeHtmlTemplates;
 import com.google.gwt.safehtml.shared.SafeHtml;
 import com.google.gwt.uibinder.client.UiBinder;
@@ -46,6 +47,7 @@ public class Slider implements IsWidget, AttachEvent.Handler {
     }
 
     private static final String DATA_INDEX = "data-index";
+    private static final String TRANSITION_END = "transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd";
 
     private static Binder BINDER = GWT.create(Binder.class);
     private static HtmlTemplate TEMPLATE = GWT.create(HtmlTemplate.class);
@@ -69,6 +71,7 @@ public class Slider implements IsWidget, AttachEvent.Handler {
     private int itemCount;
     private int maxIndex;
     private int index;
+    private boolean activeAnimation;
 
     public Slider() {
         root = BINDER.createAndBindUi(this);
@@ -97,6 +100,15 @@ public class Slider implements IsWidget, AttachEvent.Handler {
         if (event.isAttached()) {
             index = 0;
             displayCurrent();
+            $(contents).on(TRANSITION_END, new Function() {
+                @Override
+                public void f() {
+                    activeAnimation = false;
+                    $("[data-remove]", contents).remove();
+                }
+            });
+        } else {
+            $(contents).off(TRANSITION_END);
         }
     }
 
@@ -118,28 +130,36 @@ public class Slider implements IsWidget, AttachEvent.Handler {
 
     @UiHandler("prev")
     void onPrev(ClickEvent event) {
-        prev();
+        if (!activeAnimation) {
+            prev();
+        }
     }
 
     @UiHandler("next")
     void onNext(ClickEvent event) {
-        next();
+        if (!activeAnimation) {
+            next();
+        }
     }
 
     private void next() {
         if (index < maxIndex) {
             index++;
+        } else {
+            index = 0;
         }
 
-        displayCurrent();
+        displayCurrent(false);
     }
 
     private void prev() {
         if (index > 0) {
             index--;
+        } else {
+            index = maxIndex;
         }
 
-        displayCurrent();
+        displayCurrent(true);
     }
 
     private void drawDots() {
@@ -162,20 +182,43 @@ public class Slider implements IsWidget, AttachEvent.Handler {
         Element item = items.getItem(index);
 
         $(contents).children().remove();
-        $(contents).append(item);
+        $(contents).append($(item).clone());
 
-        String disabled = sliderResources.style().disabled();
-        if (index == 0) {
-            $(prev).addClass(disabled);
-            $(next).removeClass(disabled);
-        } else if (index == maxIndex) {
-            $(prev).removeClass(disabled);
-            $(next).addClass(disabled);
+        setCurrentActive();
+    }
+
+    private void displayCurrent(boolean previous) {
+        activeAnimation = true;
+
+        Element item = items.getItem(index);
+
+        $(contents).children().attr("data-remove", true);
+        if (previous) {
+            $(contents).prepend($(item).clone());
+
+            final GQuery element = $(contents).children().first();
+            element.css("marginLeft", "-100%")
+                    .addClass(sliderResources.style().contentTransition())
+                    .delay(1)
+                    .promise()
+                    .done(new Function() {
+                        @Override
+                        public void f() {
+                            element.css("marginLeft", "0");
+                        }
+                    });
         } else {
-            $(prev).removeClass(disabled);
-            $(next).removeClass(disabled);
+            $(contents).append($(item).clone());
+            $(contents).children()
+                    .first()
+                    .addClass(sliderResources.style().contentTransition())
+                    .css("marginLeft", "-100%");
         }
 
+        setCurrentActive();
+    }
+
+    private void setCurrentActive() {
         String active = sliderResources.style().active();
         $("." + active, pager).removeClass(active);
         $(pager).children().eq(index).addClass(active);

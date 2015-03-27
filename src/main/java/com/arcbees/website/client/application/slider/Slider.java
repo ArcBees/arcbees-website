@@ -18,7 +18,6 @@ package com.arcbees.website.client.application.slider;
 
 import com.arcbees.website.client.resources.SliderResources;
 import com.google.gwt.core.client.GWT;
-import com.google.gwt.core.client.Scheduler;
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.dom.client.NodeList;
 import com.google.gwt.event.dom.client.ClickEvent;

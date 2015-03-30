@@ -103,7 +103,6 @@ public class Slider implements IsWidget, AttachEvent.Handler {
             $(contents).on(TRANSITION_END, new Function() {
                 @Override
                 public void f() {
-                    GQuery.console.log("TRANSITION_END");
                     activeAnimation = false;
                     $("[data-remove]", contents).remove();
                 }

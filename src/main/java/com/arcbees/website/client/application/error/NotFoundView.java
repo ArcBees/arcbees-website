@@ -63,6 +63,6 @@ public class NotFoundView extends ViewImpl implements NotFoundPresenter.MyView, 
     }
 
     private GQuery updateHeight() {
-        return $(error).height(Window.getClientHeight() - 113);
+        return $(error).height(Window.getClientHeight() - $("footer").height());
     }
 }

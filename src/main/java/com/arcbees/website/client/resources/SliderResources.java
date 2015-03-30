@@ -32,9 +32,9 @@ public interface SliderResources extends ClientBundle {
 
         String active();
 
-        String disabled();
-
         String container();
+
+        String contentTransition();
     }
 
     @Source("img/slider/sliderArrow.png")

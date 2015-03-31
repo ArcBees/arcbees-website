@@ -7,7 +7,7 @@
     <g:HTMLPanel styleName="{sliderResources.style.slider}">
         <g:HTMLPanel ui:field="contents" styleName="{sliderResources.style.container}"></g:HTMLPanel>
         <g:HTMLPanel ui:field="nav" tag="nav">
-            <g:Anchor ui:field="prev" href="javascript:;" styleName="{sliderResources.style.prev} {sliderResources.style.disabled}">
+            <g:Anchor ui:field="prev" href="javascript:;" styleName="{sliderResources.style.prev}">
                 <i class="{fonts.icons.iconArrowDown}"></i>
                 <ui:msg description="TabDetailsView Prev">
                     <span>Prev</span>

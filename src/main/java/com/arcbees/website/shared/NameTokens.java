@@ -33,6 +33,8 @@ public class NameTokens {
     public static final String CAREERS_FR = "!/carrieres";
     public static final String CONTACT = "!/contact";
     public static final String CONTACT_FR = "!/contact";
+    public static final String CONTACT_FORM = "!/contactus";
+    public static final String CONTACT_FORM_FR = "!/contactus";
     public static final String EXPERTISE = "!/expertise";
     public static final String EXPERTISE_FR = "!/expertise";
     public static final String SUPPORT = "!/support";
@@ -90,6 +92,7 @@ public class NameTokens {
         keys.put(BEES, BEES_FR);
         keys.put(CAREERS, CAREERS_FR);
         keys.put(CONTACT, CONTACT_FR);
+        keys.put(CONTACT_FORM, CONTACT_FORM_FR);
         keys.put(EXPERTISE, EXPERTISE_FR);
         keys.put(SUPPORT, SUPPORT_FR);
         keys.put(SHOP, SHOP_FR);

@@ -14,17 +14,14 @@
  * the License.
  */
 
-package com.arcbees.website.client.application.contact;
+package com.arcbees.website.client.application.contact.popup;
 
-import com.arcbees.website.client.application.contact.popup.ContactFormModule;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
-public class ContactModule extends AbstractPresenterModule {
+public class ContactFormModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
-        bindPresenter(ContactPresenter.class, ContactPresenter.MyView.class,
-                ContactView.class, ContactPresenter.MyProxy.class);
-
-        install(new ContactFormModule());
+        bindPresenter(ContactFormPresenter.class, ContactFormPresenter.MyView.class, ContactFormView.class,
+                ContactFormPresenter.MyProxy.class);
     }
 }

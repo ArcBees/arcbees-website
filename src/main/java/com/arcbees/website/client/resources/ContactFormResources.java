@@ -1,5 +1,5 @@
-/**
- * Copyright 2015 ArcBees Inc.
+/*
+ * Copyright 2014 ArcBees Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -14,17 +14,17 @@
  * the License.
  */
 
-package com.arcbees.website.client.application.contact;
+package com.arcbees.website.client.resources;
 
-import com.arcbees.website.client.application.contact.popup.ContactFormModule;
-import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
+import com.google.gwt.resources.client.ClientBundle;
+import com.google.gwt.resources.client.CssResource;
+import com.google.gwt.resources.client.ImageResource;
 
-public class ContactModule extends AbstractPresenterModule {
-    @Override
-    protected void configure() {
-        bindPresenter(ContactPresenter.class, ContactPresenter.MyView.class,
-                ContactView.class, ContactPresenter.MyProxy.class);
-
-        install(new ContactFormModule());
+public interface ContactFormResources extends ClientBundle {
+    public interface Style extends CssResource {
+        String contactForm();
     }
+
+    @Source({"com/arcbees/gsss/mixin/client/mixins.gss", "css/colors.gss", "css/widget/contactform.gss"})
+    public Style style();
 }

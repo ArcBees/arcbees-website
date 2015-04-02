@@ -18,9 +18,11 @@ package com.arcbees.website.client.application;
 
 import com.arcbees.analytics.shared.Analytics;
 import com.google.gwt.event.shared.GwtEvent;
+import com.google.gwt.user.client.ui.RootLayoutPanel;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.Presenter;
+import com.gwtplatform.mvp.client.RootPresenter;
 import com.gwtplatform.mvp.client.View;
 import com.gwtplatform.mvp.client.annotations.ContentSlot;
 import com.gwtplatform.mvp.client.annotations.ProxyStandard;

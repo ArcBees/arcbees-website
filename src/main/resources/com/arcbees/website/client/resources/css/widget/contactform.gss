@@ -1,0 +1,12 @@
+@require "gsss-mixins";
+
+.contactForm {
+    width: 400px;
+}
+
+.contactForm input,
+.contactForm textarea,
+.contactForm button {
+    display: block;
+    margin-bottom: 20px;
+}

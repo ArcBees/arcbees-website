@@ -1,0 +1,22 @@
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+             ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
+             ui:generateLocales="default">
+
+    <ui:with field="nameTokens" type="com.arcbees.website.client.NameTokensConstants"/>
+    <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
+    <ui:with field="form" type="com.arcbees.website.client.resources.ContactFormResources"/>
+    <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
+
+    <g:PopupPanel styleName="{form.style.contactForm}" modal="true" glassEnabled="true">
+        <g:HTMLPanel>
+            <form action="">
+                <input type="text" placeholder="Name" required=""/>
+                <input type="email" name="Email" placeholder="Email" required=""/>
+                <textarea rows="4" cols="20"></textarea>
+                <input type="submit" value="Send" class="{res.style.btn}"/>
+            </form>
+        </g:HTMLPanel>
+    </g:PopupPanel>
+</ui:UiBinder>

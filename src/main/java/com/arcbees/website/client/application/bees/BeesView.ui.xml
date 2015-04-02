@@ -64,60 +64,70 @@
                 <slider:Slider>
                     <slider:content>
                         <g:HTMLPanel>
-                            <div class="{res.grid.col} {res.grid.col_6} {res.grid.col_push_1_4} {res.grid.col_t_8} {res.grid.col_t_push_1_6} {res.grid.col_m_full} {res.grid.col_m_push_0}">
-                                <h2>
-                                    <ui:msg description="Bee dedicated - title">Bee Dedicated</ui:msg>
-                                </h2>
-                                <p>
-                                    <ui:msg description="Bee dedicated - text">When we agree to take on a
-                                        client’s project, it’s not just their project anymore. It’s ours too, and
-                                        there’s nothing we won't do to make it a success.
-                                    </ui:msg>
-                                </p>
+                            <div>
+                                <div class="{page.style.slide} {res.grid.col} {res.grid.col_6} {res.grid.col_push_1_4} {res.grid.col_t_8} {res.grid.col_t_push_2} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+                                    <h2>
+                                        <ui:msg description="Bee dedicated - title">Bee Dedicated</ui:msg>
+                                    </h2>
+                                    <p>
+                                        <ui:msg description="Bee dedicated - text">When we agree to take on a
+                                            client’s project, it’s not just their project anymore. It’s ours too, and
+                                            there’s nothing we won't do to make it a success.
+                                        </ui:msg>
+                                    </p>
+                                </div>
                             </div>
-                            <div class="{res.grid.col} {res.grid.col_6} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
-                                <h2>
-                                    <ui:msg description="Bee United - title">Bee United</ui:msg>
-                                </h2>
-                                <p>
-                                    <ui:msg description="Bee United - text">There is no place for loners in the
-                                        Hive. We share our discoveries, knowledge and mistakes to make sure we don't
-                                        repeat errors, and to help us all grow as a team.
-                                    </ui:msg>
-                                </p>
+                            <div>
+                                <div class="{page.style.slide} {res.grid.col} {res.grid.col_6} {res.grid.col_push_1_4} {res.grid.col_t_8} {res.grid.col_t_push_2} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+                                    <h2>
+                                        <ui:msg description="Bee United - title">Bee United</ui:msg>
+                                    </h2>
+                                    <p>
+                                        <ui:msg description="Bee United - text">There is no place for loners in the
+                                            Hive. We share our discoveries, knowledge and mistakes to make sure we don't
+                                            repeat errors, and to help us all grow as a team.
+                                        </ui:msg>
+                                    </p>
+                                </div>
                             </div>
-                            <div class="{res.grid.col} {res.grid.col_6} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
-                                <h2>
-                                    <ui:msg description="Bee Passionate - title">Bee Passionate</ui:msg>
-                                </h2>
-                                <p>
-                                    <ui:msg description="Bee Passionate - text">We love what we do and we can
-                                        never have enough. We are mission-driven and we feed off the passion and energy
-                                        of our fellow Bees.
-                                    </ui:msg>
-                                </p>
+                            <div>
+                                <div class="{page.style.slide} {res.grid.col} {res.grid.col_6} {res.grid.col_push_1_4} {res.grid.col_t_8} {res.grid.col_t_push_2} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+                                    <h2>
+                                        <ui:msg description="Bee Passionate - title">Bee Passionate</ui:msg>
+                                    </h2>
+                                    <p>
+                                        <ui:msg description="Bee Passionate - text">We love what we do and we can
+                                            never have enough. We are mission-driven and we feed off the passion and
+                                            energy of our fellow Bees.
+                                        </ui:msg>
+                                    </p>
+                                </div>
                             </div>
-                            <div class="{res.grid.col} {res.grid.col_6} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
-                                <h2>
-                                    <ui:msg description="Bee Ambitious - title">Bee Ambitious</ui:msg>
-                                </h2>
-                                <p>
-                                    <ui:msg description="Bee Ambitious - text">Bees are encouraged to have their
-                                        own goals and projects. The Hive and other Bees are more than happy to help and
-                                        to give them time, space and feedback.
-                                    </ui:msg>
-                                </p>
+                            <div>
+                                <div class="{page.style.slide} {res.grid.col} {res.grid.col_6} {res.grid.col_push_1_4} {res.grid.col_t_8} {res.grid.col_t_push_2} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+                                    <h2>
+                                        <ui:msg description="Bee Ambitious - title">Bee Ambitious</ui:msg>
+                                    </h2>
+                                    <p>
+                                        <ui:msg description="Bee Ambitious - text">Bees are encouraged to have their
+                                            own goals and projects. The Hive and other Bees are more than happy to help
+                                            and to give them time, space and feedback.
+                                        </ui:msg>
+                                    </p>
+                                </div>
                             </div>
-                            <div class="{res.grid.col} {res.grid.col_6} {res.grid.col_push_1_4} {res.grid.col_m_full} {res.grid.col_m_push_0}">
-                                <h2>
-                                    <ui:msg description="Bee Inspired - title">Bee Inspired</ui:msg>
-                                </h2>
-                                <p>
-                                    <ui:msg description="Bee Inspired - text">Each client project is unique, and
-                                        we love it. We don't recreate the same things over and over again. We dig deep,
-                                        apply our learning, and propose innovative ideas and solutions.
-                                    </ui:msg>
-                                </p>
+                            <div>
+                                <div class="{page.style.slide} {res.grid.col} {res.grid.col_6} {res.grid.col_push_1_4} {res.grid.col_t_8} {res.grid.col_t_push_2} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+                                    <h2>
+                                        <ui:msg description="Bee Inspired - title">Bee Inspired</ui:msg>
+                                    </h2>
+                                    <p>
+                                        <ui:msg description="Bee Inspired - text">Each client project is unique, and
+                                            we love it. We don't recreate the same things over and over again. We dig
+                                            deep, apply our learning, and propose innovative ideas and solutions.
+                                        </ui:msg>
+                                    </p>
+                                </div>
                             </div>
                         </g:HTMLPanel>
                     </slider:content>

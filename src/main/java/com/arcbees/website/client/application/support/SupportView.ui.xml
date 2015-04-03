@@ -208,7 +208,7 @@
 
         <section class="{res.style.stripe} {res.style.light} {page.style.features} {res.style.centered}">
             <div class="{res.style.wrapper}">
-                <a href="#{nameTokens.CONTACT_FORM}" class="{res.style.btn}">
+                <a href="javascript:void(0)" class="{res.style.btn}" ui:field="contactUs">
                     <ui:msg description="- BTN - Contact us">Contact us</ui:msg>
                 </a>
                 <h2>

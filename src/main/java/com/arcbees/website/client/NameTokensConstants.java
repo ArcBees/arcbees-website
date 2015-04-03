@@ -20,9 +20,6 @@ public interface NameTokensConstants extends Constants {
     @DefaultStringValue(NameTokens.CONTACT)
     String CONTACT();
 
-    @DefaultStringValue(NameTokens.CONTACT_FORM)
-    String CONTACT_FORM();
-
     @DefaultStringValue(NameTokens.EXPERTISE)
     String EXPERTISE();
 

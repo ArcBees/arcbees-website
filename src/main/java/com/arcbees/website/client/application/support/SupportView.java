@@ -16,18 +16,33 @@
 
 package com.arcbees.website.client.application.support;
 
+import com.google.gwt.dom.client.AnchorElement;
+import com.google.gwt.query.client.Function;
 import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
-import com.gwtplatform.mvp.client.ViewImpl;
+import com.gwtplatform.mvp.client.ViewWithUiHandlers;
 
-public class SupportView extends ViewImpl implements SupportPresenter.MyView {
+import static com.google.gwt.query.client.GQuery.$;
+
+public class SupportView extends ViewWithUiHandlers<SupportUiHandlers> implements SupportPresenter.MyView {
     interface Binder extends UiBinder<Widget, SupportView> {
     }
+
+    @UiField
+    AnchorElement contactUs;
 
     @Inject
     SupportView(
             Binder binder) {
         initWidget(binder.createAndBindUi(this));
+
+        $(contactUs).click(new Function() {
+            @Override
+            public void f() {
+                getUiHandlers().showContactForm();
+            }
+        });
     }
 }

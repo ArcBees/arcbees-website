@@ -16,7 +16,6 @@
 
 package com.arcbees.website.client.application.contact;
 
-import com.arcbees.website.client.application.contact.popup.ContactFormModule;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
 public class ContactModule extends AbstractPresenterModule {
@@ -24,7 +23,5 @@ public class ContactModule extends AbstractPresenterModule {
     protected void configure() {
         bindPresenter(ContactPresenter.class, ContactPresenter.MyView.class,
                 ContactView.class, ContactPresenter.MyProxy.class);
-
-        install(new ContactFormModule());
     }
 }

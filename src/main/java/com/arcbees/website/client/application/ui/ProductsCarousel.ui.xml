@@ -23,7 +23,7 @@
                 <ul>
                     <li>
                         <a href="#{nameTokens.GAE}" class="{fonts.icons.iconGae} {res.style.gae}">
-                            <h3>GAE</h3>
+                            <h3>GAE Studio</h3>
                             <p>
                                 <ui:msg description="Optimizing Google App Engine applications">
                                     Optimizing Google App Engine applications

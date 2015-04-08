@@ -1135,9 +1135,10 @@ img {
 .productsCarousel a h3 {
     font-family: "geometria";
     font-size: 4rem;
+    line-height: .85em;
 
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
 }
 
 .productsCarousel a.active,

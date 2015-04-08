@@ -21,7 +21,6 @@ import com.arcbees.website.client.application.ApplicationModule;
 import com.arcbees.website.client.resources.ResourceLoader;
 import com.arcbees.website.shared.NameTokens;
 import com.google.gwt.inject.client.AbstractGinModule;
-import com.google.inject.Provides;
 import com.gwtplatform.mvp.client.annotations.DefaultPlace;
 import com.gwtplatform.mvp.client.annotations.ErrorPlace;
 import com.gwtplatform.mvp.client.annotations.UnauthorizedPlace;
@@ -39,7 +38,7 @@ public class ClientModule extends AbstractGinModule {
         bind(ResourceLoader.class).asEagerSingleton();
 
         bindConstant().annotatedWith(DefaultPlace.class).to(NameTokens.HOME);
-        bindConstant().annotatedWith(ErrorPlace.class).to(NameTokens.HOME);
+        bindConstant().annotatedWith(ErrorPlace.class).to(NameTokens.NOTFOUND);
         bindConstant().annotatedWith(UnauthorizedPlace.class).to(NameTokens.HOME);
 
         requestStaticInjection(NameTokens.class);

@@ -7,7 +7,7 @@
 
 /* -- Header-- */
 
-.support .header > div {
+.support .header .featuredIcons {
     margin: -133px 0 0 -377px;
     height: 200px;
     width: 755px;
@@ -243,6 +243,21 @@
         top: 110px;
 
         @mixin rotate(45deg);
+    }
+}
+
+.buySupportBtn {
+    text-align: center;
+
+    width: 100%;
+
+    position: absolute;
+    top: 650px;
+}
+
+@media (max-width: 649px) {
+    .buySupportBtn {
+        top: 300px;
     }
 }
 

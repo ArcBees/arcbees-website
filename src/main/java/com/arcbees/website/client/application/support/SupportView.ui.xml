@@ -1,11 +1,11 @@
 <!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
-         xmlns:g="urn:import:com.google.gwt.user.client.ui"
-         xmlns:seo="urn:import:com.arcbees.seo.widget"
-         xmlns:aw="urn:import:com.arcbees.website.client.application.ui"
-         ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
-         ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
-         ui:generateLocales="default">
+        xmlns:g="urn:import:com.google.gwt.user.client.ui"
+        xmlns:seo="urn:import:com.arcbees.seo.widget"
+        xmlns:aw="urn:import:com.arcbees.website.client.application.ui.supportcarousel"
+        ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+        ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
+        ui:generateLocales="default">
 
     <ui:with field="nameTokens" type="com.arcbees.website.client.NameTokensConstants"/>
     <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
@@ -39,6 +39,11 @@
                 <i class="{fonts.icons.iconArcbees} {page.style.icon4} {animations.style.animation}"></i>
 
             </div>
+            <div class="{page.style.buySupportBtn} {res.style.wrapper}">
+                <a ui:field="supportPackage" class="{res.style.btn}">
+                    <ui:msg description="Btn - Buy Support Packages">Buy support packages</ui:msg>
+                </a>
+            </div>
         </section>
 
         <section class="{res.style.stripe} {res.style.dark} {res.style.triangleBottom} {res.style.nextColored}">
@@ -61,7 +66,8 @@
 
         <section class="{res.style.stripe} {res.style.colored}">
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.centered}">
-                <div class="{page.style.purchSupp} {res.grid.col} {res.grid.col_6} {res.grid.col_push_1_4} {res.grid.col_t_8} {res.grid.col_t_push_2} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+                <div class="{page.style.purchSupp} {res.grid.col} {res.grid.col_6} {res.grid.col_push_1_4}
+                {res.grid.col_t_8} {res.grid.col_t_push_2} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                     <ui:msg description="Purchasing support packages...">
                         <p>Purchasing support packages not only allows us to help your team become optimally
                             productive with our tools.
@@ -77,8 +83,8 @@
                     </ui:msg>
                 </div>
             </div>
-            <section
-                    class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.centered} {page.style.offers}">
+            <section ui:field="supportPackage2"
+                     class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.centered} {page.style.offers}">
                 <article class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_t_full} {page.style.plan}">
                     <header>
                         <h3>
@@ -215,20 +221,22 @@
                     <ui:msg description="Features">Features</ui:msg>
                 </h2>
                 <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                    <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_t_1_3} {res.grid.col_t_push_0} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+                    <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_t_1_3} {res.grid.col_t_push_0}
+                    {res.grid.col_m_full} {res.grid.col_m_push_0}">
                         <i class="{fonts.icons.iconCommRes}"></i>
                         <h3 class="{page.style.ressCommunautaire}">
-                            <ui:msg description="Community Resources">Community
-                                <span>Resources</span>
+                            <ui:msg description="Community Support">Community
+                                <span>Support</span>
                             </ui:msg>
                         </h3>
                         <p>
-                            <ui:msg description="Community Resources - Paragraph -">Get answers promptly from Stack
+                            <ui:msg description="Community Support - Paragraph -">Get answers promptly from Stack
                                 Overflow, our Google Groups and our Google+ Communities, with or without a package!
                             </ui:msg>
                         </p>
                     </div>
-                    <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1} {res.grid.col_t_1_3} {res.grid.col_t_push_0} {res.grid.col_m_full} {res.grid.col_m_push_0} {page.style.responseTime}">
+                    <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1} {res.grid.col_t_1_3}
+                    {res.grid.col_t_push_0} {res.grid.col_m_full} {res.grid.col_m_push_0} {page.style.responseTime}">
                         <i class="{fonts.icons.iconRespTime}"></i>
                         <h3>
                             <ui:msg description="Response Time">Response
@@ -242,7 +250,8 @@
                             </ui:msg>
                         </p>
                     </div>
-                    <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_push_1_12} {res.grid.col_t_1_3} {res.grid.col_t_push_0} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+                    <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_push_1_12} {res.grid.col_t_1_3}
+                    {res.grid.col_t_push_0} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                         <i class="{fonts.icons.iconSupportCases}"></i>
                         <h3>
                             <ui:msg description="Legacy Support">Legacy
@@ -258,30 +267,46 @@
                     </div>
                 </div>
                 <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                    <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_push_1_6} {res.grid.col_t_1_3} {res.grid.col_t_push_2} {res.grid.col_m_full} {res.grid.col_m_push_0}">
-                        <i class="{fonts.icons.iconInternetSupport}"></i>
+                    <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_t_1_3} {res.grid.col_t_push_0}
+                    {res.grid.col_m_full} {res.grid.col_m_push_0}">
+                        <i class="{fonts.icons.iconRespTime}"></i>
                         <h3>
-                            <ui:msg description="Internet Support">Internet
-                                <span>Support</span>
+                            <ui:msg description="Knowledge Base">Knowledge
+                                <span>Base</span>
                             </ui:msg>
                         </h3>
                         <p>
-                            <ui:msg description="Internet Support - Paragraph -">Purchase support packages for direct
+                            <ui:msg description="Knowledge Base - Paragraph -">Keep answers to key questions at your
+                                team’s fingertips with our powerful knowledge base.
+                            </ui:msg>
+                        </p>
+                    </div>
+                    <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1} {res.grid.col_t_1_3}
+                    {res.grid.col_t_push_0} {res.grid.col_m_full} {res.grid.col_m_push_0} {page.style.responseTime}">
+                        <i class="{fonts.icons.iconInternetSupport}"></i>
+                        <h3>
+                            <ui:msg description="Service Desk">Service
+                                <span>Desk</span>
+                            </ui:msg>
+                        </h3>
+                        <p>
+                            <ui:msg description="Service Desk - Paragraph -">Purchase support packages for direct
                                 online access to our experts. We are happy to set up videoconferences, private groups,
                                 email exchanges, chat channels and more.
                             </ui:msg>
                         </p>
                     </div>
-                    <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_push_2} {res.grid.col_t_1_3} {res.grid.col_t_push_0} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+                    <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_push_1_12} {res.grid.col_t_1_3}
+                    {res.grid.col_t_push_0} {res.grid.col_m_full} {res.grid.col_m_push_0}">
                         <i class="{fonts.icons.iconPhoneSupport}"></i>
                         <h3>
-                            <ui:msg description="Phone Support">Phone
-                                <span>Support</span>
+                            <ui:msg description="Video Conference">Video
+                                <span>Conference</span>
                             </ui:msg>
                         </h3>
                         <p>
-                            <ui:msg description="Phone Support - Paragraph -">Enjoy the convenience of a direct line to
-                                someone at Arcbees you can call with questions. Available to purchasers of Enterprise
+                            <ui:msg description="Video Conference - Paragraph -">Enjoy the convenience of a direct line
+                                to someone at Arcbees you can call with questions. Available to purchasers of Enterprise
                                 support packages.
                             </ui:msg>
                         </p>
@@ -290,6 +315,6 @@
             </div>
         </section>
 
-        <aw:ProductsCarousel/>
+        <aw:SupportCarousel/>
     </g:HTMLPanel>
 </ui:UiBinder>

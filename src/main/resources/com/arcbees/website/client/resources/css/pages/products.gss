@@ -590,6 +590,13 @@ a.anchor {
     vertical-align: middle;
 }
 
+@media (max-width: 979px) {
+    .languageLogo li {
+        width: 20%;
+        margin: 0 2%;
+    }
+}
+
 .collapsible {
     color: C_TEXT_LIGHT;
     background-color: C_TEXT;

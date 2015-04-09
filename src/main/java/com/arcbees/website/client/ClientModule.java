@@ -38,7 +38,7 @@ public class ClientModule extends AbstractGinModule {
         bind(ResourceLoader.class).asEagerSingleton();
 
         bindConstant().annotatedWith(DefaultPlace.class).to(NameTokens.HOME);
-        bindConstant().annotatedWith(ErrorPlace.class).to(NameTokens.NOTFOUND);
+        bindConstant().annotatedWith(ErrorPlace.class).to(NameTokens.HOME);
         bindConstant().annotatedWith(UnauthorizedPlace.class).to(NameTokens.HOME);
 
         requestStaticInjection(NameTokens.class);

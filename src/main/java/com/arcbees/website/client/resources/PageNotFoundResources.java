@@ -1,5 +1,5 @@
-/*
- * Copyright 2014 ArcBees Inc.
+/**
+ * Copyright 2015 ArcBees Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -17,24 +17,23 @@
 package com.arcbees.website.client.resources;
 
 import com.arcbees.gsss.animation.client.AnimationResources;
-import com.google.gwt.resources.client.ClientBundle;
-import com.google.gwt.resources.client.CssResource;
 import com.google.gwt.resources.client.ImageResource;
 
-public interface ContactFormResources extends ClientBundle {
-    public interface Style extends AnimationResources.Animation {
-        String contactForm();
+public interface PageNotFoundResources extends FontResources {
+    interface Style extends AnimationResources.Animation {
+        String notFound();
 
-        String formBtns();
+        String header();
 
-        String error();
-
-        String sendIcon();
+        String honeyLost();
     }
+
+    @Source("img/404/404.png")
+    ImageResource notFound();
 
     @Source({"com/arcbees/gsss/animation/client/animationsettings.gss",
             "com/arcbees/gsss/animation/client/animations.gss",
             "com/arcbees/gsss/mixin/client/mixins.gss",
-            "css/colors.gss", "css/widget/contactform.gss"})
-    public Style style();
+            "css/colors.gss", "fonts/geometria/geometria.gss", "css/pages/404.gss"})
+    Style style();
 }

@@ -8,14 +8,30 @@
     <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
     <ui:with field="form" type="com.arcbees.website.client.resources.ContactFormResources"/>
     <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
+    <ui:with field="animations" type="com.arcbees.website.client.resources.AnimationsResources"/>
 
-    <g:PopupPanel styleName="{form.style.contactForm}" modal="true" glassEnabled="true">
+    <g:PopupPanel addStyleNames="{form.style.contactForm}" modal="true" glassEnabled="true">
         <g:HTMLPanel>
             <form action="">
-                <input type="text" placeholder="Name" required=""/>
-                <input type="email" name="Email" placeholder="Email" required=""/>
-                <textarea rows="4" cols="20"></textarea>
-                <input type="submit" value="Send" class="{res.style.btn}"/>
+                <h3>Contact us</h3>
+                <div class="">
+                    <label>Name</label>
+                    <input type="text" name="name" autofocus="autofocus"/>
+                </div>
+                <div class="{form.style.error}">
+                    <label>Email</label>
+                    <input type="email" name="Email" required=""/>
+                </div>
+                <div class="">
+                    <label>Message</label>
+                    <textarea rows="4" cols="20"></textarea>
+                </div>
+                <div class="{form.style.formBtns}">
+                    <button class="{res.style.btn}">Cancel</button>
+                    <button type="submit" class="{res.style.btn}">Send
+                        <i class="{fonts.icons.iconArcbees} {form.style.sendIcon} {animations.style.animation}"></i>
+                    </button>
+                </div>
             </form>
         </g:HTMLPanel>
     </g:PopupPanel>

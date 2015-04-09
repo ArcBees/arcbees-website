@@ -6,6 +6,10 @@
     background-color: C_STRIPE_LIGHT;
 }
 
+.productHead {
+    @mixin transition(background-color, .7s);
+}
+
 .productHead.gae {
     background-color: C_PRODUCT_GAE;
 }
@@ -163,7 +167,7 @@
 }
 
 .menuHeader li {
-    line-height: 1em;
+    line-height: 34rem;
 
     display: inline-block;
     margin: 0 4px;
@@ -174,19 +178,20 @@
 .menuHeader a {
     color: C_TEXT_LIGHT;
     font-size: 10.25rem;
-    line-height: 34rem;
 
-    min-height: 34rem;
+    display: block;
+    height: 360px;
 
     @mixin opacity(.5);
-    @mixin transition(opacity, .5s);
+    @mixin transition(all, .5s);
 }
 
 .menuHeader a.active {
     font-size: 34rem;
-    line-height: 31rem;
 
-    @mixin transition(all, 0.3s);
+    margin-top: -45px;
+
+    @mixin transition(all, .5s);
 }
 
 .menuHeader a.active,
@@ -203,7 +208,10 @@
 .productHead.chosen li:nth-child(5) a,
 .productHead.gquery li:nth-child(4) a {
     font-size: 15.5rem;
-    line-height: 16.25rem;
+
+    margin-top: -8px;
+
+    @mixin transition(all, .5s);
 }
 
 .productHead .arrow::after {
@@ -252,6 +260,8 @@
 
     .menuHeader a.active {
         font-size: 22rem;
+
+        margin-top: -24px;
     }
 
     .productHead.gae li:nth-child(2) a,
@@ -296,6 +306,7 @@
 
         display: block;
         margin-left: -100px;
+        margin-top: 0;
 
         position: absolute;
         left: 50%;

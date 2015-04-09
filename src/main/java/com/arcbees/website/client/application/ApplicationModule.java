@@ -23,6 +23,7 @@ import com.arcbees.website.client.application.contactform.ContactFormModule;
 import com.arcbees.website.client.application.expertise.ExpertiseModule;
 import com.arcbees.website.client.application.home.HomeModule;
 import com.arcbees.website.client.application.maps.MapsModule;
+import com.arcbees.website.client.application.error.NotFoundModule;
 import com.arcbees.website.client.application.products.ProductsModule;
 import com.arcbees.website.client.application.services.ServicesModule;
 import com.arcbees.website.client.application.support.SupportModule;
@@ -39,6 +40,7 @@ public class ApplicationModule extends AbstractPresenterModule {
         install(new SupportModule());
         install(new ServicesModule());
         install(new ProductsModule());
+        install(new NotFoundModule());
         install(new MapsModule());
         install(new ContactFormModule());
 

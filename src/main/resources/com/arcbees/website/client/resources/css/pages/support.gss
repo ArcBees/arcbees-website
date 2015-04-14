@@ -500,7 +500,8 @@
     margin-bottom: 65px;
 }
 
-.responseTime {
+.responseTime,
+.serviceDesk {
     padding: 0 40px;
 }
 
@@ -509,7 +510,8 @@
         font-size: 1.5rem;
     }
 
-    .responseTime {
+    .responseTime,
+    .serviceDesk {
         padding: 0;
     }
 }

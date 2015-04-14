@@ -221,8 +221,7 @@
                     <ui:msg description="Features">Features</ui:msg>
                 </h2>
                 <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                    <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_t_1_3} {res.grid.col_t_push_0}
-                    {res.grid.col_m_full} {res.grid.col_m_push_0}">
+                    <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_t_1_3} {res.grid.col_m_full}">
                         <i class="{fonts.icons.iconCommRes}"></i>
                         <h3 class="{page.style.ressCommunautaire}">
                             <ui:msg description="Community Support">Community
@@ -236,7 +235,7 @@
                         </p>
                     </div>
                     <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1} {res.grid.col_t_1_3}
-                    {res.grid.col_t_push_0} {res.grid.col_m_full} {res.grid.col_m_push_0} {page.style.responseTime}">
+                    {res.grid.col_t_push_0} {res.grid.col_m_full} {page.style.responseTime}">
                         <i class="{fonts.icons.iconRespTime}"></i>
                         <h3>
                             <ui:msg description="Response Time">Response
@@ -250,8 +249,8 @@
                             </ui:msg>
                         </p>
                     </div>
-                    <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_push_1_12} {res.grid.col_t_1_3}
-                    {res.grid.col_t_push_0} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+                    <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_push_1} {res.grid.col_t_1_3}
+                    {res.grid.col_t_push_0} {res.grid.col_m_full}">
                         <i class="{fonts.icons.iconSupportCases}"></i>
                         <h3>
                             <ui:msg description="Legacy Support">Legacy
@@ -267,8 +266,7 @@
                     </div>
                 </div>
                 <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
-                    <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_t_1_3} {res.grid.col_t_push_0}
-                    {res.grid.col_m_full} {res.grid.col_m_push_0}">
+                    <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_t_1_3} {res.grid.col_m_full}">
                         <i class="{fonts.icons.iconknowledgeBase}"></i>
                         <h3>
                             <ui:msg description="Knowledge Base">Knowledge
@@ -282,7 +280,7 @@
                         </p>
                     </div>
                     <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_push_1} {res.grid.col_t_1_3}
-                    {res.grid.col_t_push_0} {res.grid.col_m_full} {res.grid.col_m_push_0} {page.style.responseTime}">
+                    {res.grid.col_t_push_0} {res.grid.col_m_full} {page.style.serviceDesk}">
                         <i class="{fonts.icons.iconInternetSupport}"></i>
                         <h3>
                             <ui:msg description="Service Desk">Service
@@ -296,8 +294,8 @@
                             </ui:msg>
                         </p>
                     </div>
-                    <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_push_1_12} {res.grid.col_t_1_3}
-                    {res.grid.col_t_push_0} {res.grid.col_m_full} {res.grid.col_m_push_0}">
+                    <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_push_1} {res.grid.col_t_1_3}
+                    {res.grid.col_t_push_0} {res.grid.col_m_full}">
                         <i class="{fonts.icons.iconPhoneSupport}"></i>
                         <h3>
                             <ui:msg description="Video Conference">Video

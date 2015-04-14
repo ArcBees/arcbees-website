@@ -14,6 +14,9 @@ public interface NameTokensConstants extends Constants {
     @DefaultStringValue(NameTokens.BEES)
     String BEES();
 
+    @DefaultStringValue(NameTokens.NOTFOUND)
+    String NOTFOUND();
+
     @DefaultStringValue(NameTokens.CAREERS)
     String CAREERS();
 

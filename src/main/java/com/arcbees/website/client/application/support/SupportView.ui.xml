@@ -269,7 +269,7 @@
                 <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
                     <div class="{res.grid.col} {res.grid.col_1_4} {res.grid.col_t_1_3} {res.grid.col_t_push_0}
                     {res.grid.col_m_full} {res.grid.col_m_push_0}">
-                        <i class="{fonts.icons.iconRespTime}"></i>
+                        <i class="{fonts.icons.iconknowledgeBase}"></i>
                         <h3>
                             <ui:msg description="Knowledge Base">Knowledge
                                 <span>Base</span>

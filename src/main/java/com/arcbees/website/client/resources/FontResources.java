@@ -100,6 +100,8 @@ public interface FontResources extends ClientBundle {
         String iconGquery();
 
         String iconGwtOld();
+
+        String iconknowledgeBase();
     }
 
     @ClientBundle.Source("fonts/icons/icons.gss")

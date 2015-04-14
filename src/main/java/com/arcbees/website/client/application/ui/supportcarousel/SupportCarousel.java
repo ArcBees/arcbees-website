@@ -35,12 +35,12 @@ public class SupportCarousel implements IsWidget {
 
     private static Binder BINDER = GWT.create(Binder.class);
 
-    private final HTMLPanel root;
-
     @UiField
     DivElement carousel;
     @UiField
     AppResources res;
+
+    private final HTMLPanel root;
 
     public SupportCarousel() {
         root = BINDER.createAndBindUi(this);

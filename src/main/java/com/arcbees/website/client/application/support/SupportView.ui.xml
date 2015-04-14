@@ -40,7 +40,7 @@
 
             </div>
             <div class="{page.style.buySupportBtn} {res.style.wrapper}">
-                <a ui:field="supportPackage" class="{res.style.btn}">
+                <a ui:field="supportPackageBtn" class="{res.style.btn}">
                     <ui:msg description="Btn - Buy Support Packages">Buy support packages</ui:msg>
                 </a>
             </div>
@@ -83,7 +83,7 @@
                     </ui:msg>
                 </div>
             </div>
-            <section ui:field="supportPackage2"
+            <section ui:field="supportPackageAnchor"
                      class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {res.style.centered} {page.style.offers}">
                 <article class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_t_full} {page.style.plan}">
                     <header>

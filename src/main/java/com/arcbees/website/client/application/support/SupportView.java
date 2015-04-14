@@ -32,9 +32,9 @@ public class SupportView extends ViewImpl implements SupportPresenter.MyView {
     }
 
     @UiField
-    AnchorElement supportPackage;
+    AnchorElement supportPackageBtn;
     @UiField
-    Element supportPackage2;
+    Element supportPackageAnchor;
 
     @Inject
     SupportView(
@@ -45,13 +45,13 @@ public class SupportView extends ViewImpl implements SupportPresenter.MyView {
     }
 
     private void bind() {
-        $(supportPackage).click(new Function() {
+        $(supportPackageBtn).click(new Function() {
             @Override
             public void f() {
                 $("html, body").each(new Function() {
                     @Override
                     public void f(Element element) {
-                        new ScrollToAnimation(element, supportPackage2.getAbsoluteTop() - 40).run(600);
+                        new ScrollToAnimation(element, supportPackageAnchor.getAbsoluteTop() - 40).run(600);
                     }
                 });
             }

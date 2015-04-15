@@ -12,7 +12,269 @@
     padding-top: 200px;
 }
 
+.img404 {
+    margin-bottom: 35px;
+
+    position: relative;
+    z-index: 1;
+}
+
+.text404 {
+    position: relative;
+    z-index: 99;
+}
+
 .honeyLost {
     font-family: "geometriaBold";
     font-size: 4rem;
+    line-height: 1em;
+
+    position: relative;
+    z-index: 1;
+}
+
+.tears {
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    z-index: 2;
+}
+
+.tearDrop {
+    @mixin animation_name(tears);
+    @mixin animation_duration(4s);
+    @mixin animation_timing_function(linear);
+}
+
+@-webkit-keyframes tears {
+    0% {
+        -webkit-transform: scale(.25) translate(0, 0);
+    }
+    100% {
+        -webkit-transform: scale(.75) translate(0, 1000px);
+    }
+}
+
+@keyframes tears {
+    0% {
+        -moz-transform: scale(.25) translate(0, 0);
+        -ms-transform: scale(.25) translate(0, 0);
+        -o-transform: scale(.25) translate(0, 0);
+        transform: scale(.25) translate(0, 0);
+    }
+
+    100% {
+        -moz-transform: scale(.75) translate(0, 1000px);
+        -ms-transform: scale(.75) translate(0, 1000px);
+        -o-transform: scale(.75) translate(0, 1000px);
+        transform: scale(.75) translate(0, 1000px);
+    }
+}
+
+.tears2 {
+    margin-left: -5px;
+
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    z-index: 2;
+}
+
+.tearDrop2 {
+    @mixin animation_name(tears2);
+    @mixin animation_duration(4s);
+    @mixin animation_delay(.5s);
+    @mixin animation_timing_function(linear);
+}
+
+@-webkit-keyframes tears2 {
+    0% {
+        -webkit-transform: scale(.25) translate(0, 0);
+    }
+    100% {
+        -webkit-transform: scale(.75) translate(0, 1000px);
+    }
+}
+
+@keyframes tears2 {
+    0% {
+        -moz-transform: scale(.25) translate(0, 0);
+        -ms-transform: scale(.25) translate(0, 0);
+        -o-transform: scale(.25) translate(0, 0);
+        transform: scale(.25) translate(0, 0);
+    }
+    100% {
+        -moz-transform: scale(.75) translate(0, 1000px);
+        -ms-transform: scale(.75) translate(0, 1000px);
+        -o-transform: scale(.75) translate(0, 1000px);
+        transform: scale(.75) translate(0, 1000px);
+    }
+}
+
+.tears3 {
+    margin-left: -25px;
+
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    z-index: 2;
+}
+
+.tearDrop3 {
+    @mixin animation_name(tears3);
+    @mixin animation_duration(4.25s);
+    @mixin animation_delay(.25s);
+    @mixin animation_timing_function(linear);
+}
+
+@-webkit-keyframes tears3 {
+    0% {
+        -webkit-transform: scale(.25) translate(0, 0);
+    }
+    100% {
+        -webkit-transform: scale(.75) translate(0, 1000px);
+    }
+}
+
+@keyframes tears3 {
+    0% {
+        -moz-transform: scale(.25) translate(0, 0);
+        -ms-transform: scale(.25) translate(0, 0);
+        -o-transform: scale(.25) translate(0, 0);
+        transform: scale(.25) translate(0, 0);
+    }
+
+    100% {
+        -moz-transform: scale(.75) translate(0, 1000px);
+        -ms-transform: scale(.75) translate(0, 1000px);
+        -o-transform: scale(.75) translate(0, 1000px);
+        transform: scale(.75) translate(0, 1000px);
+    }
+}
+
+.water {
+    width: 100%;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+
+    @mixin animation_duration(12s);
+    @mixin animation_name(water);
+    @mixin animation_delay(4s);
+    @mixin animation_timing_function(linear);
+}
+
+@-webkit-keyframes water {
+    0% {
+        bottom: -300px;
+    }
+    100% {
+        bottom: -10px;
+    }
+}
+
+@keyframes water {
+    0% {
+        bottom: -300px;
+    }
+    100% {
+        bottom: -10px;
+    }
+}
+
+.water2 {
+    width: 100%;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    @mixin animation_duration(11.5s);
+    @mixin animation_name(water2);
+    @mixin animation_delay(4s);
+    @mixin animation_timing_function(linear);
+}
+
+@-webkit-keyframes water2 {
+    0% {
+        bottom: -300px;
+    }
+    100% {
+        bottom: 10px;
+    }
+}
+
+@keyframes water2 {
+    0% {
+        bottom: -300px;
+    }
+    100% {
+        bottom: 10px;
+    }
+}
+
+.wave {
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjk3LjYyNnB4IiBoZWlnaHQ9IjQxMS45MjdweCIgdmlld0JveD0iMCAwIDI5Ny42MjYgNDExLjkyNyI+CjxwYXRoIGZpbGw9IiM2REI2RTIiIGQ9Ik0yOTcuNjI2IDEzLjgzMWMtMjUuNDUgOS42MjMtNDYuNzcxIDE2LjE2LTc2Ljc4NiAxNi4xNkMxNjYuODgyIDMwIDEyOS41IDAgNzEuOSAwIEM0NC4zMDUgMCAxOS4xIDUuMiAwIDEzLjgyNXYzOTguMTAzaDI5Ny42MjZWMTMuODMxeiIvPgo8L3N2Zz4=') repeat-x left top;
+    background-size: 200px 280px;
+
+    display: block;
+    width: 100%;
+    height: 1000px;
+
+    @mixin animation_duration(3s);
+    @mixin animation_name(wave);
+    @mixin animation_timing_function(linear);
+}
+
+@-webkit-keyframes wave {
+    0% {
+        background-position: 0 bottom;
+    }
+    100% {
+        background-position: 200px bottom;
+    }
+}
+
+@keyframes wave {
+    0% {
+        background-position: 0 bottom;
+    }
+    100% {
+        background-position: 200px bottom;
+    }
+}
+
+.wave2 {
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjk3LjYyNnB4IiBoZWlnaHQ9IjQxMS45MjdweCIgdmlld0JveD0iMCAwIDI5Ny42MjYgNDExLjkyNyI+CjxwYXRoIGZpbGw9IiM2REI2RTIiIGQ9Ik0yOTcuNjI2IDEzLjgzMWMtMjUuNDUgOS42MjMtNDYuNzcxIDE2LjE2LTc2Ljc4NiAxNi4xNkMxNjYuODgyIDMwIDEyOS41IDAgNzEuOSAwIEM0NC4zMDUgMCAxOS4xIDUuMiAwIDEzLjgyNXYzOTguMTAzaDI5Ny42MjZWMTMuODMxeiIvPgo8L3N2Zz4=') repeat-x left top;
+    background-size: 200px 280px;
+
+    display: block;
+    width: 100%;
+    height: 1050px;
+
+    opacity: .75;
+
+    @mixin animation_duration(2.5s);
+    @mixin animation_name(wave2);
+    @mixin animation_timing_function(linear);
+}
+
+@-webkit-keyframes wave2 {
+    0% {
+        background-position: 0 bottom;
+    }
+    100% {
+        background-position: -200px bottom;
+    }
+}
+
+@keyframes wave2 {
+    0% {
+        background-position: 0 bottom;
+    }
+    100% {
+        background-position: -200px bottom;
+    }
 }

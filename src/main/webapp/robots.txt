@@ -1,4 +1,3 @@
 User-agent: *
 Disallow: /WEB-INF/
-Disallow: /hive/
-Sitemap: http://www.arcbees.com/hive-sitemap.xml
+Sitemap: http://www.arcbees.com/sitemap.xml

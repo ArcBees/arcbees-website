@@ -184,6 +184,18 @@
     min-height: 155px;
 }
 
+.slide {
+    min-height: 155px;
+
+    white-space: initial;
+}
+
+@media (max-width: 649px) {
+    .slide {
+        min-height: 170px;
+    }
+}
+
 /* -> Bee -- */
 
 .bees .hive {

@@ -41,6 +41,8 @@ public class NameTokens {
     public static final String SHOP_FR = "!/boutique";
     public static final String SERVICES = "!/services";
     public static final String SERVICES_FR = "!/services";
+    public static final String NOTFOUND = "!/notfound";
+    public static final String NOTFOUND_FR = "!/erreur";
 
     public static final String PRODUCTS_BASE = "!/products";
     public static final String PRODUCTS_BASE_FR = "!/produits";
@@ -101,6 +103,7 @@ public class NameTokens {
         keys.put(GWTP, GWTP_FR);
         keys.put(GQUERY, GQUERY_FR);
         keys.put(PRODUCTS, PRODUCTS_FR);
+        keys.put(NOTFOUND, NOTFOUND_FR);
 
         keys.put(BEE_CHRISTIAN, BEE_CHRISTIAN_FR);
         keys.put(BEE_CHRISTOPHER, BEE_CHRISTOPHER_FR);

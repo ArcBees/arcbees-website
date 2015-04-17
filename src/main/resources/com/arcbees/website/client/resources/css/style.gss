@@ -1203,6 +1203,7 @@ img {
     height: 113px;
 
     position: relative;
+    z-index: 99;
 }
 
 .footer .backTop i {

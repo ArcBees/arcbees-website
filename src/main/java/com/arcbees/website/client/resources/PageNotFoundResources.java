@@ -26,10 +26,37 @@ public interface PageNotFoundResources extends FontResources {
         String header();
 
         String honeyLost();
+
+        String img404();
+
+        String tears();
+
+        String tearDrop();
+
+        String tearDrop2();
+
+        String tears2();
+
+        String tears3();
+
+        String tearDrop3();
+
+        String water();
+
+        String wave();
+
+        String wave2();
+
+        String water2();
+
+        String text404();
     }
 
     @Source("img/404/404.png")
     ImageResource notFound();
+
+    @Source("img/404/tear.png")
+    ImageResource tear();
 
     @Source({"com/arcbees/gsss/animation/client/animationsettings.gss",
             "com/arcbees/gsss/animation/client/animations.gss",

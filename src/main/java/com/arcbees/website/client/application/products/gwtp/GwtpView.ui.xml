@@ -95,7 +95,7 @@
                     </a>
                     <a href="http://dev.arcbees.com/gwtp/" target="_blank" class="{res.style.btn}">
                         <i class="{fonts.icons.iconArrowOutside}"></i>
-                        <ui:msg description="- BTN - Developers Platform">Developer's Platform</ui:msg>
+                        <ui:msg description="- BTN - Getting started">Getting started</ui:msg>
                     </a>
                 </div>
             </div>

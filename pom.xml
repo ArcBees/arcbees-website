@@ -26,7 +26,7 @@
         <gwtp.version>1.5-SNAPSHOT</gwtp.version>
         <guice.version>3.0</guice.version>
         <gin.version>2.1.2</gin.version>
-        <gsss.version>1.0-SNAPSHOT</gsss.version>
+        <gsss.version>1.1-SNAPSHOT</gsss.version>
         <gwtquery.version>1.4.3-SNAPSHOT</gwtquery.version>
         <gwt-maps-api.version>3.10.0-alpha-7</gwt-maps-api.version>
         <tooltip.version>1.1</tooltip.version>

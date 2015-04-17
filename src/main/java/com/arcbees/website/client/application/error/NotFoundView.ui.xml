@@ -31,9 +31,28 @@
         </h1>
 
         <section class="{res.style.stripe} {res.style.colored} {page.style.header}">
-            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper}">
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {page.style.img404}">
                 <div class="{res.grid.col} {res.grid.col_push_2} {res.grid.col_8} {res.style.centered}">
                     <g:Image resource="{page.notFound}"></g:Image>
+                    <div class="{page.style.tears} {page.style.animation} {page.style.tearDrop} {page.style.infinite}">
+                        <g:Image resource="{page.tear}"></g:Image>
+                    </div>
+                    <div class="{page.style.tears2} {page.style.animation} {page.style.tearDrop2} {page.style.infinite}">
+                        <g:Image resource="{page.tear}"></g:Image>
+                    </div>
+                    <div class="{page.style.tears3} {page.style.animation} {page.style.tearDrop3} {page.style.infinite}">
+                        <g:Image resource="{page.tear}"></g:Image>
+                    </div>
+                </div>
+            </div>
+            <div class="{page.style.water} {page.style.animation}">
+                <div class="{page.style.wave} {page.style.animation} {page.style.infinite}"></div>
+            </div>
+            <div class="{page.style.water2} {page.style.animation}">
+                <div class="{page.style.wave2} {page.style.animation} {page.style.infinite}"></div>
+            </div>
+            <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {page.style.text404}">
+                <div class="{res.grid.col} {res.grid.col_push_2} {res.grid.col_8} {res.style.centered}">
                     <p class="{page.style.honeyLost}">
                         <ui:msg description="Honey you're lost">Honey you're lost</ui:msg>
                     </p>

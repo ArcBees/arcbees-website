@@ -167,7 +167,7 @@
                 <article class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_t_full} {page.style.plan}">
                     <header>
                         <h3>
-                            <ui:msg description="Entreprise">Entreprise</ui:msg>
+                            <ui:msg description="Entreprise">Enterprise</ui:msg>
                         </h3>
                         <p class="{page.style.price}">
                             <ui:msg description="$ 2 999.95 per month">

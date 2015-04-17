@@ -51,6 +51,7 @@
 
 @external "icon*";
 
+.iconknowledgeBase:before {content: "\e600";}
 .iconInternetSupport:before {content: "\e62e";}
 .iconGCloudPlatform:before {content: "\e62d"; margin-left: -85px;}
 .iconCommRes:before {content: "\e625";}

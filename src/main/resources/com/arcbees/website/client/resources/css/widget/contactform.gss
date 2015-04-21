@@ -22,6 +22,7 @@
     border: 1px solid #dfdfdf;
 
     outline: none;
+    resize: vertical;
 }
 
 .error {
@@ -30,7 +31,8 @@
     @mixin animation_duration(.6s);
 }
 
-.error input {
+.error input,
+.error textarea {
     border-bottom: 2px solid red;
 }
 

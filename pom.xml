@@ -22,20 +22,23 @@
         <maven-clean-plugin.version>2.6.1</maven-clean-plugin.version>
 
         <gwt.version>2.7.0</gwt.version>
-        <gae.version>1.9.9</gae.version>
-        <gwtp.version>1.5-SNAPSHOT</gwtp.version>
+        <gae.version>1.9.19</gae.version>
+        <gwtp.version>1.4</gwtp.version>
         <guice.version>3.0</guice.version>
         <gin.version>2.1.2</gin.version>
-        <gsss.version>1.0-SNAPSHOT</gsss.version>
-        <gwtquery.version>1.4.3-SNAPSHOT</gwtquery.version>
+        <gsss.version>1.0</gsss.version>
+        <gwtquery.version>1.4.3</gwtquery.version>
         <gwt-maps-api.version>3.10.0-alpha-7</gwt-maps-api.version>
         <tooltip.version>1.1</tooltip.version>
         <appear.version>1.0-SNAPSHOT</appear.version>
         <gwtchosen.version>2.0.0-SNAPSHOT</gwtchosen.version>
+        <gwt-seo.version>0.1-SNAPSHOT</gwt-seo.version>
         <guava.version>18.0</guava.version>
         <universal-analytics.version>2.1</universal-analytics.version>
         <velocity.version>1.7</velocity.version>
-        <gwt-seo.version>0.1-SNAPSHOT</gwt-seo.version>
+        <mail.version>1.2</mail.version>
+        <resteasy.version>3.0.11.Final</resteasy.version>
+        <arcbees.version>1.3-SNAPSHOT</arcbees.version>
 
         <webappDirectory>${project.build.directory}/${project.build.finalName}</webappDirectory>
         <gae.home>
@@ -69,6 +72,11 @@
             <artifactId>gwtp-mvp-client</artifactId>
             <version>${gwtp.version}</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.gwtplatform</groupId>
+            <artifactId>gwtp-dispatch-rest</artifactId>
+            <version>${gwtp.version}</version>
         </dependency>
 
         <!-- DI dependencies -->
@@ -153,6 +161,38 @@
             <groupId>org.apache.velocity</groupId>
             <artifactId>velocity</artifactId>
             <version>${velocity.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.arcbees.appengine</groupId>
+            <artifactId>mail</artifactId>
+            <version>${mail.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-jaxrs</artifactId>
+            <version>${resteasy.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-guice</artifactId>
+            <version>${resteasy.version}</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>guice</artifactId>
+                    <groupId>com.google.code.guice</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-jackson2-provider</artifactId>
+            <version>${resteasy.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.arcbees</groupId>
+            <artifactId>guicy-resteasy</artifactId>
+            <version>${arcbees.version}</version>
         </dependency>
     </dependencies>
 

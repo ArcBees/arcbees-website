@@ -30,7 +30,7 @@ import com.arcbees.website.shared.EndPoints;
 @Consumes(MediaType.APPLICATION_JSON)
 @Produces(MediaType.APPLICATION_JSON)
 public class SupportResource {
-    private static final String TO = "maxime.meriouma@arcbees.com";
+    private static final String TO = "christian.goudreau@arcbees.com";
     private static final String CONTACT_REQUEST = "Contact Request";
     private static final String FROM = "zom.bee@arcbees.com";
 

@@ -77,8 +77,8 @@
 
     .support .header .icon2 {
         @mixin animation_name(icon2);
-        /*@mixin animation_delay(.5s);*/
-        /*@mixin animation_duration(.6s);*/
+        @mixin animation_delay(.5s);
+        @mixin animation_duration(.6s);
     }
 
     @keyframes icon2 {

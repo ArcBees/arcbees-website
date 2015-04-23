@@ -11,7 +11,7 @@
     <g:HTMLPanel tag="section" addStyleNames="{res.style.stripe} {res.style.medium2} {res.style.centered} {res.grid.col_m_hide}">
         <div class="{res.style.wrapper}">
             <h2>
-                <ui:msg description="Products">Products</ui:msg>
+                <ui:msg description="Supported products">Supported products</ui:msg>
             </h2>
             <p>
                 <ui:msg description="Our hive of products offers you different possibilities. Use the ones that fits you.">
@@ -23,7 +23,7 @@
                 <ul>
                     <li>
                         <a href="#{nameTokens.GAE}" class="{fonts.icons.iconGae} {res.style.gae}">
-                            <h3>GAE Studio</h3>
+                            <h3>GAE</h3>
                             <p>
                                 <ui:msg description="Optimizing Google App Engine applications">
                                     Optimizing Google App Engine applications

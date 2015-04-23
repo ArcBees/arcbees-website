@@ -18,7 +18,7 @@
                     <ul>
                         <li>
                             <a href="#{nameTokens.GAE}" class="{fonts.icons.iconGae}" data-style="{page.style.gae}">
-                                <span class="{res.style.hidden}">Gae</span>
+                                <span class="{res.style.hidden}">Gae Studio</span>
                             </a>
                         </li>
                         <li>

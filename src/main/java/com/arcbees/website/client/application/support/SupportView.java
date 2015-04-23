@@ -17,6 +17,7 @@
 package com.arcbees.website.client.application.support;
 
 import com.google.gwt.dom.client.AnchorElement;
+import com.google.gwt.dom.client.Element;
 import com.google.gwt.query.client.Function;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
@@ -31,6 +32,10 @@ public class SupportView extends ViewWithUiHandlers<SupportUiHandlers> implement
     }
 
     @UiField
+    AnchorElement supportPackageBtn;
+    @UiField
+    Element supportPackageAnchor;
+    @UiField
     AnchorElement contactUs;
 
     @Inject
@@ -38,10 +43,26 @@ public class SupportView extends ViewWithUiHandlers<SupportUiHandlers> implement
             Binder binder) {
         initWidget(binder.createAndBindUi(this));
 
+        bind();
+    }
+
+    private void bind() {
         $(contactUs).click(new Function() {
             @Override
             public void f() {
                 getUiHandlers().showContactForm();
+            }
+        });
+        
+        $(supportPackageBtn).click(new Function() {
+            @Override
+            public void f() {
+                $("html, body").each(new Function() {
+                    @Override
+                    public void f(Element element) {
+                        new ScrollToAnimation(element, supportPackageAnchor.getAbsoluteTop() - 40).run(600);
+                    }
+                });
             }
         });
     }

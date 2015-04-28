@@ -31,6 +31,7 @@ import com.arcbees.website.client.application.bees.bee.manon.ManonModule;
 import com.arcbees.website.client.application.bees.bee.maxime.MaximeModule;
 import com.arcbees.website.client.application.bees.bee.philippearaujo.PhilippeaModule;
 import com.arcbees.website.client.application.bees.bee.philippebeaudoin.PhilippebModule;
+import com.arcbees.website.client.application.bees.bee.renaud.RenaudModule;
 import com.arcbees.website.client.application.bees.quiz.QuestionPresenter;
 import com.arcbees.website.client.application.bees.quiz.QuestionView;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
@@ -51,6 +52,7 @@ public class BeesModule extends AbstractPresenterModule {
         install(new MaximeModule());
         install(new PhilippeaModule());
         install(new PhilippebModule());
+        install(new RenaudModule());
 
         bindPresenter(BeesPresenter.class, BeesPresenter.MyView.class,
                 BeesView.class, BeesPresenter.MyProxy.class);

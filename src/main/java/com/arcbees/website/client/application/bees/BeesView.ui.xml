@@ -308,6 +308,18 @@
                             </div>
                         </div>
 
+                        <div class="{page.style.bee} {page.style.bee1}">
+                            <div class="{page.style.beeHolder1}">
+                                <div class="{page.style.beeHolder2}">
+                                    <g:Image resource="{page.beeRenaud1}"></g:Image>
+                                    <a href="#{nameTokens.BEE_RENAUD}">
+                                        <h3>Renaud <span>Lainé</span></h3>
+                                        <p><ui:msg description="Renaud's title">Wannabee dev</ui:msg></p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>

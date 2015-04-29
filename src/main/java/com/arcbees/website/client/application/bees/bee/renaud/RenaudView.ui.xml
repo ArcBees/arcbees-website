@@ -14,28 +14,28 @@
 
         <seo:SeoWidget>
             <seo:Title>
-                <ui:msg description="SEO - Bees - Manon - title">Manon Gruaz - Arcbees</ui:msg>
+                <ui:msg description="SEO - Bees - Renaud - title">Renaud Lainé - Arcbees</ui:msg>
             </seo:Title>
             <seo:Description>
-                <ui:msg description="SEO - Bees - Manon - description">
-                    Lead Designer, Branding goddess and Loving Bee
+                <ui:msg description="SEO - Bees - Renaud - description">
+                    Wanna-bee
                 </ui:msg>
             </seo:Description>
             <seo:Og>
-                <seo:OgImage height="241" width="285">http://www.arcbees.com/img/manon-gruaz.jpg</seo:OgImage>
+                <seo:OgImage height="241" width="285">http://www.arcbees.com/img/renaud-laine.jpg</seo:OgImage>
             </seo:Og>
         </seo:SeoWidget>
 
         <div class="{page.style.bee} {page.style.bee1}">
             <div class="{page.style.beeHolder1}">
                 <div class="{page.style.beeHolder2}">
-                    <g:Image resource="{page.beeManon2}"></g:Image>
+                    <g:Image resource="{page.beeRenaud2}"></g:Image>
                 </div>
             </div>
         </div>
 
-        <h1>Manon Gruaz
-            <span><ui:msg description="Manon's title">Lead Designer, Branding goddess and Loving Bee</ui:msg></span>
+        <h1>Renaud Lainé
+            <span><ui:msg description="Renaud's title">Wannabee, dev</ui:msg></span>
         </h1>
 
         <div class="{res.grid.row} {res.style.clearfix}">
@@ -44,11 +44,9 @@
                     <ui:msg description="Professional achievements:">Professional achievements</ui:msg>
                 </h2>
                 <ul>
-                    <ui:msg description="Manon's prof achievements">
-                        <li>Designed the new GWT branding at Google, Mountain View, in 2014.</li>
-                        <li>Unveiled the brand new GWT web site at Google, Mountain View, in 2014.</li>
-                        <li>Won 1st place at Startup Weekend Québec 2013.</li>
-                        <li>Top of the «Brand Design Master» class, 2009.</li>
+                    <ui:msg description="Renaud's prof achievements">
+                        <li>Passionate about open source technologies and a strong desire to contribute to them.</li>
+                        <li>Internship at Arcbees.</li>
                     </ui:msg>
                 </ul>
             </div>
@@ -57,10 +55,9 @@
                     <ui:msg description="Personal achievements:">Personal achievements</ui:msg>
                 </h2>
                 <ul>
-                    <ui:msg description="Manon's pers achievements">
-                        <li>Earned a science degree with honours while being a zero in science.</li>
-                        <li>Diving into the rift between two tectonic plates, in very cold water!</li>
-                        <li>Self-proclaimed biggest fan of Harley Quinn.</li>
+                    <ui:msg description="Renaud's pers achievements">
+                        <li>Knowing the secret recipe for the best coffee.</li>
+                        <li>Choosing computer science as field of study.</li>
                     </ui:msg>
                 </ul>
             </div>
@@ -68,15 +65,15 @@
 
         <ul class="{page.style.social}">
             <li>
-                <a href="http://ca.linkedin.com/pub/manon-gruaz-dga/19/58b/4b5/" target="_blank">
+                <a href="https://ca.linkedin.com/pub/renaud-lain%C3%A9/a7/41b/479" target="_blank">
                     <i class="{fonts.icons.iconLkd}"></i>
-                    <span>Profil LinkedIn de Manon Gruaz</span>
+                    <span>Profil LinkedIn de Renaud Lainé</span>
                 </a>
             </li>
             <li>
-                <a href="https://plus.google.com/111449294896479317277/posts" target="_blank">
+                <a href="https://plus.google.com/u/0/115750043196235240117/posts" target="_blank">
                     <i class="{fonts.icons.iconGPlus}"></i>
-                    <span>Profil Google+ de Manon Gruaz</span>
+                    <span>Profil Google+ de Renaud Lainé</span>
                 </a>
             </li>
         </ul>

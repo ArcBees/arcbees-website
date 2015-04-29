@@ -23,11 +23,11 @@ import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.inject.Inject;
-import com.gwtplatform.mvp.client.ViewImpl;
+import com.gwtplatform.mvp.client.ViewWithUiHandlers;
 
 import static com.google.gwt.query.client.GQuery.$;
 
-public class SupportView extends ViewImpl implements SupportPresenter.MyView {
+public class SupportView extends ViewWithUiHandlers<SupportUiHandlers> implements SupportPresenter.MyView {
     interface Binder extends UiBinder<Widget, SupportView> {
     }
 
@@ -35,6 +35,8 @@ public class SupportView extends ViewImpl implements SupportPresenter.MyView {
     AnchorElement supportPackageBtn;
     @UiField
     Element supportPackageAnchor;
+    @UiField
+    AnchorElement contactUs;
 
     @Inject
     SupportView(
@@ -45,6 +47,13 @@ public class SupportView extends ViewImpl implements SupportPresenter.MyView {
     }
 
     private void bind() {
+        $(contactUs).click(new Function() {
+            @Override
+            public void f() {
+                getUiHandlers().showContactForm();
+            }
+        });
+        
         $(supportPackageBtn).click(new Function() {
             @Override
             public void f() {

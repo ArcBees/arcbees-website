@@ -16,8 +16,6 @@
 
 package com.arcbees.website.client.application.contact;
 
-import com.arcbees.website.client.application.careers.CareersPresenter;
-import com.arcbees.website.client.application.careers.CareersView;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
 public class ContactModule extends AbstractPresenterModule {

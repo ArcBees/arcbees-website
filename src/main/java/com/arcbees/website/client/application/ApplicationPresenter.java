@@ -1,22 +1,21 @@
 /**
  * Copyright 2015 ArcBees Inc.
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
+ * <p/>
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at
+ * <p/>
  * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License.
+ * <p/>
+ * Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on
+ * an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the
+ * specific language governing permissions and limitations under the License.
  */
 
 package com.arcbees.website.client.application;
 
 import com.arcbees.analytics.shared.Analytics;
+import com.arcbees.website.client.application.contactform.ContactFormPresenter;
+import com.arcbees.website.client.application.contactform.ShowContactFormEvent;
 import com.google.gwt.event.shared.GwtEvent;
 import com.google.inject.Inject;
 import com.google.web.bindery.event.shared.EventBus;
@@ -31,7 +30,7 @@ import com.gwtplatform.mvp.client.proxy.Proxy;
 import com.gwtplatform.mvp.client.proxy.RevealContentHandler;
 
 public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView, ApplicationPresenter.MyProxy>
-        implements NavigationHandler {
+        implements NavigationHandler, ShowContactFormEvent.ShowContactFormHandler {
     @ProxyStandard
     interface MyProxy extends Proxy<ApplicationPresenter> {
     }
@@ -43,6 +42,7 @@ public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView,
     public static final GwtEvent.Type<RevealContentHandler<?>> SLOT_MAIN = new GwtEvent.Type<>();
 
     private final PlaceManager placeManager;
+    private final ContactFormPresenter contactFormPresenter;
     private final Analytics analytics;
 
     @Inject
@@ -51,10 +51,12 @@ public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView,
             MyView view,
             MyProxy proxy,
             PlaceManager placeManager,
+            ContactFormPresenter contactFormPresenter,
             Analytics analytics) {
         super(eventBus, view, proxy, RevealType.Root);
 
         this.placeManager = placeManager;
+        this.contactFormPresenter = contactFormPresenter;
         this.analytics = analytics;
 
         addRegisteredHandler(NavigationEvent.getType(), this);
@@ -62,7 +64,13 @@ public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView,
 
     @Override
     public void onNavigation(NavigationEvent navigationEvent) {
+        removeFromPopupSlot(contactFormPresenter);
         trackPageView();
+    }
+
+    @Override
+    public void onShowContactForm(ShowContactFormEvent event) {
+        addToPopupSlot(contactFormPresenter);
     }
 
     @Override
@@ -70,6 +78,13 @@ public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView,
         super.onReveal();
 
         trackPageView();
+    }
+
+    @Override
+    protected void onBind() {
+        super.onBind();
+
+        addVisibleHandler(ShowContactFormEvent.getType(), this);
     }
 
     private void trackPageView() {

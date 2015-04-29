@@ -4,6 +4,7 @@
 <module rename-to='arcbees'>
     <inherits name='com.google.gwt.user.User'/>
 
+    <inherits name="com.gwtplatform.dispatch.rest.DispatchRest"/>
     <inherits name='com.gwtplatform.mvp.MvpWithEntryPoint'/>
     <inherits name="com.arcbees.gsss.grid.Grid"/>
     <inherits name='com.google.gwt.maps.Maps'/>

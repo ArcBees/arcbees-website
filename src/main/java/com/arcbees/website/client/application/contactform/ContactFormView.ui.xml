@@ -28,9 +28,7 @@
                 </div>
                 <div class="{form.style.formBtns}">
                     <button type="reset" ui:field="cancel" class="{res.style.btn}">Cancel</button>
-                    <button type="submit" class="{res.style.btn}">Send
-                        <i class="{fonts.icons.iconArcbees} {form.style.sendIcon} {animations.style.animation}"></i>
-                    </button>
+                    <button type="submit" class="{res.style.btn}">Send</button>
                 </div>
             </form>
         </g:HTMLPanel>

@@ -46,7 +46,7 @@ public interface AppResources extends FontResources {
 
         String backHome();
 
-        String menuContact();
+        String menuSupport();
 
         String socialmedias();
 

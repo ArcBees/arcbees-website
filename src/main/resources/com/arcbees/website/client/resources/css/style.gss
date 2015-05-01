@@ -649,7 +649,7 @@ img {
     margin-top: 1.5rem;
 }
 
-.menu li a.menuContact {
+.menu li a.menuSupport {
     margin: 4em 0 4em 50px;
 }
 
@@ -785,7 +785,7 @@ img {
         border-top: 1px solid #333;
     }
 
-    .menu li a.menuContact {
+    .menu li a.menuSupport {
         margin: 0;
     }
 

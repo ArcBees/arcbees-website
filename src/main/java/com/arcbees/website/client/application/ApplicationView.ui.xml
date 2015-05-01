@@ -31,11 +31,6 @@
                         </a>
                     </li>
                     <li class="{res.style.menuStart}">
-                        <a href="#{nameTokens.HOME}">
-                            <ui:msg description="About">About</ui:msg>
-                        </a>
-                    </li>
-                    <li>
                         <a href="#{nameTokens.EXPERTISE}">Expertise</a>
                     </li>
                     <li>
@@ -64,16 +59,22 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#{nameTokens.SUPPORT}">Support</a>
-                    </li>
-                    <li>
                         <a href="#{nameTokens.BEES}">
                             <ui:msg description="Our bees">Our bees</ui:msg>
                         </a>
                     </li>
                     <li>
-                        <a href="#{nameTokens.CONTACT}" class="{res.style.menuContact}">Contact</a>
+                        <a href="#{nameTokens.HOME}">
+                            <ui:msg description="About">About</ui:msg>
+                        </a>
                     </li>
+                    <li>
+                        <a href="#{nameTokens.CONTACT}">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#{nameTokens.SUPPORT}" class="{res.style.menuSupport}">Support</a>
+                    </li>
+
                     <li>
                         <a href="http://dev.arcbees.com/" target="_blank">
                             <ui:msg description="Developers">Developers</ui:msg>

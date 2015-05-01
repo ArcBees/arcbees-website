@@ -30,6 +30,8 @@ public class QuestionPresenter extends PresenterWidget<MyView> implements Questi
         void setQuizFinished();
 
         void setQuestion(int questionNumber);
+        
+        void pushQuestionAnalytics(int questionNumber);
     }
 
     private int currentQuestion = 0;
@@ -45,6 +47,7 @@ public class QuestionPresenter extends PresenterWidget<MyView> implements Questi
 
     @Override
     public void onNextQuestion() {
+        getView().pushQuestionAnalytics(currentQuestion);
         ++currentQuestion;
         if (currentQuestion < 6) {
             getView().setQuestion(currentQuestion);

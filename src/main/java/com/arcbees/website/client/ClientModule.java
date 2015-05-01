@@ -1,4 +1,4 @@
-/**
+/*
  * Copyright 2015 ArcBees Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
@@ -24,13 +24,18 @@ import com.google.gwt.inject.client.AbstractGinModule;
 import com.gwtplatform.mvp.client.annotations.DefaultPlace;
 import com.gwtplatform.mvp.client.annotations.ErrorPlace;
 import com.gwtplatform.mvp.client.annotations.UnauthorizedPlace;
+import com.gwtplatform.mvp.client.gin.DefaultModule;
 import com.gwtplatform.mvp.client.gin.DefaultModule.Builder;
 import com.gwtplatform.mvp.shared.proxy.RouteTokenFormatter;
 
 public class ClientModule extends AbstractGinModule {
     @Override
     protected void configure() {
-        install(new Builder().tokenFormatter(RouteTokenFormatter.class).build());
+        DefaultModule defaultModule = new Builder()
+                .tokenFormatter(RouteTokenFormatter.class)
+                .placeManager(PlaceManagerImpl.class)
+                .build();
+        install(defaultModule);
 
         install(new ApplicationModule());
         install(new AnalyticsModule.Builder("UA-41550930-11").autoCreate(false).build());

@@ -650,7 +650,14 @@ img {
 }
 
 .menu li a.menuSupport {
-    margin: 4em 0 4em 50px;
+    margin: 4em 0 4em 70px;
+    display: inline-block;
+    padding: 7px 10px 4px;
+    border: 1px solid #6f6f6f;
+}
+
+.menu li a.menuSupport:hover {
+    border-color: C_TEXT_LIGHT;
 }
 
 .socialmedias {
@@ -764,10 +771,11 @@ img {
         display: block;
     }
 
-    .menu li a {
+    .menu li a,
+    .menu li a.menuSupport {
         display: block;
         padding: 12px 20px 9px;
-        margin-left: 0;
+        margin: 0;
         border-bottom: 1px solid #333;
 
         @mixin transition(color, .2s);
@@ -786,7 +794,7 @@ img {
     }
 
     .menu li a.menuSupport {
-        margin: 0;
+        border-width: 0 0 1px 0;
     }
 
     .menu li a.backHome {

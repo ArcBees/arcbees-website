@@ -949,6 +949,7 @@ img {
     font-family: "geometriaBold", Arial, sans-serif;
 
     display: inline-block;
+    margin-right: 15px;
 
     cursor: pointer;
 }

@@ -16,6 +16,7 @@
 
 package com.arcbees.website.client.application.bees;
 
+import com.arcbees.analytics.shared.Analytics;
 import com.arcbees.website.client.resources.PageBeesResources;
 import com.google.gwt.dom.client.AnchorElement;
 import com.google.gwt.dom.client.BrowserEvents;
@@ -59,11 +60,15 @@ public class BeesView extends ViewWithUiHandlers<BeesUiHandlers> implements Bees
     HTMLPanel quizSection;
     @UiField
     HeadingElement quizTitle;
+    
+    private final Analytics analytics;
 
     @Inject
     BeesView(
             Binder binder,
+            Analytics analytics,
             final PageBeesResources pageBeesResources) {
+        this.analytics = analytics;
         this.pageBeesResources = pageBeesResources;
         pageBeesResources.style().ensureInjected();
 
@@ -135,6 +140,7 @@ public class BeesView extends ViewWithUiHandlers<BeesUiHandlers> implements Bees
     @UiHandler("initQuizButton")
     void onInitQuizButton(ClickEvent event) {
         $(quizTitle).hide();
+        analytics.sendEvent("Quiz", "Start").go();
         getUiHandlers().onInitQuiz();
     }
 }

@@ -12,6 +12,13 @@
     z-index: 99;
 }
 
+@media (max-width: 649px) {
+    .contactForm {
+        width: 95%;
+        padding: 40px;
+    }
+}
+
 .contactForm input,
 .contactForm textarea {
     font-size: 14px;

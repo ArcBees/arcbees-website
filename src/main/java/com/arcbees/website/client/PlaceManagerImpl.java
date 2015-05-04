@@ -49,6 +49,6 @@ public class PlaceManagerImpl extends DefaultPlaceManager {
     public void revealErrorPlace(String invalidHistoryToken) {
         super.revealErrorPlace(invalidHistoryToken);
 
-        // TODO : Do analytics with invalidHistoryToken
+        analytics.sendEvent("404", "Nametoken").eventLabel(invalidHistoryToken).go();
     }
 }

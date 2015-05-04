@@ -16,6 +16,7 @@
 
 package com.arcbees.website.client.application.support;
 
+import com.arcbees.analytics.shared.Analytics;
 import com.google.gwt.dom.client.AnchorElement;
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.query.client.Function;
@@ -37,11 +38,16 @@ public class SupportView extends ViewWithUiHandlers<SupportUiHandlers> implement
     Element supportPackageAnchor;
     @UiField
     AnchorElement contactUs;
+    
+    private final Analytics analytics;
 
     @Inject
     SupportView(
-            Binder binder) {
+            Binder binder,
+            Analytics analytics) {
         initWidget(binder.createAndBindUi(this));
+        
+        this.analytics = analytics;
 
         bind();
     }
@@ -50,6 +56,7 @@ public class SupportView extends ViewWithUiHandlers<SupportUiHandlers> implement
         $(contactUs).click(new Function() {
             @Override
             public void f() {
+                analytics.sendEvent("Support", "Click").eventLabel("Support - Form button").go();
                 getUiHandlers().showContactForm();
             }
         });
@@ -60,6 +67,7 @@ public class SupportView extends ViewWithUiHandlers<SupportUiHandlers> implement
                 $("html, body").each(new Function() {
                     @Override
                     public void f(Element element) {
+                        analytics.sendEvent("Support", "Click").eventLabel("Header - Buy support").go();
                         new ScrollToAnimation(element, supportPackageAnchor.getAbsoluteTop() - 40).run(600);
                     }
                 });

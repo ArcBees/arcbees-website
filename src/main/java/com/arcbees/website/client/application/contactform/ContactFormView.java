@@ -15,6 +15,7 @@ package com.arcbees.website.client.application.contactform;
 
 import javax.inject.Inject;
 
+import com.arcbees.analytics.shared.Analytics;
 import com.arcbees.website.client.resources.ContactFormResources;
 import com.google.common.base.Strings;
 import com.google.gwt.core.client.Scheduler;
@@ -52,15 +53,18 @@ public class ContactFormView extends PopupViewWithUiHandlers<ContactFormUiHandle
     ButtonElement cancel;
 
     private final EmailValidator emailValidator;
+    private final Analytics analytics;
 
     @Inject
     ContactFormView(
             EventBus eventBus,
             Binder binder,
-            EmailValidator emailValidator) {
+            EmailValidator emailValidator,
+            Analytics analytics) {
         super(eventBus);
 
         this.emailValidator = emailValidator;
+        this.analytics = analytics;
 
         initWidget(binder.createAndBindUi(this));
 
@@ -85,6 +89,7 @@ public class ContactFormView extends PopupViewWithUiHandlers<ContactFormUiHandle
         $(cancel).click(new Function() {
             @Override
             public void f() {
+                analytics.sendEvent("Support", "Click").eventLabel("Form - Cancel").go();
                 hide();
             }
         });
@@ -108,6 +113,7 @@ public class ContactFormView extends PopupViewWithUiHandlers<ContactFormUiHandle
                 boolean validateEmail = validateEmail();
 
                 if (validateRequired && validateEmail) {
+                    analytics.sendEvent("Support", "Click").eventLabel("Form - Send").go();
                     getUiHandlers().sendRequest(name.getValue(), email.getValue(), message.getValue());
                 }
             }

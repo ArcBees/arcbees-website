@@ -60,9 +60,9 @@
             </div>
             <div class="{res.grid.row} {res.style.clearfix} {res.style.wrapper} {page.style.btns} {res.style.centered}">
                 <div class="{res.grid.col} {res.grid.col_full}">
-                    <a href="#{nameTokens.EXPERTISE}" title="expertise" class="{res.style.btn}">
-                        <ui:attribute ui:name='title' ui:description='expertise'/>
-                        Expertise
+                    <a href="#{nameTokens.SUPPORT}" title="expertise" class="{res.style.btn}">
+                        <ui:attribute ui:name='title' ui:description='support'/>
+                        Support
                     </a>
                     <a href="#{nameTokens.PRODUCTS}" title="products" class="{res.style.btn}">
                         <ui:attribute ui:name='title' ui:description='products'/>

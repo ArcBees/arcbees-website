@@ -1,0 +1,36 @@
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+             ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
+             ui:generateLocales="default">
+
+    <ui:with field="nameTokens" type="com.arcbees.website.client.NameTokensConstants"/>
+    <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
+    <ui:with field="form" type="com.arcbees.website.client.resources.ContactFormResources"/>
+    <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
+    <ui:with field="animations" type="com.arcbees.website.client.resources.AnimationsResources"/>
+
+    <g:PopupPanel addStyleNames="{form.style.contactForm}" modal="true" glassEnabled="true">
+        <g:HTMLPanel>
+            <form ui:field="formPanel" action="javascript:void(0)">
+                <h3>Contact us</h3>
+                <div>
+                    <label>Name</label>
+                    <input ui:field="name" type="text" name="name" autofocus="autofocus"/>
+                </div>
+                <div>
+                    <label>Email</label>
+                    <input ui:field="email" name="Email"/>
+                </div>
+                <div>
+                    <label>Message</label>
+                    <textarea ui:field="message" rows="4" cols="20"></textarea>
+                </div>
+                <div class="{form.style.formBtns}">
+                    <button type="reset" ui:field="cancel" class="{res.style.btn}">Cancel</button>
+                    <button type="submit" class="{res.style.btn}">Send</button>
+                </div>
+            </form>
+        </g:HTMLPanel>
+    </g:PopupPanel>
+</ui:UiBinder>

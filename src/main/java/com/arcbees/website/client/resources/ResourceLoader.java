@@ -33,7 +33,8 @@ public class ResourceLoader {
             PageExpertisesResources pageExpertisesResources,
             PageSupportResources pageSupportResources,
             PageNotFoundResources pageNotFoundResources,
-            SliderResources sliderResources) {
+            SliderResources sliderResources,
+            ContactFormResources contactFormResources) {
         appResources.normalize().ensureInjected();
         appResources.style().ensureInjected();
         appResources.grid().ensureInjected();
@@ -49,5 +50,6 @@ public class ResourceLoader {
         pageSupportResources.style().ensureInjected();
         pageNotFoundResources.style().ensureInjected();
         sliderResources.style().ensureInjected();
+        contactFormResources.style().ensureInjected();
     }
 }

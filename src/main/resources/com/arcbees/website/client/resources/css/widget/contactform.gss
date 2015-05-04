@@ -1,0 +1,118 @@
+@require "gsss-mixins";
+@require "gsss-animation";
+
+@external gwt-PopupPanelGlass;
+
+.contactForm {
+    background-color: C_STRIPE_LIGHT;
+
+    width: 500px;
+    padding: 40px 80px;
+
+    z-index: 99;
+}
+
+.contactForm input,
+.contactForm textarea {
+    font-size: 14px;
+
+    margin-bottom: 20px;
+    padding: 5px;
+    width: 100%;
+    border: 1px solid #dfdfdf;
+
+    outline: none;
+    resize: vertical;
+}
+
+.error {
+    @mixin animation_name(error);
+    @mixin animation_delay(.5s);
+    @mixin animation_duration(.6s);
+}
+
+.error input,
+.error textarea {
+    border-bottom: 2px solid red;
+}
+
+@-webkit-keyframes error {
+    0% { @mixin transform(rotate(0deg) translate(2px, 1px));}
+    10% { @mixin transform(rotate(-1deg) translate(-1px, -2px));}
+    20% { @mixin transform(rotate(1deg) translate(-3px, 0px));}
+    30% { @mixin transform(rotate(0deg) translate(0px, 2px));}
+    40% { @mixin transform(rotate(1deg) translate(1px, -1px));}
+    50% { @mixin transform(translate(-1px, 2px) rotate(-1deg));}
+    60% { @mixin transform(translate(-3px, 1px) rotate(0deg));}
+    70% { @mixin transform(translate(2px, 1px) rotate(-1deg));}
+    80% { @mixin transform(translate(-1px, -1px) rotate(1deg));}
+    90% { @mixin transform(translate(2px, 2px) rotate(0deg));}
+    100% { @mixin transform(translate(1px, -2px) rotate(-1deg));}
+}
+
+@keyframes error {
+    0% { @mixin transform(rotate(0deg) translate(2px, 1px));}
+    10% { @mixin transform(rotate(-1deg) translate(-1px, -2px));}
+    20% { @mixin transform(rotate(1deg) translate(-3px, 0px));}
+    30% { @mixin transform(rotate(0deg) translate(0px, 2px));}
+    40% { @mixin transform(rotate(1deg) translate(1px, -1px));}
+    50% { @mixin transform(translate(-1px, 2px) rotate(-1deg));}
+    60% { @mixin transform(translate(-3px, 1px) rotate(0deg));}
+    70% { @mixin transform(translate(2px, 1px) rotate(-1deg));}
+    80% { @mixin transform(translate(-1px, -1px) rotate(1deg));}
+    90% { @mixin transform(translate(2px, 2px) rotate(0deg));}
+    100% { @mixin transform(translate(1px, -2px) rotate(-1deg));}
+}
+
+.formBtns {
+    float: right;
+}
+
+.contactForm button {
+    background-color: transparent;
+}
+
+.gwt-PopupPanelGlass {
+    background: black;
+
+    position: fixed !important;
+    z-index: 99;
+
+    opacity: .8;
+}
+
+.sendIcon:hover {
+    @mixin animation_name(sendIcon);
+    @mixin animation_duration(2s);
+    @mixin animation_timing_function(linear);
+    @mixin animation_fill_mode(fowards);
+
+}
+
+@keyframes sendIcon {
+    0% { @mixin transform(rotate(0deg) translate(0, 0));}
+    10% { @mixin transform(rotate(-180deg) translate(0px, 5px));}
+    20% { @mixin transform(rotate(-270deg) translate(0px, 10px));}
+    30% { @mixin transform(rotate(-360deg) translate(0px, 15px));}
+    40% { @mixin transform(rotate(-450deg) translate(50px, 0));}
+    50% { @mixin transform(rotate(-540deg) translate(50px, 0));}
+    60% { @mixin transform(rotate(-650deg) translate(50px, 0));}
+    70% { @mixin transform(rotate(-760deg) translate(50px, 0));}
+    80% { @mixin transform(rotate(-870deg) translate(0px, 0));}
+    90% { @mixin transform(rotate(-980deg) translate(-500px, 0));}
+    100% { @mixin transform(rotate(-1070deg) translate(-1000px, 0px));}
+}
+
+@-webkit-keyframes sendIcon {
+    0% { @mixin transform(rotate(0deg) translate(0, 0));}
+    10% { @mixin transform(rotate(-180deg) translate(0px, 5px));}
+    20% { @mixin transform(rotate(-270deg) translate(0px, 10px));}
+    30% { @mixin transform(rotate(-360deg) translate(0px, 15px));}
+    40% { @mixin transform(rotate(-450deg) translate(50px, 0));}
+    50% { @mixin transform(rotate(-540deg) translate(50px, 0));}
+    60% { @mixin transform(rotate(-650deg) translate(50px, 0));}
+    70% { @mixin transform(rotate(-760deg) translate(50px, 0));}
+    80% { @mixin transform(rotate(-870deg) translate(0px, 0));}
+    90% { @mixin transform(rotate(-980deg) translate(-500px, 0));}
+    100% { @mixin transform(rotate(-1070deg) translate(-1000px, 0px));}
+}

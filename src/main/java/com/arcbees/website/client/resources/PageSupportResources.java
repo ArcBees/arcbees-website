@@ -65,6 +65,12 @@ public interface PageSupportResources extends FontResources {
         String buySupportBtn();
 
         String serviceDesk();
+
+        // CHECKSTYLE_OFF
+        String features__ab();
+
+        String offers__ab();
+        // CHECKSTYLE_ON
     }
 
     @Source({"com/arcbees/gsss/animation/client/animationsettings.gss",

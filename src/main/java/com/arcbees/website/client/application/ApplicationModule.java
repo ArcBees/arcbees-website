@@ -29,6 +29,7 @@ import com.arcbees.website.client.application.error.NotFoundModule;
 import com.arcbees.website.client.application.products.ProductsModule;
 import com.arcbees.website.client.application.services.ServicesModule;
 import com.arcbees.website.client.application.support.SupportModule;
+import com.arcbees.website.client.application.supportab.SupportABModule;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
 public class ApplicationModule extends AbstractPresenterModule {
@@ -40,6 +41,7 @@ public class ApplicationModule extends AbstractPresenterModule {
         install(new ContactModule());
         install(new ExpertiseModule());
         install(new SupportModule());
+        install(new SupportABModule());
         install(new ServicesModule());
         install(new ProductsModule());
         install(new NotFoundModule());

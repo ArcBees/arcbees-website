@@ -286,6 +286,10 @@
     margin-bottom: -173px;
 }
 
+.offers__ab {
+    margin-bottom: 0;
+}
+
 @media (max-width: 649px) {
     .support .header .icon1,
     .support .header .icon2,
@@ -462,6 +466,10 @@
 
 .features {
     padding-top: 155px;
+}
+
+.features__ab {
+    padding-top: 0;
 }
 
 .features h2 {

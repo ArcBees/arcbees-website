@@ -13,22 +13,26 @@
     <g:PopupPanel addStyleNames="{form.style.contactForm}" modal="true" glassEnabled="true">
         <g:HTMLPanel>
             <form ui:field="formPanel" action="javascript:void(0)">
-                <h3>Contact us</h3>
+                <h3><ui:msg description="Contact form - Title">Contact us</ui:msg></h3>
                 <div>
-                    <label>Name</label>
+                    <label><ui:msg description="Contact form - Label - Name">Name</ui:msg></label>
                     <input ui:field="name" type="text" name="name" autofocus="autofocus"/>
                 </div>
                 <div>
-                    <label>Email</label>
+                    <label><ui:msg description="Contact form - Label - Email">Email</ui:msg></label>
                     <input ui:field="email" name="Email"/>
                 </div>
                 <div>
-                    <label>Message</label>
+                    <label><ui:msg description="Contact form - Label - Message">Message</ui:msg></label>
                     <textarea ui:field="message" rows="4" cols="20"></textarea>
                 </div>
                 <div class="{form.style.formBtns}">
-                    <button type="reset" ui:field="cancel" class="{res.style.btn}">Cancel</button>
-                    <button type="submit" class="{res.style.btn}">Send</button>
+                    <button type="reset" ui:field="cancel" class="{res.style.btn}">
+                        <ui:msg description="Contact form - Button - Cancel">Cancel</ui:msg>
+                    </button>
+                    <button type="submit" class="{res.style.btn}">
+                        <ui:msg description="Contact form - Button - Send">Send</ui:msg>
+                    </button>
                 </div>
             </form>
         </g:HTMLPanel>

@@ -1,4 +1,4 @@
-/**
+/*
  * Copyright 2015 ArcBees Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
@@ -14,14 +14,16 @@
  * the License.
  */
 
-package com.arcbees.website.client.application.supportab;
+package com.arcbees.website.client;
 
-import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
+public class ExperimentHolder {
+    private Integer variationId;
 
-public class SupportABModule extends AbstractPresenterModule {
-    @Override
-    protected void configure() {
-        bindPresenter(SupportABPresenter.class, SupportABPresenter.MyView.class,
-                SupportABView.class, SupportABPresenter.MyProxy.class);
+    public Integer getVariationId() {
+        return variationId;
+    }
+
+    public void setVariationId(Integer variationId) {
+        this.variationId = variationId;
     }
 }

@@ -33,15 +33,18 @@ public class BootstrapperImpl implements Bootstrapper {
     private final PlaceManager placeManager;
     private final GwtMapsLoader gwtMapsLoader;
     private final Analytics analytics;
+    private final ExperimentHolder experimentHolder;
 
     @Inject
     BootstrapperImpl(
             PlaceManager placeManager,
             GwtMapsLoader gwtMapsLoader,
-            Analytics analytics) {
+            Analytics analytics,
+            ExperimentHolder experimentHolder) {
         this.placeManager = placeManager;
         this.gwtMapsLoader = gwtMapsLoader;
         this.analytics = analytics;
+        this.experimentHolder = experimentHolder;
     }
 
     @Override
@@ -52,8 +55,15 @@ public class BootstrapperImpl implements Bootstrapper {
         analytics.enablePlugin(AnalyticsPlugin.DISPLAY);
         analytics.enablePlugin(AnalyticsPlugin.ENHANCED_LINK_ATTRIBUTION);
 
+        int variationId = getVariationId();
+        experimentHolder.setVariationId(variationId);
+
         validateNameTokenLanguageAndRevealPlace();
     }
+
+    private native int getVariationId() /*-{
+        return $wnd.cxApi.chooseVariation();
+    }-*/;
 
     private void validateNameTokenLanguageAndRevealPlace() {
         PlaceRequest currentPlaceRequest = placeManager.getCurrentPlaceRequest();

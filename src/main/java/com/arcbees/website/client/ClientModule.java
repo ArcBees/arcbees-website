@@ -38,9 +38,10 @@ public class ClientModule extends AbstractGinModule {
         install(defaultModule);
 
         install(new ApplicationModule());
-        install(new AnalyticsModule.Builder("UA-41550930-11").autoCreate(false).build());
+        install(new AnalyticsModule.Builder("UA-41550930-11").autoCreate(false).autoInject(false).build());
 
         bind(ResourceLoader.class).asEagerSingleton();
+        bind(ExperimentHolder.class).asEagerSingleton();
 
         bindConstant().annotatedWith(DefaultPlace.class).to(NameTokens.HOME);
         bindConstant().annotatedWith(ErrorPlace.class).to(NameTokens.NOTFOUND);

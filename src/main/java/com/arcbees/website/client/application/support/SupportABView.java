@@ -14,10 +14,9 @@
  * the License.
  */
 
-package com.arcbees.website.client.application.supportab;
+package com.arcbees.website.client.application.support;
 
 import com.arcbees.analytics.shared.Analytics;
-import com.arcbees.website.client.application.support.ScrollToAnimation;
 import com.google.gwt.dom.client.AnchorElement;
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.query.client.Function;
@@ -29,7 +28,7 @@ import com.gwtplatform.mvp.client.ViewWithUiHandlers;
 
 import static com.google.gwt.query.client.GQuery.$;
 
-public class SupportABView extends ViewWithUiHandlers<SupportABUiHandlers> implements SupportABPresenter.MyView {
+public class SupportABView extends ViewWithUiHandlers<SupportUiHandlers> implements SupportPresenter.MyView {
     interface Binder extends UiBinder<Widget, SupportABView> {
     }
 
@@ -47,7 +46,7 @@ public class SupportABView extends ViewWithUiHandlers<SupportABUiHandlers> imple
             Binder binder,
             Analytics analytics) {
         initWidget(binder.createAndBindUi(this));
-        
+
         this.analytics = analytics;
 
         bind();
@@ -61,7 +60,7 @@ public class SupportABView extends ViewWithUiHandlers<SupportABUiHandlers> imple
                 getUiHandlers().showContactForm();
             }
         });
-        
+
         $(supportPackageBtn).click(new Function() {
             @Override
             public void f() {

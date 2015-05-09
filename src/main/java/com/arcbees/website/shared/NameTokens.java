@@ -37,8 +37,6 @@ public class NameTokens {
     public static final String EXPERTISE_FR = "!/expertise";
     public static final String SUPPORT = "!/support";
     public static final String SUPPORT_FR = "!/support";
-    public static final String SUPPORTAB = "!/get-support";
-    public static final String SUPPORTAB_FR = "!/support-info";
     public static final String SHOP = "!/shop";
     public static final String SHOP_FR = "!/boutique";
     public static final String SERVICES = "!/services";

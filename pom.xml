@@ -34,7 +34,7 @@
         <gwtchosen.version>2.0.0</gwtchosen.version>
         <gwt-seo.version>0.1-SNAPSHOT</gwt-seo.version>
         <guava.version>18.0</guava.version>
-        <universal-analytics.version>2.1</universal-analytics.version>
+        <universal-analytics.version>2.2-SNAPSHOT</universal-analytics.version>
         <velocity.version>1.7</velocity.version>
         <mail.version>1.2</mail.version>
         <resteasy.version>3.0.11.Final</resteasy.version>

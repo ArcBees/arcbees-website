@@ -51,18 +51,21 @@ public class BootstrapperImpl implements Bootstrapper {
     public void onBootstrap() {
         gwtMapsLoader.loadGwtMaps();
 
-        analytics.create().cookieDomain("arcbees.com").go();
         analytics.enablePlugin(AnalyticsPlugin.DISPLAY);
         analytics.enablePlugin(AnalyticsPlugin.ENHANCED_LINK_ATTRIBUTION);
 
         int variationId = getVariationId();
+        analytics.create().experimentsOptions()
+                .experimentId("UQGdfuUlSMaL0QxAUpetpw")
+                .experimentVariant(String.valueOf(variationId))
+                .go();
         experimentHolder.setVariationId(variationId);
 
         validateNameTokenLanguageAndRevealPlace();
     }
 
     private native int getVariationId() /*-{
-        return $wnd.cxApi.chooseVariation();
+        return $wnd.variationId;
     }-*/;
 
     private void validateNameTokenLanguageAndRevealPlace() {

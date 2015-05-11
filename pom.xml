@@ -58,6 +58,13 @@
     </repositories>
 
     <dependencies>
+        <dependency>
+            <groupId>org.vectomatic</groupId>
+            <artifactId>lib-gwt-svg</artifactId>
+            <version>0.5.10</version>
+            <scope>provided</scope>
+        </dependency>
+
         <!-- Google Web Toolkit dependencies -->
         <dependency>
             <groupId>com.google.gwt</groupId>

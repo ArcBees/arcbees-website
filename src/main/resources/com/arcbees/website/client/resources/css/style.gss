@@ -306,6 +306,8 @@ img {
 
     position: relative;
 
+    outline: none;
+
     @mixin transition(color, .2s);
 }
 

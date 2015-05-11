@@ -1,5 +1,6 @@
 <ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
              xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:svgui='urn:import:org.vectomatic.dom.svg.ui'
              ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
              ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
              ui:generateLocales="default">
@@ -14,6 +15,13 @@
         <g:HTMLPanel>
             <form ui:field="formPanel" action="javascript:void(0)">
                 <h3><ui:msg description="Contact form - Title">Contact us</ui:msg></h3>
+                <div class="{form.style.error_message}">
+                    <p>
+                        <ui:msg description="ContactForm - error">There was an unexpected error sending your message,
+                            please try again later.
+                        </ui:msg>
+                    </p>
+                </div>
                 <div>
                     <label><ui:msg description="Contact form - Label - Name">Name</ui:msg></label>
                     <input ui:field="name" type="text" name="name" autofocus="autofocus"/>
@@ -30,9 +38,50 @@
                     <button type="reset" ui:field="cancel" class="{res.style.btn}">
                         <ui:msg description="Contact form - Button - Cancel">Cancel</ui:msg>
                     </button>
-                    <button type="submit" class="{res.style.btn}">
+                    <button ui:field="begin" type="submit" class="{res.style.btn}">
                         <ui:msg description="Contact form - Button - Send">Send</ui:msg>
                     </button>
+                    <svgui:SVGImage>
+                        <svg class="{form.style.btn_icon_animation}" version="1.1" x="0px" y="0px" width="121.168px" height="67.336px" viewBox="0 0 121.168 67.336"
+                                 enable-background="new 0 0 121.168 67.336" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="1" transform="translate(0, 60) scale(1, 1)"  fill="#FAE500" d="M16.076,9.207L0.193,0.018c-0.034-0.023-0.068-0.023-0.103,0C0.057,0.04,0.034,0.074,0.034,0.108v2.53
+                                c0,0.033,0.023,0.067,0.057,0.09l3.653,2.1L0.068,6.927C0.034,6.949,0.011,6.983,0.011,7.018L0,13.337
+                                c0,0.034,0.022,0.068,0.057,0.091l3.687,2.121l-3.676,2.1c-0.034,0.022-0.057,0.057-0.057,0.091v2.519
+                                c0,0.034,0.022,0.068,0.057,0.091s0.068,0.022,0.102,0l15.884-9.122l0.022-0.011c0.034-0.023,0.057-0.058,0.057-0.091V9.31
+                                C16.133,9.253,16.11,9.219,16.076,9.207z M4.436,13.224l-2.065-1.18V8.322l2.065-1.18V13.224z M8.861,12.044l-2.065,1.18
+                                l0.011-6.081l2.065,1.18L8.861,12.044z M11.232,11.272V9.128l1.883,1.078L11.232,11.272z">
+
+                                <animateMotion ui:field="motion"
+                                    path="M8.066,57.057c0,0,37.269,3.404,47.801-30.262
+                                c10.532-33.665-31.164-35.264-23.9-3.3C39.23,55.459,88.774,55.017,120.737,0.5"
+                                    dur="1.75s"
+                                    begin=""
+                                    fill="remove"
+                                    repeatCount="1"
+                                    rotate="auto"/>
+
+                                <animateTransform ui:field="transform"
+                                    attributeName="transform"
+                                    type="scale"
+                                    begin=""
+                                    from="1"
+                                    to=".3"
+                                    dur="1.75s"
+                                    additive="replace"
+                                    fill="remove"
+                                    repeatCount="1"/>
+
+                                <animate ui:field="animation"
+                                    attributeName="opacity"
+                                    begin=""
+                                    from="1"
+                                    to="0"
+                                    dur="1.75s"
+                                    fill="remove"
+                                    repeatCount="1"/>
+                            </path>
+                        </svg>
+                    </svgui:SVGImage>
                 </div>
             </form>
         </g:HTMLPanel>

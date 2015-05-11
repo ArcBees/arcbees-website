@@ -15,6 +15,7 @@
     <inherits name="com.arcbees.gquery.appear.Appear"/>
     <inherits name="com.arcbees.chosen.Chosen"/>
     <inherits name="com.arcbees.analytics.Analytics"/>
+    <inherits name="org.vectomatic.libgwtsvg"/>
 
     <source path='client'/>
     <source path='shared'/>

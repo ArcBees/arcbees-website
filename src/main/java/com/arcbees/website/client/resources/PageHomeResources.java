@@ -53,15 +53,11 @@ public interface PageHomeResources extends FontResources {
 
         String collapsible();
 
-        String ssicons();
-
         String successStoryHolder();
 
         String path3();
 
         String path2();
-
-        String ssiconsHexa();
 
         String logoConstruct();
 
@@ -82,6 +78,10 @@ public interface PageHomeResources extends FontResources {
         String btns();
 
         String beeTheBest();
+
+        String successStorylogos();
+
+        String successStoryHexa();
     }
 
     @Source("img/pages/homeBeesBg.png")

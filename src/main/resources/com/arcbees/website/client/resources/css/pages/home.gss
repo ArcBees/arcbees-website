@@ -343,25 +343,23 @@
     margin-top: 1em;
 }
 
-.home .ssicons {
+.home .successStorylogos {
     margin: 0 0 4em 0em;
+
+    position: relative;
 }
 
-.home .ssicons img {
-    margin-left: -1.5rem;
-}
-
-.home .ssiconsHexa {
+.home .successStoryHexa {
     margin-left: -24.8rem;
     width: 49.7rem;
 
     position: absolute;
-    top: -1.6rem;
+    top: 0;
     left: 50%;
 }
 
 @if (is("ie8") || is("ie9")) {
-    .home .ssiconsHexa {
+    .home .successStoryHexa {
         display: none;
     }
 }
@@ -371,11 +369,7 @@
         font-size: 1.8rem;
     }
 
-    .home .ssicons img {
-        margin-left: 0;
-    }
-
-    .home .ssiconsHexa {
+    .home .successStoryHexa {
         margin-left: -50%;
         width: 100%;
         top: 0;
@@ -383,7 +377,7 @@
 }
 
 @media (max-width: 649px) {
-    .home .ssiconsHexa {
+    .home .successStoryHexa {
         display: none;
     }
 
@@ -398,15 +392,11 @@
     .home .successStoryMore {
         background: none;
     }
-
-    .home .ssicons img {
-        margin-left: 0;
-    }
 }
 
-.home .ssiconsHexa .path1,
-.home .ssiconsHexa .path2,
-.home .ssiconsHexa .path3 {
+.home .successStoryHexa .path1,
+.home .successStoryHexa .path2,
+.home .successStoryHexa .path3 {
     stroke-dasharray: 1500;
     stroke-dashoffset: 1500;
     -webkit-animation: path 1.5s linear;
@@ -419,15 +409,15 @@
     animation-fill-mode: forwards;
 }
 
-.home .ssiconsHexa .path1 {
+.home .successStoryHexa .path1 {
     @mixin animation_delay(1s);
 }
 
-.home .ssiconsHexa .path2 {
+.home .successStoryHexa .path2 {
     @mixin animation_delay(1.5s);
 }
 
-.home .ssiconsHexa .path3 {
+.home .successStoryHexa .path3 {
     @mixin animation_delay(2s);
 }
 

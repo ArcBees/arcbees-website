@@ -129,14 +129,12 @@
                     </a>
                 </div>
             </div>
-            <div class="{res.style.wrapper} {res.style.centered} {page.style.successStoryMore}"
-                    ui:field="successStoryMore">
-                <div class="{res.grid.row} {res.style.clearfix}">
-                    <div class="{res.grid.col} {res.grid.col_full} {res.style.centered} {page.style.ssicons}">
-                        <g:Image styleName="{res.style.mobileHidden}" resource="{page.ssicons}"/>
-                        <g:Image styleName="{res.style.mobileVisible}" resource="{page.ssiconsMobile}"/>
-                        <div class="{page.style.ssiconsHexa}">
-                            <svg version="1.1" id="Layer_1" x="0px" y="0px"
+            <div class="{res.style.wrapper} {res.style.centered} {page.style.successStoryMore}" ui:field="successStoryMore">
+                <div class="{res.style.centered} {page.style.successStorylogos}">
+                    <g:Image styleName="{res.style.mobileHidden}" resource="{page.ssicons}"/>
+                    <g:Image styleName="{res.style.mobileVisible}" resource="{page.ssiconsMobile}"/>
+                    <div class="{page.style.successStoryHexa}">
+                        <svg version="1.1" id="Layer_1" x="0px" y="0px"
                              width="495.746px" height="163.688px" viewBox="0 0 495.746 163.688" enable-background="new 0 0 495.746 163.688"
                              xml:space="preserve">
                             <path class="{page.style.path1}" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
@@ -152,8 +150,9 @@
                                 c0.431,0,0.827-0.23,1.041-0.604l44.226-77.143c0.21-0.37,0.21-0.825,0-1.194L447.863,4.103c-0.214-0.374-0.61-0.603-1.041-0.603
                                 h-88.481c-0.43,0-0.828,0.23-1.042,0.603l-25.978,45.773"/>
                         </svg>
-                        </div>
                     </div>
+                </div>
+                <div class="{res.grid.row} {res.style.clearfix}">
                     <div class="{res.grid.col} {res.grid.col_1_3} {res.grid.col_m_full}">
                         <h3>
                             <ui:msg description="Home - The Genesis Of GWTP - title">The Genesis

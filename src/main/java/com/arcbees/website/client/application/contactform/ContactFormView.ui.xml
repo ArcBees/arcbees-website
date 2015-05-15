@@ -15,7 +15,7 @@
         <g:HTMLPanel>
             <form ui:field="formPanel" action="javascript:void(0)">
                 <h3><ui:msg description="Contact form - Title">Contact us</ui:msg></h3>
-                <div class="{form.style.error_message}">
+                <div ui:field="serverError" class="{form.style.error_message}">
                     <p>
                         <ui:msg description="ContactForm - error">There was an unexpected error sending your message,
                             please try again later.

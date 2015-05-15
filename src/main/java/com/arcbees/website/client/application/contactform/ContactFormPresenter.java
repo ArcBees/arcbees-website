@@ -27,6 +27,7 @@ import com.gwtplatform.mvp.client.PresenterWidget;
 public class ContactFormPresenter extends PresenterWidget<ContactFormPresenter.MyView>
         implements ContactFormUiHandlers {
     interface MyView extends PopupView, HasUiHandlers<ContactFormUiHandlers> {
+        void showServerError();
     }
 
     private final RestDispatch dispatcher;
@@ -56,6 +57,7 @@ public class ContactFormPresenter extends PresenterWidget<ContactFormPresenter.M
         dispatcher.execute(supportService.sendEmail(contactRequest), new AsyncCallback<Void>() {
             @Override
             public void onFailure(Throwable caught) {
+                getView().showServerError();
             }
 
             @Override

@@ -58,6 +58,8 @@ public class ContactFormView extends PopupViewWithUiHandlers<ContactFormUiHandle
     OMSVGAnimateTransformElement transform;
     @UiField
     OMSVGAnimateElement animation;
+    @UiField
+    DivElement serverError;
 
     private final EmailValidator emailValidator;
     private final Analytics analytics;
@@ -74,6 +76,8 @@ public class ContactFormView extends PopupViewWithUiHandlers<ContactFormUiHandle
         this.analytics = analytics;
 
         initWidget(binder.createAndBindUi(this));
+
+        hideServerError();
     }
 
     @Override
@@ -81,6 +85,11 @@ public class ContactFormView extends PopupViewWithUiHandlers<ContactFormUiHandle
         super.hide();
 
         reset();
+    }
+
+    @Override
+    public void showServerError() {
+        $(serverError).show();
     }
 
     @Override
@@ -105,6 +114,10 @@ public class ContactFormView extends PopupViewWithUiHandlers<ContactFormUiHandle
     protected void onDetach() {
         $(formPanel).unbind("submit");
         $(cancel).unbind("click");
+    }
+
+    private void hideServerError() {
+        $(serverError).hide();
     }
 
     private void startAnimation() {
@@ -171,5 +184,6 @@ public class ContactFormView extends PopupViewWithUiHandlers<ContactFormUiHandle
 
     private void removeErrorStyles() {
         $(name, email, message).parent().removeClass(form.style().error());
+        hideServerError();
     }
 }

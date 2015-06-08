@@ -58,12 +58,18 @@
         </repository>
     </repositories>
 
-
     <dependencies>
         <dependency>
             <groupId>net.sourceforge.htmlunit</groupId>
             <artifactId>htmlunit</artifactId>
             <version>${htmlunit.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.vectomatic</groupId>
+            <artifactId>lib-gwt-svg</artifactId>
+            <version>0.5.10</version>
+            <scope>provided</scope>
         </dependency>
 
         <!-- Google Web Toolkit dependencies -->

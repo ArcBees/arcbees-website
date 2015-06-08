@@ -72,6 +72,7 @@
 }
 
 .formBtns {
+    position: relative;
     float: right;
 }
 
@@ -88,38 +89,32 @@
     opacity: .8;
 }
 
-.sendIcon:hover {
-    @mixin animation_name(sendIcon);
-    @mixin animation_duration(2s);
-    @mixin animation_timing_function(linear);
-    @mixin animation_fill_mode(fowards);
+.btn_icon_animation {
+    height: 55px;
+    overflow: visible;
 
+    position: absolute;
+    bottom: 22px;
+    right: -91px;
+    z-index: -1;
 }
 
-@keyframes sendIcon {
-    0% { @mixin transform(rotate(0deg) translate(0, 0));}
-    10% { @mixin transform(rotate(-180deg) translate(0px, 5px));}
-    20% { @mixin transform(rotate(-270deg) translate(0px, 10px));}
-    30% { @mixin transform(rotate(-360deg) translate(0px, 15px));}
-    40% { @mixin transform(rotate(-450deg) translate(50px, 0));}
-    50% { @mixin transform(rotate(-540deg) translate(50px, 0));}
-    60% { @mixin transform(rotate(-650deg) translate(50px, 0));}
-    70% { @mixin transform(rotate(-760deg) translate(50px, 0));}
-    80% { @mixin transform(rotate(-870deg) translate(0px, 0));}
-    90% { @mixin transform(rotate(-980deg) translate(-500px, 0));}
-    100% { @mixin transform(rotate(-1070deg) translate(-1000px, 0px));}
+@media (max-width: 649px) {
+    .btn_icon_animation {
+        display: none;
+    }
 }
 
-@-webkit-keyframes sendIcon {
-    0% { @mixin transform(rotate(0deg) translate(0, 0));}
-    10% { @mixin transform(rotate(-180deg) translate(0px, 5px));}
-    20% { @mixin transform(rotate(-270deg) translate(0px, 10px));}
-    30% { @mixin transform(rotate(-360deg) translate(0px, 15px));}
-    40% { @mixin transform(rotate(-450deg) translate(50px, 0));}
-    50% { @mixin transform(rotate(-540deg) translate(50px, 0));}
-    60% { @mixin transform(rotate(-650deg) translate(50px, 0));}
-    70% { @mixin transform(rotate(-760deg) translate(50px, 0));}
-    80% { @mixin transform(rotate(-870deg) translate(0px, 0));}
-    90% { @mixin transform(rotate(-980deg) translate(-500px, 0));}
-    100% { @mixin transform(rotate(-1070deg) translate(-1000px, 0px));}
+.error_message {
+    color: #fff;
+    background-color: #f00;
+
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.error_message p {
+    font-size: 1.25rem;
+
+    margin-bottom: 0;
 }

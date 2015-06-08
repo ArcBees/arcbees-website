@@ -18,8 +18,6 @@ package com.arcbees.website.client.resources;
 
 import com.arcbees.gsss.animation.client.AnimationResources;
 import com.google.gwt.resources.client.ClientBundle;
-import com.google.gwt.resources.client.CssResource;
-import com.google.gwt.resources.client.ImageResource;
 
 public interface ContactFormResources extends ClientBundle {
     public interface Style extends AnimationResources.Animation {
@@ -29,7 +27,9 @@ public interface ContactFormResources extends ClientBundle {
 
         String error();
 
-        String sendIcon();
+        String btn_icon_animation();
+
+        String error_message();
     }
 
     @Source({"com/arcbees/gsss/animation/client/animationsettings.gss",

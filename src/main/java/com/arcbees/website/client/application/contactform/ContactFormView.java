@@ -19,11 +19,7 @@ import com.arcbees.analytics.shared.Analytics;
 import com.arcbees.website.client.resources.ContactFormResources;
 import com.google.common.base.Strings;
 import com.google.gwt.core.client.Scheduler;
-import com.google.gwt.dom.client.ButtonElement;
-import com.google.gwt.dom.client.Element;
-import com.google.gwt.dom.client.FormElement;
-import com.google.gwt.dom.client.InputElement;
-import com.google.gwt.dom.client.TextAreaElement;
+import com.google.gwt.dom.client.*;
 import com.google.gwt.query.client.Function;
 import com.google.gwt.query.client.GQuery;
 import com.google.gwt.uibinder.client.UiBinder;
@@ -31,6 +27,9 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.PopupViewWithUiHandlers;
+import org.vectomatic.dom.svg.OMSVGAnimateElement;
+import org.vectomatic.dom.svg.OMSVGAnimateMotionElement;
+import org.vectomatic.dom.svg.OMSVGAnimateTransformElement;
 
 import static com.google.gwt.query.client.GQuery.$;
 
@@ -51,6 +50,16 @@ public class ContactFormView extends PopupViewWithUiHandlers<ContactFormUiHandle
     TextAreaElement message;
     @UiField
     ButtonElement cancel;
+    @UiField
+    ButtonElement begin;
+    @UiField
+    OMSVGAnimateMotionElement motion;
+    @UiField
+    OMSVGAnimateTransformElement transform;
+    @UiField
+    OMSVGAnimateElement animation;
+    @UiField
+    DivElement serverError;
 
     private final EmailValidator emailValidator;
     private final Analytics analytics;
@@ -68,7 +77,7 @@ public class ContactFormView extends PopupViewWithUiHandlers<ContactFormUiHandle
 
         initWidget(binder.createAndBindUi(this));
 
-        bind();
+        hideServerError();
     }
 
     @Override
@@ -78,11 +87,17 @@ public class ContactFormView extends PopupViewWithUiHandlers<ContactFormUiHandle
         reset();
     }
 
-    private void bind() {
+    @Override
+    public void showServerError() {
+        $(serverError).show();
+    }
+
+    @Override
+    protected void onAttach() {
         $(formPanel).submit(new Function() {
             @Override
             public void f() {
-                onSubmit();
+                submit();
             }
         });
 
@@ -95,7 +110,23 @@ public class ContactFormView extends PopupViewWithUiHandlers<ContactFormUiHandle
         });
     }
 
-    private void onSubmit() {
+    @Override
+    protected void onDetach() {
+        $(formPanel).unbind("submit");
+        $(cancel).unbind("click");
+    }
+
+    private void hideServerError() {
+        $(serverError).hide();
+    }
+
+    private void startAnimation() {
+        motion.beginElement();
+        transform.beginElement();
+        animation.beginElement();
+    }
+
+    private void submit() {
         removeErrorStyles();
         validate();
     }
@@ -114,6 +145,7 @@ public class ContactFormView extends PopupViewWithUiHandlers<ContactFormUiHandle
 
                 if (validateRequired && validateEmail) {
                     analytics.sendEvent("Support", "Click").eventLabel("Form - Send").go();
+                    startAnimation();
                     getUiHandlers().sendRequest(name.getValue(), email.getValue(), message.getValue());
                 }
             }
@@ -152,5 +184,6 @@ public class ContactFormView extends PopupViewWithUiHandlers<ContactFormUiHandle
 
     private void removeErrorStyles() {
         $(name, email, message).parent().removeClass(form.style().error());
+        hideServerError();
     }
 }

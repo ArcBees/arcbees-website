@@ -203,18 +203,6 @@
                         <div class="{page.style.bee} {page.style.bee1}">
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
-                                    <g:Image resource="{page.beeGenevieve1}"></g:Image>
-                                    <a href="#{nameTokens.BEE_GENEVIEVE}">
-                                        <h3>Geneviève <span>Doyle</span></h3>
-                                        <p><ui:msg description="Geneviève's title">Attorney</ui:msg></p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="{page.style.bee} {page.style.bee2}">
-                            <div class="{page.style.beeHolder1}">
-                                <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeJulien1}"></g:Image>
                                     <a href="#{nameTokens.BEE_JULIEN}">
                                         <h3>Julien <span>Dramaix</span></h3>
@@ -224,37 +212,13 @@
                             </div>
                         </div>
 
-                        <div class="{page.style.bee} {page.style.bee3}">
+                        <div class="{page.style.bee} {page.style.bee2}">
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeManon1}"></g:Image>
                                     <a href="#{nameTokens.BEE_MANON}">
                                         <h3>Manon <span>Gruaz</span></h3>
                                         <p><ui:msg description="Manon's title">Lead Designer, Branding goddess and Loving Bee</ui:msg></p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="{page.style.bee} {page.style.bee1}">
-                            <div class="{page.style.beeHolder1}">
-                                <div class="{page.style.beeHolder2}">
-                                    <g:Image resource="{page.beeJason1}"></g:Image>
-                                    <a href="#{nameTokens.BEE_JASON}">
-                                        <h3>Jason <span>Lemay</span></h3>
-                                        <p><ui:msg description="Jason's title">Dual wielding Front-end Specialist</ui:msg></p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="{page.style.bee} {page.style.bee2}">
-                            <div class="{page.style.beeHolder1}">
-                                <div class="{page.style.beeHolder2}">
-                                    <g:Image resource="{page.beeMaxime1}"></g:Image>
-                                    <a href="#{nameTokens.BEE_MAXIME}">
-                                        <h3>Maxime <span>Mériouma-</span><span>Caron</span></h3>
-                                        <p><ui:msg description="Maxime's title">Night Shadow Developer</ui:msg></p>
                                     </a>
                                 </div>
                             </div>
@@ -275,10 +239,46 @@
                         <div class="{page.style.bee} {page.style.bee1}">
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
+                                    <g:Image resource="{page.beeMaxime1}"></g:Image>
+                                    <a href="#{nameTokens.BEE_MAXIME}">
+                                        <h3>Maxime <span>Mériouma-</span><span>Caron</span></h3>
+                                        <p><ui:msg description="Maxime's title">Night Shadow Developer</ui:msg></p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="{page.style.bee} {page.style.bee2}">
+                            <div class="{page.style.beeHolder1}">
+                                <div class="{page.style.beeHolder2}">
+                                    <g:Image resource="{page.beeJason1}"></g:Image>
+                                    <a href="#{nameTokens.BEE_JASON}">
+                                        <h3>Jason <span>Lemay</span></h3>
+                                        <p><ui:msg description="Jason's title">Dual wielding Front-end Specialist</ui:msg></p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="{page.style.bee} {page.style.bee3}">
+                            <div class="{page.style.beeHolder1}">
+                                <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeJoel1}"></g:Image>
                                     <a href="#{nameTokens.BEE_JOEL}">
                                         <h3>Joel <span>Trottier-Hébert</span></h3>
                                         <p><ui:msg description="Joel's title">Bugs writer</ui:msg></p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="{page.style.bee} {page.style.bee1}">
+                            <div class="{page.style.beeHolder1}">
+                                <div class="{page.style.beeHolder2}">
+                                    <g:Image resource="{page.beeLarry1}"></g:Image>
+                                    <a href="#{nameTokens.BEE_LARRY}">
+                                        <h3>Larry <span>Matte</span></h3>
+                                        <p><ui:msg description="Larry's title">Undercover Front-end Agent</ui:msg></p>
                                     </a>
                                 </div>
                             </div>
@@ -297,18 +297,6 @@
                         </div>
 
                         <div class="{page.style.bee} {page.style.bee3}">
-                            <div class="{page.style.beeHolder1}">
-                                <div class="{page.style.beeHolder2}">
-                                    <g:Image resource="{page.beeLarry1}"></g:Image>
-                                    <a href="#{nameTokens.BEE_LARRY}">
-                                        <h3>Larry <span>Matte</span></h3>
-                                        <p><ui:msg description="Larry's title">Undercover Front-end Agent</ui:msg></p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="{page.style.bee} {page.style.bee1}">
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeRenaud1}"></g:Image>

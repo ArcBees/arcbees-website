@@ -102,12 +102,6 @@ public interface PageBeesResources extends FontResources {
     @Source("img/bees/francois2.jpg")
     ImageResource beeFrancois2();
 
-    @Source("img/bees/ge1.jpg")
-    ImageResource beeGenevieve1();
-
-    @Source("img/bees/ge2.jpg")
-    ImageResource beeGenevieve2();
-
     @Source("img/bees/jason1.jpg")
     ImageResource beeJason1();
 

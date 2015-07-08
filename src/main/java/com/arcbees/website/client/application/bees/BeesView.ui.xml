@@ -278,7 +278,7 @@
                                     <g:Image resource="{page.beeOlivier1}"></g:Image>
                                     <a href="#{nameTokens.BEE_OLIVIER}">
                                         <h3>Olivier <span>Lafleur</span></h3>
-                                        <p><ui:msg description="Renaud's title">Community gardener</ui:msg></p>
+                                        <p><ui:msg description="Olivier's title">Community gardener</ui:msg></p>
                                     </a>
                                 </div>
                             </div>

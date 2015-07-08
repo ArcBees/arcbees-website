@@ -120,12 +120,6 @@ public interface PageBeesResources extends FontResources {
     @Source("img/bees/joel2.jpg")
     ImageResource beeJoel2();
 
-    @Source("img/bees/julien1.jpg")
-    ImageResource beeJulien1();
-
-    @Source("img/bees/julien2.jpg")
-    ImageResource beeJulien2();
-
     @Source("img/bees/larry1.jpg")
     ImageResource beeLarry1();
 
@@ -158,6 +152,12 @@ public interface PageBeesResources extends FontResources {
 
     @Source("img/bees/renaud2.jpg")
     ImageResource beeRenaud2();
+
+    @Source("img/bees/olivier1.jpg")
+    ImageResource beeOlivier1();
+
+    @Source("img/bees/olivier2.jpg")
+    ImageResource beeOlivier2();
 
     @Source("img/bees/quiz/questions1.png")
     ImageResource questions1();

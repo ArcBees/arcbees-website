@@ -14,28 +14,28 @@
 
         <seo:SeoWidget>
             <seo:Title>
-                <ui:msg description="SEO - Bees - Julien - title">Julien Dramaix - Arcbees</ui:msg>
+                <ui:msg description="SEO - Bees - Olivier - title">Olivier Lafleur - Arcbees</ui:msg>
             </seo:Title>
             <seo:Description>
-                <ui:msg description="SEO - Bees - Julien - description">
-                    Lead Software Engineer, Bee-r cool-er
+                <ui:msg description="SEO - Bees - Olivier - description">
+                    Community gardener
                 </ui:msg>
             </seo:Description>
             <seo:Og>
-                <seo:OgImage height="241" width="285">http://www.arcbees.com/img/julien-dramaix.jpg</seo:OgImage>
+                <seo:OgImage height="241" width="285">http://www.arcbees.com/img/olivier-lafleur.jpg</seo:OgImage>
             </seo:Og>
         </seo:SeoWidget>
 
         <div class="{page.style.bee} {page.style.bee1}">
             <div class="{page.style.beeHolder1}">
                 <div class="{page.style.beeHolder2}">
-                    <g:Image resource="{page.beeJulien2}"></g:Image>
+                    <g:Image resource="{page.beeOlivier2}"></g:Image>
                 </div>
             </div>
         </div>
 
-        <h1>Julien Dramaix
-            <span><ui:msg description="Julien's title">Lead Software Engineer, Bee-r cool-er</ui:msg></span>
+        <h1>Olivier Lafleur
+            <span><ui:msg description="Olivier's title">Community gardener</ui:msg></span>
         </h1>
 
         <div class="{res.grid.row} {res.style.clearfix}">
@@ -44,10 +44,10 @@
                     <ui:msg description="Professional achievements:">Professional achievements</ui:msg>
                 </h2>
                 <ul>
-                    <ui:msg description="Julien's prof achievements">
-                        <li>Official GWT maintainer and contributor.</li>
-                        <li>Creator and maintainer of several open source projects.</li>
-                        <li>I’m fortunate enough to speak at several conferences around the world.</li>
+                    <ui:msg description="Olivier's prof achievements">
+                        <li>I have been a Cégep teacher and a University Lecturer.</li>
+                        <li>Presented GAE-Studio to Google.</li>
+                        <li>Completed a M.Sc. in Computer Science.</li>
                     </ui:msg>
                 </ul>
             </div>
@@ -56,10 +56,10 @@
                     <ui:msg description="Personal achievements:">Personal achievements</ui:msg>
                 </h2>
                 <ul>
-                    <ui:msg description="Julien's pers achievements">
-                        <li>Being ranked as a top 100 scoring participant in the Google code jam sprint at Google I/O 2012.</li>
-                        <li>Judo black belt at 16.</li>
-                        <li>Husband of a wonderful wife, and proud dad.</li>
+                    <ui:msg description="Olivier's pers achievements">
+                        <li>Dad of two awesome kids.</li>
+                        <li>Sang in a choir with a Symphonic Orchestra.</li>
+                        <li>I have been vice-president of my student union.</li>
                     </ui:msg>
                 </ul>
             </div>
@@ -67,15 +67,15 @@
 
         <ul class="{page.style.social}">
             <li>
-                <a href="http://be.linkedin.com/in/juliendramaix" target="_blank">
+                <a href="https://ca.linkedin.com/in/olilafleur" target="_blank">
                     <i class="{fonts.icons.iconLkd}"></i>
-                    <span>Profil LinkedIn de Julien Dramaix</span>
+                    <span>Profil LinkedIn de Olivier Lafleur</span>
                 </a>
             </li>
             <li>
-                <a href="https://plus.google.com/+JulienDramaix/posts" target="_blank">
+                <a href="https://plus.google.com/+OlivierLafleurArcBees/" target="_blank">
                     <i class="{fonts.icons.iconGPlus}"></i>
-                    <span>Profil Google+ de Julien Dramaix</span>
+                    <span>Profil Google+ de Olivier Lafleur</span>
                 </a>
             </li>
         </ul>

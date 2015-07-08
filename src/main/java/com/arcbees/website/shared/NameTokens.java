@@ -65,16 +65,12 @@ public class NameTokens {
     public static final String BEE_CHRISTOPHER_FR = BEES_FR + "/christopher-viel";
     public static final String BEE_FRANCOIS = BEES + "/francois-dion";
     public static final String BEE_FRANCOIS_FR = BEES_FR + "/francois-dion";
-    public static final String BEE_GENEVIEVE = BEES + "/genevieve-doyle";
-    public static final String BEE_GENEVIEVE_FR = BEES_FR + "/genevieve-doyle";
     public static final String BEE_JASON = BEES + "/jason-lemay";
     public static final String BEE_JASON_FR = BEES_FR + "/jason-lemay";
     public static final String BEE_JEANCHRISTOPHE = BEES + "/jean-christophe-lariviere";
     public static final String BEE_JEANCHRISTOPHE_FR = BEES_FR + "/jean-christophe-lariviere";
     public static final String BEE_JOEL = BEES + "/joel-trottier-hebert";
     public static final String BEE_JOEL_FR = BEES_FR + "/joel-trottier-hebert";
-    public static final String BEE_JULIEN = BEES + "/julien-dramaix";
-    public static final String BEE_JULIEN_FR = BEES_FR + "/julien-dramaix";
     public static final String BEE_LARRY = BEES + "/larry-matte";
     public static final String BEE_LARRY_FR = BEES_FR + "/larry-matte";
     public static final String BEE_MANON = BEES + "/manon-gruaz";
@@ -87,6 +83,8 @@ public class NameTokens {
     public static final String BEE_PHILIPPEB_FR = BEES_FR + "/philippe-beaudoin";
     public static final String BEE_RENAUD = BEES + "/renaud-laine";
     public static final String BEE_RENAUD_FR = BEES_FR + "/renaud-laine";
+    public static final String BEE_OLIVIER = BEES + "/olivier-lafleur";
+    public static final String BEE_OLIVIER_FR = BEES_FR + "/olivier-lafleur";
 
     static {
         Map<String, String> keys = Maps.newHashMap();
@@ -110,17 +108,16 @@ public class NameTokens {
         keys.put(BEE_CHRISTIAN, BEE_CHRISTIAN_FR);
         keys.put(BEE_CHRISTOPHER, BEE_CHRISTOPHER_FR);
         keys.put(BEE_FRANCOIS, BEE_FRANCOIS_FR);
-        keys.put(BEE_GENEVIEVE, BEE_GENEVIEVE_FR);
         keys.put(BEE_JASON, BEE_JASON_FR);
         keys.put(BEE_JEANCHRISTOPHE, BEE_JEANCHRISTOPHE_FR);
         keys.put(BEE_JOEL, BEE_JOEL_FR);
-        keys.put(BEE_JULIEN, BEE_JULIEN_FR);
         keys.put(BEE_LARRY, BEE_LARRY_FR);
         keys.put(BEE_MANON, BEE_MANON_FR);
         keys.put(BEE_MAXIME, BEE_MAXIME_FR);
         keys.put(BEE_PHILIPPEA, BEE_PHILIPPEA_FR);
         keys.put(BEE_PHILIPPEB, BEE_PHILIPPEB_FR);
         keys.put(BEE_RENAUD, BEE_RENAUD_FR);
+        keys.put(BEE_OLIVIER, BEE_OLIVIER_FR);
 
         placeKeys = HashBiMap.create(keys);
     }

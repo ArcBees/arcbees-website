@@ -62,9 +62,6 @@ public interface NameTokensConstants extends Constants {
     @DefaultStringValue(NameTokens.BEE_FRANCOIS)
     String BEE_FRANCOIS();
 
-    @DefaultStringValue(NameTokens.BEE_GENEVIEVE)
-    String BEE_GENEVIEVE();
-
     @DefaultStringValue(NameTokens.BEE_JASON)
     String BEE_JASON();
 
@@ -73,9 +70,6 @@ public interface NameTokensConstants extends Constants {
 
     @DefaultStringValue(NameTokens.BEE_JOEL)
     String BEE_JOEL();
-
-    @DefaultStringValue(NameTokens.BEE_JULIEN)
-    String BEE_JULIEN();
 
     @DefaultStringValue(NameTokens.BEE_LARRY)
     String BEE_LARRY();
@@ -94,4 +88,7 @@ public interface NameTokensConstants extends Constants {
 
     @DefaultStringValue(NameTokens.BEE_RENAUD)
     String BEE_RENAUD();
+
+    @DefaultStringValue(NameTokens.BEE_OLIVIER)
+    String BEE_OLIVIER();
 }

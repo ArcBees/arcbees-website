@@ -14,7 +14,7 @@
  * the License.
  */
 
-package com.arcbees.website.client.application.bees.bee.julien;
+package com.arcbees.website.client.application.bees.bee.olivier;
 
 import com.arcbees.website.client.Bundles;
 import com.arcbees.website.client.application.bees.BeesPresenter;
@@ -27,17 +27,17 @@ import com.gwtplatform.mvp.client.annotations.NameToken;
 import com.gwtplatform.mvp.client.annotations.ProxyCodeSplitBundle;
 import com.gwtplatform.mvp.client.proxy.ProxyPlace;
 
-public class JulienPresenter extends Presenter<JulienPresenter.MyView, JulienPresenter.MyProxy> {
+public class OlivierPresenter extends Presenter<OlivierPresenter.MyView, OlivierPresenter.MyProxy> {
     interface MyView extends View {
     }
 
-    @ProxyCodeSplitBundle(Bundles.BEES2)
-    @NameToken({NameTokens.BEE_JULIEN, NameTokens.BEE_JULIEN_FR})
-    interface MyProxy extends ProxyPlace<JulienPresenter> {
+    @ProxyCodeSplitBundle(Bundles.BEES3)
+    @NameToken({NameTokens.BEE_OLIVIER, NameTokens.BEE_OLIVIER_FR})
+    interface MyProxy extends ProxyPlace<OlivierPresenter> {
     }
 
     @Inject
-    JulienPresenter(
+    OlivierPresenter(
             EventBus eventBus,
             MyView view,
             MyProxy proxy) {

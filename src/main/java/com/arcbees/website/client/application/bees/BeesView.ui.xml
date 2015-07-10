@@ -203,10 +203,10 @@
                         <div class="{page.style.bee} {page.style.bee1}">
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
-                                    <g:Image resource="{page.beeJulien1}"></g:Image>
-                                    <a href="#{nameTokens.BEE_JULIEN}">
-                                        <h3>Julien <span>Dramaix</span></h3>
-                                        <p><ui:msg description="Julien's title">Lead Software Engineer, Bee-r cool-er</ui:msg></p>
+                                    <g:Image resource="{page.beeMaxime1}"></g:Image>
+                                    <a href="#{nameTokens.BEE_MAXIME}">
+                                        <h3>Maxime <span>Mériouma-</span><span>Caron</span></h3>
+                                        <p><ui:msg description="Maxime's title">Night Shadow Developer</ui:msg></p>
                                     </a>
                                 </div>
                             </div>
@@ -239,10 +239,10 @@
                         <div class="{page.style.bee} {page.style.bee1}">
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
-                                    <g:Image resource="{page.beeMaxime1}"></g:Image>
-                                    <a href="#{nameTokens.BEE_MAXIME}">
-                                        <h3>Maxime <span>Mériouma-</span><span>Caron</span></h3>
-                                        <p><ui:msg description="Maxime's title">Night Shadow Developer</ui:msg></p>
+                                    <g:Image resource="{page.beeJoel1}"></g:Image>
+                                    <a href="#{nameTokens.BEE_JOEL}">
+                                        <h3>Joel <span>Trottier-Hébert</span></h3>
+                                        <p><ui:msg description="Joel's title">Bugs writer</ui:msg></p>
                                     </a>
                                 </div>
                             </div>
@@ -263,10 +263,10 @@
                         <div class="{page.style.bee} {page.style.bee3}">
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
-                                    <g:Image resource="{page.beeJoel1}"></g:Image>
-                                    <a href="#{nameTokens.BEE_JOEL}">
-                                        <h3>Joel <span>Trottier-Hébert</span></h3>
-                                        <p><ui:msg description="Joel's title">Bugs writer</ui:msg></p>
+                                    <g:Image resource="{page.beeLarry1}"></g:Image>
+                                    <a href="#{nameTokens.BEE_LARRY}">
+                                        <h3>Larry <span>Matte</span></h3>
+                                        <p><ui:msg description="Larry's title">Undercover Front-end Agent</ui:msg></p>
                                     </a>
                                 </div>
                             </div>
@@ -275,10 +275,10 @@
                         <div class="{page.style.bee} {page.style.bee1}">
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
-                                    <g:Image resource="{page.beeLarry1}"></g:Image>
-                                    <a href="#{nameTokens.BEE_LARRY}">
-                                        <h3>Larry <span>Matte</span></h3>
-                                        <p><ui:msg description="Larry's title">Undercover Front-end Agent</ui:msg></p>
+                                    <g:Image resource="{page.beeOlivier1}"></g:Image>
+                                    <a href="#{nameTokens.BEE_OLIVIER}">
+                                        <h3>Olivier <span>Lafleur</span></h3>
+                                        <p><ui:msg description="Olivier's title">Community gardener</ui:msg></p>
                                     </a>
                                 </div>
                             </div>

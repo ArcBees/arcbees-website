@@ -14,14 +14,20 @@
  * the License.
  */
 
-package com.arcbees.website.client.application.bees.bee.julien;
+package com.arcbees.website.client.application.bees.bee.olivier;
 
-import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
+import com.google.gwt.uibinder.client.UiBinder;
+import com.google.gwt.user.client.ui.Widget;
+import com.google.inject.Inject;
+import com.gwtplatform.mvp.client.ViewImpl;
 
-public class JulienModule extends AbstractPresenterModule {
-    @Override
-    protected void configure() {
-        bindPresenter(JulienPresenter.class, JulienPresenter.MyView.class,
-                JulienView.class, JulienPresenter.MyProxy.class);
+public class OlivierView extends ViewImpl implements OlivierPresenter.MyView {
+    interface Binder extends UiBinder<Widget, OlivierView> {
+    }
+
+    @Inject
+    OlivierView(
+            Binder binder) {
+        initWidget(binder.createAndBindUi(this));
     }
 }

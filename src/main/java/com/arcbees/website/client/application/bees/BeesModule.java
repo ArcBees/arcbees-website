@@ -24,10 +24,10 @@ import com.arcbees.website.client.application.bees.bee.francois.FrancoisModule;
 import com.arcbees.website.client.application.bees.bee.jason.JasonModule;
 import com.arcbees.website.client.application.bees.bee.jeanchristophe.JeanchristopheModule;
 import com.arcbees.website.client.application.bees.bee.joel.JoelModule;
-import com.arcbees.website.client.application.bees.bee.julien.JulienModule;
 import com.arcbees.website.client.application.bees.bee.larry.LarryModule;
 import com.arcbees.website.client.application.bees.bee.manon.ManonModule;
 import com.arcbees.website.client.application.bees.bee.maxime.MaximeModule;
+import com.arcbees.website.client.application.bees.bee.olivier.OlivierModule;
 import com.arcbees.website.client.application.bees.bee.philippearaujo.PhilippeaModule;
 import com.arcbees.website.client.application.bees.bee.philippebeaudoin.PhilippebModule;
 import com.arcbees.website.client.application.bees.bee.renaud.RenaudModule;
@@ -44,13 +44,13 @@ public class BeesModule extends AbstractPresenterModule {
         install(new JasonModule());
         install(new JeanchristopheModule());
         install(new JoelModule());
-        install(new JulienModule());
         install(new LarryModule());
         install(new ManonModule());
         install(new MaximeModule());
         install(new PhilippeaModule());
         install(new PhilippebModule());
         install(new RenaudModule());
+        install(new OlivierModule());
 
         bindPresenter(BeesPresenter.class, BeesPresenter.MyView.class,
                 BeesView.class, BeesPresenter.MyProxy.class);

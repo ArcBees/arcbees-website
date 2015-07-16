@@ -52,12 +52,6 @@ public class ContactFormView extends PopupViewWithUiHandlers<ContactFormUiHandle
     ButtonElement cancel;
     @UiField
     ButtonElement begin;
-//    @UiField
-//    OMSVGAnimateMotionElement motion;
-//    @UiField
-//    OMSVGAnimateTransformElement transform;
-//    @UiField
-//    OMSVGAnimateElement animation;
     @UiField
     DivElement serverError;
 
@@ -120,12 +114,6 @@ public class ContactFormView extends PopupViewWithUiHandlers<ContactFormUiHandle
         $(serverError).hide();
     }
 
-//    private void startAnimation() {
-//        motion.beginElement();
-//        transform.beginElement();
-//        animation.beginElement();
-//    }
-
     private void submit() {
         removeErrorStyles();
         validate();
@@ -143,11 +131,10 @@ public class ContactFormView extends PopupViewWithUiHandlers<ContactFormUiHandle
                 boolean validateRequired = validateRequired(name, email, message);
                 boolean validateEmail = validateEmail();
 
-//                if (validateRequired && validateEmail) {
-//                    analytics.sendEvent("Support", "Click").eventLabel("Form - Send").go();
-//                    startAnimation();
-//                    getUiHandlers().sendRequest(name.getValue(), email.getValue(), message.getValue());
-//                }
+                if (validateRequired && validateEmail) {
+                    analytics.sendEvent("Support", "Click").eventLabel("Form - Send").go();
+                    getUiHandlers().sendRequest(name.getValue(), email.getValue(), message.getValue());
+                }
             }
         });
     }

@@ -27,9 +27,6 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.PopupViewWithUiHandlers;
-//import org.vectomatic.dom.svg.OMSVGAnimateElement;
-//import org.vectomatic.dom.svg.OMSVGAnimateMotionElement;
-//import org.vectomatic.dom.svg.OMSVGAnimateTransformElement;
 
 import static com.google.gwt.query.client.GQuery.$;
 

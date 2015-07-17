@@ -27,9 +27,6 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.user.client.ui.Widget;
 import com.google.web.bindery.event.shared.EventBus;
 import com.gwtplatform.mvp.client.PopupViewWithUiHandlers;
-import org.vectomatic.dom.svg.OMSVGAnimateElement;
-import org.vectomatic.dom.svg.OMSVGAnimateMotionElement;
-import org.vectomatic.dom.svg.OMSVGAnimateTransformElement;
 
 import static com.google.gwt.query.client.GQuery.$;
 
@@ -52,12 +49,6 @@ public class ContactFormView extends PopupViewWithUiHandlers<ContactFormUiHandle
     ButtonElement cancel;
     @UiField
     ButtonElement begin;
-    @UiField
-    OMSVGAnimateMotionElement motion;
-    @UiField
-    OMSVGAnimateTransformElement transform;
-    @UiField
-    OMSVGAnimateElement animation;
     @UiField
     DivElement serverError;
 
@@ -120,12 +111,6 @@ public class ContactFormView extends PopupViewWithUiHandlers<ContactFormUiHandle
         $(serverError).hide();
     }
 
-    private void startAnimation() {
-        motion.beginElement();
-        transform.beginElement();
-        animation.beginElement();
-    }
-
     private void submit() {
         removeErrorStyles();
         validate();
@@ -145,7 +130,6 @@ public class ContactFormView extends PopupViewWithUiHandlers<ContactFormUiHandle
 
                 if (validateRequired && validateEmail) {
                     analytics.sendEvent("Support", "Click").eventLabel("Form - Send").go();
-                    startAnimation();
                     getUiHandlers().sendRequest(name.getValue(), email.getValue(), message.getValue());
                 }
             }

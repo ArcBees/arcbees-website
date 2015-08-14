@@ -267,7 +267,7 @@
 .bees .beeHolder2 {
     background-repeat: no-repeat;
     background-position: 50%;
-    background-image: url(http://placekitten.com/280/280);
+    background-image: url(http://placekitten.com/281/281);
 
     visibility: visible;
     overflow: hidden;

@@ -551,7 +551,7 @@ img {
 
     .sidebar:hover:not(.clicked) ~ .content .withLogo,
     .menuToggle:hover:not(.clicked) ~ .content .withLogo {
-    @mixin opacity(0);
+        @mixin opacity(0);
     }
 
     .sidebar:hover:not(.clicked) ~ .menu,

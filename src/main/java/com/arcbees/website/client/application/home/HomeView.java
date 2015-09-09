@@ -93,6 +93,8 @@ public class HomeView extends ViewImpl implements HomePresenter.MyView {
             public void f(Element e) {
                 $(architectMore).slideToggle(SLIDE_DELAY);
                 $(architectBtn).toggleClass(pageResources.style().collapsible());
+
+                analytics.sendEvent("Home", "Click").eventLabel("Architects - Learn More").go();
             }
         });
     }
@@ -122,6 +124,8 @@ public class HomeView extends ViewImpl implements HomePresenter.MyView {
             public void f(Element e) {
                 $(beesMore).slideToggle(SLIDE_DELAY);
                 $(bees).toggleClass(pageResources.style().collapsible());
+
+                analytics.sendEvent("Home", "Click").eventLabel("Bees - Learn More").go();
             }
         });
     }

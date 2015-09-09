@@ -16,7 +16,9 @@
 
 package com.arcbees.website.client.application;
 
+import com.arcbees.analytics.shared.Analytics;
 import com.arcbees.website.client.resources.AppResources;
+import com.google.gwt.dom.client.AnchorElement;
 import com.google.gwt.dom.client.DivElement;
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.i18n.client.LocaleInfo;
@@ -40,6 +42,9 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     }
 
     private static final int ANIMATION_DURATION = 400;
+    private static final int STATE_CLOSED = 0;
+    private static final int STATE_OPENED = 1;
+    private static final int STATE_CLICKED = 2;
 
     @UiField
     SimplePanel main;
@@ -53,16 +58,25 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     DivElement langToggle;
     @UiField
     Object backTop;
+    @UiField
+    AnchorElement githubLink;
 
     private final AppResources appResources;
+    private final Analytics analytics;
+    
+    public int menuState;
 
     @Inject
     ApplicationView(
             Binder binder,
-            AppResources appResources) {
+            AppResources appResources,
+            Analytics analytics) {
         initWidget(binder.createAndBindUi(this));
 
+        this.analytics = analytics;
         this.appResources = appResources;
+
+        setMenuState(STATE_CLOSED);
 
         bind();
     }
@@ -92,12 +106,29 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
             }
         });
 
+        // Always call watchMenu, the filtering is done by the function, fixing the multiple calls bug
+        $(sidebar).hover(new Function() {
+            @Override
+            public void f() {
+                watchMenu();
+            }
+        }, new Function() {
+            @Override
+        public void f() {
+                watchMenu();
+            }
+        });
+
         $("a", sidebar).click(new Function() {
             @Override
             public void f() {
                 Window.scrollTo(0, 0);
 
                 removeActiveStyle();
+
+                analytics.sendEvent("Menu", "Click").eventLabel($(this).attr("data-label")).go();
+
+                setMenuState(STATE_CLICKED);
             }
         });
 
@@ -111,7 +142,16 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
         $(langToggle).click(new Function() {
             @Override
             public void f() {
+                analytics.sendEvent("Meta", "Click").eventLabel("Switch lang").go();
+
                 switchLang();
+            }
+        });
+
+        $(githubLink).click(new Function() {
+            @Override
+            public void f() {
+                analytics.sendEvent("Meta", "Click").eventLabel("Github").go();
             }
         });
 
@@ -159,5 +199,37 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     private boolean isFrench() {
         LocaleInfo currentLocale = LocaleInfo.getCurrentLocale();
         return currentLocale.getLocaleName().equals("fr");
+    }
+
+    private void watchMenu() {
+        // Hack to get the real menu state (on hover, links trigger false data with .hover())
+        int hoverState = $("." + appResources.style().sidebar() + ":hover").length();
+
+        // Not tracking mobile as we always need to toggle the menu
+        if(! $(sidebar).hasClass(appResources.style().clicked())) {
+            if (menuState != hoverState) {
+                if (menuState != STATE_CLICKED) {
+                    setMenuState(hoverState);
+                    if (menuState == STATE_CLOSED) {
+                        analytics.sendEvent("Menu", "State").eventLabel("Close, no link clicked").go();
+                    } else {
+                        analytics.sendEvent("Menu", "State").eventLabel("Open").go();
+                    }
+                } else {
+                    if (menuClosing(hoverState)) {
+                        setMenuState(STATE_CLOSED);
+                        analytics.sendEvent("Menu", "State").eventLabel("Close, link clicked").go();
+                    }
+                }
+            }
+        }
+    }
+
+    private void setMenuState(int state) {
+        menuState = state;
+    }
+
+    private boolean menuClosing(int hoverState) {
+        return hoverState == STATE_CLOSED;
     }
 }

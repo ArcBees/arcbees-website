@@ -35,7 +35,6 @@ import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
 
 import static com.google.gwt.query.client.GQuery.$;
-import static com.google.gwt.query.client.GQuery.console;
 
 public class ApplicationView extends ViewImpl implements ApplicationPresenter.MyView {
 
@@ -73,7 +72,8 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
 
         this.analytics = analytics;
         this.appResources = appResources;
-        
+
+        // Init the menu state as closed
         menuState = 0;
 
         bind();
@@ -103,7 +103,8 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
                 return false;
             }
         });
-        
+
+        // Always call watchMenu, the filtering is done by the function, fixing the multiple calls bug
         $(sidebar).hover(new Function() {
             @Override
             public void f() {
@@ -124,7 +125,7 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
                 removeActiveStyle();
 
                 analytics.sendEvent("Menu", "Click").eventLabel($(this).attr("data-label")).go();
-                
+
                 // Switch the open menu in a "link has been clicked" state
                 menuState = 2;
             }
@@ -198,11 +199,11 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
         LocaleInfo currentLocale = LocaleInfo.getCurrentLocale();
         return currentLocale.getLocaleName().equals("fr");
     }
-    
+
     private void watchMenu() {
         // Hack to get the real menu state (on hover, links trigger false data with .hover())
         int hoverState = $("." + appResources.style().sidebar() + ":hover").length();
-        
+
         // Not tracking mobile as we always need to toggle the menu
         if(! $(sidebar).hasClass(appResources.style().clicked())) {
             if (menuState != hoverState) {

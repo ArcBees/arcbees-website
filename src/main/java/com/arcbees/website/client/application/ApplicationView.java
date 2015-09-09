@@ -43,6 +43,7 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
 
     private static final int ANIMATION_DURATION = 400;
     private static final int STATE_CLOSED = 0;
+    private static final int STATE_OPENED = 1;
     private static final int STATE_CLICKED = 2;
 
     @UiField
@@ -229,6 +230,6 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     }
 
     private boolean menuClosing(int hoverState) {
-        return hoverState == 0;
+        return hoverState == STATE_CLOSED;
     }
 }

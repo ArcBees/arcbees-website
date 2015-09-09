@@ -26,57 +26,57 @@
             <nav role="navigation" class="{res.style.menu}">
                 <ul>
                     <li>
-                        <a href="#{nameTokens.HOME}" class="{fonts.icons.iconArcbeesName} {res.style.backHome}">
+                        <a href="#{nameTokens.HOME}" class="{fonts.icons.iconArcbeesName} {res.style.backHome}" data-label="Homepage">
                             <span class="{res.style.hidden}">Back to homepage</span>
                         </a>
                     </li>
                     <li class="{res.style.menuStart}">
-                        <a href="#{nameTokens.EXPERTISE}">Expertise</a>
+                        <a href="#{nameTokens.EXPERTISE}" data-label="Expertise">Expertise</a>
                     </li>
                     <li>
-                        <a href="#{nameTokens.SERVICES}">Services</a>
+                        <a href="#{nameTokens.SERVICES}" data-label="Services">Services</a>
                     </li>
                     <li>
-                        <a href="#{nameTokens.PRODUCTS}">
+                        <a href="#{nameTokens.PRODUCTS}" data-label="Products">
                             <ui:msg description="Products">Products</ui:msg>
                         </a>
                         <ul>
                             <li>
-                                <a href="#{nameTokens.GAE}" class="{fonts.icons.iconGae}">GAE Studio</a>
+                                <a href="#{nameTokens.GAE}" class="{fonts.icons.iconGae}" data-label="GAE Studio">GAE Studio</a>
                             </li>
                             <li>
-                                <a href="#{nameTokens.JUKITO}" class="{fonts.icons.iconJukito}">Jukito</a>
+                                <a href="#{nameTokens.JUKITO}" class="{fonts.icons.iconJukito}" data-label="Jukito">Jukito</a>
                             </li>
                             <li>
-                                <a href="#{nameTokens.GWTP}" class="{fonts.icons.iconGwtp}">GWTP</a>
+                                <a href="#{nameTokens.GWTP}" class="{fonts.icons.iconGwtp}" data-label="GWTP">GWTP</a>
                             </li>
                             <li>
-                                <a href="#{nameTokens.CHOSEN}" class="{fonts.icons.iconChosen}">Chosen</a>
+                                <a href="#{nameTokens.CHOSEN}" class="{fonts.icons.iconChosen}" data-label="Chosen">Chosen</a>
                             </li>
                             <li>
-                                <a href="#{nameTokens.GQUERY}" class="{fonts.icons.iconGquery}">GQuery</a>
+                                <a href="#{nameTokens.GQUERY}" class="{fonts.icons.iconGquery}" data-label="GQuery">GQuery</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#{nameTokens.BEES}">
+                        <a href="#{nameTokens.BEES}" data-label="Bees">
                             <ui:msg description="Our bees">Our bees</ui:msg>
                         </a>
                     </li>
                     <li>
-                        <a href="#{nameTokens.HOME}">
+                        <a href="#{nameTokens.HOME}" data-label="About">
                             <ui:msg description="About">About</ui:msg>
                         </a>
                     </li>
                     <li>
-                        <a href="#{nameTokens.CONTACT}">Contact</a>
+                        <a href="#{nameTokens.CONTACT}" data-label="Contact">Contact</a>
                     </li>
                     <li>
-                        <a href="#{nameTokens.SUPPORT}" class="{res.style.menuSupport}">Support</a>
+                        <a href="#{nameTokens.SUPPORT}" class="{res.style.menuSupport}" data-label="Support">Support</a>
                     </li>
 
                     <li>
-                        <a href="http://dev.arcbees.com/" target="_blank">
+                        <a href="http://dev.arcbees.com/" target="_blank" data-label="Dev">
                             <ui:msg description="Developers">Developers</ui:msg>
                             <i class="{fonts.icons.iconArrowOutside}"></i>
                         </a>
@@ -86,32 +86,32 @@
             <nav class="{res.style.socialmedias}">
                 <ul>
                     <li>
-                        <a href="https://www.facebook.com/arcbees" class="{fonts.icons.iconFb}" target="_blank">
+                        <a href="https://www.facebook.com/arcbees" class="{fonts.icons.iconFb}" target="_blank" data-label="Facebook">
                             <span class="{res.style.hidden}">Facebook</span>
                         </a>
                     </li>
                     <li>
-                        <a href="https://twitter.com/ArcBees" class="{fonts.icons.iconTwitter}" target="_blank">
+                        <a href="https://twitter.com/ArcBees" class="{fonts.icons.iconTwitter}" target="_blank" data-label="Twitter">
                             <span class="{res.style.hidden}">Twitter</span>
                         </a>
                     </li>
                     <li>
-                        <a href="https://plus.google.com/+Arcbees/posts" class="{fonts.icons.iconGPlus}" target="_blank">
+                        <a href="https://plus.google.com/+Arcbees/posts" class="{fonts.icons.iconGPlus}" target="_blank" data-label="Google+">
                             <span class="{res.style.hidden}">Google</span>
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/company/arcbees" class="{fonts.icons.iconLkd}" target="_blank">
+                        <a href="https://www.linkedin.com/company/arcbees" class="{fonts.icons.iconLkd}" target="_blank" data-label="LinkedIn">
                             <span class="{res.style.hidden}">LinkedIn</span>
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/ArcBees" class="{fonts.icons.iconGitHub}" target="_blank">
+                        <a href="https://github.com/ArcBees" class="{fonts.icons.iconGitHub}" target="_blank" data-label="Github">
                             <span class="{res.style.hidden}">GitHub</span>
                         </a>
                     </li>
                     <li>
-                        <a href="https://blog.arcbees.com/" class="{fonts.icons.iconWordpress}" target="_blank">
+                        <a href="https://blog.arcbees.com/" class="{fonts.icons.iconWordpress}" target="_blank" data-label="Blog">
                             <span class="{res.style.hidden}">Wordpress</span>
                         </a>
                     </li>
@@ -140,7 +140,7 @@
                             </ui:msg>
                         </a>
                     </div>
-                    <a href="https://github.com/ArcBees" title="Arcbees github" target="_blank">
+                    <a href="https://github.com/ArcBees" title="Arcbees github" target="_blank" ui:field="githubLink">
                         <i class="{fonts.icons.iconGitHub} {res.style.github}"></i>
                     </a>
                 </div>

@@ -16,7 +16,9 @@
 
 package com.arcbees.website.client.application;
 
+import com.arcbees.analytics.shared.Analytics;
 import com.arcbees.website.client.resources.AppResources;
+import com.google.gwt.dom.client.AnchorElement;
 import com.google.gwt.dom.client.DivElement;
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.i18n.client.LocaleInfo;
@@ -33,6 +35,7 @@ import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.ViewImpl;
 
 import static com.google.gwt.query.client.GQuery.$;
+import static com.google.gwt.query.client.GQuery.console;
 
 public class ApplicationView extends ViewImpl implements ApplicationPresenter.MyView {
 
@@ -53,16 +56,25 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     DivElement langToggle;
     @UiField
     Object backTop;
+    @UiField
+    AnchorElement githubLink;
 
     private final AppResources appResources;
+    private final Analytics analytics;
+    
+    public int menuState;
 
     @Inject
     ApplicationView(
             Binder binder,
-            AppResources appResources) {
+            AppResources appResources,
+            Analytics analytics) {
         initWidget(binder.createAndBindUi(this));
 
+        this.analytics = analytics;
         this.appResources = appResources;
+        
+        menuState = 0;
 
         bind();
     }
@@ -91,6 +103,18 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
                 return false;
             }
         });
+        
+        $(sidebar).hover(new Function() {
+            @Override
+            public void f() {
+                watchMenu();
+            }
+        }, new Function() {
+            @Override
+        public void f() {
+                watchMenu();
+            }
+        });
 
         $("a", sidebar).click(new Function() {
             @Override
@@ -98,6 +122,11 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
                 Window.scrollTo(0, 0);
 
                 removeActiveStyle();
+
+                analytics.sendEvent("Menu", "Click").eventLabel($(this).attr("data-label")).go();
+                
+                // Switch the open menu in a "link has been clicked" state
+                menuState = 2;
             }
         });
 
@@ -111,7 +140,16 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
         $(langToggle).click(new Function() {
             @Override
             public void f() {
+                analytics.sendEvent("Meta", "Click").eventLabel("Switch lang").go();
+
                 switchLang();
+            }
+        });
+
+        $(githubLink).click(new Function() {
+            @Override
+            public void f() {
+                analytics.sendEvent("Meta", "Click").eventLabel("Github").go();
             }
         });
 
@@ -159,5 +197,33 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     private boolean isFrench() {
         LocaleInfo currentLocale = LocaleInfo.getCurrentLocale();
         return currentLocale.getLocaleName().equals("fr");
+    }
+    
+    private void watchMenu() {
+        // Hack to get the real menu state (on hover, links trigger false data with .hover())
+        int hoverState = $("." + appResources.style().sidebar() + ":hover").length();
+        
+        // Not tracking mobile as we always need to toggle the menu
+        if(! $(sidebar).hasClass(appResources.style().clicked())) {
+            if (menuState != hoverState) {
+                if (menuState != 2) {
+                    // Register the new state
+                    menuState = hoverState;
+                    // Send the right data to Google Analytics
+                    if (menuState == 0) {
+                        analytics.sendEvent("Menu", "State").eventLabel("Close, no link clicked").go();
+                    } else {
+                        analytics.sendEvent("Menu", "State").eventLabel("Open").go();
+                    }
+                } else {
+                    // Menu link has been clicked, menu is closing, it's a success
+                    if (hoverState == 0) {
+                        // Menu is now closed, reset the state
+                        menuState = 0;
+                        analytics.sendEvent("Menu", "State").eventLabel("Close, link clicked").go();
+                    }
+                }
+            }
+        }
     }
 }

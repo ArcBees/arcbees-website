@@ -42,6 +42,8 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     }
 
     private static final int ANIMATION_DURATION = 400;
+    private static final int STATE_CLOSED = 0;
+    private static final int STATE_CLICKED = 2;
 
     @UiField
     SimplePanel main;
@@ -73,8 +75,7 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
         this.analytics = analytics;
         this.appResources = appResources;
 
-        // Init the menu state as closed
-        menuState = 0;
+        setMenuState(STATE_CLOSED);
 
         bind();
     }
@@ -126,8 +127,7 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
 
                 analytics.sendEvent("Menu", "Click").eventLabel($(this).attr("data-label")).go();
 
-                // Switch the open menu in a "link has been clicked" state
-                menuState = 2;
+                setMenuState(STATE_CLICKED);
             }
         });
 
@@ -207,24 +207,28 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
         // Not tracking mobile as we always need to toggle the menu
         if(! $(sidebar).hasClass(appResources.style().clicked())) {
             if (menuState != hoverState) {
-                if (menuState != 2) {
-                    // Register the new state
-                    menuState = hoverState;
-                    // Send the right data to Google Analytics
-                    if (menuState == 0) {
+                if (menuState != STATE_CLICKED) {
+                    setMenuState(hoverState);
+                    if (menuState == STATE_CLOSED) {
                         analytics.sendEvent("Menu", "State").eventLabel("Close, no link clicked").go();
                     } else {
                         analytics.sendEvent("Menu", "State").eventLabel("Open").go();
                     }
                 } else {
-                    // Menu link has been clicked, menu is closing, it's a success
-                    if (hoverState == 0) {
-                        // Menu is now closed, reset the state
-                        menuState = 0;
+                    if (menuClosing(hoverState)) {
+                        setMenuState(STATE_CLOSED);
                         analytics.sendEvent("Menu", "State").eventLabel("Close, link clicked").go();
                     }
                 }
             }
         }
+    }
+
+    private void setMenuState(int state) {
+        menuState = state;
+    }
+
+    private boolean menuClosing(int hoverState) {
+        return hoverState == 0;
     }
 }

@@ -38,7 +38,7 @@ public class DispatchServletModule extends ServletModule {
         bind(SupportResource.class);
         bindConstant().annotatedWith(ServiceKey.class).to("ab12cd34");
         bindConstant().annotatedWith(com.gwtplatform.crawlerservice.server.ServiceKey.class).to("ab12cd34");
-        bindConstant().annotatedWith(ServiceUrl.class).to("http://localhost/");
+        bindConstant().annotatedWith(ServiceUrl.class).to("http://arcbeeswebsite.appspot.com/");
         bindConstant().annotatedWith(HtmlUnitTimeoutMillis.class).to(6000L);
 
         requestStaticInjection(CrawlerRequest.class);

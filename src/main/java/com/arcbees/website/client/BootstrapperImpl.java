@@ -74,7 +74,7 @@ public class BootstrapperImpl implements Bootstrapper {
         String currentLocale = LocaleInfo.getCurrentLocale().getLocaleName();
 
         if ("en".compareToIgnoreCase(currentLocale) == 0) {
-            if (!Strings.isNullOrEmpty(currentPlaceRequest.getNameToken()) && !NameTokens.isEn(nameToken)) {
+            if (!Strings.isNullOrEmpty(nameToken) && !NameTokens.isEn(nameToken)) {
                 revealTranslatedNameToken(currentPlaceRequest, nameToken);
                 return;
             }

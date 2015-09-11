@@ -30,6 +30,8 @@ import com.gwtplatform.crawlerservice.server.CrawlServiceServlet;
 
 @Singleton
 public class CrawlerFilter implements Filter {
+    static final String ESCAPED_FRAGMENT = "_escaped_fragment_";
+
     private final CrawlServiceServlet crawlServlet;
 
     @Inject
@@ -48,9 +50,8 @@ public class CrawlerFilter implements Filter {
         HttpServletResponse resp = (HttpServletResponse) response;
 
         String queryString = req.getQueryString();
-        if (queryString != null && request.getParameterMap().containsKey("key")
-                && request.getParameterMap().containsKey("url")) {
-            crawlServlet.service(req, resp);
+        if (queryString != null && queryString.contains(ESCAPED_FRAGMENT)) {
+            crawlServlet.service(new CrawlerRequest(req), resp);
         } else {
             filterChain.doFilter(req, resp);
         }

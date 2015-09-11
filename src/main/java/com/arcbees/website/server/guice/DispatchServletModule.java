@@ -19,10 +19,14 @@ import com.arcbees.website.server.HomeServlet;
 import com.arcbees.website.server.LocaleExtractor;
 import com.arcbees.website.server.SupportResource;
 import com.arcbees.website.shared.EndPoints;
+import com.gargoylesoftware.htmlunit.BrowserVersion;
+import com.gargoylesoftware.htmlunit.IncorrectnessListener;
+import com.gargoylesoftware.htmlunit.WebClient;
+import com.google.inject.Provides;
 import com.google.inject.servlet.ServletModule;
-import com.gwtplatform.crawler.server.CrawlFilter;
 import com.gwtplatform.crawler.server.ServiceKey;
 import com.gwtplatform.crawler.server.ServiceUrl;
+import com.gwtplatform.crawlerservice.server.HtmlUnitTimeoutMillis;
 
 public class DispatchServletModule extends ServletModule {
     @Override
@@ -35,8 +39,9 @@ public class DispatchServletModule extends ServletModule {
         bindConstant().annotatedWith(ServiceKey.class).to("ab12cd34");
         bindConstant().annotatedWith(com.gwtplatform.crawlerservice.server.ServiceKey.class).to("ab12cd34");
         bindConstant().annotatedWith(ServiceUrl.class).to("http://arcbeeswebsite.appspot.com/");
+        bindConstant().annotatedWith(HtmlUnitTimeoutMillis.class).to(6000L);
 
-        filter("/*").through(CrawlFilter.class);
+        requestStaticInjection(CrawlerRequest.class);
         filter("/*").through(CrawlerFilter.class);
 
         serve("/").with(HomeServlet.class);
@@ -44,5 +49,18 @@ public class DispatchServletModule extends ServletModule {
         for (String locale : LocaleExtractor.SUPPORTED_LOCALES) {
             serveRegex("/" + locale, "/" + locale + "/").with(HomeServlet.class);
         }
+    }
+
+    @Provides
+    WebClient getWebClient() {
+        WebClient webClient = new WebClient(BrowserVersion.FIREFOX_24);
+
+        webClient.setIncorrectnessListener(new IncorrectnessListener() {
+            @Override
+            public void notify(String message, Object origin) {
+            }
+        });
+
+        return webClient;
     }
 }

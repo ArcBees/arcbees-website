@@ -37,7 +37,6 @@ import com.gwtplatform.mvp.client.ViewImpl;
 import static com.google.gwt.query.client.GQuery.$;
 
 public class ApplicationView extends ViewImpl implements ApplicationPresenter.MyView {
-
     interface Binder extends UiBinder<Widget, ApplicationView> {
     }
 
@@ -55,7 +54,7 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     @UiField
     DivElement content;
     @UiField
-    DivElement langToggle;
+    AnchorElement langToggle;
     @UiField
     Object backTop;
     @UiField
@@ -63,7 +62,7 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
 
     private final AppResources appResources;
     private final Analytics analytics;
-    
+
     public int menuState;
 
     @Inject
@@ -85,6 +84,11 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
     public void setInSlot(Object slot, IsWidget content) {
         main.setWidget(content);
         Window.scrollTo(0, 0);
+    }
+
+    @Override
+    public void updateLangToggleUrl() {
+        langToggle.setHref(getSwitchLangUrl());
     }
 
     private void bind() {
@@ -114,7 +118,7 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
             }
         }, new Function() {
             @Override
-        public void f() {
+            public void f() {
                 watchMenu();
             }
         });
@@ -143,8 +147,6 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
             @Override
             public void f() {
                 analytics.sendEvent("Meta", "Click").eventLabel("Switch lang").go();
-
-                switchLang();
             }
         });
 
@@ -170,11 +172,11 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
         });
     }
 
-    private void switchLang() {
-        Window.Location.assign(Location.createUrlBuilder()
+    private String getSwitchLangUrl() {
+        return Location.createUrlBuilder()
                 .setPath(buildPath())
                 .removeParameter(LocaleInfo.getLocaleQueryParam())
-                .buildString());
+                .buildString();
     }
 
     private String buildPath() {
@@ -206,7 +208,7 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
         int hoverState = $("." + appResources.style().sidebar() + ":hover").length();
 
         // Not tracking mobile as we always need to toggle the menu
-        if(! $(sidebar).hasClass(appResources.style().clicked())) {
+        if (!$(sidebar).hasClass(appResources.style().clicked())) {
             if (menuState != hoverState) {
                 if (menuState != STATE_CLICKED) {
                     setMenuState(hoverState);

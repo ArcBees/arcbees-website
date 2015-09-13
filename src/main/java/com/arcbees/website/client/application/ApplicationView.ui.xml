@@ -131,8 +131,8 @@
             <a href="#{nameTokens.HOME}" class="{fonts.icons.iconArcbees} {res.style.homeLogo} {res.style.withLogo}"></a>
             <div class="{res.style.wrapper}">
                 <div class="{res.style.linkTopRight}">
-                    <div ui:field="langToggle" class="{res.style.language}">
-                        <a href="#" lang="fr" title="French version">
+                    <div class="{res.style.language}">
+                        <a ui:field="langToggle" href="#" lang="fr" title="French version">
                             <ui:attribute ui:name='title' ui:description='French version'/>
                             <ui:attribute ui:name='lang' ui:description='fr'/>
                             <ui:msg description="FR">FR

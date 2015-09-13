@@ -36,6 +36,7 @@ public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView,
     }
 
     interface MyView extends View {
+        void updateLangToggleUrl();
     }
 
     @ContentSlot
@@ -78,6 +79,13 @@ public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView,
         super.onReveal();
 
         trackPageView();
+    }
+
+    @Override
+    protected void onReset() {
+        super.onReset();
+
+        getView().updateLangToggleUrl();
     }
 
     @Override

@@ -40,7 +40,7 @@
                     <li>
                         <a href="#{nameTokens.PRODUCTS}" data-label="Products">
                             <ui:msg description="Products">Products</ui:msg>
-                        </a>git ci
+                        </a>
                         <ul>
                             <li>
                                 <a href="#{nameTokens.GAE}" class="{fonts.icons.iconGae}" data-label="GAE Studio">GAE Studio</a>

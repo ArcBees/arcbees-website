@@ -22,7 +22,8 @@
             </seo:Og>
         </seo:SeoWidget>
 
-        <div class="{res.style.sidebar}" ui:field="sidebar">
+        <!-- TODO: Max, garde {res.style.sidebarAlwaysOpen} pour la page B, remove pour A -->
+        <div class="{res.style.sidebar} {res.style.sidebarAlwaysOpen}" ui:field="sidebar">
             <nav role="navigation" class="{res.style.menu}">
                 <ul>
                     <li>
@@ -39,7 +40,7 @@
                     <li>
                         <a href="#{nameTokens.PRODUCTS}" data-label="Products">
                             <ui:msg description="Products">Products</ui:msg>
-                        </a>
+                        </a>git ci
                         <ul>
                             <li>
                                 <a href="#{nameTokens.GAE}" class="{fonts.icons.iconGae}" data-label="GAE Studio">GAE Studio</a>

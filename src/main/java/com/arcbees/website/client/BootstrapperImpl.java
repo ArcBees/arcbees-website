@@ -56,7 +56,7 @@ public class BootstrapperImpl implements Bootstrapper {
 
         int variationId = getVariationId();
         analytics.create().experimentsOptions()
-                .experimentId("UQGdfuUlSMaL0QxAUpetpw")
+                .experimentId("YQ8C4HdzQpaI6hkqEa1Cgw")
                 .experimentVariant(String.valueOf(variationId))
                 .go();
         experimentHolder.setVariationId(variationId);

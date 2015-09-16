@@ -22,7 +22,6 @@
             </seo:Og>
         </seo:SeoWidget>
 
-        <!-- TODO: Max, garde {res.style.sidebarAlwaysOpen} pour la page B, remove pour A -->
         <div class="{res.style.sidebar} {res.style.sidebarAlwaysOpen}" ui:field="sidebar">
             <nav role="navigation" class="{res.style.menu}">
                 <ul>

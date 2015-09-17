@@ -14,6 +14,7 @@
 package com.arcbees.website.client.application;
 
 import com.arcbees.analytics.shared.Analytics;
+import com.arcbees.website.client.ExperimentHolder;
 import com.arcbees.website.client.application.contactform.ContactFormPresenter;
 import com.arcbees.website.client.application.contactform.ShowContactFormEvent;
 import com.google.gwt.event.shared.GwtEvent;
@@ -37,6 +38,8 @@ public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView,
 
     interface MyView extends View {
         void updateLangToggleUrl();
+
+        void setMenuAlwaysOpen(boolean alwaysOpen);
     }
 
     @ContentSlot
@@ -44,6 +47,7 @@ public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView,
 
     private final PlaceManager placeManager;
     private final ContactFormPresenter contactFormPresenter;
+    private final ExperimentHolder experimentHolder;
     private final Analytics analytics;
 
     @Inject
@@ -53,11 +57,13 @@ public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView,
             MyProxy proxy,
             PlaceManager placeManager,
             ContactFormPresenter contactFormPresenter,
+            ExperimentHolder experimentHolder,
             Analytics analytics) {
         super(eventBus, view, proxy, RevealType.Root);
 
         this.placeManager = placeManager;
         this.contactFormPresenter = contactFormPresenter;
+        this.experimentHolder = experimentHolder;
         this.analytics = analytics;
 
         addRegisteredHandler(NavigationEvent.getType(), this);
@@ -93,6 +99,8 @@ public class ApplicationPresenter extends Presenter<ApplicationPresenter.MyView,
         super.onBind();
 
         addVisibleHandler(ShowContactFormEvent.getType(), this);
+
+        getView().setMenuAlwaysOpen(experimentHolder.getVariationId() == 1);
     }
 
     private void trackPageView() {

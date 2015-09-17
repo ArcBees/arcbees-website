@@ -16,21 +16,12 @@
 
 package com.arcbees.website.client.application.support;
 
-import com.google.gwt.inject.client.multibindings.GinMultibinder;
-import com.google.inject.Singleton;
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
-
-import static com.google.gwt.inject.client.multibindings.GinMultibinder.newSetBinder;
 
 public class SupportModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
-        bind(SupportPresenter.class).in(Singleton.class);
-        bind(SupportPresenter.MyProxy.class).asEagerSingleton();
-
-        GinMultibinder<SupportPresenter.MyView> supportBinder = newSetBinder(binder(), SupportPresenter.MyView.class);
-        supportBinder.addBinding().to(SupportView.class);
-        supportBinder.addBinding().to(SupportABView.class);
-        bind(SupportPresenter.MyView.class).toProvider(SupportViewProvider.class);
+        bindPresenter(SupportPresenter.class, SupportPresenter.MyView.class,
+                SupportView.class, SupportPresenter.MyProxy.class);
     }
 }

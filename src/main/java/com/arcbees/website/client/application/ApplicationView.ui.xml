@@ -22,7 +22,7 @@
             </seo:Og>
         </seo:SeoWidget>
 
-        <div class="{res.style.sidebar}" ui:field="sidebar">
+        <div class="{res.style.sidebar} {res.style.sidebarAlwaysOpen}" ui:field="sidebar">
             <nav role="navigation" class="{res.style.menu}">
                 <ul>
                     <li>

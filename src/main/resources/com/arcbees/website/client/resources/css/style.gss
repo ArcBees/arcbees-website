@@ -567,23 +567,27 @@ img {
 
 @media (min-width: 980px) {
     .sidebar:hover ~ .content,
-    .menuToggle:hover ~ .content {
+    .menuToggle:hover ~ .content,
+    .sidebar.sidebarAlwaysOpen ~ .content {
         width: calc(100% - 255px);
     }
 
     .sidebar:hover ~ .content .withLogo,
-    .menuToggle:hover ~ .content .withLogo {
+    .menuToggle:hover ~ .content .withLogo,
+    .sidebar.sidebarAlwaysOpen ~ .content .withLogo {
         left: -200px;
         @mixin opacity(0);
     }
 
     .sidebar:hover ~ .menu,
-    .menuToggle:hover ~ .menu {
+    .menuToggle:hover ~ .menu,
+    .sidebar.sidebarAlwaysOpen ~ .menu {
         color: #fff;
     }
 
     .sidebar:hover ~ .menuToggle,
-    .sidebar.active ~ .menuToggle {
+    .sidebar.active ~ .menuToggle,
+    .sidebar.sidebarAlwaysOpen ~ .menuToggle {
         left: -40px;
     }
 }

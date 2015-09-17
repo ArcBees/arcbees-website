@@ -91,6 +91,11 @@ public class ApplicationView extends ViewImpl implements ApplicationPresenter.My
         langToggle.setHref(getSwitchLangUrl());
     }
 
+    @Override
+    public void setMenuAlwaysOpen(boolean alwaysOpen) {
+        $(sidebar).toggleClass(appResources.style().sidebarAlwaysOpen(), alwaysOpen);
+    }
+
     private void bind() {
         $("a", menuToggle).click(new Function() {
             @Override

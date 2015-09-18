@@ -81,6 +81,13 @@
                             <i class="{fonts.icons.iconArrowOutside}"></i>
                         </a>
                     </li>
+
+                    <li>
+                        <a href="http://blog.arcbees.com/" target="_blank" data-label="Blog">
+                            <ui:msg description="Blog">Blog</ui:msg>
+                            <i class="{fonts.icons.iconArrowOutside}"></i>
+                        </a>
+                    </li>
                 </ul>
             </nav>
             <nav class="{res.style.socialmedias}">
@@ -108,11 +115,6 @@
                     <li>
                         <a href="https://github.com/ArcBees" class="{fonts.icons.iconGitHub}" target="_blank" data-label="Github">
                             <span class="{res.style.hidden}">GitHub</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://blog.arcbees.com/" class="{fonts.icons.iconWordpress}" target="_blank" data-label="Blog">
-                            <span class="{res.style.hidden}">Wordpress</span>
                         </a>
                     </li>
                 </ul>

@@ -190,6 +190,14 @@
     white-space: initial;
 }
 
+@if (is("ie8") || is("ie9")) {
+    .slide {
+        white-space: normal;
+        -ms-word-wrap: normal;
+        word-wrap: normal;
+    }
+}
+
 @media (max-width: 649px) {
     .slide {
         min-height: 170px;

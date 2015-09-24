@@ -87,7 +87,7 @@
                     <a href="#{nameTokens.SUPPORT}" title="support" class="{res.style.btn}">
                         <ui:msg description="Support">Support</ui:msg>
                     </a>
-                    <a href="http://arcbees.github.io/gwtchosen/ChosenSample.html" target="_blank" class="{res.style.btn}">
+                    <a href="http://dev.arcbees.com/gwtchosen/" target="_blank" class="{res.style.btn}">
                         <i class="{fonts.icons.iconArrowOutside}"></i>
                         <ui:msg description="- BTN - Getting started">Getting started</ui:msg>
                     </a>
@@ -316,7 +316,7 @@
                         <ui:msg description="more on">more on
                         </ui:msg>
                     </h3>
-                    <a href="http://arcbees.github.io/gwtchosen/ChosenSample.html" target="_blank" title="Developer's Platform" class="{res.style.btn}">
+                    <a href="http://dev.arcbees.com/gwtchosen/" target="_blank" title="Developer's Platform" class="{res.style.btn}">
                         <ui:attribute ui:name='title' ui:description='Developer Platform'/>
                         <i class="{fonts.icons.iconArrowOutside}"></i>
                         <ui:msg description="- BTN - Developers Platform">Developer's Platform</ui:msg>

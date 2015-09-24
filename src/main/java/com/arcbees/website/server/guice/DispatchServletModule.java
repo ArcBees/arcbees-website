@@ -17,6 +17,7 @@ import com.arcbees.appengine.mail.guice.EmailModule;
 import com.arcbees.guicyresteasy.GuiceRestEasyFilterDispatcher;
 import com.arcbees.website.server.HomeServlet;
 import com.arcbees.website.server.LocaleExtractor;
+import com.arcbees.website.server.NotFoundServlet;
 import com.arcbees.website.server.SupportResource;
 import com.arcbees.website.shared.EndPoints;
 import com.gargoylesoftware.htmlunit.BrowserVersion;
@@ -49,6 +50,8 @@ public class DispatchServletModule extends ServletModule {
         for (String locale : LocaleExtractor.SUPPORTED_LOCALES) {
             serveRegex("/" + locale, "/" + locale + "/").with(HomeServlet.class);
         }
+
+        serve("/*").with(NotFoundServlet.class);
     }
 
     @Provides

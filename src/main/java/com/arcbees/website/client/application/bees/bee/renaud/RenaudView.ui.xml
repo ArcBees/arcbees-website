@@ -18,7 +18,7 @@
             </seo:Title>
             <seo:Description>
                 <ui:msg description="SEO - Bees - Renaud - description">
-                    Wanna-bee
+                    Developer
                 </ui:msg>
             </seo:Description>
             <seo:Og>
@@ -35,7 +35,7 @@
         </div>
 
         <h1>Renaud Lainé
-            <span><ui:msg description="Renaud's title">Wannabee, dev</ui:msg></span>
+            <span><ui:msg description="Renaud's title">Developer</ui:msg></span>
         </h1>
 
         <div class="{res.grid.row} {res.style.clearfix}">

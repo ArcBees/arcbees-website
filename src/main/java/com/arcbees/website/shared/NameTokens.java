@@ -63,8 +63,6 @@ public class NameTokens {
     public static final String BEE_CHRISTIAN_FR = BEES_FR + "/christian-goudreau";
     public static final String BEE_CHRISTOPHER = BEES + "/christopher-viel";
     public static final String BEE_CHRISTOPHER_FR = BEES_FR + "/christopher-viel";
-    public static final String BEE_FRANCOIS = BEES + "/francois-dion";
-    public static final String BEE_FRANCOIS_FR = BEES_FR + "/francois-dion";
     public static final String BEE_JASON = BEES + "/jason-lemay";
     public static final String BEE_JASON_FR = BEES_FR + "/jason-lemay";
     public static final String BEE_JEANCHRISTOPHE = BEES + "/jean-christophe-lariviere";
@@ -107,7 +105,6 @@ public class NameTokens {
 
         keys.put(BEE_CHRISTIAN, BEE_CHRISTIAN_FR);
         keys.put(BEE_CHRISTOPHER, BEE_CHRISTOPHER_FR);
-        keys.put(BEE_FRANCOIS, BEE_FRANCOIS_FR);
         keys.put(BEE_JASON, BEE_JASON_FR);
         keys.put(BEE_JEANCHRISTOPHE, BEE_JEANCHRISTOPHE_FR);
         keys.put(BEE_JOEL, BEE_JOEL_FR);

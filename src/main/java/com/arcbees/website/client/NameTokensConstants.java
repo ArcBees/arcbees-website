@@ -59,9 +59,6 @@ public interface NameTokensConstants extends Constants {
     @DefaultStringValue(NameTokens.BEE_CHRISTOPHER)
     String BEE_CHRISTOPHER();
 
-    @DefaultStringValue(NameTokens.BEE_FRANCOIS)
-    String BEE_FRANCOIS();
-
     @DefaultStringValue(NameTokens.BEE_JASON)
     String BEE_JASON();
 

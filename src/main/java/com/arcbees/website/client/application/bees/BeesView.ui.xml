@@ -271,18 +271,6 @@
                         <div class="{page.style.bee} {page.style.bee1}">
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
-                                    <g:Image resource="{page.beeJeanChristophe1}"></g:Image>
-                                    <a href="#{nameTokens.BEE_JEANCHRISTOPHE}">
-                                        <h3>Jean-<span>Christophe</span> <span>Lariviere</span></h3>
-                                        <p><ui:msg description="Jean-Christophe's title">Coder in the North</ui:msg></p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="{page.style.bee} {page.style.bee2}">
-                            <div class="{page.style.beeHolder1}">
-                                <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeRenaud1}"></g:Image>
                                     <a href="#{nameTokens.BEE_RENAUD}">
                                         <h3>Renaud <span>Lainé</span></h3>
@@ -292,8 +280,18 @@
                             </div>
                         </div>
 
+                        <div class="{page.style.bee} {page.style.bee2}">
+                            <div class="{page.style.beeHolder1}">
+                                <div class="{page.style.beeHolder2}">
+                                    <g:Image resource="{page.beeJeanNicolas1}"></g:Image>
+                                    <a href="#{nameTokens.BEE_JEANNICOLAS}">
+                                        <h3>Jean-Nicolas <span>Viens</span></h3>
+                                        <p><ui:msg description="Jean-Nicolas's title">Keeper of simplicity</ui:msg></p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
         </section>

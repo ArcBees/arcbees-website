@@ -1,0 +1,71 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+        xmlns:g="urn:import:com.google.gwt.user.client.ui"
+        xmlns:seo="urn:import:com.arcbees.seo.widget"
+        ui:generateFormat="com.google.gwt.i18n.rebind.format.PropertiesFormat"
+        ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
+        ui:generateLocales="default">
+
+    <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
+    <ui:with field="page" type="com.arcbees.website.client.resources.PageBeesResources"/>
+    <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
+
+    <g:HTMLPanel>
+
+        <seo:SeoWidget>
+            <seo:Title>
+                <ui:msg description="SEO - Bees - Jean-Nicolas - title">Jean-Nicolas Viens - Arcbees</ui:msg>
+            </seo:Title>
+            <seo:Description>
+                <ui:msg description="SEO - Bees - Jean-Nicolas - description">
+                    Keeper of simplicity
+                </ui:msg>
+            </seo:Description>
+            <seo:Og>
+                <seo:OgImage height="241" width="285">http://www.arcbees.com/img/jean-nicolas.jpg</seo:OgImage>
+            </seo:Og>
+        </seo:SeoWidget>
+
+        <div class="{page.style.bee} {page.style.bee1}">
+            <div class="{page.style.beeHolder1}">
+                <div class="{page.style.beeHolder2}">
+                    <g:Image resource="{page.beeJeanNicolas2}"></g:Image>
+                </div>
+            </div>
+        </div>
+
+        <h1>Jean-Nicolas Viens
+            <span>
+                <ui:msg description="Jean-Nicolas's title">Keeper of simplicity</ui:msg>
+            </span>
+        </h1>
+
+        <div class="{res.grid.row} {res.style.clearfix}">
+            <div class="{res.grid.col} {res.grid.col_6} {res.grid.col_push_3} {res.grid.col_t_12}">
+                <ui:msg description="Jean-Nicolas's prof achievements">
+                    <p>Jean-Nicolas is passionate about all things simple. He likes to use agility to keep project
+                        management as lean and efficient as possible with TDD to keep code architecture straight to
+                        the point and maintainable. This does not mean avoiding complex projects, it means making
+                        complex projects look easy!
+                    </p>
+                </ui:msg>
+            </div>
+        </div>
+
+        <ul class="{page.style.social}">
+            <li>
+                <a href="https://ca.linkedin.com/in/jeannicolasviens" target="_blank">
+                    <i class="{fonts.icons.iconLkd}"></i>
+                    <span>Profil LinkedIn de Jean-Nicolas Viens</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://plus.google.com/106512269590204196488/posts" target="_blank">
+                    <i class="{fonts.icons.iconGPlus}"></i>
+                    <span>Profil Google+ de Jean-Nicolas Viens</span>
+                </a>
+            </li>
+        </ul>
+
+    </g:HTMLPanel>
+</ui:UiBinder>

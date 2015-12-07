@@ -40,15 +40,15 @@ public class BeesModule extends AbstractPresenterModule {
         install(new ChristianModule());
         install(new ChristopherModule());
         install(new JasonModule());
+        install(new JeanNicolasModule());
         install(new JoelModule());
         install(new LarryModule());
         install(new ManonModule());
         install(new MaximeModule());
+        install(new OlivierModule());
         install(new PhilippeaModule());
         install(new PhilippebModule());
         install(new RenaudModule());
-        install(new OlivierModule());
-        install(new JeanNicolasModule());
 
         bindPresenter(BeesPresenter.class, BeesPresenter.MyView.class,
                 BeesView.class, BeesPresenter.MyProxy.class);

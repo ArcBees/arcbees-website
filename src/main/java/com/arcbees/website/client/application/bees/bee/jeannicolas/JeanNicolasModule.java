@@ -14,14 +14,14 @@
  * the License.
  */
 
-package com.arcbees.website.client.application.bees.bee.jeanchristophe;
+package com.arcbees.website.client.application.bees.bee.jeannicolas;
 
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 
-public class JeanchristopheModule extends AbstractPresenterModule {
+public class JeanNicolasModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
-        bindPresenter(JeanchristophePresenter.class, JeanchristophePresenter.MyView.class,
-                JeanchristopheView.class, JeanchristophePresenter.MyProxy.class);
+        bindPresenter(JeanNicolasPresenter.class, JeanNicolasPresenter.MyView.class,
+                JeanNicolasView.class, JeanNicolasPresenter.MyProxy.class);
     }
 }

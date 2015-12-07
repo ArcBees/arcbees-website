@@ -65,8 +65,6 @@ public class NameTokens {
     public static final String BEE_CHRISTOPHER_FR = BEES_FR + "/christopher-viel";
     public static final String BEE_JASON = BEES + "/jason-lemay";
     public static final String BEE_JASON_FR = BEES_FR + "/jason-lemay";
-    public static final String BEE_JEANCHRISTOPHE = BEES + "/jean-christophe-lariviere";
-    public static final String BEE_JEANCHRISTOPHE_FR = BEES_FR + "/jean-christophe-lariviere";
     public static final String BEE_JOEL = BEES + "/joel-trottier-hebert";
     public static final String BEE_JOEL_FR = BEES_FR + "/joel-trottier-hebert";
     public static final String BEE_LARRY = BEES + "/larry-matte";
@@ -83,6 +81,8 @@ public class NameTokens {
     public static final String BEE_RENAUD_FR = BEES_FR + "/renaud-laine";
     public static final String BEE_OLIVIER = BEES + "/olivier-lafleur";
     public static final String BEE_OLIVIER_FR = BEES_FR + "/olivier-lafleur";
+    public static final String BEE_JEANNICOLAS = BEES + "/jean-nicolas";
+    public static final String BEE_JEANNICOLAS_FR = BEES_FR + "/jean-nicolas";
 
     static {
         Map<String, String> keys = Maps.newHashMap();
@@ -106,7 +106,6 @@ public class NameTokens {
         keys.put(BEE_CHRISTIAN, BEE_CHRISTIAN_FR);
         keys.put(BEE_CHRISTOPHER, BEE_CHRISTOPHER_FR);
         keys.put(BEE_JASON, BEE_JASON_FR);
-        keys.put(BEE_JEANCHRISTOPHE, BEE_JEANCHRISTOPHE_FR);
         keys.put(BEE_JOEL, BEE_JOEL_FR);
         keys.put(BEE_LARRY, BEE_LARRY_FR);
         keys.put(BEE_MANON, BEE_MANON_FR);
@@ -115,6 +114,7 @@ public class NameTokens {
         keys.put(BEE_PHILIPPEB, BEE_PHILIPPEB_FR);
         keys.put(BEE_RENAUD, BEE_RENAUD_FR);
         keys.put(BEE_OLIVIER, BEE_OLIVIER_FR);
+        keys.put(BEE_JEANNICOLAS, BEE_JEANNICOLAS_FR);
 
         placeKeys = HashBiMap.create(keys);
     }

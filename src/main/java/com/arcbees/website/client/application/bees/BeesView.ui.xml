@@ -298,7 +298,7 @@
                                     <g:Image resource="{page.beeVincent1}"/>
                                     <a href="#{nameTokens.BEE_VINCENT}">
                                         <h3>Vincent <span>Beaudoin</span></h3>
-                                        <p><ui:msg description="Vincent's title">Accountant</ui:msg></p>
+                                        <p><ui:msg description="Vincent's title">Financial Director</ui:msg></p>
                                     </a>
                                 </div>
                             </div>

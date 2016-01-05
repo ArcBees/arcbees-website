@@ -18,7 +18,7 @@
             </seo:Title>
             <seo:Description>
                 <ui:msg description="SEO - Bees - Vincent - description">
-                    Accountant
+                    Financial Director
                 </ui:msg>
             </seo:Description>
             <seo:Og>
@@ -36,7 +36,7 @@
 
         <h1>Vincent Beaudoin
             <span>
-                <ui:msg description="Vincent's title">Accountant</ui:msg>
+                <ui:msg description="Vincent's title">Financial Director</ui:msg>
             </span>
         </h1>
 

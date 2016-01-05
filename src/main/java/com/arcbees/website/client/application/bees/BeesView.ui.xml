@@ -291,6 +291,31 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="{page.style.bee} {page.style.bee3}">
+                            <div class="{page.style.beeHolder1}">
+                                <div class="{page.style.beeHolder2}">
+                                    <g:Image resource="{page.beeOlivier1}"></g:Image>
+                                    <a href="#{nameTokens.BEE_OLIVIER}">
+                                        <h3>Olivier <span>Lafleur</span></h3>
+                                        <p><ui:msg description="Olivier's title">Community gardener</ui:msg></p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="{page.style.bee} {page.style.bee1}">
+                            <div class="{page.style.beeHolder1}">
+                                <div class="{page.style.beeHolder2}">
+                                    <g:Image resource="{page.beeVincent1}"/>
+                                    <a href="#{nameTokens.BEE_VINCENT}">
+                                        <h3>Vincent <span>Beaudoin</span></h3>
+                                        <p><ui:msg description="Vincent's title">Community gardener</ui:msg></p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>

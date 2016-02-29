@@ -65,16 +65,12 @@ public class NameTokens {
     public static final String BEE_CHRISTOPHER_FR = BEES_FR + "/christopher-viel";
     public static final String BEE_JASON = BEES + "/jason-lemay";
     public static final String BEE_JASON_FR = BEES_FR + "/jason-lemay";
-    public static final String BEE_JOEL = BEES + "/joel-trottier-hebert";
-    public static final String BEE_JOEL_FR = BEES_FR + "/joel-trottier-hebert";
     public static final String BEE_LARRY = BEES + "/larry-matte";
     public static final String BEE_LARRY_FR = BEES_FR + "/larry-matte";
     public static final String BEE_MANON = BEES + "/manon-gruaz";
     public static final String BEE_MANON_FR = BEES_FR + "/manon-gruaz";
     public static final String BEE_MAXIME = BEES + "/maxime-meriouma-caron";
     public static final String BEE_MAXIME_FR = BEES_FR + "/maxime-meriouma-caron";
-    public static final String BEE_PHILIPPEA = BEES + "/philippe-araujo";
-    public static final String BEE_PHILIPPEA_FR = BEES_FR + "/philippe-araujo";
     public static final String BEE_PHILIPPEB = BEES + "/philippe-beaudoin";
     public static final String BEE_PHILIPPEB_FR = BEES_FR + "/philippe-beaudoin";
     public static final String BEE_RENAUD = BEES + "/renaud-laine";
@@ -108,11 +104,9 @@ public class NameTokens {
         keys.put(BEE_CHRISTIAN, BEE_CHRISTIAN_FR);
         keys.put(BEE_CHRISTOPHER, BEE_CHRISTOPHER_FR);
         keys.put(BEE_JASON, BEE_JASON_FR);
-        keys.put(BEE_JOEL, BEE_JOEL_FR);
         keys.put(BEE_LARRY, BEE_LARRY_FR);
         keys.put(BEE_MANON, BEE_MANON_FR);
         keys.put(BEE_MAXIME, BEE_MAXIME_FR);
-        keys.put(BEE_PHILIPPEA, BEE_PHILIPPEA_FR);
         keys.put(BEE_PHILIPPEB, BEE_PHILIPPEB_FR);
         keys.put(BEE_RENAUD, BEE_RENAUD_FR);
         keys.put(BEE_VINCENT, BEE_VINCENT_FR);

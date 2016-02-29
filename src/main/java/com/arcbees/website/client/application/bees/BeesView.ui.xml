@@ -175,10 +175,10 @@
                         <div class="{page.style.bee} {page.style.bee2}">
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
-                                    <g:Image resource="{page.beePhilippeA1}"></g:Image>
-                                    <a href="#{nameTokens.BEE_PHILIPPEA}">
-                                        <h3>Philippe <span>Araujo</span></h3>
-                                        <p><ui:msg description="Philippe Araujo's title">Business Knight</ui:msg></p>
+                                    <g:Image resource="{page.beeChristopher1}"></g:Image>
+                                    <a href="#{nameTokens.BEE_CHRISTOPHER}">
+                                        <h3>Christopher <span>Viel</span></h3>
+                                        <p><ui:msg description="Christopher title">Crazy Code Mastermind</ui:msg></p>
                                     </a>
                                 </div>
                             </div>
@@ -211,30 +211,6 @@
                         <div class="{page.style.bee} {page.style.bee2}">
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
-                                    <g:Image resource="{page.beeChristopher1}"></g:Image>
-                                    <a href="#{nameTokens.BEE_CHRISTOPHER}">
-                                        <h3>Christopher <span>Viel</span></h3>
-                                        <p><ui:msg description="Christopher title">Crazy Code Mastermind</ui:msg></p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="{page.style.bee} {page.style.bee3}">
-                            <div class="{page.style.beeHolder1}">
-                                <div class="{page.style.beeHolder2}">
-                                    <g:Image resource="{page.beeJoel1}"></g:Image>
-                                    <a href="#{nameTokens.BEE_JOEL}">
-                                        <h3>Joel <span>Trottier-Hébert</span></h3>
-                                        <p><ui:msg description="Joel's title">Bugs writer</ui:msg></p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="{page.style.bee} {page.style.bee1}">
-                            <div class="{page.style.beeHolder1}">
-                                <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeJason1}"></g:Image>
                                     <a href="#{nameTokens.BEE_JASON}">
                                         <h3>Jason <span>Lemay</span></h3>
@@ -244,7 +220,7 @@
                             </div>
                         </div>
 
-                        <div class="{page.style.bee} {page.style.bee2}">
+                        <div class="{page.style.bee} {page.style.bee3}">
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeLarry1}"></g:Image>
@@ -256,7 +232,7 @@
                             </div>
                         </div>
 
-                        <div class="{page.style.bee} {page.style.bee3}">
+                        <div class="{page.style.bee} {page.style.bee1}">
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeOlivier1}"></g:Image>
@@ -268,7 +244,7 @@
                             </div>
                         </div>
 
-                        <div class="{page.style.bee} {page.style.bee1}">
+                        <div class="{page.style.bee} {page.style.bee2}">
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeRenaud1}"></g:Image>
@@ -280,7 +256,7 @@
                             </div>
                         </div>
 
-                        <div class="{page.style.bee} {page.style.bee2}">
+                        <div class="{page.style.bee} {page.style.bee3}">
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeJeanNicolas1}"></g:Image>
@@ -292,7 +268,7 @@
                             </div>
                         </div>
 
-                        <div class="{page.style.bee} {page.style.bee3}">
+                        <div class="{page.style.bee} {page.style.bee1}">
                             <div class="{page.style.beeHolder1}">
                                 <div class="{page.style.beeHolder2}">
                                     <g:Image resource="{page.beeVincent1}"/>

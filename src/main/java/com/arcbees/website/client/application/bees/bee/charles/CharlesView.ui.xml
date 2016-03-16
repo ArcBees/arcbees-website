@@ -1,0 +1,88 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+        xmlns:g="urn:import:com.google.gwt.user.client.ui"
+        xmlns:seo="urn:import:com.arcbees.seo.widget"
+        ui:generateFormat="com.google.gwt.i18n.rebind.format.PropertiesFormat"
+        ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
+        ui:generateLocales="default">
+
+    <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
+    <ui:with field="page" type="com.arcbees.website.client.resources.PageBeesResources"/>
+    <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
+
+    <g:HTMLPanel>
+
+        <seo:SeoWidget>
+            <seo:Title>
+                <ui:msg description="SEO - Bees - Charles - title">Charles-Antoine Richard - Arcbees</ui:msg>
+            </seo:Title>
+            <seo:Description>
+                <ui:msg description="SEO - Bees - Charles - description">
+                    Financial Director
+                </ui:msg>
+            </seo:Description>
+            <seo:Og>
+                <seo:OgImage height="241" width="285">http://www.arcbees.com/img/charles1.jpg</seo:OgImage>
+            </seo:Og>
+        </seo:SeoWidget>
+
+        <div class="{page.style.bee} {page.style.bee1}">
+            <div class="{page.style.beeHolder1}">
+                <div class="{page.style.beeHolder2}">
+                    <g:Image resource="{page.beeCharles1}"></g:Image>
+                </div>
+            </div>
+        </div>
+
+        <h1>Charles-Antoine Richard
+            <span>
+                <ui:msg description="Charles's title">Marketing director</ui:msg>
+            </span>
+        </h1>
+
+        <div class="{res.grid.row} {res.style.clearfix}">
+            <div class="{res.grid.col} {res.grid.col_6} {res.grid.col_t_12} {page.style.colGauche}">
+                <h2>
+                    <ui:msg description="Professional achievements:">Professional achievements</ui:msg>
+                </h2>
+                <ul>
+                    <ui:msg description="Charles's prof achievements">
+                        <li>Created and executed marketing strategies for 6 digital brands.</li>
+                        <li>Managed a portfolio of over 45 digital SKUs.</li>
+                        <li>Won the Québec Entrepreneurship Contest at age 16.</li>
+                        <li>Earned the Hydro Quebec Entrepreneurship Scholarship.</li>
+                    </ui:msg>
+                </ul>
+            </div>
+            <div class="{res.grid.col} {res.grid.col_6} {res.grid.col_t_12} {page.style.colDroite}">
+                <h2>
+                    <ui:msg description="Personal achievements:">Personal achievements</ui:msg>
+                </h2>
+                <ul>
+                    <ui:msg description="Charles's pers achievements">
+                        <li>Is able to finish Ocarina of Time and Majora’s Mask every single year and played too many video games to count.</li>
+                        <li>Climbed mount Rinjani and both Chachani and Chimborazo volcanoes.</li>
+                        <li>Played 1st Division Rugby for Quebec City.</li>
+                        <li>Lived in Ecuador for a year.</li>
+                    </ui:msg>
+                </ul>
+            </div>
+        </div>
+
+        <!--<ul class="{page.style.social}">-->
+            <!--<li>-->
+                <!--<a href="https://www.linkedin.com/in/charles-antoine-richard-77571a29" target="_blank">-->
+                    <!--<i class="{fonts.icons.iconLkd}"/>-->
+                    <!--<span>LinkedIn profile of Charles-Antoine Richard</span>-->
+                <!--</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="https://plus.google.com/102625311713843226531/" target="_blank">-->
+                    <!--<i class="{fonts.icons.iconGPlus}"/>-->
+                    <!--<span>Google+ profile of Charles-Antoine Richard</span>-->
+                <!--</a>-->
+            <!--</li>-->
+        <!--</ul>-->
+
+    </g:HTMLPanel>
+</ui:UiBinder>

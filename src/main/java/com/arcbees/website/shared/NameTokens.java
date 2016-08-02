@@ -81,6 +81,10 @@ public class NameTokens {
     public static final String BEE_VINCENT_FR = BEES_FR + "/vincent-beaudoin";
     public static final String BEE_CHARLES = BEES + "/charles-antoine-richard";
     public static final String BEE_CHARLES_FR = BEES_FR + "/charles-antoine-richard";
+    public static final String BEE_KEVEN = BEES + "/keven-beaulieu";
+    public static final String BEE_KEVEN_FR = BEES_FR + "/keven-beaulieu";
+    public static final String BEE_SIMON = BEES + "/simon-gauthier";
+    public static final String BEE_SIMON_FR = BEES_FR + "/simon-gauthier";
 
     static {
         Map<String, String> keys = Maps.newHashMap();
@@ -112,6 +116,8 @@ public class NameTokens {
         keys.put(BEE_VINCENT, BEE_VINCENT_FR);
         keys.put(BEE_JEANNICOLAS, BEE_JEANNICOLAS_FR);
         keys.put(BEE_CHARLES, BEE_CHARLES_FR);
+        keys.put(BEE_KEVEN, BEE_KEVEN_FR);
+        keys.put(BEE_SIMON, BEE_SIMON_FR);
 
         placeKeys = HashBiMap.create(keys);
     }

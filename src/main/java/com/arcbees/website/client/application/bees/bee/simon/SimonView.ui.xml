@@ -1,0 +1,73 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+        xmlns:g="urn:import:com.google.gwt.user.client.ui"
+        xmlns:seo="urn:import:com.arcbees.seo.widget"
+        ui:generateFormat="com.google.gwt.i18n.rebind.format.PropertiesFormat"
+        ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
+        ui:generateLocales="default">
+
+    <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
+    <ui:with field="page" type="com.arcbees.website.client.resources.PageBeesResources"/>
+    <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
+
+    <g:HTMLPanel>
+
+        <seo:SeoWidget>
+            <seo:Title>
+                <ui:msg description="SEO - Bees - Simon - title">Simon Gauthier - Arcbees</ui:msg>
+            </seo:Title>
+            <seo:Description>
+                <ui:msg description="SEO - Bees - Simon - description">
+                    Director of business development
+                </ui:msg>
+            </seo:Description>
+            <seo:Og>
+                <seo:OgImage height="241" width="285">http://www.arcbees.com/img/simon-gauthier.jpg</seo:OgImage>
+            </seo:Og>
+        </seo:SeoWidget>
+
+        <div class="{page.style.bee} {page.style.bee1}">
+            <div class="{page.style.beeHolder1}">
+                <div class="{page.style.beeHolder2}">
+                    <g:Image resource="{page.beeSimon1}"></g:Image>
+                </div>
+            </div>
+        </div>
+
+        <h1>Simon Gauthier
+            <span>
+                <ui:msg description="Simon's title">Director of business development</ui:msg>
+            </span>
+        </h1>
+
+        <div class="{res.grid.row} {res.style.clearfix}">
+            <div class="{res.grid.col} {res.grid.col_6} {res.grid.col_push_3} {res.grid.col_t_12}">
+                <ui:msg description="Simon's prof achievements">
+                    <p>Simon is a former university basketball player with over eight years of experience in business
+                        development, marketing, and communications. A skilled communicator, he is recognized for his
+                        judgment and creativity as well as his ability to deliver results. Bringing clarity to both
+                        objectives and issues, Simon manages to bring simplified solutions while efficiently guiding the
+                        mandates he’s entrusted with. Respect and communication are crucial keys to his interpersonal
+                        approach. Simon is a leader who focuses on teamwork, listening skills and autonomy.
+                    </p>
+                </ui:msg>
+            </div>
+        </div>
+
+        <ul class="{page.style.social}">
+            <li>
+                <a href="https://www.linkedin.com/in/simon-gauthier-357b489" target="_blank">
+                    <i class="{fonts.icons.iconLkd}"/>
+                    <span>LinkedIn profile of Simon Gauthier</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://plus.google.com/u/0/112080743410875754581" target="_blank">
+                    <i class="{fonts.icons.iconGPlus}"/>
+                    <span>Google+ profile of Simon Gauthier</span>
+                </a>
+            </li>
+        </ul>
+
+    </g:HTMLPanel>
+</ui:UiBinder>

@@ -1,0 +1,71 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+        xmlns:g="urn:import:com.google.gwt.user.client.ui"
+        xmlns:seo="urn:import:com.arcbees.seo.widget"
+        ui:generateFormat="com.google.gwt.i18n.rebind.format.PropertiesFormat"
+        ui:generateKeys="com.google.gwt.i18n.server.keygen.MD5KeyGenerator"
+        ui:generateLocales="default">
+
+    <ui:with field="res" type="com.arcbees.website.client.resources.AppResources"/>
+    <ui:with field="page" type="com.arcbees.website.client.resources.PageBeesResources"/>
+    <ui:with field="fonts" type="com.arcbees.website.client.resources.FontResources"/>
+
+    <g:HTMLPanel>
+
+        <seo:SeoWidget>
+            <seo:Title>
+                <ui:msg description="SEO - Bees - Keven - title">Keven Beaulieu - Arcbees</ui:msg>
+            </seo:Title>
+            <seo:Description>
+                <ui:msg description="SEO - Bees - Keven - description">
+                    Wannabee
+                </ui:msg>
+            </seo:Description>
+            <seo:Og>
+                <seo:OgImage height="241" width="285">http://www.arcbees.com/img/keven-beaulieu.jpg</seo:OgImage>
+            </seo:Og>
+        </seo:SeoWidget>
+
+        <div class="{page.style.bee} {page.style.bee1}">
+            <div class="{page.style.beeHolder1}">
+                <div class="{page.style.beeHolder2}">
+                    <g:Image resource="{page.beeKeven1}"></g:Image>
+                </div>
+            </div>
+        </div>
+
+        <h1>Keven Beaulieu
+            <span>
+                <ui:msg description="Keven's title">Wannabee</ui:msg>
+            </span>
+        </h1>
+
+        <div class="{res.grid.row} {res.style.clearfix}">
+            <div class="{res.grid.col} {res.grid.col_6} {res.grid.col_push_3} {res.grid.col_t_12}">
+                <ui:msg description="Keven's prof achievements">
+                    <p>Keven is a young and passionate developer who's always seeking new challenges. Dedicated to the
+                        quality of the work delivered, he is in constant search of new ways with which to hone his
+                        skills. Machine learning, architecture, and web development are all topics which captivate him.
+                        Keven is also an outdoorsman, a musician, and a fan of TV shows.
+                    </p>
+                </ui:msg>
+            </div>
+        </div>
+
+        <ul class="{page.style.social}">
+            <li>
+                <a href="https://www.linkedin.com/in/kevenbeaulieu" target="_blank">
+                    <i class="{fonts.icons.iconLkd}"/>
+                    <span>LinkedIn profile of Keven Beaulieu</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://plus.google.com/+KevenBeaulieu/posts" target="_blank">
+                    <i class="{fonts.icons.iconGPlus}"/>
+                    <span>Google+ profile of Keven Beaulieu</span>
+                </a>
+            </li>
+        </ul>
+
+    </g:HTMLPanel>
+</ui:UiBinder>

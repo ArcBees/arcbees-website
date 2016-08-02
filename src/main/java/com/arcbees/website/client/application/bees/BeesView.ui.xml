@@ -280,6 +280,30 @@
                             </div>
                         </div>
 
+                        <div class="{page.style.bee} {page.style.bee2}">
+                            <div class="{page.style.beeHolder1}">
+                                <div class="{page.style.beeHolder2}">
+                                    <g:Image resource="{page.beeSimon1}"/>
+                                    <a href="#{nameTokens.BEE_SIMON}">
+                                        <h3>Simon <span>Gauthier</span></h3>
+                                        <p><ui:msg description="Simon's title">Director of business development</ui:msg></p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="{page.style.bee} {page.style.bee3}">
+                            <div class="{page.style.beeHolder1}">
+                                <div class="{page.style.beeHolder2}">
+                                    <g:Image resource="{page.beeKeven1}"></g:Image>
+                                    <a href="#{nameTokens.BEE_KEVEN}">
+                                        <h3>Kevin <span>Beaulieu</span></h3>
+                                        <p><ui:msg description="Keven's title">Wannabee</ui:msg></p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>

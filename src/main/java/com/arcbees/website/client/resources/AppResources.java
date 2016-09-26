@@ -144,6 +144,8 @@ public interface AppResources extends FontResources {
         String sidebarAlwaysOpen();
 
         String jetBrains();
+
+        String jetBrains_logo();
     }
 
     @Source("img/jetbrains.jpg")

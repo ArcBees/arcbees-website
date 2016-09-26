@@ -179,9 +179,12 @@
                     <ui:msg description="Architects of simplicity">Architects of simplicity</ui:msg>
                 </p>
 
-                <a class="{res.style.jetBrains}" href="https://www.jetbrains.com/" target="_blank">
-                    <g:Image resource="{res.jetBrainsLogo}"/>
-                </a>
+                <div class="{res.style.jetBrains}">
+                    <p><ui:msg description="Proud user of jetBrains products"><span>Proud user of</span> jetBrains products</ui:msg></p>
+                    <a class="{res.style.jetBrains_logo}" href="https://www.jetbrains.com/" target="_blank">
+                        <g:Image resource="{res.jetBrainsLogo}"/>
+                    </a>
+                </div>
             </footer>
 
         </div>

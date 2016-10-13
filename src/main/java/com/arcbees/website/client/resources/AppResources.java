@@ -18,6 +18,7 @@ package com.arcbees.website.client.resources;
 
 import com.arcbees.gsss.grid.client.GridResources;
 import com.google.gwt.resources.client.CssResource;
+import com.google.gwt.resources.client.ImageResource;
 
 public interface AppResources extends FontResources {
     interface Normalize extends CssResource {
@@ -141,7 +142,14 @@ public interface AppResources extends FontResources {
         String products();
 
         String sidebarAlwaysOpen();
+
+        String jetBrains();
+
+        String jetBrains_logo();
     }
+
+    @Source("img/jetbrains.jpg")
+    ImageResource jetBrainsLogo();
 
     @Source("css/normalize.gss")
     Normalize normalize();

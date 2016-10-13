@@ -1251,3 +1251,38 @@ img {
 .footer span {
     text-indent: -9999px;
 }
+
+.jetBrains {
+    display: block;
+
+    position: absolute;
+    right: 15px;
+    bottom: 16px;
+}
+
+.jetBrains p {
+    text-align: right;
+    color: #ccc;
+    line-height: 1;
+
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.jetBrains p span {
+    display: block;
+}
+
+.jetBrains_logo {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+@media (max-width: 649px) {
+    .footer {
+        height: 150px;
+    }
+}
